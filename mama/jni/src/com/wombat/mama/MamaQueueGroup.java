@@ -64,6 +64,12 @@ public class MamaQueueGroup
     }
 
     /**
+     * Return number of queues in the array.
+     * C++ returns 0 if the array is empty and the default queue is being used.
+     */
+    public int getNumberOfQueues() { return myQueues == null ? 0 : myQueues.length; }
+
+    /**
      * Destroy the queue, this function should only be called if there are no
      * open objects against the queue. Use one of the other destroy functions
      * to block until all objects have been cleaned up.
@@ -72,6 +78,8 @@ public class MamaQueueGroup
      */
     public void destroy()
     {
+        stopDispatch();
+
         if(myQueues != null)
         {
             for ( int nextQueue = 0; nextQueue < myQueues.length; nextQueue++ )
@@ -88,6 +96,8 @@ public class MamaQueueGroup
      */
     public void destroyWait()
     {
+        stopDispatch();
+
         if(myQueues != null)
         {
             for ( int nextQueue = 0; nextQueue < myQueues.length; nextQueue++ )
@@ -107,6 +117,8 @@ public class MamaQueueGroup
      */
     public void destroyTimedWait(long timeout)
     {
+        stopDispatch();
+
         if(myQueues != null)
         {
             for ( int nextQueue = 0; nextQueue < myQueues.length; nextQueue++ )

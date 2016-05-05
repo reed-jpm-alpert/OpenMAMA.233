@@ -34,6 +34,7 @@ public class MamaPublisher
 
     /*A long value containing a pointer to the underlying C publisher structure*/
     private long    publisherPointer_i   =   0;
+    private boolean beenDestroyed = false;
 
     /* Reusable MamaTransport object. */
     private MamaTransport mamaTransport_i = null;
@@ -107,9 +108,28 @@ public class MamaPublisher
         return mamaTransport_i;
     }
 
-    private native void  _getTransport ();
+    public void destroy ()
+    {
+        checkIsCreated("destroy()");
+        if (false == beenDestroyed)
+        {
+            _destroy();
+            beenDestroyed = true;
+        }
+    }
+
+    protected void finalize () throws Throwable
+    {
+        if (false == beenDestroyed && 0 != publisherPointer_i)
+        {
+            _destroy();
+            beenDestroyed = true;
+        }
+    }
 
     private native void _create (MamaTransport transport, String topic, String source);
+ 
+    private native void  _getTransport ();
 
     private native void _send (MamaMsg msg);
 
@@ -122,6 +142,8 @@ public class MamaPublisher
     private native void _sendReplyToInboxWithThrottle (MamaMsg request, MamaMsg reply);
 
     private native void _sendFromInbox (MamaInbox inbox, MamaMsg msg);
+
+    private native void _destroy ();
     
     private static native void initIDs();
 
@@ -130,7 +152,7 @@ public class MamaPublisher
         if(0==publisherPointer_i)
         {
             throw new MamaException("Cannot call "+invokingMethod+
-                                    "before invoking create()");
+                                    " before invoking create()");
         }
     }
 

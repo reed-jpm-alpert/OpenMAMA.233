@@ -209,7 +209,6 @@ class Windows:
         else:
             env.Append( CPPDEFINES = ['_USE_32BIT_TIME_T'] )
             env['bit_suffix'] = ''
-
         if env['vsver'] > 7:
             env.Append( CCFLAGS = [ '/Z7','/MP' ])
         else:
@@ -232,7 +231,7 @@ class Windows:
 
             if not env.has_key('dotnet_framework'):
                 print 'Calculating dotnet_framework'
-                if env['host']['arch'] == 'x86_64':
+                if env['target_arch'] == 'x86_64':
                     framework = 'Framework64'
                 else:
                     framework = 'Framework'
@@ -253,3 +252,4 @@ class Windows:
             if not posixpath.exists(env['dotnet_framework']):
                 print 'ERROR: Dotnet framework dir: %s not found' % (env['dotnet_framework'])
                 Exit(1)
+            print("### arch=%s targetarch=%s framework=%s " % (env['host']['arch'], env['target_arch'], env['dotnet_framework']))

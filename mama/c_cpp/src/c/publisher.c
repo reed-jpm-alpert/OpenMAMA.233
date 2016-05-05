@@ -611,3 +611,13 @@ mamaPublisher_getTransport (mamaPublisher   publisher,
 
     return MAMA_STATUS_OK;
 }
+
+mamaTransport
+mamaPublisherImpl_getTransportImpl (mamaPublisher publisher)
+{
+    mamaPublisherImpl* impl   = (mamaPublisherImpl*)publisher;
+
+    if (!impl) return NULL;
+    return impl->mTport;
+}
+

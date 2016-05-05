@@ -518,6 +518,13 @@ extern mama_status
 mamaSubscription_setPossiblyStale(
     mamaSubscription subscription);
 
+/* DQWORK */
+MAMAExpDLL
+extern mama_status
+mamaSubscription_setPossiblyStaleEx(
+    mamaSubscription subscription);
+/* DQWORK */
+
 /**
  * This function sets the transport index used by the subscription.
  *

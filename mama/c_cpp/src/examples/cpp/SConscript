@@ -20,6 +20,12 @@ env.Append( LIBPATH = libPath )
 env.Append( CPPPATH = [ includePath ] )
 env.Append( LIBS = [ 'mamacpp','mama','pthread','dl' ] )
 
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
+
 bins = [ 'mamalistencpp','mamasubscribercpp','mamaproxycpp','mamapublishercpp','mamainboxcpp','mamaiocpp','mamaftmembercpp','mamasymbollistsubscribercpp','mamalistencachedcpp' ]
 
 binary = []

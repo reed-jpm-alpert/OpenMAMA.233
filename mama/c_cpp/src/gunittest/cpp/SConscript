@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import os
 Import('env')
 env = env.Clone()
 
@@ -16,6 +17,12 @@ libpath.append('$libdir')
 
 env.Append(LIBPATH=libpath, LIBS=['mama', 'mamacpp', 'wombatcommon',
            'dl'], CPPPATH=incpath)
+
+if env['entitled'] == True:
+    env.Append(
+        LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+        LIBS = ['oeac']
+    )
 
 env['CCFLAGS'] = [x for x in env['CCFLAGS'] if x != '-pedantic-errors']
 

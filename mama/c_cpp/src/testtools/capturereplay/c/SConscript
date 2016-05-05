@@ -15,6 +15,12 @@ env.Append( LIBPATH = libPath )
 env.Append( CPPPATH = [ includePath ] )
 env.Append( LIBS = [ 'mama','pthread','m','wombatcommon','dl' ] )
 
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
+
 capturereplayc = env.Program('capturereplayc','capturereplayc.c')
 capturec = env.Program('capturec','capturec.c')
 captureconvert = env.Program('captureconvert','captureconvert.c')

@@ -22,6 +22,12 @@ else:
 env['CCFLAGS'] = [x for x in env['CCFLAGS'] if x != '-pedantic-errors']
 
 
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
+
 mamaproducer = env.Program('mamaproducerc','mamaproducerc.c')
 mamaconsumer = env.Program('mamaconsumerc','mamaconsumerc.c')
 mamaproducerv2 = env.Program('mamaproducerc_v2','mamaproducerc_v2.c')

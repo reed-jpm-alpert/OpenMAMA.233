@@ -19,6 +19,12 @@ env.Append( LIBPATH = libPath )
 env.Append( CPPPATH = [ includePath ] )
 env.Append( LIBS = [ 'mamacpp','mama','dl','pthread' ] )
 
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
+
 mamachurn = env.Program('mamachurncpp','mamachurncpp.cpp')
 
 Alias('install',env.Install('$bindir',mamachurn))

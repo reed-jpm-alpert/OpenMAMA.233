@@ -51,12 +51,14 @@ extern int gLogTransportStats;
 extern int gPublishTransportStats;
 
 #define self                                ((transportImpl*)(transport))
+
 #define MAX_TPORT_NAME_LEN                  (256)
 #define MAX_PROP_STRING                     1000
 #define DEFAULT_WANT_AUTO_CM_CREATE         0
 #define PROP_NAME_WANT_AUTO_CM_CREATE       "cm_responder_enabled"
 #define PROP_NAME_DISABLE_REFRESH           "disable_refresh"
 #define PROP_NAME_DISABLE_DISCONNECT_CB     "disable_disconnect_callbacks"
+
 /* A value of 10 will be passed to wtable_create in subscription code */
 #define DEFAULT_GROUP_SIZE_HINT             100
 
@@ -176,6 +178,7 @@ typedef struct transportImpl_
     uint8_t                 mDisableDisconnectCb;
     preInitialScheme         mPreInitialScheme;
     mama_bool_t             mPreRecapCacheEnabled;
+    mama_bool_t             mRecapStrategy;        /* DQWORK */
     void*                   mClosure;
 } transportImpl;
 
@@ -462,6 +465,22 @@ static void setFtStrategy (mamaTransport transport)
     }
 }
 
+/* DQWORK */
+static void setRecapStrategy (mamaTransport transport, const char* middleware)
+{
+    char propNameBuf[256];
+
+    if (!self) return;
+
+    snprintf (propNameBuf, 256, "mama.%s.transport.%s.maybestale.recap", middleware, self->mName);
+
+    self->mRecapStrategy = strtobool (mama_getProperty (propNameBuf));
+
+    mama_log (MAMA_LOG_LEVEL_NORMAL,
+              "%s: Stale/Recap %s", self->mName, self->mRecapStrategy ? "enabled" : "disabled");
+}   
+/* DQWORK */
+
 static void enablePreRecapCache (mamaTransport transport, const char* middleware)
 {
     char propNameBuf[256];
@@ -475,6 +494,7 @@ static void enablePreRecapCache (mamaTransport transport, const char* middleware
     mama_log (MAMA_LOG_LEVEL_NORMAL,
               "%s: Pre-Recap cache %s", self->mName, self->mPreRecapCacheEnabled ? "enabled" : "disabled");
 }    
+
 void mamaTransport_disableRefresh(mamaTransport transport, uint8_t disable)
 {
     self->mDisableRefresh=disable;
@@ -872,6 +892,7 @@ mamaTransport_create (mamaTransport transport,
     setPreInitialStrategy ((mamaTransport)self);
     setDQStrategy ((mamaTransport)self);
     setFtStrategy ((mamaTransport)self);
+    setRecapStrategy ((mamaTransport)self, middleware);            /* DQWORK */
     enablePreRecapCache ((mamaTransport)self, middleware);
 
     if (mamaTransportImpl_disableDisconnectCb (name))
@@ -2548,6 +2569,31 @@ mamaTransport_getDeactivateSubscriptionOnError (mamaTransport transport)
 /* Internal Functions. */
 /* *************************************************** */
 
+/* DQWORK */
+static void
+sendRecaps (wList list, void* element, void* closure)
+{
+    SubscriptionInfo* subsc = (SubscriptionInfo*)element;
+    mamaSubscription_requestRecap(subsc->mSubscription);
+}
+
+static void MAMACALLTYPE
+sendStalesCb (mamaQueue queue, void* closure)
+{
+    mamaSubscription sub = (mamaSubscription) closure;
+    mamaSubscription_setPossiblyStaleEx (sub);
+}
+
+static void
+sendStales (wList list, void* element, void* closure)
+{
+    SubscriptionInfo* subsc = (SubscriptionInfo*)element;
+    mamaQueue queue = NULL;
+    mamaSubscription_getQueue (subsc->mSubscription, &queue);
+    mamaQueue_enqueueEvent (queue, (mamaQueueEventCB)sendStalesCb, subsc->mSubscription);
+}
+/* DQWORK */
+
 void mamaTransportImpl_invokeTransportCallback (mamaTransport transport,
                                                 mamaTransportEvent event,
                                                 short cause,
@@ -2580,6 +2626,41 @@ void mamaTransportImpl_invokeTransportCallback (mamaTransport transport,
             self->mCause        = 0;
             self->mPlatformInfo = NULL;
         }
+        /* DQWORK */
+        if (self->mRecapStrategy)
+        {
+            switch (event)
+            {
+                case MAMA_TRANSPORT_DISCONNECT:
+                    if (self->mSetPossiblyStaleForAll)
+                    {
+                        /* The refresh transport may still not be valid. */
+                        if (NULL != self->mRefreshTransport)
+                        {
+                            refreshTransport_iterateListeners (self->mRefreshTransport, sendStales, NULL);
+                        }
+                        /* Otherwise iterate the local list of subscriptions. */
+                        else
+                        {
+                            list_for_each (self->mListeners, sendStales, NULL);
+                        }
+                    }
+                    break;
+                case MAMA_TRANSPORT_RECONNECT:
+                    /* The refresh transport may still not be valid. */
+                    if (NULL != self->mRefreshTransport)
+                    {
+                        refreshTransport_iterateListeners (self->mRefreshTransport, sendRecaps, NULL);
+                    }
+                    /* Otherwise iterate the local list of subscriptions. */
+                    else
+                    {
+                        list_for_each (self->mListeners, sendRecaps, NULL);
+                    }
+                    break;
+            }
+        }
+        /* DQWORK */
     }
 }
 

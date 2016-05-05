@@ -40,4 +40,4 @@ headers = Glob('mamda/*.h')
 env.InstallLibrary(sources, target)
 
 if ( 'dynamic' == env['build'] or len(env['buildtype']) == 1 ):
-    env.Install('$incdir/mamda/orderbooks',headers)
+    env.Install('$incdir/mamda',headers)

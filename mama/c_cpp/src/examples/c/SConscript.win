@@ -34,8 +34,8 @@ env.Append(
 for b in binaries:
 	examplesrc = '%s.c' % (b)
 	example = env.Program(b, examplesrc) 
-	if env['vsver'] >= 8:
-		env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
+	# if env['vsver'] >= 8:
+	# 	env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
 	InstBin.append( example )
 	InstExamples.append( examplesrc )
 

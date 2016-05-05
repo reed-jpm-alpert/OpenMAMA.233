@@ -451,12 +451,37 @@ JNIEXPORT void JNICALL Java_com_wombat_mama_MamaPublisher__1sendFromInboxWithThr
     return;
 }
   
+/*
+ *  Class:     com_wombat_mama_MamaPublisher
+ *  Method:    _destroy
+ *  Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_com_wombat_mama_MamaPublisher__1destroy
+  (JNIEnv *env, jobject this)
+{
+    jlong           publisherPointer    =   0;
+    mama_status     status              =   MAMA_STATUS_OK;
+    char errorString[UTILS_MAX_ERROR_STRING_LENGTH];
+
+    publisherPointer = (*env)->GetLongField(env, this, publisherPointerFieldId_g);
+    assert(publisherPointer!=0);
+
+    if (MAMA_STATUS_OK != mamaPublisher_destroy(
+        CAST_JLONG_TO_POINTER(mamaPublisher, publisherPointer)))
+    {
+         utils_buildErrorStringForStatus(
+                errorString, UTILS_MAX_ERROR_STRING_LENGTH,
+                "Failed to destroy publisher.", status);
+        utils_throwMamaException(env,errorString);
+    }
+}
+ 
 static void MAMACALLTYPE sendCompleteCB (mamaPublisher publisher,
                                          mamaMsg       msg,
                                          mama_status   status,
                                          void*         closure)
 {
- JNIEnv*              env         = NULL;
+    JNIEnv*              env         = NULL;
     sendMsgCallbackClosure* closureData = (sendMsgCallbackClosure*)closure;
 	/*Get the env for the current thread*/
     env = utils_getENV(javaVM_g);
@@ -465,11 +490,13 @@ static void MAMACALLTYPE sendCompleteCB (mamaPublisher publisher,
         (*env)->CallVoidMethod(env, closureData->mClientJavaCallback, sendCallbackMethod_g);
 
     if (closureData && (closureData->mClientJavaCallback))
-        (*env)->DeleteGlobalRef(env,closureData->mClientJavaCallback);
+        (*env)->DeleteGlobalRef(env, closureData->mClientJavaCallback);
 
-    if(closure)
-        (*env)->DeleteGlobalRef(env,closure);
+    if (closureData && closureData->mClientClosure)
+        (*env)->DeleteGlobalRef(env, closureData->mClientClosure);
 
+    if (closure)
+        free(closure);
 }
 
 /*

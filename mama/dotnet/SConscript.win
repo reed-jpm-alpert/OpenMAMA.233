@@ -3,6 +3,11 @@
 import os
 import posixpath
 import platform
+
+import sys
+reload(sys)  
+sys.setdefaultencoding('utf8')
+
 from custom_builders import install_dotnet_library
 from custom_builders import build_ndoc
 Import('env')
@@ -32,6 +37,8 @@ if dotnet_version == '2.0':
 
 elif dotnet_version == '1.0':
     framework_dir = posixpath.join( framework_dir, 'v1.1.4322' )
+
+framework_dir = env['dotnet_framework']
 
 env['CSC'] = posixpath.join(framework_dir,'csc.exe')
 AssemblyRefs = []
@@ -236,7 +243,8 @@ if 'dynamic' in env['build']:
         env.Log("C# testtool MamdaBookSelfTest included in examples")
 
 
-if env['with_docs'] == True:
-    doc = env.BuildNDoc(lib, doc_xml, doc_dir)
+# if env['with_docs'] == True:
+#     doc = env.BuildNDoc(lib, doc_xml, doc_dir)
 
 Clean(lib, [ cs, ai,])
+

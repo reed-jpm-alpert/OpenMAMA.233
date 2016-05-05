@@ -19,8 +19,8 @@ def install_library(env, source, target):
         env.Alias('install', env.Install('$bindir', dll ))
         env.Alias('install', env.Install('$bindir', pdb ))
 
-        if env['vsver_maj'] >= 8:
-            env.AddPostAction( library, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;2')
+        #if env['vsver_maj'] >= 8:
+        #    env.AddPostAction( library, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;2')
 
 
     elif 'static' in env['build']:

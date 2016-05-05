@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import os
 Import('env')
 env = env.Clone()
 
@@ -63,6 +64,12 @@ else:
                      'nsl',
                      'm',
                      ])
+
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
 
 bins = [
     'comboticker',

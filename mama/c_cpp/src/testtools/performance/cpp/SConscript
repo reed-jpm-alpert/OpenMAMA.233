@@ -19,6 +19,12 @@ env.Append( LIBPATH = libPath )
 env.Append( CPPPATH = [ includePath ] )
 env.Append( LIBS = [ 'mamacpp','mama','dl','pthread','wombatcommon' ] )
 
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
+
 replycpp = env.Program('mamapingpong_replycpp','mamapingpong_replycpp.cpp')
 requestercpp = env.Program('mamapingpong_requestercpp','mamapingpong_requestercpp.cpp')
 

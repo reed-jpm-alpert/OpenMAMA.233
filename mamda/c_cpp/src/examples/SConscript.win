@@ -60,8 +60,8 @@ for b in binaries:
     else:
         example = env.Program(b, sources)
 
-    if env['vsver'] >= 8:
-		env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
+    #if env['vsver'] >= 8:
+	#	env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
 
     binary.append( example )
 
@@ -71,8 +71,8 @@ for b in news:
     sources.append( [ parsecmdObj, dictrequesterObj ] )
 
     example = env.Program(b, sources, LIBS = env['LIBS'] + ['libmamdanews%s' % env['suffix']])
-    if env['vsver'] >= 8:
-		env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
+    #if env['vsver'] >= 8:
+	#	env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
     binary.append( example )
 
 for b in books:
@@ -81,8 +81,8 @@ for b in books:
     sources.append( [ parsecmdObj, dictrequesterObj ] )
 
     example = env.Program(b, sources, LIBS = env['LIBS'] + ['libmamdabook%s' % env['suffix']])
-    if env['vsver'] >= 8:
-		env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
+    #if env['vsver'] >= 8:
+	#	env.AddPostAction( example, 'mt.exe -nologo -manifest ${TARGET}.manifest -outputresource:$TARGET;1')
 
     binary.append( example )
 

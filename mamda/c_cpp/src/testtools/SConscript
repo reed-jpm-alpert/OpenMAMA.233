@@ -42,6 +42,12 @@ else:
                      'pthread',
                      ])
 
+if env['entitled'] == True:
+    env.Append(
+    LIBPATH = [ os.path.join(env['entitle_home'],'lib') ],
+    LIBS = ['oeac']
+)
+
 bins = ['bookselftest', 'quoteselftest', 'tradeselftest']
 
 binary = []

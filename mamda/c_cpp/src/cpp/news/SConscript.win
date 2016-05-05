@@ -26,4 +26,4 @@ headers = Glob('mamda/*.h')
 env.InstallLibrary(sources, target)
 
 if ( 'dynamic' == env['build'] or len(env['buildtype']) == 1 ):
-    env.Install('$incdir/mamda/news',headers)
+    env.Install('$incdir/mamda',headers)

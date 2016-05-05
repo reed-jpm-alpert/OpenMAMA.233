@@ -452,6 +452,7 @@ mamaSubscription_setupBasic (
     }
 
 #ifdef WITH_ENTITLEMENTS
+	{
     mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
     if (gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge))
     {
@@ -461,6 +462,7 @@ mamaSubscription_setupBasic (
     }
     else
         self->mSubjectContext.mOeaSubscription = oeaClient_newSubscription (&entitlementStatus, gEntitlementClient);
+	}
 #endif
 
     /*Up from entitlement check based on string compare on symbol*/
@@ -484,9 +486,11 @@ mamaSubscription_setupBasic (
             if (!self->mRequiresInitial) return MAMA_STATUS_INVALID_ARG;
             subscMsgType = MAMA_SUBSC_SNAPSHOT;
 #ifdef WITH_ENTITLEMENTS
+			{
             mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
             if (!(gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge)))
                 oeaSubscription_setIsSnapshot (self->mSubjectContext.mOeaSubscription, 1);
+			}
 #endif
             break;
         case MAMA_SERVICE_LEVEL_CONFLATED:/*fall through*/
@@ -1194,9 +1198,11 @@ mamaSubscription_getSubjectContext (mamaSubscription subscription,
         msgUtils_getIssueSymbol (msg, &issueSymbol);
         context->mSymbol = copyString (issueSymbol);
         #ifdef WITH_ENTITLEMENTS
+		{
         mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
         if (!(gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge)))
             context->mOeaSubscription = oeaClient_newSubscription (&entitlementStatus, gEntitlementClient);
+		}
         #endif 
 
         wtable_insert (self->mSubjects, (char*)sendSubject, (void*)context);
@@ -1219,6 +1225,34 @@ mamaSubscription_isTportDisconnected(mamaSubscription subscription)
 {
    return self->mBridgeImpl->bridgeMamaSubscriptionIsTportDisconnected(self->mSubscBridge);
 }
+
+/* DQWORK */
+mama_status
+mamaSubscription_setPossiblyStaleEx (mamaSubscription subscription)
+{
+    short       cause;
+    const void* platformInfo = NULL;
+    mama_status status       = MAMA_STATUS_OK;
+
+    if (!self) return MAMA_STATUS_NULL_ARG;
+    if (self->mUserCallbacks.onQuality != NULL)
+    {
+        mamaTransportImpl_getAdvisoryCauseAndPlatformInfo (self->mTransport,
+                                                           &cause,
+                                                           &platformInfo);
+
+        self->mUserCallbacks.onQuality (subscription,
+                                       MAMA_QUALITY_MAYBE_STALE,
+                                       self->mSubscSymbol,
+                                       cause,
+                                       platformInfo,
+                                       self->mClosure);
+    }
+
+    return status;
+}
+
+/* DQWORK */
 
 mama_status
 mamaSubscription_setPossiblyStale (mamaSubscription subscription)
@@ -2060,9 +2094,11 @@ mamaSubscription_processTportMsg( mamaSubscription subscription,
     }
 
 #ifdef WITH_ENTITLEMENTS
+	{
     mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
     if (!(gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge)))
         mamaMsg_getEntitleCode (msg, &entitleCode);
+	}
 #endif
     if (entitleCode == 0)
     {
@@ -2114,9 +2150,11 @@ mamaSubscription_processWildCardMsg( mamaSubscription subscription,
     }
 
 #ifdef WITH_ENTITLEMENTS
+	{
     mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
     if (!(gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge)))
         mamaMsg_getEntitleCode (msg, &entitleCode);
+	}
 #endif
     if (entitleCode == 0)
     {
@@ -2189,9 +2227,11 @@ mamaSubscription_processMsg (mamaSubscription subscription, mamaMsg msg)
     {
         int32_t entitleCode = 0;
 #ifdef WITH_ENTITLEMENTS
+		{
         mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
         if (!(gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge)))
             mamaMsg_getEntitleCode (msg, &entitleCode);
+		}
 #endif
         if (entitleCode == 0)
         {
@@ -2427,10 +2467,11 @@ isEntitledToSymbol (const char *source, const char*symbol, mamaSubscription subs
 #ifdef WITH_ENTITLEMENTS 
     int result = 0;
     char subject[WOMBAT_SUBJECT_MAX];
+    mamaBridgeImpl* bridge = NULL;
 
     snprintf (subject, WOMBAT_SUBJECT_MAX, "%s.%s", source, symbol);
 
-    mamaBridgeImpl* bridge = mamaSubscription_getBridgeImpl(subscription);
+    bridge = mamaSubscription_getBridgeImpl(subscription);
 
     if (gEntitlementClient == 0 || mamaBridgeImpl_areEntitlementsDeferred(bridge)) /* Not enforcing entitlements. */
     {
