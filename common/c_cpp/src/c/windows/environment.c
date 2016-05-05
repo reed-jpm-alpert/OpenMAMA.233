@@ -20,6 +20,9 @@
 
 #include "stdlib.h"
 #include "wombat/environment.h"
+#include "wombat/port.h"
+
+static wthread_static_mutex_t envLock = WSTATIC_MUTEX_INITIALIZER;
 
 int environment_deleteVariable(const char *name)
 {
@@ -30,8 +33,11 @@ int environment_deleteVariable(const char *name)
     if(name != NULL)
     {
         /* Set the value. */
-        errno_t pe = _putenv_s(name, "");
-        if(pe == 0)    
+        errno_t pe;
+        wthread_static_mutex_lock(&envLock);
+        pe = _putenv_s(name, "");
+        wthread_static_mutex_unlock(&envLock);
+       if(pe == 0)    
         {
             ret = 0;
         }
@@ -48,7 +54,9 @@ const char *environment_getVariable(const char *name)
     /* Check the argument. */
     if(name != NULL)
     {
+        wthread_static_mutex_lock(&envLock);
         ret = getenv(name);  
+        wthread_static_mutex_unlock(&envLock);
 
         /* Return NULL for a blank string. */
         if((ret != NULL) && (ret[0] == '\0'))
@@ -69,7 +77,10 @@ int environment_setVariable(const char *name, const char *value)
     if((name != NULL) && (value != NULL))
     {
         /* Set the value. */
-        errno_t pe = _putenv_s(name, value);
+        errno_t pe;
+        wthread_static_mutex_lock(&envLock);
+        pe = _putenv_s(name, value);
+        wthread_static_mutex_unlock(&envLock);
         if(pe == 0)    
         {
             ret = 0;
