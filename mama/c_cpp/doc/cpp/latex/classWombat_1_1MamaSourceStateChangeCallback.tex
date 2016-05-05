@@ -1,0 +1,40 @@
+\hypertarget{classWombat_1_1MamaSourceStateChangeCallback}{
+\section{Wombat::MamaSourceStateChangeCallback Class Reference}
+\label{classWombat_1_1MamaSourceStateChangeCallback}\index{Wombat::MamaSourceStateChangeCallback@{Wombat::MamaSourceStateChangeCallback}}
+}
+
+
+Applications can register with \hyperlink{classWombat_1_1MamaSourceGroup}{MamaSourceGroup} to receive state change notifications when the state of sources within the group has changed.  
+
+
+{\ttfamily \#include $<$MamaSourceStateChangeCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSourceStateChangeCallback_a47631526146f256086453731e24306c0}{$\sim$MamaSourceStateChangeCallback} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSourceStateChangeCallback_aebc13e83b3de1072ef12a6083bc5061b}{onStateChanged} (\hyperlink{classWombat_1_1MamaSourceGroup}{MamaSourceGroup} \&sourceGroup, \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$topWeightSource)=0
+\begin{DoxyCompactList}\small\item\em State change callback. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Applications can register with \hyperlink{classWombat_1_1MamaSourceGroup}{MamaSourceGroup} to receive state change notifications when the state of sources within the group has changed. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSourceStateChangeCallback_a47631526146f256086453731e24306c0}{
+\index{Wombat::MamaSourceStateChangeCallback@{Wombat::MamaSourceStateChangeCallback}!$\sim$MamaSourceStateChangeCallback@{$\sim$MamaSourceStateChangeCallback}}
+\index{$\sim$MamaSourceStateChangeCallback@{$\sim$MamaSourceStateChangeCallback}!Wombat::MamaSourceStateChangeCallback@{Wombat::MamaSourceStateChangeCallback}}
+\subsubsection[{$\sim$MamaSourceStateChangeCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSourceStateChangeCallback::$\sim$MamaSourceStateChangeCallback (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceStateChangeCallback_a47631526146f256086453731e24306c0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSourceStateChangeCallback_aebc13e83b3de1072ef12a6083bc5061b}{
+\index{Wombat::MamaSourceStateChangeCallback@{Wombat::MamaSourceStateChangeCallback}!onStateChanged@{onStateChanged}}
+\index{onStateChanged@{onStateChanged}!Wombat::MamaSourceStateChangeCallback@{Wombat::MamaSourceStateChangeCallback}}
+\subsubsection[{onStateChanged}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSourceStateChangeCallback::onStateChanged ({\bf MamaSourceGroup} \& {\em sourceGroup}, \/  {\bf MamaSource} $\ast$ {\em topWeightSource})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceStateChangeCallback_aebc13e83b3de1072ef12a6083bc5061b}
+
+
+State change callback. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceGroup}]The source group notifying the applications. \item[{\em topWeightSource}]The top weight source in the group. Determined when \_\-reevaluate() is called. \end{DoxyParams}

@@ -1,0 +1,159 @@
+\hypertarget{classWombat_1_1MamaSourceManager}{
+\section{Wombat::MamaSourceManager Class Reference}
+\label{classWombat_1_1MamaSourceManager}\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+}
+
+
+A MAMA source manager maintains information about a set of data sources, including the quality of the data coming from those sources.  
+
+
+{\ttfamily \#include $<$MamaSourceManager.h$>$}Inheritance diagram for Wombat::MamaSourceManager::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamaSourceManager}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamaSourceManager_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef const \hyperlink{classWombat_1_1MamaSourceManager_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaSourceManager_a3b80b1f2c1dc79abc9d8b77e839a613c}{const\_\-iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSourceManager_ab8b625fb94edc7ab2e9667dc5fa6ff5a}{MamaSourceManager} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamaSourceManager_a1f01b8eeb2c6c25aea10f343818dc631}{$\sim$MamaSourceManager} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceManager_a48e8e63e2e5d5992f374165f63b7ae9c}{create} (const char $\ast$sourceName)
+\item 
+virtual \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceManager_aeadd2948a8f91b35875ba7648b38a7f9}{findOrCreate} (const char $\ast$sourceName)
+\item 
+virtual \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceManager_a378d8f731a0482fdbcf4147fee8e8d16}{find} (const char $\ast$sourceName)
+\item 
+virtual const \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceManager_aa54946b75daea1c445ce03b6f863dd56}{find} (const char $\ast$sourceName) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSourceManager_ae36a1971e3107d9623faef31c4d867bc}{add} (\hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSourceManager_a1cd90bf091046284bd5c18bfc03269a6}{add} (const char $\ast$sourceName, \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source)
+\item 
+\hyperlink{classmama__size__t}{mama\_\-size\_\-t} \hyperlink{classWombat_1_1MamaSourceManager_ac20ceefc8eea2e1c7e63c151f92a9b1f}{size} () const 
+\item 
+\hyperlink{classWombat_1_1MamaSourceManager_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaSourceManager_aa267a206bb4ff04f82bd50926ba930b3}{begin} ()
+\item 
+\hyperlink{classWombat_1_1MamaSourceManager_1_1iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamaSourceManager_a2ff1856ac4db746e873569d1f6f5dd13}{begin} () const 
+\item 
+\hyperlink{classWombat_1_1MamaSourceManager_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaSourceManager_ab981045963d421d19eaa00c07b50294e}{end} ()
+\item 
+\hyperlink{classWombat_1_1MamaSourceManager_1_1iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamaSourceManager_a453faf1ec11acd2184d21f8bb797fbf1}{end} () const 
+\item 
+mamaSourceManager \hyperlink{classWombat_1_1MamaSourceManager_ac3c7d7a8d70fde45f6a45caa669c88e7}{getCValue} ()
+\item 
+const mamaSourceManager \hyperlink{classWombat_1_1MamaSourceManager_aea217b2281827fd1d3abfb49062b8c46}{getCValue} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A MAMA source manager maintains information about a set of data sources, including the quality of the data coming from those sources. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classWombat_1_1MamaSourceManager_a3b80b1f2c1dc79abc9d8b77e839a613c}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!const\_\-iterator@{const\_\-iterator}}
+\index{const\_\-iterator@{const\_\-iterator}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{const\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef const {\bf iterator} {\bf Wombat::MamaSourceManager::const\_\-iterator}}}
+\label{classWombat_1_1MamaSourceManager_a3b80b1f2c1dc79abc9d8b77e839a613c}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSourceManager_ab8b625fb94edc7ab2e9667dc5fa6ff5a}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!MamaSourceManager@{MamaSourceManager}}
+\index{MamaSourceManager@{MamaSourceManager}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{MamaSourceManager}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSourceManager::MamaSourceManager ()}}
+\label{classWombat_1_1MamaSourceManager_ab8b625fb94edc7ab2e9667dc5fa6ff5a}
+\hypertarget{classWombat_1_1MamaSourceManager_a1f01b8eeb2c6c25aea10f343818dc631}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!$\sim$MamaSourceManager@{$\sim$MamaSourceManager}}
+\index{$\sim$MamaSourceManager@{$\sim$MamaSourceManager}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{$\sim$MamaSourceManager}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSourceManager::$\sim$MamaSourceManager ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_a1f01b8eeb2c6c25aea10f343818dc631}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSourceManager_a48e8e63e2e5d5992f374165f63b7ae9c}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!create@{create}}
+\index{create@{create}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaSource}$\ast$ Wombat::MamaSourceManager::create (const char $\ast$ {\em sourceName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_a48e8e63e2e5d5992f374165f63b7ae9c}
+\hypertarget{classWombat_1_1MamaSourceManager_aeadd2948a8f91b35875ba7648b38a7f9}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!findOrCreate@{findOrCreate}}
+\index{findOrCreate@{findOrCreate}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{findOrCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaSource}$\ast$ Wombat::MamaSourceManager::findOrCreate (const char $\ast$ {\em sourceName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_aeadd2948a8f91b35875ba7648b38a7f9}
+\hypertarget{classWombat_1_1MamaSourceManager_a378d8f731a0482fdbcf4147fee8e8d16}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!find@{find}}
+\index{find@{find}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaSource}$\ast$ Wombat::MamaSourceManager::find (const char $\ast$ {\em sourceName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_a378d8f731a0482fdbcf4147fee8e8d16}
+
+
+Reimplemented in \hyperlink{classWombat_1_1MamaSourceDerivative_a625240eadddf0f2f2f08d7187dbbd9f6}{Wombat::MamaSourceDerivative}.\hypertarget{classWombat_1_1MamaSourceManager_aa54946b75daea1c445ce03b6f863dd56}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!find@{find}}
+\index{find@{find}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaSource}$\ast$ Wombat::MamaSourceManager::find (const char $\ast$ {\em sourceName}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_aa54946b75daea1c445ce03b6f863dd56}
+
+
+Reimplemented in \hyperlink{classWombat_1_1MamaSourceDerivative_a2c54840ec7876ccfd3213b021976132d}{Wombat::MamaSourceDerivative}.\hypertarget{classWombat_1_1MamaSourceManager_ae36a1971e3107d9623faef31c4d867bc}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!add@{add}}
+\index{add@{add}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSourceManager::add ({\bf MamaSource} $\ast$ {\em source})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_ae36a1971e3107d9623faef31c4d867bc}
+\hypertarget{classWombat_1_1MamaSourceManager_a1cd90bf091046284bd5c18bfc03269a6}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!add@{add}}
+\index{add@{add}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSourceManager::add (const char $\ast$ {\em sourceName}, \/  {\bf MamaSource} $\ast$ {\em source})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_a1cd90bf091046284bd5c18bfc03269a6}
+\hypertarget{classWombat_1_1MamaSourceManager_ac20ceefc8eea2e1c7e63c151f92a9b1f}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!size@{size}}
+\index{size@{size}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-size\_\-t} Wombat::MamaSourceManager::size () const}}
+\label{classWombat_1_1MamaSourceManager_ac20ceefc8eea2e1c7e63c151f92a9b1f}
+\hypertarget{classWombat_1_1MamaSourceManager_aa267a206bb4ff04f82bd50926ba930b3}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!begin@{begin}}
+\index{begin@{begin}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Wombat::MamaSourceManager::begin ()}}
+\label{classWombat_1_1MamaSourceManager_aa267a206bb4ff04f82bd50926ba930b3}
+\hypertarget{classWombat_1_1MamaSourceManager_a2ff1856ac4db746e873569d1f6f5dd13}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!begin@{begin}}
+\index{begin@{begin}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\_\-iterator} Wombat::MamaSourceManager::begin () const}}
+\label{classWombat_1_1MamaSourceManager_a2ff1856ac4db746e873569d1f6f5dd13}
+\hypertarget{classWombat_1_1MamaSourceManager_ab981045963d421d19eaa00c07b50294e}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!end@{end}}
+\index{end@{end}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Wombat::MamaSourceManager::end ()}}
+\label{classWombat_1_1MamaSourceManager_ab981045963d421d19eaa00c07b50294e}
+\hypertarget{classWombat_1_1MamaSourceManager_a453faf1ec11acd2184d21f8bb797fbf1}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!end@{end}}
+\index{end@{end}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\_\-iterator} Wombat::MamaSourceManager::end () const}}
+\label{classWombat_1_1MamaSourceManager_a453faf1ec11acd2184d21f8bb797fbf1}
+\hypertarget{classWombat_1_1MamaSourceManager_ac3c7d7a8d70fde45f6a45caa669c88e7}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaSourceManager Wombat::MamaSourceManager::getCValue ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_ac3c7d7a8d70fde45f6a45caa669c88e7}
+
+
+Reimplemented in \hyperlink{classWombat_1_1MamaSource_a84f406ac743b6b1bbad5adfc8e14db3c}{Wombat::MamaSource}.\hypertarget{classWombat_1_1MamaSourceManager_aea217b2281827fd1d3abfb49062b8c46}{
+\index{Wombat::MamaSourceManager@{Wombat::MamaSourceManager}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaSourceManager@{Wombat::MamaSourceManager}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaSourceManager Wombat::MamaSourceManager::getCValue () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaSourceManager_aea217b2281827fd1d3abfb49062b8c46}
+
+
+Reimplemented in \hyperlink{classWombat_1_1MamaSource_a53b49953e08d89062dd97e476e1a2e02}{Wombat::MamaSource}.

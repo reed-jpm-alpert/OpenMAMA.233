@@ -1,0 +1,42 @@
+\hypertarget{classWombat_1_1MamaSendCompleteCallback}{
+\section{Wombat::MamaSendCompleteCallback Class Reference}
+\label{classWombat_1_1MamaSendCompleteCallback}\index{Wombat::MamaSendCompleteCallback@{Wombat::MamaSendCompleteCallback}}
+}
+
+
+Callback interface for use with the \hyperlink{classWombat_1_1MamaPublisher_a77970e88c69a850c451d36fcb5c720cd}{MamaPublisher.sendWithThrottle()} and \hyperlink{classWombat_1_1MamaPublisher_aa9804ff85813df84e94bdea6215ae352}{MamaPublisher.sendFromInboxWithThrottle()} methods.  
+
+
+{\ttfamily \#include $<$MamaSendCompleteCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSendCompleteCallback_ad4a151b81e17fecebeeda573bba405c3}{$\sim$MamaSendCompleteCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSendCompleteCallback_aa6f6cd10cb4b7b5c84c74056badd365f}{onSendComplete} (\hyperlink{classWombat_1_1MamaPublisher}{MamaPublisher} \&publisher, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg, \hyperlink{classWombat_1_1MamaStatus}{MamaStatus} \&status, void $\ast$closure)=0
+\begin{DoxyCompactList}\small\item\em Called whenever the API has sent a message on the throttle queue. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback interface for use with the \hyperlink{classWombat_1_1MamaPublisher_a77970e88c69a850c451d36fcb5c720cd}{MamaPublisher.sendWithThrottle()} and \hyperlink{classWombat_1_1MamaPublisher_aa9804ff85813df84e94bdea6215ae352}{MamaPublisher.sendFromInboxWithThrottle()} methods. The {\ttfamily \hyperlink{classWombat_1_1MamaSendCompleteCallback_aa6f6cd10cb4b7b5c84c74056badd365f}{onSendComplete()}} method is invoked once a message being sent on the throttle is no longer required by the API.
+
+Messages sent on the throttle queue are no longer destroyed by the API. It is the responsibility of the application developer to manage the lifecycle of any messages sent on the throttle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSendCompleteCallback_ad4a151b81e17fecebeeda573bba405c3}{
+\index{Wombat::MamaSendCompleteCallback@{Wombat::MamaSendCompleteCallback}!$\sim$MamaSendCompleteCallback@{$\sim$MamaSendCompleteCallback}}
+\index{$\sim$MamaSendCompleteCallback@{$\sim$MamaSendCompleteCallback}!Wombat::MamaSendCompleteCallback@{Wombat::MamaSendCompleteCallback}}
+\subsubsection[{$\sim$MamaSendCompleteCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSendCompleteCallback::$\sim$MamaSendCompleteCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSendCompleteCallback_ad4a151b81e17fecebeeda573bba405c3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSendCompleteCallback_aa6f6cd10cb4b7b5c84c74056badd365f}{
+\index{Wombat::MamaSendCompleteCallback@{Wombat::MamaSendCompleteCallback}!onSendComplete@{onSendComplete}}
+\index{onSendComplete@{onSendComplete}!Wombat::MamaSendCompleteCallback@{Wombat::MamaSendCompleteCallback}}
+\subsubsection[{onSendComplete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSendCompleteCallback::onSendComplete ({\bf MamaPublisher} \& {\em publisher}, \/  {\bf MamaMsg} $\ast$ {\em msg}, \/  {\bf MamaStatus} \& {\em status}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSendCompleteCallback_aa6f6cd10cb4b7b5c84c74056badd365f}
+
+
+Called whenever the API has sent a message on the throttle queue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The publisher object used to send the message. \item[{\em msg}]The \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} which has been sent from the throttle queue. \item[{\em status}]Whether the message was successfully sent from the throttle. A value of MAMA\_\-STATUS\_\-OK indicates that the send was successful. \item[{\em closure}]User supplied context data. \end{DoxyParams}

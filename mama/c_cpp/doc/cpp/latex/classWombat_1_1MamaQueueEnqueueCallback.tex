@@ -1,0 +1,42 @@
+\hypertarget{classWombat_1_1MamaQueueEnqueueCallback}{
+\section{Wombat::MamaQueueEnqueueCallback Class Reference}
+\label{classWombat_1_1MamaQueueEnqueueCallback}\index{Wombat::MamaQueueEnqueueCallback@{Wombat::MamaQueueEnqueueCallback}}
+}
+
+
+Callback interface for the \hyperlink{classWombat_1_1MamaQueue_a852c925667c07e8bd0b3bc8cf30f4986}{MamaQueue::setEnqueueCallback} () method.  
+
+
+{\ttfamily \#include $<$MamaQueueEnqueueCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaQueueEnqueueCallback_a85d6d46198292c5932fb8fc727b2f2a9}{$\sim$MamaQueueEnqueueCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueEnqueueCallback_a7377a77ca8556b9621233ba5c729c0ba}{onEventEnqueue} (void $\ast$closure)=0
+\begin{DoxyCompactList}\small\item\em Called whenever an event is enqueued to the event queue. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback interface for the \hyperlink{classWombat_1_1MamaQueue_a852c925667c07e8bd0b3bc8cf30f4986}{MamaQueue::setEnqueueCallback} () method. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaQueueEnqueueCallback_a85d6d46198292c5932fb8fc727b2f2a9}{
+\index{Wombat::MamaQueueEnqueueCallback@{Wombat::MamaQueueEnqueueCallback}!$\sim$MamaQueueEnqueueCallback@{$\sim$MamaQueueEnqueueCallback}}
+\index{$\sim$MamaQueueEnqueueCallback@{$\sim$MamaQueueEnqueueCallback}!Wombat::MamaQueueEnqueueCallback@{Wombat::MamaQueueEnqueueCallback}}
+\subsubsection[{$\sim$MamaQueueEnqueueCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaQueueEnqueueCallback::$\sim$MamaQueueEnqueueCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueEnqueueCallback_a85d6d46198292c5932fb8fc727b2f2a9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaQueueEnqueueCallback_a7377a77ca8556b9621233ba5c729c0ba}{
+\index{Wombat::MamaQueueEnqueueCallback@{Wombat::MamaQueueEnqueueCallback}!onEventEnqueue@{onEventEnqueue}}
+\index{onEventEnqueue@{onEventEnqueue}!Wombat::MamaQueueEnqueueCallback@{Wombat::MamaQueueEnqueueCallback}}
+\subsubsection[{onEventEnqueue}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueEnqueueCallback::onEventEnqueue (void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueEnqueueCallback_a7377a77ca8556b9621233ba5c729c0ba}
+
+
+Called whenever an event is enqueued to the event queue. LBM Bridge: NB! Users may not dispatch events from this method. The function is invoked from an LBM internal thread. Attempts to dispatch from here will result in a deadlock
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em closure}]Arbitrary user-\/supplied data passed to \hyperlink{classWombat_1_1MamaQueue_a852c925667c07e8bd0b3bc8cf30f4986}{MamaQueue::setEnqueueCallback} (); \end{DoxyParams}

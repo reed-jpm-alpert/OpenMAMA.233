@@ -1,0 +1,337 @@
+\hypertarget{classWombat_1_1MamaQueue}{
+\section{Wombat::MamaQueue Class Reference}
+\label{classWombat_1_1MamaQueue}\index{Wombat::MamaQueue@{Wombat::MamaQueue}}
+}
+
+
+Queue allows applications to dispatch events in order with multiple threads using a single \hyperlink{classWombat_1_1MamaDispatcher}{MamaDispatcher} for each queue.  
+
+
+{\ttfamily \#include $<$MamaQueue.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaQueue_aca8edd15425492b3eafc994c6e65026b}{MamaQueue} (void)
+\item 
+\hyperlink{classWombat_1_1MamaQueue_af6ce3367fa838bf1514c10afc3e164e5}{MamaQueue} (mamaQueue cQueue)
+\item 
+virtual \hyperlink{classWombat_1_1MamaQueue_ab8a03d3c726605d29e77c42196c9a0e9}{$\sim$MamaQueue} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_af9697625f1bf25772b29dd4c827c2991}{create} (mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Create a queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_ab8a04086971890f7a9a7b0eadf4c2a53}{create} (mamaBridge bridgeImpl, void $\ast$nativeQueue)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_ad5c395fb2d9b7b97686a685be649f3d7}{dispatch} ()
+\begin{DoxyCompactList}\small\item\em Dispatch message. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_adcabd83819f9373cf9662529881b7ed8}{timedDispatch} (uint64\_\-t timeout)
+\begin{DoxyCompactList}\small\item\em Dispatch messages until timeout (see release notes for details). \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_aa173a08f81436cb9da85adf4ce9e570a}{dispatchEvent} ()
+\begin{DoxyCompactList}\small\item\em Dispatch a single event from the specified queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a8b1a038741f3d3c5cd3bcea8708003c7}{enqueueEvent} (\hyperlink{classWombat_1_1MamaQueueEventCallback}{MamaQueueEventCallback} $\ast$callback, void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Add a user event to a queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_af136b615d84a68935e875a3c857a5825}{enqueueEvent} (\hyperlink{classWombat_1_1MamaQueueEventCallback}{MamaQueueEventCallback} \&callback, void $\ast$closure)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_ac5cc7a2954404933c0700b6bea16844a}{stopDispatch} ()
+\begin{DoxyCompactList}\small\item\em stopDispatch the queue. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classWombat_1_1MamaQueue_adccba195eae12f648ab5afcd0db14d0c}{getEventCount} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of events currently on the queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a852c925667c07e8bd0b3bc8cf30f4986}{setEnqueueCallback} (\hyperlink{classWombat_1_1MamaQueueEnqueueCallback}{MamaQueueEnqueueCallback} $\ast$cb, void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Set a callback which will be invoked as each event is added to the underlying event queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a93d4b30ff2f99b071a2d873653381569}{setQueueMonitorCallback} (\hyperlink{classWombat_1_1MamaQueueMonitorCallback}{MamaQueueMonitorCallback} $\ast$cb, void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Register an object to receive callbacks for monitoring the behaviour of the \hyperlink{classWombat_1_1MamaQueue}{MamaQueue}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_ab1c8c7a72c3acd9aac71bc9baebdb6ff}{setHighWatermark} (size\_\-t highWatermark)
+\begin{DoxyCompactList}\small\item\em Specify a high watermark for events on the queue. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classWombat_1_1MamaQueue_a367350a4f52003325fbc72031094f3b5}{getHighWatermark} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the high water mark as set via {\ttfamily setHighWaterMark()}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a186d02095e3e6b65abe0b34603d3ab30}{setLowWatermark} (size\_\-t lowWatermark)
+\begin{DoxyCompactList}\small\item\em Set the low watermark. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classWombat_1_1MamaQueue_abbdc2a846667fd60ee520c141ff0e1c0}{getLowWatermark} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the low water mark as set via {\ttfamily setLowWaterMark()}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_ab44bf7f7f43693737d58f0155dbf7cc3}{setQueueName} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Associate a name identifier with the event queue. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaQueue_a123d62bb20895701ac0407831f3cad1f}{getQueueName} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the string name identifier for the queue as specified from a call to {\ttfamily \hyperlink{classWombat_1_1MamaQueue_ab44bf7f7f43693737d58f0155dbf7cc3}{setQueueName()}}. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaQueue_ae3cbaac8f65debeb5989f0d084091033}{getQueueBridgeName} () const 
+\begin{DoxyCompactList}\small\item\em Retrieve the string name identifier for the queue's bridge. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_af2833301877225698f9d01c19b4ff509}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy a queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a5e4ea93c990531720075e28f27cf8f9d}{setClosure} (void $\ast$closure)
+\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaQueue_a3c964b97c67511bfa2f994790d6ba291}{getClosure} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a6bd9863e8aab8b7ca7d10120dc6eb2c5}{destroyTimedWait} (long timeout)
+\begin{DoxyCompactList}\small\item\em Destroy a queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueue_a2e34e08c5fcf44cf3b347071c1501ec5}{destroyWait} ()
+\begin{DoxyCompactList}\small\item\em Destroy a queue. \item\end{DoxyCompactList}\item 
+mamaQueue \hyperlink{classWombat_1_1MamaQueue_a574267c7489b3e4db622befb1f07fcc4}{getCValue} ()
+\begin{DoxyCompactList}\small\item\em Access to C types for implementation of related classes. \item\end{DoxyCompactList}\item 
+const mamaQueue \hyperlink{classWombat_1_1MamaQueue_a54a801b112d64a8c8d4a56727a9e799a}{getCValue} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaQueue_ab43f6f93c109d66a287f1d45e6a8b284}{setCValue} (mamaQueue cQueue)
+\begin{DoxyCompactList}\small\item\em This can only be set once and only if the c value is not already set -\/ E.g. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+MamaQueueImpl $\ast$ \hyperlink{classWombat_1_1MamaQueue_aea38f0077fd452cbb07197e2017b267c}{mPimpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Queue allows applications to dispatch events in order with multiple threads using a single \hyperlink{classWombat_1_1MamaDispatcher}{MamaDispatcher} for each queue. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaQueue_aca8edd15425492b3eafc994c6e65026b}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!MamaQueue@{MamaQueue}}
+\index{MamaQueue@{MamaQueue}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{MamaQueue}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaQueue::MamaQueue (void)}}
+\label{classWombat_1_1MamaQueue_aca8edd15425492b3eafc994c6e65026b}
+\hypertarget{classWombat_1_1MamaQueue_af6ce3367fa838bf1514c10afc3e164e5}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!MamaQueue@{MamaQueue}}
+\index{MamaQueue@{MamaQueue}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{MamaQueue}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaQueue::MamaQueue (mamaQueue {\em cQueue})}}
+\label{classWombat_1_1MamaQueue_af6ce3367fa838bf1514c10afc3e164e5}
+\hypertarget{classWombat_1_1MamaQueue_ab8a03d3c726605d29e77c42196c9a0e9}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!$\sim$MamaQueue@{$\sim$MamaQueue}}
+\index{$\sim$MamaQueue@{$\sim$MamaQueue}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{$\sim$MamaQueue}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaQueue::$\sim$MamaQueue (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ab8a03d3c726605d29e77c42196c9a0e9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaQueue_af9697625f1bf25772b29dd4c827c2991}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!create@{create}}
+\index{create@{create}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::create (mamaBridge {\em bridgeImpl})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_af9697625f1bf25772b29dd4c827c2991}
+
+
+Create a queue. Queues allow applications to dispatch events in order with multiple threads using a single mamaDispatcher for each queue.
+
+Callers should call delete queue when done.
+
+\begin{DoxyReturn}{Returns}
+a pointer the queue. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaQueue_ab8a04086971890f7a9a7b0eadf4c2a53}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!create@{create}}
+\index{create@{create}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::create (mamaBridge {\em bridgeImpl}, \/  void $\ast$ {\em nativeQueue})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ab8a04086971890f7a9a7b0eadf4c2a53}
+\hypertarget{classWombat_1_1MamaQueue_ad5c395fb2d9b7b97686a685be649f3d7}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{dispatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::dispatch ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ad5c395fb2d9b7b97686a685be649f3d7}
+
+
+Dispatch message. Blocks and dispatches messages until unblock is called. \hypertarget{classWombat_1_1MamaQueue_adcabd83819f9373cf9662529881b7ed8}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!timedDispatch@{timedDispatch}}
+\index{timedDispatch@{timedDispatch}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{timedDispatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::timedDispatch (uint64\_\-t {\em timeout})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_adcabd83819f9373cf9662529881b7ed8}
+
+
+Dispatch messages until timeout (see release notes for details). \hypertarget{classWombat_1_1MamaQueue_aa173a08f81436cb9da85adf4ce9e570a}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!dispatchEvent@{dispatchEvent}}
+\index{dispatchEvent@{dispatchEvent}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{dispatchEvent}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::dispatchEvent ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_aa173a08f81436cb9da85adf4ce9e570a}
+
+
+Dispatch a single event from the specified queue. If there is no event on the queue simply return and do nothing \hypertarget{classWombat_1_1MamaQueue_a8b1a038741f3d3c5cd3bcea8708003c7}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!enqueueEvent@{enqueueEvent}}
+\index{enqueueEvent@{enqueueEvent}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{enqueueEvent}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::enqueueEvent ({\bf MamaQueueEventCallback} $\ast$ {\em callback}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a8b1a038741f3d3c5cd3bcea8708003c7}
+
+
+Add a user event to a queue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em callback}]Instance of the \hyperlink{classWombat_1_1MamaQueueEventCallback}{MamaQueueEventCallback} interface. \hyperlink{classWombat_1_1MamaQueueEventCallback_ae5d78bf4717b97e7d72858a30e2a3233}{MamaQueueEventCallback.onEvent()} will be invoked when the event fires. \item[{\em closure}]Optional user supplied arbitrary closure data which will be passed back in the \hyperlink{classWombat_1_1MamaQueueEventCallback_ae5d78bf4717b97e7d72858a30e2a3233}{MamaQueueEventCallback.onEvent}) callback \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em MamaException}]Not currently implemented for pure Java API. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaQueue_af136b615d84a68935e875a3c857a5825}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!enqueueEvent@{enqueueEvent}}
+\index{enqueueEvent@{enqueueEvent}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{enqueueEvent}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::enqueueEvent ({\bf MamaQueueEventCallback} \& {\em callback}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_af136b615d84a68935e875a3c857a5825}
+\hypertarget{classWombat_1_1MamaQueue_ac5cc7a2954404933c0700b6bea16844a}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!stopDispatch@{stopDispatch}}
+\index{stopDispatch@{stopDispatch}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{stopDispatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::stopDispatch ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ac5cc7a2954404933c0700b6bea16844a}
+
+
+stopDispatch the queue. \hypertarget{classWombat_1_1MamaQueue_adccba195eae12f648ab5afcd0db14d0c}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getEventCount@{getEventCount}}
+\index{getEventCount@{getEventCount}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getEventCount}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\_\-t Wombat::MamaQueue::getEventCount ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_adccba195eae12f648ab5afcd0db14d0c}
+
+
+Returns the number of events currently on the queue. \begin{DoxyReturn}{Returns}
+size\_\-t The number of the events on the queue. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaQueue_a852c925667c07e8bd0b3bc8cf30f4986}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setEnqueueCallback@{setEnqueueCallback}}
+\index{setEnqueueCallback@{setEnqueueCallback}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setEnqueueCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::setEnqueueCallback ({\bf MamaQueueEnqueueCallback} $\ast$ {\em cb}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a852c925667c07e8bd0b3bc8cf30f4986}
+
+
+Set a callback which will be invoked as each event is added to the underlying event queue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cb}]Pointer to an instance of \hyperlink{classWombat_1_1MamaQueueEnqueueCallback}{MamaQueueEnqueueCallback} \item[{\em closure}]Arbitrary user supplied data. Passed back to onEventEnqueue() for each event enqueued. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaQueue_a93d4b30ff2f99b071a2d873653381569}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setQueueMonitorCallback@{setQueueMonitorCallback}}
+\index{setQueueMonitorCallback@{setQueueMonitorCallback}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setQueueMonitorCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::setQueueMonitorCallback ({\bf MamaQueueMonitorCallback} $\ast$ {\em cb}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a93d4b30ff2f99b071a2d873653381569}
+
+
+Register an object to receive callbacks for monitoring the behaviour of the \hyperlink{classWombat_1_1MamaQueue}{MamaQueue}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cb}]Reference to the object which will receive callbacks. \item[{\em closure}]User supplied data which will be returned as the callbacks are invoked. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaQueue_ab1c8c7a72c3acd9aac71bc9baebdb6ff}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setHighWatermark@{setHighWatermark}}
+\index{setHighWatermark@{setHighWatermark}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setHighWatermark}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::setHighWatermark (size\_\-t {\em highWatermark})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ab1c8c7a72c3acd9aac71bc9baebdb6ff}
+
+
+Specify a high watermark for events on the queue. The behaviour for setting this value varies depending on the underlying middleware.
+
+LBM: LBM uses an unbounded event queue. Setting this values allows users of the API to receive a callback if the value is exceeded. (See mamaQueue\_\-setQueueMonitorCallback() for setting queue related callbacks) the default behaviour is for the queue to grow unbounded without notifications. The high watermark for LBM can be set for all queues at once by setting the mama.lbm.eventqueuemonitor.queue\_\-size\_\-warning property for the API. Calls to this function will override the value specified in mama.properties.
+
+RV: This will set a queue limit policy of TIBRVQUEUE\_\-DISCARD\_\-FIRST whereby the oldest events in the queue are discarded first. The discard amount will be set with a value of 1. i.e. events will be dropped from the queue one at a time. The default behaviour is an unlimited queue which does not discard events. \hypertarget{classWombat_1_1MamaQueue_a367350a4f52003325fbc72031094f3b5}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getHighWatermark@{getHighWatermark}}
+\index{getHighWatermark@{getHighWatermark}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getHighWatermark}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\_\-t Wombat::MamaQueue::getHighWatermark (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a367350a4f52003325fbc72031094f3b5}
+
+
+Return the high water mark as set via {\ttfamily setHighWaterMark()}. \hypertarget{classWombat_1_1MamaQueue_a186d02095e3e6b65abe0b34603d3ab30}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setLowWatermark@{setLowWatermark}}
+\index{setLowWatermark@{setLowWatermark}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setLowWatermark}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::setLowWatermark (size\_\-t {\em lowWatermark})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a186d02095e3e6b65abe0b34603d3ab30}
+
+
+Set the low watermark. Only supported for \hyperlink{namespaceWombat}{Wombat} TCP middleware. 
+\begin{DoxyParams}{Parameters}
+\item[{\em lowWatermark}]The low water mark. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaQueue_abbdc2a846667fd60ee520c141ff0e1c0}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getLowWatermark@{getLowWatermark}}
+\index{getLowWatermark@{getLowWatermark}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getLowWatermark}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\_\-t Wombat::MamaQueue::getLowWatermark (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_abbdc2a846667fd60ee520c141ff0e1c0}
+
+
+Return the low water mark as set via {\ttfamily setLowWaterMark()}. \hypertarget{classWombat_1_1MamaQueue_ab44bf7f7f43693737d58f0155dbf7cc3}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setQueueName@{setQueueName}}
+\index{setQueueName@{setQueueName}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setQueueName}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::setQueueName (const char $\ast$ {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ab44bf7f7f43693737d58f0155dbf7cc3}
+
+
+Associate a name identifier with the event queue. This will be used in queue related logging statements. The string is copied by the API.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The string name identifier for the queue. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaQueue_a123d62bb20895701ac0407831f3cad1f}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getQueueName@{getQueueName}}
+\index{getQueueName@{getQueueName}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getQueueName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaQueue::getQueueName () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a123d62bb20895701ac0407831f3cad1f}
+
+
+Retrieve the string name identifier for the queue as specified from a call to {\ttfamily \hyperlink{classWombat_1_1MamaQueue_ab44bf7f7f43693737d58f0155dbf7cc3}{setQueueName()}}. If a name has not been specified via a call to{\ttfamily \hyperlink{classWombat_1_1MamaQueue_ab44bf7f7f43693737d58f0155dbf7cc3}{setQueueName()}} the queue will assume a default name of \char`\"{}NO\_\-NAME\char`\"{}
+
+\begin{DoxyReturn}{Returns}
+The name identifier for the \hyperlink{classWombat_1_1MamaQueue}{MamaQueue}. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaQueue_ae3cbaac8f65debeb5989f0d084091033}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getQueueBridgeName@{getQueueBridgeName}}
+\index{getQueueBridgeName@{getQueueBridgeName}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getQueueBridgeName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaQueue::getQueueBridgeName () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_ae3cbaac8f65debeb5989f0d084091033}
+
+
+Retrieve the string name identifier for the queue's bridge. \begin{DoxyReturn}{Returns}
+The name identifier for the bridge: \char`\"{}wmw\char`\"{}, \char`\"{}lbm\char`\"{}, or \char`\"{}tibrv\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaQueue_af2833301877225698f9d01c19b4ff509}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::destroy ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_af2833301877225698f9d01c19b4ff509}
+
+
+Destroy a queue. Note that the queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]with a code of MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS if there are still objects open against the queue. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaQueue_a5e4ea93c990531720075e28f27cf8f9d}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::setClosure (void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a5e4ea93c990531720075e28f27cf8f9d}
+\hypertarget{classWombat_1_1MamaQueue_a3c964b97c67511bfa2f994790d6ba291}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaQueue::getClosure ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a3c964b97c67511bfa2f994790d6ba291}
+\hypertarget{classWombat_1_1MamaQueue_a6bd9863e8aab8b7ca7d10120dc6eb2c5}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!destroyTimedWait@{destroyTimedWait}}
+\index{destroyTimedWait@{destroyTimedWait}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{destroyTimedWait}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::destroyTimedWait (long {\em timeout})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a6bd9863e8aab8b7ca7d10120dc6eb2c5}
+
+
+Destroy a queue. Note that the queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed. This function will block for the specified time or until all of the objects have been destroyed and will then destroy the queue.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em timeout}]The time to block for in ms. \end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]with a code of MAMA\_\-STATUS\_\-TIMEOUT if the time elapsed. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaQueue_a2e34e08c5fcf44cf3b347071c1501ec5}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!destroyWait@{destroyWait}}
+\index{destroyWait@{destroyWait}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{destroyWait}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueue::destroyWait ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueue_a2e34e08c5fcf44cf3b347071c1501ec5}
+
+
+Destroy a queue. Note that the queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed. This function will block until all of the objects have been destroyed and will then destroy the queue. \hypertarget{classWombat_1_1MamaQueue_a574267c7489b3e4db622befb1f07fcc4}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaQueue Wombat::MamaQueue::getCValue ()}}
+\label{classWombat_1_1MamaQueue_a574267c7489b3e4db622befb1f07fcc4}
+
+
+Access to C types for implementation of related classes. \hypertarget{classWombat_1_1MamaQueue_a54a801b112d64a8c8d4a56727a9e799a}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaQueue Wombat::MamaQueue::getCValue () const}}
+\label{classWombat_1_1MamaQueue_a54a801b112d64a8c8d4a56727a9e799a}
+\hypertarget{classWombat_1_1MamaQueue_ab43f6f93c109d66a287f1d45e6a8b284}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!setCValue@{setCValue}}
+\index{setCValue@{setCValue}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{setCValue}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaQueue::setCValue (mamaQueue {\em cQueue})}}
+\label{classWombat_1_1MamaQueue_ab43f6f93c109d66a287f1d45e6a8b284}
+
+
+This can only be set once and only if the c value is not already set -\/ E.g. from calling \hyperlink{classWombat_1_1MamaQueue_af9697625f1bf25772b29dd4c827c2991}{create()} 
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaQueue_aea38f0077fd452cbb07197e2017b267c}{
+\index{Wombat::MamaQueue@{Wombat::MamaQueue}!mPimpl@{mPimpl}}
+\index{mPimpl@{mPimpl}!Wombat::MamaQueue@{Wombat::MamaQueue}}
+\subsubsection[{mPimpl}]{\setlength{\rightskip}{0pt plus 5cm}MamaQueueImpl$\ast$ {\bf Wombat::MamaQueue::mPimpl}}}
+\label{classWombat_1_1MamaQueue_aea38f0077fd452cbb07197e2017b267c}

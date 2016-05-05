@@ -1,0 +1,35 @@
+\hypertarget{classWombat_1_1MamaSymbolSource}{
+\section{Wombat::MamaSymbolSource Class Reference}
+\label{classWombat_1_1MamaSymbolSource}\index{Wombat::MamaSymbolSource@{Wombat::MamaSymbolSource}}
+}
+
+
+\hyperlink{classWombat_1_1MamaSymbolSource}{MamaSymbolSource} defines an interface which all SymbolSources should implement in order to provide a mechanism by which objects implementing the \char`\"{}MamaSymbolSourceCallback::onSymbol\char`\"{} can be registered with the source such that they can be notified of new symbols as they arrive.  
+
+
+{\ttfamily \#include $<$MamaSymbolSource.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolSource_a2af7a42ba8d021d6ff4e96089d10a68f}{$\sim$MamaSymbolSource} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolSource_ab6ec8acbb7941fd0261f60536608a4fb}{addHandler} (\hyperlink{classWombat_1_1MamaSymbolSourceCallback}{MamaSymbolSourceCallback} $\ast$callback)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaSymbolSource}{MamaSymbolSource} defines an interface which all SymbolSources should implement in order to provide a mechanism by which objects implementing the \char`\"{}MamaSymbolSourceCallback::onSymbol\char`\"{} can be registered with the source such that they can be notified of new symbols as they arrive. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolSource_a2af7a42ba8d021d6ff4e96089d10a68f}{
+\index{Wombat::MamaSymbolSource@{Wombat::MamaSymbolSource}!$\sim$MamaSymbolSource@{$\sim$MamaSymbolSource}}
+\index{$\sim$MamaSymbolSource@{$\sim$MamaSymbolSource}!Wombat::MamaSymbolSource@{Wombat::MamaSymbolSource}}
+\subsubsection[{$\sim$MamaSymbolSource}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolSource::$\sim$MamaSymbolSource ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolSource_a2af7a42ba8d021d6ff4e96089d10a68f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolSource_ab6ec8acbb7941fd0261f60536608a4fb}{
+\index{Wombat::MamaSymbolSource@{Wombat::MamaSymbolSource}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamaSymbolSource@{Wombat::MamaSymbolSource}}
+\subsubsection[{addHandler}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolSource::addHandler ({\bf MamaSymbolSourceCallback} $\ast$ {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolSource_ab6ec8acbb7941fd0261f60536608a4fb}

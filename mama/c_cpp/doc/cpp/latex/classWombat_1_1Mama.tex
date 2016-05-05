@@ -1,0 +1,411 @@
+\hypertarget{classWombat_1_1Mama}{
+\section{Wombat::Mama Class Reference}
+\label{classWombat_1_1Mama}\index{Wombat::Mama@{Wombat::Mama}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1Mama}{Mama}} class provides methods global initialization and manipulating global options.  
+
+
+{\ttfamily \#include $<$mamacpp.h$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static mamaBridge \hyperlink{classWombat_1_1Mama_a57bc9e0cf0931ccf84de55aaaf926f8d}{loadBridge} (const char $\ast$middleware)
+\begin{DoxyCompactList}\small\item\em Load the bridge specified by middleware string. \item\end{DoxyCompactList}\item 
+static mamaBridge \hyperlink{classWombat_1_1Mama_aa1a335543d17ecdfa3ef77a63920e6b8}{loadBridge} (const char $\ast$middleware, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load the bridge specified by middleware string using the path specified by the user. \item\end{DoxyCompactList}\item 
+static const char $\ast$ \hyperlink{classWombat_1_1Mama_a8f05e65f0ad4f8ea2ebe522539762f04}{getVersion} (mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Returns the version of the mama binary. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{open} ()
+\begin{DoxyCompactList}\small\item\em Initialize MAMA. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a06dbb81b8c854329c37bae4db22d040e}{open} (const char $\ast$path, const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Initialize MAMA. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a696c8766933e24199c71380fa5c2a709}{setProperty} (const char $\ast$name, const char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Set a specific property for the API. \item\end{DoxyCompactList}\item 
+static const char $\ast$ \hyperlink{classWombat_1_1Mama_ae53b3daafe7452f80406ff5204c99cc6}{getProperty} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Retrieve a specific property from the API. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}{close} ()
+\begin{DoxyCompactList}\small\item\em Close MAMA and free all associated resource. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{start} (mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Start processing messages on the internal queue. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}{startBackground} (mamaBridge bridgeImpl, \hyperlink{classWombat_1_1MamaStartCallback}{MamaStartCallback} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Start processing MAMA internal events in the background. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{stop} (mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Stop dispatching on the default event queue for the specified bridge. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a5e5eeaecf4309a709e8448dfcbbc5d89}{stopAll} (void)
+\begin{DoxyCompactList}\small\item\em Stop dispatching on the default event queue for all bridges. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a4b73e9c99a4e170c8d2ed378746c5f72}{enableLogging} (MamaLogLevel level, FILE $\ast$logFile)
+\begin{DoxyCompactList}\small\item\em Enable logging and direct the output to the specified stream. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a53e48c0d9a4bc014cfbdcc189609399c}{logToFile} (const char $\ast$file, MamaLogLevel level)
+\begin{DoxyCompactList}\small\item\em Enable logging to the specified file. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a519f2d70a7a3784068db8419ffec64c0}{disableLogging} (void)
+\begin{DoxyCompactList}\small\item\em Disable logging. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_afaa40b807211f0d42a7badabe8d0c632}{setLogLevel} (MamaLogLevel level)
+\begin{DoxyCompactList}\small\item\em Set the logging level. \item\end{DoxyCompactList}\item 
+static MamaLogLevel \hyperlink{classWombat_1_1Mama_a735937f0a46d4e5685b24369a0675c11}{getLogLevel} (void)
+\begin{DoxyCompactList}\small\item\em Get the logging level. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_abaa6a46829a05b403494a9ae51829fda}{setLogSize} (unsigned long size)
+\begin{DoxyCompactList}\small\item\em Set the maxmum size of the log file (bytes) Default max size is 500 Mb. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a9455d10311f3c50fa3542309c72d8b42}{setNumLogFiles} (int numFiles)
+\begin{DoxyCompactList}\small\item\em Set the number of rolled logfiles to keep before overwriting. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_abc6645dce35582824c1aba9b914ec1c6}{setLogFilePolicy} (mamaLogFilePolicy policy)
+\begin{DoxyCompactList}\small\item\em Set the policy regarding how to handle files when Max file size is reached. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_af3a1c2d479262325d8111425f98c2b4e}{setAppendToLogFile} (bool append)
+\begin{DoxyCompactList}\small\item\em Set the mode when opening an existing log file. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{classWombat_1_1Mama_a2bbe43b4c5dd0b748ee78521917072e2}{loggingToFile} (void)
+\begin{DoxyCompactList}\small\item\em Get the status of loggingToFile Returns true if logging to a file, false if not. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_af6d0cdfc8a039b09c5a6af9dda5acada}{setLogSizeCb} (\hyperlink{classWombat_1_1MamaLogFileCallback}{MamaLogFileCallback} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Set a callback for when the max log size is reached. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_aa300e6f36cc4f9efb6099550a5657149}{setApplicationName} (const char $\ast$applicationName)
+\begin{DoxyCompactList}\small\item\em Set the mama application name This should be called before \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama.open()}. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_ac964c759a0d0e1be140bb0aa4930e34f}{setApplicationClassName} (const char $\ast$className)
+\begin{DoxyCompactList}\small\item\em Set the mama application class This should be called before \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama.open()}. \item\end{DoxyCompactList}\item 
+static \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$ \hyperlink{classWombat_1_1Mama_a3f69282b2ccf02d2ae0d1ed6f414c627}{getDefaultEventQueue} (mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Get a pointer to the internal default MAMA event queue. \item\end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static void \hyperlink{classWombat_1_1Mama_a0ff6fa37b52def9d40b1174b94f76800}{deleteObject} (T $\ast$object)
+\begin{DoxyCompactList}\small\item\em Allow the MAMA API free memory for any objects which have been allocated by the API but responsibility for deleting has been handed to the application code. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_ae483353a450b19b32b5b52d49e870d3c}{setBridgeCallback} (mamaBridge bridge, \hyperlink{classWombat_1_1MamaBridgeCallback}{MamaBridgeCallback} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Set a MamaBridgeMessageCallback to be invoked whenever information messages are logged at the bridge level. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a0a49c8fa5e9b8af6378793d51be6d433}{addStatsCollector} (\hyperlink{classWombat_1_1MamaStatsCollector}{MamaStatsCollector} $\ast$statsCollector)
+\begin{DoxyCompactList}\small\item\em It adds the newly created statsCollector to the statsGenerator list. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1Mama_a146a3b3e2ee2490164a2b7659cbb712c}{removeStatsCollector} (\hyperlink{classWombat_1_1MamaStatsCollector}{MamaStatsCollector} $\ast$statsCollector)
+\begin{DoxyCompactList}\small\item\em It removes the statsCollector from the statsGenerator list. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1Mama}{Mama}} class provides methods global initialization and manipulating global options. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1Mama_a57bc9e0cf0931ccf84de55aaaf926f8d}{
+\index{Wombat::Mama@{Wombat::Mama}!loadBridge@{loadBridge}}
+\index{loadBridge@{loadBridge}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{loadBridge}]{\setlength{\rightskip}{0pt plus 5cm}static mamaBridge Wombat::Mama::loadBridge (const char $\ast$ {\em middleware})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a57bc9e0cf0931ccf84de55aaaf926f8d}
+
+
+Load the bridge specified by middleware string. If the bridge has already been loaded then the existing bridge instance will be returned. 
+\begin{DoxyParams}{Parameters}
+\item[{\em impl}]The bridge object \item[{\em middleware}]The middleware string. Can be \char`\"{}wmw\char`\"{}, \char`\"{}lbm\char`\"{} or \char`\"{}tibrv\char`\"{}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status Whether the call was successful or not. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1Mama_aa1a335543d17ecdfa3ef77a63920e6b8}{
+\index{Wombat::Mama@{Wombat::Mama}!loadBridge@{loadBridge}}
+\index{loadBridge@{loadBridge}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{loadBridge}]{\setlength{\rightskip}{0pt plus 5cm}static mamaBridge Wombat::Mama::loadBridge (const char $\ast$ {\em middleware}, \/  const char $\ast$ {\em path})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_aa1a335543d17ecdfa3ef77a63920e6b8}
+
+
+Load the bridge specified by middleware string using the path specified by the user. If the bridge has already been loaded then the existing bridge instance will be returned. 
+\begin{DoxyParams}{Parameters}
+\item[{\em impl}]The bridge object \item[{\em middleware}]The middleware string. Can be \char`\"{}wmw\char`\"{}, \char`\"{}lbm\char`\"{} or \char`\"{}tibrv\char`\"{}. \item[{\em path}]The path to the bridge library \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status Whether the call was successful or not. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1Mama_a8f05e65f0ad4f8ea2ebe522539762f04}{
+\index{Wombat::Mama@{Wombat::Mama}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{getVersion}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ Wombat::Mama::getVersion (mamaBridge {\em bridgeImpl})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a8f05e65f0ad4f8ea2ebe522539762f04}
+
+
+Returns the version of the mama binary. The version of the underlying transport is also returned in parens after the mama version. \hypertarget{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{
+\index{Wombat::Mama@{Wombat::Mama}!open@{open}}
+\index{open@{open}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::open ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}
+
+
+Initialize MAMA. MAMA employs a reference count to track multiple calls to \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama::open()} and \hyperlink{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}{Mama::close()}. The count is incremented every time \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama::open()} is called and decremented when \hyperlink{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}{Mama::close()} is called. The resources are not actually released until the count reaches zero.
+
+If entitlements are enabled for the library, the available entitlement server names are read from the entitlement.servers property in the mama.properties file located in the \$WOMBAT\_\-PATH directory.
+
+This function is thread safe. \hypertarget{classWombat_1_1Mama_a06dbb81b8c854329c37bae4db22d040e}{
+\index{Wombat::Mama@{Wombat::Mama}!open@{open}}
+\index{open@{open}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::open (const char $\ast$ {\em path}, \/  const char $\ast$ {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a06dbb81b8c854329c37bae4db22d040e}
+
+
+Initialize MAMA. Allows users of the API to override the default behaviour of \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama.open()} where a file mama.properties is required to be located in the directory specified by \$WOMBAT\_\-PATH.
+
+The properties file must have the same structure as a standard mama.properties file.
+
+If null is passed as the path the API will look for the properties file on the \$WOMBAT\_\-PATH.
+
+If null is passed as the filename the API will look for the default filename of mama.properties.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em path}]Fully qualified path to the directory containing the properties file\item[\mbox{$\leftarrow$} {\em filename}]The name of the file containing MAMA properties. \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a696c8766933e24199c71380fa5c2a709}{
+\index{Wombat::Mama@{Wombat::Mama}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setProperty}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setProperty (const char $\ast$ {\em name}, \/  const char $\ast$ {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a696c8766933e24199c71380fa5c2a709}
+
+
+Set a specific property for the API. If the property being set has already been given a value from a properties file that value will be replaced.
+
+See the example mama.properties provided with the distribution for examples of property formatting. The properties set via this function should be formatted in the same manner as those specified in mama.properties.
+
+The strings passed to the function are copied.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the property \item[{\em value}]The property value \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_ae53b3daafe7452f80406ff5204c99cc6}{
+\index{Wombat::Mama@{Wombat::Mama}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{getProperty}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ Wombat::Mama::getProperty (const char $\ast$ {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_ae53b3daafe7452f80406ff5204c99cc6}
+
+
+Retrieve a specific property from the API. If the property has not been set, a NULL value will be returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the property to retrieve.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the property or NULL if unset. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}{
+\index{Wombat::Mama@{Wombat::Mama}!close@{close}}
+\index{close@{close}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::close ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}
+
+
+Close MAMA and free all associated resource. MAMA employs a reference count to track multiple calls to \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama::open()} and \hyperlink{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}{Mama::close()}. The count is incremented every time \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama::open()} is called and decremented when \hyperlink{classWombat_1_1Mama_aa222cbf76174d7699e8174221832cff4}{Mama::close()} is called. The resources are not actually released until the count reaches zero.
+
+This function is thread safe. \hypertarget{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{
+\index{Wombat::Mama@{Wombat::Mama}!start@{start}}
+\index{start@{start}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::start (mamaBridge {\em bridgeImpl})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}
+
+
+Start processing messages on the internal queue. This starts Mama's internal throttle, refresh logic, and other internal \hyperlink{classWombat_1_1Mama}{Mama} processes as well as dispatching messages from the internal queue. 
+
+\hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start( )} blocks until an invocation of \hyperlink{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{Mama::stop()} occurs.
+
+MAMA employs a reference count to track multiple calls to \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start()} and \hyperlink{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{Mama::stop()}. The count is incremented every time \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start()} is called and decremented when \hyperlink{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{Mama::stop()} is called. The first \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start()} call does not unblock until the count reaches zero.
+
+This function is thread safe.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em bridgeImpl}]The bridge specific structure. \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}{
+\index{Wombat::Mama@{Wombat::Mama}!startBackground@{startBackground}}
+\index{startBackground@{startBackground}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{startBackground}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::startBackground (mamaBridge {\em bridgeImpl}, \/  {\bf MamaStartCallback} $\ast$ {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}
+
+
+Start processing MAMA internal events in the background. This method invokes \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start} () in a separate thread.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em bridgeImpl}]The middleware-\/specific bridge structure \item[\mbox{$\leftarrow$} {\em callback}]The callback for asynchronous status. \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{
+\index{Wombat::Mama@{Wombat::Mama}!stop@{stop}}
+\index{stop@{stop}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::stop (mamaBridge {\em bridgeImpl})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}
+
+
+Stop dispatching on the default event queue for the specified bridge. MAMA employs a reference count to track multiple calls to \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start()} and \hyperlink{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{Mama::stop()}. The count is incremented every time \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start()} is called and decremented when \hyperlink{classWombat_1_1Mama_a88d25e14a503f35d86173bfaee50922e}{Mama::stop()} is called. The first \hyperlink{classWombat_1_1Mama_a826ec494ed4cd1f9b8ac1baa8ca5af30}{Mama::start()} call does not unblock until the count reaches zero.
+
+This function is thread safe.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em bridgeImpl}]The bridge specific structure. \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a5e5eeaecf4309a709e8448dfcbbc5d89}{
+\index{Wombat::Mama@{Wombat::Mama}!stopAll@{stopAll}}
+\index{stopAll@{stopAll}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{stopAll}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::stopAll (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a5e5eeaecf4309a709e8448dfcbbc5d89}
+
+
+Stop dispatching on the default event queue for all bridges. \hypertarget{classWombat_1_1Mama_a4b73e9c99a4e170c8d2ed378746c5f72}{
+\index{Wombat::Mama@{Wombat::Mama}!enableLogging@{enableLogging}}
+\index{enableLogging@{enableLogging}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{enableLogging}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::enableLogging (MamaLogLevel {\em level}, \/  FILE $\ast$ {\em logFile})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a4b73e9c99a4e170c8d2ed378746c5f72}
+
+
+Enable logging and direct the output to the specified stream. 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]The level \item[{\em logFile}]the log file. \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a53e48c0d9a4bc014cfbdcc189609399c}{
+\index{Wombat::Mama@{Wombat::Mama}!logToFile@{logToFile}}
+\index{logToFile@{logToFile}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{logToFile}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::logToFile (const char $\ast$ {\em file}, \/  MamaLogLevel {\em level})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a53e48c0d9a4bc014cfbdcc189609399c}
+
+
+Enable logging to the specified file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]the log filename \item[{\em level}]The level \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a519f2d70a7a3784068db8419ffec64c0}{
+\index{Wombat::Mama@{Wombat::Mama}!disableLogging@{disableLogging}}
+\index{disableLogging@{disableLogging}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{disableLogging}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::disableLogging (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a519f2d70a7a3784068db8419ffec64c0}
+
+
+Disable logging. \hypertarget{classWombat_1_1Mama_afaa40b807211f0d42a7badabe8d0c632}{
+\index{Wombat::Mama@{Wombat::Mama}!setLogLevel@{setLogLevel}}
+\index{setLogLevel@{setLogLevel}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setLogLevel (MamaLogLevel {\em level})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_afaa40b807211f0d42a7badabe8d0c632}
+
+
+Set the logging level. 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]The level \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a735937f0a46d4e5685b24369a0675c11}{
+\index{Wombat::Mama@{Wombat::Mama}!getLogLevel@{getLogLevel}}
+\index{getLogLevel@{getLogLevel}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{getLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}static MamaLogLevel Wombat::Mama::getLogLevel (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a735937f0a46d4e5685b24369a0675c11}
+
+
+Get the logging level. \begin{DoxyReturn}{Returns}
+the logging level 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1Mama_abaa6a46829a05b403494a9ae51829fda}{
+\index{Wombat::Mama@{Wombat::Mama}!setLogSize@{setLogSize}}
+\index{setLogSize@{setLogSize}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setLogSize}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setLogSize (unsigned long {\em size})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_abaa6a46829a05b403494a9ae51829fda}
+
+
+Set the maxmum size of the log file (bytes) Default max size is 500 Mb. 
+\begin{DoxyParams}{Parameters}
+\item[{\em size}]the max size of file (bytes) \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a9455d10311f3c50fa3542309c72d8b42}{
+\index{Wombat::Mama@{Wombat::Mama}!setNumLogFiles@{setNumLogFiles}}
+\index{setNumLogFiles@{setNumLogFiles}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setNumLogFiles}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setNumLogFiles (int {\em numFiles})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a9455d10311f3c50fa3542309c72d8b42}
+
+
+Set the number of rolled logfiles to keep before overwriting. Default is 10 
+\begin{DoxyParams}{Parameters}
+\item[{\em numFiles}]the max number of logfiles \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_abc6645dce35582824c1aba9b914ec1c6}{
+\index{Wombat::Mama@{Wombat::Mama}!setLogFilePolicy@{setLogFilePolicy}}
+\index{setLogFilePolicy@{setLogFilePolicy}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setLogFilePolicy}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setLogFilePolicy (mamaLogFilePolicy {\em policy})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_abc6645dce35582824c1aba9b914ec1c6}
+
+
+Set the policy regarding how to handle files when Max file size is reached. Default is LOGFILE\_\-UNBOUNDED -\/ uses a single logfile unlimited in size. Other policies are: LOGFILE\_\-ROLL -\/ keeps N logfiles specified with setNumLogFiles(N). LOGFILE\_\-OVERWRITE -\/ uses a single logfile limited in size. LOGFILE\_\-USER -\/ if user has registered a callback it will be calledt. Otherwise the file will roll or get overwritten depending onthe value specified with setNumLogFiles(N). 
+\begin{DoxyParams}{Parameters}
+\item[{\em policy}]the policy to use when max size is reached \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_af3a1c2d479262325d8111425f98c2b4e}{
+\index{Wombat::Mama@{Wombat::Mama}!setAppendToLogFile@{setAppendToLogFile}}
+\index{setAppendToLogFile@{setAppendToLogFile}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setAppendToLogFile}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setAppendToLogFile (bool {\em append})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_af3a1c2d479262325d8111425f98c2b4e}
+
+
+Set the mode when opening an existing log file. setAppendToLogFile(true) will add data to the end of an existing file. Default is false which will overwrite any existing data in the file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em append}]boolean flag to set append mode on or off \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a2bbe43b4c5dd0b748ee78521917072e2}{
+\index{Wombat::Mama@{Wombat::Mama}!loggingToFile@{loggingToFile}}
+\index{loggingToFile@{loggingToFile}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{loggingToFile}]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mama::loggingToFile (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a2bbe43b4c5dd0b748ee78521917072e2}
+
+
+Get the status of loggingToFile Returns true if logging to a file, false if not. \begin{DoxyReturn}{Returns}
+the status of loggingToFile 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1Mama_af6d0cdfc8a039b09c5a6af9dda5acada}{
+\index{Wombat::Mama@{Wombat::Mama}!setLogSizeCb@{setLogSizeCb}}
+\index{setLogSizeCb@{setLogSizeCb}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setLogSizeCb}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setLogSizeCb ({\bf MamaLogFileCallback} $\ast$ {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_af6d0cdfc8a039b09c5a6af9dda5acada}
+
+
+Set a callback for when the max log size is reached. This will only be called if the policy has been set to LOGFILE\_\-USER. 
+\begin{DoxyParams}{Parameters}
+\item[{\em LogSizeCallback}]function pointer for the callback \end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_aa300e6f36cc4f9efb6099550a5657149}{
+\index{Wombat::Mama@{Wombat::Mama}!setApplicationName@{setApplicationName}}
+\index{setApplicationName@{setApplicationName}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setApplicationName}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setApplicationName (const char $\ast$ {\em applicationName})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_aa300e6f36cc4f9efb6099550a5657149}
+
+
+Set the mama application name This should be called before \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama.open()}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em applicationName}]\end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_ac964c759a0d0e1be140bb0aa4930e34f}{
+\index{Wombat::Mama@{Wombat::Mama}!setApplicationClassName@{setApplicationClassName}}
+\index{setApplicationClassName@{setApplicationClassName}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setApplicationClassName}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setApplicationClassName (const char $\ast$ {\em className})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_ac964c759a0d0e1be140bb0aa4930e34f}
+
+
+Set the mama application class This should be called before \hyperlink{classWombat_1_1Mama_af1fafa88e6e22e7afc37b10de0f5a0d5}{Mama.open()}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em className}]\end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a3f69282b2ccf02d2ae0d1ed6f414c627}{
+\index{Wombat::Mama@{Wombat::Mama}!getDefaultEventQueue@{getDefaultEventQueue}}
+\index{getDefaultEventQueue@{getDefaultEventQueue}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{getDefaultEventQueue}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf MamaQueue}$\ast$ Wombat::Mama::getDefaultEventQueue (mamaBridge {\em bridgeImpl})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a3f69282b2ccf02d2ae0d1ed6f414c627}
+
+
+Get a pointer to the internal default MAMA event queue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bridgeImpl}]The middleware specific bridge structure. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the internal MAMA default event queue. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1Mama_a0ff6fa37b52def9d40b1174b94f76800}{
+\index{Wombat::Mama@{Wombat::Mama}!deleteObject@{deleteObject}}
+\index{deleteObject@{deleteObject}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{deleteObject}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ static void Wombat::Mama::deleteObject (T $\ast$ {\em object})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classWombat_1_1Mama_a0ff6fa37b52def9d40b1174b94f76800}
+
+
+Allow the MAMA API free memory for any objects which have been allocated by the API but responsibility for deleting has been handed to the application code. This enables users of the API to provide alternate memory management implementations which may result in difficulties when deleting objects allocated internally by the MAMA API.
+
+E.g. Detaching the \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} in a subscription callback.
+
+Currently supported types:
+
+\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \hypertarget{classWombat_1_1Mama_ae483353a450b19b32b5b52d49e870d3c}{
+\index{Wombat::Mama@{Wombat::Mama}!setBridgeCallback@{setBridgeCallback}}
+\index{setBridgeCallback@{setBridgeCallback}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{setBridgeCallback}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::setBridgeCallback (mamaBridge {\em bridge}, \/  {\bf MamaBridgeCallback} $\ast$ {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_ae483353a450b19b32b5b52d49e870d3c}
+
+
+Set a MamaBridgeMessageCallback to be invoked whenever information messages are logged at the bridge level. Information messages vary depenging on the underlying middleware. Currently only supported for LBM. \hypertarget{classWombat_1_1Mama_a0a49c8fa5e9b8af6378793d51be6d433}{
+\index{Wombat::Mama@{Wombat::Mama}!addStatsCollector@{addStatsCollector}}
+\index{addStatsCollector@{addStatsCollector}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{addStatsCollector}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::addStatsCollector ({\bf MamaStatsCollector} $\ast$ {\em statsCollector})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a0a49c8fa5e9b8af6378793d51be6d433}
+
+
+It adds the newly created statsCollector to the statsGenerator list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statsCollector}]\end{DoxyParams}
+\hypertarget{classWombat_1_1Mama_a146a3b3e2ee2490164a2b7659cbb712c}{
+\index{Wombat::Mama@{Wombat::Mama}!removeStatsCollector@{removeStatsCollector}}
+\index{removeStatsCollector@{removeStatsCollector}!Wombat::Mama@{Wombat::Mama}}
+\subsubsection[{removeStatsCollector}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mama::removeStatsCollector ({\bf MamaStatsCollector} $\ast$ {\em statsCollector})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1Mama_a146a3b3e2ee2490164a2b7659cbb712c}
+
+
+It removes the statsCollector from the statsGenerator list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statsCollector}]\end{DoxyParams}

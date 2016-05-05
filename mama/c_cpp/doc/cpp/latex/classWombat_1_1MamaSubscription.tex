@@ -1,0 +1,519 @@
+\hypertarget{classWombat_1_1MamaSubscription}{
+\section{Wombat::MamaSubscription Class Reference}
+\label{classWombat_1_1MamaSubscription}\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}} interface represents a subscription to a topic.  
+
+
+{\ttfamily \#include $<$MamaSubscription.h$>$}Inheritance diagram for Wombat::MamaSubscription::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaSubscription}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSubscription_ad5dcdc6ddc4cda8263946a226d2423f2}{$\sim$MamaSubscription} ()
+\item 
+\hyperlink{classWombat_1_1MamaSubscription_a65c320b11e7b12295d7c1c80029c61c2}{MamaSubscription} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a5241d85ab4b57cd8306a3a4bdb62b380}{setCSubscription} (mamaSubscription subscription)
+\item 
+virtual mamaSubscription \hyperlink{classWombat_1_1MamaSubscription_a8dc9a0e1da068e0d2ef0ec2520d33dc5}{getCSubscription} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a856510d1c73d4850c0f069a834cd839d}{setup} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback} $\ast$callback, const char $\ast$source, const char $\ast$symbol, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Set up a subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a944f05bd8717893b18eca077bcc3684c}{setup} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback} $\ast$callback, \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source, const char $\ast$symbol, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Set up a subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}{activate} ()
+\begin{DoxyCompactList}\small\item\em Activate a subscriber using the throttle queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_aa551169dd15b61496f6e6ef6974996e3}{deactivate} ()
+\begin{DoxyCompactList}\small\item\em Deactivate a subscriber. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a2ac46ac833f5af07a09457c4eb778196}{create} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback} $\ast$callback, const char $\ast$source, const char $\ast$symbol, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Set up and activate a subscriber using the throttle queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a4c64dd1374448d285990fe754406899a}{create} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback} $\ast$callback, \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source, const char $\ast$symbol, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Set up and activate a subscriber using the throttle queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a8a4dc0cdd12bbf92dfc12a6a13d2fa86}{createSnapshot} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback} $\ast$callback, const char $\ast$source, const char $\ast$symbol, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Set up and activate a snapshot subscriber using the throttle queue. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a5402b6243c4bf741d683fae088e8447b}{setRequiresInitial} (bool requiresInitial)
+\begin{DoxyCompactList}\small\item\em Determines whether the subscription requires an initial value. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaSubscription_adc672602e7ac6ecff5ac6709ebfa1d08}{getRequiresInitial} (void)
+\begin{DoxyCompactList}\small\item\em Return true if the subscription requires an initial value. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaSubscription_a421a096d393f93dd73cdeca5f2b047cc}{getReceivedInitial} (void)
+\begin{DoxyCompactList}\small\item\em Return true if the subscription has received an initial. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_ac6928358bc84c88edef730cd8f8f0f18}{setRetries} (int retries)
+\begin{DoxyCompactList}\small\item\em Set the number of retries for initial value requests and recap requests. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classWombat_1_1MamaSubscription_a09f887c5c0768110e58c65143979dbf5}{getRetries} (void)
+\begin{DoxyCompactList}\small\item\em Return the retries. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_ae3a076d82e2e53d03e7414749333b65c}{setSubscriptionType} (mamaSubscriptionType type)
+\begin{DoxyCompactList}\small\item\em Set the subscription type. \item\end{DoxyCompactList}\item 
+virtual mamaSubscriptionType \hyperlink{classWombat_1_1MamaSubscription_ad156d5629d85a95c9d6e64dfe871aa97}{getSubscriptionType} (void)
+\begin{DoxyCompactList}\small\item\em Return the subscription type. \item\end{DoxyCompactList}\item 
+virtual long \hyperlink{classWombat_1_1MamaSubscription_a9766dd84a8b7a28b22ff1393954cf1d9}{getServiceLevelOpt} (void)
+\begin{DoxyCompactList}\small\item\em Return the service level option. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a920036bab7805f4d13ea709343ae7260}{setServiceLevel} (mamaServiceLevel svcLevel, long svcLevelOpt)
+\begin{DoxyCompactList}\small\item\em Set the service level. \item\end{DoxyCompactList}\item 
+virtual mamaServiceLevel \hyperlink{classWombat_1_1MamaSubscription_abed527205b1f055af3e591cd43eb13f8}{getServiceLevel} (void)
+\begin{DoxyCompactList}\small\item\em Return the service level. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaSubscription_adaf58e3a3a3aa0b66f9af9bb28b22564}{getSymbol} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the symbol for this subscription. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback} $\ast$ \hyperlink{classWombat_1_1MamaSubscription_a32651a52180ffd292b27f2291559131a}{getCallback} (void) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a189e15c14b75643e32e0e72b76d3bd14}{setSymbol} (const char $\ast$symbol)
+\begin{DoxyCompactList}\small\item\em Sets the symbol for this subscription. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaSourceDerivative}{MamaSourceDerivative} $\ast$ \hyperlink{classWombat_1_1MamaSubscription_a4cca73373dc01f55978d85a13147f564}{getSourceDerivative} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the (subscription-\/specific) MAMA source derivative for this subscription. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaSourceDerivative}{MamaSourceDerivative} $\ast$ \hyperlink{classWombat_1_1MamaSubscription_a075b024887338dd46962c78101793888}{getSourceDerivative} (void)
+\begin{DoxyCompactList}\small\item\em Return the (subscription-\/specific) MAMA source derivative for this subscription. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSubscription_a9a81ca79c7a43953a39a001542388b4b}{getSource} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the MAMA source for this subscription. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaSubscription_a4c768efb3ce3bff36c6bbe1ad8d8abb3}{getSubscSource} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the source for this subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a6e29abd97a8821db4b0d2af7989d8549}{setTimeout} (double timeout)
+\begin{DoxyCompactList}\small\item\em Set the timeout for this subscription. \item\end{DoxyCompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamaSubscription_a921e36bfd97a95056519c98c5c4d5947}{getTimeout} (void)
+\begin{DoxyCompactList}\small\item\em Return the timeout. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a4535b3a2b9db7ccdb96571b085eb7ccc}{setRecoverGaps} (bool recover)
+\begin{DoxyCompactList}\small\item\em Attempt to recover from sequence number gaps by requesting a recap. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaSubscription_a9db98b670db5607279d089747554413c}{getRecoverGaps} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns true if listener is configure to recover from sequence number gaps by requesting a recap. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a1409842bd326bae11d6b98a75f5cd911}{setAppDataType} (uint8\_\-t dataType)
+\begin{DoxyCompactList}\small\item\em Set the application data type. \item\end{DoxyCompactList}\item 
+virtual uint8\_\-t \hyperlink{classWombat_1_1MamaSubscription_a67bf253f898a3dd824f9020f7bc97a5a}{getAppDataType} () const 
+\begin{DoxyCompactList}\small\item\em Get the application data type. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a3067981d0bddb17f0616c5afa809da21}{setGroupSizeHint} (int groupSizeHint)
+\begin{DoxyCompactList}\small\item\em Set a hint to the size of groups when making group subscriptions. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a5d25d46a51905fffaba2d7b5c0fdb65c}{setItemClosure} (void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Set the item closure for group subscriptions. \item\end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaSubscription_a24e2f328324ade72834cb96fe445bc24}{getItemClosure} (void)
+\begin{DoxyCompactList}\small\item\em Get the item closure for group subscriptions. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_ab377b043417b8e6544d677b4ad141b77}{setPreInitialCacheSize} (int cacheSize)
+\begin{DoxyCompactList}\small\item\em Set the number of messages to cache for each symbol before the initial value arrives. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classWombat_1_1MamaSubscription_af9cffd081567024fc88e97c1011e0dc7}{getPreInitialCacheSize} (void)
+\begin{DoxyCompactList}\small\item\em Return the initial value cache size. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a47002cfff7b77554fca3065ff2356bbe}{setMsgQualifierFilter} (bool ignoreDefinitelyDuplicate, bool ignorePossiblyDuplicate, bool ignoreDefinitelyDelyaed, bool ignorePossiblyDelayed, bool ignoreOutOfSequence)
+\begin{DoxyCompactList}\small\item\em Set a filter to discard messages. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_acde88c025386448c58ee5db4393a08d6}{getMsgQualifierFilter} (bool \&ignoreDefinitelyDuplicate, bool \&ignorePossiblyDuplicate, bool \&ignoreDefinitelyDelyaed, bool \&ignorePossiblyDelayed, bool \&ignoreOutOfSequence) const 
+\begin{DoxyCompactList}\small\item\em Get the filters that discard message according to the message qualifier. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a331eee861f0185e564bcceac3aedde24}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy the subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscription_a2607ec39a0426074664326920a5733f9}{destroyEx} ()
+\begin{DoxyCompactList}\small\item\em This function will destroy the subscription and can be called from any thread. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}} interface represents a subscription to a topic. It provides transparent market data semantics and functionality including initial value requests, recap requests, subscription management and data quality. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSubscription_ad5dcdc6ddc4cda8263946a226d2423f2}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!$\sim$MamaSubscription@{$\sim$MamaSubscription}}
+\index{$\sim$MamaSubscription@{$\sim$MamaSubscription}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{$\sim$MamaSubscription}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSubscription::$\sim$MamaSubscription ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_ad5dcdc6ddc4cda8263946a226d2423f2}
+\hypertarget{classWombat_1_1MamaSubscription_a65c320b11e7b12295d7c1c80029c61c2}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!MamaSubscription@{MamaSubscription}}
+\index{MamaSubscription@{MamaSubscription}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{MamaSubscription}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSubscription::MamaSubscription (void)}}
+\label{classWombat_1_1MamaSubscription_a65c320b11e7b12295d7c1c80029c61c2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSubscription_a5241d85ab4b57cd8306a3a4bdb62b380}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setCSubscription@{setCSubscription}}
+\index{setCSubscription@{setCSubscription}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setCSubscription}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setCSubscription (mamaSubscription {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a5241d85ab4b57cd8306a3a4bdb62b380}
+\hypertarget{classWombat_1_1MamaSubscription_a8dc9a0e1da068e0d2ef0ec2520d33dc5}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getCSubscription@{getCSubscription}}
+\index{getCSubscription@{getCSubscription}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getCSubscription}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaSubscription Wombat::MamaSubscription::getCSubscription ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a8dc9a0e1da068e0d2ef0ec2520d33dc5}
+\hypertarget{classWombat_1_1MamaSubscription_a856510d1c73d4850c0f069a834cd839d}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setup@{setup}}
+\index{setup@{setup}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setup ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaSubscriptionCallback} $\ast$ {\em callback}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a856510d1c73d4850c0f069a834cd839d}
+
+
+Set up a subscription. 
+\begin{DoxyParams}{Parameters}
+\item[{\em callback}]The callback. \item[{\em transport}]The transport. \item[{\em queue}]The mama queue. \item[{\em source}]The data source name for the listener. \item[{\em symbol}]The symbol for the listener. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a944f05bd8717893b18eca077bcc3684c}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setup@{setup}}
+\index{setup@{setup}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setup ({\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaSubscriptionCallback} $\ast$ {\em callback}, \/  {\bf MamaSource} $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a944f05bd8717893b18eca077bcc3684c}
+
+
+Set up a subscription. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mama queue. \item[{\em callback}]The callback. \item[{\em source}]The \hyperlink{classWombat_1_1MamaSource}{MamaSource} identifying the publisher for this symbol. \item[{\em symbol}]The symbol for the listener. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!activate@{activate}}
+\index{activate@{activate}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::activate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}
+
+
+Activate a subscriber using the throttle queue. This method places a request to create a subscriber on the throttle queue which dispatches tasks that produce messages at a controlled rate. The rate is determined by the outbound throttle rate of the underlying {\ttfamily \hyperlink{classWombat_1_1MamaTransport}{MamaTransport}}.
+
+In the event that listener creation fails as the result of an messaging related error the callback is invoked with information regarding the error.
+
+If entitlements are enabled, and the caller is not entitled to the requested symbol, the first invocation of the callback will invoked with status \char`\"{}MamaMsgStatus.NOT\_\-ENTITLED\char`\"{}.
+
+As an added convenience, callers may implement the {\ttfamily onComplete} and {\ttfamily onError} members of {\ttfamily \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback}}. {\ttfamily onComplete} is invoked prior to the arrival of any initial message signalling the successful creation of the listener. {\ttfamily onError} is invoked if a TIBRV or entitlement error occurs prior to listener creation.
+
+It is also possible for an entitlement error to occur after a listener is created. This occurs when the entitlement information is included in the initial message sent by the feed handler as is often the case.
+
+If an error occurs during listener creation. {\ttfamily destroy} is called automatically. \hypertarget{classWombat_1_1MamaSubscription_aa551169dd15b61496f6e6ef6974996e3}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{deactivate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::deactivate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_aa551169dd15b61496f6e6ef6974996e3}
+
+
+Deactivate a subscriber. The subscription can be reactivated using \hyperlink{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}{activate()}. \hypertarget{classWombat_1_1MamaSubscription_a2ac46ac833f5af07a09457c4eb778196}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!create@{create}}
+\index{create@{create}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::create ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaSubscriptionCallback} $\ast$ {\em callback}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a2ac46ac833f5af07a09457c4eb778196}
+
+
+Set up and activate a subscriber using the throttle queue. This method is equivalent to calling \hyperlink{classWombat_1_1MamaSubscription_a856510d1c73d4850c0f069a834cd839d}{setup()} followed by \hyperlink{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}{activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \item[{\em queue}]The mama queue. \item[{\em callback}]The callback. \item[{\em source}]The data source name for the listener. \item[{\em symbol}]The symbol for the listener. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a4c64dd1374448d285990fe754406899a}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!create@{create}}
+\index{create@{create}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::create ({\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaSubscriptionCallback} $\ast$ {\em callback}, \/  {\bf MamaSource} $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a4c64dd1374448d285990fe754406899a}
+
+
+Set up and activate a subscriber using the throttle queue. This method is equivalent to calling \hyperlink{classWombat_1_1MamaSubscription_a856510d1c73d4850c0f069a834cd839d}{setup()} followed by \hyperlink{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}{activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mama queue. \item[{\em callback}]The callback. \item[{\em source}]The \hyperlink{classWombat_1_1MamaSource}{MamaSource} identifying the publisher for this symbol. \item[{\em symbol}]The symbol for the listener. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a8a4dc0cdd12bbf92dfc12a6a13d2fa86}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!createSnapshot@{createSnapshot}}
+\index{createSnapshot@{createSnapshot}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{createSnapshot}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::createSnapshot ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaSubscriptionCallback} $\ast$ {\em callback}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a8a4dc0cdd12bbf92dfc12a6a13d2fa86}
+
+
+Set up and activate a snapshot subscriber using the throttle queue. This method is equivalent to calling \hyperlink{classWombat_1_1MamaSubscription_a856510d1c73d4850c0f069a834cd839d}{setup()} followed by setServiceLevel(MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT,0) followed by \hyperlink{classWombat_1_1MamaSubscription_abe7de53adbc4d0173692bae6073d985d}{activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \item[{\em queue}]The mama queue. \item[{\em callback}]The callback. \item[{\em source}]The data source name for the listener. \item[{\em symbol}]The symbol for the listener. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a5402b6243c4bf741d683fae088e8447b}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setRequiresInitial@{setRequiresInitial}}
+\index{setRequiresInitial@{setRequiresInitial}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setRequiresInitial}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setRequiresInitial (bool {\em requiresInitial})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a5402b6243c4bf741d683fae088e8447b}
+
+
+Determines whether the subscription requires an initial value. Must be set before calling createXXX(). Default is true. Not applicable for snapshot subscriptions as they simply request an initial value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em requiresInitial}]True if an initial value is required \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_adc672602e7ac6ecff5ac6709ebfa1d08}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getRequiresInitial@{getRequiresInitial}}
+\index{getRequiresInitial@{getRequiresInitial}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getRequiresInitial}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSubscription::getRequiresInitial (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_adc672602e7ac6ecff5ac6709ebfa1d08}
+
+
+Return true if the subscription requires an initial value. \hypertarget{classWombat_1_1MamaSubscription_a421a096d393f93dd73cdeca5f2b047cc}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getReceivedInitial@{getReceivedInitial}}
+\index{getReceivedInitial@{getReceivedInitial}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getReceivedInitial}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSubscription::getReceivedInitial (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a421a096d393f93dd73cdeca5f2b047cc}
+
+
+Return true if the subscription has received an initial. \hypertarget{classWombat_1_1MamaSubscription_ac6928358bc84c88edef730cd8f8f0f18}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setRetries@{setRetries}}
+\index{setRetries@{setRetries}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setRetries}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setRetries (int {\em retries})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_ac6928358bc84c88edef730cd8f8f0f18}
+
+
+Set the number of retries for initial value requests and recap requests. This must called before createXXX() to affect the initial value requests. Calling it after createXXX() only affects recap requests. The default is MAMA\_\-DEFAULT\_\-RETRIES.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em retries}]The number of time to retry the initial value request. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a09f887c5c0768110e58c65143979dbf5}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getRetries@{getRetries}}
+\index{getRetries@{getRetries}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getRetries}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Wombat::MamaSubscription::getRetries (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a09f887c5c0768110e58c65143979dbf5}
+
+
+Return the retries. \hypertarget{classWombat_1_1MamaSubscription_ae3a076d82e2e53d03e7414749333b65c}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setSubscriptionType@{setSubscriptionType}}
+\index{setSubscriptionType@{setSubscriptionType}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setSubscriptionType}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setSubscriptionType (mamaSubscriptionType {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_ae3a076d82e2e53d03e7414749333b65c}
+
+
+Set the subscription type. The default is normal.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type of subscription (normal, group, order book, etc.). \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_ad156d5629d85a95c9d6e64dfe871aa97}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getSubscriptionType@{getSubscriptionType}}
+\index{getSubscriptionType@{getSubscriptionType}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getSubscriptionType}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaSubscriptionType Wombat::MamaSubscription::getSubscriptionType (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_ad156d5629d85a95c9d6e64dfe871aa97}
+
+
+Return the subscription type. \hypertarget{classWombat_1_1MamaSubscription_a9766dd84a8b7a28b22ff1393954cf1d9}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getServiceLevelOpt@{getServiceLevelOpt}}
+\index{getServiceLevelOpt@{getServiceLevelOpt}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getServiceLevelOpt}]{\setlength{\rightskip}{0pt plus 5cm}virtual long Wombat::MamaSubscription::getServiceLevelOpt (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a9766dd84a8b7a28b22ff1393954cf1d9}
+
+
+Return the service level option. \hypertarget{classWombat_1_1MamaSubscription_a920036bab7805f4d13ea709343ae7260}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setServiceLevel@{setServiceLevel}}
+\index{setServiceLevel@{setServiceLevel}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setServiceLevel}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setServiceLevel (mamaServiceLevel {\em svcLevel}, \/  long {\em svcLevelOpt})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a920036bab7805f4d13ea709343ae7260}
+
+
+Set the service level. This method must be invoked before createXXX().
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em svcLevel}]The service level of the subscription (real time, snapshot, etc.). The default is real time. \item[{\em svcLevelOpt}]An optional argument for certain service levels. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_abed527205b1f055af3e591cd43eb13f8}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getServiceLevel@{getServiceLevel}}
+\index{getServiceLevel@{getServiceLevel}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getServiceLevel}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaServiceLevel Wombat::MamaSubscription::getServiceLevel (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_abed527205b1f055af3e591cd43eb13f8}
+
+
+Return the service level. \hypertarget{classWombat_1_1MamaSubscription_adaf58e3a3a3aa0b66f9af9bb28b22564}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getSymbol}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaSubscription::getSymbol (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_adaf58e3a3a3aa0b66f9af9bb28b22564}
+
+
+Return the symbol for this subscription. \begin{DoxyReturn}{Returns}
+The topic. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a32651a52180ffd292b27f2291559131a}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getCallback@{getCallback}}
+\index{getCallback@{getCallback}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaSubscriptionCallback}$\ast$ Wombat::MamaSubscription::getCallback (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a32651a52180ffd292b27f2291559131a}
+\hypertarget{classWombat_1_1MamaSubscription_a189e15c14b75643e32e0e72b76d3bd14}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setSymbol@{setSymbol}}
+\index{setSymbol@{setSymbol}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setSymbol}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setSymbol (const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a189e15c14b75643e32e0e72b76d3bd14}
+
+
+Sets the symbol for this subscription. Should generally only be used for updating symbology mappings. \hypertarget{classWombat_1_1MamaSubscription_a4cca73373dc01f55978d85a13147f564}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getSourceDerivative@{getSourceDerivative}}
+\index{getSourceDerivative@{getSourceDerivative}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getSourceDerivative}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaSourceDerivative}$\ast$ Wombat::MamaSubscription::getSourceDerivative (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a4cca73373dc01f55978d85a13147f564}
+
+
+Return the (subscription-\/specific) MAMA source derivative for this subscription. \begin{DoxyReturn}{Returns}
+The source derivative. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a075b024887338dd46962c78101793888}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getSourceDerivative@{getSourceDerivative}}
+\index{getSourceDerivative@{getSourceDerivative}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getSourceDerivative}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaSourceDerivative}$\ast$ Wombat::MamaSubscription::getSourceDerivative (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a075b024887338dd46962c78101793888}
+
+
+Return the (subscription-\/specific) MAMA source derivative for this subscription. \begin{DoxyReturn}{Returns}
+The source derivative. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a9a81ca79c7a43953a39a001542388b4b}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getSource@{getSource}}
+\index{getSource@{getSource}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getSource}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaSource}$\ast$ Wombat::MamaSubscription::getSource (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a9a81ca79c7a43953a39a001542388b4b}
+
+
+Return the MAMA source for this subscription. \begin{DoxyReturn}{Returns}
+The source. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a4c768efb3ce3bff36c6bbe1ad8d8abb3}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getSubscSource@{getSubscSource}}
+\index{getSubscSource@{getSubscSource}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getSubscSource}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaSubscription::getSubscSource (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a4c768efb3ce3bff36c6bbe1ad8d8abb3}
+
+
+Return the source for this subscription. \begin{DoxyReturn}{Returns}
+The source. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a6e29abd97a8821db4b0d2af7989d8549}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setTimeout}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setTimeout (double {\em timeout})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a6e29abd97a8821db4b0d2af7989d8549}
+
+
+Set the timeout for this subscription. The timeout is used for requesting initial values, and recaps.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em timeout}]The timeout in seconds. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a921e36bfd97a95056519c98c5c4d5947}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getTimeout}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::MamaSubscription::getTimeout (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a921e36bfd97a95056519c98c5c4d5947}
+
+
+Return the timeout. \hypertarget{classWombat_1_1MamaSubscription_a4535b3a2b9db7ccdb96571b085eb7ccc}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setRecoverGaps@{setRecoverGaps}}
+\index{setRecoverGaps@{setRecoverGaps}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setRecoverGaps}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setRecoverGaps (bool {\em recover})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a4535b3a2b9db7ccdb96571b085eb7ccc}
+
+
+Attempt to recover from sequence number gaps by requesting a recap. 
+\begin{DoxyParams}{Parameters}
+\item[{\em recover}]true enables recovery attempts. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a9db98b670db5607279d089747554413c}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getRecoverGaps@{getRecoverGaps}}
+\index{getRecoverGaps@{getRecoverGaps}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getRecoverGaps}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSubscription::getRecoverGaps (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a9db98b670db5607279d089747554413c}
+
+
+Returns true if listener is configure to recover from sequence number gaps by requesting a recap. \begin{DoxyReturn}{Returns}
+true if gap recover is enabled. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a1409842bd326bae11d6b98a75f5cd911}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setAppDataType@{setAppDataType}}
+\index{setAppDataType@{setAppDataType}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setAppDataType}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setAppDataType (uint8\_\-t {\em dataType})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a1409842bd326bae11d6b98a75f5cd911}
+
+
+Set the application data type. The default is 0.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dataType}]The application-\/specific data type (e.g., market data). \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a67bf253f898a3dd824f9020f7bc97a5a}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getAppDataType@{getAppDataType}}
+\index{getAppDataType@{getAppDataType}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getAppDataType}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\_\-t Wombat::MamaSubscription::getAppDataType () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a67bf253f898a3dd824f9020f7bc97a5a}
+
+
+Get the application data type. The default is 0.
+
+\begin{DoxyReturn}{Returns}
+The application-\/specific data type (e.g., market data). 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a3067981d0bddb17f0616c5afa809da21}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setGroupSizeHint@{setGroupSizeHint}}
+\index{setGroupSizeHint@{setGroupSizeHint}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setGroupSizeHint}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setGroupSizeHint (int {\em groupSizeHint})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a3067981d0bddb17f0616c5afa809da21}
+
+
+Set a hint to the size of groups when making group subscriptions. 
+\begin{DoxyParams}{Parameters}
+\item[{\em groupSizeHint}]Approximate expected group size \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a5d25d46a51905fffaba2d7b5c0fdb65c}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setItemClosure@{setItemClosure}}
+\index{setItemClosure@{setItemClosure}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setItemClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setItemClosure (void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a5d25d46a51905fffaba2d7b5c0fdb65c}
+
+
+Set the item closure for group subscriptions. Group subscriptions receive updates for multiple symbols. This method allows calls to set a per-\/symbol closure which will be passed as the fourth argument to subsequent calls to the onMsg callback. This method may only be called during the onMsg callback.
+
+Setting the item closure for a non-\/group subscription provides a second closure. \hypertarget{classWombat_1_1MamaSubscription_a24e2f328324ade72834cb96fe445bc24}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getItemClosure@{getItemClosure}}
+\index{getItemClosure@{getItemClosure}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getItemClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaSubscription::getItemClosure (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a24e2f328324ade72834cb96fe445bc24}
+
+
+Get the item closure for group subscriptions. See setItemClosure. When invoked during an onMsg callback this method returns the closure for the current item in a group subscription. When invoked outside an onMsg callback, it returns the closure from the most recent callback. \hypertarget{classWombat_1_1MamaSubscription_ab377b043417b8e6544d677b4ad141b77}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setPreInitialCacheSize@{setPreInitialCacheSize}}
+\index{setPreInitialCacheSize@{setPreInitialCacheSize}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setPreInitialCacheSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setPreInitialCacheSize (int {\em cacheSize})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_ab377b043417b8e6544d677b4ad141b77}
+
+
+Set the number of messages to cache for each symbol before the initial value arrives. This allows the subscription to recover when the initial value arrives late (after a subsequent trade or quote already arrived).
+
+For group subscription, a separate cache is used for each group member.
+
+The default is 10.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em cacheSize}]The size of the cache. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_af9cffd081567024fc88e97c1011e0dc7}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getPreInitialCacheSize@{getPreInitialCacheSize}}
+\index{getPreInitialCacheSize@{getPreInitialCacheSize}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getPreInitialCacheSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Wombat::MamaSubscription::getPreInitialCacheSize (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_af9cffd081567024fc88e97c1011e0dc7}
+
+
+Return the initial value cache size. \begin{DoxyReturn}{Returns}
+The cache size. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSubscription_a47002cfff7b77554fca3065ff2356bbe}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!setMsgQualifierFilter@{setMsgQualifierFilter}}
+\index{setMsgQualifierFilter@{setMsgQualifierFilter}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{setMsgQualifierFilter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::setMsgQualifierFilter (bool {\em ignoreDefinitelyDuplicate}, \/  bool {\em ignorePossiblyDuplicate}, \/  bool {\em ignoreDefinitelyDelyaed}, \/  bool {\em ignorePossiblyDelayed}, \/  bool {\em ignoreOutOfSequence})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a47002cfff7b77554fca3065ff2356bbe}
+
+
+Set a filter to discard messages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ignoreDefinitelyDuplicate}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_aa29712e33dec9598f58d8b47d954a688}{MamaMsg::getIsDefinitelyDuplicate} returns true.\item[{\em ignorePossiblyDuplicate}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_a3ac6ff5481827b2be803a43f1e5675e6}{MamaMsg::getIsPossiblyDuplicate} returns true.\item[{\em ignoreDefinitelyDelyaed}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_a8fe32c62e0c88639c9e022337d4c7228}{MamaMsg::getIsDefinitelyDelayed} returns true.\item[{\em ignorePossiblyDelayed}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_ad404a729cc7d7c213fd52e0235689d9e}{MamaMsg::getIsPossiblyDelayed} returns true.\item[{\em ignoreOutOfSequence}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_a2b01886c287dd83c9b9a9aa20a9d9267}{MamaMsg::getIsOutOfSequence} returns true. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_acde88c025386448c58ee5db4393a08d6}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!getMsgQualifierFilter@{getMsgQualifierFilter}}
+\index{getMsgQualifierFilter@{getMsgQualifierFilter}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{getMsgQualifierFilter}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::getMsgQualifierFilter (bool \& {\em ignoreDefinitelyDuplicate}, \/  bool \& {\em ignorePossiblyDuplicate}, \/  bool \& {\em ignoreDefinitelyDelyaed}, \/  bool \& {\em ignorePossiblyDelayed}, \/  bool \& {\em ignoreOutOfSequence}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_acde88c025386448c58ee5db4393a08d6}
+
+
+Get the filters that discard message according to the message qualifier. 
+\begin{DoxyParams}{Parameters}
+\item[{\em ignoreDefinitelyDuplicate}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_aa29712e33dec9598f58d8b47d954a688}{MamaMsg::getIsDefinitelyDuplicate} returns true.\item[{\em ignorePossiblyDuplicate}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_a3ac6ff5481827b2be803a43f1e5675e6}{MamaMsg::getIsPossiblyDuplicate} returns true.\item[{\em ignoreDefinitelyDelayed}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_a8fe32c62e0c88639c9e022337d4c7228}{MamaMsg::getIsDefinitelyDelayed} returns true.\item[{\em ignorePossiblyDelayed}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_ad404a729cc7d7c213fd52e0235689d9e}{MamaMsg::getIsPossiblyDelayed} returns true.\item[{\em ignoreOutOfSequence}]If true callbacks will not be invoked for messages where \hyperlink{classWombat_1_1MamaMsg_a2b01886c287dd83c9b9a9aa20a9d9267}{MamaMsg::getIsOutOfSequence} returns true. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscription_a331eee861f0185e564bcceac3aedde24}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::destroy ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a331eee861f0185e564bcceac3aedde24}
+
+
+Destroy the subscription. Destroys the underlying subscription. The subscription can be recreated via a subsequent call to \hyperlink{classWombat_1_1MamaSubscription_a2ac46ac833f5af07a09457c4eb778196}{create()} 
+
+Reimplemented from \hyperlink{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{Wombat::MamaBasicSubscription}.\hypertarget{classWombat_1_1MamaSubscription_a2607ec39a0426074664326920a5733f9}{
+\index{Wombat::MamaSubscription@{Wombat::MamaSubscription}!destroyEx@{destroyEx}}
+\index{destroyEx@{destroyEx}!Wombat::MamaSubscription@{Wombat::MamaSubscription}}
+\subsubsection[{destroyEx}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscription::destroyEx ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscription_a2607ec39a0426074664326920a5733f9}
+
+
+This function will destroy the subscription and can be called from any thread. Note that the subscription will not be fully destroyed until the onDestroy callback is received from the \hyperlink{classWombat_1_1MamaBasicSubscriptionCallback}{MamaBasicSubscriptionCallback} interface. To destroy from the dispatching thread the destroy function should be used in preference. 
+
+Reimplemented from \hyperlink{classWombat_1_1MamaBasicSubscription_aa00ed63c4f538d8abb21255abace5ffb}{Wombat::MamaBasicSubscription}.

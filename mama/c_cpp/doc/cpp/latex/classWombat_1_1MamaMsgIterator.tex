@@ -1,0 +1,137 @@
+\hypertarget{classWombat_1_1MamaMsgIterator}{
+\section{Wombat::MamaMsgIterator Class Reference}
+\label{classWombat_1_1MamaMsgIterator}\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+}
+
+
+Iterator class for mamaMsg.  
+
+
+{\ttfamily \#include $<$MamaMsg.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaMsgIterator_ae5e16e84272e265e65daf1d270a73c79}{MamaMsgIterator} (const \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary} $\ast$dictionary)
+\item 
+\hyperlink{classWombat_1_1MamaMsgIterator_a4eef96946f71db9f68a0cbd31602caea}{MamaMsgIterator} ()
+\item 
+\hyperlink{classWombat_1_1MamaMsgIterator_a80cf6eb3124d536a134937dff45f41a9}{MamaMsgIterator} (const \hyperlink{classWombat_1_1MamaMsgIterator}{MamaMsgIterator} \&copy)
+\item 
+\hyperlink{classWombat_1_1MamaMsgIterator_ad5e8b4fd37731e3b84aac89ca850c6be}{$\sim$MamaMsgIterator} ()
+\item 
+void \hyperlink{classWombat_1_1MamaMsgIterator_af1364d9473c88f1a392a55e90226199e}{SetDict} (const \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary} $\ast$dictionary)
+\item 
+\hyperlink{classWombat_1_1MamaMsgIterator}{MamaMsgIterator} \& \hyperlink{classWombat_1_1MamaMsgIterator_ac80cce28d30bf1c71b896e2d633690fe}{operator=} (const \hyperlink{classWombat_1_1MamaMsgIterator}{MamaMsgIterator} \&)
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgIterator_a51f919927ec2559aea74f13dc8ceb5f2}{operator==} (const \hyperlink{classWombat_1_1MamaMsgIterator}{MamaMsgIterator} \&) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgIterator_ab2cf7ad587e0357a22e9dd12cfc922db}{operator!=} (const \hyperlink{classWombat_1_1MamaMsgIterator}{MamaMsgIterator} \&) const 
+\item 
+\hyperlink{classWombat_1_1MamaMsgField}{MamaMsgField} \& \hyperlink{classWombat_1_1MamaMsgIterator_ab5f281bda3dda26efc1059bc642462c8}{operator$\ast$} ()
+\item 
+\hyperlink{classWombat_1_1MamaMsgField}{MamaMsgField} $\ast$ \hyperlink{classWombat_1_1MamaMsgIterator_a2e90ac4a110055ad246646e8c01b08b4}{operator-\/$>$} ()
+\item 
+\hyperlink{classWombat_1_1MamaMsgIterator}{MamaMsgIterator} \& \hyperlink{classWombat_1_1MamaMsgIterator_a02d8894307ac492d7dad4dbe0ab87757}{operator++} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mamaMsgIterator \hyperlink{classWombat_1_1MamaMsgIterator_a26a128f59ba936caffd72fc477059b86}{myImpl}
+\item 
+\hyperlink{classWombat_1_1MamaMsgField}{MamaMsgField} \hyperlink{classWombat_1_1MamaMsgIterator_a9bf4ef87a3bc03de3850fb884ecbf74f}{mMsgField}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamaMsgIterator_a627b5ab9311b2275c94c0ee886300bd8}{MamaMsg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Iterator class for mamaMsg. Once an iterator has been created it can be set to the beginning of a mamaMsg and used to iterate over the MamaMsgFields.
+
+An iterator can only be used with one message at a time, and only one iterator can be on one message at a time
+
+Only forward iterating is supported
+
+The dictionary to be used with the fields can be set in the iterator 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaMsgIterator_ae5e16e84272e265e65daf1d270a73c79}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!MamaMsgIterator@{MamaMsgIterator}}
+\index{MamaMsgIterator@{MamaMsgIterator}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{MamaMsgIterator}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgIterator::MamaMsgIterator (const {\bf MamaDictionary} $\ast$ {\em dictionary})}}
+\label{classWombat_1_1MamaMsgIterator_ae5e16e84272e265e65daf1d270a73c79}
+\hypertarget{classWombat_1_1MamaMsgIterator_a4eef96946f71db9f68a0cbd31602caea}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!MamaMsgIterator@{MamaMsgIterator}}
+\index{MamaMsgIterator@{MamaMsgIterator}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{MamaMsgIterator}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgIterator::MamaMsgIterator ()}}
+\label{classWombat_1_1MamaMsgIterator_a4eef96946f71db9f68a0cbd31602caea}
+\hypertarget{classWombat_1_1MamaMsgIterator_a80cf6eb3124d536a134937dff45f41a9}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!MamaMsgIterator@{MamaMsgIterator}}
+\index{MamaMsgIterator@{MamaMsgIterator}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{MamaMsgIterator}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgIterator::MamaMsgIterator (const {\bf MamaMsgIterator} \& {\em copy})}}
+\label{classWombat_1_1MamaMsgIterator_a80cf6eb3124d536a134937dff45f41a9}
+\hypertarget{classWombat_1_1MamaMsgIterator_ad5e8b4fd37731e3b84aac89ca850c6be}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!$\sim$MamaMsgIterator@{$\sim$MamaMsgIterator}}
+\index{$\sim$MamaMsgIterator@{$\sim$MamaMsgIterator}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{$\sim$MamaMsgIterator}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgIterator::$\sim$MamaMsgIterator ()}}
+\label{classWombat_1_1MamaMsgIterator_ad5e8b4fd37731e3b84aac89ca850c6be}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaMsgIterator_af1364d9473c88f1a392a55e90226199e}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!SetDict@{SetDict}}
+\index{SetDict@{SetDict}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{SetDict}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgIterator::SetDict (const {\bf MamaDictionary} $\ast$ {\em dictionary})}}
+\label{classWombat_1_1MamaMsgIterator_af1364d9473c88f1a392a55e90226199e}
+\hypertarget{classWombat_1_1MamaMsgIterator_ac80cce28d30bf1c71b896e2d633690fe}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaMsgIterator}\& Wombat::MamaMsgIterator::operator= (const {\bf MamaMsgIterator} \&)}}
+\label{classWombat_1_1MamaMsgIterator_ac80cce28d30bf1c71b896e2d633690fe}
+\hypertarget{classWombat_1_1MamaMsgIterator_a51f919927ec2559aea74f13dc8ceb5f2}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgIterator::operator== (const {\bf MamaMsgIterator} \&) const}}
+\label{classWombat_1_1MamaMsgIterator_a51f919927ec2559aea74f13dc8ceb5f2}
+\hypertarget{classWombat_1_1MamaMsgIterator_ab2cf7ad587e0357a22e9dd12cfc922db}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgIterator::operator!= (const {\bf MamaMsgIterator} \&) const}}
+\label{classWombat_1_1MamaMsgIterator_ab2cf7ad587e0357a22e9dd12cfc922db}
+\hypertarget{classWombat_1_1MamaMsgIterator_ab5f281bda3dda26efc1059bc642462c8}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaMsgField}\& Wombat::MamaMsgIterator::operator$\ast$ ()}}
+\label{classWombat_1_1MamaMsgIterator_ab5f281bda3dda26efc1059bc642462c8}
+\hypertarget{classWombat_1_1MamaMsgIterator_a2e90ac4a110055ad246646e8c01b08b4}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{operator-\/$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaMsgField}$\ast$ Wombat::MamaMsgIterator::operator-\/$>$ ()}}
+\label{classWombat_1_1MamaMsgIterator_a2e90ac4a110055ad246646e8c01b08b4}
+\hypertarget{classWombat_1_1MamaMsgIterator_a02d8894307ac492d7dad4dbe0ab87757}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaMsgIterator}\& Wombat::MamaMsgIterator::operator++ ()}}
+\label{classWombat_1_1MamaMsgIterator_a02d8894307ac492d7dad4dbe0ab87757}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classWombat_1_1MamaMsgIterator_a627b5ab9311b2275c94c0ee886300bd8}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!MamaMsg@{MamaMsg}}
+\index{MamaMsg@{MamaMsg}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{MamaMsg}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf MamaMsg}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classWombat_1_1MamaMsgIterator_a627b5ab9311b2275c94c0ee886300bd8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaMsgIterator_a26a128f59ba936caffd72fc477059b86}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!myImpl@{myImpl}}
+\index{myImpl@{myImpl}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{myImpl}]{\setlength{\rightskip}{0pt plus 5cm}mamaMsgIterator {\bf Wombat::MamaMsgIterator::myImpl}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaMsgIterator_a26a128f59ba936caffd72fc477059b86}
+\hypertarget{classWombat_1_1MamaMsgIterator_a9bf4ef87a3bc03de3850fb884ecbf74f}{
+\index{Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}!mMsgField@{mMsgField}}
+\index{mMsgField@{mMsgField}!Wombat::MamaMsgIterator@{Wombat::MamaMsgIterator}}
+\subsubsection[{mMsgField}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaMsgField} {\bf Wombat::MamaMsgIterator::mMsgField}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaMsgIterator_a9bf4ef87a3bc03de3850fb884ecbf74f}

@@ -1,0 +1,83 @@
+\hypertarget{classWombat_1_1MamaQueueGroup}{
+\section{Wombat::MamaQueueGroup Class Reference}
+\label{classWombat_1_1MamaQueueGroup}\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+}
+
+
+A simple class for allocating subscriptions amongst multiple queues in a round robin.  
+
+
+{\ttfamily \#include $<$MamaQueueGroup.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaQueueGroup_aa24c28b26b494f159b8c7c5f5cb3e328}{$\sim$MamaQueueGroup} ()
+\item 
+\hyperlink{classWombat_1_1MamaQueueGroup_a132745778e569ecc287f7a21aaac7028}{MamaQueueGroup} (int numberOfQueues, mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em If numberOfQueues == 0, getNextQueue returns the default queue for the bridge. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueGroup_a1fca2ac74bb5f6a211aba98149509e0d}{destroyWait} ()
+\begin{DoxyCompactList}\small\item\em Destroy all the queues. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$ \hyperlink{classWombat_1_1MamaQueueGroup_a4b1c1691e8b9c94ac5606bb6f64fc543}{getNextQueue} ()
+\begin{DoxyCompactList}\small\item\em Return the next available queue from the queue group. \item\end{DoxyCompactList}\item 
+virtual int \hyperlink{classWombat_1_1MamaQueueGroup_a8e5ffd601eaa994a2996b0d6ad9ca2ee}{getNumberOfQueues} ()
+\begin{DoxyCompactList}\small\item\em Return the number of MamaQueues currently managed by this queue group. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueGroup_a90a5e2596ebda29af5bd7bdcdbb63828}{stopDispatch} ()
+\begin{DoxyCompactList}\small\item\em Stop dispatching on queues in the queue group. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueGroup_a8b0bd3a030e0cc5cab54b2d3347dd47c}{startDispatch} ()
+\begin{DoxyCompactList}\small\item\em Start dispatching on all queues in a group. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A simple class for allocating subscriptions amongst multiple queues in a round robin. This class creates dispatchers for the queues as well. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaQueueGroup_aa24c28b26b494f159b8c7c5f5cb3e328}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!$\sim$MamaQueueGroup@{$\sim$MamaQueueGroup}}
+\index{$\sim$MamaQueueGroup@{$\sim$MamaQueueGroup}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{$\sim$MamaQueueGroup}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaQueueGroup::$\sim$MamaQueueGroup ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueGroup_aa24c28b26b494f159b8c7c5f5cb3e328}
+\hypertarget{classWombat_1_1MamaQueueGroup_a132745778e569ecc287f7a21aaac7028}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!MamaQueueGroup@{MamaQueueGroup}}
+\index{MamaQueueGroup@{MamaQueueGroup}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{MamaQueueGroup}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaQueueGroup::MamaQueueGroup (int {\em numberOfQueues}, \/  mamaBridge {\em bridgeImpl})}}
+\label{classWombat_1_1MamaQueueGroup_a132745778e569ecc287f7a21aaac7028}
+
+
+If numberOfQueues == 0, getNextQueue returns the default queue for the bridge. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaQueueGroup_a1fca2ac74bb5f6a211aba98149509e0d}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!destroyWait@{destroyWait}}
+\index{destroyWait@{destroyWait}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{destroyWait}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueGroup::destroyWait ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueGroup_a1fca2ac74bb5f6a211aba98149509e0d}
+
+
+Destroy all the queues. Note that a queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed. This function will block until all of the objects have been destroyed and will then destroy the queues. \hypertarget{classWombat_1_1MamaQueueGroup_a4b1c1691e8b9c94ac5606bb6f64fc543}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!getNextQueue@{getNextQueue}}
+\index{getNextQueue@{getNextQueue}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{getNextQueue}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaQueue}$\ast$ Wombat::MamaQueueGroup::getNextQueue ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueGroup_a4b1c1691e8b9c94ac5606bb6f64fc543}
+
+
+Return the next available queue from the queue group. Queues are returned in a round robin fashion. \hypertarget{classWombat_1_1MamaQueueGroup_a8e5ffd601eaa994a2996b0d6ad9ca2ee}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!getNumberOfQueues@{getNumberOfQueues}}
+\index{getNumberOfQueues@{getNumberOfQueues}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{getNumberOfQueues}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Wombat::MamaQueueGroup::getNumberOfQueues ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueGroup_a8e5ffd601eaa994a2996b0d6ad9ca2ee}
+
+
+Return the number of MamaQueues currently managed by this queue group. \hypertarget{classWombat_1_1MamaQueueGroup_a90a5e2596ebda29af5bd7bdcdbb63828}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!stopDispatch@{stopDispatch}}
+\index{stopDispatch@{stopDispatch}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{stopDispatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueGroup::stopDispatch ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueGroup_a90a5e2596ebda29af5bd7bdcdbb63828}
+
+
+Stop dispatching on queues in the queue group. \hypertarget{classWombat_1_1MamaQueueGroup_a8b0bd3a030e0cc5cab54b2d3347dd47c}{
+\index{Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}!startDispatch@{startDispatch}}
+\index{startDispatch@{startDispatch}!Wombat::MamaQueueGroup@{Wombat::MamaQueueGroup}}
+\subsubsection[{startDispatch}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueGroup::startDispatch ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueGroup_a8b0bd3a030e0cc5cab54b2d3347dd47c}
+
+
+Start dispatching on all queues in a group. NOTE: This only should be used after a previous call to stopDispatch. Dispatching on a queue is started hwen it is created 

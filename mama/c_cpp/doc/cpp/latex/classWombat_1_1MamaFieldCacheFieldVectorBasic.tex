@@ -1,0 +1,82 @@
+\hypertarget{classWombat_1_1MamaFieldCacheFieldVectorBasic}{
+\section{Wombat::MamaFieldCacheFieldVectorBasic$<$ T, fieldType $>$ Class Template Reference}
+\label{classWombat_1_1MamaFieldCacheFieldVectorBasic}\index{Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}}
+}
+
+
+\hyperlink{classWombat_1_1MamaFieldCacheFieldVectorBasic}{MamaFieldCacheFieldVectorBasic}.  
+
+
+{\ttfamily \#include $<$MamaFieldCacheFieldTypes.h$>$}Inheritance diagram for Wombat::MamaFieldCacheFieldVectorBasic$<$ T, fieldType $>$::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaFieldCacheFieldVectorBasic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheFieldVectorBasic_a21c8322f02e29983948fbb406e027c58}{set} (\hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field, const T $\ast$values, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} size)
+\begin{DoxyCompactList}\small\item\em Set the field value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheFieldVectorBasic_ac17d53c7e84ee822a8e6c506681aed7e}{get} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field, const T $\ast$\&values, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&size) const 
+\begin{DoxyCompactList}\small\item\em Return the field values. \item\end{DoxyCompactList}\item 
+const T \& \hyperlink{classWombat_1_1MamaFieldCacheFieldVectorBasic_a16801dab96e3ff299737db8b2a07acea}{get} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} index) const 
+\begin{DoxyCompactList}\small\item\em Return the value of a specific field of a vector field. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheFieldVectorBasic_a588126cf850857ebd49ccb66138ca4ab}{checkType} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, mamaFieldType fieldType$>$ class Wombat::MamaFieldCacheFieldVectorBasic$<$ T, fieldType $>$}
+
+\hyperlink{classWombat_1_1MamaFieldCacheFieldVectorBasic}{MamaFieldCacheFieldVectorBasic}. Base class for basic vector types. Allows to set and get the value of the field. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFieldCacheFieldVectorBasic_a21c8322f02e29983948fbb406e027c58}{
+\index{Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}!set@{set}}
+\index{set@{set}!Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , mamaFieldType fieldType$>$ void {\bf Wombat::MamaFieldCacheFieldVectorBasic}$<$ T, fieldType $>$::set ({\bf MamaFieldCacheField} \& {\em field}, \/  const T $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{classWombat_1_1MamaFieldCacheFieldVectorBasic_a21c8322f02e29983948fbb406e027c58}
+
+
+Set the field value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to set the values to. \item[{\em values}]The new values of the field. \item[{\em size}]The number of fields in {\ttfamily values}. \end{DoxyParams}
+
+
+Referenced by Wombat::setFieldValue().\hypertarget{classWombat_1_1MamaFieldCacheFieldVectorBasic_ac17d53c7e84ee822a8e6c506681aed7e}{
+\index{Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}!get@{get}}
+\index{get@{get}!Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , mamaFieldType fieldType$>$ void {\bf Wombat::MamaFieldCacheFieldVectorBasic}$<$ T, fieldType $>$::get (const {\bf MamaFieldCacheField} \& {\em field}, \/  const T $\ast$\& {\em values}, \/  {\bf mama\_\-size\_\-t} \& {\em size}) const}}
+\label{classWombat_1_1MamaFieldCacheFieldVectorBasic_ac17d53c7e84ee822a8e6c506681aed7e}
+
+
+Return the field values. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to get the values from. \item[{\em values}]A reference to the values to be returned. \item[{\em size}]A reference to the size of the vector to be returned. \end{DoxyParams}
+
+
+Referenced by Wombat::getFieldValue().\hypertarget{classWombat_1_1MamaFieldCacheFieldVectorBasic_a16801dab96e3ff299737db8b2a07acea}{
+\index{Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}!get@{get}}
+\index{get@{get}!Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , mamaFieldType fieldType$>$ const T\& {\bf Wombat::MamaFieldCacheFieldVectorBasic}$<$ T, fieldType $>$::get (const {\bf MamaFieldCacheField} \& {\em field}, \/  {\bf mama\_\-size\_\-t} {\em index}) const}}
+\label{classWombat_1_1MamaFieldCacheFieldVectorBasic_a16801dab96e3ff299737db8b2a07acea}
+
+
+Return the value of a specific field of a vector field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to get the value from. \item[{\em index}]The index of the element of the vector to get the value from. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheFieldVectorBasic_a588126cf850857ebd49ccb66138ca4ab}{
+\index{Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}!checkType@{checkType}}
+\index{checkType@{checkType}!Wombat::MamaFieldCacheFieldVectorBasic@{Wombat::MamaFieldCacheFieldVectorBasic}}
+\subsubsection[{checkType}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , mamaFieldType fieldType$>$ void {\bf Wombat::MamaFieldCacheFieldVectorBasic}$<$ T, fieldType $>$::checkType (const {\bf MamaFieldCacheField} \& {\em field}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheFieldVectorBasic_a588126cf850857ebd49ccb66138ca4ab}
+
+
+References Wombat::MamaFieldCacheField::getType().

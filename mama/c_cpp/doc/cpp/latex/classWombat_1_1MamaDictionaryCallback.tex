@@ -1,0 +1,66 @@
+\hypertarget{classWombat_1_1MamaDictionaryCallback}{
+\section{Wombat::MamaDictionaryCallback Class Reference}
+\label{classWombat_1_1MamaDictionaryCallback}\index{Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}}
+}
+
+
+The {\ttfamily WombatDictionaryCallback} receives notification regarding the population of the data dictionary.  
+
+
+{\ttfamily \#include $<$MamaDictionaryCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaDictionaryCallback_a5395bc3242fe2651bcfaefcf60b7375f}{$\sim$MamaDictionaryCallback} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionaryCallback_a61cce11968f309a252e76c93c5125ecd}{onTimeout} (void)
+\begin{DoxyCompactList}\small\item\em Called when a timeout occurs. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionaryCallback_aad56e9347966d44cb361d0881507a0b2}{onError} (const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Invoked when an error occurs. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionaryCallback_a233a98b2d67b54037975db88ba72fabe}{onComplete} (void)
+\begin{DoxyCompactList}\small\item\em Invoked when dictionary creation is complete. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily WombatDictionaryCallback} receives notification regarding the population of the data dictionary. Clients implement the interface and pass it to {\ttfamily Mama.createDictionarySubscription}
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary} 
+
+Mama::createDictionarySubscription 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDictionaryCallback_a5395bc3242fe2651bcfaefcf60b7375f}{
+\index{Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}!$\sim$MamaDictionaryCallback@{$\sim$MamaDictionaryCallback}}
+\index{$\sim$MamaDictionaryCallback@{$\sim$MamaDictionaryCallback}!Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}}
+\subsubsection[{$\sim$MamaDictionaryCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaDictionaryCallback::$\sim$MamaDictionaryCallback (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionaryCallback_a5395bc3242fe2651bcfaefcf60b7375f}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDictionaryCallback_a61cce11968f309a252e76c93c5125ecd}{
+\index{Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}!onTimeout@{onTimeout}}
+\index{onTimeout@{onTimeout}!Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}}
+\subsubsection[{onTimeout}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionaryCallback::onTimeout (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionaryCallback_a61cce11968f309a252e76c93c5125ecd}
+
+
+Called when a timeout occurs. \hypertarget{classWombat_1_1MamaDictionaryCallback_aad56e9347966d44cb361d0881507a0b2}{
+\index{Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionaryCallback::onError (const char $\ast$ {\em message})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionaryCallback_aad56e9347966d44cb361d0881507a0b2}
+
+
+Invoked when an error occurs. 
+\begin{DoxyParams}{Parameters}
+\item[{\em message}]The error message. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionaryCallback_a233a98b2d67b54037975db88ba72fabe}{
+\index{Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}!onComplete@{onComplete}}
+\index{onComplete@{onComplete}!Wombat::MamaDictionaryCallback@{Wombat::MamaDictionaryCallback}}
+\subsubsection[{onComplete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionaryCallback::onComplete (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionaryCallback_a233a98b2d67b54037975db88ba72fabe}
+
+
+Invoked when dictionary creation is complete. 

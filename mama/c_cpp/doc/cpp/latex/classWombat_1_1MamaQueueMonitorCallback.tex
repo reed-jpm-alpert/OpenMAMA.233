@@ -1,0 +1,54 @@
+\hypertarget{classWombat_1_1MamaQueueMonitorCallback}{
+\section{Wombat::MamaQueueMonitorCallback Class Reference}
+\label{classWombat_1_1MamaQueueMonitorCallback}\index{Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}}
+}
+
+
+Receive callbacks when certain conditions for the \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} are met.  
+
+
+{\ttfamily \#include $<$MamaQueueMonitorCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaQueueMonitorCallback_aef8c06407fa3cde05bbc52a21748b8c3}{$\sim$MamaQueueMonitorCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueMonitorCallback_aed04cc6296cbd052724e2c390bc7c49c}{onHighWatermarkExceeded} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, size\_\-t size, void $\ast$closure)=0
+\begin{DoxyCompactList}\small\item\em Callback invoked if an upper size limit has been specified for a queue and that limit has been exceeded. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueMonitorCallback_abcb11fd28083a7fa3165186111189321}{onLowWatermark} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, size\_\-t size, void $\ast$closure)=0
+\begin{DoxyCompactList}\small\item\em Callback when low water mark is reached. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Receive callbacks when certain conditions for the \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} are met. Currently only one callback is defined which is invoked when the specified size limit on the \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} is exceeded. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaQueueMonitorCallback_aef8c06407fa3cde05bbc52a21748b8c3}{
+\index{Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}!$\sim$MamaQueueMonitorCallback@{$\sim$MamaQueueMonitorCallback}}
+\index{$\sim$MamaQueueMonitorCallback@{$\sim$MamaQueueMonitorCallback}!Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}}
+\subsubsection[{$\sim$MamaQueueMonitorCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaQueueMonitorCallback::$\sim$MamaQueueMonitorCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueMonitorCallback_aef8c06407fa3cde05bbc52a21748b8c3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaQueueMonitorCallback_aed04cc6296cbd052724e2c390bc7c49c}{
+\index{Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}!onHighWatermarkExceeded@{onHighWatermarkExceeded}}
+\index{onHighWatermarkExceeded@{onHighWatermarkExceeded}!Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}}
+\subsubsection[{onHighWatermarkExceeded}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueMonitorCallback::onHighWatermarkExceeded ({\bf MamaQueue} $\ast$ {\em queue}, \/  size\_\-t {\em size}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueMonitorCallback_aed04cc6296cbd052724e2c390bc7c49c}
+
+
+Callback invoked if an upper size limit has been specified for a queue and that limit has been exceeded. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]Pointer to the queue for which this callback was invoked. \item[{\em size}]The number of events on the queue if supported; otherwise 0. \item[{\em closure}]User supplied data when the callback object was registered. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaQueueMonitorCallback_abcb11fd28083a7fa3165186111189321}{
+\index{Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}!onLowWatermark@{onLowWatermark}}
+\index{onLowWatermark@{onLowWatermark}!Wombat::MamaQueueMonitorCallback@{Wombat::MamaQueueMonitorCallback}}
+\subsubsection[{onLowWatermark}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueMonitorCallback::onLowWatermark ({\bf MamaQueue} $\ast$ {\em queue}, \/  size\_\-t {\em size}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueMonitorCallback_abcb11fd28083a7fa3165186111189321}
+
+
+Callback when low water mark is reached. Only supported by \hyperlink{namespaceWombat}{Wombat} TCP middleware.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]Pointer to the queue for which this callback was invoked. \item[{\em size}]The number of events on the queue. \item[{\em closure}]User supplied data when the callback object was registered. \end{DoxyParams}

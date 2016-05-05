@@ -1,0 +1,80 @@
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscriptionCallback}{
+\section{Wombat::MamaBasicWildCardSubscriptionCallback Class Reference}
+\label{classWombat_1_1MamaBasicWildCardSubscriptionCallback}\index{Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}}
+}
+
+
+The message callback interface for basic subscriptions.  
+
+
+{\ttfamily \#include $<$MamaBasicWildCardSubscriptionCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback_a560e1a8de5344d6075f5126616f97a73}{$\sim$MamaBasicWildCardSubscriptionCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback_aa301ef6cc86858276e6ca9008c738717}{onCreate} (\hyperlink{classWombat_1_1MamaBasicWildCardSubscription}{MamaBasicWildCardSubscription} $\ast$subscription)=0
+\begin{DoxyCompactList}\small\item\em Method invoked when subscription creation is complete, and before any calls to {\ttfamily onMsg}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback_a89212077d27b4799729d606471df27fa}{onError} (\hyperlink{classWombat_1_1MamaBasicWildCardSubscription}{MamaBasicWildCardSubscription} $\ast$subscription, const \hyperlink{classWombat_1_1MamaStatus}{MamaStatus} \&status, const char $\ast$topic)=0
+\begin{DoxyCompactList}\small\item\em Invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an unentitled topic. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback_ac92c3c2a87d78f82257b57b902b1eb41}{onDestroy} (\hyperlink{classWombat_1_1MamaBasicWildCardSubscription}{MamaBasicWildCardSubscription} $\ast$subscription, void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em This method is invoked when a subscription has been completely destroyed, the client can have confidence that no further events will be placed on the queue for this subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback_aac6e6572d42f3ceb8a354a79a0171cf2}{onMsg} (\hyperlink{classWombat_1_1MamaBasicWildCardSubscription}{MamaBasicWildCardSubscription} $\ast$subscription, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg, const char $\ast$topic)=0
+\begin{DoxyCompactList}\small\item\em Invoked when a message arrives. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The message callback interface for basic subscriptions. Callers provide an object implementing this interface on creating a {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscriptionCallback_a560e1a8de5344d6075f5126616f97a73}{
+\index{Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}!$\sim$MamaBasicWildCardSubscriptionCallback@{$\sim$MamaBasicWildCardSubscriptionCallback}}
+\index{$\sim$MamaBasicWildCardSubscriptionCallback@{$\sim$MamaBasicWildCardSubscriptionCallback}!Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}}
+\subsubsection[{$\sim$MamaBasicWildCardSubscriptionCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaBasicWildCardSubscriptionCallback::$\sim$MamaBasicWildCardSubscriptionCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscriptionCallback_a560e1a8de5344d6075f5126616f97a73}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscriptionCallback_aa301ef6cc86858276e6ca9008c738717}{
+\index{Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}}
+\subsubsection[{onCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscriptionCallback::onCreate ({\bf MamaBasicWildCardSubscription} $\ast$ {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscriptionCallback_aa301ef6cc86858276e6ca9008c738717}
+
+
+Method invoked when subscription creation is complete, and before any calls to {\ttfamily onMsg}. Since subscriptions are created asynchronous by throttle, this callback provides the subscription instance after the throttle processes the creation request.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscriptionCallback_a89212077d27b4799729d606471df27fa}{
+\index{Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscriptionCallback::onError ({\bf MamaBasicWildCardSubscription} $\ast$ {\em subscription}, \/  const {\bf MamaStatus} \& {\em status}, \/  const char $\ast$ {\em topic})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscriptionCallback_a89212077d27b4799729d606471df27fa}
+
+
+Invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an unentitled topic. If the status is {\ttfamily MamaMsgStatus.NOT\_\-ENTITTLED} the topic parameter is the specific unentitled topic. If the subscription topic contains wildcards, the subscription may still receive messages for other entitled topics.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \item[{\em status}]The wombat error code. \item[{\em topic}]The topic for NOT\_\-ENTITLED \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscriptionCallback_ac92c3c2a87d78f82257b57b902b1eb41}{
+\index{Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}}
+\subsubsection[{onDestroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscriptionCallback::onDestroy ({\bf MamaBasicWildCardSubscription} $\ast$ {\em subscription}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscriptionCallback_ac92c3c2a87d78f82257b57b902b1eb41}
+
+
+This method is invoked when a subscription has been completely destroyed, the client can have confidence that no further events will be placed on the queue for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The The \hyperlink{classWombat_1_1Mama}{Mama} Basic Wildcard Subscription. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the create function. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscriptionCallback_aac6e6572d42f3ceb8a354a79a0171cf2}{
+\index{Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamaBasicWildCardSubscriptionCallback@{Wombat::MamaBasicWildCardSubscriptionCallback}}
+\subsubsection[{onMsg}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscriptionCallback::onMsg ({\bf MamaBasicWildCardSubscription} $\ast$ {\em subscription}, \/  {\bf MamaMsg} \& {\em msg}, \/  const char $\ast$ {\em topic})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscriptionCallback_aac6e6572d42f3ceb8a354a79a0171cf2}
+
+
+Invoked when a message arrives. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]the {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}}. \item[{\em msg}]The TibrvMsg. \end{DoxyParams}

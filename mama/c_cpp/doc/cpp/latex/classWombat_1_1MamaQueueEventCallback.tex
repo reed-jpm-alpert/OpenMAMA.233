@@ -1,0 +1,40 @@
+\hypertarget{classWombat_1_1MamaQueueEventCallback}{
+\section{Wombat::MamaQueueEventCallback Class Reference}
+\label{classWombat_1_1MamaQueueEventCallback}\index{Wombat::MamaQueueEventCallback@{Wombat::MamaQueueEventCallback}}
+}
+
+
+Definition of the callback method for when a user added event fires.  
+
+
+{\ttfamily \#include $<$MamaQueueEventCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaQueueEventCallback_acfe9bf6b75e5c77972529963517eee8b}{$\sim$MamaQueueEventCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaQueueEventCallback_ae5d78bf4717b97e7d72858a30e2a3233}{onEvent} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} \&queue, void $\ast$closure)=0
+\begin{DoxyCompactList}\small\item\em Invoked when a user event, added by {\ttfamily \hyperlink{classWombat_1_1MamaQueue_a8b1a038741f3d3c5cd3bcea8708003c7}{MamaQueue.enqueueEvent()}} fires. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition of the callback method for when a user added event fires. Concrete instances of this interface are registered with an event queue using the {\ttfamily \hyperlink{classWombat_1_1MamaQueue_a8b1a038741f3d3c5cd3bcea8708003c7}{MamaQueue.enqueueEvent()}}. Currently only support by \hyperlink{namespaceWombat}{Wombat} Middleware. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaQueueEventCallback_acfe9bf6b75e5c77972529963517eee8b}{
+\index{Wombat::MamaQueueEventCallback@{Wombat::MamaQueueEventCallback}!$\sim$MamaQueueEventCallback@{$\sim$MamaQueueEventCallback}}
+\index{$\sim$MamaQueueEventCallback@{$\sim$MamaQueueEventCallback}!Wombat::MamaQueueEventCallback@{Wombat::MamaQueueEventCallback}}
+\subsubsection[{$\sim$MamaQueueEventCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaQueueEventCallback::$\sim$MamaQueueEventCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueEventCallback_acfe9bf6b75e5c77972529963517eee8b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaQueueEventCallback_ae5d78bf4717b97e7d72858a30e2a3233}{
+\index{Wombat::MamaQueueEventCallback@{Wombat::MamaQueueEventCallback}!onEvent@{onEvent}}
+\index{onEvent@{onEvent}!Wombat::MamaQueueEventCallback@{Wombat::MamaQueueEventCallback}}
+\subsubsection[{onEvent}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaQueueEventCallback::onEvent ({\bf MamaQueue} \& {\em queue}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaQueueEventCallback_ae5d78bf4717b97e7d72858a30e2a3233}
+
+
+Invoked when a user event, added by {\ttfamily \hyperlink{classWombat_1_1MamaQueue_a8b1a038741f3d3c5cd3bcea8708003c7}{MamaQueue.enqueueEvent()}} fires. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} on which the event was enqueued. \item[{\em closure}]The user specified data associated with this event. \end{DoxyParams}

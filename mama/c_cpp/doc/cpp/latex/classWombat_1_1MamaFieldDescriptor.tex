@@ -1,0 +1,170 @@
+\hypertarget{classWombat_1_1MamaFieldDescriptor}{
+\section{Wombat::MamaFieldDescriptor Class Reference}
+\label{classWombat_1_1MamaFieldDescriptor}\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor}} class describes a field within a {\ttfamily \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary}}.  
+
+
+{\ttfamily \#include $<$MamaFieldDescriptor.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaFieldDescriptor_a4cdfb03e5132217d4eda78ba12ab48e8}{$\sim$MamaFieldDescriptor} ()
+\item 
+\hyperlink{classWombat_1_1MamaFieldDescriptor_a3de9bbef1117efb9a923eb9e71381958}{MamaFieldDescriptor} (mamaFieldDescriptor field)
+\item 
+\hyperlink{classWombat_1_1MamaFieldDescriptor_a05360c572e90e2b40948888678659ab7}{MamaFieldDescriptor} (mama\_\-fid\_\-t fid, mamaFieldType type, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Create a new field descriptor based on supplied info. \item\end{DoxyCompactList}\item 
+mama\_\-fid\_\-t \hyperlink{classWombat_1_1MamaFieldDescriptor_afb11a9cdf32d945f6c6bc30e1d043e47}{getFid} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the field identifier. \item\end{DoxyCompactList}\item 
+mamaFieldType \hyperlink{classWombat_1_1MamaFieldDescriptor_a1783c189fbe1218b8588b832e565193f}{getType} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the data type. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaFieldDescriptor_ada55a2d1cdca7e1e90395bd1033c63e6}{getName} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the human readable name of the field. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaFieldDescriptor_acd4bd3e856377a60fa553cfb5786e461}{getTypeName} (void) const 
+\begin{DoxyCompactList}\small\item\em Return a human readable string for mamaMsgType. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaFieldDescriptor_aec2dcca9943ce8f387ca6aafa97e89ec}{setClosure} (void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Associate user supplied data with the field descriptor. \item\end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaFieldDescriptor_ad11ddda5a1c9133ad00401ef3fe8aedd}{getClosure} () const 
+\begin{DoxyCompactList}\small\item\em Return the user supplied data associated with the field descriptor. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaFieldDescriptor_a295210e0265a662fea3967fcbac4d674}{setTrackModState} (bool on)
+\begin{DoxyCompactList}\small\item\em Track the modification state of the field. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaFieldDescriptor_a50225e51ecace29ece3907796c38615f}{getTrackModState} () const 
+\begin{DoxyCompactList}\small\item\em Track the modification state of the field? \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaFieldDescriptor_a58f48b3c9ad1d7b56f663089c5dba395}{setPubName} (const char $\ast$pubName)
+\begin{DoxyCompactList}\small\item\em Set the publish name for this field. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaFieldDescriptor_acb20f166bf1e0280a82943bf6e6234fd}{getPubName} () const 
+\begin{DoxyCompactList}\small\item\em Get the publish name for this field. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FieldDescriptorImpl $\ast$ \hyperlink{classWombat_1_1MamaFieldDescriptor_ac5003e3b2ed4fdf662ba1baa4eef967f}{mPimpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor}} class describes a field within a {\ttfamily \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary}}. \begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary} 
+
+\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_a4cdfb03e5132217d4eda78ba12ab48e8}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!$\sim$MamaFieldDescriptor@{$\sim$MamaFieldDescriptor}}
+\index{$\sim$MamaFieldDescriptor@{$\sim$MamaFieldDescriptor}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{$\sim$MamaFieldDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaFieldDescriptor::$\sim$MamaFieldDescriptor ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldDescriptor_a4cdfb03e5132217d4eda78ba12ab48e8}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_a3de9bbef1117efb9a923eb9e71381958}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!MamaFieldDescriptor@{MamaFieldDescriptor}}
+\index{MamaFieldDescriptor@{MamaFieldDescriptor}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{MamaFieldDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFieldDescriptor::MamaFieldDescriptor (mamaFieldDescriptor {\em field})}}
+\label{classWombat_1_1MamaFieldDescriptor_a3de9bbef1117efb9a923eb9e71381958}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_a05360c572e90e2b40948888678659ab7}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!MamaFieldDescriptor@{MamaFieldDescriptor}}
+\index{MamaFieldDescriptor@{MamaFieldDescriptor}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{MamaFieldDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFieldDescriptor::MamaFieldDescriptor (mama\_\-fid\_\-t {\em fid}, \/  mamaFieldType {\em type}, \/  const char $\ast$ {\em name})}}
+\label{classWombat_1_1MamaFieldDescriptor_a05360c572e90e2b40948888678659ab7}
+
+
+Create a new field descriptor based on supplied info. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]The field id. \item[{\em type}]The field type. \item[{\em name}]The field name. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_afb11a9cdf32d945f6c6bc30e1d043e47}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getFid@{getFid}}
+\index{getFid@{getFid}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getFid}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-fid\_\-t Wombat::MamaFieldDescriptor::getFid (void) const}}
+\label{classWombat_1_1MamaFieldDescriptor_afb11a9cdf32d945f6c6bc30e1d043e47}
+
+
+Return the field identifier. \begin{DoxyReturn}{Returns}
+The fid. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_a1783c189fbe1218b8588b832e565193f}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getType@{getType}}
+\index{getType@{getType}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getType}]{\setlength{\rightskip}{0pt plus 5cm}mamaFieldType Wombat::MamaFieldDescriptor::getType (void) const}}
+\label{classWombat_1_1MamaFieldDescriptor_a1783c189fbe1218b8588b832e565193f}
+
+
+Return the data type. \begin{DoxyReturn}{Returns}
+The type. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_ada55a2d1cdca7e1e90395bd1033c63e6}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getName@{getName}}
+\index{getName@{getName}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaFieldDescriptor::getName (void) const}}
+\label{classWombat_1_1MamaFieldDescriptor_ada55a2d1cdca7e1e90395bd1033c63e6}
+
+
+Return the human readable name of the field. \begin{DoxyReturn}{Returns}
+The name. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_acd4bd3e856377a60fa553cfb5786e461}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getTypeName@{getTypeName}}
+\index{getTypeName@{getTypeName}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getTypeName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaFieldDescriptor::getTypeName (void) const}}
+\label{classWombat_1_1MamaFieldDescriptor_acd4bd3e856377a60fa553cfb5786e461}
+
+
+Return a human readable string for mamaMsgType. \hypertarget{classWombat_1_1MamaFieldDescriptor_aec2dcca9943ce8f387ca6aafa97e89ec}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{setClosure}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldDescriptor::setClosure (void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamaFieldDescriptor_aec2dcca9943ce8f387ca6aafa97e89ec}
+
+
+Associate user supplied data with the field descriptor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em closure}]The user supplied data to associate with the field descriptor. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_ad11ddda5a1c9133ad00401ef3fe8aedd}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::MamaFieldDescriptor::getClosure () const}}
+\label{classWombat_1_1MamaFieldDescriptor_ad11ddda5a1c9133ad00401ef3fe8aedd}
+
+
+Return the user supplied data associated with the field descriptor. \begin{DoxyReturn}{Returns}
+The user supplied data associated with the field descriptor. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_a295210e0265a662fea3967fcbac4d674}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!setTrackModState@{setTrackModState}}
+\index{setTrackModState@{setTrackModState}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{setTrackModState}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldDescriptor::setTrackModState (bool {\em on})}}
+\label{classWombat_1_1MamaFieldDescriptor_a295210e0265a662fea3967fcbac4d674}
+
+
+Track the modification state of the field. \hypertarget{classWombat_1_1MamaFieldDescriptor_a50225e51ecace29ece3907796c38615f}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getTrackModState@{getTrackModState}}
+\index{getTrackModState@{getTrackModState}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getTrackModState}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaFieldDescriptor::getTrackModState () const}}
+\label{classWombat_1_1MamaFieldDescriptor_a50225e51ecace29ece3907796c38615f}
+
+
+Track the modification state of the field? \hypertarget{classWombat_1_1MamaFieldDescriptor_a58f48b3c9ad1d7b56f663089c5dba395}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!setPubName@{setPubName}}
+\index{setPubName@{setPubName}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{setPubName}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldDescriptor::setPubName (const char $\ast$ {\em pubName})}}
+\label{classWombat_1_1MamaFieldDescriptor_a58f48b3c9ad1d7b56f663089c5dba395}
+
+
+Set the publish name for this field. \hypertarget{classWombat_1_1MamaFieldDescriptor_acb20f166bf1e0280a82943bf6e6234fd}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!getPubName@{getPubName}}
+\index{getPubName@{getPubName}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{getPubName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaFieldDescriptor::getPubName () const}}
+\label{classWombat_1_1MamaFieldDescriptor_acb20f166bf1e0280a82943bf6e6234fd}
+
+
+Get the publish name for this field. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaFieldDescriptor_ac5003e3b2ed4fdf662ba1baa4eef967f}{
+\index{Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}!mPimpl@{mPimpl}}
+\index{mPimpl@{mPimpl}!Wombat::MamaFieldDescriptor@{Wombat::MamaFieldDescriptor}}
+\subsubsection[{mPimpl}]{\setlength{\rightskip}{0pt plus 5cm}FieldDescriptorImpl$\ast$ {\bf Wombat::MamaFieldDescriptor::mPimpl}}}
+\label{classWombat_1_1MamaFieldDescriptor_ac5003e3b2ed4fdf662ba1baa4eef967f}

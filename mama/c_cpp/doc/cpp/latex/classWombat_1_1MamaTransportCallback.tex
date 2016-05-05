@@ -1,0 +1,150 @@
+\hypertarget{classWombat_1_1MamaTransportCallback}{
+\section{Wombat::MamaTransportCallback Class Reference}
+\label{classWombat_1_1MamaTransportCallback}\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+}
+
+
+Transport callback.  
+
+
+{\ttfamily \#include $<$MamaTransport.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaTransportCallback_a6407795c8b962a42de85ed67c06483cc}{$\sim$MamaTransportCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_a911f774a4d7c1ae89e8e4afa0cce09a9}{onDisconnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on a publisher when a subscriber disconnects. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_a209c2036256c70eee70b0f3bdbd1a558}{onReconnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked when the transport reconnects. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_a87ae633ef0a08074178173b5901224cc}{onQuality} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, short cause, const void $\ast$platformInfo)=0
+\begin{DoxyCompactList}\small\item\em Invoked when the quality of this transport changes. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_ae771d6e73c50bc7db49f1f449f23b3db}{onConnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on the subscriber when the transport connects. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_a849ef4f0e6f2c9c829a83fff1be2ad22}{onAccept} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on the publisher when the transport accepts a connection. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_ac159ce9502ac78e5eb5e85d911c5ee08}{onAcceptReconnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on the publisher when the transport accepts a reconnection. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_aae668afa6fad15114385473ac1ecfaaf}{onPublisherDisconnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on the subscriber when the transport disconnects from the publisher. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_a3ad4489dd4e812423d6e2447cae75da9}{onNamingServiceConnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on the subscriber when the naming service connects. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTransportCallback_a51db398120915d5115e7c6be661e51c7}{onNamingServiceDisconnect} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const void $\ast$platformInfo)
+\begin{DoxyCompactList}\small\item\em Invoked on the subscriber when the naming service disconnects. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Transport callback. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaTransportCallback_a6407795c8b962a42de85ed67c06483cc}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!$\sim$MamaTransportCallback@{$\sim$MamaTransportCallback}}
+\index{$\sim$MamaTransportCallback@{$\sim$MamaTransportCallback}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{$\sim$MamaTransportCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaTransportCallback::$\sim$MamaTransportCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a6407795c8b962a42de85ed67c06483cc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaTransportCallback_a911f774a4d7c1ae89e8e4afa0cce09a9}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onDisconnect@{onDisconnect}}
+\index{onDisconnect@{onDisconnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onDisconnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onDisconnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a911f774a4d7c1ae89e8e4afa0cce09a9}
+
+
+Invoked on a publisher when a subscriber disconnects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has disconnected. \item[{\em platformInfo}]Info associated with the event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+tibrv: provides the char$\ast$ version of the tibrv advisory message. wmw: provides a pointer to a C mamaConnection struct for the event \hypertarget{classWombat_1_1MamaTransportCallback_a209c2036256c70eee70b0f3bdbd1a558}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onReconnect@{onReconnect}}
+\index{onReconnect@{onReconnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onReconnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onReconnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a209c2036256c70eee70b0f3bdbd1a558}
+
+
+Invoked when the transport reconnects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has reconnected. \item[{\em platformInfo}]Info associated with the event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+tibrv: provides the char$\ast$ version of the tibrv advisory message. wmw: provides a pointer to a C mamaConnection struct for the event \hypertarget{classWombat_1_1MamaTransportCallback_a87ae633ef0a08074178173b5901224cc}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onQuality@{onQuality}}
+\index{onQuality@{onQuality}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onQuality}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onQuality ({\bf MamaTransport} $\ast$ {\em transport}, \/  short {\em cause}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a87ae633ef0a08074178173b5901224cc}
+
+
+Invoked when the quality of this transport changes. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport on which the quality has changed. \item[{\em cause}]The cause of the quality event. \item[{\em platformInfo}]Info associated with the quality event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+tibrv: provides the char$\ast$ version of the tibrv advisory message. \hypertarget{classWombat_1_1MamaTransportCallback_ae771d6e73c50bc7db49f1f449f23b3db}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onConnect@{onConnect}}
+\index{onConnect@{onConnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onConnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onConnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_ae771d6e73c50bc7db49f1f449f23b3db}
+
+
+Invoked on the subscriber when the transport connects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has connected. \item[{\em platformInfo}]Info associated with the event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+wmw: provides a pointer to a C mamaConnection struct for the event \hypertarget{classWombat_1_1MamaTransportCallback_a849ef4f0e6f2c9c829a83fff1be2ad22}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onAccept@{onAccept}}
+\index{onAccept@{onAccept}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onAccept}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onAccept ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a849ef4f0e6f2c9c829a83fff1be2ad22}
+
+
+Invoked on the publisher when the transport accepts a connection. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has accepted. \item[{\em platformInfo}]Info associated with the event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+wmw: provides a pointer to a C mamaConnection struct for the event \hypertarget{classWombat_1_1MamaTransportCallback_ac159ce9502ac78e5eb5e85d911c5ee08}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onAcceptReconnect@{onAcceptReconnect}}
+\index{onAcceptReconnect@{onAcceptReconnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onAcceptReconnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onAcceptReconnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_ac159ce9502ac78e5eb5e85d911c5ee08}
+
+
+Invoked on the publisher when the transport accepts a reconnection. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has reconnected on \item[{\em platformInfo}]Info associated with the event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+wmw: provides a pointer to a C mamaConnection struct for the event \hypertarget{classWombat_1_1MamaTransportCallback_aae668afa6fad15114385473ac1ecfaaf}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onPublisherDisconnect@{onPublisherDisconnect}}
+\index{onPublisherDisconnect@{onPublisherDisconnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onPublisherDisconnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onPublisherDisconnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_aae668afa6fad15114385473ac1ecfaaf}
+
+
+Invoked on the subscriber when the transport disconnects from the publisher. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has disconnected on \item[{\em platformInfo}]Info associated with the event.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+wmw: provides a pointer to a C mamaConnection struct for the event \hypertarget{classWombat_1_1MamaTransportCallback_a3ad4489dd4e812423d6e2447cae75da9}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onNamingServiceConnect@{onNamingServiceConnect}}
+\index{onNamingServiceConnect@{onNamingServiceConnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onNamingServiceConnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onNamingServiceConnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a3ad4489dd4e812423d6e2447cae75da9}
+
+
+Invoked on the subscriber when the naming service connects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has connected. \item[{\em platformInfo}]Info associated with the event. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransportCallback_a51db398120915d5115e7c6be661e51c7}{
+\index{Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}!onNamingServiceDisconnect@{onNamingServiceDisconnect}}
+\index{onNamingServiceDisconnect@{onNamingServiceDisconnect}!Wombat::MamaTransportCallback@{Wombat::MamaTransportCallback}}
+\subsubsection[{onNamingServiceDisconnect}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransportCallback::onNamingServiceDisconnect ({\bf MamaTransport} $\ast$ {\em transport}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransportCallback_a51db398120915d5115e7c6be661e51c7}
+
+
+Invoked on the subscriber when the naming service disconnects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport which has connected. \item[{\em platformInfo}]Info associated with the event. \end{DoxyParams}

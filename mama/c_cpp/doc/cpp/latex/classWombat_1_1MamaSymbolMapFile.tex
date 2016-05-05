@@ -1,0 +1,78 @@
+\hypertarget{classWombat_1_1MamaSymbolMapFile}{
+\section{Wombat::MamaSymbolMapFile Class Reference}
+\label{classWombat_1_1MamaSymbolMapFile}\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+}
+
+
+\hyperlink{classWombat_1_1MamaSymbolMapFile}{MamaSymbolMapFile} is a concrete implementation of a symbology map.  
+
+
+{\ttfamily \#include $<$MamaSymbolMapFile.h$>$}Inheritance diagram for Wombat::MamaSymbolMapFile::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaSymbolMapFile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSymbolMapFile_ae60584e1e114cb7ec1198dcc88e8852a}{MamaSymbolMapFile} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolMapFile_aa7382158180b5239cc57450a8f88385c}{$\sim$MamaSymbolMapFile} ()
+\item 
+virtual mama\_\-status \hyperlink{classWombat_1_1MamaSymbolMapFile_a1a3f81e006bb46a98cb0920308d7c667}{load} (const char $\ast$mapFileName)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolMapFile_ae5126c3985633b7bf9c7f5b06d505e45}{addMap} (const char $\ast$fromSymbol, const char $\ast$toSymbol)
+\item 
+virtual bool \hyperlink{classWombat_1_1MamaSymbolMapFile_afbc6713633e4748ce4d35c9fbaac2721}{map} (char $\ast$result, const char $\ast$symbol, size\_\-t maxLen) const 
+\begin{DoxyCompactList}\small\item\em Map a symbol. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaSymbolMapFile_a5547093417653f35d964c39f7e806374}{revMap} (char $\ast$result, const char $\ast$symbol, size\_\-t maxLen) const 
+\begin{DoxyCompactList}\small\item\em Map a feed side symbol. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaSymbolMapFile}{MamaSymbolMapFile} is a concrete implementation of a symbology map. It can load a filename and expects the contents of that file to contain two columns of data, with the columns separated by white space. A matching symbol of the left column is mapped to the symbol in the right column. If the symbol does not match anything in the file (or the file cannot be found), then the original symbol is used (no mapping). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolMapFile_ae60584e1e114cb7ec1198dcc88e8852a}{
+\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}!MamaSymbolMapFile@{MamaSymbolMapFile}}
+\index{MamaSymbolMapFile@{MamaSymbolMapFile}!Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+\subsubsection[{MamaSymbolMapFile}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSymbolMapFile::MamaSymbolMapFile ()}}
+\label{classWombat_1_1MamaSymbolMapFile_ae60584e1e114cb7ec1198dcc88e8852a}
+\hypertarget{classWombat_1_1MamaSymbolMapFile_aa7382158180b5239cc57450a8f88385c}{
+\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}!$\sim$MamaSymbolMapFile@{$\sim$MamaSymbolMapFile}}
+\index{$\sim$MamaSymbolMapFile@{$\sim$MamaSymbolMapFile}!Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+\subsubsection[{$\sim$MamaSymbolMapFile}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolMapFile::$\sim$MamaSymbolMapFile ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMapFile_aa7382158180b5239cc57450a8f88385c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolMapFile_a1a3f81e006bb46a98cb0920308d7c667}{
+\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}!load@{load}}
+\index{load@{load}!Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-status Wombat::MamaSymbolMapFile::load (const char $\ast$ {\em mapFileName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMapFile_a1a3f81e006bb46a98cb0920308d7c667}
+\hypertarget{classWombat_1_1MamaSymbolMapFile_ae5126c3985633b7bf9c7f5b06d505e45}{
+\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}!addMap@{addMap}}
+\index{addMap@{addMap}!Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+\subsubsection[{addMap}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolMapFile::addMap (const char $\ast$ {\em fromSymbol}, \/  const char $\ast$ {\em toSymbol})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMapFile_ae5126c3985633b7bf9c7f5b06d505e45}
+\hypertarget{classWombat_1_1MamaSymbolMapFile_afbc6713633e4748ce4d35c9fbaac2721}{
+\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}!map@{map}}
+\index{map@{map}!Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSymbolMapFile::map (char $\ast$ {\em result}, \/  const char $\ast$ {\em symbol}, \/  size\_\-t {\em maxLen}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMapFile_afbc6713633e4748ce4d35c9fbaac2721}
+
+
+Map a symbol. The result is the feed side symbol used to actually subscribe to in the infrastructure. The return value indicates whether or not a symbology mapping existed for the given symbol (True = yes, False = No). 
+
+Implements \hyperlink{classWombat_1_1MamaSymbolMap_a2e4d030ecbca9255a90c7f1d157800ef}{Wombat::MamaSymbolMap}.\hypertarget{classWombat_1_1MamaSymbolMapFile_a5547093417653f35d964c39f7e806374}{
+\index{Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}!revMap@{revMap}}
+\index{revMap@{revMap}!Wombat::MamaSymbolMapFile@{Wombat::MamaSymbolMapFile}}
+\subsubsection[{revMap}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSymbolMapFile::revMap (char $\ast$ {\em result}, \/  const char $\ast$ {\em symbol}, \/  size\_\-t {\em maxLen}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMapFile_a5547093417653f35d964c39f7e806374}
+
+
+Map a feed side symbol. This is reverse of the natural mapping schema and the result in this case is the corresponding client side symbol. The return value indicates whether or not a symbology mapping existed for the given symbol (True = yes, False = No). 
+
+Implements \hyperlink{classWombat_1_1MamaSymbolMap_ae6807122277f6e8fe9ac5a2a07725ccf}{Wombat::MamaSymbolMap}.

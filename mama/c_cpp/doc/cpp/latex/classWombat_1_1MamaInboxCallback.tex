@@ -1,0 +1,54 @@
+\hypertarget{classWombat_1_1MamaInboxCallback}{
+\section{Wombat::MamaInboxCallback Class Reference}
+\label{classWombat_1_1MamaInboxCallback}\index{Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaInboxCallback}{MamaInboxCallback} gets invoked when a message arrives in an inbox or when inbox related errors arise.  
+
+
+{\ttfamily \#include $<$MamaInboxCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaInboxCallback_a1badebc408c69ff79d1e2889e090e46b}{$\sim$MamaInboxCallback} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaInboxCallback_a44bb84d0fd2f693f01dbe816cfbae691}{onDestroy} (\hyperlink{classWombat_1_1MamaInbox}{MamaInbox} $\ast$inbox, void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em This method is invoked when an inbox has been completely destroyed, the client can have confidence that no further events will be placed on the queue for this inbox. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaInboxCallback_aba5c3925173822c110bc32bf564acdd3}{onMsg} (\hyperlink{classWombat_1_1MamaInbox}{MamaInbox} $\ast$inbox, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamaInboxCallback_a4b932f6ae51dea6a919a6058f1f52ae9}{onError} (\hyperlink{classWombat_1_1MamaInbox}{MamaInbox} $\ast$inbox, const \hyperlink{classWombat_1_1MamaStatus}{MamaStatus} \&status)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaInboxCallback}{MamaInboxCallback} gets invoked when a message arrives in an inbox or when inbox related errors arise. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaInboxCallback_a1badebc408c69ff79d1e2889e090e46b}{
+\index{Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}!$\sim$MamaInboxCallback@{$\sim$MamaInboxCallback}}
+\index{$\sim$MamaInboxCallback@{$\sim$MamaInboxCallback}!Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}}
+\subsubsection[{$\sim$MamaInboxCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaInboxCallback::$\sim$MamaInboxCallback (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInboxCallback_a1badebc408c69ff79d1e2889e090e46b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaInboxCallback_a44bb84d0fd2f693f01dbe816cfbae691}{
+\index{Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}}
+\subsubsection[{onDestroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaInboxCallback::onDestroy ({\bf MamaInbox} $\ast$ {\em inbox}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInboxCallback_a44bb84d0fd2f693f01dbe816cfbae691}
+
+
+This method is invoked when an inbox has been completely destroyed, the client can have confidence that no further events will be placed on the queue for this inbox. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em inbox}]The \hyperlink{classWombat_1_1MamaInbox}{MamaInbox}. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the create function. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaInboxCallback_aba5c3925173822c110bc32bf564acdd3}{
+\index{Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}}
+\subsubsection[{onMsg}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaInboxCallback::onMsg ({\bf MamaInbox} $\ast$ {\em inbox}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInboxCallback_aba5c3925173822c110bc32bf564acdd3}
+\hypertarget{classWombat_1_1MamaInboxCallback_a4b932f6ae51dea6a919a6058f1f52ae9}{
+\index{Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamaInboxCallback@{Wombat::MamaInboxCallback}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaInboxCallback::onError ({\bf MamaInbox} $\ast$ {\em inbox}, \/  const {\bf MamaStatus} \& {\em status})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInboxCallback_a4b932f6ae51dea6a919a6058f1f52ae9}

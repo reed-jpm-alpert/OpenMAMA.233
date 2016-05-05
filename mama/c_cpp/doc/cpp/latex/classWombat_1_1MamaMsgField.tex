@@ -1,0 +1,767 @@
+\hypertarget{classWombat_1_1MamaMsgField}{
+\section{Wombat::MamaMsgField Class Reference}
+\label{classWombat_1_1MamaMsgField}\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+}
+
+
+\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} field representation.  
+
+
+{\ttfamily \#include $<$MamaMsgField.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaMsgField_a97ac3b0c0677a4b744523af7606f4cdd}{$\sim$MamaMsgField} ()
+\item 
+\hyperlink{classWombat_1_1MamaMsgField_a39f4e2d29d9938b38ed02e02ac8f1a40}{MamaMsgField} (void)
+\item 
+\hyperlink{classWombat_1_1MamaMsgField_aa20d786a608ee1174855db1b21a8f614}{MamaMsgField} (mamaMsgField field)
+\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a30bae12984e55846dd76bd63e8d273ab}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ac8dfdbb37065c064a08bf1193328d692}{set} (mamaMsgField field)
+\begin{DoxyCompactList}\small\item\em Set this field to a different MAMA C API field. \item\end{DoxyCompactList}\item 
+const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaMsgField_a12e62353f1d39d655a1e004218351963}{getDescriptor} () const 
+\item 
+mama\_\-fid\_\-t \hyperlink{classWombat_1_1MamaMsgField_a998420c9fc3f7fa20ec55cb57134c3df}{getFid} () const 
+\begin{DoxyCompactList}\small\item\em Return the field identifier. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaMsgField_a198a3d93ba4073fe5b0081a5eb6f9339}{getName} () const 
+\begin{DoxyCompactList}\small\item\em Return the field name. \item\end{DoxyCompactList}\item 
+mamaFieldType \hyperlink{classWombat_1_1MamaMsgField_a9e6045c695521cb57ba0702ffd062458}{getType} () const 
+\begin{DoxyCompactList}\small\item\em Return the field type. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaMsgField_a6d164b861f10d4d03d9f95075155785f}{getTypeName} () const 
+\begin{DoxyCompactList}\small\item\em Return the field type name. \item\end{DoxyCompactList}\item 
+mama\_\-bool\_\-t \hyperlink{classWombat_1_1MamaMsgField_a54beb8b83848f9481939e96e2f626053}{getBool} () const 
+\begin{DoxyCompactList}\small\item\em Get as a boolean field. \item\end{DoxyCompactList}\item 
+char \hyperlink{classWombat_1_1MamaMsgField_a44f2b43319dc08e49a206f02a97af1c3}{getChar} () const 
+\begin{DoxyCompactList}\small\item\em Get as a character field. \item\end{DoxyCompactList}\item 
+mama\_\-i8\_\-t \hyperlink{classWombat_1_1MamaMsgField_a6c90df89e3d3572766a19da5f742e883}{getI8} () const 
+\begin{DoxyCompactList}\small\item\em Get as a I8 field. \item\end{DoxyCompactList}\item 
+mama\_\-u8\_\-t \hyperlink{classWombat_1_1MamaMsgField_a186cab304aeb88d3f5cdc17a3d6885cc}{getU8} () const 
+\begin{DoxyCompactList}\small\item\em Get as a U8 field. \item\end{DoxyCompactList}\item 
+mama\_\-i16\_\-t \hyperlink{classWombat_1_1MamaMsgField_ab8e896683ae8fb744072309b789f7af0}{getI16} () const 
+\begin{DoxyCompactList}\small\item\em Get as a I16 field. \item\end{DoxyCompactList}\item 
+mama\_\-u16\_\-t \hyperlink{classWombat_1_1MamaMsgField_a9b48adb151a0e50b5661e0cfd74be847}{getU16} () const 
+\begin{DoxyCompactList}\small\item\em Get as a U16 field. \item\end{DoxyCompactList}\item 
+mama\_\-i32\_\-t \hyperlink{classWombat_1_1MamaMsgField_a47107271fb9a9a9aa08c4a0619800462}{getI32} () const 
+\begin{DoxyCompactList}\small\item\em Get as a I32 field. \item\end{DoxyCompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaMsgField_afe41c5a1eebf834ebf3743fc6566cd5a}{getU32} () const 
+\begin{DoxyCompactList}\small\item\em Get as a U32 field. \item\end{DoxyCompactList}\item 
+mama\_\-i64\_\-t \hyperlink{classWombat_1_1MamaMsgField_a41056ff06fd0510b8df0286b93c094ac}{getI64} () const 
+\begin{DoxyCompactList}\small\item\em Get as a I64 field. \item\end{DoxyCompactList}\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamaMsgField_a9f0c2b96b08d00bdcfbbd6e6f26450e3}{getU64} () const 
+\begin{DoxyCompactList}\small\item\em Get as a U64 field. \item\end{DoxyCompactList}\item 
+mama\_\-f32\_\-t \hyperlink{classWombat_1_1MamaMsgField_ac2644dee8474d59a6eefdf647640f0f0}{getF32} () const 
+\begin{DoxyCompactList}\small\item\em Get as a f32 field. \item\end{DoxyCompactList}\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaMsgField_ad7d22896ab2dfd6e46de353fb98ee418}{getF64} () const 
+\begin{DoxyCompactList}\small\item\em Get as a f64 field. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaMsgField_a9e7638cfd9b45e2cfd4c600c03beec95}{getString} () const 
+\begin{DoxyCompactList}\small\item\em Get as a const char$\ast$ field. \item\end{DoxyCompactList}\item 
+const void $\ast$ \hyperlink{classWombat_1_1MamaMsgField_a59563f50a3498e338685b0c2ebc0526b}{getOpaque} (\hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&size) const 
+\begin{DoxyCompactList}\small\item\em Get as a const void$\ast$ field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a2be713355da30ba739b83c391e229323}{getDateTime} (\hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&result) const 
+\begin{DoxyCompactList}\small\item\em Get as a \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ad10995763db86d09ba98e6a6fe17e4aa}{getPrice} (\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&result) const 
+\begin{DoxyCompactList}\small\item\em Get as a \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ad072efdd93ea32ab5a7f80dda1cfdb8b}{getMsg} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&result) const 
+\begin{DoxyCompactList}\small\item\em Get as a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_af47ff9ee2d30cc56a6133d9b90923152}{getVectorBool} (const mama\_\-bool\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of boolean. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a8779a6a8bd574fdbbc00f3164f828bc4}{getVectorChar} (const char $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of characters. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a08f245644d691bb7151ddb4fe2f673dc}{getVectorI8} (const mama\_\-i8\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 8-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_afff950a7a5a182c91ac63e7f83d90431}{getVectorU8} (const mama\_\-u8\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 8-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ae79a9f90b23fb085ae8c29f49439e825}{getVectorI16} (const mama\_\-i16\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 16-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_aafd3bf156070debc9236ad53501a1426}{getVectorU16} (const mama\_\-u16\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 16-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_accae64c2f6040e208cf7feb405514eaa}{getVectorI32} (const mama\_\-i32\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 32-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a6f6297335f81da3243e1d3ccc3db9223}{getVectorU32} (const mama\_\-u32\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 32-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_afe58f6065e1dc03bdab9d83882393b68}{getVectorI64} (const mama\_\-i64\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 64-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a9f3ad41fef1e9dcf8369f86a9d2be18d}{getVectorU64} (const mama\_\-u64\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 64-\/bit integers. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ae3721635ea8bfa48ba174a2ebc81c00d}{getVectorF32} (const mama\_\-f32\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of 32-\/bit floats. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a372c74814b6bf9ea043d27218ddcdd1d}{getVectorF64} (const mama\_\-f64\_\-t $\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of 64-\/bit floats. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a16e8896fee1439cd53346037759780a8}{getVectorString} (const char $\ast$$\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of strings. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a41a7c1a93ddc8931aebb277a31bf4dfc}{getVectorMsg} (const \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$$\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of submessages field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a8836dd179daf0d79f967eaafe4e7628e}{getVectorMsgDetached} (const \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$$\ast$\&result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&resultLen) const 
+\begin{DoxyCompactList}\small\item\em Get a vector of submessages field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ad3f262839c73e178cbbe705a5e3bddc7}{getAsString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxResultLen) const 
+\begin{DoxyCompactList}\small\item\em Return a string representation the field with the given fid. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a65cad43a0a3c4fe0f30a8a23e23b1df3}{updateBool} (mama\_\-bool\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new bool value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ae12fa607cf0e0006dc9d3e0c3365fe15}{updateChar} (char value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new char value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ac68d4fc1af06c6b98167613dd9a658dc}{updateI8} (mama\_\-i8\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new i8 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a81154aeb9730cc5f45bca72aae3cb1b7}{updateU8} (mama\_\-u8\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new u8 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a9250e1a6658974be65f58cfd4765478f}{updateI16} (mama\_\-i16\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new i16 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a86945aab1277bc5bbe80155ae4ceac64}{updateU16} (mama\_\-u16\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new u16 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ab8021b43970e4ebfc70a18ec3eab9d60}{updateI32} (mama\_\-i32\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new i32 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a4b504118f928eac92537089916a6642c}{updateU32} (mama\_\-u32\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new u32 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a7413fdf503d60020b64c0fc56217c52c}{updateI64} (mama\_\-i64\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new i64 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a501ffcb46daf723bd39626ab7a2b5e09}{updateU64} (mama\_\-u64\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new u64 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_af3e4b526af6634d029b7a6337956a2b2}{updateF32} (mama\_\-f32\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new f32 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a87305cc1f060d2bf60dd546857bcef74}{updateF64} (mama\_\-f64\_\-t value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new f64 value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_aff3f3665afa5dc581b059129dcddde46}{updateDateTime} (const mamaDateTime value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new date/time value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_ab68bf6c821499d375e95db44eb5bb256}{updateDateTime} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new date/time value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a25858892b10ed3f724a335bbd5b723de}{updatePrice} (const mamaPrice value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new price value. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaMsgField_a1d8b0daa41c6ce10124701cd84fac3f6}{updatePrice} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new price value. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaMsgField_a288819019e6d1fe09d42c5087e37ca00}{operator==} (const \hyperlink{classWombat_1_1MamaMsgField}{MamaMsgField} \&) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgField_a1945f91ef878e9392b836cbcbe192e14}{operator!=} (const \hyperlink{classWombat_1_1MamaMsgField}{MamaMsgField} \&) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} field representation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaMsgField_a97ac3b0c0677a4b744523af7606f4cdd}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!$\sim$MamaMsgField@{$\sim$MamaMsgField}}
+\index{$\sim$MamaMsgField@{$\sim$MamaMsgField}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{$\sim$MamaMsgField}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgField::$\sim$MamaMsgField ()}}
+\label{classWombat_1_1MamaMsgField_a97ac3b0c0677a4b744523af7606f4cdd}
+\hypertarget{classWombat_1_1MamaMsgField_a39f4e2d29d9938b38ed02e02ac8f1a40}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!MamaMsgField@{MamaMsgField}}
+\index{MamaMsgField@{MamaMsgField}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{MamaMsgField}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgField::MamaMsgField (void)}}
+\label{classWombat_1_1MamaMsgField_a39f4e2d29d9938b38ed02e02ac8f1a40}
+\hypertarget{classWombat_1_1MamaMsgField_aa20d786a608ee1174855db1b21a8f614}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!MamaMsgField@{MamaMsgField}}
+\index{MamaMsgField@{MamaMsgField}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{MamaMsgField}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgField::MamaMsgField (mamaMsgField {\em field})}}
+\label{classWombat_1_1MamaMsgField_aa20d786a608ee1174855db1b21a8f614}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaMsgField_a30bae12984e55846dd76bd63e8d273ab}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::clear ()}}
+\label{classWombat_1_1MamaMsgField_a30bae12984e55846dd76bd63e8d273ab}
+
+
+Clear the field. \hypertarget{classWombat_1_1MamaMsgField_ac8dfdbb37065c064a08bf1193328d692}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!set@{set}}
+\index{set@{set}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::set (mamaMsgField {\em field})}}
+\label{classWombat_1_1MamaMsgField_ac8dfdbb37065c064a08bf1193328d692}
+
+
+Set this field to a different MAMA C API field. \hypertarget{classWombat_1_1MamaMsgField_a12e62353f1d39d655a1e004218351963}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getDescriptor@{getDescriptor}}
+\index{getDescriptor@{getDescriptor}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaMsgField::getDescriptor () const}}
+\label{classWombat_1_1MamaMsgField_a12e62353f1d39d655a1e004218351963}
+\hypertarget{classWombat_1_1MamaMsgField_a998420c9fc3f7fa20ec55cb57134c3df}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getFid@{getFid}}
+\index{getFid@{getFid}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getFid}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-fid\_\-t Wombat::MamaMsgField::getFid () const}}
+\label{classWombat_1_1MamaMsgField_a998420c9fc3f7fa20ec55cb57134c3df}
+
+
+Return the field identifier. \begin{DoxyReturn}{Returns}
+The fid. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a198a3d93ba4073fe5b0081a5eb6f9339}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getName@{getName}}
+\index{getName@{getName}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaMsgField::getName () const}}
+\label{classWombat_1_1MamaMsgField_a198a3d93ba4073fe5b0081a5eb6f9339}
+
+
+Return the field name. \begin{DoxyReturn}{Returns}
+The name. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a9e6045c695521cb57ba0702ffd062458}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getType@{getType}}
+\index{getType@{getType}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getType}]{\setlength{\rightskip}{0pt plus 5cm}mamaFieldType Wombat::MamaMsgField::getType () const}}
+\label{classWombat_1_1MamaMsgField_a9e6045c695521cb57ba0702ffd062458}
+
+
+Return the field type. \begin{DoxyReturn}{Returns}
+The type. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a6d164b861f10d4d03d9f95075155785f}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getTypeName@{getTypeName}}
+\index{getTypeName@{getTypeName}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getTypeName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaMsgField::getTypeName () const}}
+\label{classWombat_1_1MamaMsgField_a6d164b861f10d4d03d9f95075155785f}
+
+
+Return the field type name. The type name is a human readable representation of the type.
+
+\begin{DoxyReturn}{Returns}
+The type name. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a54beb8b83848f9481939e96e2f626053}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getBool@{getBool}}
+\index{getBool@{getBool}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getBool}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-bool\_\-t Wombat::MamaMsgField::getBool () const}}
+\label{classWombat_1_1MamaMsgField_a54beb8b83848f9481939e96e2f626053}
+
+
+Get as a boolean field. \begin{DoxyReturn}{Returns}
+The boolean value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a44f2b43319dc08e49a206f02a97af1c3}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getChar@{getChar}}
+\index{getChar@{getChar}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getChar}]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::MamaMsgField::getChar () const}}
+\label{classWombat_1_1MamaMsgField_a44f2b43319dc08e49a206f02a97af1c3}
+
+
+Get as a character field. \begin{DoxyReturn}{Returns}
+The character value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a6c90df89e3d3572766a19da5f742e883}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getI8@{getI8}}
+\index{getI8@{getI8}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getI8}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i8\_\-t Wombat::MamaMsgField::getI8 () const}}
+\label{classWombat_1_1MamaMsgField_a6c90df89e3d3572766a19da5f742e883}
+
+
+Get as a I8 field. \begin{DoxyReturn}{Returns}
+The integer value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a186cab304aeb88d3f5cdc17a3d6885cc}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getU8@{getU8}}
+\index{getU8@{getU8}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getU8}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u8\_\-t Wombat::MamaMsgField::getU8 () const}}
+\label{classWombat_1_1MamaMsgField_a186cab304aeb88d3f5cdc17a3d6885cc}
+
+
+Get as a U8 field. \begin{DoxyReturn}{Returns}
+The integer value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_ab8e896683ae8fb744072309b789f7af0}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getI16@{getI16}}
+\index{getI16@{getI16}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getI16}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i16\_\-t Wombat::MamaMsgField::getI16 () const}}
+\label{classWombat_1_1MamaMsgField_ab8e896683ae8fb744072309b789f7af0}
+
+
+Get as a I16 field. \begin{DoxyReturn}{Returns}
+The integer value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a9b48adb151a0e50b5661e0cfd74be847}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getU16@{getU16}}
+\index{getU16@{getU16}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getU16}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u16\_\-t Wombat::MamaMsgField::getU16 () const}}
+\label{classWombat_1_1MamaMsgField_a9b48adb151a0e50b5661e0cfd74be847}
+
+
+Get as a U16 field. \begin{DoxyReturn}{Returns}
+The integer value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a47107271fb9a9a9aa08c4a0619800462}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getI32@{getI32}}
+\index{getI32@{getI32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getI32}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i32\_\-t Wombat::MamaMsgField::getI32 () const}}
+\label{classWombat_1_1MamaMsgField_a47107271fb9a9a9aa08c4a0619800462}
+
+
+Get as a I32 field. \begin{DoxyReturn}{Returns}
+The integer value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_afe41c5a1eebf834ebf3743fc6566cd5a}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getU32@{getU32}}
+\index{getU32@{getU32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getU32}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaMsgField::getU32 () const}}
+\label{classWombat_1_1MamaMsgField_afe41c5a1eebf834ebf3743fc6566cd5a}
+
+
+Get as a U32 field. \begin{DoxyReturn}{Returns}
+The integer value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a41056ff06fd0510b8df0286b93c094ac}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getI64@{getI64}}
+\index{getI64@{getI64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getI64}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i64\_\-t Wombat::MamaMsgField::getI64 () const}}
+\label{classWombat_1_1MamaMsgField_a41056ff06fd0510b8df0286b93c094ac}
+
+
+Get as a I64 field. \begin{DoxyReturn}{Returns}
+The field value as a long. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a9f0c2b96b08d00bdcfbbd6e6f26450e3}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getU64@{getU64}}
+\index{getU64@{getU64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getU64}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::MamaMsgField::getU64 () const}}
+\label{classWombat_1_1MamaMsgField_a9f0c2b96b08d00bdcfbbd6e6f26450e3}
+
+
+Get as a U64 field. \begin{DoxyReturn}{Returns}
+The field value as a long. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_ac2644dee8474d59a6eefdf647640f0f0}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getF32@{getF32}}
+\index{getF32@{getF32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getF32}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f32\_\-t Wombat::MamaMsgField::getF32 () const}}
+\label{classWombat_1_1MamaMsgField_ac2644dee8474d59a6eefdf647640f0f0}
+
+
+Get as a f32 field. \begin{DoxyReturn}{Returns}
+The field value as a 32 bit floating point number. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_ad7d22896ab2dfd6e46de353fb98ee418}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getF64@{getF64}}
+\index{getF64@{getF64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getF64}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::MamaMsgField::getF64 () const}}
+\label{classWombat_1_1MamaMsgField_ad7d22896ab2dfd6e46de353fb98ee418}
+
+
+Get as a f64 field. \begin{DoxyReturn}{Returns}
+The field value as a 64 bit floating point number. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a9e7638cfd9b45e2cfd4c600c03beec95}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getString@{getString}}
+\index{getString@{getString}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaMsgField::getString () const}}
+\label{classWombat_1_1MamaMsgField_a9e7638cfd9b45e2cfd4c600c03beec95}
+
+
+Get as a const char$\ast$ field. \begin{DoxyReturn}{Returns}
+the string value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a59563f50a3498e338685b0c2ebc0526b}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getOpaque@{getOpaque}}
+\index{getOpaque@{getOpaque}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getOpaque}]{\setlength{\rightskip}{0pt plus 5cm}const void$\ast$ Wombat::MamaMsgField::getOpaque ({\bf mama\_\-size\_\-t} \& {\em size}) const}}
+\label{classWombat_1_1MamaMsgField_a59563f50a3498e338685b0c2ebc0526b}
+
+
+Get as a const void$\ast$ field. \begin{DoxyReturn}{Returns}
+The opaque value. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaMsgField_a2be713355da30ba739b83c391e229323}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getDateTime@{getDateTime}}
+\index{getDateTime@{getDateTime}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getDateTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getDateTime ({\bf MamaDateTime} \& {\em result}) const}}
+\label{classWombat_1_1MamaMsgField_a2be713355da30ba739b83c391e229323}
+
+
+Get as a \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]The date/time value. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_ad10995763db86d09ba98e6a6fe17e4aa}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getPrice}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getPrice ({\bf MamaPrice} \& {\em result}) const}}
+\label{classWombat_1_1MamaMsgField_ad10995763db86d09ba98e6a6fe17e4aa}
+
+
+Get as a \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]The price value. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_ad072efdd93ea32ab5a7f80dda1cfdb8b}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getMsg@{getMsg}}
+\index{getMsg@{getMsg}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getMsg}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getMsg ({\bf MamaMsg} \& {\em result}) const}}
+\label{classWombat_1_1MamaMsgField_ad072efdd93ea32ab5a7f80dda1cfdb8b}
+
+
+Get as a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]The msg value. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_af47ff9ee2d30cc56a6133d9b90923152}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorBool@{getVectorBool}}
+\index{getVectorBool@{getVectorBool}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorBool}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorBool (const mama\_\-bool\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_af47ff9ee2d30cc56a6133d9b90923152}
+
+
+Get a vector of boolean. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a8779a6a8bd574fdbbc00f3164f828bc4}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorChar@{getVectorChar}}
+\index{getVectorChar@{getVectorChar}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorChar}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorChar (const char $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a8779a6a8bd574fdbbc00f3164f828bc4}
+
+
+Get a vector of characters. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a08f245644d691bb7151ddb4fe2f673dc}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorI8@{getVectorI8}}
+\index{getVectorI8@{getVectorI8}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorI8}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorI8 (const mama\_\-i8\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a08f245644d691bb7151ddb4fe2f673dc}
+
+
+Get a vector of signed 8-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_afff950a7a5a182c91ac63e7f83d90431}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorU8@{getVectorU8}}
+\index{getVectorU8@{getVectorU8}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorU8}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorU8 (const mama\_\-u8\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_afff950a7a5a182c91ac63e7f83d90431}
+
+
+Get a vector of unsigned 8-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_ae79a9f90b23fb085ae8c29f49439e825}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorI16@{getVectorI16}}
+\index{getVectorI16@{getVectorI16}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorI16}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorI16 (const mama\_\-i16\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_ae79a9f90b23fb085ae8c29f49439e825}
+
+
+Get a vector of signed 16-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_aafd3bf156070debc9236ad53501a1426}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorU16@{getVectorU16}}
+\index{getVectorU16@{getVectorU16}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorU16}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorU16 (const mama\_\-u16\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_aafd3bf156070debc9236ad53501a1426}
+
+
+Get a vector of unsigned 16-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_accae64c2f6040e208cf7feb405514eaa}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorI32@{getVectorI32}}
+\index{getVectorI32@{getVectorI32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorI32}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorI32 (const mama\_\-i32\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_accae64c2f6040e208cf7feb405514eaa}
+
+
+Get a vector of signed 32-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a6f6297335f81da3243e1d3ccc3db9223}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorU32@{getVectorU32}}
+\index{getVectorU32@{getVectorU32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorU32}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorU32 (const mama\_\-u32\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a6f6297335f81da3243e1d3ccc3db9223}
+
+
+Get a vector of unsigned 32-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_afe58f6065e1dc03bdab9d83882393b68}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorI64@{getVectorI64}}
+\index{getVectorI64@{getVectorI64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorI64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorI64 (const mama\_\-i64\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_afe58f6065e1dc03bdab9d83882393b68}
+
+
+Get a vector of signed 64-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a9f3ad41fef1e9dcf8369f86a9d2be18d}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorU64@{getVectorU64}}
+\index{getVectorU64@{getVectorU64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorU64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorU64 (const mama\_\-u64\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a9f3ad41fef1e9dcf8369f86a9d2be18d}
+
+
+Get a vector of unsigned 64-\/bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_ae3721635ea8bfa48ba174a2ebc81c00d}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorF32@{getVectorF32}}
+\index{getVectorF32@{getVectorF32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorF32}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorF32 (const mama\_\-f32\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_ae3721635ea8bfa48ba174a2ebc81c00d}
+
+
+Get a vector of 32-\/bit floats. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a372c74814b6bf9ea043d27218ddcdd1d}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorF64@{getVectorF64}}
+\index{getVectorF64@{getVectorF64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorF64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorF64 (const mama\_\-f64\_\-t $\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a372c74814b6bf9ea043d27218ddcdd1d}
+
+
+Get a vector of 64-\/bit floats. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a16e8896fee1439cd53346037759780a8}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorString@{getVectorString}}
+\index{getVectorString@{getVectorString}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorString (const char $\ast$$\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a16e8896fee1439cd53346037759780a8}
+
+
+Get a vector of strings. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) the vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a41a7c1a93ddc8931aebb277a31bf4dfc}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorMsg@{getVectorMsg}}
+\index{getVectorMsg@{getVectorMsg}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorMsg}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorMsg (const {\bf MamaMsg} $\ast$$\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a41a7c1a93ddc8931aebb277a31bf4dfc}
+
+
+Get a vector of submessages field. Note: The vector is only valid for the lifetime of the field object which, when iterating over fields in a message is only as long as the individual callback itself. Use getVectorMsgDetached if it is necessary to keep the vector of messages longer than the lifetime of the field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a8836dd179daf0d79f967eaafe4e7628e}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getVectorMsgDetached@{getVectorMsgDetached}}
+\index{getVectorMsgDetached@{getVectorMsgDetached}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getVectorMsgDetached}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getVectorMsgDetached (const {\bf MamaMsg} $\ast$$\ast$\& {\em result}, \/  {\bf mama\_\-size\_\-t} \& {\em resultLen}) const}}
+\label{classWombat_1_1MamaMsgField_a8836dd179daf0d79f967eaafe4e7628e}
+
+
+Get a vector of submessages field. Deallocating the memory allocated for array and it members will become the responsibility of the caller. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}](out) vector. \item[{\em resultLen}](out) the size of the vector. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_ad3f262839c73e178cbbe705a5e3bddc7}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::getAsString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxResultLen}) const}}
+\label{classWombat_1_1MamaMsgField_ad3f262839c73e178cbbe705a5e3bddc7}
+
+
+Return a string representation the field with the given fid. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]Buffer to put result. \item[{\em maxResultLen}]Maximum size of buffer to put result. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaMsgField_a65cad43a0a3c4fe0f30a8a23e23b1df3}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateBool@{updateBool}}
+\index{updateBool@{updateBool}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateBool}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateBool (mama\_\-bool\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a65cad43a0a3c4fe0f30a8a23e23b1df3}
+
+
+Update the specified field with a new bool value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_ae12fa607cf0e0006dc9d3e0c3365fe15}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateChar@{updateChar}}
+\index{updateChar@{updateChar}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateChar}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateChar (char {\em value})}}
+\label{classWombat_1_1MamaMsgField_ae12fa607cf0e0006dc9d3e0c3365fe15}
+
+
+Update the specified field with a new char value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_ac68d4fc1af06c6b98167613dd9a658dc}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateI8@{updateI8}}
+\index{updateI8@{updateI8}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateI8}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateI8 (mama\_\-i8\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_ac68d4fc1af06c6b98167613dd9a658dc}
+
+
+Update the specified field with a new i8 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a81154aeb9730cc5f45bca72aae3cb1b7}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateU8@{updateU8}}
+\index{updateU8@{updateU8}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateU8}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateU8 (mama\_\-u8\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a81154aeb9730cc5f45bca72aae3cb1b7}
+
+
+Update the specified field with a new u8 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a9250e1a6658974be65f58cfd4765478f}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateI16@{updateI16}}
+\index{updateI16@{updateI16}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateI16}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateI16 (mama\_\-i16\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a9250e1a6658974be65f58cfd4765478f}
+
+
+Update the specified field with a new i16 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a86945aab1277bc5bbe80155ae4ceac64}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateU16@{updateU16}}
+\index{updateU16@{updateU16}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateU16}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateU16 (mama\_\-u16\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a86945aab1277bc5bbe80155ae4ceac64}
+
+
+Update the specified field with a new u16 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_ab8021b43970e4ebfc70a18ec3eab9d60}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateI32@{updateI32}}
+\index{updateI32@{updateI32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateI32}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateI32 (mama\_\-i32\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_ab8021b43970e4ebfc70a18ec3eab9d60}
+
+
+Update the specified field with a new i32 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a4b504118f928eac92537089916a6642c}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateU32@{updateU32}}
+\index{updateU32@{updateU32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateU32}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateU32 (mama\_\-u32\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a4b504118f928eac92537089916a6642c}
+
+
+Update the specified field with a new u32 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a7413fdf503d60020b64c0fc56217c52c}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateI64@{updateI64}}
+\index{updateI64@{updateI64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateI64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateI64 (mama\_\-i64\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a7413fdf503d60020b64c0fc56217c52c}
+
+
+Update the specified field with a new i64 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a501ffcb46daf723bd39626ab7a2b5e09}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateU64@{updateU64}}
+\index{updateU64@{updateU64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateU64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateU64 (mama\_\-u64\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a501ffcb46daf723bd39626ab7a2b5e09}
+
+
+Update the specified field with a new u64 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_af3e4b526af6634d029b7a6337956a2b2}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateF32@{updateF32}}
+\index{updateF32@{updateF32}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateF32}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateF32 (mama\_\-f32\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_af3e4b526af6634d029b7a6337956a2b2}
+
+
+Update the specified field with a new f32 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a87305cc1f060d2bf60dd546857bcef74}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateF64@{updateF64}}
+\index{updateF64@{updateF64}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateF64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateF64 (mama\_\-f64\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgField_a87305cc1f060d2bf60dd546857bcef74}
+
+
+Update the specified field with a new f64 value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field.\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_aff3f3665afa5dc581b059129dcddde46}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateDateTime@{updateDateTime}}
+\index{updateDateTime@{updateDateTime}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateDateTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateDateTime (const mamaDateTime {\em value})}}
+\label{classWombat_1_1MamaMsgField_aff3f3665afa5dc581b059129dcddde46}
+
+
+Update the specified field with a new date/time value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field (mamaDateTime object).\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_ab68bf6c821499d375e95db44eb5bb256}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updateDateTime@{updateDateTime}}
+\index{updateDateTime@{updateDateTime}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updateDateTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updateDateTime (const {\bf MamaDateTime} {\em value})}}
+\label{classWombat_1_1MamaMsgField_ab68bf6c821499d375e95db44eb5bb256}
+
+
+Update the specified field with a new date/time value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field (\hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} object).\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a25858892b10ed3f724a335bbd5b723de}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updatePrice@{updatePrice}}
+\index{updatePrice@{updatePrice}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updatePrice}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updatePrice (const mamaPrice {\em value})}}
+\label{classWombat_1_1MamaMsgField_a25858892b10ed3f724a335bbd5b723de}
+
+
+Update the specified field with a new price value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field (mamaPrice object).\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a1d8b0daa41c6ce10124701cd84fac3f6}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!updatePrice@{updatePrice}}
+\index{updatePrice@{updatePrice}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{updatePrice}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgField::updatePrice (const {\bf MamaPrice} {\em value})}}
+\label{classWombat_1_1MamaMsgField_a1d8b0daa41c6ce10124701cd84fac3f6}
+
+
+Update the specified field with a new price value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The new value for the field (\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} object).\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classWombat_1_1MamaStatus}{MamaStatus}}]exception with the following possible status values. MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update method called. MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the C function is NULL. MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. \end{DoxyExceptions}
+\hypertarget{classWombat_1_1MamaMsgField_a288819019e6d1fe09d42c5087e37ca00}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgField::operator== (const {\bf MamaMsgField} \&) const}}
+\label{classWombat_1_1MamaMsgField_a288819019e6d1fe09d42c5087e37ca00}
+\hypertarget{classWombat_1_1MamaMsgField_a1945f91ef878e9392b836cbcbe192e14}{
+\index{Wombat::MamaMsgField@{Wombat::MamaMsgField}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaMsgField@{Wombat::MamaMsgField}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgField::operator!= (const {\bf MamaMsgField} \&) const}}
+\label{classWombat_1_1MamaMsgField_a1945f91ef878e9392b836cbcbe192e14}

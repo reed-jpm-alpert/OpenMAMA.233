@@ -1,0 +1,245 @@
+\hypertarget{classWombat_1_1MamaSymbolList}{
+\section{Wombat::MamaSymbolList Class Reference}
+\label{classWombat_1_1MamaSymbolList}\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+}
+
+
+\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} manages a list of MAMA symbols and related attributes.  
+
+
+{\ttfamily \#include $<$MamaSymbolList.h$>$}Inheritance diagram for Wombat::MamaSymbolList::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaSymbolList}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSymbolList_ad1f53322a205ead3d1097e99912ab27b}{MamaSymbolList} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolList_af454a9e117d313041d33753b9eff4903}{$\sim$MamaSymbolList} ()
+\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_af47e92be8419abad5697fbab50d50586}{addMembershipHandler} (\hyperlink{classWombat_1_1MamaSymbolListMembershipHandler}{MamaSymbolListMembershipHandler} $\ast$handler)
+\begin{DoxyCompactList}\small\item\em Add a \char`\"{}membership\char`\"{} handler that implements the \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler}{MamaSymbolListMembershipHandler} interface. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_a642e9f34f4834f9ec0aa4f0721eca248}{addMember} (\hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} $\ast$member)
+\begin{DoxyCompactList}\small\item\em Add a symbol to the list. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} $\ast$ \hyperlink{classWombat_1_1MamaSymbolList_a939f23262e592899a253631dec0d37bf}{findMember} (const char $\ast$symbol, const char $\ast$source, mamaTransport transport)
+\begin{DoxyCompactList}\small\item\em Find a symbol in the list. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} $\ast$ \hyperlink{classWombat_1_1MamaSymbolList_a45860e5e044a1945d1b1932d0ef33424}{removeMember} (const char $\ast$symbol, const char $\ast$source, mamaTransport transport)
+\begin{DoxyCompactList}\small\item\em Remove a symbol from the list (providing it exists in the list). \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_a0c10e7ec1de0fbd3b30deb023244485e}{removeMember} (\hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} \&member)
+\begin{DoxyCompactList}\small\item\em Remove a symbol from the list (providing it exists in the list). \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_a21809320201362eb6a2786900da81dd7}{removeMemberAll} (void)
+\begin{DoxyCompactList}\small\item\em Remove all symbols from the list (providing it exists in the list). \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_a63e9d516a096a15ba329744cc2d88ae7}{clear} ()
+\begin{DoxyCompactList}\small\item\em Remove all symbols from the list. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_aad43c5e64c5287414c1d02b978f3ed99}{dump} ()
+\begin{DoxyCompactList}\small\item\em Dump the contents of the list to stdout. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaSymbolList_a6a23143d98e0d3c00e1b3a782fa798b4}{empty} () const 
+\item 
+\hyperlink{classmama__size__t}{mama\_\-size\_\-t} \hyperlink{classWombat_1_1MamaSymbolList_a71bfd4ab4ebaf41a18476509c94acd37}{size} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_ac0bf254f21ab219fad953aaeb6a1b726}{setClosure} (void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Set the closure. \item\end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaSymbolList_a674ab07f378fb1fa80935f5a9b12cbb6}{getClosure} () const 
+\begin{DoxyCompactList}\small\item\em Get the closure. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolList_abd26a14e154744f08713aab75c9aece3}{iterate} (\hyperlink{classWombat_1_1MamaSymbolListIteratorHandler}{MamaSymbolListIteratorHandler} \&handler, void $\ast$iterateClosure=NULL)
+\begin{DoxyCompactList}\small\item\em Iterate over all members of the symbol list. \item\end{DoxyCompactList}\item 
+mamaSymbolList \hyperlink{classWombat_1_1MamaSymbolList_a1a1457638a518b7df33505a7f67de2dc}{getCValue} ()
+\begin{DoxyCompactList}\small\item\em Get the underlying Impl at C level. \item\end{DoxyCompactList}\item 
+const mamaSymbolList \hyperlink{classWombat_1_1MamaSymbolList_a532c57ed3ff01980ab120bc1a18e1d44}{getCValue} () const 
+\begin{DoxyCompactList}\small\item\em Get the underlying Impl at C level. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+MamaSymbolListImpl $\ast$ \hyperlink{classWombat_1_1MamaSymbolList_a667701e35a1811964b33670b3db49d64}{myPimpl}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mamaSymbolList \hyperlink{classWombat_1_1MamaSymbolList_a2daed37d9169d83bbe7e2cbf3bd3d6bc}{myList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} manages a list of MAMA symbols and related attributes. Methods are provided for creating, updating and sorting the members of the list. Handler interfaces are provided so that it is possible to handle asynchronous/external changes to the symbol list, as many types of symbol lists can be quite dynamic. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolList_ad1f53322a205ead3d1097e99912ab27b}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!MamaSymbolList@{MamaSymbolList}}
+\index{MamaSymbolList@{MamaSymbolList}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{MamaSymbolList}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSymbolList::MamaSymbolList ()}}
+\label{classWombat_1_1MamaSymbolList_ad1f53322a205ead3d1097e99912ab27b}
+\hypertarget{classWombat_1_1MamaSymbolList_af454a9e117d313041d33753b9eff4903}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!$\sim$MamaSymbolList@{$\sim$MamaSymbolList}}
+\index{$\sim$MamaSymbolList@{$\sim$MamaSymbolList}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{$\sim$MamaSymbolList}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolList::$\sim$MamaSymbolList ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolList_af454a9e117d313041d33753b9eff4903}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolList_af47e92be8419abad5697fbab50d50586}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!addMembershipHandler@{addMembershipHandler}}
+\index{addMembershipHandler@{addMembershipHandler}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{addMembershipHandler}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::addMembershipHandler ({\bf MamaSymbolListMembershipHandler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamaSymbolList_af47e92be8419abad5697fbab50d50586}
+
+
+Add a \char`\"{}membership\char`\"{} handler that implements the \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler}{MamaSymbolListMembershipHandler} interface. Multiple handlers may be registered.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em handler}]The handler to be registered. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolList_a642e9f34f4834f9ec0aa4f0721eca248}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!addMember@{addMember}}
+\index{addMember@{addMember}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{addMember}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::addMember ({\bf MamaSymbolListMember} $\ast$ {\em member})}}
+\label{classWombat_1_1MamaSymbolList_a642e9f34f4834f9ec0aa4f0721eca248}
+
+
+Add a symbol to the list. The list maintains a unique list of symbols.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em member}]The symbol member to be added. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolList_a939f23262e592899a253631dec0d37bf}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!findMember@{findMember}}
+\index{findMember@{findMember}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{findMember}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaSymbolListMember}$\ast$ Wombat::MamaSymbolList::findMember (const char $\ast$ {\em symbol}, \/  const char $\ast$ {\em source}, \/  mamaTransport {\em transport})}}
+\label{classWombat_1_1MamaSymbolList_a939f23262e592899a253631dec0d37bf}
+
+
+Find a symbol in the list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em symbol}]The name of the symbol to be removed. \item[{\em source}]The source of the symbol to be removed. \item[{\em transport}]The transport of the symbol to be removed. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object containing additional information about the symbol (or NULL). 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSymbolList_a45860e5e044a1945d1b1932d0ef33424}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!removeMember@{removeMember}}
+\index{removeMember@{removeMember}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{removeMember}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaSymbolListMember}$\ast$ Wombat::MamaSymbolList::removeMember (const char $\ast$ {\em symbol}, \/  const char $\ast$ {\em source}, \/  mamaTransport {\em transport})}}
+\label{classWombat_1_1MamaSymbolList_a45860e5e044a1945d1b1932d0ef33424}
+
+
+Remove a symbol from the list (providing it exists in the list). The member itself is not destroyed but returned as the result of this method.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em symbol}]The symbol to be removed. \item[{\em source}]The source of the symbol to be removed \item[{\em transport}]The transport of the symbol to be removed \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The member just removed (or NULL if not found) 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSymbolList_a0c10e7ec1de0fbd3b30deb023244485e}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!removeMember@{removeMember}}
+\index{removeMember@{removeMember}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{removeMember}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::removeMember ({\bf MamaSymbolListMember} \& {\em member})}}
+\label{classWombat_1_1MamaSymbolList_a0c10e7ec1de0fbd3b30deb023244485e}
+
+
+Remove a symbol from the list (providing it exists in the list). The member itself is not destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em member}]The member to be removed. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolList_a21809320201362eb6a2786900da81dd7}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!removeMemberAll@{removeMemberAll}}
+\index{removeMemberAll@{removeMemberAll}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{removeMemberAll}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::removeMemberAll (void)}}
+\label{classWombat_1_1MamaSymbolList_a21809320201362eb6a2786900da81dd7}
+
+
+Remove all symbols from the list (providing it exists in the list). The member itself is not destroyed. \hypertarget{classWombat_1_1MamaSymbolList_a63e9d516a096a15ba329744cc2d88ae7}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::clear ()}}
+\label{classWombat_1_1MamaSymbolList_a63e9d516a096a15ba329744cc2d88ae7}
+
+
+Remove all symbols from the list. Handlers remain registered. \hypertarget{classWombat_1_1MamaSymbolList_aad43c5e64c5287414c1d02b978f3ed99}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!dump@{dump}}
+\index{dump@{dump}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::dump ()}}
+\label{classWombat_1_1MamaSymbolList_aad43c5e64c5287414c1d02b978f3ed99}
+
+
+Dump the contents of the list to stdout. For debugging. \hypertarget{classWombat_1_1MamaSymbolList_a6a23143d98e0d3c00e1b3a782fa798b4}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!empty@{empty}}
+\index{empty@{empty}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaSymbolList::empty () const}}
+\label{classWombat_1_1MamaSymbolList_a6a23143d98e0d3c00e1b3a782fa798b4}
+\begin{DoxyReturn}{Returns}
+whether the symbol list is empty. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSymbolList_a71bfd4ab4ebaf41a18476509c94acd37}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!size@{size}}
+\index{size@{size}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-size\_\-t} Wombat::MamaSymbolList::size () const}}
+\label{classWombat_1_1MamaSymbolList_a71bfd4ab4ebaf41a18476509c94acd37}
+\begin{DoxyReturn}{Returns}
+the size of the symbol list. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSymbolList_ac0bf254f21ab219fad953aaeb6a1b726}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{setClosure}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::setClosure (void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamaSymbolList_ac0bf254f21ab219fad953aaeb6a1b726}
+
+
+Set the closure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em closure}]The closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolList_a674ab07f378fb1fa80935f5a9b12cbb6}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::MamaSymbolList::getClosure () const}}
+\label{classWombat_1_1MamaSymbolList_a674ab07f378fb1fa80935f5a9b12cbb6}
+
+
+Get the closure. \begin{DoxyReturn}{Returns}
+The closure. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSymbolList_abd26a14e154744f08713aab75c9aece3}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!iterate@{iterate}}
+\index{iterate@{iterate}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{iterate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolList::iterate ({\bf MamaSymbolListIteratorHandler} \& {\em handler}, \/  void $\ast$ {\em iterateClosure} = {\ttfamily NULL})}}
+\label{classWombat_1_1MamaSymbolList_abd26a14e154744f08713aab75c9aece3}
+
+
+Iterate over all members of the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em handler}]Handler invoked for each member of the symbol list. \item[{\em iterateClosure}]The closure passed to the \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler_a4473a13b92c04377588fe0178ad04dad}{MamaSymbolListIteratorHandler::onMember()} interface. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolList_a1a1457638a518b7df33505a7f67de2dc}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaSymbolList Wombat::MamaSymbolList::getCValue ()}}
+\label{classWombat_1_1MamaSymbolList_a1a1457638a518b7df33505a7f67de2dc}
+
+
+Get the underlying Impl at C level. \begin{DoxyReturn}{Returns}
+The mamaSymbolList 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaSymbolList_a532c57ed3ff01980ab120bc1a18e1d44}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaSymbolList Wombat::MamaSymbolList::getCValue () const}}
+\label{classWombat_1_1MamaSymbolList_a532c57ed3ff01980ab120bc1a18e1d44}
+
+
+Get the underlying Impl at C level. \begin{DoxyReturn}{Returns}
+The mamaSymbolList 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaSymbolList_a667701e35a1811964b33670b3db49d64}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!myPimpl@{myPimpl}}
+\index{myPimpl@{myPimpl}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{myPimpl}]{\setlength{\rightskip}{0pt plus 5cm}MamaSymbolListImpl$\ast$ {\bf Wombat::MamaSymbolList::myPimpl}}}
+\label{classWombat_1_1MamaSymbolList_a667701e35a1811964b33670b3db49d64}
+\hypertarget{classWombat_1_1MamaSymbolList_a2daed37d9169d83bbe7e2cbf3bd3d6bc}{
+\index{Wombat::MamaSymbolList@{Wombat::MamaSymbolList}!myList@{myList}}
+\index{myList@{myList}!Wombat::MamaSymbolList@{Wombat::MamaSymbolList}}
+\subsubsection[{myList}]{\setlength{\rightskip}{0pt plus 5cm}mamaSymbolList {\bf Wombat::MamaSymbolList::myList}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolList_a2daed37d9169d83bbe7e2cbf3bd3d6bc}

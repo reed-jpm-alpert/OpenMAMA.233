@@ -1,0 +1,165 @@
+\hypertarget{classWombat_1_1MamaTimeZone}{
+\section{Wombat::MamaTimeZone Class Reference}
+\label{classWombat_1_1MamaTimeZone}\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+}
+
+
+A time zone representation to make conversion of timestamps to and from particular time zones more convenient.  
+
+
+{\ttfamily \#include $<$MamaTimeZone.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaTimeZone_a3987db671f0f4934c7399cbb5f69466f}{MamaTimeZone} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaTimeZone_a02ac0801fcc3f4e7684b7c365e38f551}{MamaTimeZone} (const char $\ast$tz)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaTimeZone_ad13aa55fee7c8a5a2054e0d961a6db22}{MamaTimeZone} (const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaTimeZone_a0ae3e20777724ed1b27eeda695eee728}{$\sim$MamaTimeZone} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \& \hyperlink{classWombat_1_1MamaTimeZone_a8d33239cb78b37ea4f7335d93a41e32e}{operator=} (const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTimeZone_a70233754ac2c4450cd5a696d28b4ca64}{set} (const char $\ast$tz)
+\begin{DoxyCompactList}\small\item\em Assign new timezones to this object. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTimeZone_af46c9f37ed28148d714a42dc75726072}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear this object. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaTimeZone_ad1beb3c4835e44f14044f48a1cb40d29}{tz} () const 
+\begin{DoxyCompactList}\small\item\em Return the time zone string. \item\end{DoxyCompactList}\item 
+mama\_\-i32\_\-t \hyperlink{classWombat_1_1MamaTimeZone_a067532a001858bb60fbbc4fabe319ad8}{offset} () const 
+\begin{DoxyCompactList}\small\item\em Return the offset from UTC (in seconds). \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTimeZone_a1fa15041d8226236ab7350ec0be7c5c2}{check} ()
+\begin{DoxyCompactList}\small\item\em Check (recalculate) the UTC offset in case it has changed due to daylight savings adjustments. \item\end{DoxyCompactList}\item 
+mamaTimeZone \hyperlink{classWombat_1_1MamaTimeZone_aeb0632d3849ab689b818b14ffd80f2b1}{getCValue} ()
+\item 
+const mamaTimeZone \hyperlink{classWombat_1_1MamaTimeZone_abcd925e29643428d8816f6df3177480b}{getCValue} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \& \hyperlink{classWombat_1_1MamaTimeZone_ae0e145bc9434a5c7ab3028be41327bb3}{local} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} corresponding to the local time zone. \item\end{DoxyCompactList}\item 
+static const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \& \hyperlink{classWombat_1_1MamaTimeZone_a98528db714ffcb96f44c25ea2d41ca3a}{utc} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} corresponding to UTC time zone. \item\end{DoxyCompactList}\item 
+static const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \& \hyperlink{classWombat_1_1MamaTimeZone_adb315698d116e1cd88897ed08ffa5d27}{usEastern} ()
+\begin{DoxyCompactList}\small\item\em Return a reference to a \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} corresponding to the US Eastern time zone. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1MamaTimeZone_aaf9aac46af8f7ed2ae85d3476fd7975f}{setScanningInterval} (mama\_\-f64\_\-t seconds)
+\begin{DoxyCompactList}\small\item\em Use to set the interval of the thread updating each \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} instance offset. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A time zone representation to make conversion of timestamps to and from particular time zones more convenient. Note: The addition of instance monitoring to the \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} implementation has resulted in the following limitation in its usage. Do not create short lived objects of this type on the method stack or delete long lived objects before program termination. Pointers to all instances are maintained in a global vector. At the moment there is no mechanism by which we can detect deleted objects or those which are popped off the method stack. An internal thread will always iterate over all objects ever created. A call to an object removed from the stack will result in nondeterminable behaviour. Pointers could be stored in a map against a unique object id; however, addition and removal from the map would have to be synchronized which would impact on performance. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaTimeZone_a3987db671f0f4934c7399cbb5f69466f}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!MamaTimeZone@{MamaTimeZone}}
+\index{MamaTimeZone@{MamaTimeZone}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{MamaTimeZone}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTimeZone::MamaTimeZone ()}}
+\label{classWombat_1_1MamaTimeZone_a3987db671f0f4934c7399cbb5f69466f}
+
+
+Constructor. \hypertarget{classWombat_1_1MamaTimeZone_a02ac0801fcc3f4e7684b7c365e38f551}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!MamaTimeZone@{MamaTimeZone}}
+\index{MamaTimeZone@{MamaTimeZone}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{MamaTimeZone}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTimeZone::MamaTimeZone (const char $\ast$ {\em tz})}}
+\label{classWombat_1_1MamaTimeZone_a02ac0801fcc3f4e7684b7c365e38f551}
+
+
+Constructor. NULL argument is equivalent to local timezone. \hypertarget{classWombat_1_1MamaTimeZone_ad13aa55fee7c8a5a2054e0d961a6db22}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!MamaTimeZone@{MamaTimeZone}}
+\index{MamaTimeZone@{MamaTimeZone}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{MamaTimeZone}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTimeZone::MamaTimeZone (const {\bf MamaTimeZone} \& {\em copy})}}
+\label{classWombat_1_1MamaTimeZone_ad13aa55fee7c8a5a2054e0d961a6db22}
+
+
+Copy constructor. \hypertarget{classWombat_1_1MamaTimeZone_a0ae3e20777724ed1b27eeda695eee728}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!$\sim$MamaTimeZone@{$\sim$MamaTimeZone}}
+\index{$\sim$MamaTimeZone@{$\sim$MamaTimeZone}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{$\sim$MamaTimeZone}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTimeZone::$\sim$MamaTimeZone ()}}
+\label{classWombat_1_1MamaTimeZone_a0ae3e20777724ed1b27eeda695eee728}
+
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaTimeZone_ae0e145bc9434a5c7ab3028be41327bb3}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!local@{local}}
+\index{local@{local}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{local}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf MamaTimeZone}\& Wombat::MamaTimeZone::local ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaTimeZone_ae0e145bc9434a5c7ab3028be41327bb3}
+
+
+Return a reference to a \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} corresponding to the local time zone. \hypertarget{classWombat_1_1MamaTimeZone_a98528db714ffcb96f44c25ea2d41ca3a}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!utc@{utc}}
+\index{utc@{utc}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{utc}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf MamaTimeZone}\& Wombat::MamaTimeZone::utc ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaTimeZone_a98528db714ffcb96f44c25ea2d41ca3a}
+
+
+Return a reference to a \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} corresponding to UTC time zone. \hypertarget{classWombat_1_1MamaTimeZone_adb315698d116e1cd88897ed08ffa5d27}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!usEastern@{usEastern}}
+\index{usEastern@{usEastern}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{usEastern}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf MamaTimeZone}\& Wombat::MamaTimeZone::usEastern ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaTimeZone_adb315698d116e1cd88897ed08ffa5d27}
+
+
+Return a reference to a \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} corresponding to the US Eastern time zone. \hypertarget{classWombat_1_1MamaTimeZone_a8d33239cb78b37ea4f7335d93a41e32e}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaTimeZone}\& Wombat::MamaTimeZone::operator= (const {\bf MamaTimeZone} \& {\em rhs})}}
+\label{classWombat_1_1MamaTimeZone_a8d33239cb78b37ea4f7335d93a41e32e}
+
+
+Assignment operator. \hypertarget{classWombat_1_1MamaTimeZone_a70233754ac2c4450cd5a696d28b4ca64}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!set@{set}}
+\index{set@{set}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTimeZone::set (const char $\ast$ {\em tz})}}
+\label{classWombat_1_1MamaTimeZone_a70233754ac2c4450cd5a696d28b4ca64}
+
+
+Assign new timezones to this object. \hypertarget{classWombat_1_1MamaTimeZone_af46c9f37ed28148d714a42dc75726072}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTimeZone::clear ()}}
+\label{classWombat_1_1MamaTimeZone_af46c9f37ed28148d714a42dc75726072}
+
+
+Clear this object. \hypertarget{classWombat_1_1MamaTimeZone_ad1beb3c4835e44f14044f48a1cb40d29}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!tz@{tz}}
+\index{tz@{tz}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{tz}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaTimeZone::tz () const}}
+\label{classWombat_1_1MamaTimeZone_ad1beb3c4835e44f14044f48a1cb40d29}
+
+
+Return the time zone string. \hypertarget{classWombat_1_1MamaTimeZone_a067532a001858bb60fbbc4fabe319ad8}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!offset@{offset}}
+\index{offset@{offset}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i32\_\-t Wombat::MamaTimeZone::offset () const}}
+\label{classWombat_1_1MamaTimeZone_a067532a001858bb60fbbc4fabe319ad8}
+
+
+Return the offset from UTC (in seconds). Can be positive or negative, depending upon the direction. \hypertarget{classWombat_1_1MamaTimeZone_a1fa15041d8226236ab7350ec0be7c5c2}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!check@{check}}
+\index{check@{check}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTimeZone::check ()}}
+\label{classWombat_1_1MamaTimeZone_a1fa15041d8226236ab7350ec0be7c5c2}
+
+
+Check (recalculate) the UTC offset in case it has changed due to daylight savings adjustments. \hypertarget{classWombat_1_1MamaTimeZone_aeb0632d3849ab689b818b14ffd80f2b1}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaTimeZone Wombat::MamaTimeZone::getCValue ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaTimeZone_aeb0632d3849ab689b818b14ffd80f2b1}
+\hypertarget{classWombat_1_1MamaTimeZone_abcd925e29643428d8816f6df3177480b}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaTimeZone Wombat::MamaTimeZone::getCValue () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaTimeZone_abcd925e29643428d8816f6df3177480b}
+\hypertarget{classWombat_1_1MamaTimeZone_aaf9aac46af8f7ed2ae85d3476fd7975f}{
+\index{Wombat::MamaTimeZone@{Wombat::MamaTimeZone}!setScanningInterval@{setScanningInterval}}
+\index{setScanningInterval@{setScanningInterval}!Wombat::MamaTimeZone@{Wombat::MamaTimeZone}}
+\subsubsection[{setScanningInterval}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaTimeZone::setScanningInterval (mama\_\-f64\_\-t {\em seconds})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaTimeZone_aaf9aac46af8f7ed2ae85d3476fd7975f}
+
+
+Use to set the interval of the thread updating each \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} instance offset. 

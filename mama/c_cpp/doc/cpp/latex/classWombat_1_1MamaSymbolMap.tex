@@ -1,0 +1,57 @@
+\hypertarget{classWombat_1_1MamaSymbolMap}{
+\section{Wombat::MamaSymbolMap Class Reference}
+\label{classWombat_1_1MamaSymbolMap}\index{Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaSymbolMap}{MamaSymbolMap} class provides the ability for MAMA to do client side symbology mapping.  
+
+
+{\ttfamily \#include $<$MamaSymbolMap.h$>$}Inheritance diagram for Wombat::MamaSymbolMap::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaSymbolMap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolMap_a6305c760bf88c60104dfaf11fb39113e}{$\sim$MamaSymbolMap} (void)
+\item 
+virtual bool \hyperlink{classWombat_1_1MamaSymbolMap_a2e4d030ecbca9255a90c7f1d157800ef}{map} (char $\ast$result, const char $\ast$symbol, size\_\-t maxLen) const =0
+\begin{DoxyCompactList}\small\item\em Map a symbol. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaSymbolMap_ae6807122277f6e8fe9ac5a2a07725ccf}{revMap} (char $\ast$result, const char $\ast$symbol, size\_\-t maxLen) const =0
+\begin{DoxyCompactList}\small\item\em Map a feed side symbol. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaSymbolMap}{MamaSymbolMap} class provides the ability for MAMA to do client side symbology mapping. Subclasses of this class can provide custom symbology mapping. A \hyperlink{classWombat_1_1MamaSymbolMap}{MamaSymbolMap} can be assigned to each \hyperlink{classWombat_1_1MamaTransport}{MamaTransport}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolMap_a6305c760bf88c60104dfaf11fb39113e}{
+\index{Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}!$\sim$MamaSymbolMap@{$\sim$MamaSymbolMap}}
+\index{$\sim$MamaSymbolMap@{$\sim$MamaSymbolMap}!Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}}
+\subsubsection[{$\sim$MamaSymbolMap}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolMap::$\sim$MamaSymbolMap (void)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMap_a6305c760bf88c60104dfaf11fb39113e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolMap_a2e4d030ecbca9255a90c7f1d157800ef}{
+\index{Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}!map@{map}}
+\index{map@{map}!Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSymbolMap::map (char $\ast$ {\em result}, \/  const char $\ast$ {\em symbol}, \/  size\_\-t {\em maxLen}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMap_a2e4d030ecbca9255a90c7f1d157800ef}
+
+
+Map a symbol. The result is the feed side symbol used to actually subscribe to in the infrastructure. The return value indicates whether or not a symbology mapping existed for the given symbol (True = yes, False = No). 
+
+Implemented in \hyperlink{classWombat_1_1MamaSymbolMapFile_afbc6713633e4748ce4d35c9fbaac2721}{Wombat::MamaSymbolMapFile}.\hypertarget{classWombat_1_1MamaSymbolMap_ae6807122277f6e8fe9ac5a2a07725ccf}{
+\index{Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}!revMap@{revMap}}
+\index{revMap@{revMap}!Wombat::MamaSymbolMap@{Wombat::MamaSymbolMap}}
+\subsubsection[{revMap}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaSymbolMap::revMap (char $\ast$ {\em result}, \/  const char $\ast$ {\em symbol}, \/  size\_\-t {\em maxLen}) const\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolMap_ae6807122277f6e8fe9ac5a2a07725ccf}
+
+
+Map a feed side symbol. This is reverse of the natural mapping schema and the result in this case is the corresponding client side symbol. The return value indicates whether or not a symbology mapping existed for the given symbol (True = yes, False = No). 
+
+Implemented in \hyperlink{classWombat_1_1MamaSymbolMapFile_a5547093417653f35d964c39f7e806374}{Wombat::MamaSymbolMapFile}.

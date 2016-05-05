@@ -1,0 +1,355 @@
+\hypertarget{classWombat_1_1MamaPrice}{
+\section{Wombat::MamaPrice Class Reference}
+\label{classWombat_1_1MamaPrice}\index{Wombat::MamaPrice@{Wombat::MamaPrice}}
+}
+
+
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} is a special data type for representing floating point numbers that often require special formatting for display purposes, such as prices.  
+
+
+{\ttfamily \#include $<$MamaPrice.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaPrice_ab210daeb0aac1ceee25ff8b007d6790f}{MamaPrice} ()
+\item 
+\hyperlink{classWombat_1_1MamaPrice_a85764a87c09a9aeca5bfacb41f834806}{MamaPrice} (double value, mamaPricePrecision precision=MAMA\_\-PRICE\_\-PREC\_\-100)
+\item 
+\hyperlink{classWombat_1_1MamaPrice_ab355672c720b562a23f51405eeacfe83}{MamaPrice} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&copy)
+\item 
+\hyperlink{classWombat_1_1MamaPrice_a228ecc4b339282a4f0e8ddde42a7bfb1}{$\sim$MamaPrice} ()
+\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \& \hyperlink{classWombat_1_1MamaPrice_ab330fbbdb0d1a636281767ef385ac08f}{operator=} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs)
+\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \& \hyperlink{classWombat_1_1MamaPrice_aff458c469ce08054c6d84b800386a767}{operator+=} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs)
+\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \& \hyperlink{classWombat_1_1MamaPrice_a8192e31ba6e1642348a1ac65367f1688}{operator-\/=} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs)
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a1cdef67308318e12d2f7222c26034315}{operator==} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_aa5ec5a6cedaee2998ebec7e08515b27c}{operator==} (double rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a6ab9360ae864e9f16b88118b37db36ef}{operator!=} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a79eb672210ac523c911a16116bf834cd}{operator!=} (double rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a75a7c77e3b6aa23bd4c83d8983d55a06}{operator$<$} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a78bd049e500408f2f9cd82349c157653}{operator$<$} (double rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a15247a3fd3b5ec23532836f0f1a543e3}{operator$>$} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a30a0d7f7b1f829ae5f09d07413a28021}{operator$>$} (double rhs) const 
+\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \hyperlink{classWombat_1_1MamaPrice_ae9b64c29f40da554a1153bc13eedd1bf}{operator-\/} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Subtraction operator. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \hyperlink{classWombat_1_1MamaPrice_a94e9fa5bf6b7056ca4cb55c14628869a}{operator-\/} (double rhs) const 
+\begin{DoxyCompactList}\small\item\em Subtraction operator for double. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \hyperlink{classWombat_1_1MamaPrice_ac2c40fd47283c9f703a2f364880138c6}{operator-\/} () const 
+\begin{DoxyCompactList}\small\item\em Negation operator. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \hyperlink{classWombat_1_1MamaPrice_a9ec014c02cdee65cf06c1e96e6338c92}{operator+} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Addition operator. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \hyperlink{classWombat_1_1MamaPrice_ad82d8eca19c0f52557552965a9956cca}{operator+} (double rhs) const 
+\begin{DoxyCompactList}\small\item\em Addition operator for double. \item\end{DoxyCompactList}\item 
+double \hyperlink{classWombat_1_1MamaPrice_acb33d1386aef08ce9f3fa848dc63afcc}{compare} (const \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} \&rhs) const 
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_a5f46f98011a5e1ec28c28d175e83a46a}{clear} ()
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_a0c7b55f90dde993cc47ffc6b8f78a11a}{set} (double priceValue, mamaPriceHints hints=0)
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_af6d547348682f72bdb2b23aee68d5990}{setValue} (double value)
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_ac9d788606dd5f6d5e27cd216a4d504d6}{setPrecision} (mamaPricePrecision precision)
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_afef7ffe99eefa0dec17ab47e10e67b34}{setHints} (mamaPriceHints hints)
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_af246cbbcb60bc112a1e08c5a8d109971}{setIsValidPrice} (bool valid)
+\item 
+double \hyperlink{classWombat_1_1MamaPrice_a328a5ee5788f0083494185c8770f75d1}{getValue} () const 
+\item 
+mamaPricePrecision \hyperlink{classWombat_1_1MamaPrice_a59dd3030741d4b7d28ed6302883ada45}{getPrecision} () const 
+\item 
+mamaPriceHints \hyperlink{classWombat_1_1MamaPrice_a65d2a44d341047e339d10e922ce0d43c}{getHints} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaPrice_a9b6bcdbc3e69fac28c6404866282c3cd}{getIsValidPrice} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_a3a4de871f54d57126894d90c2d51f7bb}{setFromString} (const char $\ast$str)
+\item 
+void \hyperlink{classWombat_1_1MamaPrice_ae735ce0fedcead944050df2460ef33a0}{getAsString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen) const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaPrice_afc70ff08184de27cac8f656d6878f702}{getAsString} () const 
+\begin{DoxyCompactList}\small\item\em Return a string representation of the price. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaPrice_a8352d77ec2751d6002395c5c3a153323}{negate} ()
+\begin{DoxyCompactList}\small\item\em Negate the price value. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaPrice_ae691b4520967f5112c561684cefdc58a}{isZero} () const 
+\begin{DoxyCompactList}\small\item\em Return whether the price has a value equivalent to zero. \item\end{DoxyCompactList}\item 
+mamaPrice \hyperlink{classWombat_1_1MamaPrice_a21d57c1c44d9495a71bd29e07d3ac9a7}{getCValue} ()
+\item 
+const mamaPrice \hyperlink{classWombat_1_1MamaPrice_a653f2e58af782ef2b3549332cc804196}{getCValue} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static mamaPricePrecision \hyperlink{classWombat_1_1MamaPrice_af667f9cbdc3d59231cd8d106ba76063f}{decimals2Precision} (mama\_\-i32\_\-t places)
+\begin{DoxyCompactList}\small\item\em Return the appropriate precision code for a given number of decimal places. \item\end{DoxyCompactList}\item 
+static mamaPricePrecision \hyperlink{classWombat_1_1MamaPrice_ae2b01c3e29fe9621e2d3ad61b598f4ff}{denom2Precision} (mama\_\-i32\_\-t denominator)
+\begin{DoxyCompactList}\small\item\em Return the appropriate precision code for a given fractional denominator. \item\end{DoxyCompactList}\item 
+static mama\_\-i32\_\-t \hyperlink{classWombat_1_1MamaPrice_aa0e9229468d1e14e03bdf1fc901eaf3d}{precision2Decimals} (mamaPricePrecision precision)
+\begin{DoxyCompactList}\small\item\em Return the number of decimal places for a given precision code. \item\end{DoxyCompactList}\item 
+static mama\_\-i32\_\-t \hyperlink{classWombat_1_1MamaPrice_a091e452e546dd5a8add9de6a1fbca364}{precision2Denom} (mamaPricePrecision precision)
+\begin{DoxyCompactList}\small\item\em Return the fractional denominator for a given precision code. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaPrice}{MamaPrice} is a special data type for representing floating point numbers that often require special formatting for display purposes, such as prices. \hyperlink{classWombat_1_1MamaPrice}{MamaPrice} contains the 64-\/bit (double precision) floating point value and an optional display hint. The set of display hints includes hints for:
+\begin{DoxyItemize}
+\item a number of decimal places,
+\item a fractional denominator that are powers of two, and
+\item hints for special denominators used in the finance industry (e.g., halves of 32nds). 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaPrice_ab210daeb0aac1ceee25ff8b007d6790f}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!MamaPrice@{MamaPrice}}
+\index{MamaPrice@{MamaPrice}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{MamaPrice}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaPrice::MamaPrice ()}}
+\label{classWombat_1_1MamaPrice_ab210daeb0aac1ceee25ff8b007d6790f}
+\hypertarget{classWombat_1_1MamaPrice_a85764a87c09a9aeca5bfacb41f834806}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!MamaPrice@{MamaPrice}}
+\index{MamaPrice@{MamaPrice}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{MamaPrice}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaPrice::MamaPrice (double {\em value}, \/  mamaPricePrecision {\em precision} = {\ttfamily MAMA\_\-PRICE\_\-PREC\_\-100})}}
+\label{classWombat_1_1MamaPrice_a85764a87c09a9aeca5bfacb41f834806}
+\hypertarget{classWombat_1_1MamaPrice_ab355672c720b562a23f51405eeacfe83}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!MamaPrice@{MamaPrice}}
+\index{MamaPrice@{MamaPrice}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{MamaPrice}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaPrice::MamaPrice (const {\bf MamaPrice} \& {\em copy})}}
+\label{classWombat_1_1MamaPrice_ab355672c720b562a23f51405eeacfe83}
+\hypertarget{classWombat_1_1MamaPrice_a228ecc4b339282a4f0e8ddde42a7bfb1}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!$\sim$MamaPrice@{$\sim$MamaPrice}}
+\index{$\sim$MamaPrice@{$\sim$MamaPrice}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{$\sim$MamaPrice}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaPrice::$\sim$MamaPrice ()}}
+\label{classWombat_1_1MamaPrice_a228ecc4b339282a4f0e8ddde42a7bfb1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaPrice_ab330fbbdb0d1a636281767ef385ac08f}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice}\& Wombat::MamaPrice::operator= (const {\bf MamaPrice} \& {\em rhs})}}
+\label{classWombat_1_1MamaPrice_ab330fbbdb0d1a636281767ef385ac08f}
+\hypertarget{classWombat_1_1MamaPrice_aff458c469ce08054c6d84b800386a767}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator+=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice}\& Wombat::MamaPrice::operator+= (const {\bf MamaPrice} \& {\em rhs})}}
+\label{classWombat_1_1MamaPrice_aff458c469ce08054c6d84b800386a767}
+\hypertarget{classWombat_1_1MamaPrice_a8192e31ba6e1642348a1ac65367f1688}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator-\/=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice}\& Wombat::MamaPrice::operator-\/= (const {\bf MamaPrice} \& {\em rhs})}}
+\label{classWombat_1_1MamaPrice_a8192e31ba6e1642348a1ac65367f1688}
+\hypertarget{classWombat_1_1MamaPrice_a1cdef67308318e12d2f7222c26034315}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator== (const {\bf MamaPrice} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_a1cdef67308318e12d2f7222c26034315}
+\hypertarget{classWombat_1_1MamaPrice_aa5ec5a6cedaee2998ebec7e08515b27c}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator== (double {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_aa5ec5a6cedaee2998ebec7e08515b27c}
+\hypertarget{classWombat_1_1MamaPrice_a6ab9360ae864e9f16b88118b37db36ef}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator!= (const {\bf MamaPrice} \& {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_a6ab9360ae864e9f16b88118b37db36ef}
+\hypertarget{classWombat_1_1MamaPrice_a79eb672210ac523c911a16116bf834cd}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator!= (double {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_a79eb672210ac523c911a16116bf834cd}
+\hypertarget{classWombat_1_1MamaPrice_a75a7c77e3b6aa23bd4c83d8983d55a06}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator$<$ (const {\bf MamaPrice} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_a75a7c77e3b6aa23bd4c83d8983d55a06}
+\hypertarget{classWombat_1_1MamaPrice_a78bd049e500408f2f9cd82349c157653}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator$<$ (double {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_a78bd049e500408f2f9cd82349c157653}
+\hypertarget{classWombat_1_1MamaPrice_a15247a3fd3b5ec23532836f0f1a543e3}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator$>$ (const {\bf MamaPrice} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_a15247a3fd3b5ec23532836f0f1a543e3}
+\hypertarget{classWombat_1_1MamaPrice_a30a0d7f7b1f829ae5f09d07413a28021}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::operator$>$ (double {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_a30a0d7f7b1f829ae5f09d07413a28021}
+\hypertarget{classWombat_1_1MamaPrice_ae9b64c29f40da554a1153bc13eedd1bf}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice} Wombat::MamaPrice::operator-\/ (const {\bf MamaPrice} \& {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_ae9b64c29f40da554a1153bc13eedd1bf}
+
+
+Subtraction operator. Note: this operator creates a temporary object. 
+
+References getPrecision(), and getValue().\hypertarget{classWombat_1_1MamaPrice_a94e9fa5bf6b7056ca4cb55c14628869a}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice} Wombat::MamaPrice::operator-\/ (double {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_a94e9fa5bf6b7056ca4cb55c14628869a}
+
+
+Subtraction operator for double. Note: this operator creates a temporary object. \hypertarget{classWombat_1_1MamaPrice_ac2c40fd47283c9f703a2f364880138c6}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice} Wombat::MamaPrice::operator-\/ () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_ac2c40fd47283c9f703a2f364880138c6}
+
+
+Negation operator. Note: this operator creates a temporary object. \hypertarget{classWombat_1_1MamaPrice_a9ec014c02cdee65cf06c1e96e6338c92}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator+@{operator+}}
+\index{operator+@{operator+}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice} Wombat::MamaPrice::operator+ (const {\bf MamaPrice} \& {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_a9ec014c02cdee65cf06c1e96e6338c92}
+
+
+Addition operator. Note: this operator creates a temporary object. 
+
+References getPrecision(), and getValue().\hypertarget{classWombat_1_1MamaPrice_ad82d8eca19c0f52557552965a9956cca}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!operator+@{operator+}}
+\index{operator+@{operator+}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaPrice} Wombat::MamaPrice::operator+ (double {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_ad82d8eca19c0f52557552965a9956cca}
+
+
+Addition operator for double. Note: this operator creates a temporary object. \hypertarget{classWombat_1_1MamaPrice_acb33d1386aef08ce9f3fa848dc63afcc}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!compare@{compare}}
+\index{compare@{compare}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::MamaPrice::compare (const {\bf MamaPrice} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaPrice_acb33d1386aef08ce9f3fa848dc63afcc}
+\hypertarget{classWombat_1_1MamaPrice_a5f46f98011a5e1ec28c28d175e83a46a}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::clear ()}}
+\label{classWombat_1_1MamaPrice_a5f46f98011a5e1ec28c28d175e83a46a}
+\hypertarget{classWombat_1_1MamaPrice_a0c7b55f90dde993cc47ffc6b8f78a11a}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!set@{set}}
+\index{set@{set}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::set (double {\em priceValue}, \/  mamaPriceHints {\em hints} = {\ttfamily 0})}}
+\label{classWombat_1_1MamaPrice_a0c7b55f90dde993cc47ffc6b8f78a11a}
+\hypertarget{classWombat_1_1MamaPrice_af6d547348682f72bdb2b23aee68d5990}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!setValue@{setValue}}
+\index{setValue@{setValue}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{setValue}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::setValue (double {\em value})}}
+\label{classWombat_1_1MamaPrice_af6d547348682f72bdb2b23aee68d5990}
+\hypertarget{classWombat_1_1MamaPrice_ac9d788606dd5f6d5e27cd216a4d504d6}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!setPrecision@{setPrecision}}
+\index{setPrecision@{setPrecision}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{setPrecision}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::setPrecision (mamaPricePrecision {\em precision})}}
+\label{classWombat_1_1MamaPrice_ac9d788606dd5f6d5e27cd216a4d504d6}
+\hypertarget{classWombat_1_1MamaPrice_afef7ffe99eefa0dec17ab47e10e67b34}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!setHints@{setHints}}
+\index{setHints@{setHints}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{setHints}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::setHints (mamaPriceHints {\em hints})}}
+\label{classWombat_1_1MamaPrice_afef7ffe99eefa0dec17ab47e10e67b34}
+\hypertarget{classWombat_1_1MamaPrice_af246cbbcb60bc112a1e08c5a8d109971}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!setIsValidPrice@{setIsValidPrice}}
+\index{setIsValidPrice@{setIsValidPrice}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{setIsValidPrice}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::setIsValidPrice (bool {\em valid})}}
+\label{classWombat_1_1MamaPrice_af246cbbcb60bc112a1e08c5a8d109971}
+\hypertarget{classWombat_1_1MamaPrice_a328a5ee5788f0083494185c8770f75d1}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getValue@{getValue}}
+\index{getValue@{getValue}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::MamaPrice::getValue () const}}
+\label{classWombat_1_1MamaPrice_a328a5ee5788f0083494185c8770f75d1}
+
+
+Referenced by operator+(), and operator-\/().\hypertarget{classWombat_1_1MamaPrice_a59dd3030741d4b7d28ed6302883ada45}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getPrecision@{getPrecision}}
+\index{getPrecision@{getPrecision}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getPrecision}]{\setlength{\rightskip}{0pt plus 5cm}mamaPricePrecision Wombat::MamaPrice::getPrecision () const}}
+\label{classWombat_1_1MamaPrice_a59dd3030741d4b7d28ed6302883ada45}
+
+
+Referenced by operator+(), and operator-\/().\hypertarget{classWombat_1_1MamaPrice_a65d2a44d341047e339d10e922ce0d43c}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getHints@{getHints}}
+\index{getHints@{getHints}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getHints}]{\setlength{\rightskip}{0pt plus 5cm}mamaPriceHints Wombat::MamaPrice::getHints () const}}
+\label{classWombat_1_1MamaPrice_a65d2a44d341047e339d10e922ce0d43c}
+\hypertarget{classWombat_1_1MamaPrice_a9b6bcdbc3e69fac28c6404866282c3cd}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getIsValidPrice@{getIsValidPrice}}
+\index{getIsValidPrice@{getIsValidPrice}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getIsValidPrice}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::getIsValidPrice () const}}
+\label{classWombat_1_1MamaPrice_a9b6bcdbc3e69fac28c6404866282c3cd}
+\hypertarget{classWombat_1_1MamaPrice_a3a4de871f54d57126894d90c2d51f7bb}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!setFromString@{setFromString}}
+\index{setFromString@{setFromString}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{setFromString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::setFromString (const char $\ast$ {\em str})}}
+\label{classWombat_1_1MamaPrice_a3a4de871f54d57126894d90c2d51f7bb}
+\hypertarget{classWombat_1_1MamaPrice_ae735ce0fedcead944050df2460ef33a0}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::getAsString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}) const}}
+\label{classWombat_1_1MamaPrice_ae735ce0fedcead944050df2460ef33a0}
+\hypertarget{classWombat_1_1MamaPrice_afc70ff08184de27cac8f656d6878f702}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaPrice::getAsString () const}}
+\label{classWombat_1_1MamaPrice_afc70ff08184de27cac8f656d6878f702}
+
+
+Return a string representation of the price. Note that the alternative \hyperlink{classWombat_1_1MamaPrice_ae735ce0fedcead944050df2460ef33a0}{getAsString()} method is more efficient because this method must allocate a temporary buffer (automatically destroyed upon object destruction). \hypertarget{classWombat_1_1MamaPrice_a8352d77ec2751d6002395c5c3a153323}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!negate@{negate}}
+\index{negate@{negate}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{negate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaPrice::negate ()}}
+\label{classWombat_1_1MamaPrice_a8352d77ec2751d6002395c5c3a153323}
+
+
+Negate the price value. Hints and precisions are not affected. \hypertarget{classWombat_1_1MamaPrice_ae691b4520967f5112c561684cefdc58a}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!isZero@{isZero}}
+\index{isZero@{isZero}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{isZero}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaPrice::isZero () const}}
+\label{classWombat_1_1MamaPrice_ae691b4520967f5112c561684cefdc58a}
+
+
+Return whether the price has a value equivalent to zero. It may not be exactly 0.0, but we check against +/-\/ epsilon. \hypertarget{classWombat_1_1MamaPrice_af667f9cbdc3d59231cd8d106ba76063f}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!decimals2Precision@{decimals2Precision}}
+\index{decimals2Precision@{decimals2Precision}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{decimals2Precision}]{\setlength{\rightskip}{0pt plus 5cm}static mamaPricePrecision Wombat::MamaPrice::decimals2Precision (mama\_\-i32\_\-t {\em places})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_af667f9cbdc3d59231cd8d106ba76063f}
+
+
+Return the appropriate precision code for a given number of decimal places. \hypertarget{classWombat_1_1MamaPrice_ae2b01c3e29fe9621e2d3ad61b598f4ff}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!denom2Precision@{denom2Precision}}
+\index{denom2Precision@{denom2Precision}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{denom2Precision}]{\setlength{\rightskip}{0pt plus 5cm}static mamaPricePrecision Wombat::MamaPrice::denom2Precision (mama\_\-i32\_\-t {\em denominator})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_ae2b01c3e29fe9621e2d3ad61b598f4ff}
+
+
+Return the appropriate precision code for a given fractional denominator. \hypertarget{classWombat_1_1MamaPrice_aa0e9229468d1e14e03bdf1fc901eaf3d}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!precision2Decimals@{precision2Decimals}}
+\index{precision2Decimals@{precision2Decimals}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{precision2Decimals}]{\setlength{\rightskip}{0pt plus 5cm}static mama\_\-i32\_\-t Wombat::MamaPrice::precision2Decimals (mamaPricePrecision {\em precision})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_aa0e9229468d1e14e03bdf1fc901eaf3d}
+
+
+Return the number of decimal places for a given precision code. \hypertarget{classWombat_1_1MamaPrice_a091e452e546dd5a8add9de6a1fbca364}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!precision2Denom@{precision2Denom}}
+\index{precision2Denom@{precision2Denom}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{precision2Denom}]{\setlength{\rightskip}{0pt plus 5cm}static mama\_\-i32\_\-t Wombat::MamaPrice::precision2Denom (mamaPricePrecision {\em precision})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaPrice_a091e452e546dd5a8add9de6a1fbca364}
+
+
+Return the fractional denominator for a given precision code. \hypertarget{classWombat_1_1MamaPrice_a21d57c1c44d9495a71bd29e07d3ac9a7}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaPrice Wombat::MamaPrice::getCValue ()}}
+\label{classWombat_1_1MamaPrice_a21d57c1c44d9495a71bd29e07d3ac9a7}
+\hypertarget{classWombat_1_1MamaPrice_a653f2e58af782ef2b3549332cc804196}{
+\index{Wombat::MamaPrice@{Wombat::MamaPrice}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaPrice@{Wombat::MamaPrice}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaPrice Wombat::MamaPrice::getCValue () const}}
+\label{classWombat_1_1MamaPrice_a653f2e58af782ef2b3549332cc804196}

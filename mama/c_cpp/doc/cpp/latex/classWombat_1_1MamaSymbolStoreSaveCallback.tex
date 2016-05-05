@@ -1,0 +1,40 @@
+\hypertarget{classWombat_1_1MamaSymbolStoreSaveCallback}{
+\section{Wombat::MamaSymbolStoreSaveCallback Class Reference}
+\label{classWombat_1_1MamaSymbolStoreSaveCallback}\index{Wombat::MamaSymbolStoreSaveCallback@{Wombat::MamaSymbolStoreSaveCallback}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaSymbolStoreSaveCallback}{MamaSymbolStoreSaveCallback} interface.  
+
+
+{\ttfamily \#include $<$MamaSymbolStoreSaveCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolStoreSaveCallback_aa740edb093d21ab84af9da49a351a448}{$\sim$MamaSymbolStoreSaveCallback} ()
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaSymbolStoreSaveCallback_ab723041d8f1937b1c2f348ed98769609}{savefilterConverter} (const char $\ast$symbol)=0
+\begin{DoxyCompactList}\small\item\em Method invoked when a symbol is being saved to file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaSymbolStoreSaveCallback}{MamaSymbolStoreSaveCallback} interface. An Object implementing this interface can be passed to the saveSymbolsToFile() function as a mechanism for filtering / transforming symbols being saved to files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolStoreSaveCallback_aa740edb093d21ab84af9da49a351a448}{
+\index{Wombat::MamaSymbolStoreSaveCallback@{Wombat::MamaSymbolStoreSaveCallback}!$\sim$MamaSymbolStoreSaveCallback@{$\sim$MamaSymbolStoreSaveCallback}}
+\index{$\sim$MamaSymbolStoreSaveCallback@{$\sim$MamaSymbolStoreSaveCallback}!Wombat::MamaSymbolStoreSaveCallback@{Wombat::MamaSymbolStoreSaveCallback}}
+\subsubsection[{$\sim$MamaSymbolStoreSaveCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolStoreSaveCallback::$\sim$MamaSymbolStoreSaveCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolStoreSaveCallback_aa740edb093d21ab84af9da49a351a448}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolStoreSaveCallback_ab723041d8f1937b1c2f348ed98769609}{
+\index{Wombat::MamaSymbolStoreSaveCallback@{Wombat::MamaSymbolStoreSaveCallback}!savefilterConverter@{savefilterConverter}}
+\index{savefilterConverter@{savefilterConverter}!Wombat::MamaSymbolStoreSaveCallback@{Wombat::MamaSymbolStoreSaveCallback}}
+\subsubsection[{savefilterConverter}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaSymbolStoreSaveCallback::savefilterConverter (const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolStoreSaveCallback_ab723041d8f1937b1c2f348ed98769609}
+
+
+Method invoked when a symbol is being saved to file. 
+\begin{DoxyParams}{Parameters}
+\item[{\em symbol}]The symbol just added to the store. \end{DoxyParams}

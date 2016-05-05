@@ -1,0 +1,78 @@
+\hypertarget{classWombat_1_1MamaFieldCacheFieldDateTimeVector}{
+\section{Wombat::MamaFieldCacheFieldDateTimeVector Class Reference}
+\label{classWombat_1_1MamaFieldCacheFieldDateTimeVector}\index{Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}}
+}
+
+
+\hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}: DateTime vector field.  
+
+
+{\ttfamily \#include $<$MamaFieldCacheFieldTypes.h$>$}Inheritance diagram for Wombat::MamaFieldCacheFieldDateTimeVector::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.62319cm]{classWombat_1_1MamaFieldCacheFieldDateTimeVector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a9b6abc070e46a310e9c31800037d7209}{set} (\hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field, const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} $\ast$values, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} size)
+\begin{DoxyCompactList}\small\item\em Set the values of MamDateTime vector field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a92246a2afd91bb502c46b714e771a431}{get} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field, const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} $\ast$\&values, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \&size) const 
+\begin{DoxyCompactList}\small\item\em Return the values of a \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} vector field. \item\end{DoxyCompactList}\item 
+const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} $\ast$ \hyperlink{classWombat_1_1MamaFieldCacheFieldDateTimeVector_aa76d3e79b75038d208d33d9d17519f8c}{get} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} index) const 
+\begin{DoxyCompactList}\small\item\em Return the value of a specific field of a \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} vector field. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a3032d98deb67dbb3a1bb8c4599ee48b5}{checkType} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}: DateTime vector field. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a9b6abc070e46a310e9c31800037d7209}{
+\index{Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}!set@{set}}
+\index{set@{set}!Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldCacheFieldDateTimeVector::set ({\bf MamaFieldCacheField} \& {\em field}, \/  const {\bf MamaDateTime} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a9b6abc070e46a310e9c31800037d7209}
+
+
+Set the values of MamDateTime vector field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to set the values to. \item[{\em values}]The new values of the field. \item[{\em size}]The number of fields in {\ttfamily values}. \end{DoxyParams}
+
+
+Referenced by Wombat::setFieldValue().\hypertarget{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a92246a2afd91bb502c46b714e771a431}{
+\index{Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}!get@{get}}
+\index{get@{get}!Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldCacheFieldDateTimeVector::get (const {\bf MamaFieldCacheField} \& {\em field}, \/  const {\bf MamaDateTime} $\ast$\& {\em values}, \/  {\bf mama\_\-size\_\-t} \& {\em size}) const}}
+\label{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a92246a2afd91bb502c46b714e771a431}
+
+
+Return the values of a \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} vector field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to get the values from. \item[{\em values}]A reference to the values to be returned. \item[{\em size}]A reference to the size of the vector to be returned. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCacheFieldDateTimeVector_aa76d3e79b75038d208d33d9d17519f8c}{
+\index{Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}!get@{get}}
+\index{get@{get}!Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MamaDateTime}$\ast$ Wombat::MamaFieldCacheFieldDateTimeVector::get (const {\bf MamaFieldCacheField} \& {\em field}, \/  {\bf mama\_\-size\_\-t} {\em index}) const}}
+\label{classWombat_1_1MamaFieldCacheFieldDateTimeVector_aa76d3e79b75038d208d33d9d17519f8c}
+
+
+Return the value of a specific field of a \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} vector field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to get the value from. \item[{\em index}]The index of the element of the vector to get the value from. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a3032d98deb67dbb3a1bb8c4599ee48b5}{
+\index{Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}!checkType@{checkType}}
+\index{checkType@{checkType}!Wombat::MamaFieldCacheFieldDateTimeVector@{Wombat::MamaFieldCacheFieldDateTimeVector}}
+\subsubsection[{checkType}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldCacheFieldDateTimeVector::checkType (const {\bf MamaFieldCacheField} \& {\em field}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheFieldDateTimeVector_a3032d98deb67dbb3a1bb8c4599ee48b5}
+
+
+References Wombat::MamaFieldCacheField::getType().

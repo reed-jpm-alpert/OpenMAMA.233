@@ -1,0 +1,170 @@
+\hypertarget{classWombat_1_1MamaSourceGroup}{
+\section{Wombat::MamaSourceGroup Class Reference}
+\label{classWombat_1_1MamaSourceGroup}\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+}
+
+
+A MAMA source group monitors a set of MAMA sources that presumably provide a duplicate set of data.  
+
+
+{\ttfamily \#include $<$MamaSourceGroup.h$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamaSourceGroup_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef const \hyperlink{classWombat_1_1MamaSourceGroup_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaSourceGroup_a65cb4cd84b8161cb0848a4cb28e53311}{const\_\-iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSourceGroup_a96db61f1a68dd6ff099f9c893efa0d0a}{MamaSourceGroup} (const char $\ast$name)
+\item 
+\hyperlink{classWombat_1_1MamaSourceGroup_a758752626dc0eb5373df787974f5371b}{$\sim$MamaSourceGroup} ()
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaSourceGroup_a6f567b63e6aa38256ccb61ec8524b968}{getName} () const 
+\item 
+\hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceGroup_a99200a65fd0890d2bcbc312a501effae}{find} (const char $\ast$sourceName)
+\item 
+const \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceGroup_a89bc61394005ce432c9d3f08da98122f}{find} (const char $\ast$sourceName) const 
+\item 
+void \hyperlink{classWombat_1_1MamaSourceGroup_ac192ef83401db97485842beb0783864b}{add} (\hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source, mama\_\-u32\_\-t weight)
+\item 
+void \hyperlink{classWombat_1_1MamaSourceGroup_a4c92e17561c0984ac40813a6369ba2cc}{add} (const char $\ast$sourceName, mama\_\-u32\_\-t weight, \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source)
+\item 
+void \hyperlink{classWombat_1_1MamaSourceGroup_af0433fc93cedaa7ecc8e34a2944b1b17}{setWeight} (const char $\ast$sourceName, mama\_\-u32\_\-t weight)
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaSourceGroup_a32860f8fd7f6030dd6ed3ee698c600a6}{getWeight} (const char $\ast$sourceName) const 
+\item 
+\hyperlink{classmama__size__t}{mama\_\-size\_\-t} \hyperlink{classWombat_1_1MamaSourceGroup_a6f661e62632d3ebc68ff768c976dc4e6}{size} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaSourceGroup_ac90efed56c8eba034a4d5c034710e637}{registerStateChangeCallback} (\hyperlink{classWombat_1_1MamaSourceStateChangeCallback}{MamaSourceStateChangeCallback} \&cb)
+\begin{DoxyCompactList}\small\item\em Applications interested in event notifications can register for events. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSourceGroup_a0ff2b125e45621698846c15e6c954727}{unregisterStateChangeCallback} (\hyperlink{classWombat_1_1MamaSourceStateChangeCallback}{MamaSourceStateChangeCallback} \&cb)
+\begin{DoxyCompactList}\small\item\em Applications interested in event notifications can unregister for events. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaSourceGroup_a4495552ed7ff2748e10749558652792a}{reevaluate} ()
+\begin{DoxyCompactList}\small\item\em Re-\/evaluate the group by checking all of the relative weights and changing the state of each \hyperlink{classWombat_1_1MamaSource}{MamaSource} in the group as appropriate. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaSourceGroup_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaSourceGroup_a28f48b4318790e7d87ac3bb229eee94b}{begin} ()
+\item 
+\hyperlink{classWombat_1_1MamaSourceGroup_1_1iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamaSourceGroup_a5b81ba4ad763351009a7e434e95fb295}{begin} () const 
+\item 
+\hyperlink{classWombat_1_1MamaSourceGroup_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaSourceGroup_a29a6d7226dea7635aa9f168a79f7ed9d}{end} ()
+\item 
+\hyperlink{classWombat_1_1MamaSourceGroup_1_1iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamaSourceGroup_a5198459780dfbfda88c97a244df89755}{end} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A MAMA source group monitors a set of MAMA sources that presumably provide a duplicate set of data. Each member of the group is given a priority and the member with the highest priority is given the mamaSourceState, MAMA\_\-SOURCE\_\-STATE\_\-OK; the other members of the group are given the state, MAMA\_\-SOURCE\_\-STATE\_\-OFF. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classWombat_1_1MamaSourceGroup_a65cb4cd84b8161cb0848a4cb28e53311}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!const\_\-iterator@{const\_\-iterator}}
+\index{const\_\-iterator@{const\_\-iterator}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{const\_\-iterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef const {\bf iterator} {\bf Wombat::MamaSourceGroup::const\_\-iterator}}}
+\label{classWombat_1_1MamaSourceGroup_a65cb4cd84b8161cb0848a4cb28e53311}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSourceGroup_a96db61f1a68dd6ff099f9c893efa0d0a}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!MamaSourceGroup@{MamaSourceGroup}}
+\index{MamaSourceGroup@{MamaSourceGroup}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{MamaSourceGroup}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSourceGroup::MamaSourceGroup (const char $\ast$ {\em name})}}
+\label{classWombat_1_1MamaSourceGroup_a96db61f1a68dd6ff099f9c893efa0d0a}
+\hypertarget{classWombat_1_1MamaSourceGroup_a758752626dc0eb5373df787974f5371b}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!$\sim$MamaSourceGroup@{$\sim$MamaSourceGroup}}
+\index{$\sim$MamaSourceGroup@{$\sim$MamaSourceGroup}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{$\sim$MamaSourceGroup}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSourceGroup::$\sim$MamaSourceGroup ()}}
+\label{classWombat_1_1MamaSourceGroup_a758752626dc0eb5373df787974f5371b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSourceGroup_a6f567b63e6aa38256ccb61ec8524b968}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!getName@{getName}}
+\index{getName@{getName}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaSourceGroup::getName () const}}
+\label{classWombat_1_1MamaSourceGroup_a6f567b63e6aa38256ccb61ec8524b968}
+\hypertarget{classWombat_1_1MamaSourceGroup_a99200a65fd0890d2bcbc312a501effae}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!find@{find}}
+\index{find@{find}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaSource}$\ast$ Wombat::MamaSourceGroup::find (const char $\ast$ {\em sourceName})}}
+\label{classWombat_1_1MamaSourceGroup_a99200a65fd0890d2bcbc312a501effae}
+\hypertarget{classWombat_1_1MamaSourceGroup_a89bc61394005ce432c9d3f08da98122f}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!find@{find}}
+\index{find@{find}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MamaSource}$\ast$ Wombat::MamaSourceGroup::find (const char $\ast$ {\em sourceName}) const}}
+\label{classWombat_1_1MamaSourceGroup_a89bc61394005ce432c9d3f08da98122f}
+\hypertarget{classWombat_1_1MamaSourceGroup_ac192ef83401db97485842beb0783864b}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!add@{add}}
+\index{add@{add}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSourceGroup::add ({\bf MamaSource} $\ast$ {\em source}, \/  mama\_\-u32\_\-t {\em weight})}}
+\label{classWombat_1_1MamaSourceGroup_ac192ef83401db97485842beb0783864b}
+\hypertarget{classWombat_1_1MamaSourceGroup_a4c92e17561c0984ac40813a6369ba2cc}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!add@{add}}
+\index{add@{add}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSourceGroup::add (const char $\ast$ {\em sourceName}, \/  mama\_\-u32\_\-t {\em weight}, \/  {\bf MamaSource} $\ast$ {\em source})}}
+\label{classWombat_1_1MamaSourceGroup_a4c92e17561c0984ac40813a6369ba2cc}
+\hypertarget{classWombat_1_1MamaSourceGroup_af0433fc93cedaa7ecc8e34a2944b1b17}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{setWeight}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSourceGroup::setWeight (const char $\ast$ {\em sourceName}, \/  mama\_\-u32\_\-t {\em weight})}}
+\label{classWombat_1_1MamaSourceGroup_af0433fc93cedaa7ecc8e34a2944b1b17}
+\hypertarget{classWombat_1_1MamaSourceGroup_a32860f8fd7f6030dd6ed3ee698c600a6}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{getWeight}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaSourceGroup::getWeight (const char $\ast$ {\em sourceName}) const}}
+\label{classWombat_1_1MamaSourceGroup_a32860f8fd7f6030dd6ed3ee698c600a6}
+\hypertarget{classWombat_1_1MamaSourceGroup_a6f661e62632d3ebc68ff768c976dc4e6}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!size@{size}}
+\index{size@{size}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-size\_\-t} Wombat::MamaSourceGroup::size () const}}
+\label{classWombat_1_1MamaSourceGroup_a6f661e62632d3ebc68ff768c976dc4e6}
+\hypertarget{classWombat_1_1MamaSourceGroup_ac90efed56c8eba034a4d5c034710e637}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!registerStateChangeCallback@{registerStateChangeCallback}}
+\index{registerStateChangeCallback@{registerStateChangeCallback}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{registerStateChangeCallback}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSourceGroup::registerStateChangeCallback ({\bf MamaSourceStateChangeCallback} \& {\em cb})}}
+\label{classWombat_1_1MamaSourceGroup_ac90efed56c8eba034a4d5c034710e637}
+
+
+Applications interested in event notifications can register for events. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cb}]callback to register \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSourceGroup_a0ff2b125e45621698846c15e6c954727}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!unregisterStateChangeCallback@{unregisterStateChangeCallback}}
+\index{unregisterStateChangeCallback@{unregisterStateChangeCallback}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{unregisterStateChangeCallback}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSourceGroup::unregisterStateChangeCallback ({\bf MamaSourceStateChangeCallback} \& {\em cb})}}
+\label{classWombat_1_1MamaSourceGroup_a0ff2b125e45621698846c15e6c954727}
+
+
+Applications interested in event notifications can unregister for events. 
+\begin{DoxyParams}{Parameters}
+\item[{\em cb}]callback to unregister \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSourceGroup_a4495552ed7ff2748e10749558652792a}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!reevaluate@{reevaluate}}
+\index{reevaluate@{reevaluate}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{reevaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaSourceGroup::reevaluate ()}}
+\label{classWombat_1_1MamaSourceGroup_a4495552ed7ff2748e10749558652792a}
+
+
+Re-\/evaluate the group by checking all of the relative weights and changing the state of each \hyperlink{classWombat_1_1MamaSource}{MamaSource} in the group as appropriate. Returns true if any states were changed; otherwise false. \hypertarget{classWombat_1_1MamaSourceGroup_a28f48b4318790e7d87ac3bb229eee94b}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!begin@{begin}}
+\index{begin@{begin}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Wombat::MamaSourceGroup::begin ()}}
+\label{classWombat_1_1MamaSourceGroup_a28f48b4318790e7d87ac3bb229eee94b}
+\hypertarget{classWombat_1_1MamaSourceGroup_a5b81ba4ad763351009a7e434e95fb295}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!begin@{begin}}
+\index{begin@{begin}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\_\-iterator} Wombat::MamaSourceGroup::begin () const}}
+\label{classWombat_1_1MamaSourceGroup_a5b81ba4ad763351009a7e434e95fb295}
+\hypertarget{classWombat_1_1MamaSourceGroup_a29a6d7226dea7635aa9f168a79f7ed9d}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!end@{end}}
+\index{end@{end}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Wombat::MamaSourceGroup::end ()}}
+\label{classWombat_1_1MamaSourceGroup_a29a6d7226dea7635aa9f168a79f7ed9d}
+\hypertarget{classWombat_1_1MamaSourceGroup_a5198459780dfbfda88c97a244df89755}{
+\index{Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}!end@{end}}
+\index{end@{end}!Wombat::MamaSourceGroup@{Wombat::MamaSourceGroup}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\_\-iterator} Wombat::MamaSourceGroup::end () const}}
+\label{classWombat_1_1MamaSourceGroup_a5198459780dfbfda88c97a244df89755}

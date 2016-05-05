@@ -1,0 +1,544 @@
+\hypertarget{classWombat_1_1MamaDateTime}{
+\section{Wombat::MamaDateTime Class Reference}
+\label{classWombat_1_1MamaDateTime}\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+}
+
+
+A date/time representation with additional hints for precision, advanced output formatting and support for time zone conversion (using the \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} type).  
+
+
+{\ttfamily \#include $<$MamaDateTime.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaDateTime_a1e942afab603d2d088c26370c220ecbc}{MamaDateTime} ()
+\item 
+\hyperlink{classWombat_1_1MamaDateTime_a8b9455884f78334223fa1982780d1a64}{MamaDateTime} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&copy)
+\item 
+\hyperlink{classWombat_1_1MamaDateTime_a51d3d35fc26c18f3807426233e23021d}{MamaDateTime} (const char $\ast$str, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} $\ast$tz=NULL)
+\begin{DoxyCompactList}\small\item\em Constructor taking a string argument. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaDateTime_a8cac3d8a2bda4a2448f1ddd77325da59}{$\sim$MamaDateTime} ()
+\item 
+\hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \& \hyperlink{classWombat_1_1MamaDateTime_ac7cd923eb7faa640d4302c77ca52358c}{operator=} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&rhs)
+\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_a62e1f438c1ad0a899bdacb39d20c86cf}{operator==} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_a7f8ea791ba3ad83e644700a8ffe8451e}{operator!=} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_a4d3504dac7104377f71e9b1cce308688}{operator$<$} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_a53b4e2adb4c5c97a9b0fde3199848694}{operator$>$} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&rhs) const 
+\item 
+int \hyperlink{classWombat_1_1MamaDateTime_a3b3685ec4ce83d445a4dd3c50719ea19}{compare} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_adaf5774adbf80a17c7e5da8850b7af08}{empty} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a11526c02ff3b37ce8e6678d176219cc8}{setEpochTime} (mama\_\-u32\_\-t secondsSinceEpoch, mama\_\-u32\_\-t microseconds, mamaDateTimePrecision precision=MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a1bdc0da59f4470e4ee69f21f177fb23b}{setEpochTimeF64} (double secondsSinceEpoch)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_aaea9d4b7234ccdc8c7e56580e4802a48}{setEpochTimeMilliseconds} (mama\_\-u64\_\-t millisecondsSinceEpoch)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a1e0773b5b60e6786921cfa8c7e6f6403}{setEpochTimeMicroseconds} (mama\_\-u64\_\-t microsecondsSinceEpoch)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a1a4e876163aae99f96fa98162424895b}{setWithHints} (mama\_\-u32\_\-t secondsSinceEpoch, mama\_\-u32\_\-t microseconds, mamaDateTimePrecision precision=MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN, mamaDateTimeHints hints=0)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a5da515d920a7999066e8af43eff427ee}{setPrecision} (mamaDateTimePrecision precision)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a403d86b47924626e1674ebdd9e8d9bb2}{setFromString} (const char $\ast$str, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} $\ast$tz=NULL)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_ab8b0370e32d78691526cb620bfc6971d}{setFromString} (const char $\ast$str, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} strLen, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} $\ast$tz=NULL)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a70ff9ced71b5f724cb83312f83414fef}{setToNow} ()
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_ad1c49cf313c23d347e458b789c24192b}{setToMidnightToday} (const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} $\ast$tz=NULL)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a0cefdc8f7306655701120a2c1bbda4ff}{set} (mama\_\-u32\_\-t year, mama\_\-u32\_\-t month, mama\_\-u32\_\-t day, mama\_\-u32\_\-t hour, mama\_\-u32\_\-t minute, mama\_\-u32\_\-t second, mama\_\-u32\_\-t microsecond, mamaDateTimePrecision precision=MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} $\ast$tz=NULL)
+\begin{DoxyCompactList}\small\item\em Set the entire date and time for the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_ae0b8725d6dfac55b09096be914116b02}{setTime} (mama\_\-u32\_\-t hour, mama\_\-u32\_\-t minute, mama\_\-u32\_\-t second, mama\_\-u32\_\-t microsecond, mamaDateTimePrecision precision=MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} $\ast$tz=NULL)
+\begin{DoxyCompactList}\small\item\em Set the time-\/of-\/day portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a8ea1490eef66b2103665b89070ff5b3c}{setDate} (mama\_\-u32\_\-t year, mama\_\-u32\_\-t month, mama\_\-u32\_\-t day)
+\begin{DoxyCompactList}\small\item\em Set the date portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a13ff83485883c08ce1f7a3081f3a2ad5}{copyTime} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&copy)
+\begin{DoxyCompactList}\small\item\em Copy the time-\/of-\/day portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a9db656b8007a727d23d617c00dce61b5}{copyDate} (const \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime} \&copy)
+\begin{DoxyCompactList}\small\item\em Copy the date portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_ae54ba1acde2bfa793078c972fa6a12fd}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the entire \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a9399de71fe3c26fa8c1c94b8279195bb}{clearTime} ()
+\begin{DoxyCompactList}\small\item\em Clear the time-\/of-\/day portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a8e6693500b38915d68afb54b4ad3dc9b}{clearDate} ()
+\begin{DoxyCompactList}\small\item\em Clear the date portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a914be94d3770fa57b01e543b07f4896b}{addSeconds} (mama\_\-f64\_\-t seconds)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a903f9fab62263e0e349e5ceb93229385}{addSeconds} (mama\_\-i32\_\-t seconds)
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a3dee4c25584a8a79a5493e8f62fc2cf6}{addMicroseconds} (mama\_\-i64\_\-t microSeconds)
+\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamaDateTime_ab9814ea39a88a354c0c99b31f920a14c}{getEpochTimeMicroseconds} () const 
+\begin{DoxyCompactList}\small\item\em Get the date and time as microseconds since the Epoch, (using the UTC timezone). \item\end{DoxyCompactList}\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamaDateTime_ad083a6993f7bbe2f0c5c43e7d7782bf3}{getEpochTimeMicroseconds} (const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&tz) const 
+\begin{DoxyCompactList}\small\item\em Get the date and time as microseconds since the Epoch in the supplied time zone. \item\end{DoxyCompactList}\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamaDateTime_afef0998864cc6aa6a9bc02ec560f4406}{getEpochTimeMilliseconds} () const 
+\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamaDateTime_ae558d0f45e1fceb29bb0671f9c20dc2f}{getEpochTimeMilliseconds} (const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&tz) const 
+\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaDateTime_acab5e332634fb075f7e0b93d7b1afbcb}{getEpochTimeSeconds} () const 
+\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaDateTime_a94e87557d8bc08a050933b166c79cc44}{getEpochTimeSeconds} (const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&tz) const 
+\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaDateTime_afb79d97c80195c594bd155aefad733db}{getEpochTimeSecondsWithCheck} () const 
+\begin{DoxyCompactList}\small\item\em Get the date and time as seconds since the Epoch, (using the UTC timezone). \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a71d88aab06c9b370d39dca53ab200894}{getAsString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_af4390447a4a46a24e01212cf732a32f5}{getTimeAsString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a12460a0fdf39d0faee5ea07bc3e3a180}{getDateAsString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen) const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaDateTime_ae88f2b09fb7c3c12f7c3f0cbfdea8147}{getAsString} () const 
+\begin{DoxyCompactList}\small\item\em Return a string representation of the date/time. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaDateTime_a6f48574bcc00a4cab6753a7a91d78743}{getTimeAsString} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaDateTime_abacd2e3cbcf824f61437099138197c9a}{getDateAsString} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_ad6ee818253f878732d2cd487e44fe962}{getAsFormattedString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen, const char $\ast$format) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_acfed61cbe6e7701ef883049693b6b0ae}{getAsFormattedString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen, const char $\ast$format, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&tz) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_af6c5fd2056ed4cab413d4e7c6edbac48}{getAsStructTimeVal} (struct timeval \&result) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a62a9ee319c5e3f776a9865665fc70a3c}{getAsStructTimeVal} (struct timeval \&result, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&tz) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a22e09625b13d3c551ebca057e8afa6b5}{getAsStructTm} (struct tm \&result) const 
+\item 
+void \hyperlink{classWombat_1_1MamaDateTime_a4178844d857c831ead19d48df4d6ce4b}{getAsStructTm} (struct tm \&result, const \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} \&tz) const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_a431664f839454a265a15125940b8fdca}{getYear} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_abeb22c4a6074de90c3cdd741e98cb2b0}{getMonth} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_afe315dd02d8b4ced3d802a1bdc4ab22d}{getDay} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_add3164a27491279196e84304da904386}{getHour} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_af910e4dc528a9d49b6515cf6d58d8362}{getMinute} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_ab65d2b7e006e89927bbb923237e354b8}{getSecond} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaDateTime_a35248ae77e516d88d86b32de9f6697df}{getMicrosecond} () const 
+\item 
+mamaDayOfWeek \hyperlink{classWombat_1_1MamaDateTime_aefb6a536ee7225e86d5f0802cc5514ce}{getDayOfWeek} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_adda7ed3aad76e13cc020e89c24f54b0d}{hasTime} () const 
+\begin{DoxyCompactList}\small\item\em Return whether the object has a time component. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaDateTime_a670f5d49b9eae47d0a5593df4f7a622d}{hasDate} () const 
+\begin{DoxyCompactList}\small\item\em Return whether the object has a date component. \item\end{DoxyCompactList}\item 
+mamaDateTime \hyperlink{classWombat_1_1MamaDateTime_aa332e6644fd1bcee35d417188c50aeb3}{getCValue} ()
+\item 
+const mamaDateTime \hyperlink{classWombat_1_1MamaDateTime_a59cb3db21937c616d42359380914fa4a}{getCValue} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A date/time representation with additional hints for precision, advanced output formatting and support for time zone conversion (using the \hyperlink{classWombat_1_1MamaTimeZone}{MamaTimeZone} type). Hints include:
+\begin{DoxyItemize}
+\item Whether the time stamp contains a date part, a time part, or both.
+\item The level of accuracy (if known) of the time part (e.g., minutes, seconds, milliseconds, etc.).
+\end{DoxyItemize}
+
+The output format strings are similar to that available for the strftime() function with the addition of \%; which adds optional (non-\/zero) fractional second to the string, and \%: which adds fractional seconds including trailing zeros, but does not include the \char`\"{}.\char`\"{}. The following table provides examples of output.\par
+ \begin{TabularC}{3}
+\hline
+Actual Time &Output of \char`\"{}\%T\%;\char`\"{} &Output of \char`\"{}\%T\%.:\char`\"{}  \\\cline{1-3}
+01:23:45 and 678 millisecs &01:23:45.678 &01:23:45.678  \\\cline{1-3}
+01:23:45 and 0 millisecs &01:23:45 &01:23:45.000  \\\cline{1-3}
+\end{TabularC}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDateTime_a1e942afab603d2d088c26370c220ecbc}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!MamaDateTime@{MamaDateTime}}
+\index{MamaDateTime@{MamaDateTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{MamaDateTime}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDateTime::MamaDateTime ()}}
+\label{classWombat_1_1MamaDateTime_a1e942afab603d2d088c26370c220ecbc}
+\hypertarget{classWombat_1_1MamaDateTime_a8b9455884f78334223fa1982780d1a64}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!MamaDateTime@{MamaDateTime}}
+\index{MamaDateTime@{MamaDateTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{MamaDateTime}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDateTime::MamaDateTime (const {\bf MamaDateTime} \& {\em copy})}}
+\label{classWombat_1_1MamaDateTime_a8b9455884f78334223fa1982780d1a64}
+\hypertarget{classWombat_1_1MamaDateTime_a51d3d35fc26c18f3807426233e23021d}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!MamaDateTime@{MamaDateTime}}
+\index{MamaDateTime@{MamaDateTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{MamaDateTime}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDateTime::MamaDateTime (const char $\ast$ {\em str}, \/  const {\bf MamaTimeZone} $\ast$ {\em tz} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}
+\label{classWombat_1_1MamaDateTime_a51d3d35fc26c18f3807426233e23021d}
+
+
+Constructor taking a string argument. This is the same as calling \hyperlink{classWombat_1_1MamaDateTime_a403d86b47924626e1674ebdd9e8d9bb2}{setFromString()} immediately after construction. \hypertarget{classWombat_1_1MamaDateTime_a8cac3d8a2bda4a2448f1ddd77325da59}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!$\sim$MamaDateTime@{$\sim$MamaDateTime}}
+\index{$\sim$MamaDateTime@{$\sim$MamaDateTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{$\sim$MamaDateTime}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDateTime::$\sim$MamaDateTime ()}}
+\label{classWombat_1_1MamaDateTime_a8cac3d8a2bda4a2448f1ddd77325da59}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDateTime_ac7cd923eb7faa640d4302c77ca52358c}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaDateTime}\& Wombat::MamaDateTime::operator= (const {\bf MamaDateTime} \& {\em rhs})}}
+\label{classWombat_1_1MamaDateTime_ac7cd923eb7faa640d4302c77ca52358c}
+\hypertarget{classWombat_1_1MamaDateTime_a62e1f438c1ad0a899bdacb39d20c86cf}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::operator== (const {\bf MamaDateTime} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaDateTime_a62e1f438c1ad0a899bdacb39d20c86cf}
+\hypertarget{classWombat_1_1MamaDateTime_a7f8ea791ba3ad83e644700a8ffe8451e}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::operator!= (const {\bf MamaDateTime} \& {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaDateTime_a7f8ea791ba3ad83e644700a8ffe8451e}
+\hypertarget{classWombat_1_1MamaDateTime_a4d3504dac7104377f71e9b1cce308688}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::operator$<$ (const {\bf MamaDateTime} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaDateTime_a4d3504dac7104377f71e9b1cce308688}
+\hypertarget{classWombat_1_1MamaDateTime_a53b4e2adb4c5c97a9b0fde3199848694}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::operator$>$ (const {\bf MamaDateTime} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaDateTime_a53b4e2adb4c5c97a9b0fde3199848694}
+\hypertarget{classWombat_1_1MamaDateTime_a3b3685ec4ce83d445a4dd3c50719ea19}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!compare@{compare}}
+\index{compare@{compare}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int Wombat::MamaDateTime::compare (const {\bf MamaDateTime} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaDateTime_a3b3685ec4ce83d445a4dd3c50719ea19}
+\hypertarget{classWombat_1_1MamaDateTime_adaf5774adbf80a17c7e5da8850b7af08}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!empty@{empty}}
+\index{empty@{empty}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::empty () const}}
+\label{classWombat_1_1MamaDateTime_adaf5774adbf80a17c7e5da8850b7af08}
+\hypertarget{classWombat_1_1MamaDateTime_a11526c02ff3b37ce8e6678d176219cc8}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setEpochTime@{setEpochTime}}
+\index{setEpochTime@{setEpochTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setEpochTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setEpochTime (mama\_\-u32\_\-t {\em secondsSinceEpoch}, \/  mama\_\-u32\_\-t {\em microseconds}, \/  mamaDateTimePrecision {\em precision} = {\ttfamily MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN})}}
+\label{classWombat_1_1MamaDateTime_a11526c02ff3b37ce8e6678d176219cc8}
+\hypertarget{classWombat_1_1MamaDateTime_a1bdc0da59f4470e4ee69f21f177fb23b}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setEpochTimeF64@{setEpochTimeF64}}
+\index{setEpochTimeF64@{setEpochTimeF64}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setEpochTimeF64}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setEpochTimeF64 (double {\em secondsSinceEpoch})}}
+\label{classWombat_1_1MamaDateTime_a1bdc0da59f4470e4ee69f21f177fb23b}
+\hypertarget{classWombat_1_1MamaDateTime_aaea9d4b7234ccdc8c7e56580e4802a48}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setEpochTimeMilliseconds@{setEpochTimeMilliseconds}}
+\index{setEpochTimeMilliseconds@{setEpochTimeMilliseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setEpochTimeMilliseconds}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setEpochTimeMilliseconds (mama\_\-u64\_\-t {\em millisecondsSinceEpoch})}}
+\label{classWombat_1_1MamaDateTime_aaea9d4b7234ccdc8c7e56580e4802a48}
+\hypertarget{classWombat_1_1MamaDateTime_a1e0773b5b60e6786921cfa8c7e6f6403}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setEpochTimeMicroseconds@{setEpochTimeMicroseconds}}
+\index{setEpochTimeMicroseconds@{setEpochTimeMicroseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setEpochTimeMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setEpochTimeMicroseconds (mama\_\-u64\_\-t {\em microsecondsSinceEpoch})}}
+\label{classWombat_1_1MamaDateTime_a1e0773b5b60e6786921cfa8c7e6f6403}
+\hypertarget{classWombat_1_1MamaDateTime_a1a4e876163aae99f96fa98162424895b}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setWithHints@{setWithHints}}
+\index{setWithHints@{setWithHints}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setWithHints}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setWithHints (mama\_\-u32\_\-t {\em secondsSinceEpoch}, \/  mama\_\-u32\_\-t {\em microseconds}, \/  mamaDateTimePrecision {\em precision} = {\ttfamily MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN}, \/  mamaDateTimeHints {\em hints} = {\ttfamily 0})}}
+\label{classWombat_1_1MamaDateTime_a1a4e876163aae99f96fa98162424895b}
+\hypertarget{classWombat_1_1MamaDateTime_a5da515d920a7999066e8af43eff427ee}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setPrecision@{setPrecision}}
+\index{setPrecision@{setPrecision}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setPrecision}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setPrecision (mamaDateTimePrecision {\em precision})}}
+\label{classWombat_1_1MamaDateTime_a5da515d920a7999066e8af43eff427ee}
+\hypertarget{classWombat_1_1MamaDateTime_a403d86b47924626e1674ebdd9e8d9bb2}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setFromString@{setFromString}}
+\index{setFromString@{setFromString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setFromString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setFromString (const char $\ast$ {\em str}, \/  const {\bf MamaTimeZone} $\ast$ {\em tz} = {\ttfamily NULL})}}
+\label{classWombat_1_1MamaDateTime_a403d86b47924626e1674ebdd9e8d9bb2}
+\hypertarget{classWombat_1_1MamaDateTime_ab8b0370e32d78691526cb620bfc6971d}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setFromString@{setFromString}}
+\index{setFromString@{setFromString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setFromString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setFromString (const char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em strLen}, \/  const {\bf MamaTimeZone} $\ast$ {\em tz} = {\ttfamily NULL})}}
+\label{classWombat_1_1MamaDateTime_ab8b0370e32d78691526cb620bfc6971d}
+\hypertarget{classWombat_1_1MamaDateTime_a70ff9ced71b5f724cb83312f83414fef}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setToNow@{setToNow}}
+\index{setToNow@{setToNow}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setToNow}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setToNow ()}}
+\label{classWombat_1_1MamaDateTime_a70ff9ced71b5f724cb83312f83414fef}
+\hypertarget{classWombat_1_1MamaDateTime_ad1c49cf313c23d347e458b789c24192b}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setToMidnightToday@{setToMidnightToday}}
+\index{setToMidnightToday@{setToMidnightToday}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setToMidnightToday}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setToMidnightToday (const {\bf MamaTimeZone} $\ast$ {\em tz} = {\ttfamily NULL})}}
+\label{classWombat_1_1MamaDateTime_ad1c49cf313c23d347e458b789c24192b}
+\hypertarget{classWombat_1_1MamaDateTime_a0cefdc8f7306655701120a2c1bbda4ff}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!set@{set}}
+\index{set@{set}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::set (mama\_\-u32\_\-t {\em year}, \/  mama\_\-u32\_\-t {\em month}, \/  mama\_\-u32\_\-t {\em day}, \/  mama\_\-u32\_\-t {\em hour}, \/  mama\_\-u32\_\-t {\em minute}, \/  mama\_\-u32\_\-t {\em second}, \/  mama\_\-u32\_\-t {\em microsecond}, \/  mamaDateTimePrecision {\em precision} = {\ttfamily MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN}, \/  const {\bf MamaTimeZone} $\ast$ {\em tz} = {\ttfamily NULL})}}
+\label{classWombat_1_1MamaDateTime_a0cefdc8f7306655701120a2c1bbda4ff}
+
+
+Set the entire date and time for the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The year, month and day parameters must all be integers greater than zero.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em year}]The year (must be 1970 or later). \item[{\em month}]The month (1 -\/ 12). \item[{\em day}]The day (1 -\/ 31). \item[{\em hour}]The hour (0 -\/ 23). \item[{\em minute}]The minute (0 -\/ 59). \item[{\em second}]The second (0 -\/ 59). \item[{\em microsecond}]The second (0 -\/ 999999). \item[{\em precision}]An explicit precision, if known. \item[{\em tz}]A timezone to shift from. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDateTime_ae0b8725d6dfac55b09096be914116b02}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setTime@{setTime}}
+\index{setTime@{setTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setTime (mama\_\-u32\_\-t {\em hour}, \/  mama\_\-u32\_\-t {\em minute}, \/  mama\_\-u32\_\-t {\em second}, \/  mama\_\-u32\_\-t {\em microsecond}, \/  mamaDateTimePrecision {\em precision} = {\ttfamily MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN}, \/  const {\bf MamaTimeZone} $\ast$ {\em tz} = {\ttfamily NULL})}}
+\label{classWombat_1_1MamaDateTime_ae0b8725d6dfac55b09096be914116b02}
+
+
+Set the time-\/of-\/day portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The date portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em hour}]The hour (0 -\/ 23). \item[{\em minute}]The minute (0 -\/ 59). \item[{\em second}]The second (0 -\/ 59). \item[{\em microsecond}]The second (0 -\/ 999999). \item[{\em precision}]An explicit precision, if known. \item[{\em tz}]A timezone to shift from. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDateTime_a8ea1490eef66b2103665b89070ff5b3c}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!setDate@{setDate}}
+\index{setDate@{setDate}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{setDate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::setDate (mama\_\-u32\_\-t {\em year}, \/  mama\_\-u32\_\-t {\em month}, \/  mama\_\-u32\_\-t {\em day})}}
+\label{classWombat_1_1MamaDateTime_a8ea1490eef66b2103665b89070ff5b3c}
+
+
+Set the date portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The time-\/of-\/day portion is not affected. The year, month and day parameters must all be integers greater than zero.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em year}]The year (must be 1970 or later). \item[{\em month}]The month (1 -\/ 12). \item[{\em day}]The day (1 -\/ 31). \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDateTime_a13ff83485883c08ce1f7a3081f3a2ad5}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!copyTime@{copyTime}}
+\index{copyTime@{copyTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{copyTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::copyTime (const {\bf MamaDateTime} \& {\em copy})}}
+\label{classWombat_1_1MamaDateTime_a13ff83485883c08ce1f7a3081f3a2ad5}
+
+
+Copy the time-\/of-\/day portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The date portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The object to copy from \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDateTime_a9db656b8007a727d23d617c00dce61b5}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!copyDate@{copyDate}}
+\index{copyDate@{copyDate}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{copyDate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::copyDate (const {\bf MamaDateTime} \& {\em copy})}}
+\label{classWombat_1_1MamaDateTime_a9db656b8007a727d23d617c00dce61b5}
+
+
+Copy the date portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The time-\/of-\/day portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The object to copy from \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDateTime_ae54ba1acde2bfa793078c972fa6a12fd}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::clear ()}}
+\label{classWombat_1_1MamaDateTime_ae54ba1acde2bfa793078c972fa6a12fd}
+
+
+Clear the entire \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. \hypertarget{classWombat_1_1MamaDateTime_a9399de71fe3c26fa8c1c94b8279195bb}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!clearTime@{clearTime}}
+\index{clearTime@{clearTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{clearTime}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::clearTime ()}}
+\label{classWombat_1_1MamaDateTime_a9399de71fe3c26fa8c1c94b8279195bb}
+
+
+Clear the time-\/of-\/day portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The date portion is not affected. \hypertarget{classWombat_1_1MamaDateTime_a8e6693500b38915d68afb54b4ad3dc9b}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!clearDate@{clearDate}}
+\index{clearDate@{clearDate}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{clearDate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::clearDate ()}}
+\label{classWombat_1_1MamaDateTime_a8e6693500b38915d68afb54b4ad3dc9b}
+
+
+Clear the date portion of the \hyperlink{classWombat_1_1MamaDateTime}{MamaDateTime}. The time-\/of-\/day portion is not affected. \hypertarget{classWombat_1_1MamaDateTime_a914be94d3770fa57b01e543b07f4896b}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!addSeconds@{addSeconds}}
+\index{addSeconds@{addSeconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{addSeconds}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::addSeconds (mama\_\-f64\_\-t {\em seconds})}}
+\label{classWombat_1_1MamaDateTime_a914be94d3770fa57b01e543b07f4896b}
+\hypertarget{classWombat_1_1MamaDateTime_a903f9fab62263e0e349e5ceb93229385}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!addSeconds@{addSeconds}}
+\index{addSeconds@{addSeconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{addSeconds}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::addSeconds (mama\_\-i32\_\-t {\em seconds})}}
+\label{classWombat_1_1MamaDateTime_a903f9fab62263e0e349e5ceb93229385}
+\hypertarget{classWombat_1_1MamaDateTime_a3dee4c25584a8a79a5493e8f62fc2cf6}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!addMicroseconds@{addMicroseconds}}
+\index{addMicroseconds@{addMicroseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{addMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::addMicroseconds (mama\_\-i64\_\-t {\em microSeconds})}}
+\label{classWombat_1_1MamaDateTime_a3dee4c25584a8a79a5493e8f62fc2cf6}
+\hypertarget{classWombat_1_1MamaDateTime_ab9814ea39a88a354c0c99b31f920a14c}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeMicroseconds@{getEpochTimeMicroseconds}}
+\index{getEpochTimeMicroseconds@{getEpochTimeMicroseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::MamaDateTime::getEpochTimeMicroseconds () const}}
+\label{classWombat_1_1MamaDateTime_ab9814ea39a88a354c0c99b31f920a14c}
+
+
+Get the date and time as microseconds since the Epoch, (using the UTC timezone). \begin{DoxyReturn}{Returns}
+The number of microseconds since the Epoch. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDateTime_ad083a6993f7bbe2f0c5c43e7d7782bf3}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeMicroseconds@{getEpochTimeMicroseconds}}
+\index{getEpochTimeMicroseconds@{getEpochTimeMicroseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::MamaDateTime::getEpochTimeMicroseconds (const {\bf MamaTimeZone} \& {\em tz}) const}}
+\label{classWombat_1_1MamaDateTime_ad083a6993f7bbe2f0c5c43e7d7782bf3}
+
+
+Get the date and time as microseconds since the Epoch in the supplied time zone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em int\mbox{]}}]tz The timezone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of microseconds since the Epoch. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDateTime_afef0998864cc6aa6a9bc02ec560f4406}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeMilliseconds@{getEpochTimeMilliseconds}}
+\index{getEpochTimeMilliseconds@{getEpochTimeMilliseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeMilliseconds}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::MamaDateTime::getEpochTimeMilliseconds () const}}
+\label{classWombat_1_1MamaDateTime_afef0998864cc6aa6a9bc02ec560f4406}
+\hypertarget{classWombat_1_1MamaDateTime_ae558d0f45e1fceb29bb0671f9c20dc2f}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeMilliseconds@{getEpochTimeMilliseconds}}
+\index{getEpochTimeMilliseconds@{getEpochTimeMilliseconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeMilliseconds}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::MamaDateTime::getEpochTimeMilliseconds (const {\bf MamaTimeZone} \& {\em tz}) const}}
+\label{classWombat_1_1MamaDateTime_ae558d0f45e1fceb29bb0671f9c20dc2f}
+\hypertarget{classWombat_1_1MamaDateTime_acab5e332634fb075f7e0b93d7b1afbcb}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeSeconds@{getEpochTimeSeconds}}
+\index{getEpochTimeSeconds@{getEpochTimeSeconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeSeconds}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::MamaDateTime::getEpochTimeSeconds () const}}
+\label{classWombat_1_1MamaDateTime_acab5e332634fb075f7e0b93d7b1afbcb}
+\hypertarget{classWombat_1_1MamaDateTime_a94e87557d8bc08a050933b166c79cc44}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeSeconds@{getEpochTimeSeconds}}
+\index{getEpochTimeSeconds@{getEpochTimeSeconds}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeSeconds}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::MamaDateTime::getEpochTimeSeconds (const {\bf MamaTimeZone} \& {\em tz}) const}}
+\label{classWombat_1_1MamaDateTime_a94e87557d8bc08a050933b166c79cc44}
+\hypertarget{classWombat_1_1MamaDateTime_afb79d97c80195c594bd155aefad733db}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getEpochTimeSecondsWithCheck@{getEpochTimeSecondsWithCheck}}
+\index{getEpochTimeSecondsWithCheck@{getEpochTimeSecondsWithCheck}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getEpochTimeSecondsWithCheck}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::MamaDateTime::getEpochTimeSecondsWithCheck () const}}
+\label{classWombat_1_1MamaDateTime_afb79d97c80195c594bd155aefad733db}
+
+
+Get the date and time as seconds since the Epoch, (using the UTC timezone). If no date value is contained in the dateTime then it will be set to today's date and the calculation made.
+
+\begin{DoxyReturn}{Returns}
+The number of seconds, (including partial seconds), since the Epoch. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDateTime_a71d88aab06c9b370d39dca53ab200894}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}) const}}
+\label{classWombat_1_1MamaDateTime_a71d88aab06c9b370d39dca53ab200894}
+\hypertarget{classWombat_1_1MamaDateTime_af4390447a4a46a24e01212cf732a32f5}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getTimeAsString@{getTimeAsString}}
+\index{getTimeAsString@{getTimeAsString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getTimeAsString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getTimeAsString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}) const}}
+\label{classWombat_1_1MamaDateTime_af4390447a4a46a24e01212cf732a32f5}
+\hypertarget{classWombat_1_1MamaDateTime_a12460a0fdf39d0faee5ea07bc3e3a180}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getDateAsString@{getDateAsString}}
+\index{getDateAsString@{getDateAsString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getDateAsString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getDateAsString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}) const}}
+\label{classWombat_1_1MamaDateTime_a12460a0fdf39d0faee5ea07bc3e3a180}
+\hypertarget{classWombat_1_1MamaDateTime_ae88f2b09fb7c3c12f7c3f0cbfdea8147}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaDateTime::getAsString () const}}
+\label{classWombat_1_1MamaDateTime_ae88f2b09fb7c3c12f7c3f0cbfdea8147}
+
+
+Return a string representation of the date/time. Note that the alternative \hyperlink{classWombat_1_1MamaDateTime_a71d88aab06c9b370d39dca53ab200894}{getAsString()} methods are more efficient because these method must allocate a temporary buffer (automatically destroyed upon object destruction). The timezone must to set to UTC if calling this from multiple threads concurrently to avoid contention in strftime.p \hypertarget{classWombat_1_1MamaDateTime_a6f48574bcc00a4cab6753a7a91d78743}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getTimeAsString@{getTimeAsString}}
+\index{getTimeAsString@{getTimeAsString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getTimeAsString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaDateTime::getTimeAsString () const}}
+\label{classWombat_1_1MamaDateTime_a6f48574bcc00a4cab6753a7a91d78743}
+\hypertarget{classWombat_1_1MamaDateTime_abacd2e3cbcf824f61437099138197c9a}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getDateAsString@{getDateAsString}}
+\index{getDateAsString@{getDateAsString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getDateAsString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaDateTime::getDateAsString () const}}
+\label{classWombat_1_1MamaDateTime_abacd2e3cbcf824f61437099138197c9a}
+\hypertarget{classWombat_1_1MamaDateTime_ad6ee818253f878732d2cd487e44fe962}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsFormattedString@{getAsFormattedString}}
+\index{getAsFormattedString@{getAsFormattedString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsFormattedString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsFormattedString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}, \/  const char $\ast$ {\em format}) const}}
+\label{classWombat_1_1MamaDateTime_ad6ee818253f878732d2cd487e44fe962}
+\hypertarget{classWombat_1_1MamaDateTime_acfed61cbe6e7701ef883049693b6b0ae}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsFormattedString@{getAsFormattedString}}
+\index{getAsFormattedString@{getAsFormattedString}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsFormattedString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsFormattedString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}, \/  const char $\ast$ {\em format}, \/  const {\bf MamaTimeZone} \& {\em tz}) const}}
+\label{classWombat_1_1MamaDateTime_acfed61cbe6e7701ef883049693b6b0ae}
+\hypertarget{classWombat_1_1MamaDateTime_af6c5fd2056ed4cab413d4e7c6edbac48}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsStructTimeVal@{getAsStructTimeVal}}
+\index{getAsStructTimeVal@{getAsStructTimeVal}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsStructTimeVal}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsStructTimeVal (struct timeval \& {\em result}) const}}
+\label{classWombat_1_1MamaDateTime_af6c5fd2056ed4cab413d4e7c6edbac48}
+\hypertarget{classWombat_1_1MamaDateTime_a62a9ee319c5e3f776a9865665fc70a3c}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsStructTimeVal@{getAsStructTimeVal}}
+\index{getAsStructTimeVal@{getAsStructTimeVal}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsStructTimeVal}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsStructTimeVal (struct timeval \& {\em result}, \/  const {\bf MamaTimeZone} \& {\em tz}) const}}
+\label{classWombat_1_1MamaDateTime_a62a9ee319c5e3f776a9865665fc70a3c}
+\hypertarget{classWombat_1_1MamaDateTime_a22e09625b13d3c551ebca057e8afa6b5}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsStructTm@{getAsStructTm}}
+\index{getAsStructTm@{getAsStructTm}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsStructTm}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsStructTm (struct tm \& {\em result}) const}}
+\label{classWombat_1_1MamaDateTime_a22e09625b13d3c551ebca057e8afa6b5}
+\hypertarget{classWombat_1_1MamaDateTime_a4178844d857c831ead19d48df4d6ce4b}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getAsStructTm@{getAsStructTm}}
+\index{getAsStructTm@{getAsStructTm}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getAsStructTm}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDateTime::getAsStructTm (struct tm \& {\em result}, \/  const {\bf MamaTimeZone} \& {\em tz}) const}}
+\label{classWombat_1_1MamaDateTime_a4178844d857c831ead19d48df4d6ce4b}
+\hypertarget{classWombat_1_1MamaDateTime_a431664f839454a265a15125940b8fdca}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getYear@{getYear}}
+\index{getYear@{getYear}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getYear}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getYear () const}}
+\label{classWombat_1_1MamaDateTime_a431664f839454a265a15125940b8fdca}
+\hypertarget{classWombat_1_1MamaDateTime_abeb22c4a6074de90c3cdd741e98cb2b0}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getMonth@{getMonth}}
+\index{getMonth@{getMonth}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getMonth}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getMonth () const}}
+\label{classWombat_1_1MamaDateTime_abeb22c4a6074de90c3cdd741e98cb2b0}
+\hypertarget{classWombat_1_1MamaDateTime_afe315dd02d8b4ced3d802a1bdc4ab22d}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getDay@{getDay}}
+\index{getDay@{getDay}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getDay}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getDay () const}}
+\label{classWombat_1_1MamaDateTime_afe315dd02d8b4ced3d802a1bdc4ab22d}
+\hypertarget{classWombat_1_1MamaDateTime_add3164a27491279196e84304da904386}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getHour@{getHour}}
+\index{getHour@{getHour}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getHour}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getHour () const}}
+\label{classWombat_1_1MamaDateTime_add3164a27491279196e84304da904386}
+\hypertarget{classWombat_1_1MamaDateTime_af910e4dc528a9d49b6515cf6d58d8362}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getMinute@{getMinute}}
+\index{getMinute@{getMinute}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getMinute}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getMinute () const}}
+\label{classWombat_1_1MamaDateTime_af910e4dc528a9d49b6515cf6d58d8362}
+\hypertarget{classWombat_1_1MamaDateTime_ab65d2b7e006e89927bbb923237e354b8}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getSecond@{getSecond}}
+\index{getSecond@{getSecond}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getSecond}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getSecond () const}}
+\label{classWombat_1_1MamaDateTime_ab65d2b7e006e89927bbb923237e354b8}
+\hypertarget{classWombat_1_1MamaDateTime_a35248ae77e516d88d86b32de9f6697df}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getMicrosecond@{getMicrosecond}}
+\index{getMicrosecond@{getMicrosecond}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getMicrosecond}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaDateTime::getMicrosecond () const}}
+\label{classWombat_1_1MamaDateTime_a35248ae77e516d88d86b32de9f6697df}
+\hypertarget{classWombat_1_1MamaDateTime_aefb6a536ee7225e86d5f0802cc5514ce}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getDayOfWeek@{getDayOfWeek}}
+\index{getDayOfWeek@{getDayOfWeek}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getDayOfWeek}]{\setlength{\rightskip}{0pt plus 5cm}mamaDayOfWeek Wombat::MamaDateTime::getDayOfWeek () const}}
+\label{classWombat_1_1MamaDateTime_aefb6a536ee7225e86d5f0802cc5514ce}
+\hypertarget{classWombat_1_1MamaDateTime_adda7ed3aad76e13cc020e89c24f54b0d}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!hasTime@{hasTime}}
+\index{hasTime@{hasTime}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{hasTime}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::hasTime () const}}
+\label{classWombat_1_1MamaDateTime_adda7ed3aad76e13cc020e89c24f54b0d}
+
+
+Return whether the object has a time component. \hypertarget{classWombat_1_1MamaDateTime_a670f5d49b9eae47d0a5593df4f7a622d}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!hasDate@{hasDate}}
+\index{hasDate@{hasDate}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{hasDate}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaDateTime::hasDate () const}}
+\label{classWombat_1_1MamaDateTime_a670f5d49b9eae47d0a5593df4f7a622d}
+
+
+Return whether the object has a date component. \hypertarget{classWombat_1_1MamaDateTime_aa332e6644fd1bcee35d417188c50aeb3}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaDateTime Wombat::MamaDateTime::getCValue ()}}
+\label{classWombat_1_1MamaDateTime_aa332e6644fd1bcee35d417188c50aeb3}
+\hypertarget{classWombat_1_1MamaDateTime_a59cb3db21937c616d42359380914fa4a}{
+\index{Wombat::MamaDateTime@{Wombat::MamaDateTime}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaDateTime@{Wombat::MamaDateTime}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaDateTime Wombat::MamaDateTime::getCValue () const}}
+\label{classWombat_1_1MamaDateTime_a59cb3db21937c616d42359380914fa4a}

@@ -1,0 +1,253 @@
+\hypertarget{classWombat_1_1MamaBasicSubscription}{
+\section{Wombat::MamaBasicSubscription Class Reference}
+\label{classWombat_1_1MamaBasicSubscription}\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaBasicSubscription}{MamaBasicSubscription}} interface represents a subscription to a topic with no market data semantics.  
+
+
+{\ttfamily \#include $<$MamaBasicSubscription.h$>$}Inheritance diagram for Wombat::MamaBasicSubscription::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaBasicSubscription}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaBasicSubscription_a24ad7f3b3dac4e61a0f31b0db364a5e9}{$\sim$MamaBasicSubscription} ()
+\begin{DoxyCompactList}\small\item\em The destructor will call {\ttfamily \hyperlink{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{destroy()}} if the subscription has not already been destroyed. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaBasicSubscription_a337b175ab4011344f8cf47bccdc7916d}{MamaBasicSubscription} (void)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicSubscription_a1313d7a4e6ca044f2b1a71ebad9ff382}{createBasic} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaBasicSubscriptionCallback}{MamaBasicSubscriptionCallback} $\ast$callback, const char $\ast$topic, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Create a basic subscription without market data semantics. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy the subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicSubscription_aa00ed63c4f538d8abb21255abace5ffb}{destroyEx} ()
+\begin{DoxyCompactList}\small\item\em This function will destroy the subscription and can be called from any thread. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaBasicSubscription_ad651a6cd62c02a074ad276dbb11ddd4b}{isActive} (void) const 
+\begin{DoxyCompactList}\small\item\em Return whether the subscription is active. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_acc13b00868fd554476794e43dafa67e9}{getTopic} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the symbol for this subscription. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_aa2f74c1cb97f84f059a880ddd28ef929}{getTransport} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily \hyperlink{classWombat_1_1MamaTransport}{MamaTransport}} for this subscription. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaBasicSubscriptionCallback}{MamaBasicSubscriptionCallback} $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_a1b58d2258ea0d4c09f53737abac4e6ce}{getBasicCallback} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback}} for this subscription. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_ad942460e43402f4e97f8d18086eb61c7}{getQueue} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily \hyperlink{classWombat_1_1MamaQueue}{MamaQueue}} for the subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicSubscription_afd46faca33c0b3198e75d906dc79f848}{setClosure} (void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Set the closure for the subscription. \item\end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_a601750648cc71247df752f904aaf5e1c}{getClosure} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the closure for the subscription. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicSubscription_a1cf68138c6df48e9bb5fbfa1e4242fb5}{setDebugLevel} (MamaLogLevel level)
+\begin{DoxyCompactList}\small\item\em Set the debug level for this subscription. \item\end{DoxyCompactList}\item 
+virtual MamaLogLevel \hyperlink{classWombat_1_1MamaBasicSubscription_a7ed1a681895a09661866d56682b9faba}{getDebugLevel} () const 
+\begin{DoxyCompactList}\small\item\em Return the debug level for this subscription. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaBasicSubscription_aa87899a7475f0b88dd4b99ea4ddb963e}{checkDebugLevel} (MamaLogLevel level) const 
+\begin{DoxyCompactList}\small\item\em Return whether the debug level for this subscription equals or exceeds some level. \item\end{DoxyCompactList}\item 
+virtual mamaSubscriptionState \hyperlink{classWombat_1_1MamaBasicSubscription_a0cbca1e081927c0fec67de8a9b929f9c}{getState} (void)
+\begin{DoxyCompactList}\small\item\em This function will return the current state of the subscription, this function should be used in preference to the mamaSubscription\_\-isActive or mamaSubscription\_\-isValid functions. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_ae25dd14ae861cebee1d4bed6aa618858}{mClosure}
+\item 
+\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_a4509331bc7580c4b3f70ad389793259e}{mQueue}
+\item 
+mamaSubscription \hyperlink{classWombat_1_1MamaBasicSubscription_a8e3c180ade481768be2dbc93a352671d}{mSubscription}
+\item 
+\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaBasicSubscription_add3a06fce34e93852a57ef777253794d}{mTransport}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaBasicSubscription}{MamaBasicSubscription}} interface represents a subscription to a topic with no market data semantics. \begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1Mama}{Mama} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Michael Schonberg copyright 2003 \hyperlink{namespaceWombat}{Wombat} Consulting Inc. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a24ad7f3b3dac4e61a0f31b0db364a5e9}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!$\sim$MamaBasicSubscription@{$\sim$MamaBasicSubscription}}
+\index{$\sim$MamaBasicSubscription@{$\sim$MamaBasicSubscription}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{$\sim$MamaBasicSubscription}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaBasicSubscription::$\sim$MamaBasicSubscription ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a24ad7f3b3dac4e61a0f31b0db364a5e9}
+
+
+The destructor will call {\ttfamily \hyperlink{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{destroy()}} if the subscription has not already been destroyed. \hypertarget{classWombat_1_1MamaBasicSubscription_a337b175ab4011344f8cf47bccdc7916d}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!MamaBasicSubscription@{MamaBasicSubscription}}
+\index{MamaBasicSubscription@{MamaBasicSubscription}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{MamaBasicSubscription}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaBasicSubscription::MamaBasicSubscription (void)}}
+\label{classWombat_1_1MamaBasicSubscription_a337b175ab4011344f8cf47bccdc7916d}
+
+
+Constructor. Call \hyperlink{classWombat_1_1MamaBasicSubscription_a1313d7a4e6ca044f2b1a71ebad9ff382}{createBasic()} to activate the subscription. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a1313d7a4e6ca044f2b1a71ebad9ff382}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!createBasic@{createBasic}}
+\index{createBasic@{createBasic}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{createBasic}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicSubscription::createBasic ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaBasicSubscriptionCallback} $\ast$ {\em callback}, \/  const char $\ast$ {\em topic}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a1313d7a4e6ca044f2b1a71ebad9ff382}
+
+
+Create a basic subscription without market data semantics. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport to use. Must be a basic transport. \item[{\em queue}]The queue. \item[{\em callback}]The mamaMsgCallbacks structure containing the three callback methods.\item[{\em topic}]The topic. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicSubscription::destroy ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}
+
+
+Destroy the subscription. Destroys the underlying subscription. The subscription can be recreated via a subsequent call to create() 
+
+Reimplemented in \hyperlink{classWombat_1_1MamaSubscription_a331eee861f0185e564bcceac3aedde24}{Wombat::MamaSubscription}.\hypertarget{classWombat_1_1MamaBasicSubscription_aa00ed63c4f538d8abb21255abace5ffb}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!destroyEx@{destroyEx}}
+\index{destroyEx@{destroyEx}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{destroyEx}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicSubscription::destroyEx ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_aa00ed63c4f538d8abb21255abace5ffb}
+
+
+This function will destroy the subscription and can be called from any thread. Note that the subscription will not be fully destroyed until the onDestroy callback is received from the \hyperlink{classWombat_1_1MamaBasicSubscriptionCallback}{MamaBasicSubscriptionCallback} interface. To destroy from the dispatching thread the destroy function should be used in preference. 
+
+Reimplemented in \hyperlink{classWombat_1_1MamaSubscription_a2607ec39a0426074664326920a5733f9}{Wombat::MamaSubscription}.\hypertarget{classWombat_1_1MamaBasicSubscription_ad651a6cd62c02a074ad276dbb11ddd4b}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!isActive@{isActive}}
+\index{isActive@{isActive}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{isActive}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaBasicSubscription::isActive (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_ad651a6cd62c02a074ad276dbb11ddd4b}
+
+
+Return whether the subscription is active. \begin{DoxyReturn}{Returns}
+whether the subscription is active. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_acc13b00868fd554476794e43dafa67e9}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getTopic@{getTopic}}
+\index{getTopic@{getTopic}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getTopic}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaBasicSubscription::getTopic (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_acc13b00868fd554476794e43dafa67e9}
+
+
+Return the symbol for this subscription. \begin{DoxyReturn}{Returns}
+The topic. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_aa2f74c1cb97f84f059a880ddd28ef929}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getTransport@{getTransport}}
+\index{getTransport@{getTransport}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getTransport}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaTransport}$\ast$ Wombat::MamaBasicSubscription::getTransport (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_aa2f74c1cb97f84f059a880ddd28ef929}
+
+
+Return the {\ttfamily \hyperlink{classWombat_1_1MamaTransport}{MamaTransport}} for this subscription. \begin{DoxyReturn}{Returns}
+the transport. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a1b58d2258ea0d4c09f53737abac4e6ce}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getBasicCallback@{getBasicCallback}}
+\index{getBasicCallback@{getBasicCallback}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getBasicCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaBasicSubscriptionCallback}$\ast$ Wombat::MamaBasicSubscription::getBasicCallback (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a1b58d2258ea0d4c09f53737abac4e6ce}
+
+
+Return the {\ttfamily \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback}} for this subscription. \begin{DoxyReturn}{Returns}
+the callback. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_ad942460e43402f4e97f8d18086eb61c7}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getQueue@{getQueue}}
+\index{getQueue@{getQueue}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getQueue}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaQueue}$\ast$ Wombat::MamaBasicSubscription::getQueue (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_ad942460e43402f4e97f8d18086eb61c7}
+
+
+Return the {\ttfamily \hyperlink{classWombat_1_1MamaQueue}{MamaQueue}} for the subscription. \begin{DoxyReturn}{Returns}
+the queue. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_afd46faca33c0b3198e75d906dc79f848}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{setClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicSubscription::setClosure (void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_afd46faca33c0b3198e75d906dc79f848}
+
+
+Set the closure for the subscription. \hypertarget{classWombat_1_1MamaBasicSubscription_a601750648cc71247df752f904aaf5e1c}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaBasicSubscription::getClosure (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a601750648cc71247df752f904aaf5e1c}
+
+
+Return the closure for the subscription. \begin{DoxyReturn}{Returns}
+the closure. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a1cf68138c6df48e9bb5fbfa1e4242fb5}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!setDebugLevel@{setDebugLevel}}
+\index{setDebugLevel@{setDebugLevel}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{setDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicSubscription::setDebugLevel (MamaLogLevel {\em level})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a1cf68138c6df48e9bb5fbfa1e4242fb5}
+
+
+Set the debug level for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]The new debug level. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a7ed1a681895a09661866d56682b9faba}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getDebugLevel@{getDebugLevel}}
+\index{getDebugLevel@{getDebugLevel}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}virtual MamaLogLevel Wombat::MamaBasicSubscription::getDebugLevel () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a7ed1a681895a09661866d56682b9faba}
+
+
+Return the debug level for this subscription. \begin{DoxyReturn}{Returns}
+the debug level for this subscription. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_aa87899a7475f0b88dd4b99ea4ddb963e}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!checkDebugLevel@{checkDebugLevel}}
+\index{checkDebugLevel@{checkDebugLevel}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{checkDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaBasicSubscription::checkDebugLevel (MamaLogLevel {\em level}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_aa87899a7475f0b88dd4b99ea4ddb963e}
+
+
+Return whether the debug level for this subscription equals or exceeds some level. 
+\begin{DoxyParams}{Parameters}
+\item[{\em level}]The debug level to check. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the level equals or exceeds the set level for this subscription. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a0cbca1e081927c0fec67de8a9b929f9c}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!getState@{getState}}
+\index{getState@{getState}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{getState}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaSubscriptionState Wombat::MamaBasicSubscription::getState (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a0cbca1e081927c0fec67de8a9b929f9c}
+
+
+This function will return the current state of the subscription, this function should be used in preference to the mamaSubscription\_\-isActive or mamaSubscription\_\-isValid functions. This function is thread-\/safe.
+
+\begin{DoxyReturn}{Returns}
+mama\_\-status this can be one of the mamaSubscriptionState enumeration values. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaBasicSubscription_ae25dd14ae861cebee1d4bed6aa618858}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!mClosure@{mClosure}}
+\index{mClosure@{mClosure}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{mClosure}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf Wombat::MamaBasicSubscription::mClosure}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_ae25dd14ae861cebee1d4bed6aa618858}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a4509331bc7580c4b3f70ad389793259e}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!mQueue@{mQueue}}
+\index{mQueue@{mQueue}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{mQueue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaQueue}$\ast$ {\bf Wombat::MamaBasicSubscription::mQueue}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a4509331bc7580c4b3f70ad389793259e}
+\hypertarget{classWombat_1_1MamaBasicSubscription_a8e3c180ade481768be2dbc93a352671d}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!mSubscription@{mSubscription}}
+\index{mSubscription@{mSubscription}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{mSubscription}]{\setlength{\rightskip}{0pt plus 5cm}mamaSubscription {\bf Wombat::MamaBasicSubscription::mSubscription}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_a8e3c180ade481768be2dbc93a352671d}
+\hypertarget{classWombat_1_1MamaBasicSubscription_add3a06fce34e93852a57ef777253794d}{
+\index{Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}!mTransport@{mTransport}}
+\index{mTransport@{mTransport}!Wombat::MamaBasicSubscription@{Wombat::MamaBasicSubscription}}
+\subsubsection[{mTransport}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaTransport}$\ast$ {\bf Wombat::MamaBasicSubscription::mTransport}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaBasicSubscription_add3a06fce34e93852a57ef777253794d}

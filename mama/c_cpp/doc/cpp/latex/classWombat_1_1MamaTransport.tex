@@ -1,0 +1,327 @@
+\hypertarget{classWombat_1_1MamaTransport}{
+\section{Wombat::MamaTransport Class Reference}
+\label{classWombat_1_1MamaTransport}\index{Wombat::MamaTransport@{Wombat::MamaTransport}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} class provides market data functionality.  
+
+
+{\ttfamily \#include $<$MamaTransport.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaTransport_abe9214f03456e224ad875c3fda215765}{MamaTransport} ()
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{classWombat_1_1MamaTransport}{MamaTransport}. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaTransport_a10748e3b1de9fca5a0c0ded42aad48a7}{$\sim$MamaTransport} ()
+\item 
+\hyperlink{classWombat_1_1MamaTransport_a8512dc1364e6f2194c7b19c70572eda9}{MamaTransport} (mamaTransport cTransport)
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} that wraps a mamaTransport from the C API. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_ae3ceca31b7e534ab297442846dceb0c7}{create} (const char $\ast$name, mamaBridge bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Create a transport. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_ad3a1c0fcd02fffd5bef6ab0cbdc3a749}{setName} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em set the transport name. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaTransport_a21a15a3509ad2a2f6b56f4dc21c8335d}{getName} () const 
+\begin{DoxyCompactList}\small\item\em get the transport name. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaTransport_ab819fc0d4b50f26d38cabd7abf988584}{getMiddleware} () const 
+\begin{DoxyCompactList}\small\item\em get the middleware name. \item\end{DoxyCompactList}\item 
+double \hyperlink{classWombat_1_1MamaTransport_a9b655776b7f3c20f83e1dca446194551}{getOutboundThrottle} (mamaThrottleInstance instance=MAMA\_\-THROTTLE\_\-DEFAULT) const 
+\begin{DoxyCompactList}\small\item\em Return the outbound throttle rate in messages/second. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_a49a60259218d8326cfd95041ded1a0e2}{setOutboundThrottle} (double outboundThrottle, mamaThrottleInstance instance=MAMA\_\-THROTTLE\_\-DEFAULT)
+\begin{DoxyCompactList}\small\item\em Set the throttle rate for outbound message. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_ac3750ad8df8203d256467021c26efd35}{setTransportTopicCallback} (\hyperlink{classWombat_1_1MamaTransportTopicEventCallback}{MamaTransportTopicEventCallback} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Set the transport topic callback. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_a39e8c1cff1ee0693b457f0dbdb76b52a}{setTransportCallback} (\hyperlink{classWombat_1_1MamaTransportCallback}{MamaTransportCallback} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Set the transport callback. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_ac81d6c94ae90b140acbe5f4d2b69b156}{setSymbolMap} (const \hyperlink{classWombat_1_1MamaSymbolMap}{MamaSymbolMap} $\ast$mapper)
+\begin{DoxyCompactList}\small\item\em Set the symbology mapping class. \item\end{DoxyCompactList}\item 
+const \hyperlink{classWombat_1_1MamaSymbolMap}{MamaSymbolMap} $\ast$ \hyperlink{classWombat_1_1MamaTransport_a579ad7e9ab5e00e62cf634cbf9256055}{getSymbolMap} () const 
+\begin{DoxyCompactList}\small\item\em Return the symbology mapping class. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_af6e11ba1a55d2a8716888bdfe49bc2b6}{setDescription} (const char $\ast$description)
+\begin{DoxyCompactList}\small\item\em Set the description for the transport. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaTransport_ad3f2a64e9c98f5c5562aa58cd93f0529}{getDescription} () const 
+\begin{DoxyCompactList}\small\item\em Return the description string for the transport. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaConnection}{MamaConnection} $\ast$ \hyperlink{classWombat_1_1MamaTransport_a7a202932111eceeffe410a713de76a0e}{findConnection} (const char $\ast$IpAddress, uint16\_\-t port)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaTransport_afb8b42ec79dd7407ee0ef2b32f0dc74a}{getAllConnections} (\hyperlink{classWombat_1_1MamaConnection}{MamaConnection} $\ast$$\ast$\&list, uint32\_\-t \&len)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaTransport_a2085dd9d95f10e9be371d147f573905a}{freeAllConnections} (\hyperlink{classWombat_1_1MamaConnection}{MamaConnection} $\ast$$\ast$list, uint32\_\-t len)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaTransport_a920be68f58b955170dc81e6386d4526c}{getAllServerConnections} (\hyperlink{classWombat_1_1MamaServerConnection}{MamaServerConnection} $\ast$$\ast$\&list, uint32\_\-t \&len)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaTransport_adacd2b2e6099a953a6bcbcb1bdc82d72}{freeAllServerConnections} (\hyperlink{classWombat_1_1MamaServerConnection}{MamaServerConnection} $\ast$$\ast$list, uint32\_\-t \&len)
+\item 
+void \hyperlink{classWombat_1_1MamaTransport_a1efdee7be7733e29fb2b5370bc3b308f}{setInvokeQualityForAllSubscs} (bool invokeQualityForAllSubscs)
+\begin{DoxyCompactList}\small\item\em Set whether to invoke the quality callback for all subscriptions whenever a data quality event occurs (the default), or whether to invoke the quality callback only when data subsequently arrives for a subscription. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaTransport_a7fd3c55538005d9206dcd8fe33117e74}{getInvokeQualityForAllSubscs} () const 
+\begin{DoxyCompactList}\small\item\em Get whether the transport has been set to invoke the quality callback for all subscriptions whenever a data quality event occurs. \item\end{DoxyCompactList}\item 
+mamaQuality \hyperlink{classWombat_1_1MamaTransport_afe1b4fcbb84eff80122955bec5412eab}{getQuality} () const 
+\begin{DoxyCompactList}\small\item\em Get the data quality for the transport. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_a0dbae24d48b2655bfba5b93b0b339f6d}{requestConflation} () const 
+\begin{DoxyCompactList}\small\item\em Request conflation for the transport. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_a2151c9487ce75db6da223bd4b48662ae}{requestEndConflation} () const 
+\begin{DoxyCompactList}\small\item\em Request an end to conflation for the transport. \item\end{DoxyCompactList}\item 
+mamaTransport \hyperlink{classWombat_1_1MamaTransport_ae7856a9d37de06f0aebb051056b77d60}{getCValue} ()
+\item 
+const mamaTransport \hyperlink{classWombat_1_1MamaTransport_a893a9111e4ea5adabaa12cf59f9b6fd8}{getCValue} () const 
+\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaTransport_ac32d12abca9fb3f16dc587802980120c}{getNativeTransport} (int index)
+\begin{DoxyCompactList}\small\item\em Return the underlying native transport. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaTransport_ac69e1f4dd40f61fd321e403ec5e1d9ae}{disableRefresh} (bool disable)
+\begin{DoxyCompactList}\small\item\em Disable refreshing of subscriptions on this transport. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+MamaTransportImpl $\ast$ \hyperlink{classWombat_1_1MamaTransport_a19260481cebccd76b8ba3c6bfa86ce88}{mPimpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} class provides market data functionality. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaTransport_abe9214f03456e224ad875c3fda215765}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!MamaTransport@{MamaTransport}}
+\index{MamaTransport@{MamaTransport}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{MamaTransport}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTransport::MamaTransport ()}}
+\label{classWombat_1_1MamaTransport_abe9214f03456e224ad875c3fda215765}
+
+
+Construct a \hyperlink{classWombat_1_1MamaTransport}{MamaTransport}. Call create to create the transport. \hypertarget{classWombat_1_1MamaTransport_a10748e3b1de9fca5a0c0ded42aad48a7}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!$\sim$MamaTransport@{$\sim$MamaTransport}}
+\index{$\sim$MamaTransport@{$\sim$MamaTransport}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{$\sim$MamaTransport}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaTransport::$\sim$MamaTransport ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransport_a10748e3b1de9fca5a0c0ded42aad48a7}
+\hypertarget{classWombat_1_1MamaTransport_a8512dc1364e6f2194c7b19c70572eda9}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!MamaTransport@{MamaTransport}}
+\index{MamaTransport@{MamaTransport}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{MamaTransport}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTransport::MamaTransport (mamaTransport {\em cTransport})}}
+\label{classWombat_1_1MamaTransport_a8512dc1364e6f2194c7b19c70572eda9}
+
+
+Construct a \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} that wraps a mamaTransport from the C API. \hyperlink{classWombat_1_1Mama}{Mama} uses this internally. C++ Applications should create C++ \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} objects through the no-\/argument constructor, and call \hyperlink{classWombat_1_1MamaTransport_ae3ceca31b7e534ab297442846dceb0c7}{MamaTransport::create()}.
+
+\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} objects created with this method do not deallocate or destroy the underlying c Transport because that responsibility lies with the creator. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaTransport_ae3ceca31b7e534ab297442846dceb0c7}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!create@{create}}
+\index{create@{create}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::create (const char $\ast$ {\em name}, \/  mamaBridge {\em bridgeImpl})}}
+\label{classWombat_1_1MamaTransport_ae3ceca31b7e534ab297442846dceb0c7}
+
+
+Create a transport. Platform specific parameters are read from the properties file. The parameters are dependent on the underlying messaging transport.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The transport name \item[{\em bridgeImpl}]The middleware-\/specific bridge structure \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransport_ad3a1c0fcd02fffd5bef6ab0cbdc3a749}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setName@{setName}}
+\index{setName@{setName}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setName}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setName (const char $\ast$ {\em name})}}
+\label{classWombat_1_1MamaTransport_ad3a1c0fcd02fffd5bef6ab0cbdc3a749}
+
+
+set the transport name. The name string is copied by the object.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The transport name. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransport_a21a15a3509ad2a2f6b56f4dc21c8335d}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getName@{getName}}
+\index{getName@{getName}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaTransport::getName () const}}
+\label{classWombat_1_1MamaTransport_a21a15a3509ad2a2f6b56f4dc21c8335d}
+
+
+get the transport name. \hypertarget{classWombat_1_1MamaTransport_ab819fc0d4b50f26d38cabd7abf988584}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getMiddleware@{getMiddleware}}
+\index{getMiddleware@{getMiddleware}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getMiddleware}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaTransport::getMiddleware () const}}
+\label{classWombat_1_1MamaTransport_ab819fc0d4b50f26d38cabd7abf988584}
+
+
+get the middleware name. \hypertarget{classWombat_1_1MamaTransport_a9b655776b7f3c20f83e1dca446194551}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getOutboundThrottle@{getOutboundThrottle}}
+\index{getOutboundThrottle@{getOutboundThrottle}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getOutboundThrottle}]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::MamaTransport::getOutboundThrottle (mamaThrottleInstance {\em instance} = {\ttfamily MAMA\_\-THROTTLE\_\-DEFAULT}) const}}
+\label{classWombat_1_1MamaTransport_a9b655776b7f3c20f83e1dca446194551}
+
+
+Return the outbound throttle rate in messages/second. \begin{DoxyReturn}{Returns}
+The throttle rate. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaTransport_a49a60259218d8326cfd95041ded1a0e2}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setOutboundThrottle@{setOutboundThrottle}}
+\index{setOutboundThrottle@{setOutboundThrottle}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setOutboundThrottle}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setOutboundThrottle (double {\em outboundThrottle}, \/  mamaThrottleInstance {\em instance} = {\ttfamily MAMA\_\-THROTTLE\_\-DEFAULT})}}
+\label{classWombat_1_1MamaTransport_a49a60259218d8326cfd95041ded1a0e2}
+
+
+Set the throttle rate for outbound message. This rate controls the rate at which methods sent with sendWithThrottle (void) are sent. A value of 0.0 disables throttling.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em outboundThrottle}]The rate in messages/second. \item[{\em instance}]the mamaThrottleInstance to use \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransport_ac3750ad8df8203d256467021c26efd35}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setTransportTopicCallback@{setTransportTopicCallback}}
+\index{setTransportTopicCallback@{setTransportTopicCallback}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setTransportTopicCallback}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setTransportTopicCallback ({\bf MamaTransportTopicEventCallback} $\ast$ {\em callback})}}
+\label{classWombat_1_1MamaTransport_ac3750ad8df8203d256467021c26efd35}
+
+
+Set the transport topic callback. \hypertarget{classWombat_1_1MamaTransport_a39e8c1cff1ee0693b457f0dbdb76b52a}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setTransportCallback@{setTransportCallback}}
+\index{setTransportCallback@{setTransportCallback}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setTransportCallback}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setTransportCallback ({\bf MamaTransportCallback} $\ast$ {\em callback})}}
+\label{classWombat_1_1MamaTransport_a39e8c1cff1ee0693b457f0dbdb76b52a}
+
+
+Set the transport callback. \hypertarget{classWombat_1_1MamaTransport_ac81d6c94ae90b140acbe5f4d2b69b156}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setSymbolMap@{setSymbolMap}}
+\index{setSymbolMap@{setSymbolMap}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setSymbolMap}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setSymbolMap (const {\bf MamaSymbolMap} $\ast$ {\em mapper})}}
+\label{classWombat_1_1MamaTransport_ac81d6c94ae90b140acbe5f4d2b69b156}
+
+
+Set the symbology mapping class. 
+\begin{DoxyParams}{Parameters}
+\item[{\em mapper}]A symbol mapping class. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransport_a579ad7e9ab5e00e62cf634cbf9256055}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getSymbolMap@{getSymbolMap}}
+\index{getSymbolMap@{getSymbolMap}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getSymbolMap}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MamaSymbolMap}$\ast$ Wombat::MamaTransport::getSymbolMap () const}}
+\label{classWombat_1_1MamaTransport_a579ad7e9ab5e00e62cf634cbf9256055}
+
+
+Return the symbology mapping class. \hypertarget{classWombat_1_1MamaTransport_af6e11ba1a55d2a8716888bdfe49bc2b6}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setDescription@{setDescription}}
+\index{setDescription@{setDescription}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setDescription}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setDescription (const char $\ast$ {\em description})}}
+\label{classWombat_1_1MamaTransport_af6e11ba1a55d2a8716888bdfe49bc2b6}
+
+
+Set the description for the transport. The description string is copied by the object.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em description}]The transport description. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransport_ad3f2a64e9c98f5c5562aa58cd93f0529}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getDescription}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaTransport::getDescription () const}}
+\label{classWombat_1_1MamaTransport_ad3f2a64e9c98f5c5562aa58cd93f0529}
+
+
+Return the description string for the transport. Do not alter or free the string returned by this method.
+
+\begin{DoxyReturn}{Returns}
+const char$\ast$ The transport description. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaTransport_a7a202932111eceeffe410a713de76a0e}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!findConnection@{findConnection}}
+\index{findConnection@{findConnection}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{findConnection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaConnection}$\ast$ Wombat::MamaTransport::findConnection (const char $\ast$ {\em IpAddress}, \/  uint16\_\-t {\em port})}}
+\label{classWombat_1_1MamaTransport_a7a202932111eceeffe410a713de76a0e}
+\hypertarget{classWombat_1_1MamaTransport_afb8b42ec79dd7407ee0ef2b32f0dc74a}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getAllConnections@{getAllConnections}}
+\index{getAllConnections@{getAllConnections}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getAllConnections}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransport::getAllConnections ({\bf MamaConnection} $\ast$$\ast$\& {\em list}, \/  uint32\_\-t \& {\em len})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransport_afb8b42ec79dd7407ee0ef2b32f0dc74a}
+\hypertarget{classWombat_1_1MamaTransport_a2085dd9d95f10e9be371d147f573905a}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!freeAllConnections@{freeAllConnections}}
+\index{freeAllConnections@{freeAllConnections}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{freeAllConnections}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransport::freeAllConnections ({\bf MamaConnection} $\ast$$\ast$ {\em list}, \/  uint32\_\-t {\em len})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransport_a2085dd9d95f10e9be371d147f573905a}
+\hypertarget{classWombat_1_1MamaTransport_a920be68f58b955170dc81e6386d4526c}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getAllServerConnections@{getAllServerConnections}}
+\index{getAllServerConnections@{getAllServerConnections}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getAllServerConnections}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransport::getAllServerConnections ({\bf MamaServerConnection} $\ast$$\ast$\& {\em list}, \/  uint32\_\-t \& {\em len})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransport_a920be68f58b955170dc81e6386d4526c}
+\hypertarget{classWombat_1_1MamaTransport_adacd2b2e6099a953a6bcbcb1bdc82d72}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!freeAllServerConnections@{freeAllServerConnections}}
+\index{freeAllServerConnections@{freeAllServerConnections}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{freeAllServerConnections}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTransport::freeAllServerConnections ({\bf MamaServerConnection} $\ast$$\ast$ {\em list}, \/  uint32\_\-t \& {\em len})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTransport_adacd2b2e6099a953a6bcbcb1bdc82d72}
+\hypertarget{classWombat_1_1MamaTransport_a1efdee7be7733e29fb2b5370bc3b308f}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!setInvokeQualityForAllSubscs@{setInvokeQualityForAllSubscs}}
+\index{setInvokeQualityForAllSubscs@{setInvokeQualityForAllSubscs}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{setInvokeQualityForAllSubscs}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::setInvokeQualityForAllSubscs (bool {\em invokeQualityForAllSubscs})}}
+\label{classWombat_1_1MamaTransport_a1efdee7be7733e29fb2b5370bc3b308f}
+
+
+Set whether to invoke the quality callback for all subscriptions whenever a data quality event occurs (the default), or whether to invoke the quality callback only when data subsequently arrives for a subscription. If set to true, an onQuality callback will be invoked for a subscription whenever a data quality event occurs on the transport, even in between updates for that description. If set to false, the onQuality callback will not be called when the data quality event occurs on the transport. However, it will still be invoked when an update arrives for the subscription.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em invokeQualityForAllSubscs}]Whether to invoke quality callback for all subscriptions \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTransport_a7fd3c55538005d9206dcd8fe33117e74}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getInvokeQualityForAllSubscs@{getInvokeQualityForAllSubscs}}
+\index{getInvokeQualityForAllSubscs@{getInvokeQualityForAllSubscs}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getInvokeQualityForAllSubscs}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaTransport::getInvokeQualityForAllSubscs () const}}
+\label{classWombat_1_1MamaTransport_a7fd3c55538005d9206dcd8fe33117e74}
+
+
+Get whether the transport has been set to invoke the quality callback for all subscriptions whenever a data quality event occurs. \begin{DoxyReturn}{Returns}
+Whether transport has been set to invoke quality callback for all subscriptions 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaTransport_afe1b4fcbb84eff80122955bec5412eab}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getQuality@{getQuality}}
+\index{getQuality@{getQuality}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getQuality}]{\setlength{\rightskip}{0pt plus 5cm}mamaQuality Wombat::MamaTransport::getQuality () const}}
+\label{classWombat_1_1MamaTransport_afe1b4fcbb84eff80122955bec5412eab}
+
+
+Get the data quality for the transport. Currently only supported for the Tibco RV middleware. Returns OK for all other middlewares.
+
+\begin{DoxyReturn}{Returns}
+The Quality of the transport 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaTransport_a0dbae24d48b2655bfba5b93b0b339f6d}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!requestConflation@{requestConflation}}
+\index{requestConflation@{requestConflation}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{requestConflation}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::requestConflation () const}}
+\label{classWombat_1_1MamaTransport_a0dbae24d48b2655bfba5b93b0b339f6d}
+
+
+Request conflation for the transport. Currently only supported for WMW. \hypertarget{classWombat_1_1MamaTransport_a2151c9487ce75db6da223bd4b48662ae}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!requestEndConflation@{requestEndConflation}}
+\index{requestEndConflation@{requestEndConflation}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{requestEndConflation}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::requestEndConflation () const}}
+\label{classWombat_1_1MamaTransport_a2151c9487ce75db6da223bd4b48662ae}
+
+
+Request an end to conflation for the transport. Currently only supported for WMW. \hypertarget{classWombat_1_1MamaTransport_ae7856a9d37de06f0aebb051056b77d60}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaTransport Wombat::MamaTransport::getCValue ()}}
+\label{classWombat_1_1MamaTransport_ae7856a9d37de06f0aebb051056b77d60}
+\hypertarget{classWombat_1_1MamaTransport_a893a9111e4ea5adabaa12cf59f9b6fd8}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaTransport Wombat::MamaTransport::getCValue () const}}
+\label{classWombat_1_1MamaTransport_a893a9111e4ea5adabaa12cf59f9b6fd8}
+\hypertarget{classWombat_1_1MamaTransport_ac32d12abca9fb3f16dc587802980120c}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!getNativeTransport@{getNativeTransport}}
+\index{getNativeTransport@{getNativeTransport}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{getNativeTransport}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::MamaTransport::getNativeTransport (int {\em index})}}
+\label{classWombat_1_1MamaTransport_ac32d12abca9fb3f16dc587802980120c}
+
+
+Return the underlying native transport. Applications should avoid this method if possible as it may result in non-\/portable, middleware specific code. Callers must cast the nativeTport to the appropriate type.
+
+Note: this method returns the underlying C construct not a C++ object. \hypertarget{classWombat_1_1MamaTransport_ac69e1f4dd40f61fd321e403ec5e1d9ae}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!disableRefresh@{disableRefresh}}
+\index{disableRefresh@{disableRefresh}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{disableRefresh}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaTransport::disableRefresh (bool {\em disable})}}
+\label{classWombat_1_1MamaTransport_ac69e1f4dd40f61fd321e403ec5e1d9ae}
+
+
+Disable refreshing of subscriptions on this transport. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaTransport_a19260481cebccd76b8ba3c6bfa86ce88}{
+\index{Wombat::MamaTransport@{Wombat::MamaTransport}!mPimpl@{mPimpl}}
+\index{mPimpl@{mPimpl}!Wombat::MamaTransport@{Wombat::MamaTransport}}
+\subsubsection[{mPimpl}]{\setlength{\rightskip}{0pt plus 5cm}MamaTransportImpl$\ast$ {\bf Wombat::MamaTransport::mPimpl}}}
+\label{classWombat_1_1MamaTransport_a19260481cebccd76b8ba3c6bfa86ce88}

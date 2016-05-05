@@ -1,0 +1,42 @@
+\hypertarget{classWombat_1_1MamaBridgeCallback}{
+\section{Wombat::MamaBridgeCallback Class Reference}
+\label{classWombat_1_1MamaBridgeCallback}\index{Wombat::MamaBridgeCallback@{Wombat::MamaBridgeCallback}}
+}
+
+
+Bridge callback.  
+
+
+{\ttfamily \#include $<$MamaBridgeCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaBridgeCallback_acf92b652cde7875b063c5a4694ac58e6}{$\sim$MamaBridgeCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaBridgeCallback_abeee9bb398dabab847fc5307940ad832}{onBridgeInfo} (mamaBridge bridgeImpl, const char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Invoked when an info message is generated at the bridge level. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bridge callback. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaBridgeCallback_acf92b652cde7875b063c5a4694ac58e6}{
+\index{Wombat::MamaBridgeCallback@{Wombat::MamaBridgeCallback}!$\sim$MamaBridgeCallback@{$\sim$MamaBridgeCallback}}
+\index{$\sim$MamaBridgeCallback@{$\sim$MamaBridgeCallback}!Wombat::MamaBridgeCallback@{Wombat::MamaBridgeCallback}}
+\subsubsection[{$\sim$MamaBridgeCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaBridgeCallback::$\sim$MamaBridgeCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBridgeCallback_acf92b652cde7875b063c5a4694ac58e6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaBridgeCallback_abeee9bb398dabab847fc5307940ad832}{
+\index{Wombat::MamaBridgeCallback@{Wombat::MamaBridgeCallback}!onBridgeInfo@{onBridgeInfo}}
+\index{onBridgeInfo@{onBridgeInfo}!Wombat::MamaBridgeCallback@{Wombat::MamaBridgeCallback}}
+\subsubsection[{onBridgeInfo}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBridgeCallback::onBridgeInfo (mamaBridge {\em bridgeImpl}, \/  const char $\ast$ {\em message})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBridgeCallback_abeee9bb398dabab847fc5307940ad832}
+
+
+Invoked when an info message is generated at the bridge level. Currently only available in LBM.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bridge}]The bridge which the message relates to. \item[{\em message}]The message. \end{DoxyParams}

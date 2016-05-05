@@ -1,0 +1,343 @@
+\hypertarget{classWombat_1_1MamaFieldCache}{
+\section{Wombat::MamaFieldCache Class Reference}
+\label{classWombat_1_1MamaFieldCache}\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCache}{MamaFieldCache}} class is a collection of unordered {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} elements.  
+
+
+{\ttfamily \#include $<$MamaFieldCache.h$>$}\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamaFieldCache_1_1const__iterator}{const\_\-iterator}
+\begin{DoxyCompactList}\small\item\em Iterator type used to iterate over the fields contained in the cache. \item\end{DoxyCompactList}\item 
+class \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator}
+\begin{DoxyCompactList}\small\item\em Iterator type used to iterate over the fields contained in the cache. \item\end{DoxyCompactList}\item 
+class \hyperlink{classWombat_1_1MamaFieldCache_1_1MamaFieldCacheIterator}{MamaFieldCacheIterator}
+\begin{DoxyCompactList}\small\item\em The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCache_1_1MamaFieldCacheIterator}{MamaFieldCacheIterator}} class provides a way to iterate over the fields contained in the cache. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaFieldCache_ac81de194fa915df5443340b4a4471666}{MamaFieldCache} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCache_a1e7f8a8d3ecc47d8b06583cddb1556a4}{$\sim$MamaFieldCache} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a21392a6167a7598bcf49b5518bcfb206}{create} ()
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classWombat_1_1MamaFieldCache}{MamaFieldCache}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a8c4771143c10b12495095ae3ec6321c3}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the {\ttfamily \hyperlink{classWombat_1_1MamaFieldCache}{MamaFieldCache}}. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \hyperlink{classWombat_1_1MamaFieldCache_a292e92e9f81abe5a09faffe0ea9a0c4b}{getSize} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of fields in cache. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_aca21dc3b1435ede84dabad0cfca4aee3}{setTrackModified} (bool value)
+\begin{DoxyCompactList}\small\item\em Set if field modifications are tracked when creating a delta message. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCache_a8dbe545195a5232d3850970ec78077e5}{getTrackModified} () const 
+\begin{DoxyCompactList}\small\item\em Return the value of the track modifications flag. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a3df35f467c5a3fa970a4dd216a9ac844}{setUseFieldNames} (bool value)
+\begin{DoxyCompactList}\small\item\em Set if field names are used when adding fields to \hyperlink{classWombat_1_1MamaMsg}{MamaMsg}. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCache_a3a674042375a0137abdd61216185a153}{getUseFieldNames} () const 
+\begin{DoxyCompactList}\small\item\em Return the value of the use field names flag. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_afded21fe9315c13424a5aeec98eca6f4}{setUseLock} (bool value)
+\begin{DoxyCompactList}\small\item\em Set if the cache uses a lock when some methods are called for thread safety. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCache_ae1768067014f7f185abadf860e1a251b}{getUseLock} () const 
+\begin{DoxyCompactList}\small\item\em Return the value of the locking flag. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_aa6b7b3ec3994c45c88736819bc903679}{lock} ()
+\begin{DoxyCompactList}\small\item\em Lock the cache. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_ad893a423af9d5b07eb6f27ad482885d7}{unlock} ()
+\begin{DoxyCompactList}\small\item\em Unlock the cache. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} $\ast$ \hyperlink{classWombat_1_1MamaFieldCache_af8011dde43b855c372cb734f69a77025}{find} (mama\_\-fid\_\-t fid, const char $\ast$name=NULL) const 
+\begin{DoxyCompactList}\small\item\em Retrieve a field from the cache. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} $\ast$ \hyperlink{classWombat_1_1MamaFieldCache_a7fd0b10e6ba432be77cb2b0e4623831e}{find} (mama\_\-fid\_\-t fid, const char $\ast$name=NULL)
+\begin{DoxyCompactList}\small\item\em Retrieve a field from the cache. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a39d894aad55e8fc21cd00f766d9a4b48}{setModified} (\hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field)
+\begin{DoxyCompactList}\small\item\em Set the specified field as modified even if the value has not changed. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_ab0e54b7daa08ea7f93ec5bb7ca2327e0}{apply} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&field)
+\begin{DoxyCompactList}\small\item\em Update the cache content with the field given. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_ac28a7674251608149028785424130160}{apply} (const \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg, const \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary} $\ast$dict=NULL)
+\begin{DoxyCompactList}\small\item\em Update the cache content with the data contained in the message. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_ae90c2df69a7629f36b5a6b142987d1aa}{apply} (const \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord} \&record)
+\begin{DoxyCompactList}\small\item\em Update the cache content with the data contained in the record. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a4a68b6218d7c68b514c15199d05c0abc}{getFullMessage} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)
+\begin{DoxyCompactList}\small\item\em Populate a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} with all the fields present in the cache. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a723a5a3df4a735cccb815c8741036cb6}{getDeltaMessage} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)
+\begin{DoxyCompactList}\small\item\em Populate a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} with all the fields currently modified in the cache. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCache_a0e1b3f9a665da4328b799e8202c2764b}{clearModifiedFields} ()
+\begin{DoxyCompactList}\small\item\em Clear the list of all the modified fields and reset the modified flags for all the modified fields in the cache. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCache_1_1const__iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamaFieldCache_a55396aaa405bddacc892dc71a2b3a09b}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Return a constant \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first field in the cache and allows to iterate over the fields in the cache. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaFieldCache_af7558308169df0c0aad30ffa49e5a1d3}{begin} ()
+\begin{DoxyCompactList}\small\item\em Return an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first field in the cache and allows to iterate over the fields in the cache. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCache_1_1const__iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamaFieldCache_ac8c46dd5aa1bb2f7142611e9dca17351}{end} () const 
+\begin{DoxyCompactList}\small\item\em Return a const \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to an invalid element and allows to check if an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} has arrived to the end (no more elements to iterate). \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamaFieldCache_a7859324cb8d4b573b4a9ef31685f1a7f}{end} ()
+\begin{DoxyCompactList}\small\item\em Return an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to an invalid element and allows to check if an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} has arrived to the end (no more elements to iterate). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCache}{MamaFieldCache}} class is a collection of unordered {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} elements. This class provides methods for creating and finding fields, applying changes to the fields in the cache and populating a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} with the fields in cache. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaFieldCache_ac81de194fa915df5443340b4a4471666}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!MamaFieldCache@{MamaFieldCache}}
+\index{MamaFieldCache@{MamaFieldCache}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{MamaFieldCache}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFieldCache::MamaFieldCache ()}}
+\label{classWombat_1_1MamaFieldCache_ac81de194fa915df5443340b4a4471666}
+
+
+Constructor. Use {\ttfamily create} to create the actual cache. \hypertarget{classWombat_1_1MamaFieldCache_a1e7f8a8d3ecc47d8b06583cddb1556a4}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!$\sim$MamaFieldCache@{$\sim$MamaFieldCache}}
+\index{$\sim$MamaFieldCache@{$\sim$MamaFieldCache}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{$\sim$MamaFieldCache}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaFieldCache::$\sim$MamaFieldCache ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a1e7f8a8d3ecc47d8b06583cddb1556a4}
+
+
+Destructor. This is called automatically when an object is destroyed. This method will clean all the memory allocated. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFieldCache_a21392a6167a7598bcf49b5518bcfb206}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!create@{create}}
+\index{create@{create}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::create ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a21392a6167a7598bcf49b5518bcfb206}
+
+
+Create a \hyperlink{classWombat_1_1MamaFieldCache}{MamaFieldCache}. \hypertarget{classWombat_1_1MamaFieldCache_a8c4771143c10b12495095ae3ec6321c3}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::clear ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a8c4771143c10b12495095ae3ec6321c3}
+
+
+Clear the {\ttfamily \hyperlink{classWombat_1_1MamaFieldCache}{MamaFieldCache}}. No fields will be present in the cache after this operation. The cache is ready to be used, as long as create has been called once. \hypertarget{classWombat_1_1MamaFieldCache_a292e92e9f81abe5a09faffe0ea9a0c4b}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!getSize@{getSize}}
+\index{getSize@{getSize}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mama\_\-size\_\-t} Wombat::MamaFieldCache::getSize () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a292e92e9f81abe5a09faffe0ea9a0c4b}
+
+
+Return the number of fields in cache. \begin{DoxyReturn}{Returns}
+The number of fields in cache. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_aca21dc3b1435ede84dabad0cfca4aee3}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!setTrackModified@{setTrackModified}}
+\index{setTrackModified@{setTrackModified}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{setTrackModified}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::setTrackModified (bool {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_aca21dc3b1435ede84dabad0cfca4aee3}
+
+
+Set if field modifications are tracked when creating a delta message. See method {\ttfamily getDeltaMessage}. When modifications are not tracked, then calling {\ttfamily getDeltaMessage} is the same as calling {\ttfamily getFullMessage}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]Specify whether field modifications will be tracked. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_a8dbe545195a5232d3850970ec78077e5}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!getTrackModified@{getTrackModified}}
+\index{getTrackModified@{getTrackModified}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{getTrackModified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCache::getTrackModified () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a8dbe545195a5232d3850970ec78077e5}
+
+
+Return the value of the track modifications flag. \begin{DoxyReturn}{Returns}
+Whether tracking modifications is enabled or not. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_a3df35f467c5a3fa970a4dd216a9ac844}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!setUseFieldNames@{setUseFieldNames}}
+\index{setUseFieldNames@{setUseFieldNames}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{setUseFieldNames}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::setUseFieldNames (bool {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a3df35f467c5a3fa970a4dd216a9ac844}
+
+
+Set if field names are used when adding fields to \hyperlink{classWombat_1_1MamaMsg}{MamaMsg}. See methods {\ttfamily getDeltaMessage} and {\ttfamily getFullMessage}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]Specify whether field names will be used. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_a3a674042375a0137abdd61216185a153}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!getUseFieldNames@{getUseFieldNames}}
+\index{getUseFieldNames@{getUseFieldNames}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{getUseFieldNames}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCache::getUseFieldNames () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a3a674042375a0137abdd61216185a153}
+
+
+Return the value of the use field names flag. \begin{DoxyReturn}{Returns}
+Whether field names are enabled or not. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_afded21fe9315c13424a5aeec98eca6f4}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!setUseLock@{setUseLock}}
+\index{setUseLock@{setUseLock}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{setUseLock}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::setUseLock (bool {\em value})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_afded21fe9315c13424a5aeec98eca6f4}
+
+
+Set if the cache uses a lock when some methods are called for thread safety. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]Specify whether locking will be used. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_ae1768067014f7f185abadf860e1a251b}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!getUseLock@{getUseLock}}
+\index{getUseLock@{getUseLock}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{getUseLock}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCache::getUseLock () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_ae1768067014f7f185abadf860e1a251b}
+
+
+Return the value of the locking flag. \begin{DoxyReturn}{Returns}
+Whether the cache is using a lock or not. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_aa6b7b3ec3994c45c88736819bc903679}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!lock@{lock}}
+\index{lock@{lock}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::lock ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_aa6b7b3ec3994c45c88736819bc903679}
+
+
+Lock the cache. \hypertarget{classWombat_1_1MamaFieldCache_ad893a423af9d5b07eb6f27ad482885d7}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!unlock@{unlock}}
+\index{unlock@{unlock}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{unlock}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::unlock ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_ad893a423af9d5b07eb6f27ad482885d7}
+
+
+Unlock the cache. \hypertarget{classWombat_1_1MamaFieldCache_af8011dde43b855c372cb734f69a77025}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!find@{find}}
+\index{find@{find}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaFieldCacheField}$\ast$ Wombat::MamaFieldCache::find (mama\_\-fid\_\-t {\em fid}, \/  const char $\ast$ {\em name} = {\ttfamily NULL}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_af8011dde43b855c372cb734f69a77025}
+
+
+Retrieve a field from the cache. If the field is not found then NULL is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]Field id of the field to look up. \item[{\em name}]Field name of the field to look up. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field in the cache (if present) 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_a7fd0b10e6ba432be77cb2b0e4623831e}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!find@{find}}
+\index{find@{find}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldCacheField}$\ast$ Wombat::MamaFieldCache::find (mama\_\-fid\_\-t {\em fid}, \/  const char $\ast$ {\em name} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a7fd0b10e6ba432be77cb2b0e4623831e}
+
+
+Retrieve a field from the cache. If the field is not found then NULL is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]Field id of the field to look up. \item[{\em name}]Field name of the field to look up. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field in the cache (if present) 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_a39d894aad55e8fc21cd00f766d9a4b48}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!setModified@{setModified}}
+\index{setModified@{setModified}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{setModified}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::setModified ({\bf MamaFieldCacheField} \& {\em field})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a39d894aad55e8fc21cd00f766d9a4b48}
+
+
+Set the specified field as modified even if the value has not changed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to set the modified flag to. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_ab0e54b7daa08ea7f93ec5bb7ca2327e0}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!apply@{apply}}
+\index{apply@{apply}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::apply (const {\bf MamaFieldCacheField} \& {\em field})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_ab0e54b7daa08ea7f93ec5bb7ca2327e0}
+
+
+Update the cache content with the field given. If the field is already present, it will be updated, otherwise it will be added to the cache.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field to use for updating the cache. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_ac28a7674251608149028785424130160}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!apply@{apply}}
+\index{apply@{apply}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::apply (const {\bf MamaMsg} \& {\em msg}, \/  const {\bf MamaDictionary} $\ast$ {\em dict} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_ac28a7674251608149028785424130160}
+
+
+Update the cache content with the data contained in the message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]Reference to a {\ttfamily \hyperlink{classWombat_1_1MamaMsg}{MamaMsg}} containing the fields to update in the cache. \item[{\em dict}]Reference to a {\ttfamily \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary}} representing a data dictionary. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_ae90c2df69a7629f36b5a6b142987d1aa}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!apply@{apply}}
+\index{apply@{apply}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{apply}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::apply (const {\bf MamaFieldCacheRecord} \& {\em record})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_ae90c2df69a7629f36b5a6b142987d1aa}
+
+
+Update the cache content with the data contained in the record. 
+\begin{DoxyParams}{Parameters}
+\item[{\em record}]Reference to a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}} containing the fields to update in the cache. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_a4a68b6218d7c68b514c15199d05c0abc}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!getFullMessage@{getFullMessage}}
+\index{getFullMessage@{getFullMessage}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{getFullMessage}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::getFullMessage ({\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a4a68b6218d7c68b514c15199d05c0abc}
+
+
+Populate a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} with all the fields present in the cache. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} which will be populated with the fields from the cache. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_a723a5a3df4a735cccb815c8741036cb6}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!getDeltaMessage@{getDeltaMessage}}
+\index{getDeltaMessage@{getDeltaMessage}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{getDeltaMessage}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::getDeltaMessage ({\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a723a5a3df4a735cccb815c8741036cb6}
+
+
+Populate a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} with all the fields currently modified in the cache. Note that this method also resets the modification state of the modified fields. If trackModifications flag is set to false, then this method is the same as {\ttfamily getFullMessage}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} which will be populated with the modified fields from the cache. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCache_a0e1b3f9a665da4328b799e8202c2764b}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!clearModifiedFields@{clearModifiedFields}}
+\index{clearModifiedFields@{clearModifiedFields}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{clearModifiedFields}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCache::clearModifiedFields ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a0e1b3f9a665da4328b799e8202c2764b}
+
+
+Clear the list of all the modified fields and reset the modified flags for all the modified fields in the cache. \hypertarget{classWombat_1_1MamaFieldCache_a55396aaa405bddacc892dc71a2b3a09b}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!begin@{begin}}
+\index{begin@{begin}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf const\_\-iterator} Wombat::MamaFieldCache::begin () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a55396aaa405bddacc892dc71a2b3a09b}
+
+
+Return a constant \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first field in the cache and allows to iterate over the fields in the cache. \begin{DoxyReturn}{Returns}
+An \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first element in the cache. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_af7558308169df0c0aad30ffa49e5a1d3}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!begin@{begin}}
+\index{begin@{begin}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf iterator} Wombat::MamaFieldCache::begin ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_af7558308169df0c0aad30ffa49e5a1d3}
+
+
+Return an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first field in the cache and allows to iterate over the fields in the cache. \begin{DoxyReturn}{Returns}
+An \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first element in the cache. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_ac8c46dd5aa1bb2f7142611e9dca17351}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!end@{end}}
+\index{end@{end}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf const\_\-iterator} Wombat::MamaFieldCache::end () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_ac8c46dd5aa1bb2f7142611e9dca17351}
+
+
+Return a const \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to an invalid element and allows to check if an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} has arrived to the end (no more elements to iterate). The content of this \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} must not be accessed.
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first element in the cache. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCache_a7859324cb8d4b573b4a9ef31685f1a7f}{
+\index{Wombat::MamaFieldCache@{Wombat::MamaFieldCache}!end@{end}}
+\index{end@{end}!Wombat::MamaFieldCache@{Wombat::MamaFieldCache}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf iterator} Wombat::MamaFieldCache::end ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCache_a7859324cb8d4b573b4a9ef31685f1a7f}
+
+
+Return an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to an invalid element and allows to check if an \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} has arrived to the end (no more elements to iterate). The content of this \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} must not be accessed.
+
+\begin{DoxyReturn}{Returns}
+An \hyperlink{classWombat_1_1MamaFieldCache_1_1iterator}{iterator} to the first element in the cache. 
+\end{DoxyReturn}

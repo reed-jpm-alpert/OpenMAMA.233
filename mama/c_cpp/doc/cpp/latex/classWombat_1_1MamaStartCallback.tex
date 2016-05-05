@@ -1,0 +1,35 @@
+\hypertarget{classWombat_1_1MamaStartCallback}{
+\section{Wombat::MamaStartCallback Class Reference}
+\label{classWombat_1_1MamaStartCallback}\index{Wombat::MamaStartCallback@{Wombat::MamaStartCallback}}
+}
+
+
+Callback object passed to \hyperlink{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}{Mama::startBackground()}.  
+
+
+{\ttfamily \#include $<$mamacpp.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaStartCallback_a3cacef15c9650324c3a21a602606cf53}{$\sim$MamaStartCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaStartCallback_ab8fceb926edc9c4306b559ebe290925f}{onStartComplete} (\hyperlink{classWombat_1_1MamaStatus}{MamaStatus} status)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback object passed to \hyperlink{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}{Mama::startBackground()}. The \hyperlink{classWombat_1_1MamaStartCallback_ab8fceb926edc9c4306b559ebe290925f}{onStartComplete()} method will be invoked if an error occurs calling \hyperlink{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}{Mama::startBackground()} or when \hyperlink{classWombat_1_1Mama_a3fe589a62f5cd705944b8ea6215b4aa3}{Mama::startBackground()} exits normally in which case the status returned will be MAMA\_\-STATUS\_\-OK 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaStartCallback_a3cacef15c9650324c3a21a602606cf53}{
+\index{Wombat::MamaStartCallback@{Wombat::MamaStartCallback}!$\sim$MamaStartCallback@{$\sim$MamaStartCallback}}
+\index{$\sim$MamaStartCallback@{$\sim$MamaStartCallback}!Wombat::MamaStartCallback@{Wombat::MamaStartCallback}}
+\subsubsection[{$\sim$MamaStartCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaStartCallback::$\sim$MamaStartCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaStartCallback_a3cacef15c9650324c3a21a602606cf53}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaStartCallback_ab8fceb926edc9c4306b559ebe290925f}{
+\index{Wombat::MamaStartCallback@{Wombat::MamaStartCallback}!onStartComplete@{onStartComplete}}
+\index{onStartComplete@{onStartComplete}!Wombat::MamaStartCallback@{Wombat::MamaStartCallback}}
+\subsubsection[{onStartComplete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaStartCallback::onStartComplete ({\bf MamaStatus} {\em status})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaStartCallback_ab8fceb926edc9c4306b559ebe290925f}

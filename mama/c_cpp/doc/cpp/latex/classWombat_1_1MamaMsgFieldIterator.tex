@@ -1,0 +1,35 @@
+\hypertarget{classWombat_1_1MamaMsgFieldIterator}{
+\section{Wombat::MamaMsgFieldIterator Class Reference}
+\label{classWombat_1_1MamaMsgFieldIterator}\index{Wombat::MamaMsgFieldIterator@{Wombat::MamaMsgFieldIterator}}
+}
+
+
+Callback class for iterating over all fields in a message.  
+
+
+{\ttfamily \#include $<$MamaMsgFieldIterator.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaMsgFieldIterator_ad59e4f98b6206d1d69b531cc1d9b8dff}{$\sim$MamaMsgFieldIterator} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaMsgFieldIterator_ace48136b8207b578bc3d0102758bbc06}{onField} (const \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg, const \hyperlink{classWombat_1_1MamaMsgField}{MamaMsgField} \&field, void $\ast$closure)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback class for iterating over all fields in a message. This is necessary because some messaging implementations do not provide efficient indexed access to fields. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaMsgFieldIterator_ad59e4f98b6206d1d69b531cc1d9b8dff}{
+\index{Wombat::MamaMsgFieldIterator@{Wombat::MamaMsgFieldIterator}!$\sim$MamaMsgFieldIterator@{$\sim$MamaMsgFieldIterator}}
+\index{$\sim$MamaMsgFieldIterator@{$\sim$MamaMsgFieldIterator}!Wombat::MamaMsgFieldIterator@{Wombat::MamaMsgFieldIterator}}
+\subsubsection[{$\sim$MamaMsgFieldIterator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaMsgFieldIterator::$\sim$MamaMsgFieldIterator ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaMsgFieldIterator_ad59e4f98b6206d1d69b531cc1d9b8dff}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaMsgFieldIterator_ace48136b8207b578bc3d0102758bbc06}{
+\index{Wombat::MamaMsgFieldIterator@{Wombat::MamaMsgFieldIterator}!onField@{onField}}
+\index{onField@{onField}!Wombat::MamaMsgFieldIterator@{Wombat::MamaMsgFieldIterator}}
+\subsubsection[{onField}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaMsgFieldIterator::onField (const {\bf MamaMsg} \& {\em msg}, \/  const {\bf MamaMsgField} \& {\em field}, \/  void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaMsgFieldIterator_ace48136b8207b578bc3d0102758bbc06}

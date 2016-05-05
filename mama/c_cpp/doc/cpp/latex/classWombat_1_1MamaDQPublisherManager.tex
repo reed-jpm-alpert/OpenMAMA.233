@@ -1,0 +1,111 @@
+\hypertarget{classWombat_1_1MamaDQPublisherManager}{
+\section{Wombat::MamaDQPublisherManager Class Reference}
+\label{classWombat_1_1MamaDQPublisherManager}\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+}
+
+
+{\ttfamily \#include $<$MamaDQPublisherManager.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaDQPublisherManager_a539ac8604357815413cb39fe5b584851}{$\sim$MamaDQPublisherManager} (void)
+\item 
+\hyperlink{classWombat_1_1MamaDQPublisherManager_a4c064265c256a1820951fecd676a6377}{MamaDQPublisherManager} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_ac25a92885d801ba9fdc8bc72c443ab8d}{create} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback}{MamaDQPublisherManagerCallback} $\ast$callback, const char $\ast$sourcename, const char $\ast$root=\char`\"{}\_\-MD\char`\"{})
+\begin{DoxyCompactList}\small\item\em Create a MAMA publisher manager for the corresponding transport. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_aa31e692c0fba2a19eea1632d6f30f664}{addPublisher} (const char $\ast$symbol, \hyperlink{classWombat_1_1MamaDQPublisher}{MamaDQPublisher} $\ast$pub, void $\ast$cache)
+\item 
+virtual \hyperlink{classWombat_1_1MamaDQPublisher}{MamaDQPublisher} $\ast$ \hyperlink{classWombat_1_1MamaDQPublisherManager_ade73b545253cfdf39cebc1ded7ea5a75}{removePublisher} (const char $\ast$symbol)
+\item 
+virtual \hyperlink{classWombat_1_1MamaDQPublisher}{MamaDQPublisher} $\ast$ \hyperlink{classWombat_1_1MamaDQPublisherManager_a9ba42534979a3c0e7dce553e2933c2b8}{createPublisher} (const char $\ast$symbol, void $\ast$cache)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_a7cb1d16699d59c1f368a62c0c0464aa9}{destroyPublisher} (const char $\ast$symbol)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_a9a3a14de121b17f2dc033355a458b8ef}{destroy} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_acc4aeb1b255c40f4b91fd43033fac47f}{setStatus} (mamaMsgStatus status)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_a884251f60c33ff386a816ee9178eceb2}{setSenderId} (uint64\_\-t id)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_a6f10b19c4e6243f07c5a6430120d84f8}{setSeqNum} (mama\_\-seqnum\_\-t num)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_af45062d3a82dfea51715eb5c49cff2b2}{sendSyncRequest} (mama\_\-u16\_\-t nummsg, mama\_\-f64\_\-t delay, mama\_\-f64\_\-t duration)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManager_a79c5143b738d1c377b75476a8f64c3ed}{sendNoSubscribers} (const char $\ast$symbol)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a539ac8604357815413cb39fe5b584851}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!$\sim$MamaDQPublisherManager@{$\sim$MamaDQPublisherManager}}
+\index{$\sim$MamaDQPublisherManager@{$\sim$MamaDQPublisherManager}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{$\sim$MamaDQPublisherManager}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaDQPublisherManager::$\sim$MamaDQPublisherManager (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a539ac8604357815413cb39fe5b584851}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a4c064265c256a1820951fecd676a6377}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!MamaDQPublisherManager@{MamaDQPublisherManager}}
+\index{MamaDQPublisherManager@{MamaDQPublisherManager}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{MamaDQPublisherManager}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDQPublisherManager::MamaDQPublisherManager (void)}}
+\label{classWombat_1_1MamaDQPublisherManager_a4c064265c256a1820951fecd676a6377}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_ac25a92885d801ba9fdc8bc72c443ab8d}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!create@{create}}
+\index{create@{create}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::create ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaDQPublisherManagerCallback} $\ast$ {\em callback}, \/  const char $\ast$ {\em sourcename}, \/  const char $\ast$ {\em root} = {\ttfamily \char`\"{}\_\-MD\char`\"{}})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_ac25a92885d801ba9fdc8bc72c443ab8d}
+
+
+Create a MAMA publisher manager for the corresponding transport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport to use. Must be a basic transport. \item[{\em queue}]the quese subscription requests are received on. \item[{\em callback}]subscription request callback. \item[{\em sourcename}]The Sourcename for subscribers to send requests \item[{\em root}]The root for market data publishers. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_aa31e692c0fba2a19eea1632d6f30f664}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!addPublisher@{addPublisher}}
+\index{addPublisher@{addPublisher}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{addPublisher}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::addPublisher (const char $\ast$ {\em symbol}, \/  {\bf MamaDQPublisher} $\ast$ {\em pub}, \/  void $\ast$ {\em cache})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_aa31e692c0fba2a19eea1632d6f30f664}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_ade73b545253cfdf39cebc1ded7ea5a75}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!removePublisher@{removePublisher}}
+\index{removePublisher@{removePublisher}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{removePublisher}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaDQPublisher}$\ast$ Wombat::MamaDQPublisherManager::removePublisher (const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_ade73b545253cfdf39cebc1ded7ea5a75}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a9ba42534979a3c0e7dce553e2933c2b8}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!createPublisher@{createPublisher}}
+\index{createPublisher@{createPublisher}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{createPublisher}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaDQPublisher}$\ast$ Wombat::MamaDQPublisherManager::createPublisher (const char $\ast$ {\em symbol}, \/  void $\ast$ {\em cache})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a9ba42534979a3c0e7dce553e2933c2b8}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a7cb1d16699d59c1f368a62c0c0464aa9}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!destroyPublisher@{destroyPublisher}}
+\index{destroyPublisher@{destroyPublisher}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{destroyPublisher}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::destroyPublisher (const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a7cb1d16699d59c1f368a62c0c0464aa9}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a9a3a14de121b17f2dc033355a458b8ef}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::destroy (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a9a3a14de121b17f2dc033355a458b8ef}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_acc4aeb1b255c40f4b91fd43033fac47f}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{setStatus}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::setStatus (mamaMsgStatus {\em status})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_acc4aeb1b255c40f4b91fd43033fac47f}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a884251f60c33ff386a816ee9178eceb2}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!setSenderId@{setSenderId}}
+\index{setSenderId@{setSenderId}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{setSenderId}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::setSenderId (uint64\_\-t {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a884251f60c33ff386a816ee9178eceb2}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a6f10b19c4e6243f07c5a6430120d84f8}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!setSeqNum@{setSeqNum}}
+\index{setSeqNum@{setSeqNum}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{setSeqNum}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::setSeqNum (mama\_\-seqnum\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a6f10b19c4e6243f07c5a6430120d84f8}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_af45062d3a82dfea51715eb5c49cff2b2}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!sendSyncRequest@{sendSyncRequest}}
+\index{sendSyncRequest@{sendSyncRequest}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{sendSyncRequest}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::sendSyncRequest (mama\_\-u16\_\-t {\em nummsg}, \/  mama\_\-f64\_\-t {\em delay}, \/  mama\_\-f64\_\-t {\em duration})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_af45062d3a82dfea51715eb5c49cff2b2}
+\hypertarget{classWombat_1_1MamaDQPublisherManager_a79c5143b738d1c377b75476a8f64c3ed}{
+\index{Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}!sendNoSubscribers@{sendNoSubscribers}}
+\index{sendNoSubscribers@{sendNoSubscribers}!Wombat::MamaDQPublisherManager@{Wombat::MamaDQPublisherManager}}
+\subsubsection[{sendNoSubscribers}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManager::sendNoSubscribers (const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManager_a79c5143b738d1c377b75476a8f64c3ed}

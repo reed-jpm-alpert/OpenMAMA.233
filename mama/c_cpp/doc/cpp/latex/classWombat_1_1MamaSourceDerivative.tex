@@ -1,0 +1,104 @@
+\hypertarget{classWombat_1_1MamaSourceDerivative}{
+\section{Wombat::MamaSourceDerivative Class Reference}
+\label{classWombat_1_1MamaSourceDerivative}\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+}
+
+
+A \hyperlink{classWombat_1_1MamaSourceDerivative}{MamaSourceDerivative} provides a reference to a common \hyperlink{classWombat_1_1MamaSource}{MamaSource} object but can have attributes (such as the quality state) overridden.  
+
+
+{\ttfamily \#include $<$MamaSourceDerivative.h$>$}Inheritance diagram for Wombat::MamaSourceDerivative::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamaSourceDerivative}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSourceDerivative_af74ddda87ac625872d9343e45a9db14b}{MamaSourceDerivative} (const \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$baseSource)
+\begin{DoxyCompactList}\small\item\em Construct an instance of a derived MAMA source. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaSourceDerivative_a26db36a75f3c011702b4eb8bfb3e06c8}{$\sim$MamaSourceDerivative} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSourceDerivative_aef1c1007d75a298118d421aea1467230}{setQuality} (mamaQuality quality)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSourceDerivative_a7fece4c57902446e3a6d6c7383d0dd05}{setState} (mamaSourceState state)
+\item 
+virtual mamaQuality \hyperlink{classWombat_1_1MamaSourceDerivative_a2890de3e06726484076e528175accbbf}{getQuality} () const 
+\item 
+virtual mamaSourceState \hyperlink{classWombat_1_1MamaSourceDerivative_a594b539ec60c664bde5478100b39147e}{getState} () const 
+\item 
+virtual \hyperlink{classWombat_1_1MamaSourceDerivative}{MamaSourceDerivative} $\ast$ \hyperlink{classWombat_1_1MamaSourceDerivative_a625240eadddf0f2f2f08d7187dbbd9f6}{find} (const char $\ast$sourceName)
+\item 
+virtual const \hyperlink{classWombat_1_1MamaSourceDerivative}{MamaSourceDerivative} $\ast$ \hyperlink{classWombat_1_1MamaSourceDerivative_a2c54840ec7876ccfd3213b021976132d}{find} (const char $\ast$sourceName) const 
+\item 
+const \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$ \hyperlink{classWombat_1_1MamaSourceDerivative_adaf9a73812a106107cace0fd88a6cfc0}{getBaseSource} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classWombat_1_1MamaSourceDerivative}{MamaSourceDerivative} provides a reference to a common \hyperlink{classWombat_1_1MamaSource}{MamaSource} object but can have attributes (such as the quality state) overridden. This class is intended to be associated with individually subscribed items, including order books. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSourceDerivative_af74ddda87ac625872d9343e45a9db14b}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!MamaSourceDerivative@{MamaSourceDerivative}}
+\index{MamaSourceDerivative@{MamaSourceDerivative}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{MamaSourceDerivative}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSourceDerivative::MamaSourceDerivative (const {\bf MamaSource} $\ast$ {\em baseSource})}}
+\label{classWombat_1_1MamaSourceDerivative_af74ddda87ac625872d9343e45a9db14b}
+
+
+Construct an instance of a derived MAMA source. The resulting source derivative will have derived sub-\/sources for each of the sub-\/sources in baseSource. \hypertarget{classWombat_1_1MamaSourceDerivative_a26db36a75f3c011702b4eb8bfb3e06c8}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!$\sim$MamaSourceDerivative@{$\sim$MamaSourceDerivative}}
+\index{$\sim$MamaSourceDerivative@{$\sim$MamaSourceDerivative}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{$\sim$MamaSourceDerivative}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSourceDerivative::$\sim$MamaSourceDerivative ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_a26db36a75f3c011702b4eb8bfb3e06c8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSourceDerivative_aef1c1007d75a298118d421aea1467230}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!setQuality@{setQuality}}
+\index{setQuality@{setQuality}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{setQuality}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSourceDerivative::setQuality (mamaQuality {\em quality})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_aef1c1007d75a298118d421aea1467230}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamaSource_afe18fd5c7376c482d212505c9258b8dd}{Wombat::MamaSource}.\hypertarget{classWombat_1_1MamaSourceDerivative_a7fece4c57902446e3a6d6c7383d0dd05}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!setState@{setState}}
+\index{setState@{setState}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{setState}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSourceDerivative::setState (mamaSourceState {\em state})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_a7fece4c57902446e3a6d6c7383d0dd05}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamaSource_ac51271403c954b64180618a6b255e476}{Wombat::MamaSource}.\hypertarget{classWombat_1_1MamaSourceDerivative_a2890de3e06726484076e528175accbbf}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!getQuality@{getQuality}}
+\index{getQuality@{getQuality}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{getQuality}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaQuality Wombat::MamaSourceDerivative::getQuality () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_a2890de3e06726484076e528175accbbf}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamaSource_a5859d625c3a226b9a4dee940504ee81e}{Wombat::MamaSource}.\hypertarget{classWombat_1_1MamaSourceDerivative_a594b539ec60c664bde5478100b39147e}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!getState@{getState}}
+\index{getState@{getState}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{getState}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaSourceState Wombat::MamaSourceDerivative::getState () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_a594b539ec60c664bde5478100b39147e}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamaSource_a798167fdd8717dab1954b2329f8f612f}{Wombat::MamaSource}.\hypertarget{classWombat_1_1MamaSourceDerivative_a625240eadddf0f2f2f08d7187dbbd9f6}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!find@{find}}
+\index{find@{find}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaSourceDerivative}$\ast$ Wombat::MamaSourceDerivative::find (const char $\ast$ {\em sourceName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_a625240eadddf0f2f2f08d7187dbbd9f6}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamaSourceManager_a378d8f731a0482fdbcf4147fee8e8d16}{Wombat::MamaSourceManager}.\hypertarget{classWombat_1_1MamaSourceDerivative_a2c54840ec7876ccfd3213b021976132d}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!find@{find}}
+\index{find@{find}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaSourceDerivative}$\ast$ Wombat::MamaSourceDerivative::find (const char $\ast$ {\em sourceName}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_a2c54840ec7876ccfd3213b021976132d}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamaSourceManager_aa54946b75daea1c445ce03b6f863dd56}{Wombat::MamaSourceManager}.\hypertarget{classWombat_1_1MamaSourceDerivative_adaf9a73812a106107cace0fd88a6cfc0}{
+\index{Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}!getBaseSource@{getBaseSource}}
+\index{getBaseSource@{getBaseSource}!Wombat::MamaSourceDerivative@{Wombat::MamaSourceDerivative}}
+\subsubsection[{getBaseSource}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MamaSource}$\ast$ Wombat::MamaSourceDerivative::getBaseSource () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaSourceDerivative_adaf9a73812a106107cace0fd88a6cfc0}

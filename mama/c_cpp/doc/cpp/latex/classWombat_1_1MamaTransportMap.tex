@@ -1,0 +1,31 @@
+\hypertarget{classWombat_1_1MamaTransportMap}{
+\section{Wombat::MamaTransportMap Class Reference}
+\label{classWombat_1_1MamaTransportMap}\index{Wombat::MamaTransportMap@{Wombat::MamaTransportMap}}
+}
+
+
+{\ttfamily \#include $<$MamaTransportMap.h$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaTransportMap_a9d39cda7fafda6bf8341f6122b1171a5}{findOrCreate} (const char $\ast$transportName, const mamaBridge bridge)
+\begin{DoxyCompactList}\small\item\em Find the transport by name. \item\end{DoxyCompactList}\item 
+static \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaTransportMap_a02903ae89e1e885de4863342a475c573}{find} (const char $\ast$transportName, const mamaBridge bridge)
+\begin{DoxyCompactList}\small\item\em Find the transport by name. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaTransportMap_a9d39cda7fafda6bf8341f6122b1171a5}{
+\index{Wombat::MamaTransportMap@{Wombat::MamaTransportMap}!findOrCreate@{findOrCreate}}
+\index{findOrCreate@{findOrCreate}!Wombat::MamaTransportMap@{Wombat::MamaTransportMap}}
+\subsubsection[{findOrCreate}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf MamaTransport}$\ast$ Wombat::MamaTransportMap::findOrCreate (const char $\ast$ {\em transportName}, \/  const mamaBridge {\em bridge})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaTransportMap_a9d39cda7fafda6bf8341f6122b1171a5}
+
+
+Find the transport by name. If no transport by the given name has been requested before, a new instance of a \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} is created using the bridge specified. This method will create exactly one \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} object instance for each name passed. \hypertarget{classWombat_1_1MamaTransportMap_a02903ae89e1e885de4863342a475c573}{
+\index{Wombat::MamaTransportMap@{Wombat::MamaTransportMap}!find@{find}}
+\index{find@{find}!Wombat::MamaTransportMap@{Wombat::MamaTransportMap}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf MamaTransport}$\ast$ Wombat::MamaTransportMap::find (const char $\ast$ {\em transportName}, \/  const mamaBridge {\em bridge})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaTransportMap_a02903ae89e1e885de4863342a475c573}
+
+
+Find the transport by name. If no transport by the given name exists, the default transport is returned. 

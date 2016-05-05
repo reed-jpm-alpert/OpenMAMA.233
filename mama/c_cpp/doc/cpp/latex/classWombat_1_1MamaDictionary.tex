@@ -1,0 +1,377 @@
+\hypertarget{classWombat_1_1MamaDictionary}{
+\section{Wombat::MamaDictionary Class Reference}
+\label{classWombat_1_1MamaDictionary}\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary}} class maps field identifiers (FIDs) to human readable strings.  
+
+
+{\ttfamily \#include $<$MamaDictionary.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaDictionary_ae6c0c403cedf5dfa0a2711e4aab7bce0}{$\sim$MamaDictionary} ()
+\item 
+\hyperlink{classWombat_1_1MamaDictionary_a5afed0397d09f3339af2d08423ba4884}{MamaDictionary} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionary_ab1f2b4e27ccb5f26c2359e6cf5a7e935}{create} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaDictionaryCallback}{MamaDictionaryCallback} $\ast$callback, \hyperlink{classWombat_1_1MamaSource}{MamaSource} $\ast$source, int retries=MAMA\_\-DEFAULT\_\-RETRIES, double timeout=MAMA\_\-DEFAULT\_\-TIMEOUT, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Create a dictionary subscription. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a18529fcf91c4ff0a63b889d4d60e477c}{getFeedName} ()
+\begin{DoxyCompactList}\small\item\em Return the dictionary source feed name. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaDictionary_afd4f16c61e5596589a13954386ee8f34}{getFeedHost} ()
+\begin{DoxyCompactList}\small\item\em Return the dictionary source feed host. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_ada3a8fa9ff039d223d83f5c8396d9b50}{getFieldByFid} (mama\_\-fid\_\-t fid)
+\begin{DoxyCompactList}\small\item\em Return the field with the specified field FID. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a898677c535dfee775b342651fc898e02}{getFieldByFid} (mama\_\-fid\_\-t fid) const 
+\begin{DoxyCompactList}\small\item\em Return the field with the specified field FID. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a08eacabaf6e6d36f7f504508f0553813}{getFieldByIndex} (size\_\-t index)
+\begin{DoxyCompactList}\small\item\em Return the field with the corresponding zero based index. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a8790a6366d31dcfa964be65ec84d4ed1}{getFieldByIndex} (size\_\-t index) const 
+\begin{DoxyCompactList}\small\item\em Return the field with the corresponding zero based index. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a3b99774008d6b4d7e36832a34ef7f8d8}{getFieldByName} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Return the field with the specified name. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a6ee544d8144978bf2e49a1962dea9026}{getFieldByName} (const char $\ast$name) const 
+\begin{DoxyCompactList}\small\item\em Return the field with the specified name. \item\end{DoxyCompactList}\item 
+virtual mama\_\-fid\_\-t \hyperlink{classWombat_1_1MamaDictionary_ab4bfc4aece1df3434197b883fedfc277}{getMaxFid} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the highest field identifier. \item\end{DoxyCompactList}\item 
+virtual size\_\-t \hyperlink{classWombat_1_1MamaDictionary_af48a73aa0079ff9ec526db90ca209579}{getSize} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the number of fields in the dictionary. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaDictionary_a3d75c1b4461c1dab591f7ac030ab6fed}{hasDuplicates} (void) const 
+\begin{DoxyCompactList}\small\item\em Return true if there are multiple fields with the same name. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaDictionaryCallback}{MamaDictionaryCallback} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a5083693551dcd12ac87f4f7fb635f53c}{getCallback} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the callback. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionary_aa40c49fc374c99b872bc7654d57a6253}{setCallback} (\hyperlink{classWombat_1_1MamaDictionaryCallback}{MamaDictionaryCallback} $\ast$callback)
+\begin{DoxyCompactList}\small\item\em Set the callback to receive notifications when creation is complete or an error occurs. \item\end{DoxyCompactList}\item 
+virtual mamaDictionary \hyperlink{classWombat_1_1MamaDictionary_aafbd6c9faf6110a56832056153896792}{getDictC} ()
+\begin{DoxyCompactList}\small\item\em Return the underlying C mamaDictionary. \item\end{DoxyCompactList}\item 
+virtual const mamaDictionary \hyperlink{classWombat_1_1MamaDictionary_a91df6b193f572a92f0c4c0520391c330}{getDictC} () const 
+\begin{DoxyCompactList}\small\item\em Return the underlying C mamaDictionary. \item\end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a7827c7dbb1da954ba37950a56697c2e9}{getClosure} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the closure for the dictionary. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_ad1852a80f43d4fc41de56fcac328d3a6}{getDictionaryMessage} () const 
+\begin{DoxyCompactList}\small\item\em Returns a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} representing the data dictionary. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionary_a3fa0ae5302f3765479ccc5c923c30c4a}{buildDictionaryFromMessage} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)
+\begin{DoxyCompactList}\small\item\em Recreate a data dictionary from the \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} supplied. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a5d4f9d94baee4ae4e7ee8f184f982296}{createFieldDescriptor} (mama\_\-fid\_\-t fid, const char $\ast$name, mamaFieldType type)
+\begin{DoxyCompactList}\small\item\em Add a new field descriptor to a dictionary. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionary_a9f1d5e3ce24c137751e3451c9511143f}{setMaxFid} (\hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxFid)
+\begin{DoxyCompactList}\small\item\em Tell the dictionary what the probable maximum fid in the data dictionary may be. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionary_a3f4eac5a4a67b84762f5bc96debeb530}{writeToFile} (const char $\ast$fileName)
+\begin{DoxyCompactList}\small\item\em Write the data dictionary to a file. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDictionary_a44e10e3e54d0f58471ec0e457b05442d}{populateFromFile} (const char $\ast$fileName)
+\begin{DoxyCompactList}\small\item\em Populate a dictionary from the contents of a file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+DictionaryImpl $\ast$ \hyperlink{classWombat_1_1MamaDictionary_a1bf6c56a35c388b96f0943fbe3462364}{mPimpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary}} class maps field identifiers (FIDs) to human readable strings. Incoming {\ttfamily \hyperlink{classWombat_1_1MamaMsg}{MamaMsg}}s may contain FIDs but no field names. The dictionary allows applications to determine the name associated with a given FID. On some platforms, the inbound messages may have names, but not fids in which case the dictionary can map names to fids. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDictionary_ae6c0c403cedf5dfa0a2711e4aab7bce0}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!$\sim$MamaDictionary@{$\sim$MamaDictionary}}
+\index{$\sim$MamaDictionary@{$\sim$MamaDictionary}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{$\sim$MamaDictionary}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaDictionary::$\sim$MamaDictionary ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_ae6c0c403cedf5dfa0a2711e4aab7bce0}
+\hypertarget{classWombat_1_1MamaDictionary_a5afed0397d09f3339af2d08423ba4884}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!MamaDictionary@{MamaDictionary}}
+\index{MamaDictionary@{MamaDictionary}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{MamaDictionary}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDictionary::MamaDictionary (void)}}
+\label{classWombat_1_1MamaDictionary_a5afed0397d09f3339af2d08423ba4884}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDictionary_ab1f2b4e27ccb5f26c2359e6cf5a7e935}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!create@{create}}
+\index{create@{create}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionary::create ({\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaDictionaryCallback} $\ast$ {\em callback}, \/  {\bf MamaSource} $\ast$ {\em source}, \/  int {\em retries} = {\ttfamily MAMA\_\-DEFAULT\_\-RETRIES}, \/  double {\em timeout} = {\ttfamily MAMA\_\-DEFAULT\_\-TIMEOUT}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_ab1f2b4e27ccb5f26c2359e6cf5a7e935}
+
+
+Create a dictionary subscription. The caller supplied {\ttfamily DictionaryCallback.onComplete} will be invoked after the dictionary is fully constructed.
+
+If there is an error creating the dictionary \hyperlink{classWombat_1_1Mama}{Mama} invokes the {\ttfamily onError} callback, and the returned dictionary is not valid. In the event of a timeout, \hyperlink{classWombat_1_1Mama}{Mama} invokes the {\ttfamily onTimeout} callback. This method uses the default timeout and retry values ({\ttfamily SubscriptionBridge.DEFAULT\_\-TIMEOUT} and {\ttfamily SubscriptionBridge.DEFAULT\_\-RETRIES}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mama queue. \item[{\em callback}]The dictionary callback. \item[{\em source}]The dictionary source. Depends upon feed handler configuration. See feed handler documentation for details \item[{\em timeout}]The timeout in seconds. \item[{\em retries}]The number of times to retry before failing. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionary_a18529fcf91c4ff0a63b889d4d60e477c}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFeedName@{getFeedName}}
+\index{getFeedName@{getFeedName}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFeedName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaDictionary::getFeedName ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a18529fcf91c4ff0a63b889d4d60e477c}
+
+
+Return the dictionary source feed name. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the feed name 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_afd4f16c61e5596589a13954386ee8f34}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFeedHost@{getFeedHost}}
+\index{getFeedHost@{getFeedHost}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFeedHost}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaDictionary::getFeedHost ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_afd4f16c61e5596589a13954386ee8f34}
+
+
+Return the dictionary source feed host. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the feed host 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_ada3a8fa9ff039d223d83f5c8396d9b50}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFieldByFid@{getFieldByFid}}
+\index{getFieldByFid@{getFieldByFid}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFieldByFid}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::getFieldByFid (mama\_\-fid\_\-t {\em fid})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_ada3a8fa9ff039d223d83f5c8396d9b50}
+
+
+Return the field with the specified field FID. This method is very efficient.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]The field id. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a898677c535dfee775b342651fc898e02}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFieldByFid@{getFieldByFid}}
+\index{getFieldByFid@{getFieldByFid}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFieldByFid}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::getFieldByFid (mama\_\-fid\_\-t {\em fid}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a898677c535dfee775b342651fc898e02}
+
+
+Return the field with the specified field FID. This method is very efficient.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]The field id. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a08eacabaf6e6d36f7f504508f0553813}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFieldByIndex@{getFieldByIndex}}
+\index{getFieldByIndex@{getFieldByIndex}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFieldByIndex}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::getFieldByIndex (size\_\-t {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a08eacabaf6e6d36f7f504508f0553813}
+
+
+Return the field with the corresponding zero based index. This method is O (N) with respect to the size of the dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a8790a6366d31dcfa964be65ec84d4ed1}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFieldByIndex@{getFieldByIndex}}
+\index{getFieldByIndex@{getFieldByIndex}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFieldByIndex}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::getFieldByIndex (size\_\-t {\em index}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a8790a6366d31dcfa964be65ec84d4ed1}
+
+
+Return the field with the corresponding zero based index. This method is O (N) with respect to the size of the dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em index}]The index. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a3b99774008d6b4d7e36832a34ef7f8d8}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFieldByName@{getFieldByName}}
+\index{getFieldByName@{getFieldByName}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFieldByName}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::getFieldByName (const char $\ast$ {\em name})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a3b99774008d6b4d7e36832a34ef7f8d8}
+
+
+Return the field with the specified name. If there is more than one field with the same name, the one with the lowest field id is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field with the specified name or null if there is no such field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a6ee544d8144978bf2e49a1962dea9026}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getFieldByName@{getFieldByName}}
+\index{getFieldByName@{getFieldByName}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getFieldByName}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::getFieldByName (const char $\ast$ {\em name}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a6ee544d8144978bf2e49a1962dea9026}
+
+
+Return the field with the specified name. If there is more than one field with the same name, the one with the lowest field id is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field with the specified name or null if there is no such field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_ab4bfc4aece1df3434197b883fedfc277}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getMaxFid@{getMaxFid}}
+\index{getMaxFid@{getMaxFid}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getMaxFid}]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-fid\_\-t Wombat::MamaDictionary::getMaxFid (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_ab4bfc4aece1df3434197b883fedfc277}
+
+
+Return the highest field identifier. \begin{DoxyReturn}{Returns}
+The highest FID. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_af48a73aa0079ff9ec526db90ca209579}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getSize@{getSize}}
+\index{getSize@{getSize}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual size\_\-t Wombat::MamaDictionary::getSize (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_af48a73aa0079ff9ec526db90ca209579}
+
+
+Return the number of fields in the dictionary. \begin{DoxyReturn}{Returns}
+The number of entries in the dictionary. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a3d75c1b4461c1dab591f7ac030ab6fed}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!hasDuplicates@{hasDuplicates}}
+\index{hasDuplicates@{hasDuplicates}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{hasDuplicates}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaDictionary::hasDuplicates (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a3d75c1b4461c1dab591f7ac030ab6fed}
+
+
+Return true if there are multiple fields with the same name. \begin{DoxyReturn}{Returns}
+true if there are duplicates. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a5083693551dcd12ac87f4f7fb635f53c}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getCallback@{getCallback}}
+\index{getCallback@{getCallback}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaDictionaryCallback}$\ast$ Wombat::MamaDictionary::getCallback (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a5083693551dcd12ac87f4f7fb635f53c}
+
+
+Return the callback. \begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1MamaDictionaryCallback}{MamaDictionaryCallback} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The callback 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_aa40c49fc374c99b872bc7654d57a6253}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!setCallback@{setCallback}}
+\index{setCallback@{setCallback}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{setCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionary::setCallback ({\bf MamaDictionaryCallback} $\ast$ {\em callback})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_aa40c49fc374c99b872bc7654d57a6253}
+
+
+Set the callback to receive notifications when creation is complete or an error occurs. 
+\begin{DoxyParams}{Parameters}
+\item[{\em callback}]The callback. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionary_aafbd6c9faf6110a56832056153896792}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getDictC@{getDictC}}
+\index{getDictC@{getDictC}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getDictC}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaDictionary Wombat::MamaDictionary::getDictC ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_aafbd6c9faf6110a56832056153896792}
+
+
+Return the underlying C mamaDictionary. \hypertarget{classWombat_1_1MamaDictionary_a91df6b193f572a92f0c4c0520391c330}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getDictC@{getDictC}}
+\index{getDictC@{getDictC}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getDictC}]{\setlength{\rightskip}{0pt plus 5cm}virtual const mamaDictionary Wombat::MamaDictionary::getDictC () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a91df6b193f572a92f0c4c0520391c330}
+
+
+Return the underlying C mamaDictionary. \hypertarget{classWombat_1_1MamaDictionary_a7827c7dbb1da954ba37950a56697c2e9}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaDictionary::getClosure (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a7827c7dbb1da954ba37950a56697c2e9}
+
+
+Return the closure for the dictionary. \begin{DoxyReturn}{Returns}
+the closure. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_ad1852a80f43d4fc41de56fcac328d3a6}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!getDictionaryMessage@{getDictionaryMessage}}
+\index{getDictionaryMessage@{getDictionaryMessage}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{getDictionaryMessage}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaMsg}$\ast$ Wombat::MamaDictionary::getDictionaryMessage () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_ad1852a80f43d4fc41de56fcac328d3a6}
+
+
+Returns a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} representing the data dictionary. This message can be published or used to create a new \hyperlink{classWombat_1_1MamaDictionary}{MamaDictionary} object. A new \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} is created for each invocation of the method. It is the responsibility of the caller to delete the message when no longer needed.
+
+\begin{DoxyReturn}{Returns}
+Pointer to a new \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} for the dictionary. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaDictionary_a3fa0ae5302f3765479ccc5c923c30c4a}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!buildDictionaryFromMessage@{buildDictionaryFromMessage}}
+\index{buildDictionaryFromMessage@{buildDictionaryFromMessage}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{buildDictionaryFromMessage}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionary::buildDictionaryFromMessage ({\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a3fa0ae5302f3765479ccc5c923c30c4a}
+
+
+Recreate a data dictionary from the \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} supplied. The \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} is copied and can therefore be deleted after the method has returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]Reference to a \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} representing a data dictionary. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionary_a5d4f9d94baee4ae4e7ee8f184f982296}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!createFieldDescriptor@{createFieldDescriptor}}
+\index{createFieldDescriptor@{createFieldDescriptor}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{createFieldDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaDictionary::createFieldDescriptor (mama\_\-fid\_\-t {\em fid}, \/  const char $\ast$ {\em name}, \/  mamaFieldType {\em type})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a5d4f9d94baee4ae4e7ee8f184f982296}
+
+
+Add a new field descriptor to a dictionary. New fields can be added to an existing dictionary obtained from the MAMA infrastructure. This function can also be used to manually build a data dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]The fid for the new field descriptor. \item[{\em name}]The name for the new field descriptor. \item[{\em type}]The type for the new field descriptor. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionary_a9f1d5e3ce24c137751e3451c9511143f}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!setMaxFid@{setMaxFid}}
+\index{setMaxFid@{setMaxFid}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{setMaxFid}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionary::setMaxFid ({\bf mama\_\-size\_\-t} {\em maxFid})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a9f1d5e3ce24c137751e3451c9511143f}
+
+
+Tell the dictionary what the probable maximum fid in the data dictionary may be. This is not necessary but will aid performance for manually creating a new dictionary or adding new fields to an existing dictionary.
+
+Calling this function ensures that there is capacity in the dictionary for field descriptors with fids up to the maximum specified.
+
+Fields with fids greater than specified can be added to the dictionary but this will incur the overhead of allocating more memory and copying dictionary elements.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em maxFid}]The probable maximum fid being added to the dictionary. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionary_a3f4eac5a4a67b84762f5bc96debeb530}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!writeToFile@{writeToFile}}
+\index{writeToFile@{writeToFile}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{writeToFile}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionary::writeToFile (const char $\ast$ {\em fileName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a3f4eac5a4a67b84762f5bc96debeb530}
+
+
+Write the data dictionary to a file. The dictionary will be written in the form: fid$|$fieldName$|$fieldType
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]The name of the file to serialize the dictionary to. This can be a fully qualified name, relative or a file on the \$WOMBAT\_\-PATH \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDictionary_a44e10e3e54d0f58471ec0e457b05442d}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!populateFromFile@{populateFromFile}}
+\index{populateFromFile@{populateFromFile}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{populateFromFile}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDictionary::populateFromFile (const char $\ast$ {\em fileName})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDictionary_a44e10e3e54d0f58471ec0e457b05442d}
+
+
+Populate a dictionary from the contents of a file. Can be used to add additional fields to an existing dictionary or to populate a new dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileName}]The file from which to populate the dictionary. This can be a fully qualified name, relative or a file on the \$WOMBAT\_\-PATH \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaDictionary_a1bf6c56a35c388b96f0943fbe3462364}{
+\index{Wombat::MamaDictionary@{Wombat::MamaDictionary}!mPimpl@{mPimpl}}
+\index{mPimpl@{mPimpl}!Wombat::MamaDictionary@{Wombat::MamaDictionary}}
+\subsubsection[{mPimpl}]{\setlength{\rightskip}{0pt plus 5cm}DictionaryImpl$\ast$ {\bf Wombat::MamaDictionary::mPimpl}}}
+\label{classWombat_1_1MamaDictionary_a1bf6c56a35c388b96f0943fbe3462364}

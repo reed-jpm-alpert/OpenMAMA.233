@@ -1,0 +1,136 @@
+\hypertarget{classWombat_1_1MamaTimer}{
+\section{Wombat::MamaTimer Class Reference}
+\label{classWombat_1_1MamaTimer}\index{Wombat::MamaTimer@{Wombat::MamaTimer}}
+}
+
+
+A repeating timer.  
+
+
+{\ttfamily \#include $<$MamaTimer.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaTimer_ab882f603a9dc4107745161d0ad2073eb}{MamaTimer} (void)
+\item 
+virtual \hyperlink{classWombat_1_1MamaTimer_a502a055afb936ed7cf743e22dfb5a758}{$\sim$MamaTimer} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaTimer_a2d093ee2832a58fa2066165d81c33855}{create} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaTimerCallback}{MamaTimerCallback} $\ast$callback, mama\_\-f64\_\-t interval, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Create a repeating timer. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTimer_ab2679f665be9f30904d7ac2d70a67875}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroy (stop) the timer. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaTimer_a9acf421fb2515a0250b6cfe36a927c1e}{isActive} () const 
+\begin{DoxyCompactList}\small\item\em Return whether the timer is active. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTimer_a11812aff6b0effb65fe845c3391033e1}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the timer to the beginning of the interval. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaTimer_abdc5c7645dc4d9df6c8b778cbd0afcaa}{setInterval} (mama\_\-f64\_\-t intervalSeconds)
+\begin{DoxyCompactList}\small\item\em Set the timer to use a different interval (and reset to the beginning of that interval). \item\end{DoxyCompactList}\item 
+virtual mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaTimer_a6c6559f913fa0d154fc77d12b8322fb6}{getInterval} () const 
+\begin{DoxyCompactList}\small\item\em Get the current timer interval. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaTimerCallback}{MamaTimerCallback} $\ast$ \hyperlink{classWombat_1_1MamaTimer_aa973028ea1d0525df485173c8e0de38f}{getCallback} () const 
+\begin{DoxyCompactList}\small\item\em Return the callback for the timer. \item\end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaTimer_adf7385bd2cb4d41b8da8b3011cde1fdb}{getClosure} () const 
+\begin{DoxyCompactList}\small\item\em Return the closure for the timer. \item\end{DoxyCompactList}\item 
+mamaTimer \hyperlink{classWombat_1_1MamaTimer_a236a512b1ee0014b1898233c962c8383}{getCValue} ()
+\item 
+const mamaTimer \hyperlink{classWombat_1_1MamaTimer_ac66a5f4a2d726c6017eb05fde1726fcb}{getCValue} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A repeating timer. The callback will be repeatedly called at the specified interval until the timer is destroyed. To restart the timer after destroying it if \hyperlink{classWombat_1_1MamaTimer_ab2679f665be9f30904d7ac2d70a67875}{destroy()}, use \hyperlink{classWombat_1_1MamaTimer_a2d093ee2832a58fa2066165d81c33855}{create()}. To reset the timer to the beginning of the given interval, use \hyperlink{classWombat_1_1MamaTimer_a11812aff6b0effb65fe845c3391033e1}{reset()}. To set the timer to a different interval, use \hyperlink{classWombat_1_1MamaTimer_abdc5c7645dc4d9df6c8b778cbd0afcaa}{setInterval()}.
+
+The MAMA timer relies on underlying middleware so its resolution is also dependent on the middleware. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaTimer_ab882f603a9dc4107745161d0ad2073eb}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!MamaTimer@{MamaTimer}}
+\index{MamaTimer@{MamaTimer}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{MamaTimer}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaTimer::MamaTimer (void)}}
+\label{classWombat_1_1MamaTimer_ab882f603a9dc4107745161d0ad2073eb}
+\hypertarget{classWombat_1_1MamaTimer_a502a055afb936ed7cf743e22dfb5a758}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!$\sim$MamaTimer@{$\sim$MamaTimer}}
+\index{$\sim$MamaTimer@{$\sim$MamaTimer}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{$\sim$MamaTimer}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaTimer::$\sim$MamaTimer (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_a502a055afb936ed7cf743e22dfb5a758}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaTimer_a2d093ee2832a58fa2066165d81c33855}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!create@{create}}
+\index{create@{create}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTimer::create ({\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaTimerCallback} $\ast$ {\em callback}, \/  mama\_\-f64\_\-t {\em interval}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_a2d093ee2832a58fa2066165d81c33855}
+
+
+Create a repeating timer. The interval is in seconds.
+
+The queue is the queue from which the timer event will be dispatched.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \item[{\em callback}]The callback. \item[{\em interval}]The interval in seconds. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaTimer_ab2679f665be9f30904d7ac2d70a67875}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTimer::destroy ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_ab2679f665be9f30904d7ac2d70a67875}
+
+
+Destroy (stop) the timer. This function must be called from the same thread dispatching on the associated event queue unless both the default queue and dispatch queue are not actively dispatching. \hypertarget{classWombat_1_1MamaTimer_a9acf421fb2515a0250b6cfe36a927c1e}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!isActive@{isActive}}
+\index{isActive@{isActive}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{isActive}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaTimer::isActive () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_a9acf421fb2515a0250b6cfe36a927c1e}
+
+
+Return whether the timer is active. \hypertarget{classWombat_1_1MamaTimer_a11812aff6b0effb65fe845c3391033e1}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!reset@{reset}}
+\index{reset@{reset}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTimer::reset ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_a11812aff6b0effb65fe845c3391033e1}
+
+
+Reset the timer to the beginning of the interval. \hypertarget{classWombat_1_1MamaTimer_abdc5c7645dc4d9df6c8b778cbd0afcaa}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!setInterval@{setInterval}}
+\index{setInterval@{setInterval}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{setInterval}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaTimer::setInterval (mama\_\-f64\_\-t {\em intervalSeconds})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_abdc5c7645dc4d9df6c8b778cbd0afcaa}
+
+
+Set the timer to use a different interval (and reset to the beginning of that interval). \hypertarget{classWombat_1_1MamaTimer_a6c6559f913fa0d154fc77d12b8322fb6}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!getInterval@{getInterval}}
+\index{getInterval@{getInterval}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{getInterval}]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-f64\_\-t Wombat::MamaTimer::getInterval () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_a6c6559f913fa0d154fc77d12b8322fb6}
+
+
+Get the current timer interval. \hypertarget{classWombat_1_1MamaTimer_aa973028ea1d0525df485173c8e0de38f}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!getCallback@{getCallback}}
+\index{getCallback@{getCallback}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{getCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaTimerCallback}$\ast$ Wombat::MamaTimer::getCallback () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_aa973028ea1d0525df485173c8e0de38f}
+
+
+Return the callback for the timer. \begin{DoxyReturn}{Returns}
+the callback. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaTimer_adf7385bd2cb4d41b8da8b3011cde1fdb}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaTimer::getClosure () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaTimer_adf7385bd2cb4d41b8da8b3011cde1fdb}
+
+
+Return the closure for the timer. \begin{DoxyReturn}{Returns}
+the closure. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaTimer_a236a512b1ee0014b1898233c962c8383}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaTimer Wombat::MamaTimer::getCValue ()}}
+\label{classWombat_1_1MamaTimer_a236a512b1ee0014b1898233c962c8383}
+\hypertarget{classWombat_1_1MamaTimer_ac66a5f4a2d726c6017eb05fde1726fcb}{
+\index{Wombat::MamaTimer@{Wombat::MamaTimer}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaTimer@{Wombat::MamaTimer}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaTimer Wombat::MamaTimer::getCValue () const}}
+\label{classWombat_1_1MamaTimer_ac66a5f4a2d726c6017eb05fde1726fcb}

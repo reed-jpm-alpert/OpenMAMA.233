@@ -1,0 +1,94 @@
+\hypertarget{classWombat_1_1MamaSymbolListFile}{
+\section{Wombat::MamaSymbolListFile Class Reference}
+\label{classWombat_1_1MamaSymbolListFile}\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+}
+
+
+\hyperlink{classWombat_1_1MamaSymbolListFile}{MamaSymbolListFile} is a file based symbol list with the ability to detect external changes to the file.  
+
+
+{\ttfamily \#include $<$MamaSymbolListFile.h$>$}Inheritance diagram for Wombat::MamaSymbolListFile::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaSymbolListFile}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSymbolListFile_aa4ad63a7c2721d11bb28bfb93aea6ff8}{MamaSymbolListFile} ()
+\item 
+\hyperlink{classWombat_1_1MamaSymbolListFile_a6aaa6eee9c2f3602c8de355a09939323}{$\sim$MamaSymbolListFile} ()
+\item 
+void \hyperlink{classWombat_1_1MamaSymbolListFile_a2afcbdf48cf712c353e5038b0a64adf4}{setFileName} (const char $\ast$fileName)
+\begin{DoxyCompactList}\small\item\em Set the file name. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListFile_a65239fe8a33d5754be76c26336256bed}{setBridge} (const mamaBridge bridge)
+\begin{DoxyCompactList}\small\item\em Set the bridge to use for creating transports. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListFile_af0144c24817648b3caf0409b40dfea42}{readFile} ()
+\begin{DoxyCompactList}\small\item\em Read the contents of the file into the symbol list. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListFile_a2823b1965b599a8f2d804d951ed255f4}{writeFile} ()
+\begin{DoxyCompactList}\small\item\em Write the symbol list to the file. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListFile_aae324ceaa54ff90aa29c67671892f021}{setFileMonitor} (double checkSeconds, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Set a timer to check whether the file has changed its contents. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamaSymbolListFile}{MamaSymbolListFile} is a file based symbol list with the ability to detect external changes to the file. The file's structure is as follows:
+\begin{DoxyItemize}
+\item One symbol per line.
+\item Whitespace-\/separated columns for the symbol, the source and the MAMA transport name.
+\item The source and transport names are optional; if the transport name is present then so must be the source name.
+\end{DoxyItemize}
+
+For example: IBM CTA default DIS CTA default MSFT NASDAQ default 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListFile_aa4ad63a7c2721d11bb28bfb93aea6ff8}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!MamaSymbolListFile@{MamaSymbolListFile}}
+\index{MamaSymbolListFile@{MamaSymbolListFile}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{MamaSymbolListFile}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSymbolListFile::MamaSymbolListFile ()}}
+\label{classWombat_1_1MamaSymbolListFile_aa4ad63a7c2721d11bb28bfb93aea6ff8}
+\hypertarget{classWombat_1_1MamaSymbolListFile_a6aaa6eee9c2f3602c8de355a09939323}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!$\sim$MamaSymbolListFile@{$\sim$MamaSymbolListFile}}
+\index{$\sim$MamaSymbolListFile@{$\sim$MamaSymbolListFile}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{$\sim$MamaSymbolListFile}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSymbolListFile::$\sim$MamaSymbolListFile ()}}
+\label{classWombat_1_1MamaSymbolListFile_a6aaa6eee9c2f3602c8de355a09939323}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListFile_a2afcbdf48cf712c353e5038b0a64adf4}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!setFileName@{setFileName}}
+\index{setFileName@{setFileName}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{setFileName}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListFile::setFileName (const char $\ast$ {\em fileName})}}
+\label{classWombat_1_1MamaSymbolListFile_a2afcbdf48cf712c353e5038b0a64adf4}
+
+
+Set the file name. \hypertarget{classWombat_1_1MamaSymbolListFile_a65239fe8a33d5754be76c26336256bed}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!setBridge@{setBridge}}
+\index{setBridge@{setBridge}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{setBridge}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListFile::setBridge (const mamaBridge {\em bridge})}}
+\label{classWombat_1_1MamaSymbolListFile_a65239fe8a33d5754be76c26336256bed}
+
+
+Set the bridge to use for creating transports. \hypertarget{classWombat_1_1MamaSymbolListFile_af0144c24817648b3caf0409b40dfea42}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!readFile@{readFile}}
+\index{readFile@{readFile}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{readFile}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListFile::readFile ()}}
+\label{classWombat_1_1MamaSymbolListFile_af0144c24817648b3caf0409b40dfea42}
+
+
+Read the contents of the file into the symbol list. \hypertarget{classWombat_1_1MamaSymbolListFile_a2823b1965b599a8f2d804d951ed255f4}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!writeFile@{writeFile}}
+\index{writeFile@{writeFile}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{writeFile}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListFile::writeFile ()}}
+\label{classWombat_1_1MamaSymbolListFile_a2823b1965b599a8f2d804d951ed255f4}
+
+
+Write the symbol list to the file. \hypertarget{classWombat_1_1MamaSymbolListFile_aae324ceaa54ff90aa29c67671892f021}{
+\index{Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}!setFileMonitor@{setFileMonitor}}
+\index{setFileMonitor@{setFileMonitor}!Wombat::MamaSymbolListFile@{Wombat::MamaSymbolListFile}}
+\subsubsection[{setFileMonitor}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListFile::setFileMonitor (double {\em checkSeconds}, \/  {\bf MamaQueue} $\ast$ {\em queue})}}
+\label{classWombat_1_1MamaSymbolListFile_aae324ceaa54ff90aa29c67671892f021}
+
+
+Set a timer to check whether the file has changed its contents. If the contents have changed, various add/remove membership events may be applied to the \hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList}. 

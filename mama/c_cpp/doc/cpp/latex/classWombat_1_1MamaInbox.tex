@@ -1,0 +1,75 @@
+\hypertarget{classWombat_1_1MamaInbox}{
+\section{Wombat::MamaInbox Class Reference}
+\label{classWombat_1_1MamaInbox}\index{Wombat::MamaInbox@{Wombat::MamaInbox}}
+}
+
+
+Used for sending messages requesting a direct reply.  
+
+
+{\ttfamily \#include $<$MamaInbox.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaInbox_aff9af1b965c0992572aa78d707f5d6e4}{$\sim$MamaInbox} (void)
+\item 
+\hyperlink{classWombat_1_1MamaInbox_adece7f7df25fd1b43de4752305e7db83}{MamaInbox} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaInbox_ad42be13e492647407ce0941b0ce41eec}{create} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaInboxCallback}{MamaInboxCallback} $\ast$callback, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Create an inbox. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaInbox_ac39e457892aa15e908ce28211580feca}{destroy} (void)
+\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaInbox_ac269097bbab63c1196746de167164053}{getClosure} (void) const 
+\item 
+mamaInbox \hyperlink{classWombat_1_1MamaInbox_a1ca3b952c2c19c008e7efcce340e683f}{getCValue} ()
+\item 
+const mamaInbox \hyperlink{classWombat_1_1MamaInbox_aec99b00cb3ed6b6d77331dd052efa7c3}{getCValue} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used for sending messages requesting a direct reply. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaInbox_aff9af1b965c0992572aa78d707f5d6e4}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!$\sim$MamaInbox@{$\sim$MamaInbox}}
+\index{$\sim$MamaInbox@{$\sim$MamaInbox}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{$\sim$MamaInbox}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaInbox::$\sim$MamaInbox (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInbox_aff9af1b965c0992572aa78d707f5d6e4}
+\hypertarget{classWombat_1_1MamaInbox_adece7f7df25fd1b43de4752305e7db83}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!MamaInbox@{MamaInbox}}
+\index{MamaInbox@{MamaInbox}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{MamaInbox}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaInbox::MamaInbox (void)}}
+\label{classWombat_1_1MamaInbox_adece7f7df25fd1b43de4752305e7db83}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaInbox_ad42be13e492647407ce0941b0ce41eec}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!create@{create}}
+\index{create@{create}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaInbox::create ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaInboxCallback} $\ast$ {\em callback}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInbox_ad42be13e492647407ce0941b0ce41eec}
+
+
+Create an inbox. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport for sending requests and receiving replies. \item[{\em queue}]The queue. \item[{\em callback}]The callback for receiving replies and errors. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaInbox_ac39e457892aa15e908ce28211580feca}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaInbox::destroy (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInbox_ac39e457892aa15e908ce28211580feca}
+\hypertarget{classWombat_1_1MamaInbox_ac269097bbab63c1196746de167164053}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaInbox::getClosure (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaInbox_ac269097bbab63c1196746de167164053}
+\hypertarget{classWombat_1_1MamaInbox_a1ca3b952c2c19c008e7efcce340e683f}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaInbox Wombat::MamaInbox::getCValue ()}}
+\label{classWombat_1_1MamaInbox_a1ca3b952c2c19c008e7efcce340e683f}
+\hypertarget{classWombat_1_1MamaInbox_aec99b00cb3ed6b6d77331dd052efa7c3}{
+\index{Wombat::MamaInbox@{Wombat::MamaInbox}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaInbox@{Wombat::MamaInbox}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaInbox Wombat::MamaInbox::getCValue () const}}
+\label{classWombat_1_1MamaInbox_aec99b00cb3ed6b6d77331dd052efa7c3}

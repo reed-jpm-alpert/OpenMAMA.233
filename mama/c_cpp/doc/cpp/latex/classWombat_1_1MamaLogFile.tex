@@ -1,0 +1,105 @@
+\hypertarget{classWombat_1_1MamaLogFile}{
+\section{Wombat::MamaLogFile Class Reference}
+\label{classWombat_1_1MamaLogFile}\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile}} class provides a single interface for the configuration and control of {\ttfamily \hyperlink{classWombat_1_1Mama}{Mama}} logging activity.  
+
+
+{\ttfamily \#include $<$MamaLogFile.h$>$}\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classWombat_1_1MamaLogFile_a4d47bedcb3fcbaf6f7b9cf86f5195173}{setMaxSize} (unsigned long newMax)
+\begin{DoxyCompactList}\small\item\em Set the Size of the log files. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1MamaLogFile_a29e1e1f8ca191340e7f1289af05fb3c0}{setNumBackups} (unsigned int newNum)
+\begin{DoxyCompactList}\small\item\em Set the number of log files to be maintained. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1MamaLogFile_ae7cfd9a633b4206e89f639c10bf144ac}{setAppendMode} (bool append)
+\begin{DoxyCompactList}\small\item\em Set the open method for the logfile. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1MamaLogFile_ad5b9f7b07ccf958ea340c582c89a13a1}{enableLogging} (const char $\ast$file, MamaLogLevel level)
+\begin{DoxyCompactList}\small\item\em Enable logging. \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1MamaLogFile_afe285fd3230d67b3e565f4cafadfcf2b}{disableLogging} (void)
+\begin{DoxyCompactList}\small\item\em Disable logging. \item\end{DoxyCompactList}\item 
+static bool \hyperlink{classWombat_1_1MamaLogFile_a476c7a71ac0223dabc9a02928a46b657}{loggingToFile} (void)
+\begin{DoxyCompactList}\small\item\em Return true if currently logging to file (via \hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile}). \item\end{DoxyCompactList}\item 
+static void \hyperlink{classWombat_1_1MamaLogFile_a00b206009ede2cff176b3fd9647e362b}{rollFiles} ()
+\begin{DoxyCompactList}\small\item\em Perform a log file rolling. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile}} class provides a single interface for the configuration and control of {\ttfamily \hyperlink{classWombat_1_1Mama}{Mama}} logging activity. The {\ttfamily \hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile}} class expands upon the existing logging capabilities of {\ttfamily \hyperlink{classWombat_1_1Mama}{Mama}} providing the ability to set log file size and configure the number of log files maintained.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaLogFile_a4d47bedcb3fcbaf6f7b9cf86f5195173}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!setMaxSize@{setMaxSize}}
+\index{setMaxSize@{setMaxSize}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{setMaxSize}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaLogFile::setMaxSize (unsigned long {\em newMax})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_a4d47bedcb3fcbaf6f7b9cf86f5195173}
+
+
+Set the Size of the log files. Has no effect if log file is not successfully created via a call to \hyperlink{classWombat_1_1MamaLogFile_ad5b9f7b07ccf958ea340c582c89a13a1}{MamaLogFile::enableLogging}(...).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em newMax}]log file size. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaLogFile_a29e1e1f8ca191340e7f1289af05fb3c0}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!setNumBackups@{setNumBackups}}
+\index{setNumBackups@{setNumBackups}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{setNumBackups}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaLogFile::setNumBackups (unsigned int {\em newNum})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_a29e1e1f8ca191340e7f1289af05fb3c0}
+
+
+Set the number of log files to be maintained. Has no effect if log file is not successfully created via a call to \hyperlink{classWombat_1_1MamaLogFile_ad5b9f7b07ccf958ea340c582c89a13a1}{MamaLogFile::enableLogging}(...).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em newNum}]number of log files to be maintained. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaLogFile_ae7cfd9a633b4206e89f639c10bf144ac}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!setAppendMode@{setAppendMode}}
+\index{setAppendMode@{setAppendMode}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{setAppendMode}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaLogFile::setAppendMode (bool {\em append})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_ae7cfd9a633b4206e89f639c10bf144ac}
+
+
+Set the open method for the logfile. 'true' will keep any existing data in the file 'false' will overwrite any existing data in the file 
+\begin{DoxyParams}{Parameters}
+\item[{\em append}]append mode (on or off) \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaLogFile_ad5b9f7b07ccf958ea340c582c89a13a1}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!enableLogging@{enableLogging}}
+\index{enableLogging@{enableLogging}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{enableLogging}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaLogFile::enableLogging (const char $\ast$ {\em file}, \/  MamaLogLevel {\em level})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_ad5b9f7b07ccf958ea340c582c89a13a1}
+
+
+Enable logging. Will set log level and attempt to open a file of the named provided. If a file could not be created or parameter file is NULL mama log output is re-\/directed to stderr.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em file}]log file name \item[{\em level}]mama log level \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaLogFile_afe285fd3230d67b3e565f4cafadfcf2b}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!disableLogging@{disableLogging}}
+\index{disableLogging@{disableLogging}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{disableLogging}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaLogFile::disableLogging (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_afe285fd3230d67b3e565f4cafadfcf2b}
+
+
+Disable logging. \hypertarget{classWombat_1_1MamaLogFile_a476c7a71ac0223dabc9a02928a46b657}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!loggingToFile@{loggingToFile}}
+\index{loggingToFile@{loggingToFile}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{loggingToFile}]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::MamaLogFile::loggingToFile (void)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_a476c7a71ac0223dabc9a02928a46b657}
+
+
+Return true if currently logging to file (via \hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile}). Return false if not logging to file (via \hyperlink{classWombat_1_1MamaLogFile}{MamaLogFile}). \hypertarget{classWombat_1_1MamaLogFile_a00b206009ede2cff176b3fd9647e362b}{
+\index{Wombat::MamaLogFile@{Wombat::MamaLogFile}!rollFiles@{rollFiles}}
+\index{rollFiles@{rollFiles}!Wombat::MamaLogFile@{Wombat::MamaLogFile}}
+\subsubsection[{rollFiles}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaLogFile::rollFiles ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaLogFile_a00b206009ede2cff176b3fd9647e362b}
+
+
+Perform a log file rolling. 

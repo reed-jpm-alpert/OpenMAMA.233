@@ -1,0 +1,130 @@
+\hypertarget{classWombat_1_1MamaDQPublisher}{
+\section{Wombat::MamaDQPublisher Class Reference}
+\label{classWombat_1_1MamaDQPublisher}\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+}
+
+
+{\ttfamily \#include $<$MamaDQPublisher.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaDQPublisher_ab62890fa9c9778e0a73dbb11a7d73af2}{$\sim$MamaDQPublisher} (void)
+\item 
+\hyperlink{classWombat_1_1MamaDQPublisher_a18044a1c4e48e1297f5e567a28fe2381}{MamaDQPublisher} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_a400bad2aad6fde5e1c471160655980b8}{create} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const char $\ast$topic)
+\begin{DoxyCompactList}\small\item\em Create a MAMA DQ publisher for the corresponding transport. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_a5c6530a260495e16e494121134990cba}{send} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_a3a7c72fc23212292260c7955362acbb1}{sendReply} (const \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&request, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$reply) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_ab91d581e94f91555d48070e861b12c8e}{sendReply} (mamaMsgReply replyHandle, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$reply) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_ab67727cbb5bfc1320ac113bcee66b6f0}{destroy} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_ad6e224a971b37aa1bf9c96136ade2278}{setStatus} (mamaMsgStatus status)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_a29822832694ee1dc2211c91712082eed}{setSenderId} (uint64\_\-t id)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_af4e8c027f5c0655920be2aa7bccad41e}{setSeqNum} (mama\_\-seqnum\_\-t num)
+\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaDQPublisher_a16f6fc4ed53e0d267d98f9d40231f8ab}{getCache} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisher_aa88420a3d4777258667a413b253bacff}{setCache} (void $\ast$cache)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+MamaDQPublisherImpl $\ast$ \hyperlink{classWombat_1_1MamaDQPublisher_a9856c401cd166cfc6c3e6ecc10a4812b}{mImpl}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamaDQPublisher_aa6866d6aa7a5d87430a9fdb2663cb3b8}{MamaDQPublisherManagerImpl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisher_ab62890fa9c9778e0a73dbb11a7d73af2}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!$\sim$MamaDQPublisher@{$\sim$MamaDQPublisher}}
+\index{$\sim$MamaDQPublisher@{$\sim$MamaDQPublisher}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{$\sim$MamaDQPublisher}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaDQPublisher::$\sim$MamaDQPublisher (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_ab62890fa9c9778e0a73dbb11a7d73af2}
+\hypertarget{classWombat_1_1MamaDQPublisher_a18044a1c4e48e1297f5e567a28fe2381}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!MamaDQPublisher@{MamaDQPublisher}}
+\index{MamaDQPublisher@{MamaDQPublisher}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{MamaDQPublisher}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDQPublisher::MamaDQPublisher (void)}}
+\label{classWombat_1_1MamaDQPublisher_a18044a1c4e48e1297f5e567a28fe2381}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisher_a400bad2aad6fde5e1c471160655980b8}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!create@{create}}
+\index{create@{create}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::create ({\bf MamaTransport} $\ast$ {\em transport}, \/  const char $\ast$ {\em topic})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_a400bad2aad6fde5e1c471160655980b8}
+
+
+Create a MAMA DQ publisher for the corresponding transport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport to use. Must be a basic transport. \item[{\em topic}]for basic publishers. Symbol for market data topics. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDQPublisher_a5c6530a260495e16e494121134990cba}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!send@{send}}
+\index{send@{send}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::send ({\bf MamaMsg} $\ast$ {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_a5c6530a260495e16e494121134990cba}
+\hypertarget{classWombat_1_1MamaDQPublisher_a3a7c72fc23212292260c7955362acbb1}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!sendReply@{sendReply}}
+\index{sendReply@{sendReply}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{sendReply}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::sendReply (const {\bf MamaMsg} \& {\em request}, \/  {\bf MamaMsg} $\ast$ {\em reply}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_a3a7c72fc23212292260c7955362acbb1}
+\hypertarget{classWombat_1_1MamaDQPublisher_ab91d581e94f91555d48070e861b12c8e}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!sendReply@{sendReply}}
+\index{sendReply@{sendReply}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{sendReply}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::sendReply (mamaMsgReply {\em replyHandle}, \/  {\bf MamaMsg} $\ast$ {\em reply}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_ab91d581e94f91555d48070e861b12c8e}
+\hypertarget{classWombat_1_1MamaDQPublisher_ab67727cbb5bfc1320ac113bcee66b6f0}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::destroy (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_ab67727cbb5bfc1320ac113bcee66b6f0}
+\hypertarget{classWombat_1_1MamaDQPublisher_ad6e224a971b37aa1bf9c96136ade2278}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{setStatus}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::setStatus (mamaMsgStatus {\em status})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_ad6e224a971b37aa1bf9c96136ade2278}
+\hypertarget{classWombat_1_1MamaDQPublisher_a29822832694ee1dc2211c91712082eed}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!setSenderId@{setSenderId}}
+\index{setSenderId@{setSenderId}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{setSenderId}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::setSenderId (uint64\_\-t {\em id})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_a29822832694ee1dc2211c91712082eed}
+\hypertarget{classWombat_1_1MamaDQPublisher_af4e8c027f5c0655920be2aa7bccad41e}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!setSeqNum@{setSeqNum}}
+\index{setSeqNum@{setSeqNum}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{setSeqNum}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::setSeqNum (mama\_\-seqnum\_\-t {\em num})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_af4e8c027f5c0655920be2aa7bccad41e}
+\hypertarget{classWombat_1_1MamaDQPublisher_a16f6fc4ed53e0d267d98f9d40231f8ab}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!getCache@{getCache}}
+\index{getCache@{getCache}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{getCache}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaDQPublisher::getCache (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_a16f6fc4ed53e0d267d98f9d40231f8ab}
+\hypertarget{classWombat_1_1MamaDQPublisher_aa88420a3d4777258667a413b253bacff}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!setCache@{setCache}}
+\index{setCache@{setCache}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{setCache}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisher::setCache (void $\ast$ {\em cache})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_aa88420a3d4777258667a413b253bacff}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisher_aa6866d6aa7a5d87430a9fdb2663cb3b8}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!MamaDQPublisherManagerImpl@{MamaDQPublisherManagerImpl}}
+\index{MamaDQPublisherManagerImpl@{MamaDQPublisherManagerImpl}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{MamaDQPublisherManagerImpl}]{\setlength{\rightskip}{0pt plus 5cm}friend class MamaDQPublisherManagerImpl\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_aa6866d6aa7a5d87430a9fdb2663cb3b8}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisher_a9856c401cd166cfc6c3e6ecc10a4812b}{
+\index{Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}!mImpl@{mImpl}}
+\index{mImpl@{mImpl}!Wombat::MamaDQPublisher@{Wombat::MamaDQPublisher}}
+\subsubsection[{mImpl}]{\setlength{\rightskip}{0pt plus 5cm}MamaDQPublisherImpl$\ast$ {\bf Wombat::MamaDQPublisher::mImpl}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisher_a9856c401cd166cfc6c3e6ecc10a4812b}

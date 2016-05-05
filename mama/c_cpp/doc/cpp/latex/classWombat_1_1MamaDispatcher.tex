@@ -1,0 +1,61 @@
+\hypertarget{classWombat_1_1MamaDispatcher}{
+\section{Wombat::MamaDispatcher Class Reference}
+\label{classWombat_1_1MamaDispatcher}\index{Wombat::MamaDispatcher@{Wombat::MamaDispatcher}}
+}
+
+
+The dispatcher dispatches events from a queue until it is destroyed or MamaQueue-\/$>$stopDispatch () is called.  
+
+
+{\ttfamily \#include $<$MamaDispatcher.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaDispatcher_a3a997e7754864628bbd644d6536cffba}{$\sim$MamaDispatcher} (void)
+\item 
+\hyperlink{classWombat_1_1MamaDispatcher_a5942bec14afa1fd102d3e87fa2f04202}{MamaDispatcher} (void)
+\item 
+void \hyperlink{classWombat_1_1MamaDispatcher_a0e06030055142e7c6f576a560a17f3b9}{create} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Create a mamaDispatcher. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaDispatcher_aef804bf330b0fec1594bdddf41c0d82c}{destroy} (void)
+\begin{DoxyCompactList}\small\item\em Destroy the dispatcher;. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The dispatcher dispatches events from a queue until it is destroyed or MamaQueue-\/$>$stopDispatch () is called. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDispatcher_a3a997e7754864628bbd644d6536cffba}{
+\index{Wombat::MamaDispatcher@{Wombat::MamaDispatcher}!$\sim$MamaDispatcher@{$\sim$MamaDispatcher}}
+\index{$\sim$MamaDispatcher@{$\sim$MamaDispatcher}!Wombat::MamaDispatcher@{Wombat::MamaDispatcher}}
+\subsubsection[{$\sim$MamaDispatcher}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDispatcher::$\sim$MamaDispatcher (void)}}
+\label{classWombat_1_1MamaDispatcher_a3a997e7754864628bbd644d6536cffba}
+\hypertarget{classWombat_1_1MamaDispatcher_a5942bec14afa1fd102d3e87fa2f04202}{
+\index{Wombat::MamaDispatcher@{Wombat::MamaDispatcher}!MamaDispatcher@{MamaDispatcher}}
+\index{MamaDispatcher@{MamaDispatcher}!Wombat::MamaDispatcher@{Wombat::MamaDispatcher}}
+\subsubsection[{MamaDispatcher}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaDispatcher::MamaDispatcher (void)}}
+\label{classWombat_1_1MamaDispatcher_a5942bec14afa1fd102d3e87fa2f04202}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDispatcher_a0e06030055142e7c6f576a560a17f3b9}{
+\index{Wombat::MamaDispatcher@{Wombat::MamaDispatcher}!create@{create}}
+\index{create@{create}!Wombat::MamaDispatcher@{Wombat::MamaDispatcher}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDispatcher::create ({\bf MamaQueue} $\ast$ {\em queue})}}
+\label{classWombat_1_1MamaDispatcher_a0e06030055142e7c6f576a560a17f3b9}
+
+
+Create a mamaDispatcher. The dispatcher spawns a thread to dispatch events from a queue. It will continue to dispatch events until it is destroyed or mamaQueue\_\-stopDispatch is called.
+
+Only a single dispatcher can be created for a given queue. Attempting to create multiple dispatchers for a queue will result in and error. Dispatching message from a single queue with multiple threads results in messages arriving out of order and sequence number gaps for market data subscriptions.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The \hyperlink{classWombat_1_1MamaQueue}{MamaQueue}. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaDispatcher_aef804bf330b0fec1594bdddf41c0d82c}{
+\index{Wombat::MamaDispatcher@{Wombat::MamaDispatcher}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaDispatcher@{Wombat::MamaDispatcher}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaDispatcher::destroy (void)}}
+\label{classWombat_1_1MamaDispatcher_aef804bf330b0fec1594bdddf41c0d82c}
+
+
+Destroy the dispatcher;. 

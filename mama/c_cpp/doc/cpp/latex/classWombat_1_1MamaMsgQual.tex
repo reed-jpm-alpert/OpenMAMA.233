@@ -1,0 +1,204 @@
+\hypertarget{classWombat_1_1MamaMsgQual}{
+\section{Wombat::MamaMsgQual Class Reference}
+\label{classWombat_1_1MamaMsgQual}\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} class is a wrapper/utility class which provides useful interrogation, comparison and manipulation facilities for the \hyperlink{classWombat_1_1Mama}{Mama} Message Qualifier data field (wMsgQual) which is a \char`\"{}bit-\/map\char`\"{} used to convey duplicate, delayed and out-\/of-\/sequence information about messages.  
+
+
+{\ttfamily \#include $<$MamaMsgQual.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaMsgQual_add6d8160f22e2ae74b0c415e0fdf7649}{MamaMsgQual} ()
+\item 
+\hyperlink{classWombat_1_1MamaMsgQual_a6e15a296b1b0f4cbef6b94c9dcf752d6}{MamaMsgQual} (mama\_\-u16\_\-t value)
+\item 
+\hyperlink{classWombat_1_1MamaMsgQual_a204acf9fa97acdbef0098cb716fa0da0}{MamaMsgQual} (const \hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} \&copy)
+\item 
+\hyperlink{classWombat_1_1MamaMsgQual_aa6518b71ae8d44fb30f7d2d2fb985df2}{$\sim$MamaMsgQual} ()
+\item 
+\hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} \& \hyperlink{classWombat_1_1MamaMsgQual_a41c08d70ac1051df0718120b26671b90}{operator=} (const \hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} \&rhs)
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_a673126e2c79f9dbb2f4334182218f9fe}{operator==} (const \hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_afa761f4ed9ed2b2bd33be92969c31920}{operator==} (mama\_\-u16\_\-t rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_abf7019cb1c95421816e3b31791657579}{operator!=} (const \hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} \&rhs) const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_a9f972264728cb00e2ee69ec12c5f3022}{operator!=} (mama\_\-u16\_\-t rhs) const 
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_a88234633f34557311d4fdd3554a1b10d}{clear} ()
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_ab2db46e3928e4e964ac24030b52a8539}{setValue} (mama\_\-u16\_\-t value)
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_a6a0e738d4e6ad9eb6346fb49cc4c6eb6}{setIsDefinatelyDuplicate} (bool tf)
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_aee0b5012d3ed45fa27c6d00f20f533d2}{setIsPossiblyDuplicate} (bool tf)
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_aac859f1f88c3b32c799c31d010d70c7a}{setIsDefinatelyDelayed} (bool tf)
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_a19b744e573c3920eb43a4e7b3e51e7ae}{setIsPossiblyDelayed} (bool tf)
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_acd4334a4d5b6c0e4fc558182e7f899f5}{setIsOutOfSequence} (bool tf)
+\item 
+mama\_\-u16\_\-t \hyperlink{classWombat_1_1MamaMsgQual_a3234dc63e2d987863a5c4a423c781e55}{getValue} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_a4fadea109baf034c7639e0b31814835d}{getIsDefinatelyDuplicate} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_a59ef851d6aef9eecec061704c55ceae6}{getIsPossiblyDuplicate} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_ae363d627b79c29e47ed9baa35eba849a}{getIsDefinatelyDelayed} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_a8f4ea7ad64fe11870c715660b10f35ee}{getIsPossiblyDelayed} () const 
+\item 
+bool \hyperlink{classWombat_1_1MamaMsgQual_a84a18ecfd8d1c046233f65379a1f6259}{getIsOutOfSequence} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaMsgQual_ac69c4a732a33ace286a6ac338b5ebab6}{getAsString} (char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen) const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaMsgQual_a96ea56646e8a483883ed685009897163}{getAsString} () const 
+\begin{DoxyCompactList}\small\item\em Return a string representation of the message qualifier. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classWombat_1_1MamaMsgQual_a41a0a63b5777c6f9937076f0d47fa03f}{getAsString} (const mama\_\-u16\_\-t \&value, char $\ast$result, \hyperlink{classmama__size__t}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Static helper function to convert from the raw 16bit integer representation directly to a colon delimited string of conditions. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaMsgQual}{MamaMsgQual} class is a wrapper/utility class which provides useful interrogation, comparison and manipulation facilities for the \hyperlink{classWombat_1_1Mama}{Mama} Message Qualifier data field (wMsgQual) which is a \char`\"{}bit-\/map\char`\"{} used to convey duplicate, delayed and out-\/of-\/sequence information about messages. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaMsgQual_add6d8160f22e2ae74b0c415e0fdf7649}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!MamaMsgQual@{MamaMsgQual}}
+\index{MamaMsgQual@{MamaMsgQual}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{MamaMsgQual}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgQual::MamaMsgQual ()}}
+\label{classWombat_1_1MamaMsgQual_add6d8160f22e2ae74b0c415e0fdf7649}
+\hypertarget{classWombat_1_1MamaMsgQual_a6e15a296b1b0f4cbef6b94c9dcf752d6}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!MamaMsgQual@{MamaMsgQual}}
+\index{MamaMsgQual@{MamaMsgQual}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{MamaMsgQual}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgQual::MamaMsgQual (mama\_\-u16\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgQual_a6e15a296b1b0f4cbef6b94c9dcf752d6}
+\hypertarget{classWombat_1_1MamaMsgQual_a204acf9fa97acdbef0098cb716fa0da0}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!MamaMsgQual@{MamaMsgQual}}
+\index{MamaMsgQual@{MamaMsgQual}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{MamaMsgQual}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgQual::MamaMsgQual (const {\bf MamaMsgQual} \& {\em copy})}}
+\label{classWombat_1_1MamaMsgQual_a204acf9fa97acdbef0098cb716fa0da0}
+\hypertarget{classWombat_1_1MamaMsgQual_aa6518b71ae8d44fb30f7d2d2fb985df2}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!$\sim$MamaMsgQual@{$\sim$MamaMsgQual}}
+\index{$\sim$MamaMsgQual@{$\sim$MamaMsgQual}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{$\sim$MamaMsgQual}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaMsgQual::$\sim$MamaMsgQual ()}}
+\label{classWombat_1_1MamaMsgQual_aa6518b71ae8d44fb30f7d2d2fb985df2}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaMsgQual_a41c08d70ac1051df0718120b26671b90}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaMsgQual}\& Wombat::MamaMsgQual::operator= (const {\bf MamaMsgQual} \& {\em rhs})}}
+\label{classWombat_1_1MamaMsgQual_a41c08d70ac1051df0718120b26671b90}
+\hypertarget{classWombat_1_1MamaMsgQual_a673126e2c79f9dbb2f4334182218f9fe}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::operator== (const {\bf MamaMsgQual} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaMsgQual_a673126e2c79f9dbb2f4334182218f9fe}
+\hypertarget{classWombat_1_1MamaMsgQual_afa761f4ed9ed2b2bd33be92969c31920}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::operator== (mama\_\-u16\_\-t {\em rhs}) const}}
+\label{classWombat_1_1MamaMsgQual_afa761f4ed9ed2b2bd33be92969c31920}
+\hypertarget{classWombat_1_1MamaMsgQual_abf7019cb1c95421816e3b31791657579}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::operator!= (const {\bf MamaMsgQual} \& {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaMsgQual_abf7019cb1c95421816e3b31791657579}
+\hypertarget{classWombat_1_1MamaMsgQual_a9f972264728cb00e2ee69ec12c5f3022}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::operator!= (mama\_\-u16\_\-t {\em rhs}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaMsgQual_a9f972264728cb00e2ee69ec12c5f3022}
+\hypertarget{classWombat_1_1MamaMsgQual_a88234633f34557311d4fdd3554a1b10d}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::clear ()}}
+\label{classWombat_1_1MamaMsgQual_a88234633f34557311d4fdd3554a1b10d}
+\hypertarget{classWombat_1_1MamaMsgQual_ab2db46e3928e4e964ac24030b52a8539}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!setValue@{setValue}}
+\index{setValue@{setValue}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{setValue}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::setValue (mama\_\-u16\_\-t {\em value})}}
+\label{classWombat_1_1MamaMsgQual_ab2db46e3928e4e964ac24030b52a8539}
+\hypertarget{classWombat_1_1MamaMsgQual_a6a0e738d4e6ad9eb6346fb49cc4c6eb6}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!setIsDefinatelyDuplicate@{setIsDefinatelyDuplicate}}
+\index{setIsDefinatelyDuplicate@{setIsDefinatelyDuplicate}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{setIsDefinatelyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::setIsDefinatelyDuplicate (bool {\em tf})}}
+\label{classWombat_1_1MamaMsgQual_a6a0e738d4e6ad9eb6346fb49cc4c6eb6}
+\hypertarget{classWombat_1_1MamaMsgQual_aee0b5012d3ed45fa27c6d00f20f533d2}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!setIsPossiblyDuplicate@{setIsPossiblyDuplicate}}
+\index{setIsPossiblyDuplicate@{setIsPossiblyDuplicate}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{setIsPossiblyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::setIsPossiblyDuplicate (bool {\em tf})}}
+\label{classWombat_1_1MamaMsgQual_aee0b5012d3ed45fa27c6d00f20f533d2}
+\hypertarget{classWombat_1_1MamaMsgQual_aac859f1f88c3b32c799c31d010d70c7a}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!setIsDefinatelyDelayed@{setIsDefinatelyDelayed}}
+\index{setIsDefinatelyDelayed@{setIsDefinatelyDelayed}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{setIsDefinatelyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::setIsDefinatelyDelayed (bool {\em tf})}}
+\label{classWombat_1_1MamaMsgQual_aac859f1f88c3b32c799c31d010d70c7a}
+\hypertarget{classWombat_1_1MamaMsgQual_a19b744e573c3920eb43a4e7b3e51e7ae}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!setIsPossiblyDelayed@{setIsPossiblyDelayed}}
+\index{setIsPossiblyDelayed@{setIsPossiblyDelayed}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{setIsPossiblyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::setIsPossiblyDelayed (bool {\em tf})}}
+\label{classWombat_1_1MamaMsgQual_a19b744e573c3920eb43a4e7b3e51e7ae}
+\hypertarget{classWombat_1_1MamaMsgQual_acd4334a4d5b6c0e4fc558182e7f899f5}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!setIsOutOfSequence@{setIsOutOfSequence}}
+\index{setIsOutOfSequence@{setIsOutOfSequence}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{setIsOutOfSequence}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::setIsOutOfSequence (bool {\em tf})}}
+\label{classWombat_1_1MamaMsgQual_acd4334a4d5b6c0e4fc558182e7f899f5}
+\hypertarget{classWombat_1_1MamaMsgQual_a3234dc63e2d987863a5c4a423c781e55}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getValue@{getValue}}
+\index{getValue@{getValue}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getValue}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u16\_\-t Wombat::MamaMsgQual::getValue () const}}
+\label{classWombat_1_1MamaMsgQual_a3234dc63e2d987863a5c4a423c781e55}
+\hypertarget{classWombat_1_1MamaMsgQual_a4fadea109baf034c7639e0b31814835d}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getIsDefinatelyDuplicate@{getIsDefinatelyDuplicate}}
+\index{getIsDefinatelyDuplicate@{getIsDefinatelyDuplicate}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getIsDefinatelyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::getIsDefinatelyDuplicate () const}}
+\label{classWombat_1_1MamaMsgQual_a4fadea109baf034c7639e0b31814835d}
+\hypertarget{classWombat_1_1MamaMsgQual_a59ef851d6aef9eecec061704c55ceae6}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getIsPossiblyDuplicate@{getIsPossiblyDuplicate}}
+\index{getIsPossiblyDuplicate@{getIsPossiblyDuplicate}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getIsPossiblyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::getIsPossiblyDuplicate () const}}
+\label{classWombat_1_1MamaMsgQual_a59ef851d6aef9eecec061704c55ceae6}
+\hypertarget{classWombat_1_1MamaMsgQual_ae363d627b79c29e47ed9baa35eba849a}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getIsDefinatelyDelayed@{getIsDefinatelyDelayed}}
+\index{getIsDefinatelyDelayed@{getIsDefinatelyDelayed}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getIsDefinatelyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::getIsDefinatelyDelayed () const}}
+\label{classWombat_1_1MamaMsgQual_ae363d627b79c29e47ed9baa35eba849a}
+\hypertarget{classWombat_1_1MamaMsgQual_a8f4ea7ad64fe11870c715660b10f35ee}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getIsPossiblyDelayed@{getIsPossiblyDelayed}}
+\index{getIsPossiblyDelayed@{getIsPossiblyDelayed}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getIsPossiblyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::getIsPossiblyDelayed () const}}
+\label{classWombat_1_1MamaMsgQual_a8f4ea7ad64fe11870c715660b10f35ee}
+\hypertarget{classWombat_1_1MamaMsgQual_a84a18ecfd8d1c046233f65379a1f6259}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getIsOutOfSequence@{getIsOutOfSequence}}
+\index{getIsOutOfSequence@{getIsOutOfSequence}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getIsOutOfSequence}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaMsgQual::getIsOutOfSequence () const}}
+\label{classWombat_1_1MamaMsgQual_a84a18ecfd8d1c046233f65379a1f6259}
+\hypertarget{classWombat_1_1MamaMsgQual_ac69c4a732a33ace286a6ac338b5ebab6}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaMsgQual::getAsString (char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}) const}}
+\label{classWombat_1_1MamaMsgQual_ac69c4a732a33ace286a6ac338b5ebab6}
+\hypertarget{classWombat_1_1MamaMsgQual_a96ea56646e8a483883ed685009897163}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaMsgQual::getAsString () const}}
+\label{classWombat_1_1MamaMsgQual_a96ea56646e8a483883ed685009897163}
+
+
+Return a string representation of the message qualifier. Note that the alternative \hyperlink{classWombat_1_1MamaMsgQual_ac69c4a732a33ace286a6ac338b5ebab6}{getAsString()} method is more efficient because this method must allocate a temporary buffer (automatically destroyed upon object destruction). \hypertarget{classWombat_1_1MamaMsgQual_a41a0a63b5777c6f9937076f0d47fa03f}{
+\index{Wombat::MamaMsgQual@{Wombat::MamaMsgQual}!getAsString@{getAsString}}
+\index{getAsString@{getAsString}!Wombat::MamaMsgQual@{Wombat::MamaMsgQual}}
+\subsubsection[{getAsString}]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::MamaMsgQual::getAsString (const mama\_\-u16\_\-t \& {\em value}, \/  char $\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamaMsgQual_a41a0a63b5777c6f9937076f0d47fa03f}
+
+
+Static helper function to convert from the raw 16bit integer representation directly to a colon delimited string of conditions. 

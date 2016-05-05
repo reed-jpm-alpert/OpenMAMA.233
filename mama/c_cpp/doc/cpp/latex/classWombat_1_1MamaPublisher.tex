@@ -1,0 +1,137 @@
+\hypertarget{classWombat_1_1MamaPublisher}{
+\section{Wombat::MamaPublisher Class Reference}
+\label{classWombat_1_1MamaPublisher}\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+}
+
+
+The publisher class publishes messages to basic or market data subscriptions depending on the underlying transport.  
+
+
+{\ttfamily \#include $<$MamaPublisher.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaPublisher_a5d7284e816e67426cb288b6eb64ddca9}{$\sim$MamaPublisher} (void)
+\item 
+\hyperlink{classWombat_1_1MamaPublisher_af793def52ce7ce836557c746de43fa92}{MamaPublisher} (void)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_ad0fdacd5fd5150799f74396e27212368}{create} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const char $\ast$topic, const char $\ast$source=NULL, const char $\ast$root=NULL)
+\begin{DoxyCompactList}\small\item\em Create a MAMA publisher for the corresponding transport. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_a8384dd52952a2ce0e178799e1ec380c9}{send} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_a77970e88c69a850c451d36fcb5c720cd}{sendWithThrottle} (\hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg, \hyperlink{classWombat_1_1MamaSendCompleteCallback}{MamaSendCompleteCallback} $\ast$cb, void $\ast$closure) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_aa50cc252ba9a6ac329fb5e3075be304b}{sendFromInbox} (\hyperlink{classWombat_1_1MamaInbox}{MamaInbox} $\ast$inbox, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_aa9804ff85813df84e94bdea6215ae352}{sendFromInboxWithThrottle} (\hyperlink{classWombat_1_1MamaInbox}{MamaInbox} $\ast$inbox, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg, \hyperlink{classWombat_1_1MamaSendCompleteCallback}{MamaSendCompleteCallback} $\ast$cb, void $\ast$closure) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_a5a793bd5ce83062bef1d9c301394846c}{sendReplyToInbox} (const \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&request, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$reply) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_a4027880ca8ff1da97d8dfdd8a6ab0324}{sendReplyToInbox} (mamaMsgReply replyHandle, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$reply) const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamaPublisher_acd7d75ae898eb5cc33851ba534c36134}{destroy} (void)
+\item 
+virtual \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaPublisher_abf6c408f0ccb59c2169ad33f1f557969}{getTransport} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} for the \hyperlink{classWombat_1_1MamaPublisher}{MamaPublisher}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaPublisher_ae1b9a885437a0b6509937eb57586671c}{MamaPublisher} (MamaPublisherImpl $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+MamaPublisherImpl $\ast$ \hyperlink{classWombat_1_1MamaPublisher_a62eebdff64fcd63293122af14757fc5b}{mPimpl}
+\item 
+\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaPublisher_a1b883709ebf27895ef4b16c25e18ad97}{mTransport}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The publisher class publishes messages to basic or market data subscriptions depending on the underlying transport. For basic transports the source parameter must be NULL. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaPublisher_a5d7284e816e67426cb288b6eb64ddca9}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!$\sim$MamaPublisher@{$\sim$MamaPublisher}}
+\index{$\sim$MamaPublisher@{$\sim$MamaPublisher}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{$\sim$MamaPublisher}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaPublisher::$\sim$MamaPublisher (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a5d7284e816e67426cb288b6eb64ddca9}
+\hypertarget{classWombat_1_1MamaPublisher_af793def52ce7ce836557c746de43fa92}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!MamaPublisher@{MamaPublisher}}
+\index{MamaPublisher@{MamaPublisher}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{MamaPublisher}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaPublisher::MamaPublisher (void)}}
+\label{classWombat_1_1MamaPublisher_af793def52ce7ce836557c746de43fa92}
+\hypertarget{classWombat_1_1MamaPublisher_ae1b9a885437a0b6509937eb57586671c}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!MamaPublisher@{MamaPublisher}}
+\index{MamaPublisher@{MamaPublisher}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{MamaPublisher}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaPublisher::MamaPublisher (MamaPublisherImpl $\ast$)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_ae1b9a885437a0b6509937eb57586671c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaPublisher_ad0fdacd5fd5150799f74396e27212368}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!create@{create}}
+\index{create@{create}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::create ({\bf MamaTransport} $\ast$ {\em transport}, \/  const char $\ast$ {\em topic}, \/  const char $\ast$ {\em source} = {\ttfamily NULL}, \/  const char $\ast$ {\em root} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_ad0fdacd5fd5150799f74396e27212368}
+
+
+Create a MAMA publisher for the corresponding transport. If the transport is a market data transport, as opposed to a \char`\"{}basic\char`\"{} transport, the topic corresponds to the symbol. For a basic transport, the source and root get ignored.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport to use. Must be a basic transport. \item[{\em topic}]for basic publishers. Symbol for market data topics. \item[{\em source}]The source for market data publishers. \item[{\em root}]The root for market data publishers. Used internally. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaPublisher_a8384dd52952a2ce0e178799e1ec380c9}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!send@{send}}
+\index{send@{send}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::send ({\bf MamaMsg} $\ast$ {\em msg}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a8384dd52952a2ce0e178799e1ec380c9}
+\hypertarget{classWombat_1_1MamaPublisher_a77970e88c69a850c451d36fcb5c720cd}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!sendWithThrottle@{sendWithThrottle}}
+\index{sendWithThrottle@{sendWithThrottle}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{sendWithThrottle}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::sendWithThrottle ({\bf MamaMsg} $\ast$ {\em msg}, \/  {\bf MamaSendCompleteCallback} $\ast$ {\em cb}, \/  void $\ast$ {\em closure}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a77970e88c69a850c451d36fcb5c720cd}
+\hypertarget{classWombat_1_1MamaPublisher_aa50cc252ba9a6ac329fb5e3075be304b}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!sendFromInbox@{sendFromInbox}}
+\index{sendFromInbox@{sendFromInbox}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{sendFromInbox}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::sendFromInbox ({\bf MamaInbox} $\ast$ {\em inbox}, \/  {\bf MamaMsg} $\ast$ {\em msg}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_aa50cc252ba9a6ac329fb5e3075be304b}
+\hypertarget{classWombat_1_1MamaPublisher_aa9804ff85813df84e94bdea6215ae352}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!sendFromInboxWithThrottle@{sendFromInboxWithThrottle}}
+\index{sendFromInboxWithThrottle@{sendFromInboxWithThrottle}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{sendFromInboxWithThrottle}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::sendFromInboxWithThrottle ({\bf MamaInbox} $\ast$ {\em inbox}, \/  {\bf MamaMsg} $\ast$ {\em msg}, \/  {\bf MamaSendCompleteCallback} $\ast$ {\em cb}, \/  void $\ast$ {\em closure}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_aa9804ff85813df84e94bdea6215ae352}
+\hypertarget{classWombat_1_1MamaPublisher_a5a793bd5ce83062bef1d9c301394846c}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!sendReplyToInbox@{sendReplyToInbox}}
+\index{sendReplyToInbox@{sendReplyToInbox}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{sendReplyToInbox}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::sendReplyToInbox (const {\bf MamaMsg} \& {\em request}, \/  {\bf MamaMsg} $\ast$ {\em reply}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a5a793bd5ce83062bef1d9c301394846c}
+\hypertarget{classWombat_1_1MamaPublisher_a4027880ca8ff1da97d8dfdd8a6ab0324}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!sendReplyToInbox@{sendReplyToInbox}}
+\index{sendReplyToInbox@{sendReplyToInbox}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{sendReplyToInbox}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::sendReplyToInbox (mamaMsgReply {\em replyHandle}, \/  {\bf MamaMsg} $\ast$ {\em reply}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a4027880ca8ff1da97d8dfdd8a6ab0324}
+\hypertarget{classWombat_1_1MamaPublisher_acd7d75ae898eb5cc33851ba534c36134}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaPublisher::destroy (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_acd7d75ae898eb5cc33851ba534c36134}
+\hypertarget{classWombat_1_1MamaPublisher_abf6c408f0ccb59c2169ad33f1f557969}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!getTransport@{getTransport}}
+\index{getTransport@{getTransport}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{getTransport}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaTransport}$\ast$ Wombat::MamaPublisher::getTransport (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_abf6c408f0ccb59c2169ad33f1f557969}
+
+
+Return the \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} for the \hyperlink{classWombat_1_1MamaPublisher}{MamaPublisher}. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaPublisher_a62eebdff64fcd63293122af14757fc5b}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!mPimpl@{mPimpl}}
+\index{mPimpl@{mPimpl}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{mPimpl}]{\setlength{\rightskip}{0pt plus 5cm}MamaPublisherImpl$\ast$ {\bf Wombat::MamaPublisher::mPimpl}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a62eebdff64fcd63293122af14757fc5b}
+\hypertarget{classWombat_1_1MamaPublisher_a1b883709ebf27895ef4b16c25e18ad97}{
+\index{Wombat::MamaPublisher@{Wombat::MamaPublisher}!mTransport@{mTransport}}
+\index{mTransport@{mTransport}!Wombat::MamaPublisher@{Wombat::MamaPublisher}}
+\subsubsection[{mTransport}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaTransport}$\ast$ {\bf Wombat::MamaPublisher::mTransport}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaPublisher_a1b883709ebf27895ef4b16c25e18ad97}

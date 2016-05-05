@@ -1,0 +1,132 @@
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscription}{
+\section{Wombat::MamaBasicWildCardSubscription Class Reference}
+\label{classWombat_1_1MamaBasicWildCardSubscription}\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaBasicWildCardSubscription}{MamaBasicWildCardSubscription}} interface represents a subscription to a topic with no market data semantics.  
+
+
+{\ttfamily \#include $<$MamaBasicWildCardSubscription.h$>$}Inheritance diagram for Wombat::MamaBasicWildCardSubscription::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaBasicWildCardSubscription}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_a95396711c2631fa095cce444676c686c}{$\sim$MamaBasicWildCardSubscription} ()
+\begin{DoxyCompactList}\small\item\em The destructor will call {\ttfamily \hyperlink{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{destroy()}} if the subscription has not already been destroyed. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaBasicWildCardSubscription_a617b4191e0b7b9db769525a602249062}{MamaBasicWildCardSubscription} (void)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_a47b0951423f36f41995e152a07f688fc}{create} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, \hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback}{MamaBasicWildCardSubscriptionCallback} $\ast$callback, const char $\ast$source, const char $\ast$topic, void $\ast$closure=NULL)
+\begin{DoxyCompactList}\small\item\em Create a basic wild card subscription without market data semantics. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_ae679ef667a9a823214f6bb972035c501}{getSymbol} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the symbol for this subscription. \item\end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_a8e9611d5a76d36c1c67c2158f89273e8}{getSource} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the source for this subscription. \item\end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_abe5fcf14f1a436a58da30c79a825aa63}{getTopicClosure} () const 
+\begin{DoxyCompactList}\small\item\em Get the closure for the specific wildcard topic. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_af039fe8b841712d13e0740589c9cba45}{setTopicClosure} (void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Set the topic closure for the current message's topic. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_a7f2a0d630890db350db7dac440a07bc8}{muteCurrentTopic} (void)
+\begin{DoxyCompactList}\small\item\em For \char`\"{}transport\char`\"{} subscriptions (WMW only) stop processing messages for the current topic. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaBasicWildCardSubscriptionCallback}{MamaBasicWildCardSubscriptionCallback} $\ast$ \hyperlink{classWombat_1_1MamaBasicWildCardSubscription_ae4735aabe82c2b92741aaf24ade99a46}{getBasicWildCardCallback} (void) const 
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback}} for this subscription. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaBasicWildCardSubscription}{MamaBasicWildCardSubscription}} interface represents a subscription to a topic with no market data semantics. \begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1Mama}{Mama} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Michael Schonberg copyright 2003 \hyperlink{namespaceWombat}{Wombat} Consulting Inc. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscription_a95396711c2631fa095cce444676c686c}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!$\sim$MamaBasicWildCardSubscription@{$\sim$MamaBasicWildCardSubscription}}
+\index{$\sim$MamaBasicWildCardSubscription@{$\sim$MamaBasicWildCardSubscription}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{$\sim$MamaBasicWildCardSubscription}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaBasicWildCardSubscription::$\sim$MamaBasicWildCardSubscription ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_a95396711c2631fa095cce444676c686c}
+
+
+The destructor will call {\ttfamily \hyperlink{classWombat_1_1MamaBasicSubscription_a296c25c10faa885e408e064a626ce3dd}{destroy()}} if the subscription has not already been destroyed. \hypertarget{classWombat_1_1MamaBasicWildCardSubscription_a617b4191e0b7b9db769525a602249062}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!MamaBasicWildCardSubscription@{MamaBasicWildCardSubscription}}
+\index{MamaBasicWildCardSubscription@{MamaBasicWildCardSubscription}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{MamaBasicWildCardSubscription}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaBasicWildCardSubscription::MamaBasicWildCardSubscription (void)}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_a617b4191e0b7b9db769525a602249062}
+
+
+Constructor. Call createBasicWildCard() to activate the subscription. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscription_a47b0951423f36f41995e152a07f688fc}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!create@{create}}
+\index{create@{create}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscription::create ({\bf MamaTransport} $\ast$ {\em transport}, \/  {\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaBasicWildCardSubscriptionCallback} $\ast$ {\em callback}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em topic}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_a47b0951423f36f41995e152a07f688fc}
+
+
+Create a basic wild card subscription without market data semantics. If the topic is NULL for WMW, this method creates a \char`\"{}transport\char`\"{} subscription that subscribes to all the topics from publishers with the the \char`\"{}publish\_\-name\char`\"{} property equal to the source value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport to use. Must be a basic transport. \item[{\em queue}]The queue. \item[{\em callback}]The mamaMsgCallbacks structure containing the three callback methods.\item[{\em topic}]The topic. \item[{\em closure}]The caller supplied closure. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscription_ae679ef667a9a823214f6bb972035c501}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{getSymbol}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaBasicWildCardSubscription::getSymbol (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_ae679ef667a9a823214f6bb972035c501}
+
+
+Return the symbol for this subscription. \begin{DoxyReturn}{Returns}
+The topic. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscription_a8e9611d5a76d36c1c67c2158f89273e8}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!getSource@{getSource}}
+\index{getSource@{getSource}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{getSource}]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::MamaBasicWildCardSubscription::getSource (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_a8e9611d5a76d36c1c67c2158f89273e8}
+
+
+Return the source for this subscription. \begin{DoxyReturn}{Returns}
+The topic. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaBasicWildCardSubscription_abe5fcf14f1a436a58da30c79a825aa63}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!getTopicClosure@{getTopicClosure}}
+\index{getTopicClosure@{getTopicClosure}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{getTopicClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ Wombat::MamaBasicWildCardSubscription::getTopicClosure () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_abe5fcf14f1a436a58da30c79a825aa63}
+
+
+Get the closure for the specific wildcard topic. This method may only be called from the onMsg callback.
+
+@ return The closure specified by setTopicClosure() or NULL if no topic closure set. \hypertarget{classWombat_1_1MamaBasicWildCardSubscription_af039fe8b841712d13e0740589c9cba45}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!setTopicClosure@{setTopicClosure}}
+\index{setTopicClosure@{setTopicClosure}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{setTopicClosure}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscription::setTopicClosure (void $\ast$ {\em closure})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_af039fe8b841712d13e0740589c9cba45}
+
+
+Set the topic closure for the current message's topic. This method can only be invoked from the onMsg() callback.
+
+closure The closure. \hypertarget{classWombat_1_1MamaBasicWildCardSubscription_a7f2a0d630890db350db7dac440a07bc8}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!muteCurrentTopic@{muteCurrentTopic}}
+\index{muteCurrentTopic@{muteCurrentTopic}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{muteCurrentTopic}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaBasicWildCardSubscription::muteCurrentTopic (void)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_a7f2a0d630890db350db7dac440a07bc8}
+
+
+For \char`\"{}transport\char`\"{} subscriptions (WMW only) stop processing messages for the current topic. \hypertarget{classWombat_1_1MamaBasicWildCardSubscription_ae4735aabe82c2b92741aaf24ade99a46}{
+\index{Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}!getBasicWildCardCallback@{getBasicWildCardCallback}}
+\index{getBasicWildCardCallback@{getBasicWildCardCallback}!Wombat::MamaBasicWildCardSubscription@{Wombat::MamaBasicWildCardSubscription}}
+\subsubsection[{getBasicWildCardCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaBasicWildCardSubscriptionCallback}$\ast$ Wombat::MamaBasicWildCardSubscription::getBasicWildCardCallback (void) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaBasicWildCardSubscription_ae4735aabe82c2b92741aaf24ade99a46}
+
+
+Return the {\ttfamily \hyperlink{classWombat_1_1MamaSubscriptionCallback}{MamaSubscriptionCallback}} for this subscription. \begin{DoxyReturn}{Returns}
+the callback. 
+\end{DoxyReturn}

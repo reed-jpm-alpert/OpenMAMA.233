@@ -1,0 +1,161 @@
+\hypertarget{classWombat_1_1MamaSymbolListMember}{
+\section{Wombat::MamaSymbolListMember Class Reference}
+\label{classWombat_1_1MamaSymbolListMember}\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} class represents the information about the symbol list member.  
+
+
+{\ttfamily \#include $<$MamaSymbolListMember.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaSymbolListMember_a503f49ff8ce5cfa1033bb2bd4017c972}{MamaSymbolListMember} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} $\ast$symbolList)
+\begin{DoxyCompactList}\small\item\em Construct a symbol list member that can be added to the symbol list. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaSymbolListMember_aea2ddcc6a239f32e6b0355ec558d17f7}{MamaSymbolListMember} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} $\ast$list, mamaSymbolListMember cMember)
+\begin{DoxyCompactList}\small\item\em Construct symbol list member that wraps the given C symbol list member. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolListMember_ad80425b19885b827573ba955e232f177}{$\sim$MamaSymbolListMember} ()
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaSymbolListMember_a1135197846cf6490585c3df77ea63274}{getSymbol} () const 
+\begin{DoxyCompactList}\small\item\em Get the symbol name. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaSymbolListMember_a99e2897642ef172ab36dec52d065bc1f}{getSource} () const 
+\begin{DoxyCompactList}\small\item\em Get the source name. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$ \hyperlink{classWombat_1_1MamaSymbolListMember_a50cb26c6342b9184f292201b00671362}{getTransport} () const 
+\begin{DoxyCompactList}\small\item\em Get the MAMA transport. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} $\ast$ \hyperlink{classWombat_1_1MamaSymbolListMember_a9cbe372a97a3fb7ce1596c28a5577495}{getSymbolList} () const 
+\begin{DoxyCompactList}\small\item\em Get the MAMA symbol list to which this member belongs. \item\end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaSymbolListMember_aa98bb1713122db2e76f76925d67c292e}{getClosure} () const 
+\begin{DoxyCompactList}\small\item\em Get the closure argument. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListMember_aa56da8d3fa7b9531cc8fb059ba83f396}{setClosure} (void $\ast$closure)
+\begin{DoxyCompactList}\small\item\em Set the closure argument. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListMember_af8dd71310a64a7ff37ac936d0300d7e0}{setSymbol} (const char $\ast$symbol)
+\begin{DoxyCompactList}\small\item\em Set the symbol name. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListMember_ade8e521c44ea064df4acf3868bcd0cb1}{setSource} (const char $\ast$source)
+\begin{DoxyCompactList}\small\item\em Set the source name. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListMember_ab335a8f3a660d206c40fb2b5d561faa9}{setTransport} (\hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport)
+\begin{DoxyCompactList}\small\item\em Set the MAMA transport. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaSymbolListMember_a9e3da0f70fcd48cfd9d0e2adae152234}{setSymbolList} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} $\ast$symbolList)
+\begin{DoxyCompactList}\small\item\em Set the MAMA symbol list to which this member belongs. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+mamaSymbolListMember \hyperlink{classWombat_1_1MamaSymbolListMember_a4e125066d1f8b2d3f75a7928fa9966c5}{getCimpl} ()
+\begin{DoxyCompactList}\small\item\em Get a handle to the underlying C implementation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamaSymbolListMember_a8688dc35341e649acdc8b141807a9538}{MamaSymbolList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} class represents the information about the symbol list member. In addition to the symbols, it is also possible to obtain information about the \char`\"{}source\char`\"{} of the symbol and which \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} it can be found on. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListMember_a503f49ff8ce5cfa1033bb2bd4017c972}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!MamaSymbolListMember@{MamaSymbolListMember}}
+\index{MamaSymbolListMember@{MamaSymbolListMember}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{MamaSymbolListMember}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSymbolListMember::MamaSymbolListMember ({\bf MamaSymbolList} $\ast$ {\em symbolList})}}
+\label{classWombat_1_1MamaSymbolListMember_a503f49ff8ce5cfa1033bb2bd4017c972}
+
+
+Construct a symbol list member that can be added to the symbol list. \hypertarget{classWombat_1_1MamaSymbolListMember_aea2ddcc6a239f32e6b0355ec558d17f7}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!MamaSymbolListMember@{MamaSymbolListMember}}
+\index{MamaSymbolListMember@{MamaSymbolListMember}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{MamaSymbolListMember}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaSymbolListMember::MamaSymbolListMember ({\bf MamaSymbolList} $\ast$ {\em list}, \/  mamaSymbolListMember {\em cMember})}}
+\label{classWombat_1_1MamaSymbolListMember_aea2ddcc6a239f32e6b0355ec558d17f7}
+
+
+Construct symbol list member that wraps the given C symbol list member. \hypertarget{classWombat_1_1MamaSymbolListMember_ad80425b19885b827573ba955e232f177}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!$\sim$MamaSymbolListMember@{$\sim$MamaSymbolListMember}}
+\index{$\sim$MamaSymbolListMember@{$\sim$MamaSymbolListMember}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{$\sim$MamaSymbolListMember}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolListMember::$\sim$MamaSymbolListMember ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMember_ad80425b19885b827573ba955e232f177}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListMember_a1135197846cf6490585c3df77ea63274}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{getSymbol}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaSymbolListMember::getSymbol () const}}
+\label{classWombat_1_1MamaSymbolListMember_a1135197846cf6490585c3df77ea63274}
+
+
+Get the symbol name. \hypertarget{classWombat_1_1MamaSymbolListMember_a99e2897642ef172ab36dec52d065bc1f}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!getSource@{getSource}}
+\index{getSource@{getSource}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{getSource}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaSymbolListMember::getSource () const}}
+\label{classWombat_1_1MamaSymbolListMember_a99e2897642ef172ab36dec52d065bc1f}
+
+
+Get the source name. \hypertarget{classWombat_1_1MamaSymbolListMember_a50cb26c6342b9184f292201b00671362}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!getTransport@{getTransport}}
+\index{getTransport@{getTransport}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{getTransport}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaTransport}$\ast$ Wombat::MamaSymbolListMember::getTransport () const}}
+\label{classWombat_1_1MamaSymbolListMember_a50cb26c6342b9184f292201b00671362}
+
+
+Get the MAMA transport. \hypertarget{classWombat_1_1MamaSymbolListMember_a9cbe372a97a3fb7ce1596c28a5577495}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!getSymbolList@{getSymbolList}}
+\index{getSymbolList@{getSymbolList}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{getSymbolList}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaSymbolList}$\ast$ Wombat::MamaSymbolListMember::getSymbolList () const}}
+\label{classWombat_1_1MamaSymbolListMember_a9cbe372a97a3fb7ce1596c28a5577495}
+
+
+Get the MAMA symbol list to which this member belongs. \hypertarget{classWombat_1_1MamaSymbolListMember_aa98bb1713122db2e76f76925d67c292e}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::MamaSymbolListMember::getClosure () const}}
+\label{classWombat_1_1MamaSymbolListMember_aa98bb1713122db2e76f76925d67c292e}
+
+
+Get the closure argument. \hypertarget{classWombat_1_1MamaSymbolListMember_aa56da8d3fa7b9531cc8fb059ba83f396}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{setClosure}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListMember::setClosure (void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamaSymbolListMember_aa56da8d3fa7b9531cc8fb059ba83f396}
+
+
+Set the closure argument. \hypertarget{classWombat_1_1MamaSymbolListMember_af8dd71310a64a7ff37ac936d0300d7e0}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!setSymbol@{setSymbol}}
+\index{setSymbol@{setSymbol}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{setSymbol}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListMember::setSymbol (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamaSymbolListMember_af8dd71310a64a7ff37ac936d0300d7e0}
+
+
+Set the symbol name. \hypertarget{classWombat_1_1MamaSymbolListMember_ade8e521c44ea064df4acf3868bcd0cb1}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!setSource@{setSource}}
+\index{setSource@{setSource}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{setSource}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListMember::setSource (const char $\ast$ {\em source})}}
+\label{classWombat_1_1MamaSymbolListMember_ade8e521c44ea064df4acf3868bcd0cb1}
+
+
+Set the source name. \hypertarget{classWombat_1_1MamaSymbolListMember_ab335a8f3a660d206c40fb2b5d561faa9}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!setTransport@{setTransport}}
+\index{setTransport@{setTransport}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{setTransport}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListMember::setTransport ({\bf MamaTransport} $\ast$ {\em transport})}}
+\label{classWombat_1_1MamaSymbolListMember_ab335a8f3a660d206c40fb2b5d561faa9}
+
+
+Set the MAMA transport. \hypertarget{classWombat_1_1MamaSymbolListMember_a9e3da0f70fcd48cfd9d0e2adae152234}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!setSymbolList@{setSymbolList}}
+\index{setSymbolList@{setSymbolList}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{setSymbolList}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaSymbolListMember::setSymbolList ({\bf MamaSymbolList} $\ast$ {\em symbolList})}}
+\label{classWombat_1_1MamaSymbolListMember_a9e3da0f70fcd48cfd9d0e2adae152234}
+
+
+Set the MAMA symbol list to which this member belongs. \hypertarget{classWombat_1_1MamaSymbolListMember_a4e125066d1f8b2d3f75a7928fa9966c5}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!getCimpl@{getCimpl}}
+\index{getCimpl@{getCimpl}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{getCimpl}]{\setlength{\rightskip}{0pt plus 5cm}mamaSymbolListMember Wombat::MamaSymbolListMember::getCimpl ()\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMember_a4e125066d1f8b2d3f75a7928fa9966c5}
+
+
+Get a handle to the underlying C implementation. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListMember_a8688dc35341e649acdc8b141807a9538}{
+\index{Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}!MamaSymbolList@{MamaSymbolList}}
+\index{MamaSymbolList@{MamaSymbolList}!Wombat::MamaSymbolListMember@{Wombat::MamaSymbolListMember}}
+\subsubsection[{MamaSymbolList}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf MamaSymbolList}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMember_a8688dc35341e649acdc8b141807a9538}

@@ -1,0 +1,64 @@
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback}{
+\section{Wombat::MamaDQPublisherManagerCallback Class Reference}
+\label{classWombat_1_1MamaDQPublisherManagerCallback}\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+}
+
+
+{\ttfamily \#include $<$MamaDQPublisherManagerCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_a5750d37ba7aef889c78df47a7e91879b}{$\sim$MamaDQPublisherManagerCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_a8ec11e1f59dc2754c0eef1d62d254136}{onCreate} (\hyperlink{classWombat_1_1MamaDQPublisherManager}{MamaDQPublisherManager} $\ast$publisherManager)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_a9eeeebfe0c18db07e39bd994796e0148}{onNewRequest} (\hyperlink{classWombat_1_1MamaDQPublisherManager}{MamaDQPublisherManager} $\ast$publisherManager, const char $\ast$symbol, short subType, short msgType, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_a965ba3cb09c848ec2e9b389758ede731}{onRequest} (\hyperlink{classWombat_1_1MamaDQPublisherManager}{MamaDQPublisherManager} $\ast$publisherManager, const \hyperlink{classWombat_1_1MamaPublishTopic}{MamaPublishTopic} \&publishTopicInfo, short subType, short msgType, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_a4083f41af3fcab7842b12ea6aeb817c6}{onRefresh} (\hyperlink{classWombat_1_1MamaDQPublisherManager}{MamaDQPublisherManager} $\ast$publisherManager, const \hyperlink{classWombat_1_1MamaPublishTopic}{MamaPublishTopic} \&publishTopicInfo, short subType, short msgType, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_aa3df0616a84eb7cf0f5dff24946beb14}{onError} (\hyperlink{classWombat_1_1MamaDQPublisherManager}{MamaDQPublisherManager} $\ast$publisher, const \hyperlink{classWombat_1_1MamaStatus}{MamaStatus} \&status, const char $\ast$errortxt, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} $\ast$msg)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamaDQPublisherManagerCallback_a66c9b8bdfac8ca21fa46f64f928d7da8}{onMsg} (\hyperlink{classWombat_1_1MamaDQPublisherManager}{MamaDQPublisherManager} $\ast$publisher, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_a5750d37ba7aef889c78df47a7e91879b}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!$\sim$MamaDQPublisherManagerCallback@{$\sim$MamaDQPublisherManagerCallback}}
+\index{$\sim$MamaDQPublisherManagerCallback@{$\sim$MamaDQPublisherManagerCallback}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{$\sim$MamaDQPublisherManagerCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaDQPublisherManagerCallback::$\sim$MamaDQPublisherManagerCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_a5750d37ba7aef889c78df47a7e91879b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_a8ec11e1f59dc2754c0eef1d62d254136}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{onCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManagerCallback::onCreate ({\bf MamaDQPublisherManager} $\ast$ {\em publisherManager})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_a8ec11e1f59dc2754c0eef1d62d254136}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_a9eeeebfe0c18db07e39bd994796e0148}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!onNewRequest@{onNewRequest}}
+\index{onNewRequest@{onNewRequest}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{onNewRequest}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManagerCallback::onNewRequest ({\bf MamaDQPublisherManager} $\ast$ {\em publisherManager}, \/  const char $\ast$ {\em symbol}, \/  short {\em subType}, \/  short {\em msgType}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_a9eeeebfe0c18db07e39bd994796e0148}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_a965ba3cb09c848ec2e9b389758ede731}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!onRequest@{onRequest}}
+\index{onRequest@{onRequest}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{onRequest}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManagerCallback::onRequest ({\bf MamaDQPublisherManager} $\ast$ {\em publisherManager}, \/  const {\bf MamaPublishTopic} \& {\em publishTopicInfo}, \/  short {\em subType}, \/  short {\em msgType}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_a965ba3cb09c848ec2e9b389758ede731}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_a4083f41af3fcab7842b12ea6aeb817c6}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!onRefresh@{onRefresh}}
+\index{onRefresh@{onRefresh}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{onRefresh}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManagerCallback::onRefresh ({\bf MamaDQPublisherManager} $\ast$ {\em publisherManager}, \/  const {\bf MamaPublishTopic} \& {\em publishTopicInfo}, \/  short {\em subType}, \/  short {\em msgType}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_a4083f41af3fcab7842b12ea6aeb817c6}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_aa3df0616a84eb7cf0f5dff24946beb14}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManagerCallback::onError ({\bf MamaDQPublisherManager} $\ast$ {\em publisher}, \/  const {\bf MamaStatus} \& {\em status}, \/  const char $\ast$ {\em errortxt}, \/  {\bf MamaMsg} $\ast$ {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_aa3df0616a84eb7cf0f5dff24946beb14}
+\hypertarget{classWombat_1_1MamaDQPublisherManagerCallback_a66c9b8bdfac8ca21fa46f64f928d7da8}{
+\index{Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamaDQPublisherManagerCallback@{Wombat::MamaDQPublisherManagerCallback}}
+\subsubsection[{onMsg}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaDQPublisherManagerCallback::onMsg ({\bf MamaDQPublisherManager} $\ast$ {\em publisher}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaDQPublisherManagerCallback_a66c9b8bdfac8ca21fa46f64f928d7da8}

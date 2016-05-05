@@ -1,0 +1,287 @@
+\hypertarget{classWombat_1_1MamaFieldCacheField}{
+\section{Wombat::MamaFieldCacheField Class Reference}
+\label{classWombat_1_1MamaFieldCacheField}\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} class is used to store the information on the type of a field and its value(s).  
+
+
+{\ttfamily \#include $<$MamaFieldCacheField.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaFieldCacheField_ae8ee6f655d57d6f01ca90573fa292308}{MamaFieldCacheField} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheField_a959c4e16ec621a70d4cb917366b3ecda}{$\sim$MamaFieldCacheField} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaFieldCacheField_afff140fb76e047923aa8479c8808a79a}{MamaFieldCacheField} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheField_a7241e2da84e4894c53821f21dcd80062}{operator=} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy rhs into the current object. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaFieldCacheField_a5cbfcf9063b0c4338c29601ef58d5e5d}{operator==} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Return if the current field is equal to the specified field. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classWombat_1_1MamaFieldCacheField_a07b2c870f5a5e2c1e12567d9dafda9a2}{operator!=} (const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Return if the current field is different from the specified field. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheField_a50403ebe0fa4fe5619a950b9758ba819}{create} (const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} \&descriptor)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheField_ac1735aede2db98e3383fe183b1695712}{create} (mama\_\-fid\_\-t fid, mamaFieldType type, const char $\ast$name=NULL)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheField_a7ecde23453694bc6dfe4c92b38390588}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}}. \item\end{DoxyCompactList}\item 
+virtual mama\_\-fid\_\-t \hyperlink{classWombat_1_1MamaFieldCacheField_a981ff23033f7d225f2b39e442df9dfa0}{getFid} () const 
+\begin{DoxyCompactList}\small\item\em Return the field id. \item\end{DoxyCompactList}\item 
+virtual mamaFieldType \hyperlink{classWombat_1_1MamaFieldCacheField_a72b0f438fc565c0a4fdf2c47b153f965}{getType} () const 
+\begin{DoxyCompactList}\small\item\em Return the field type. \item\end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaFieldCacheField_abe1b06ea7737ae6d9aa323d5ca2c1b78}{getName} () const 
+\begin{DoxyCompactList}\small\item\em Return the name of the field. \item\end{DoxyCompactList}\item 
+void \hyperlink{classWombat_1_1MamaFieldCacheField_a994ecf6a4620857e9b6d3669ca485dc3}{setDescriptor} (const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$descriptor)
+\begin{DoxyCompactList}\small\item\em Set the descriptor of the field. \item\end{DoxyCompactList}\item 
+const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} $\ast$ \hyperlink{classWombat_1_1MamaFieldCacheField_a653c16e3b455088c37409a83cbe1f78c}{getDescriptor} () const 
+\begin{DoxyCompactList}\small\item\em Return the descriptor of the field. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCacheField_a13b4aed59d1cc1443cfcfbf904627136}{isModified} () const 
+\begin{DoxyCompactList}\small\item\em Return whether the field has been modified or not. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheField_a68114cac0385bc88d9f807bacb2cfbaf}{setPublish} (bool value=true)
+\begin{DoxyCompactList}\small\item\em Set the publish flag of the field. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCacheField_a942030403dc608070ef021df497642ab}{getPublish} () const 
+\begin{DoxyCompactList}\small\item\em Return the always publish flag of the field. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheField_a7c8cf837733b67b785dfc6aa21ebec81}{setCheckModified} (bool value=true)
+\begin{DoxyCompactList}\small\item\em Set the checkModifed flag of a field. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCacheField_a214b8aabd992ab44ca37671da73f11b1}{getCheckModified} () const 
+\begin{DoxyCompactList}\small\item\em Return the checkModified flag of the field. \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamaFieldCacheField_aea1bb4b00b1105a05bbda687124da5e3}{isVector} () const 
+\begin{DoxyCompactList}\small\item\em Return if the field is a vector (otherwise is a single-\/value field). \item\end{DoxyCompactList}\item 
+mamaFieldCacheField \& \hyperlink{classWombat_1_1MamaFieldCacheField_aba5fc4029c002c24f0a47b7a46755752}{getCValue} ()
+\item 
+const mamaFieldCacheField \& \hyperlink{classWombat_1_1MamaFieldCacheField_ae778bb36d98a120965787d59b71b806c}{getCValue} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} class is used to store the information on the type of a field and its value(s). This class does not provide methods to set and get the value (check the specific types of fields such as {\ttfamily MamaFieldCacheFieldBool{\ttfamily ). }}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaFieldCacheField_ae8ee6f655d57d6f01ca90573fa292308}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!MamaFieldCacheField@{MamaFieldCacheField}}
+\index{MamaFieldCacheField@{MamaFieldCacheField}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{MamaFieldCacheField}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFieldCacheField::MamaFieldCacheField ()}}
+\label{classWombat_1_1MamaFieldCacheField_ae8ee6f655d57d6f01ca90573fa292308}
+
+
+Constructor. Use {\ttfamily create} to create the actual field. \hypertarget{classWombat_1_1MamaFieldCacheField_a959c4e16ec621a70d4cb917366b3ecda}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!$\sim$MamaFieldCacheField@{$\sim$MamaFieldCacheField}}
+\index{$\sim$MamaFieldCacheField@{$\sim$MamaFieldCacheField}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{$\sim$MamaFieldCacheField}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaFieldCacheField::$\sim$MamaFieldCacheField ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a959c4e16ec621a70d4cb917366b3ecda}
+
+
+Destructor. This is called automatically when an object is destroyed. This method will clean all the memory allocated. \hypertarget{classWombat_1_1MamaFieldCacheField_afff140fb76e047923aa8479c8808a79a}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!MamaFieldCacheField@{MamaFieldCacheField}}
+\index{MamaFieldCacheField@{MamaFieldCacheField}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{MamaFieldCacheField}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFieldCacheField::MamaFieldCacheField (const {\bf MamaFieldCacheField} \& {\em rhs})}}
+\label{classWombat_1_1MamaFieldCacheField_afff140fb76e047923aa8479c8808a79a}
+
+
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em }]\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a7241e2da84e4894c53821f21dcd80062}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheField::operator= (const {\bf MamaFieldCacheField} \& {\em rhs})}}
+\label{classWombat_1_1MamaFieldCacheField_a7241e2da84e4894c53821f21dcd80062}
+
+
+Copy rhs into the current object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]The source MamaFielCacheField. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} itself. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a5cbfcf9063b0c4338c29601ef58d5e5d}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaFieldCacheField::operator== (const {\bf MamaFieldCacheField} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaFieldCacheField_a5cbfcf9063b0c4338c29601ef58d5e5d}
+
+
+Return if the current field is equal to the specified field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]The other field to check equality. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two fields are equal. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a07b2c870f5a5e2c1e12567d9dafda9a2}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaFieldCacheField::operator!= (const {\bf MamaFieldCacheField} \& {\em rhs}) const}}
+\label{classWombat_1_1MamaFieldCacheField_a07b2c870f5a5e2c1e12567d9dafda9a2}
+
+
+Return if the current field is different from the specified field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em rhs}]The other field to check difference. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the two fields are different. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a50403ebe0fa4fe5619a950b9758ba819}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!create@{create}}
+\index{create@{create}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheField::create (const {\bf MamaFieldDescriptor} \& {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a50403ebe0fa4fe5619a950b9758ba819}
+
+
+Create a \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]Descriptor of the field to create. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCacheField_ac1735aede2db98e3383fe183b1695712}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!create@{create}}
+\index{create@{create}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheField::create (mama\_\-fid\_\-t {\em fid}, \/  mamaFieldType {\em type}, \/  const char $\ast$ {\em name} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_ac1735aede2db98e3383fe183b1695712}
+
+
+Create a \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]Field id of the field to create. \item[{\em type}]Field type of the field to create. \item[{\em name}]Name of the field to create. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a7ecde23453694bc6dfe4c92b38390588}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheField::clear ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a7ecde23453694bc6dfe4c92b38390588}
+
+
+Clear the {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}}. The field is ready to be used, as long as create has been called once. \hypertarget{classWombat_1_1MamaFieldCacheField_a981ff23033f7d225f2b39e442df9dfa0}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getFid@{getFid}}
+\index{getFid@{getFid}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getFid}]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-fid\_\-t Wombat::MamaFieldCacheField::getFid () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a981ff23033f7d225f2b39e442df9dfa0}
+
+
+Return the field id. If the field is not valid, then 0 is returned.
+
+\begin{DoxyReturn}{Returns}
+The field id of the field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a72b0f438fc565c0a4fdf2c47b153f965}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getType@{getType}}
+\index{getType@{getType}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getType}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaFieldType Wombat::MamaFieldCacheField::getType () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a72b0f438fc565c0a4fdf2c47b153f965}
+
+
+Return the field type. If the field is not valid, then MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN is returned.
+
+\begin{DoxyReturn}{Returns}
+The field type of the field. 
+\end{DoxyReturn}
+
+
+Referenced by Wombat::MamaFieldCacheFieldDateTimeVector::checkType(), Wombat::MamaFieldCacheFieldPriceVector::checkType(), Wombat::MamaFieldCacheFieldStringVector::checkType(), Wombat::MamaFieldCacheFieldVectorBasic$<$ T, fieldType $>$::checkType(), Wombat::MamaFieldCacheFieldDateTime::checkType(), Wombat::MamaFieldCacheFieldPrice::checkType(), Wombat::MamaFieldCacheFieldString::checkType(), Wombat::MamaFieldCacheFieldBasic$<$ T, fieldType $>$::checkType(), Wombat::getFieldValue(), and Wombat::setFieldValue().\hypertarget{classWombat_1_1MamaFieldCacheField_abe1b06ea7737ae6d9aa323d5ca2c1b78}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getName@{getName}}
+\index{getName@{getName}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaFieldCacheField::getName () const}}
+\label{classWombat_1_1MamaFieldCacheField_abe1b06ea7737ae6d9aa323d5ca2c1b78}
+
+
+Return the name of the field. If the name is not set, then NULL is returned. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a994ecf6a4620857e9b6d3669ca485dc3}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!setDescriptor@{setDescriptor}}
+\index{setDescriptor@{setDescriptor}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{setDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFieldCacheField::setDescriptor (const {\bf MamaFieldDescriptor} $\ast$ {\em descriptor})}}
+\label{classWombat_1_1MamaFieldCacheField_a994ecf6a4620857e9b6d3669ca485dc3}
+
+
+Set the descriptor of the field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]Pointer to the descriptor of the field. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a653c16e3b455088c37409a83cbe1f78c}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getDescriptor@{getDescriptor}}
+\index{getDescriptor@{getDescriptor}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf MamaFieldDescriptor}$\ast$ Wombat::MamaFieldCacheField::getDescriptor () const}}
+\label{classWombat_1_1MamaFieldCacheField_a653c16e3b455088c37409a83cbe1f78c}
+
+
+Return the descriptor of the field. If the descriptor is not set, NULL is returned.
+
+\begin{DoxyReturn}{Returns}
+Pointer to the descriptor of the field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a13b4aed59d1cc1443cfcfbf904627136}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!isModified@{isModified}}
+\index{isModified@{isModified}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{isModified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCacheField::isModified () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a13b4aed59d1cc1443cfcfbf904627136}
+
+
+Return whether the field has been modified or not. \begin{DoxyReturn}{Returns}
+Whether the field is modified. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a68114cac0385bc88d9f807bacb2cfbaf}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!setPublish@{setPublish}}
+\index{setPublish@{setPublish}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{setPublish}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheField::setPublish (bool {\em value} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a68114cac0385bc88d9f807bacb2cfbaf}
+
+
+Set the publish flag of the field. If set to false, the field is never published.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The publish flag. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a942030403dc608070ef021df497642ab}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getPublish@{getPublish}}
+\index{getPublish@{getPublish}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getPublish}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCacheField::getPublish () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a942030403dc608070ef021df497642ab}
+
+
+Return the always publish flag of the field. \begin{DoxyReturn}{Returns}
+The publish flag. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a7c8cf837733b67b785dfc6aa21ebec81}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!setCheckModified@{setCheckModified}}
+\index{setCheckModified@{setCheckModified}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{setCheckModified}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheField::setCheckModified (bool {\em value} = {\ttfamily true})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a7c8cf837733b67b785dfc6aa21ebec81}
+
+
+Set the checkModifed flag of a field. If set to true, the field will be checked for modification before publishing.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The checkModified flag. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaFieldCacheField_a214b8aabd992ab44ca37671da73f11b1}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getCheckModified@{getCheckModified}}
+\index{getCheckModified@{getCheckModified}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getCheckModified}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCacheField::getCheckModified () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_a214b8aabd992ab44ca37671da73f11b1}
+
+
+Return the checkModified flag of the field. \begin{DoxyReturn}{Returns}
+The check modified flag. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_aea1bb4b00b1105a05bbda687124da5e3}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!isVector@{isVector}}
+\index{isVector@{isVector}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{isVector}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::MamaFieldCacheField::isVector () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheField_aea1bb4b00b1105a05bbda687124da5e3}
+
+
+Return if the field is a vector (otherwise is a single-\/value field). \begin{DoxyReturn}{Returns}
+If the field is a vector field. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheField_aba5fc4029c002c24f0a47b7a46755752}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaFieldCacheField\& Wombat::MamaFieldCacheField::getCValue ()}}
+\label{classWombat_1_1MamaFieldCacheField_aba5fc4029c002c24f0a47b7a46755752}
+\hypertarget{classWombat_1_1MamaFieldCacheField_ae778bb36d98a120965787d59b71b806c}{
+\index{Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaFieldCacheField@{Wombat::MamaFieldCacheField}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaFieldCacheField\& Wombat::MamaFieldCacheField::getCValue () const}}
+\label{classWombat_1_1MamaFieldCacheField_ae778bb36d98a120965787d59b71b806c}

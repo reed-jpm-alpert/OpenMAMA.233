@@ -1,0 +1,52 @@
+\hypertarget{classWombat_1_1MamaSymbolListIteratorHandler}{
+\section{Wombat::MamaSymbolListIteratorHandler Class Reference}
+\label{classWombat_1_1MamaSymbolListIteratorHandler}\index{Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler}{MamaSymbolListIteratorHandler} interface.  
+
+
+{\ttfamily \#include $<$MamaSymbolListHandlerTypes.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler_a966643ab28fd12c6c2182cc5ba9cc1da}{$\sim$MamaSymbolListIteratorHandler} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler_a4473a13b92c04377588fe0178ad04dad}{onMember} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} \&symbolList, \hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} \&member, void $\ast$iterateClosure)=0
+\begin{DoxyCompactList}\small\item\em Method invoked for every member in the symbol list. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler_a71f422a7d26ac1817a256e21086185d0}{onComplete} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} \&symbolList, void $\ast$iterateClosure)
+\begin{DoxyCompactList}\small\item\em Method invoked after all symbol list members have been iterated over. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler}{MamaSymbolListIteratorHandler} interface. Instances of subclasses of this class can be passed to the \hyperlink{classWombat_1_1MamaSymbolList_abd26a14e154744f08713aab75c9aece3}{MamaSymbolList::iterate()} method and the \hyperlink{classWombat_1_1MamaSymbolListIteratorHandler_a4473a13b92c04377588fe0178ad04dad}{onMember()} interface will be invoked for each member in the list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListIteratorHandler_a966643ab28fd12c6c2182cc5ba9cc1da}{
+\index{Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}!$\sim$MamaSymbolListIteratorHandler@{$\sim$MamaSymbolListIteratorHandler}}
+\index{$\sim$MamaSymbolListIteratorHandler@{$\sim$MamaSymbolListIteratorHandler}!Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}}
+\subsubsection[{$\sim$MamaSymbolListIteratorHandler}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolListIteratorHandler::$\sim$MamaSymbolListIteratorHandler ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListIteratorHandler_a966643ab28fd12c6c2182cc5ba9cc1da}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListIteratorHandler_a4473a13b92c04377588fe0178ad04dad}{
+\index{Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}!onMember@{onMember}}
+\index{onMember@{onMember}!Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}}
+\subsubsection[{onMember}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolListIteratorHandler::onMember ({\bf MamaSymbolList} \& {\em symbolList}, \/  {\bf MamaSymbolListMember} \& {\em member}, \/  void $\ast$ {\em iterateClosure})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListIteratorHandler_a4473a13b92c04377588fe0178ad04dad}
+
+
+Method invoked for every member in the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[{\em symbolList}]The symbol list. \item[{\em member}]The member of the symbol list. \item[{\em iterateClosure}]The closure argument to \hyperlink{classWombat_1_1MamaSymbolList_abd26a14e154744f08713aab75c9aece3}{MamaSymbolList::iterate()}. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolListIteratorHandler_a71f422a7d26ac1817a256e21086185d0}{
+\index{Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}!onComplete@{onComplete}}
+\index{onComplete@{onComplete}!Wombat::MamaSymbolListIteratorHandler@{Wombat::MamaSymbolListIteratorHandler}}
+\subsubsection[{onComplete}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolListIteratorHandler::onComplete ({\bf MamaSymbolList} \& {\em symbolList}, \/  void $\ast$ {\em iterateClosure})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListIteratorHandler_a71f422a7d26ac1817a256e21086185d0}
+
+
+Method invoked after all symbol list members have been iterated over. 
+\begin{DoxyParams}{Parameters}
+\item[{\em symbolList}]The symbol list. \item[{\em iterateClosure}]The closure argument to \hyperlink{classWombat_1_1MamaSymbolList_abd26a14e154744f08713aab75c9aece3}{MamaSymbolList::iterate()}. \end{DoxyParams}

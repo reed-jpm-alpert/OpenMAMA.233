@@ -1,0 +1,169 @@
+\hypertarget{classWombat_1_1MamaFtMember}{
+\section{Wombat::MamaFtMember Class Reference}
+\label{classWombat_1_1MamaFtMember}\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+}
+
+
+{\ttfamily \#include $<$MamaFt.h$>$}Inheritance diagram for Wombat::MamaFtMember::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamaFtMember}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaFtMember_a78a5ee531a706e6c48c58a891588e0c7}{MamaFtMember} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamaFtMember_a553c0f20f0e0badba3cbfbc3b7560275}{$\sim$MamaFtMember} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaFtMember_a5a57ce6bb1f5d7ff85eac37acbf4b405}{setup} (\hyperlink{classWombat_1_1MamaQueue}{MamaQueue} $\ast$queue, \hyperlink{classWombat_1_1MamaFtMemberCallback}{MamaFtMemberCallback} $\ast$handler, \hyperlink{classWombat_1_1MamaTransport}{MamaTransport} $\ast$transport, const char $\ast$groupName, mama\_\-u32\_\-t weight, mama\_\-f64\_\-t heartbeatInterval, mama\_\-f64\_\-t timeoutInterval, void $\ast$closure=NULL)=0
+\item 
+void \hyperlink{classWombat_1_1MamaFtMember_acd39754cf01f3dc2bfd58de81066529e}{destroy} ()
+\item 
+void \hyperlink{classWombat_1_1MamaFtMember_a91dbc23931995917b65c65b265d514ac}{activate} ()
+\item 
+void \hyperlink{classWombat_1_1MamaFtMember_aa24e0b13650e11700c4b5650f8beb190}{deactivate} ()
+\item 
+bool \hyperlink{classWombat_1_1MamaFtMember_a01bdb68194841219fd08066b61052d59}{isActive} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamaFtMember_a2f82bbb437a4064fa2ba261453fc6d61}{getGroupName} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamaFtMember_a1b80e55dd3137e78f1e4eeabd647163e}{getWeight} () const 
+\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaFtMember_a69457de68353a2f666d657fc0d1de19f}{getHeartbeatInterval} () const 
+\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamaFtMember_a1d4d5d3402fdca072abf8a586c6f2b5b}{getTimeoutInterval} () const 
+\item 
+\hyperlink{classWombat_1_1MamaFtMemberCallback}{MamaFtMemberCallback} $\ast$ \hyperlink{classWombat_1_1MamaFtMember_a663ef7867faff8323d0f22cdf8f9bc98}{getCallback} () const 
+\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaFtMember_ae85d406375efd4325671c4109df3f56d}{getClosure} () const 
+\item 
+void \hyperlink{classWombat_1_1MamaFtMember_afd89c66a28f99b6f716e70fe12e7473f}{setWeight} (mama\_\-u32\_\-t weight)
+\item 
+void \hyperlink{classWombat_1_1MamaFtMember_aecc24a6fc92f4fe699e6003c0297ddb3}{setInstanceId} (const char $\ast$id)
+\item 
+mamaFtMember \hyperlink{classWombat_1_1MamaFtMember_a9f9d307fc61f5283850527f313763d18}{getCValue} ()
+\item 
+const mamaFtMember \hyperlink{classWombat_1_1MamaFtMember_a5ba8e9c0b12adfe858d8c7ddeef4dbed}{getCValue} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mamaFtMember \hyperlink{classWombat_1_1MamaFtMember_ab76b5c8785b2ed7d41e857db76a56686}{mCValue}
+\item 
+\hyperlink{classWombat_1_1MamaFtMemberCallback}{MamaFtMemberCallback} $\ast$ \hyperlink{classWombat_1_1MamaFtMember_a6d4a2f7d451434979bd7f7d69408bdae}{mCallback}
+\item 
+void $\ast$ \hyperlink{classWombat_1_1MamaFtMember_aabab786509f1b5c07ee3ea9da4355b5e}{mClosure}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaFtMember_a78a5ee531a706e6c48c58a891588e0c7}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!MamaFtMember@{MamaFtMember}}
+\index{MamaFtMember@{MamaFtMember}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{MamaFtMember}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFtMember::MamaFtMember ()}}
+\label{classWombat_1_1MamaFtMember_a78a5ee531a706e6c48c58a891588e0c7}
+\hypertarget{classWombat_1_1MamaFtMember_a553c0f20f0e0badba3cbfbc3b7560275}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!$\sim$MamaFtMember@{$\sim$MamaFtMember}}
+\index{$\sim$MamaFtMember@{$\sim$MamaFtMember}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{$\sim$MamaFtMember}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaFtMember::$\sim$MamaFtMember ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_a553c0f20f0e0badba3cbfbc3b7560275}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFtMember_a5a57ce6bb1f5d7ff85eac37acbf4b405}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!setup@{setup}}
+\index{setup@{setup}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFtMember::setup ({\bf MamaQueue} $\ast$ {\em queue}, \/  {\bf MamaFtMemberCallback} $\ast$ {\em handler}, \/  {\bf MamaTransport} $\ast$ {\em transport}, \/  const char $\ast$ {\em groupName}, \/  mama\_\-u32\_\-t {\em weight}, \/  mama\_\-f64\_\-t {\em heartbeatInterval}, \/  mama\_\-f64\_\-t {\em timeoutInterval}, \/  void $\ast$ {\em closure} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_a5a57ce6bb1f5d7ff85eac37acbf4b405}
+
+
+Implemented in \hyperlink{classWombat_1_1MamaMulticastFtMember_abff24b52a220beafca46481139f66e67}{Wombat::MamaMulticastFtMember}, and \hyperlink{classWombat_1_1MamaBridgeFtMember_a9b6a49d95ab378ebab4ea353026acbce}{Wombat::MamaBridgeFtMember}.\hypertarget{classWombat_1_1MamaFtMember_acd39754cf01f3dc2bfd58de81066529e}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!destroy@{destroy}}
+\index{destroy@{destroy}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{destroy}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFtMember::destroy ()}}
+\label{classWombat_1_1MamaFtMember_acd39754cf01f3dc2bfd58de81066529e}
+\hypertarget{classWombat_1_1MamaFtMember_a91dbc23931995917b65c65b265d514ac}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!activate@{activate}}
+\index{activate@{activate}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFtMember::activate ()}}
+\label{classWombat_1_1MamaFtMember_a91dbc23931995917b65c65b265d514ac}
+\hypertarget{classWombat_1_1MamaFtMember_aa24e0b13650e11700c4b5650f8beb190}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{deactivate}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFtMember::deactivate ()}}
+\label{classWombat_1_1MamaFtMember_aa24e0b13650e11700c4b5650f8beb190}
+\hypertarget{classWombat_1_1MamaFtMember_a01bdb68194841219fd08066b61052d59}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!isActive@{isActive}}
+\index{isActive@{isActive}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{isActive}]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::MamaFtMember::isActive () const}}
+\label{classWombat_1_1MamaFtMember_a01bdb68194841219fd08066b61052d59}
+\hypertarget{classWombat_1_1MamaFtMember_a2f82bbb437a4064fa2ba261453fc6d61}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getGroupName@{getGroupName}}
+\index{getGroupName@{getGroupName}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getGroupName}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::MamaFtMember::getGroupName () const}}
+\label{classWombat_1_1MamaFtMember_a2f82bbb437a4064fa2ba261453fc6d61}
+\hypertarget{classWombat_1_1MamaFtMember_a1b80e55dd3137e78f1e4eeabd647163e}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getWeight}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::MamaFtMember::getWeight () const}}
+\label{classWombat_1_1MamaFtMember_a1b80e55dd3137e78f1e4eeabd647163e}
+\hypertarget{classWombat_1_1MamaFtMember_a69457de68353a2f666d657fc0d1de19f}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getHeartbeatInterval@{getHeartbeatInterval}}
+\index{getHeartbeatInterval@{getHeartbeatInterval}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getHeartbeatInterval}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::MamaFtMember::getHeartbeatInterval () const}}
+\label{classWombat_1_1MamaFtMember_a69457de68353a2f666d657fc0d1de19f}
+\hypertarget{classWombat_1_1MamaFtMember_a1d4d5d3402fdca072abf8a586c6f2b5b}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getTimeoutInterval@{getTimeoutInterval}}
+\index{getTimeoutInterval@{getTimeoutInterval}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getTimeoutInterval}]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::MamaFtMember::getTimeoutInterval () const}}
+\label{classWombat_1_1MamaFtMember_a1d4d5d3402fdca072abf8a586c6f2b5b}
+\hypertarget{classWombat_1_1MamaFtMember_a663ef7867faff8323d0f22cdf8f9bc98}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getCallback@{getCallback}}
+\index{getCallback@{getCallback}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getCallback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaFtMemberCallback}$\ast$ Wombat::MamaFtMember::getCallback () const}}
+\label{classWombat_1_1MamaFtMember_a663ef7867faff8323d0f22cdf8f9bc98}
+\hypertarget{classWombat_1_1MamaFtMember_ae85d406375efd4325671c4109df3f56d}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getClosure}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::MamaFtMember::getClosure () const}}
+\label{classWombat_1_1MamaFtMember_ae85d406375efd4325671c4109df3f56d}
+\hypertarget{classWombat_1_1MamaFtMember_afd89c66a28f99b6f716e70fe12e7473f}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!setWeight@{setWeight}}
+\index{setWeight@{setWeight}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{setWeight}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFtMember::setWeight (mama\_\-u32\_\-t {\em weight})}}
+\label{classWombat_1_1MamaFtMember_afd89c66a28f99b6f716e70fe12e7473f}
+\hypertarget{classWombat_1_1MamaFtMember_aecc24a6fc92f4fe699e6003c0297ddb3}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!setInstanceId@{setInstanceId}}
+\index{setInstanceId@{setInstanceId}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{setInstanceId}]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::MamaFtMember::setInstanceId (const char $\ast$ {\em id})}}
+\label{classWombat_1_1MamaFtMember_aecc24a6fc92f4fe699e6003c0297ddb3}
+\hypertarget{classWombat_1_1MamaFtMember_a9f9d307fc61f5283850527f313763d18}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaFtMember Wombat::MamaFtMember::getCValue ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_a9f9d307fc61f5283850527f313763d18}
+\hypertarget{classWombat_1_1MamaFtMember_a5ba8e9c0b12adfe858d8c7ddeef4dbed}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}const mamaFtMember Wombat::MamaFtMember::getCValue () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_a5ba8e9c0b12adfe858d8c7ddeef4dbed}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamaFtMember_ab76b5c8785b2ed7d41e857db76a56686}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!mCValue@{mCValue}}
+\index{mCValue@{mCValue}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{mCValue}]{\setlength{\rightskip}{0pt plus 5cm}mamaFtMember {\bf Wombat::MamaFtMember::mCValue}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_ab76b5c8785b2ed7d41e857db76a56686}
+\hypertarget{classWombat_1_1MamaFtMember_a6d4a2f7d451434979bd7f7d69408bdae}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!mCallback@{mCallback}}
+\index{mCallback@{mCallback}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{mCallback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MamaFtMemberCallback}$\ast$ {\bf Wombat::MamaFtMember::mCallback}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_a6d4a2f7d451434979bd7f7d69408bdae}
+\hypertarget{classWombat_1_1MamaFtMember_aabab786509f1b5c07ee3ea9da4355b5e}{
+\index{Wombat::MamaFtMember@{Wombat::MamaFtMember}!mClosure@{mClosure}}
+\index{mClosure@{mClosure}!Wombat::MamaFtMember@{Wombat::MamaFtMember}}
+\subsubsection[{mClosure}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf Wombat::MamaFtMember::mClosure}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamaFtMember_aabab786509f1b5c07ee3ea9da4355b5e}

@@ -1,0 +1,68 @@
+\hypertarget{classWombat_1_1MamaSymbolListMembershipHandler}{
+\section{Wombat::MamaSymbolListMembershipHandler Class Reference}
+\label{classWombat_1_1MamaSymbolListMembershipHandler}\index{Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}}
+}
+
+
+The \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler}{MamaSymbolListMembershipHandler} interface.  
+
+
+{\ttfamily \#include $<$MamaSymbolListHandlerTypes.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler_aba263b5f66a1c8fbc4fcf1d49f76ffed}{$\sim$MamaSymbolListMembershipHandler} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler_a6477fc850b111a96245aa45bc12d8c4c}{onMemberAdd} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} \&symbolList, \hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} \&member)=0
+\begin{DoxyCompactList}\small\item\em Method invoked when a symbol has been added to the list. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler_ade0d0346baa0d18f9bb1d90edf96f243}{onMemberRemove} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} \&symbolList, \hyperlink{classWombat_1_1MamaSymbolListMember}{MamaSymbolListMember} \&member)=0
+\begin{DoxyCompactList}\small\item\em Method invoked immediately prior to a symbol being removed from the list. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler_acfa51cc58e5a5aa428db3c124383e860}{onOrderChange} (\hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} \&symbolList)=0
+\begin{DoxyCompactList}\small\item\em Method invoked when the sorting of the symbol list has changed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamaSymbolListMembershipHandler}{MamaSymbolListMembershipHandler} interface. Instances of subclasses of this class can be registered with a \hyperlink{classWombat_1_1MamaSymbolList}{MamaSymbolList} in order to be notified of symbol add/remove events to the symbol list. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListMembershipHandler_aba263b5f66a1c8fbc4fcf1d49f76ffed}{
+\index{Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}!$\sim$MamaSymbolListMembershipHandler@{$\sim$MamaSymbolListMembershipHandler}}
+\index{$\sim$MamaSymbolListMembershipHandler@{$\sim$MamaSymbolListMembershipHandler}!Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}}
+\subsubsection[{$\sim$MamaSymbolListMembershipHandler}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSymbolListMembershipHandler::$\sim$MamaSymbolListMembershipHandler ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMembershipHandler_aba263b5f66a1c8fbc4fcf1d49f76ffed}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSymbolListMembershipHandler_a6477fc850b111a96245aa45bc12d8c4c}{
+\index{Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}!onMemberAdd@{onMemberAdd}}
+\index{onMemberAdd@{onMemberAdd}!Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}}
+\subsubsection[{onMemberAdd}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolListMembershipHandler::onMemberAdd ({\bf MamaSymbolList} \& {\em symbolList}, \/  {\bf MamaSymbolListMember} \& {\em member})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMembershipHandler_a6477fc850b111a96245aa45bc12d8c4c}
+
+
+Method invoked when a symbol has been added to the list. Invocation of this function is conditional and is subject to a positive return (true) from the prior invocation of {\ttfamily onDeclareInterest} where the registered object has the opportunity to declare their interest in subsequent events on the given symbol.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em symbolList}]The symbolList. \item[{\em member}]The member just added to the list. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolListMembershipHandler_ade0d0346baa0d18f9bb1d90edf96f243}{
+\index{Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}!onMemberRemove@{onMemberRemove}}
+\index{onMemberRemove@{onMemberRemove}!Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}}
+\subsubsection[{onMemberRemove}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolListMembershipHandler::onMemberRemove ({\bf MamaSymbolList} \& {\em symbolList}, \/  {\bf MamaSymbolListMember} \& {\em member})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMembershipHandler_ade0d0346baa0d18f9bb1d90edf96f243}
+
+
+Method invoked immediately prior to a symbol being removed from the list. Invocation of this function is conditional and is subject to a positive return (true) from the prior invocation of {\ttfamily onDeclareInterest} where the registered object has the opportunity to declare their interest in subsequent events on the given symbol.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em symbolList}]The symbolList. \item[{\em member}]The member just removed from the list. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSymbolListMembershipHandler_acfa51cc58e5a5aa428db3c124383e860}{
+\index{Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}!onOrderChange@{onOrderChange}}
+\index{onOrderChange@{onOrderChange}!Wombat::MamaSymbolListMembershipHandler@{Wombat::MamaSymbolListMembershipHandler}}
+\subsubsection[{onOrderChange}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSymbolListMembershipHandler::onOrderChange ({\bf MamaSymbolList} \& {\em symbolList})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSymbolListMembershipHandler_acfa51cc58e5a5aa428db3c124383e860}
+
+
+Method invoked when the sorting of the symbol list has changed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em symbolList}]The symbol list. \end{DoxyParams}

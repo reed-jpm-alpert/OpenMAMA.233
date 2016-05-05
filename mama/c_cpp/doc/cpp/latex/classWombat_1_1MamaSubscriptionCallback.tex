@@ -1,0 +1,154 @@
+\hypertarget{classWombat_1_1MamaSubscriptionCallback}{
+\section{Wombat::MamaSubscriptionCallback Class Reference}
+\label{classWombat_1_1MamaSubscriptionCallback}\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+}
+
+
+The message callback interface.  
+
+
+{\ttfamily \#include $<$MamaSubscriptionCallback.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classWombat_1_1MamaSubscriptionCallback_ace64014ad0b2b7d79395a50de562c94b}{$\sim$MamaSubscriptionCallback} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_a9cdbf8347dcb5110a5f9755c83276fd4}{onCreate} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription)=0
+\begin{DoxyCompactList}\small\item\em Method invoked when subscription creation is complete, and before any calls to {\ttfamily onMsg}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_ab325050a90c83590c31da66114858c44}{onError} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription, const \hyperlink{classWombat_1_1MamaStatus}{MamaStatus} \&status, const char $\ast$symbol)=0
+\begin{DoxyCompactList}\small\item\em Invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an unentitled symbol. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_adfc75192ce4b29bc9ba32daaadd62c88}{onGap} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription)
+\begin{DoxyCompactList}\small\item\em Method invoked when a sequence number gap is detected. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_a6405ac3d7129e737429d129dfd90a510}{onDestroy} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription)
+\begin{DoxyCompactList}\small\item\em Method invoked when a subscription has been destroyed through destroyEx. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_a78cb77e1859e1b7b56dcfad135000fe3}{onRecapRequest} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription)
+\begin{DoxyCompactList}\small\item\em Method invoked when a recap is requested upon detecting a sequence number gap. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_ab269bb4f32930dc167b7e0f0f3b188a2}{onMsg} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)=0
+\begin{DoxyCompactList}\small\item\em Invoked when a message arrives. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_a3883b459581434f2d171fd9938eb5d57}{onQuality} (\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} $\ast$subscription, mamaQuality quality, const char $\ast$symbol, short cause, const void $\ast$platformInfo)=0
+\begin{DoxyCompactList}\small\item\em Invoked when the quality of this subscription changes. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_a43dfe37a97f29c7f0e4a98ea119d8cd8}{onCreate} (\hyperlink{classWombat_1_1MamaBasicSubscription}{MamaBasicSubscription} $\ast$subscription)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_ac1fe8bc531ec11df516ef56781d6b10d}{onError} (\hyperlink{classWombat_1_1MamaBasicSubscription}{MamaBasicSubscription} $\ast$subscription, const \hyperlink{classWombat_1_1MamaStatus}{MamaStatus} \&status, const char $\ast$symbol)
+\item 
+virtual void \hyperlink{classWombat_1_1MamaSubscriptionCallback_a1a8180641b743dabe772f78836722be0}{onMsg} (\hyperlink{classWombat_1_1MamaBasicSubscription}{MamaBasicSubscription} $\ast$subscription, \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} \&msg)
+\begin{DoxyCompactList}\small\item\em Invoked when a message arrives. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The message callback interface. Callers provide an object implementing this interface on creating a {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+mls 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_ace64014ad0b2b7d79395a50de562c94b}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!$\sim$MamaSubscriptionCallback@{$\sim$MamaSubscriptionCallback}}
+\index{$\sim$MamaSubscriptionCallback@{$\sim$MamaSubscriptionCallback}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{$\sim$MamaSubscriptionCallback}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaSubscriptionCallback::$\sim$MamaSubscriptionCallback ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_ace64014ad0b2b7d79395a50de562c94b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_a9cdbf8347dcb5110a5f9755c83276fd4}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onCreate ({\bf MamaSubscription} $\ast$ {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_a9cdbf8347dcb5110a5f9755c83276fd4}
+
+
+Method invoked when subscription creation is complete, and before any calls to {\ttfamily onMsg}. Since subscriptions are created asynchronous by throttle, this callback provides the subscription instance after the throttle processes the creation request.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_ab325050a90c83590c31da66114858c44}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onError ({\bf MamaSubscription} $\ast$ {\em subscription}, \/  const {\bf MamaStatus} \& {\em status}, \/  const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_ab325050a90c83590c31da66114858c44}
+
+
+Invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an unentitled symbol. If the status is {\ttfamily MamaMsgStatus.NOT\_\-ENTITTLED} the symbol parameter is the specific unentitled symbol. If the subscription symbol contains wildcards, the subscription may still receive messages for other entitled symbol.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \item[{\em status}]The wombat error code. \item[{\em symbol}]The symbol for NOT\_\-ENTITLED \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_adfc75192ce4b29bc9ba32daaadd62c88}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onGap@{onGap}}
+\index{onGap@{onGap}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onGap}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onGap ({\bf MamaSubscription} $\ast$ {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_adfc75192ce4b29bc9ba32daaadd62c88}
+
+
+Method invoked when a sequence number gap is detected. At this point the topic is considered stale and the subscription will not receive further messages until the feed handler satisfies a recap request.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_a6405ac3d7129e737429d129dfd90a510}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onDestroy@{onDestroy}}
+\index{onDestroy@{onDestroy}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onDestroy}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onDestroy ({\bf MamaSubscription} $\ast$ {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_a6405ac3d7129e737429d129dfd90a510}
+
+
+Method invoked when a subscription has been destroyed through destroyEx. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_a78cb77e1859e1b7b56dcfad135000fe3}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onRecapRequest@{onRecapRequest}}
+\index{onRecapRequest@{onRecapRequest}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onRecapRequest}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onRecapRequest ({\bf MamaSubscription} $\ast$ {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_a78cb77e1859e1b7b56dcfad135000fe3}
+
+
+Method invoked when a recap is requested upon detecting a sequence number gap. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_ab269bb4f32930dc167b7e0f0f3b188a2}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onMsg}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onMsg ({\bf MamaSubscription} $\ast$ {\em subscription}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_ab269bb4f32930dc167b7e0f0f3b188a2}
+
+
+Invoked when a message arrives. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]the {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}}. \item[{\em msg}]The \hyperlink{classWombat_1_1MamaMsg}{MamaMsg} which resulted in this callback being invoked. \end{DoxyParams}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_a3883b459581434f2d171fd9938eb5d57}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onQuality@{onQuality}}
+\index{onQuality@{onQuality}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onQuality}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onQuality ({\bf MamaSubscription} $\ast$ {\em subscription}, \/  mamaQuality {\em quality}, \/  const char $\ast$ {\em symbol}, \/  short {\em cause}, \/  const void $\ast$ {\em platformInfo})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_a3883b459581434f2d171fd9938eb5d57}
+
+
+Invoked when the quality of this subscription changes. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]The subscription. \item[{\em quality}]The new quality: one of the values in the MamaQuality class. \item[{\em symbol}]The symbol for this subscription. \item[{\em cause}]The cause of the quality event \item[{\em platformInfo}]Info associated with the quality event\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+tibrv: provides the char$\ast$ version of the tibrv advisory message. \hypertarget{classWombat_1_1MamaSubscriptionCallback_a43dfe37a97f29c7f0e4a98ea119d8cd8}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onCreate}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onCreate ({\bf MamaBasicSubscription} $\ast$ {\em subscription})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_a43dfe37a97f29c7f0e4a98ea119d8cd8}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_ac1fe8bc531ec11df516ef56781d6b10d}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onError ({\bf MamaBasicSubscription} $\ast$ {\em subscription}, \/  const {\bf MamaStatus} \& {\em status}, \/  const char $\ast$ {\em symbol})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_ac1fe8bc531ec11df516ef56781d6b10d}
+\hypertarget{classWombat_1_1MamaSubscriptionCallback_a1a8180641b743dabe772f78836722be0}{
+\index{Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamaSubscriptionCallback@{Wombat::MamaSubscriptionCallback}}
+\subsubsection[{onMsg}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaSubscriptionCallback::onMsg ({\bf MamaBasicSubscription} $\ast$ {\em subscription}, \/  {\bf MamaMsg} \& {\em msg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamaSubscriptionCallback_a1a8180641b743dabe772f78836722be0}
+
+
+Invoked when a message arrives. 
+\begin{DoxyParams}{Parameters}
+\item[{\em subscription}]the {\ttfamily \hyperlink{classWombat_1_1MamaSubscription}{MamaSubscription}}. \item[{\em msg}]The TibrvMsg. \end{DoxyParams}

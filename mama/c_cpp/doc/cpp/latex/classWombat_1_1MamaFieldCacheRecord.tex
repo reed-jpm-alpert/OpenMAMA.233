@@ -1,0 +1,161 @@
+\hypertarget{classWombat_1_1MamaFieldCacheRecord}{
+\section{Wombat::MamaFieldCacheRecord Class Reference}
+\label{classWombat_1_1MamaFieldCacheRecord}\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+}
+
+
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}} class is a collection of unordered {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} elements.  
+
+
+{\ttfamily \#include $<$MamaFieldCacheRecord.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamaFieldCacheRecord_a75145dcdba920aff38f3bc4b1a4fcda3}{MamaFieldCacheRecord} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheRecord_a967822701415a8d1652cd58a9f1fd33b}{$\sim$MamaFieldCacheRecord} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheRecord_add08406b276baa59a6d9cb874601542e}{create} ()
+\begin{DoxyCompactList}\small\item\em Creates a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}}. \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamaFieldCacheRecord_a206453bd98fe5f534609602f21041f0e}{clear} ()
+\begin{DoxyCompactList}\small\item\em Clear the {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}}. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheRecord_a0f473ab50b75ac75bbdeeb3bbf0ada23}{add} (mama\_\-fid\_\-t fid, mamaFieldType type, const char $\ast$name=NULL)
+\begin{DoxyCompactList}\small\item\em Add and creates a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} to the record. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheRecord_a554576f226821f33a6c8ec3e1421d71b}{add} (const \hyperlink{classWombat_1_1MamaFieldDescriptor}{MamaFieldDescriptor} \&descriptor)
+\begin{DoxyCompactList}\small\item\em Add and creates a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} to the record. \item\end{DoxyCompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheRecord_a9f4ac2fab76927ae0895eb2c2b6cfdb3}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classmama__size__t}{mama\_\-size\_\-t} index) const 
+\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheRecord_ad4a6754e503f14e6bc28690754fb8f38}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classmama__size__t}{mama\_\-size\_\-t} index)
+\item 
+virtual const \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheRecord_a48049a7dd4f0302cb9f8ef406a1e493f}{find} (mama\_\-fid\_\-t fid, const char $\ast$name=NULL) const 
+\begin{DoxyCompactList}\small\item\em Find a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} in the record. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField} \& \hyperlink{classWombat_1_1MamaFieldCacheRecord_a7fa34fa26487e5fc71dc6b41c13cef30}{find} (mama\_\-fid\_\-t fid, const char $\ast$name=NULL)
+\begin{DoxyCompactList}\small\item\em Find a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} in the record. \item\end{DoxyCompactList}\item 
+virtual \hyperlink{classmama__size__t}{mama\_\-size\_\-t} \hyperlink{classWombat_1_1MamaFieldCacheRecord_a61c3ceeeab9bcbd69338bb1398bb4640}{getSize} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of fields present in the record. \item\end{DoxyCompactList}\item 
+virtual mamaFieldCacheRecord \hyperlink{classWombat_1_1MamaFieldCacheRecord_a03798d4fa8f54c2181763ea331a4808d}{getCValue} ()
+\item 
+virtual const mamaFieldCacheRecord \hyperlink{classWombat_1_1MamaFieldCacheRecord_ac112360a7a4862505635b6a235f2a214}{getCValue} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}} class is a collection of unordered {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} elements. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a75145dcdba920aff38f3bc4b1a4fcda3}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!MamaFieldCacheRecord@{MamaFieldCacheRecord}}
+\index{MamaFieldCacheRecord@{MamaFieldCacheRecord}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{MamaFieldCacheRecord}]{\setlength{\rightskip}{0pt plus 5cm}Wombat::MamaFieldCacheRecord::MamaFieldCacheRecord ()}}
+\label{classWombat_1_1MamaFieldCacheRecord_a75145dcdba920aff38f3bc4b1a4fcda3}
+
+
+Constructor. Use {\ttfamily create} to create the actual cache. \hypertarget{classWombat_1_1MamaFieldCacheRecord_a967822701415a8d1652cd58a9f1fd33b}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!$\sim$MamaFieldCacheRecord@{$\sim$MamaFieldCacheRecord}}
+\index{$\sim$MamaFieldCacheRecord@{$\sim$MamaFieldCacheRecord}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{$\sim$MamaFieldCacheRecord}]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::MamaFieldCacheRecord::$\sim$MamaFieldCacheRecord ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a967822701415a8d1652cd58a9f1fd33b}
+
+
+Destructor. This is called automatically when an object is destroyed. This method will clean all the memory allocated. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_add08406b276baa59a6d9cb874601542e}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!create@{create}}
+\index{create@{create}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheRecord::create ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_add08406b276baa59a6d9cb874601542e}
+
+
+Creates a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}}. \hypertarget{classWombat_1_1MamaFieldCacheRecord_a206453bd98fe5f534609602f21041f0e}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::MamaFieldCacheRecord::clear ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a206453bd98fe5f534609602f21041f0e}
+
+
+Clear the {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheRecord}{MamaFieldCacheRecord}}. No fields will be present in the record after this operation. The record is ready to be used, as long as create has been called once. \hypertarget{classWombat_1_1MamaFieldCacheRecord_a0f473ab50b75ac75bbdeeb3bbf0ada23}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!add@{add}}
+\index{add@{add}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheRecord::add (mama\_\-fid\_\-t {\em fid}, \/  mamaFieldType {\em type}, \/  const char $\ast$ {\em name} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a0f473ab50b75ac75bbdeeb3bbf0ada23}
+
+
+Add and creates a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} to the record. The new field is then returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]Field id of the field to create. \item[{\em type}]Field type of the field to create. \item[{\em name}]Name of the field to create. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new field created. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a554576f226821f33a6c8ec3e1421d71b}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!add@{add}}
+\index{add@{add}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheRecord::add (const {\bf MamaFieldDescriptor} \& {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a554576f226821f33a6c8ec3e1421d71b}
+
+
+Add and creates a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} to the record. The new field is then returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]Descriptor of the field to create. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new field created. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a9f4ac2fab76927ae0895eb2c2b6cfdb3}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheRecord::operator\mbox{[}$\,$\mbox{]} ({\bf mama\_\-size\_\-t} {\em index}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a9f4ac2fab76927ae0895eb2c2b6cfdb3}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_ad4a6754e503f14e6bc28690754fb8f38}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheRecord::operator\mbox{[}$\,$\mbox{]} ({\bf mama\_\-size\_\-t} {\em index})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_ad4a6754e503f14e6bc28690754fb8f38}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a48049a7dd4f0302cb9f8ef406a1e493f}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!find@{find}}
+\index{find@{find}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual const {\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheRecord::find (mama\_\-fid\_\-t {\em fid}, \/  const char $\ast$ {\em name} = {\ttfamily NULL}) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a48049a7dd4f0302cb9f8ef406a1e493f}
+
+
+Find a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} in the record. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]Field id of the field to look up. \item[{\em name}]Field name of the field to look up. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field in the record. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a7fa34fa26487e5fc71dc6b41c13cef30}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!find@{find}}
+\index{find@{find}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf MamaFieldCacheField}\& Wombat::MamaFieldCacheRecord::find (mama\_\-fid\_\-t {\em fid}, \/  const char $\ast$ {\em name} = {\ttfamily NULL})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a7fa34fa26487e5fc71dc6b41c13cef30}
+
+
+Find a {\ttfamily \hyperlink{classWombat_1_1MamaFieldCacheField}{MamaFieldCacheField}} in the record. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fid}]Field id of the field to look up. \item[{\em name}]Field name of the field to look up. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field in the record. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a61c3ceeeab9bcbd69338bb1398bb4640}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!getSize@{getSize}}
+\index{getSize@{getSize}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{getSize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf mama\_\-size\_\-t} Wombat::MamaFieldCacheRecord::getSize () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a61c3ceeeab9bcbd69338bb1398bb4640}
+
+
+Return the number of fields present in the record. \begin{DoxyReturn}{Returns}
+Size of the record. 
+\end{DoxyReturn}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_a03798d4fa8f54c2181763ea331a4808d}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual mamaFieldCacheRecord Wombat::MamaFieldCacheRecord::getCValue ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_a03798d4fa8f54c2181763ea331a4808d}
+\hypertarget{classWombat_1_1MamaFieldCacheRecord_ac112360a7a4862505635b6a235f2a214}{
+\index{Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}!getCValue@{getCValue}}
+\index{getCValue@{getCValue}!Wombat::MamaFieldCacheRecord@{Wombat::MamaFieldCacheRecord}}
+\subsubsection[{getCValue}]{\setlength{\rightskip}{0pt plus 5cm}virtual const mamaFieldCacheRecord Wombat::MamaFieldCacheRecord::getCValue () const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamaFieldCacheRecord_ac112360a7a4862505635b6a235f2a214}
