@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MamdaBookAtomicListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookBasicDelta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookBasicDeltaList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookCheckType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookConcreteComplexDelta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookConcreteSimpleDelta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookEntry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookEntryManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookPriceLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookSimpleDelta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderBookWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaQuoteToBookListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mamda\MamdaBookAtomicBookHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBookAtomicGap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBookAtomicLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBookAtomicLevelEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBookAtomicLevelEntryHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBookAtomicLevelHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBookAtomicListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookBasicDelta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookBasicDeltaList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookCheckerHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookCheckType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookClear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookComplexDelta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookConcreteComplexDelta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookConcreteSimpleDelta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookDelta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookDepthFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookEntryFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookEntryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookGap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookPriceLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookSimpleDelta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderBookTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MamdaOrderBookWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteToBookListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

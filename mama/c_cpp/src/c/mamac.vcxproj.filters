@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\playback">
+      <UniqueIdentifier>{8a3f7b0f-e814-47b1-8ea2-99ea621c6f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\playback">
+      <UniqueIdentifier>{f18b39a4-7bd0-4505-8fe5-f27e371c10dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bridge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clientmanageresponder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conflation\connection.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcachefield.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcachefieldimpl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcacheimpl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcacheiterator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcachelist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcachemaparray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcachemap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcacherecord.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\fieldcachevector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="datetime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dictionary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dqpublisher.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dqpublishermanager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dqstrategy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fielddesc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ft.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imagerequest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listenermsgcallback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mama.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mamaStrUtils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conflation\manager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="marketdata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="middleware.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgfield.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgqualifier.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgstatus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgtype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msgutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="price.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="priceimpl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="publisher.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quality.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="queue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="refreshtransport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reservedfields.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="senderId.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conflation\serverconnection.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="servicelevel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceman.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statfields.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statscollector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statsgenerator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statslogger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="statsloggerfields.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="status.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="subscmsgtype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="subscription.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="subscriptiontype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbollist.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbollistmember.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="symbolmapfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="syncresponder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="throttle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timezone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\playbackcapture.c">
+      <Filter>Source Files\playback</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\playbackFileParser.c">
+      <Filter>Source Files\playback</Filter>
+    </ClCompile>
+    <ClCompile Include="playback\playbackpublisher.c">
+      <Filter>Source Files\playback</Filter>
+    </ClCompile>
+    <ClCompile Include="plugin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\clientmanage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clientmanageresponder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\conflation\connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="conflation\connection_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\fieldcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\fieldcachetypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\fieldcacherecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\fieldcacheiterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\fieldcachefield.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcachefieldimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcacheimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcacheiteratorimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcachemap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcachelist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcachemaparray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcacherecordimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fieldcache\fieldcachevector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\datetime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="datetimeimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dictionaryimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\dqpublisher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\dqpublishermanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dqstrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fielddesc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fielddescimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\ft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imagerequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\inbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inboximpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listenermsgcallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\mama.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamainternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamaStrUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\conflation\manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="conflation\manager_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\marketdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\middleware.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\msg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\msgfield.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgfieldimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\msgqualifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\msgstatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\msgtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msgutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="payloadbridge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\price.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="priceimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\publisher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="publisherimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\quality.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queueimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="refreshtransport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\reservedfields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reservedfieldsimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\senderId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\conflation\serverconnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="conflation\serverconnection_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\servicelevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\sourceman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\stat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\statfields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="statinternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\statscollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="statscollectorinternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="statsgeneratorinternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\statslogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\statsloggerfields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\subscmsgtype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\subscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="subscriptionimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\subscriptiontype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\symbollist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\symbollistmember.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\symbollisttypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\symbolmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\symbolmapfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="syncresponder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="throttle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\timezone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\transport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transportimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="playback\playbackcapture.h">
+      <Filter>Header Files\playback</Filter>
+    </ClInclude>
+    <ClInclude Include="playback\playbackFileParser.h">
+      <Filter>Header Files\playback</Filter>
+    </ClInclude>
+    <ClInclude Include="playback\playbackpublisher.h">
+      <Filter>Header Files\playback</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MamdaAuctionFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaAuctionListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaBasicSubscription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaCheckerType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaCommonFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaConcreteBasicEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaCurrencyFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaFieldState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaFundamentalFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaFundamentalListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaLockWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaMultiParticipantManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaMultiSecurityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderImbalanceFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderImbalanceSide.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOrderImbalanceType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaPubStatusFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaPubStatusListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaQuoteChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaQuoteFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaQuoteListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaSecStatusFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaSecStatusListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaSecStatusSymbolSourceAdapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaSecurityStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaSecurityStatusQual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaSubscription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaTradeChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaTradeDirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaTradeExecVenue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaTradeFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaTradeListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaTradeSide.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaUncrossPriceInd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaVersion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mamda\MamdaAuctionFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaAuctionHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaAuctionListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaAuctionRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaAuctionUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBasicEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBasicRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaBasicSubscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCheckerHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCheckerType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCommonFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaConcreteBasicEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCurrencyFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCurrencyHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCurrencyListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCurrencyRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaCurrencyUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaDataException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaErrorListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaFieldState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaFundamentalFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaFundamentalHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaFundamentalListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaFundamentals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaMsgListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaMultiParticipantHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaMultiParticipantManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaMultiSecurityHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaMultiSecurityManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionalConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceSide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOrderImbalanceUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaPubStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaPubStatusFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaPubStatusHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaPubStatusListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQualityListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteClosing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteGap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteOutOfSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuotePossiblyDuplicate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaQuoteUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecStatusFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecStatusHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecStatusListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecStatusRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecStatusSymbolSourceAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecurityStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSecurityStatusQual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSubscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolListFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolListHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolListListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolListRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolListSymbolSourceAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolListUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolSourceAnnounce.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolSourceEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolSourceFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolSourceHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolSourceSymbolList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolStoreHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaSymbolStoreSaveHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeCancelOrError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeClosing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeCorrection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeDirection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeExecVenue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeGap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeOutOfSequence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradePossiblyDuplicate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeRecap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeReport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaTradeSide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaUncrossPriceInd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MamdaUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

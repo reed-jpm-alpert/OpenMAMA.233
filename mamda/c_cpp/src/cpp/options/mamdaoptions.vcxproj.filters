@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MamdaOptionChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionChainListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionChainView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionContract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionContractSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionExchangeUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionExpirationDateSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionExpirationStrikes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionSeriesUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamdaOptionStrikeSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mamda\MamdaOptionAtTheMoneyCompareType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionChain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionChainHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionChainListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionChainView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionChainViewRangeHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionContract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionContractSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionExchangeUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionExpirationDateSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionExpirationStrikes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionSeriesUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionStrikeSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamda\MamdaOptionTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

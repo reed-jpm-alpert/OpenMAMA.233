@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BasicSubscriptionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicWildCardSubscriptionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldDescriptorImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaBasicSubscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaBasicSubscriptionCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaBasicWildCardSubscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaBasicWildCardSubscriptionCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaBridgeCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\conflation\MamaConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\mamacpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mamacppinternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDateTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDictionaryCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDQPublisher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MamaDQPublisherImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDQPublisherManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaDQPublisherManagerCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaFieldDescriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaFt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaInbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaInboxCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaIo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaIoCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaLogFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaMsgField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaMsgFieldIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaMsgQual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaPrice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaPublisher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MamaPublisherImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaQueueEnqueueCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaQueueEventCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaQueueGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaQueueMonitorCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaReservedFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSendCompleteCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\conflation\MamaServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\MamaFieldCacheField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\MamaFieldCacheFieldTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\MamaFieldCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\fieldcache\MamaFieldCacheRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSourceDerivative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSourceGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSourceGroupManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSourceStateChangeCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaStatsCollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSubscription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSubscriptionCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MamaSubscriptionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolListFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolListHandlerTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolListMember.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolMapFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolSourceCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaSymbolStoreSaveCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaTimerCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaTimeZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaTransport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mama\MamaTransportMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgFieldImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="version.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="datetime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaBasicSubscription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaBasicWildCardSubscription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conflation\MamaConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\MamaFieldCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\MamaFieldCacheField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\MamaFieldCacheFieldTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fieldcache\MamaFieldCacheRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mamacpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaDictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaDispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaDQPublisher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaDQPublisherManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaFieldDescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaFt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaInbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaIo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaLogFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaMsg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaMsgField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaMsgQual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaPrice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaPublisher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaQueueGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaReservedFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conflation\MamaServerConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSourceDerivative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSourceGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSourceGroupManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaStatsCollector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSubscription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSymbolList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSymbolListFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSymbolListMember.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaSymbolMapFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaTimeZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaTransport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MamaTransportMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
