@@ -1,0 +1,48 @@
+\hypertarget{classWombat_1_1MamdaMultiSecurityHandler}{
+\section{Wombat::Mamda\-Multi\-Security\-Handler Class Reference}
+\label{classWombat_1_1MamdaMultiSecurityHandler}\index{Wombat::MamdaMultiSecurityHandler@{Wombat::MamdaMultiSecurityHandler}}
+}
+The \hyperlink{classWombat_1_1MamdaMultiSecurityHandler}{Mamda\-Multi\-Security\-Handler} class is an interface that allows a developer to be notified dynamically when securities are added to the list.  
+
+
+{\tt \#include $<$Mamda\-Multi\-Security\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaMultiSecurityHandler_e9facdb0af49b6cf3974c16f0ae2f0df}{on\-Security\-Create} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaMultiSecurityManager}{Mamda\-Multi\-Security\-Manager} \&manager, const char $\ast$security\-Symbol, bool is\-Primary)=0
+\begin{CompactList}\small\item\em Method invoked when the trade and quote information for the security has become available. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaMultiSecurityHandler_a049866a536c746797401f3d41380cf1}{$\sim$Mamda\-Multi\-Security\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamdaMultiSecurityHandler}{Mamda\-Multi\-Security\-Handler} class is an interface that allows a developer to be notified dynamically when securities are added to the list. 
+
+Access to consolidated information (i.e., best bid and offer and consolidated trade info) is also available. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaMultiSecurityHandler_a049866a536c746797401f3d41380cf1}{
+\index{Wombat::MamdaMultiSecurityHandler@{Wombat::Mamda\-Multi\-Security\-Handler}!~MamdaMultiSecurityHandler@{$\sim$MamdaMultiSecurityHandler}}
+\index{~MamdaMultiSecurityHandler@{$\sim$MamdaMultiSecurityHandler}!Wombat::MamdaMultiSecurityHandler@{Wombat::Mamda\-Multi\-Security\-Handler}}
+\subsubsection[$\sim$MamdaMultiSecurityHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Multi\-Security\-Handler::$\sim$Mamda\-Multi\-Security\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiSecurityHandler_a049866a536c746797401f3d41380cf1}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaMultiSecurityHandler_e9facdb0af49b6cf3974c16f0ae2f0df}{
+\index{Wombat::MamdaMultiSecurityHandler@{Wombat::Mamda\-Multi\-Security\-Handler}!onSecurityCreate@{onSecurityCreate}}
+\index{onSecurityCreate@{onSecurityCreate}!Wombat::MamdaMultiSecurityHandler@{Wombat::Mamda\-Multi\-Security\-Handler}}
+\subsubsection[onSecurityCreate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Multi\-Security\-Handler::on\-Security\-Create (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaMultiSecurityManager}{Mamda\-Multi\-Security\-Manager} \& {\em manager}, const char $\ast$ {\em security\-Symbol}, bool {\em is\-Primary})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiSecurityHandler_e9facdb0af49b6cf3974c16f0ae2f0df}
+
+
+Method invoked when the trade and quote information for the security has become available. 
+
+Invoked as a result of an initial image on subscription (assuming initial values are enabled) or if an update is received for a security the \hyperlink{classWombat_1_1MamdaMultiSecurityManager}{Mamda\-Multi\-Security\-Manager} is unaware of (typically for securities which come online intra day and, for which, we have not received an initial value). This method is invoked for participant and consolidated quote or trade information.
+
+is\-Primary is not yet supported! 

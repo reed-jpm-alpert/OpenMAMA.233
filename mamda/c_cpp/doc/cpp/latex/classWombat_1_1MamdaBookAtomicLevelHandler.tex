@@ -1,0 +1,70 @@
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelHandler}{
+\section{Wombat::Mamda\-Book\-Atomic\-Level\-Handler Class Reference}
+\label{classWombat_1_1MamdaBookAtomicLevelHandler}\index{Wombat::MamdaBookAtomicLevelHandler@{Wombat::MamdaBookAtomicLevelHandler}}
+}
+\hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} is an interface for applications that want to have an easy way to handle order book Price Level updates.  
+
+
+{\tt \#include $<$Mamda\-Book\-Atomic\-Level\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler_6963551b1b7a9db1b1a61168a9fdd224}{on\-Book\-Atomic\-Level\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaBookAtomicLevel}{Mamda\-Book\-Atomic\-Level} \&level)=0
+\begin{CompactList}\small\item\em Method invoked when a full refresh of the order book for the security is available. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler_657f1428d6744b3580ca814791d5a0b5}{on\-Book\-Atomic\-Level\-Delta} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaBookAtomicLevel}{Mamda\-Book\-Atomic\-Level} \&level)=0
+\begin{CompactList}\small\item\em Method invoked when an order book delta is reported. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler_462755635d681d8330b3db084532b9c7}{$\sim$Mamda\-Book\-Atomic\-Level\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} is an interface for applications that want to have an easy way to handle order book Price Level updates. 
+
+The interface defines callback methods for different types of order\-Book-related events: order book recaps and updates. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelHandler_462755635d681d8330b3db084532b9c7}{
+\index{Wombat::MamdaBookAtomicLevelHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Handler}!~MamdaBookAtomicLevelHandler@{$\sim$MamdaBookAtomicLevelHandler}}
+\index{~MamdaBookAtomicLevelHandler@{$\sim$MamdaBookAtomicLevelHandler}!Wombat::MamdaBookAtomicLevelHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Handler}}
+\subsubsection[$\sim$MamdaBookAtomicLevelHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Book\-Atomic\-Level\-Handler::$\sim$Mamda\-Book\-Atomic\-Level\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevelHandler_462755635d681d8330b3db084532b9c7}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelHandler_6963551b1b7a9db1b1a61168a9fdd224}{
+\index{Wombat::MamdaBookAtomicLevelHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Handler}!onBookAtomicLevelRecap@{onBookAtomicLevelRecap}}
+\index{onBookAtomicLevelRecap@{onBookAtomicLevelRecap}!Wombat::MamdaBookAtomicLevelHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Handler}}
+\subsubsection[onBookAtomicLevelRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Level\-Handler::on\-Book\-Atomic\-Level\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaBookAtomicLevel}{Mamda\-Book\-Atomic\-Level} \& {\em level})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevelHandler_6963551b1b7a9db1b1a61168a9fdd224}
+
+
+Method invoked when a full refresh of the order book for the security is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling the recap. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em level}]The Price Level recap. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelHandler_657f1428d6744b3580ca814791d5a0b5}{
+\index{Wombat::MamdaBookAtomicLevelHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Handler}!onBookAtomicLevelDelta@{onBookAtomicLevelDelta}}
+\index{onBookAtomicLevelDelta@{onBookAtomicLevelDelta}!Wombat::MamdaBookAtomicLevelHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Handler}}
+\subsubsection[onBookAtomicLevelDelta]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Level\-Handler::on\-Book\-Atomic\-Level\-Delta (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaBookAtomicLevel}{Mamda\-Book\-Atomic\-Level} \& {\em level})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevelHandler_657f1428d6744b3580ca814791d5a0b5}
+
+
+Method invoked when an order book delta is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling the update. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em level}]The Price Level update. \end{description}
+\end{Desc}

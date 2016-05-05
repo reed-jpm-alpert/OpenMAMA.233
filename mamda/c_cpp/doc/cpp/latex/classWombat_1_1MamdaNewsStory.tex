@@ -1,0 +1,342 @@
+\hypertarget{classWombat_1_1MamdaNewsStory}{
+\section{Wombat::Mamda\-News\-Story Class Reference}
+\label{classWombat_1_1MamdaNewsStory}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}
+}
+\hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} represents a complete text of a news story.  
+
+
+{\tt \#include $<$Mamda\-News\-Story.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d3dc26b64a38eb820c4e81106826ed0f5}{NO\_\-STORY} = 0
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6df59713209f835d23a4a0190ed3b7872a}{FULL\_\-STORY} = 1
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d866afc6753bbe803ee90064f27b16029}{FETCHING\_\-STORY} = 2
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6dc9b90512cf65ec3da1f1c94d1c8cc916}{DELAYED\_\-STORY} = 3
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6da7c45aed8f450f8f214fa6a21bd2bdad}{NOT\_\-FOUND} = 4
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d9a01a0950bd67668292e7fa1ec44e3f5}{DELETED} = 5
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d59c70f42395b766ed6e1a0bd7d8ffebb}{EXPIRED} = 6
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d43dd597758083814fe1acd2e024898d8}{UNKNOWN} = 99
+\item 
+enum \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} \{ \par
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d3dc26b64a38eb820c4e81106826ed0f5}{NO\_\-STORY} =  0, 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6df59713209f835d23a4a0190ed3b7872a}{FULL\_\-STORY} =  1, 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d866afc6753bbe803ee90064f27b16029}{FETCHING\_\-STORY} =  2, 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6dc9b90512cf65ec3da1f1c94d1c8cc916}{DELAYED\_\-STORY} =  3, 
+\par
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6da7c45aed8f450f8f214fa6a21bd2bdad}{NOT\_\-FOUND} =  4, 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d9a01a0950bd67668292e7fa1ec44e3f5}{DELETED} =  5, 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d59c70f42395b766ed6e1a0bd7d8ffebb}{EXPIRED} =  6, 
+\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d43dd597758083814fe1acd2e024898d8}{UNKNOWN} =  99
+ \}
+\begin{CompactList}\small\item\em The Status enumeration provides information about the status of the news story and is provided in responses to news story requests. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_4d1184df1fa59738caaeadab8e9baea5}{Mamda\-News\-Story} ()
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaNewsStory_769ee133b8f573427ae490bdeac61f50}{Mamda\-News\-Story} (const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \&copy)
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsStory_deac4e7b52a782e3589b3f31686d4f3f}{$\sim$Mamda\-News\-Story} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \& \hyperlink{classWombat_1_1MamdaNewsStory_f344d607c50491850bc85b8673671801}{operator=} (const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \&rhs)
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStory_df49ed635f59590744796d30a05fc81a}{set\-Story} (const char $\ast$story\-Text, const char $\ast$story\-Id, uint16\_\-t story\-Rev\-Num, \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} story\-Status, const Mama\-Date\-Time \&story\-Time, const Mama\-Date\-Time \&story\-Orig\-Time, const \hyperlink{namespaceWombat_cb354a5fc91d5b728f8f1255aae3e196}{Mamda\-News\-Headline\-Id} $\ast$headlines, mama\_\-size\_\-t num\-Headlines)
+\begin{CompactList}\small\item\em Set all of the news story attributes. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStory_f1488165cc643bbb22f25c4cb663b4fc}{set\-News\-Story\-Text} (const char $\ast$story\-Text)
+\begin{CompactList}\small\item\em Set the news story text. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaNewsStory_e68839ca0ed6aff2d7385400a59444c1}{get\-News\-Story\-Text} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStory_6cae68131977f93f240a4fcb336063b4}{set\-News\-Story\-Id} (\hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} story\-Id)
+\begin{CompactList}\small\item\em Set the news story id. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} \hyperlink{classWombat_1_1MamdaNewsStory_e997764d03f29d1465a395497d68811b}{get\-News\-Story\-Id} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStory_2e6e16aff657f33fbbb789a72eaa553e}{set\-News\-Story\-Rev\-Number} (uint16\_\-t story\-Rev\-Num)
+\begin{CompactList}\small\item\em Set the story revision number. \item\end{CompactList}\item 
+virtual uint16\_\-t \hyperlink{classWombat_1_1MamdaNewsStory_8d9ab8e6dad0a9d90d2ea6bb719ab28c}{get\-News\-Story\-Rev\-Number} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStory_7c13140bbd6ccacd7ef94dcd657ca07b}{set\-Status} (\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} status)
+\begin{CompactList}\small\item\em Set the story status. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} \hyperlink{classWombat_1_1MamdaNewsStory_e8ae79512f3fbf9328f5a8a71db10aba}{get\-Status} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaNewsStory_43d2330b3a2719ff048c789c5dae5023}{get\-Story\-Time} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaNewsStory_c71d0f49e28e1a631efd0a48506e02ba}{get\-Orig\-Story\-Time} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStory_754f3330dc60b7607954fca775fcc6db}{get\-Headlines} (const \hyperlink{namespaceWombat_cb354a5fc91d5b728f8f1255aae3e196}{Mamda\-News\-Headline\-Id} $\ast$\&headlines, mama\_\-size\_\-t \&num\-Headlines) const 
+\item 
+void \hyperlink{classWombat_1_1MamdaNewsStory_4e9e643b30eb88c77f2e8c2a38c189be}{set\-Subsc\-Info} (Mama\-Queue $\ast$queue, Mama\-Source $\ast$source)
+\item 
+Mama\-Queue $\ast$ \hyperlink{classWombat_1_1MamdaNewsStory_20c50ea2ba2a142f047da1971bbc3e25}{get\-Queue} () const 
+\item 
+Mama\-Source $\ast$ \hyperlink{classWombat_1_1MamdaNewsStory_3078ae43414bf47490f7e0a15c489d2b}{get\-Source} () const 
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} \hyperlink{classWombat_1_1MamdaNewsStory_801fa0d5802139ab91e348b3935d10fa}{to\-Status} (const char $\ast$str\-Val)
+\begin{CompactList}\small\item\em Convert a string representation of a Status to the enumerated representation. \item\end{CompactList}\item 
+static const char $\ast$ \hyperlink{classWombat_1_1MamdaNewsStory_8067357e141e25f851e7a383ae5da62e}{to\-String} (\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} status)
+\begin{CompactList}\small\item\em Convert an enumerated representation of a Status to a string representation. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} represents a complete text of a news story. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!Status@{Status}}
+\index{Status@{Status}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[Status]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Wombat::Mamda\-News\-Story::Status}}}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}
+
+
+The Status enumeration provides information about the status of the news story and is provided in responses to news story requests. 
+
+NO\_\-STORY indicates that there is currently no story for the headline. This may occur for feeds that provide \char`\"{}alert\char`\"{} headlines, either as the only headline or as a precursor to a full story.
+
+FULL\_\-STORY indicates that the complete story text is being provided in the current callback.
+
+FETCHING\_\-STORY indicates that the story is currently being fetched by the publisher. This is a temporary status. An additional callback will automatically be invoked when the full story is available.
+
+DELAYED\_\-STORY indicates that the story is not currently available but is expected at some time in the future. No additional callback will be automatically invoked.
+
+NOT\_\-FOUND indicates that the publisher does not currently have a story for this headline and cannot determine whether a story will arrive for the headline. No additional callback will be automatically invoked.
+
+UNKNOWN indicates an unknown condition (should not happen). \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{NO_STORY@{NO\_\-STORY}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!NO_STORY@{NO\_\-STORY}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d3dc26b64a38eb820c4e81106826ed0f5}{
+NO\_\-STORY}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d3dc26b64a38eb820c4e81106826ed0f5}
+}]\index{FULL_STORY@{FULL\_\-STORY}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!FULL_STORY@{FULL\_\-STORY}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6df59713209f835d23a4a0190ed3b7872a}{
+FULL\_\-STORY}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6df59713209f835d23a4a0190ed3b7872a}
+}]\index{FETCHING_STORY@{FETCHING\_\-STORY}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!FETCHING_STORY@{FETCHING\_\-STORY}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d866afc6753bbe803ee90064f27b16029}{
+FETCHING\_\-STORY}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d866afc6753bbe803ee90064f27b16029}
+}]\index{DELAYED_STORY@{DELAYED\_\-STORY}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!DELAYED_STORY@{DELAYED\_\-STORY}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6dc9b90512cf65ec3da1f1c94d1c8cc916}{
+DELAYED\_\-STORY}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6dc9b90512cf65ec3da1f1c94d1c8cc916}
+}]\index{NOT_FOUND@{NOT\_\-FOUND}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!NOT_FOUND@{NOT\_\-FOUND}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6da7c45aed8f450f8f214fa6a21bd2bdad}{
+NOT\_\-FOUND}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6da7c45aed8f450f8f214fa6a21bd2bdad}
+}]\index{DELETED@{DELETED}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!DELETED@{DELETED}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d9a01a0950bd67668292e7fa1ec44e3f5}{
+DELETED}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d9a01a0950bd67668292e7fa1ec44e3f5}
+}]\index{EXPIRED@{EXPIRED}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!EXPIRED@{EXPIRED}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d59c70f42395b766ed6e1a0bd7d8ffebb}{
+EXPIRED}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d59c70f42395b766ed6e1a0bd7d8ffebb}
+}]\index{UNKNOWN@{UNKNOWN}!Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}}\index{Wombat::MamdaNewsStory@{Wombat::MamdaNewsStory}!UNKNOWN@{UNKNOWN}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d43dd597758083814fe1acd2e024898d8}{
+UNKNOWN}
+\label{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d43dd597758083814fe1acd2e024898d8}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaNewsStory_4d1184df1fa59738caaeadab8e9baea5}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!MamdaNewsStory@{MamdaNewsStory}}
+\index{MamdaNewsStory@{MamdaNewsStory}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[MamdaNewsStory]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-News\-Story::Mamda\-News\-Story ()}}
+\label{classWombat_1_1MamdaNewsStory_4d1184df1fa59738caaeadab8e9baea5}
+
+
+Default constructor. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_769ee133b8f573427ae490bdeac61f50}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!MamdaNewsStory@{MamdaNewsStory}}
+\index{MamdaNewsStory@{MamdaNewsStory}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[MamdaNewsStory]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-News\-Story::Mamda\-News\-Story (const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \& {\em copy})}}
+\label{classWombat_1_1MamdaNewsStory_769ee133b8f573427ae490bdeac61f50}
+
+
+Copy constructor. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_deac4e7b52a782e3589b3f31686d4f3f}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!~MamdaNewsStory@{$\sim$MamdaNewsStory}}
+\index{~MamdaNewsStory@{$\sim$MamdaNewsStory}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[$\sim$MamdaNewsStory]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-News\-Story::$\sim$Mamda\-News\-Story ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_deac4e7b52a782e3589b3f31686d4f3f}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaNewsStory_f344d607c50491850bc85b8673671801}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story}\& Wombat::Mamda\-News\-Story::operator= (const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \& {\em rhs})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_f344d607c50491850bc85b8673671801}
+
+
+Assignment operator. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_df49ed635f59590744796d30a05fc81a}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!setStory@{setStory}}
+\index{setStory@{setStory}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[setStory]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story::set\-Story (const char $\ast$ {\em story\-Text}, const char $\ast$ {\em story\-Id}, uint16\_\-t {\em story\-Rev\-Num}, \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} {\em story\-Status}, const Mama\-Date\-Time \& {\em story\-Time}, const Mama\-Date\-Time \& {\em story\-Orig\-Time}, const \hyperlink{namespaceWombat_cb354a5fc91d5b728f8f1255aae3e196}{Mamda\-News\-Headline\-Id} $\ast$ {\em headlines}, mama\_\-size\_\-t {\em num\-Headlines})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_df49ed635f59590744796d30a05fc81a}
+
+
+Set all of the news story attributes. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_f1488165cc643bbb22f25c4cb663b4fc}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!setNewsStoryText@{setNewsStoryText}}
+\index{setNewsStoryText@{setNewsStoryText}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[setNewsStoryText]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story::set\-News\-Story\-Text (const char $\ast$ {\em story\-Text})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_f1488165cc643bbb22f25c4cb663b4fc}
+
+
+Set the news story text. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_e68839ca0ed6aff2d7385400a59444c1}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getNewsStoryText@{getNewsStoryText}}
+\index{getNewsStoryText@{getNewsStoryText}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getNewsStoryText]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-News\-Story::get\-News\-Story\-Text () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_e68839ca0ed6aff2d7385400a59444c1}
+
+
+\begin{Desc}
+\item[Returns:]The text of the story. \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_6cae68131977f93f240a4fcb336063b4}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!setNewsStoryId@{setNewsStoryId}}
+\index{setNewsStoryId@{setNewsStoryId}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[setNewsStoryId]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story::set\-News\-Story\-Id (\hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} {\em story\-Id})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_6cae68131977f93f240a4fcb336063b4}
+
+
+Set the news story id. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_e997764d03f29d1465a395497d68811b}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getNewsStoryId@{getNewsStoryId}}
+\index{getNewsStoryId@{getNewsStoryId}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getNewsStoryId]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} Wombat::Mamda\-News\-Story::get\-News\-Story\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_e997764d03f29d1465a395497d68811b}
+
+
+\begin{Desc}
+\item[Returns:]The unique (for the data source) story ID for this news story. \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_2e6e16aff657f33fbbb789a72eaa553e}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!setNewsStoryRevNumber@{setNewsStoryRevNumber}}
+\index{setNewsStoryRevNumber@{setNewsStoryRevNumber}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[setNewsStoryRevNumber]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story::set\-News\-Story\-Rev\-Number (uint16\_\-t {\em story\-Rev\-Num})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_2e6e16aff657f33fbbb789a72eaa553e}
+
+
+Set the story revision number. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_8d9ab8e6dad0a9d90d2ea6bb719ab28c}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getNewsStoryRevNumber@{getNewsStoryRevNumber}}
+\index{getNewsStoryRevNumber@{getNewsStoryRevNumber}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getNewsStoryRevNumber]{\setlength{\rightskip}{0pt plus 5cm}virtual uint16\_\-t Wombat::Mamda\-News\-Story::get\-News\-Story\-Rev\-Number () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_8d9ab8e6dad0a9d90d2ea6bb719ab28c}
+
+
+\begin{Desc}
+\item[Returns:]The revision number. Note: the value returned is zero if the data source does not provide revision numbers. \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_7c13140bbd6ccacd7ef94dcd657ca07b}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[setStatus]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story::set\-Status (\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} {\em status})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_7c13140bbd6ccacd7ef94dcd657ca07b}
+
+
+Set the story status. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_e8ae79512f3fbf9328f5a8a71db10aba}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getStatus]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} Wombat::Mamda\-News\-Story::get\-Status () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_e8ae79512f3fbf9328f5a8a71db10aba}
+
+
+\begin{Desc}
+\item[Returns:]The story status. \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_43d2330b3a2719ff048c789c5dae5023}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getStoryTime@{getStoryTime}}
+\index{getStoryTime@{getStoryTime}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getStoryTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-News\-Story::get\-Story\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_43d2330b3a2719ff048c789c5dae5023}
+
+
+\begin{Desc}
+\item[Returns:]The latest story update time (e.g. time of correction). \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_c71d0f49e28e1a631efd0a48506e02ba}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getOrigStoryTime@{getOrigStoryTime}}
+\index{getOrigStoryTime@{getOrigStoryTime}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getOrigStoryTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-News\-Story::get\-Orig\-Story\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_c71d0f49e28e1a631efd0a48506e02ba}
+
+
+\begin{Desc}
+\item[Returns:]The original story publish time. \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_754f3330dc60b7607954fca775fcc6db}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getHeadlines@{getHeadlines}}
+\index{getHeadlines@{getHeadlines}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getHeadlines]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story::get\-Headlines (const \hyperlink{namespaceWombat_cb354a5fc91d5b728f8f1255aae3e196}{Mamda\-News\-Headline\-Id} $\ast$\& {\em headlines}, mama\_\-size\_\-t \& {\em num\-Headlines}) const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_754f3330dc60b7607954fca775fcc6db}
+
+
+\begin{Desc}
+\item[Returns:]All of the headline IDs associated with this news story. \end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsStory_801fa0d5802139ab91e348b3935d10fa}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!toStatus@{toStatus}}
+\index{toStatus@{toStatus}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[toStatus]{\setlength{\rightskip}{0pt plus 5cm}static \hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} Wombat::Mamda\-News\-Story::to\-Status (const char $\ast$ {\em str\-Val})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_801fa0d5802139ab91e348b3935d10fa}
+
+
+Convert a string representation of a Status to the enumerated representation. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_8067357e141e25f851e7a383ae5da62e}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!toString@{toString}}
+\index{toString@{toString}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[toString]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ Wombat::Mamda\-News\-Story::to\-String (\hyperlink{classWombat_1_1MamdaNewsStory_25ee81ce6b01be03a95ab954acdb1e6d}{Status} {\em status})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStory_8067357e141e25f851e7a383ae5da62e}
+
+
+Convert an enumerated representation of a Status to a string representation. 
+
+\hypertarget{classWombat_1_1MamdaNewsStory_4e9e643b30eb88c77f2e8c2a38c189be}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!setSubscInfo@{setSubscInfo}}
+\index{setSubscInfo@{setSubscInfo}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[setSubscInfo]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Story::set\-Subsc\-Info (Mama\-Queue $\ast$ {\em queue}, Mama\-Source $\ast$ {\em source})}}
+\label{classWombat_1_1MamdaNewsStory_4e9e643b30eb88c77f2e8c2a38c189be}
+
+
+\hypertarget{classWombat_1_1MamdaNewsStory_20c50ea2ba2a142f047da1971bbc3e25}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getQueue@{getQueue}}
+\index{getQueue@{getQueue}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getQueue]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Queue$\ast$ Wombat::Mamda\-News\-Story::get\-Queue () const}}
+\label{classWombat_1_1MamdaNewsStory_20c50ea2ba2a142f047da1971bbc3e25}
+
+
+\hypertarget{classWombat_1_1MamdaNewsStory_3078ae43414bf47490f7e0a15c489d2b}{
+\index{Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}!getSource@{getSource}}
+\index{getSource@{getSource}!Wombat::MamdaNewsStory@{Wombat::Mamda\-News\-Story}}
+\subsubsection[getSource]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Source$\ast$ Wombat::Mamda\-News\-Story::get\-Source () const}}
+\label{classWombat_1_1MamdaNewsStory_3078ae43414bf47490f7e0a15c489d2b}
+
+

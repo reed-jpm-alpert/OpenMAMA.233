@@ -1,0 +1,135 @@
+\hypertarget{classWombat_1_1MamdaOrderBookEntryManager}{
+\section{Wombat::Mamda\-Order\-Book\-Entry\-Manager Class Reference}
+\label{classWombat_1_1MamdaOrderBookEntryManager}\index{Wombat::MamdaOrderBookEntryManager@{Wombat::MamdaOrderBookEntryManager}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} is a class that provides a global order book lookup service, matching entry IDs that are unique across a set of order books.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Entry\-Manager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntryManager_5d742804d0e37c45f5b3ccd710726823}{Mamda\-Order\-Book\-Entry\-Manager} (mama\_\-u32\_\-t approx\-Count)
+\begin{CompactList}\small\item\em Default constructor. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntryManager_7716971985e070a4542bdb0258a7a26f}{$\sim$Mamda\-Order\-Book\-Entry\-Manager} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_04f7889c0dc6c0526e2ba60822d80497}{clear} ()
+\begin{CompactList}\small\item\em Clear all entries from the manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_25e04f50ab6d5f5e24e5fd9d43f5ff27}{clear} (const char $\ast$symbol)
+\begin{CompactList}\small\item\em Clear all entries for a particular symbol from the manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_719fcdc67e4e6c34285ad7608138ca3d}{add\-Entry} (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$entry)
+\begin{CompactList}\small\item\em Add an entry to the manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_497e2518466b4b2c9919cdd9a6c0a742}{add\-Entry} (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$entry, const char $\ast$entry\-Id)
+\begin{CompactList}\small\item\em Add an entry to the manager using a specific entry ID, which may be different from the entry's entry ID. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_e718aadca369ac8556ebc8c6f84a5c22}{find\-Entry} (const char $\ast$entry\-Id, bool must\-Exist)
+\begin{CompactList}\small\item\em Find an entry in the manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_76d6e0eddbcd6c44eaf3e16402df0343}{remove\-Entry} (const char $\ast$entry\-Id)
+\begin{CompactList}\small\item\em Remove an entry from the manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_fe3edb292b8057ceeb7d1afe1c4a60b7}{remove\-Entry} (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$entry)
+\begin{CompactList}\small\item\em Remove an entry from the manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntryManager_58202cded81c490e26550eafc7f81db7}{dump} (std::ostream \&output) const 
+\begin{CompactList}\small\item\em Dump (print) all of the entries in this manager to the output stream. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} is a class that provides a global order book lookup service, matching entry IDs that are unique across a set of order books. 
+
+Some data sources do not provide a symbol when sending updated or deletions for order book entries. The primary purpose of this class is to return access to the actual order book entry represented by a unique entry ID and, therefore, also (indirectly, via methods available from the book entry object) the the order book itself. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookEntryManager_5d742804d0e37c45f5b3ccd710726823}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!MamdaOrderBookEntryManager@{MamdaOrderBookEntryManager}}
+\index{MamdaOrderBookEntryManager@{MamdaOrderBookEntryManager}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[MamdaOrderBookEntryManager]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Entry\-Manager::Mamda\-Order\-Book\-Entry\-Manager (mama\_\-u32\_\-t {\em approx\-Count})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_5d742804d0e37c45f5b3ccd710726823}
+
+
+Default constructor. 
+
+Create an empty order book entry manager. \hypertarget{classWombat_1_1MamdaOrderBookEntryManager_7716971985e070a4542bdb0258a7a26f}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!~MamdaOrderBookEntryManager@{$\sim$MamdaOrderBookEntryManager}}
+\index{~MamdaOrderBookEntryManager@{$\sim$MamdaOrderBookEntryManager}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[$\sim$MamdaOrderBookEntryManager]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Entry\-Manager::$\sim$Mamda\-Order\-Book\-Entry\-Manager ()}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_7716971985e070a4542bdb0258a7a26f}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookEntryManager_04f7889c0dc6c0526e2ba60822d80497}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[clear]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::clear ()}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_04f7889c0dc6c0526e2ba60822d80497}
+
+
+Clear all entries from the manager. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntryManager_25e04f50ab6d5f5e24e5fd9d43f5ff27}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[clear]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::clear (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_25e04f50ab6d5f5e24e5fd9d43f5ff27}
+
+
+Clear all entries for a particular symbol from the manager. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntryManager_719fcdc67e4e6c34285ad7608138ca3d}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!addEntry@{addEntry}}
+\index{addEntry@{addEntry}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[addEntry]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::add\-Entry (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ {\em entry})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_719fcdc67e4e6c34285ad7608138ca3d}
+
+
+Add an entry to the manager. 
+
+This method may throw a \hyperlink{classWombat_1_1MamdaOrderBookDuplicateEntry}{Mamda\-Order\-Book\-Duplicate\-Entry} exception. \hypertarget{classWombat_1_1MamdaOrderBookEntryManager_497e2518466b4b2c9919cdd9a6c0a742}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!addEntry@{addEntry}}
+\index{addEntry@{addEntry}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[addEntry]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::add\-Entry (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ {\em entry}, const char $\ast$ {\em entry\-Id})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_497e2518466b4b2c9919cdd9a6c0a742}
+
+
+Add an entry to the manager using a specific entry ID, which may be different from the entry's entry ID. 
+
+This method may throw a \hyperlink{classWombat_1_1MamdaOrderBookDuplicateEntry}{Mamda\-Order\-Book\-Duplicate\-Entry} exception. \hypertarget{classWombat_1_1MamdaOrderBookEntryManager_e718aadca369ac8556ebc8c6f84a5c22}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!findEntry@{findEntry}}
+\index{findEntry@{findEntry}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[findEntry]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry}$\ast$ Wombat::Mamda\-Order\-Book\-Entry\-Manager::find\-Entry (const char $\ast$ {\em entry\-Id}, bool {\em must\-Exist})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_e718aadca369ac8556ebc8c6f84a5c22}
+
+
+Find an entry in the manager. 
+
+If no entry matches the unique entry ID and \char`\"{}must\-Exist\char`\"{} is true then a \hyperlink{classWombat_1_1MamdaOrderBookMissingEntry}{Mamda\-Order\-Book\-Missing\-Entry} exception is thrown, otherwise it returns NULL. \hypertarget{classWombat_1_1MamdaOrderBookEntryManager_76d6e0eddbcd6c44eaf3e16402df0343}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!removeEntry@{removeEntry}}
+\index{removeEntry@{removeEntry}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[removeEntry]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::remove\-Entry (const char $\ast$ {\em entry\-Id})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_76d6e0eddbcd6c44eaf3e16402df0343}
+
+
+Remove an entry from the manager. 
+
+This method does not actually delete the \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} object itself. \hypertarget{classWombat_1_1MamdaOrderBookEntryManager_fe3edb292b8057ceeb7d1afe1c4a60b7}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!removeEntry@{removeEntry}}
+\index{removeEntry@{removeEntry}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[removeEntry]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::remove\-Entry (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ {\em entry})}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_fe3edb292b8057ceeb7d1afe1c4a60b7}
+
+
+Remove an entry from the manager. 
+
+This method does not actually delete the \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} object itself. \hypertarget{classWombat_1_1MamdaOrderBookEntryManager_58202cded81c490e26550eafc7f81db7}{
+\index{Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}!dump@{dump}}
+\index{dump@{dump}!Wombat::MamdaOrderBookEntryManager@{Wombat::Mamda\-Order\-Book\-Entry\-Manager}}
+\subsubsection[dump]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry\-Manager::dump (std::ostream \& {\em output}) const}}
+\label{classWombat_1_1MamdaOrderBookEntryManager_58202cded81c490e26550eafc7f81db7}
+
+
+Dump (print) all of the entries in this manager to the output stream. 
+

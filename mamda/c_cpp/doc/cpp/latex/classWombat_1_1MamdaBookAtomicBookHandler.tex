@@ -1,0 +1,102 @@
+\hypertarget{classWombat_1_1MamdaBookAtomicBookHandler}{
+\section{Wombat::Mamda\-Book\-Atomic\-Book\-Handler Class Reference}
+\label{classWombat_1_1MamdaBookAtomicBookHandler}\index{Wombat::MamdaBookAtomicBookHandler@{Wombat::MamdaBookAtomicBookHandler}}
+}
+\hyperlink{classWombat_1_1MamdaBookAtomicBookHandler}{Mamda\-Book\-Atomic\-Book\-Handler} is an interface for applications that need to know when a \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} finishes processing a single book update.  
+
+
+{\tt \#include $<$Mamda\-Book\-Atomic\-Book\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicBookHandler_5a895e439d85c872efd611e0c224fe3b}{on\-Book\-Atomic\-Begin\-Book} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, bool is\-Recap)=0
+\begin{CompactList}\small\item\em Method invoked before we start processing the first level in a message. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicBookHandler_5a19d0ed3fae6747b13cbf3789456dab}{on\-Book\-Atomic\-End\-Book} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener)=0
+\begin{CompactList}\small\item\em Method invoked when we stop processing the last level in a message. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicBookHandler_8afec13e558087d9b3ef2deae8ec7eff}{on\-Book\-Atomic\-Clear} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, const Mama\-Msg \&msg)=0
+\begin{CompactList}\small\item\em Method invoked when an order book is cleared. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicBookHandler_cbcf3035872b8a2c22bc61adf2e4e491}{on\-Book\-Atomic\-Gap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaBookAtomicGap}{Mamda\-Book\-Atomic\-Gap} \&event)=0
+\begin{CompactList}\small\item\em Method invoked when a gap in order\-Book reports is discovered. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaBookAtomicBookHandler_91dc42d1b4fad75fd1322e12b07d0f41}{$\sim$Mamda\-Book\-Atomic\-Book\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaBookAtomicBookHandler}{Mamda\-Book\-Atomic\-Book\-Handler} is an interface for applications that need to know when a \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} finishes processing a single book update. 
+
+This may be useful for applications that wish to destroy the subscription from a callback as the subscription can only be destroyed after the message processing is complete. Furthermore, it allows applications to determine when to clear the book when a recap arrives. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicBookHandler_91dc42d1b4fad75fd1322e12b07d0f41}{
+\index{Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}!~MamdaBookAtomicBookHandler@{$\sim$MamdaBookAtomicBookHandler}}
+\index{~MamdaBookAtomicBookHandler@{$\sim$MamdaBookAtomicBookHandler}!Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}}
+\subsubsection[$\sim$MamdaBookAtomicBookHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Book\-Atomic\-Book\-Handler::$\sim$Mamda\-Book\-Atomic\-Book\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicBookHandler_91dc42d1b4fad75fd1322e12b07d0f41}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicBookHandler_5a895e439d85c872efd611e0c224fe3b}{
+\index{Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}!onBookAtomicBeginBook@{onBookAtomicBeginBook}}
+\index{onBookAtomicBeginBook@{onBookAtomicBeginBook}!Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}}
+\subsubsection[onBookAtomicBeginBook]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Book\-Handler::on\-Book\-Atomic\-Begin\-Book (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, bool {\em is\-Recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicBookHandler_5a895e439d85c872efd611e0c224fe3b}
+
+
+Method invoked before we start processing the first level in a message. 
+
+The book should be cleared when is\-Recap == true.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling recaps/updates. \item[{\em is\-Recap}]Whether the first update was a recap. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaBookAtomicBookHandler_5a19d0ed3fae6747b13cbf3789456dab}{
+\index{Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}!onBookAtomicEndBook@{onBookAtomicEndBook}}
+\index{onBookAtomicEndBook@{onBookAtomicEndBook}!Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}}
+\subsubsection[onBookAtomicEndBook]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Book\-Handler::on\-Book\-Atomic\-End\-Book (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicBookHandler_5a19d0ed3fae6747b13cbf3789456dab}
+
+
+Method invoked when we stop processing the last level in a message. 
+
+We invoke this method after the last entry for the level gets processed. The subscription may be destroyed from this callback.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling recaps/updates. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaBookAtomicBookHandler_8afec13e558087d9b3ef2deae8ec7eff}{
+\index{Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}!onBookAtomicClear@{onBookAtomicClear}}
+\index{onBookAtomicClear@{onBookAtomicClear}!Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}}
+\subsubsection[onBookAtomicClear]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Book\-Handler::on\-Book\-Atomic\-Clear (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicBookHandler_8afec13e558087d9b3ef2deae8ec7eff}
+
+
+Method invoked when an order book is cleared. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling recaps/updates. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaBookAtomicBookHandler_cbcf3035872b8a2c22bc61adf2e4e491}{
+\index{Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}!onBookAtomicGap@{onBookAtomicGap}}
+\index{onBookAtomicGap@{onBookAtomicGap}!Wombat::MamdaBookAtomicBookHandler@{Wombat::Mamda\-Book\-Atomic\-Book\-Handler}}
+\subsubsection[onBookAtomicGap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Book\-Handler::on\-Book\-Atomic\-Gap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaBookAtomicGap}{Mamda\-Book\-Atomic\-Gap} \& {\em event})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicBookHandler_cbcf3035872b8a2c22bc61adf2e4e491}
+
+
+Method invoked when a gap in order\-Book reports is discovered. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling recaps/updates. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]The gap value object. \end{description}
+\end{Desc}

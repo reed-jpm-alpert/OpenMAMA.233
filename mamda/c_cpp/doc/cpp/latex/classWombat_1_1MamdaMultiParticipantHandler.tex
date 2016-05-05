@@ -1,0 +1,59 @@
+\hypertarget{classWombat_1_1MamdaMultiParticipantHandler}{
+\section{Wombat::Mamda\-Multi\-Participant\-Handler Class Reference}
+\label{classWombat_1_1MamdaMultiParticipantHandler}\index{Wombat::MamdaMultiParticipantHandler@{Wombat::MamdaMultiParticipantHandler}}
+}
+The \hyperlink{classWombat_1_1MamdaMultiParticipantHandler}{Mamda\-Multi\-Participant\-Handler} class is an interface that allows a developer to be notified dynamically when participants are added to the list.  
+
+
+{\tt \#include $<$Mamda\-Multi\-Participant\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaMultiParticipantHandler_6882729b5fea8d62996e3c1de7f1d2f7}{on\-Consolidated\-Create} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} \&manager)=0
+\begin{CompactList}\small\item\em Method invoked when the consolidated trade and BBO quote information for the security has become available. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaMultiParticipantHandler_da40bbe1aa0fe168feb193aa8f2e8cfd}{on\-Participant\-Create} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} \&manager, const char $\ast$particpant\-Id, bool is\-Primary)=0
+\begin{CompactList}\small\item\em Method invoked when the trade and quote information for a participant has become available for the security. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaMultiParticipantHandler_1befa1fe7f6b06f14aa20c9fddecbe41}{$\sim$Mamda\-Multi\-Participant\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classWombat_1_1MamdaMultiParticipantHandler}{Mamda\-Multi\-Participant\-Handler} class is an interface that allows a developer to be notified dynamically when participants are added to the list. 
+
+This is useful for handling information such as NYSE, AMEX and NASDAQ listed securities (including NQDS). Access to consolidated information (i.e., best bid and offer and consolidated trade info) is also available.
+
+Note that any actions to register per-participant or consolidated listeners can be added up front (and this callback omitted or left empty) if the participant IDs are known beforehand. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaMultiParticipantHandler_1befa1fe7f6b06f14aa20c9fddecbe41}{
+\index{Wombat::MamdaMultiParticipantHandler@{Wombat::Mamda\-Multi\-Participant\-Handler}!~MamdaMultiParticipantHandler@{$\sim$MamdaMultiParticipantHandler}}
+\index{~MamdaMultiParticipantHandler@{$\sim$MamdaMultiParticipantHandler}!Wombat::MamdaMultiParticipantHandler@{Wombat::Mamda\-Multi\-Participant\-Handler}}
+\subsubsection[$\sim$MamdaMultiParticipantHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Multi\-Participant\-Handler::$\sim$Mamda\-Multi\-Participant\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiParticipantHandler_1befa1fe7f6b06f14aa20c9fddecbe41}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaMultiParticipantHandler_6882729b5fea8d62996e3c1de7f1d2f7}{
+\index{Wombat::MamdaMultiParticipantHandler@{Wombat::Mamda\-Multi\-Participant\-Handler}!onConsolidatedCreate@{onConsolidatedCreate}}
+\index{onConsolidatedCreate@{onConsolidatedCreate}!Wombat::MamdaMultiParticipantHandler@{Wombat::Mamda\-Multi\-Participant\-Handler}}
+\subsubsection[onConsolidatedCreate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Multi\-Participant\-Handler::on\-Consolidated\-Create (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} \& {\em manager})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiParticipantHandler_6882729b5fea8d62996e3c1de7f1d2f7}
+
+
+Method invoked when the consolidated trade and BBO quote information for the security has become available. 
+
+This method is invoked only if there is BBO or consolidated trade information available. \hypertarget{classWombat_1_1MamdaMultiParticipantHandler_da40bbe1aa0fe168feb193aa8f2e8cfd}{
+\index{Wombat::MamdaMultiParticipantHandler@{Wombat::Mamda\-Multi\-Participant\-Handler}!onParticipantCreate@{onParticipantCreate}}
+\index{onParticipantCreate@{onParticipantCreate}!Wombat::MamdaMultiParticipantHandler@{Wombat::Mamda\-Multi\-Participant\-Handler}}
+\subsubsection[onParticipantCreate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Multi\-Participant\-Handler::on\-Participant\-Create (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} \& {\em manager}, const char $\ast$ {\em particpant\-Id}, bool {\em is\-Primary})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiParticipantHandler_da40bbe1aa0fe168feb193aa8f2e8cfd}
+
+
+Method invoked when the trade and quote information for a participant has become available for the security. 
+
+This method is invoked only if there is participant quote or trade information available. is\-Primary is not yet supported! 

@@ -1,0 +1,69 @@
+\hypertarget{classWombat_1_1MamdaBookAtomicGap}{
+\section{Wombat::Mamda\-Book\-Atomic\-Gap Class Reference}
+\label{classWombat_1_1MamdaBookAtomicGap}\index{Wombat::MamdaBookAtomicGap@{Wombat::MamdaBookAtomicGap}}
+}
+\hyperlink{classWombat_1_1MamdaBookAtomicGap}{Mamda\-Book\-Atomic\-Gap} is an interface that provides access to order book atomic update gap related fields.  
+
+
+{\tt \#include $<$Mamda\-Book\-Atomic\-Gap.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Book\-Atomic\-Gap::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaBookAtomicGap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicGap_8023460971323b5c43af54d8a39592e2}{get\-Begin\-Gap\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em The starting number of a detected sequence number gap in order book updates from the feedhandler. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicGap_54152f40fa9bc51cb2b67d3b64a911c3}{get\-End\-Gap\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em The ending number of a detected sequence number gap in order book updates from the feedhandler. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaBookAtomicGap_b429b9d3e658e1cd7f05e3c9cb194298}{$\sim$Mamda\-Book\-Atomic\-Gap} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaBookAtomicGap}{Mamda\-Book\-Atomic\-Gap} is an interface that provides access to order book atomic update gap related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicGap_b429b9d3e658e1cd7f05e3c9cb194298}{
+\index{Wombat::MamdaBookAtomicGap@{Wombat::Mamda\-Book\-Atomic\-Gap}!~MamdaBookAtomicGap@{$\sim$MamdaBookAtomicGap}}
+\index{~MamdaBookAtomicGap@{$\sim$MamdaBookAtomicGap}!Wombat::MamdaBookAtomicGap@{Wombat::Mamda\-Book\-Atomic\-Gap}}
+\subsubsection[$\sim$MamdaBookAtomicGap]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Book\-Atomic\-Gap::$\sim$Mamda\-Book\-Atomic\-Gap ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicGap_b429b9d3e658e1cd7f05e3c9cb194298}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicGap_8023460971323b5c43af54d8a39592e2}{
+\index{Wombat::MamdaBookAtomicGap@{Wombat::Mamda\-Book\-Atomic\-Gap}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaBookAtomicGap@{Wombat::Mamda\-Book\-Atomic\-Gap}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Book\-Atomic\-Gap::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicGap_8023460971323b5c43af54d8a39592e2}
+
+
+The starting number of a detected sequence number gap in order book updates from the feedhandler. 
+
+\begin{Desc}
+\item[Returns:]Starting sequence number of a sequence number gap. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_9d33a337ef8f16888f6189f704ad1412}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicGap_54152f40fa9bc51cb2b67d3b64a911c3}{
+\index{Wombat::MamdaBookAtomicGap@{Wombat::Mamda\-Book\-Atomic\-Gap}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaBookAtomicGap@{Wombat::Mamda\-Book\-Atomic\-Gap}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Book\-Atomic\-Gap::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicGap_54152f40fa9bc51cb2b67d3b64a911c3}
+
+
+The ending number of a detected sequence number gap in order book updates from the feedhandler. 
+
+\begin{Desc}
+\item[Returns:]Ending sequence number of a sequence number gap. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_b965aab29205f4f229ad021094d6b16e}{Wombat::Mamda\-Book\-Atomic\-Listener}.

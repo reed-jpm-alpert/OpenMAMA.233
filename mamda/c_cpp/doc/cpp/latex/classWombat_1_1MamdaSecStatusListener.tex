@@ -1,0 +1,888 @@
+\hypertarget{classWombat_1_1MamdaSecStatusListener}{
+\section{Wombat::Mamda\-Sec\-Status\-Listener Class Reference}
+\label{classWombat_1_1MamdaSecStatusListener}\index{Wombat::MamdaSecStatusListener@{Wombat::MamdaSecStatusListener}}
+}
+Mamda\-Security\-Status\-Listener is a class that specializes in handling security status updates.  
+
+
+{\tt \#include $<$Mamda\-Sec\-Status\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Sec\-Status\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.64151cm]{classWombat_1_1MamdaSecStatusListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaSecStatusListener_ebc08dcac4713afaa5408a6d01913067}{Mamda\-Sec\-Status\-Listener} ()
+\begin{CompactList}\small\item\em Create a specialized security status listener. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaSecStatusListener_58a353942b317d2b3a0cc1d69afcc815}{$\sim$Mamda\-Sec\-Status\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaSecStatusListener_fbf8cac77c1dbdc8da4173df05dc5b4c}{add\-Handler} (\hyperlink{classWombat_1_1MamdaSecStatusHandler}{Mamda\-Sec\-Status\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized security status handler. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_763d9b2fb391bc22abfe9223dd17bb8e}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the instruments string symbol. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_26936960eb39c5972eff2a4da4036fd3}{get\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the participant identifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaSecStatusListener_75adf29cbb39a3060b593f6bb43a7d42}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaSecStatusListener_e68b03d56c3402e337a06b63ef5566d1}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaSecStatusListener_e879990d8f32b1f28f5ab2fa5e20f441}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaSecStatusListener_74b08a2717cecd05952794bcc3e9165a}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time. \item\end{CompactList}\item 
+const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaSecStatusListener_a3f070a7969f59ad8110f20d7743ed16}{get\-Msg\-Qual} () const 
+\begin{CompactList}\small\item\em Get the message qualifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaSecStatusListener_0e27b7c2e100fbc7247c898c56536d1c}{get\-Event\-Time} () const 
+\begin{CompactList}\small\item\em Get the event time. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaSecStatusListener_9abaf40f14dcb761b11026bd8ab7cd7d}{get\-Event\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em Get the event sequence number. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaSecStatusListener_e682f4bbb0863a87fac4e03fa77156c0}{get\-Luld\-Time} () const 
+\begin{CompactList}\small\item\em Limit Up Limit Down Time. \item\end{CompactList}\item 
+const char \hyperlink{classWombat_1_1MamdaSecStatusListener_eee57407b1b230ed6886469a56007980}{get\-Luld\-Indicator} () const 
+\begin{CompactList}\small\item\em Limit Up Limit Down Indicator. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaSecStatusListener_92b109794eecdf44d3ae6f9ff6113a2b}{get\-Luld\-High\-Limit} () const 
+\begin{CompactList}\small\item\em Limit Up Limit Down High Limit. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaSecStatusListener_9a2b08e93ceb9deb618edac1e71075f3}{get\-Luld\-Low\-Limit} () const 
+\begin{CompactList}\small\item\em Limit Up Limit Down Low Limit. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_a4642e50a6f7606ddf2eb510356468da}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_1915e75d55253a45e543bffe36393803}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the participant identifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_6d515670385459d9ac8165a9edc9f364}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_5c7ee86111027d782bc1477700a78224}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_3772a00bb836461eb5dac1a57631b000}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_dce997a03b809f9d8f3adc1f1cce3d82}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_8765ba6f3282f63dec55b258a6c42836}{get\-Msg\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the message qualifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_facf6d5f611fb76e7e3e1e181f0b0d89}{get\-Event\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_6a65bfc69736ed5d4c12e0fe161aff3d}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event sequence number field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_1e65d16674a50306ed0c455e9b1c7dcd}{get\-Luld\-Indicator\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_fa4c37602326edad8f06d582e7e843a0}{get\-Luld\-Time\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_d56a6b2b5df893dd0ffc515ade629a43}{get\-Luld\-High\-Limit\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_ec9193e6cfd9d44150815af67ea2fbac}{get\-Luld\-Low\-Limit\-Field\-State} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_8d05183ac7dac8914259842d6f860a1b}{get\-Issue\-Symbol} () const 
+\begin{CompactList}\small\item\em The \char`\"{}name\char`\"{} of the instrument (e.g. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_71962c3d0ecd60a689324e68180b4e35}{get\-Reason} () const 
+\begin{CompactList}\small\item\em Unnormalized (feed-specific) reason associated with the current status of the security (e.g. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaSecStatusListener_a0180f033edd189426cb0c7386f9fb4b}{get\-Security\-Action} () const 
+\begin{CompactList}\small\item\em Action related to this security. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaSecStatusListener_4cb86f6d7afb14e8d6411221d8941805}{get\-Short\-Sale\-Circuit\-Breaker} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_2f643f3f70d52943af0b2ac011c1fa3b}{get\-Security\-Type} () const 
+\begin{CompactList}\small\item\em The security type. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_b1b6d523017888af27f4c3745c2e7fc0}{get\-Security\-Status} () const 
+\begin{CompactList}\small\item\em NYSE Technologies normalised security status. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_c94de1b4d8e9377a219ce488fa7ef16c}{get\-Security\-Status\-Qual} () const 
+\begin{CompactList}\small\item\em Security status qualifier. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_9f8513907a453b1f2e5b7fad4f6c8b01}{get\-Security\-Status\-Native} () const 
+\begin{CompactList}\small\item\em Original \char`\"{}security status\char`\"{} field sent by the feed. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_5d6a7b1c018030dbc0a3839bed5bbccb}{get\-Security\-Status\-Str} () const 
+\begin{CompactList}\small\item\em NYSE Technologies normalised security status. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_4e5aae3d78147807618e44d3bfe96275}{get\-Security\-Status\-Qual\-Str} () const 
+\begin{CompactList}\small\item\em Security status qualifier. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b}{Mamda\-Security\-Status} \hyperlink{classWombat_1_1MamdaSecStatusListener_2cff8818f54794f33a5b0a697bd8215a}{get\-Security\-Status\-Enum} () const 
+\begin{CompactList}\small\item\em NYSE Technologies normalised security status. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_2de6f22c731ba94169dc24b8054862b8}{Mamda\-Security\-Status\-Qual} \hyperlink{classWombat_1_1MamdaSecStatusListener_23df8eda9a22fae28680615ce0de4a0f}{get\-Security\-Status\-Qualifier\-Enum} () const 
+\begin{CompactList}\small\item\em Security status qualifier. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusListener_cfc40e59afe20f90ea1c0aa616397882}{get\-Free\-Text} () const 
+\begin{CompactList}\small\item\em Arbitrary free text associated with the security status change. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_bfbb5289809053bd0864dbbec9f40edf}{get\-Issue\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the issue symbol field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_b24a32e99973888050277f1cac1a23f5}{get\-Reason\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the reason field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_3a220f61dbc73b122840f7f3986d2b9c}{get\-Security\-Action\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the security action field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_a6bf492643a4963d80cdc05134955358}{get\-Short\-Sale\-Circuit\-Breaker\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_61d631913cca79d7919a225c9d42e5d1}{get\-Security\-Type\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the security type field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_f5a0928dfb229b6c39fd64c07628d37a}{get\-Security\-Status\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the security status field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_96338fb8e8ae1b6ab9d8ca695f711925}{get\-Security\-Status\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the security status qualifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_6ceb039c9b33e50e458383e108670f67}{get\-Security\-Status\-Native\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the native security status field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_3ab7eddbc0cb17286b8d14330470a927}{get\-Security\-Status\-Str\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_31cde3bb8da5542a23a39227caa7106a}{get\-Security\-Status\-Qual\-Str\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_835f73068705630588709dcdaae9ccda}{get\-Security\-Status\-Enum\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_e3202a65672a14d3d890a4318f391856}{get\-Security\-Status\-Qualifier\-Enum\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaSecStatusListener_b0f983bb92ba0f415d5e60ed6405c157}{get\-Free\-Text\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the free text field field state. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaSecStatusListener_09bafa70e9b3d41a37175135bd355d72}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Mamda\-Security\-Status\-Listener is a class that specializes in handling security status updates. 
+
+Developers provide their own implementation of the Mamda\-Security\-Status\-Handler interface and will be delivered notifications for security status updates.
+
+Note: The Mamda\-Security\-Status\-Listener class caches some field values. Among other reasons, caching of these fields makes it possible to provide complete certain callbacks, even when the publisher (e.g., feed handler) is only publishing deltas containing modified fields.
+
+\hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} should initialize the \hyperlink{classWombat_1_1MamdaSecStatusFields}{Mamda\-Sec\-Status\-Fields} class prior to receiving the first message by calling \hyperlink{classWombat_1_1MamdaSecStatusFields_17d03af8bead7f50d20d3bef3752df39}{Mamda\-Sec\-Status\-Fields::set\-Dictionary()} with a valid dictionary object which contains Sec\-Status related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusListener_ebc08dcac4713afaa5408a6d01913067}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!MamdaSecStatusListener@{MamdaSecStatusListener}}
+\index{MamdaSecStatusListener@{MamdaSecStatusListener}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[MamdaSecStatusListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Sec\-Status\-Listener::Mamda\-Sec\-Status\-Listener ()}}
+\label{classWombat_1_1MamdaSecStatusListener_ebc08dcac4713afaa5408a6d01913067}
+
+
+Create a specialized security status listener. 
+
+\hypertarget{classWombat_1_1MamdaSecStatusListener_58a353942b317d2b3a0cc1d69afcc815}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!~MamdaSecStatusListener@{$\sim$MamdaSecStatusListener}}
+\index{~MamdaSecStatusListener@{$\sim$MamdaSecStatusListener}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[$\sim$MamdaSecStatusListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Sec\-Status\-Listener::$\sim$Mamda\-Sec\-Status\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_58a353942b317d2b3a0cc1d69afcc815}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusListener_fbf8cac77c1dbdc8da4173df05dc5b4c}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Sec\-Status\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaSecStatusHandler}{Mamda\-Sec\-Status\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaSecStatusListener_fbf8cac77c1dbdc8da4173df05dc5b4c}
+
+
+Add a specialized security status handler. 
+
+\hypertarget{classWombat_1_1MamdaSecStatusListener_763d9b2fb391bc22abfe9223dd17bb8e}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_763d9b2fb391bc22abfe9223dd17bb8e}
+
+
+Get the instruments string symbol. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_8783b136a1305d21c578ced8618c090b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_26936960eb39c5972eff2a4da4036fd3}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_26936960eb39c5972eff2a4da4036fd3}
+
+
+Get the participant identifier. 
+
+\begin{Desc}
+\item[Returns:]Participant ID. This may be an exchange identifier, a market maker ID, etc., or NULL (if this is not related to any specific participant). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_94e531c6ae9ae7798725db14facbd6e2}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_75adf29cbb39a3060b593f6bb43a7d42}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_75adf29cbb39a3060b593f6bb43a7d42}
+
+
+Get the source time. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_60b5d51f3799c4762090505ef5b213e9}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_e68b03d56c3402e337a06b63ef5566d1}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_e68b03d56c3402e337a06b63ef5566d1}
+
+
+Get the activity time. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b3810afc69474ef3b192ee4c9307e714}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_e879990d8f32b1f28f5ab2fa5e20f441}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_e879990d8f32b1f28f5ab2fa5e20f441}
+
+
+Get the line time. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3fcc26fa1a6446bcec12b11ac74ed26d}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_74b08a2717cecd05952794bcc3e9165a}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_74b08a2717cecd05952794bcc3e9165a}
+
+
+Get the send time. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b0602a83bec20cd8b341ec866ff3bffa}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_a3f070a7969f59ad8110f20d7743ed16}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Msg\-Qual\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_a3f070a7969f59ad8110f20d7743ed16}
+
+
+Get the message qualifier. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_675ce8f1de581548426335423d6b3864}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_0e27b7c2e100fbc7247c898c56536d1c}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_0e27b7c2e100fbc7247c898c56536d1c}
+
+
+Get the event time. 
+
+\begin{Desc}
+\item[Returns:]Event time. Typically, when the event actually occurred. This is often the same as the \char`\"{}source time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_7285491c2c657207a64b1b0449c0339b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_9abaf40f14dcb761b11026bd8ab7cd7d}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Sec\-Status\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_9abaf40f14dcb761b11026bd8ab7cd7d}
+
+
+Get the event sequence number. 
+
+\begin{Desc}
+\item[Returns:]Source sequence number. The exchange generated sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_1fd845d48e95b4ee3beafc72d1ac2adf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_e682f4bbb0863a87fac4e03fa77156c0}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldTime@{getLuldTime}}
+\index{getLuldTime@{getLuldTime}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_e682f4bbb0863a87fac4e03fa77156c0}
+
+
+Limit Up Limit Down Time. 
+
+\begin{Desc}
+\item[Returns:]Limit Up Limit Down Time \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_b53e48f73896500f5f752c6ee5d51a0c}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_eee57407b1b230ed6886469a56007980}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldIndicator@{getLuldIndicator}}
+\index{getLuldIndicator@{getLuldIndicator}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldIndicator]{\setlength{\rightskip}{0pt plus 5cm}const char Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-Indicator () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_eee57407b1b230ed6886469a56007980}
+
+
+Limit Up Limit Down Indicator. 
+
+\begin{Desc}
+\item[Returns:]Limit Up Limit Down Indicator \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_acecbbeb305d9e37961598e3c7bce2b3}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_92b109794eecdf44d3ae6f9ff6113a2b}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldHighLimit@{getLuldHighLimit}}
+\index{getLuldHighLimit@{getLuldHighLimit}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldHighLimit]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-High\-Limit () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_92b109794eecdf44d3ae6f9ff6113a2b}
+
+
+Limit Up Limit Down High Limit. 
+
+\begin{Desc}
+\item[Returns:]Limit Up Limit Down High Limit \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_832c6a65be3a072fb3980f27661f3fd5}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_9a2b08e93ceb9deb618edac1e71075f3}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldLowLimit@{getLuldLowLimit}}
+\index{getLuldLowLimit@{getLuldLowLimit}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldLowLimit]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-Low\-Limit () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_9a2b08e93ceb9deb618edac1e71075f3}
+
+
+Limit Up Limit Down Low Limit. 
+
+\begin{Desc}
+\item[Returns:]Limit Up Limit Down Low Limit \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_5c40a583386f3c02006e31381fd99b17}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_a4642e50a6f7606ddf2eb510356468da}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_a4642e50a6f7606ddf2eb510356468da}
+
+
+Get the string symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ef95e19f4babb0e5ea8549d6cf29d13f}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_1915e75d55253a45e543bffe36393803}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_1915e75d55253a45e543bffe36393803}
+
+
+Get the participant identifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_c361c99af2cf7eb9f5621d89f744fc62}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_6d515670385459d9ac8165a9edc9f364}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_6d515670385459d9ac8165a9edc9f364}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_9cd58f3d7b5ebea42fa86e5dde46ab18}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_5c7ee86111027d782bc1477700a78224}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_5c7ee86111027d782bc1477700a78224}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_a61a566e3442181ca1fadc4524296cd0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_3772a00bb836461eb5dac1a57631b000}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_3772a00bb836461eb5dac1a57631b000}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_eb06352aca3280c5e89bad7a3b185cdf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_dce997a03b809f9d8f3adc1f1cce3d82}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_dce997a03b809f9d8f3adc1f1cce3d82}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_418ecb29b412cd42581b54c87b5360fd}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_8765ba6f3282f63dec55b258a6c42836}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_8765ba6f3282f63dec55b258a6c42836}
+
+
+Get the message qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3454d51e1131d9949691ee4b4153cd97}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_facf6d5f611fb76e7e3e1e181f0b0d89}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_facf6d5f611fb76e7e3e1e181f0b0d89}
+
+
+Get the event time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ff3932065e16e660fb6cd9285b46f7d0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_6a65bfc69736ed5d4c12e0fe161aff3d}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_6a65bfc69736ed5d4c12e0fe161aff3d}
+
+
+Get the event sequence number field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_51cc0b9d4c2b8a982ccd18b339707cb5}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusListener_1e65d16674a50306ed0c455e9b1c7dcd}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldIndicatorFieldState@{getLuldIndicatorFieldState}}
+\index{getLuldIndicatorFieldState@{getLuldIndicatorFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldIndicatorFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-Indicator\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_1e65d16674a50306ed0c455e9b1c7dcd}
+
+
+\begin{Desc}
+\item[Returns:]LULD Indicator field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_cd0efb75dca37116bc753835ac720b01}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_fa4c37602326edad8f06d582e7e843a0}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldTimeFieldState@{getLuldTimeFieldState}}
+\index{getLuldTimeFieldState@{getLuldTimeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_fa4c37602326edad8f06d582e7e843a0}
+
+
+\begin{Desc}
+\item[Returns:]LULD Time field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_db80d6bb0167935b3b622d6dde3a42bd}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_d56a6b2b5df893dd0ffc515ade629a43}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldHighLimitFieldState@{getLuldHighLimitFieldState}}
+\index{getLuldHighLimitFieldState@{getLuldHighLimitFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldHighLimitFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-High\-Limit\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_d56a6b2b5df893dd0ffc515ade629a43}
+
+
+\begin{Desc}
+\item[Returns:]LULD High Limit field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_1c7c1b9dd0362117ad1e877fa24a3227}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_ec9193e6cfd9d44150815af67ea2fbac}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getLuldLowLimitFieldState@{getLuldLowLimitFieldState}}
+\index{getLuldLowLimitFieldState@{getLuldLowLimitFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getLuldLowLimitFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Luld\-Low\-Limit\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_ec9193e6cfd9d44150815af67ea2fbac}
+
+
+\begin{Desc}
+\item[Returns:]LULD Low Limit field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_8d51b8657752bef75f47ede1edd1ae6b}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_8d05183ac7dac8914259842d6f860a1b}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getIssueSymbol@{getIssueSymbol}}
+\index{getIssueSymbol@{getIssueSymbol}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getIssueSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Issue\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_8d05183ac7dac8914259842d6f860a1b}
+
+
+The \char`\"{}name\char`\"{} of the instrument (e.g. 
+
+IBM, CSCO, MSFT.INCA, etc.).
+
+\begin{Desc}
+\item[Returns:]The symbol name. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_40ee188d2918841022327263a2b27fcd}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_71962c3d0ecd60a689324e68180b4e35}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getReason@{getReason}}
+\index{getReason@{getReason}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getReason]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Reason () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_71962c3d0ecd60a689324e68180b4e35}
+
+
+Unnormalized (feed-specific) reason associated with the current status of the security (e.g. 
+
+halted, delayed, etc.). For normalized field, see {\tt get\-Security\-Status\-Qual}.
+
+\begin{Desc}
+\item[Returns:]The reason for the current status. \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaSecStatusListener_c94de1b4d8e9377a219ce488fa7ef16c}{get\-Security\-Status\-Qual()} \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_6c6d3305ed2a2e06e8558647497a36d7}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_a0180f033edd189426cb0c7386f9fb4b}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityAction@{getSecurityAction}}
+\index{getSecurityAction@{getSecurityAction}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityAction]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Action () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_a0180f033edd189426cb0c7386f9fb4b}
+
+
+Action related to this security. 
+
+\begin{itemize}
+\item A : Add this new security. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The security action. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_b143773aacba9fabb91693884ae8d87a}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_4cb86f6d7afb14e8d6411221d8941805}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}}
+\index{getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getShortSaleCircuitBreaker]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Sec\-Status\-Listener::get\-Short\-Sale\-Circuit\-Breaker () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_4cb86f6d7afb14e8d6411221d8941805}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaSecStatusRecap_80cb008d40d5435b74a3852926d3caa5}{Mamda\-Sec\-Status\-Recap::get\-Short\-Sale\-Circuit\-Breaker()} \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_018c6d2c254aa4534d75b37a2d162061}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_2f643f3f70d52943af0b2ac011c1fa3b}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityType@{getSecurityType}}
+\index{getSecurityType@{getSecurityType}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityType]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Type () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_2f643f3f70d52943af0b2ac011c1fa3b}
+
+
+The security type. 
+
+\begin{itemize}
+\item Equity Option \item NEO Option : NEO (Index) Option \item ICS Option : ICS (Foreign Currency) Option \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The security type. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_d3f39139bb90453ba077440f838b3d70}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_b1b6d523017888af27f4c3745c2e7fc0}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatus@{getSecurityStatus}}
+\index{getSecurityStatus@{getSecurityStatus}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatus]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_b1b6d523017888af27f4c3745c2e7fc0}
+
+
+NYSE Technologies normalised security status. 
+
+See get\-Security\-Status\-Orig for the original exchange value.
+
+\begin{itemize}
+\item None : No security status is known/available for this security. \item Normal : Security is open for normal quoting and trading \item Closed : Security is closed (usually before or after market open) \item Halted : Security has been halted by exchange. \item Not\-Exist : Security does not currently exist in cache (but it might in the future). \item Deleted : Security has been deleted (e.g., merger, expiration, etc.)  \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_ea108ad9235e4c39c8f5474cbb6c003f}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_c94de1b4d8e9377a219ce488fa7ef16c}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusQual@{getSecurityStatusQual}}
+\index{getSecurityStatusQual@{getSecurityStatusQual}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusQual]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_c94de1b4d8e9377a219ce488fa7ef16c}
+
+
+Security status qualifier. 
+
+\begin{itemize}
+\item None : No security status qualifier is known/available for this security. \item Excused : An Excused withdrawal from the market. \item Withdrawn : Non-excused withdrawal by the market maker. \item Suspended : Suspended Trading \item Resume : Resume trading/quoting after halt. \item Quote\-Resume : Resume quoting after halt. NASDAQ distinguishes between resumption of quoting versus trading, although these appear to always occur one after the other. \item Trade\-Resume : Resume trading after halt. NASDAQ distinguishes between resumption of quoting versus trading, although these appear to always occur one after the other. \item Resume\-Time : When the security is expected to resume trading. \item Mkt\-Imb\-Buy : Market Imbalance - Buy. A 50,000 share or more excess of market orders to buy over market orders to sell as of 9:00am on expiration days. A Mkt\-Imb\-Buy implies an ordinary order imbalance (Ord\-Imb\-Buy). \item Mkt\-Imb\-Sell : Market Imbalance - Sell. A 50,000 share or more excess of market orders to sell over market orders to buy as of 9:00am on expiration days. A Mkt\-Imb\-Sell implies an ordinary order imbalance (Ord\-Imb\-Sell). \item No\-Mkt\-Imb : No Market Imbalance. Indicates that the imbalance of market orders for a security is less than 50,000 shares as of 9:00am on expiration days. \item Moc\-Imb\-Buy : Market On Close Imbalance - Buy. An excess of 50,000 share or more of MOC orders to buy over MOC orders to sell (including MOC sell plus and MOC sell short orders). A Moc\-Imb\-Buy implies an ordinary order imbalance (Ord\-Imb\-Buy). \item Moc\-Imb\-Sell : Market On Close Imbalance - Sell. An excess of 50,000 share or more of MOC orders to sell (not including MOC sell short and MOC sell plus orders) over orders to buy (including MOC orders to buy minus). A Moc\-Imb\-Sell implies an ordinary order imbalance (Ord\-Imb\-Sell). \item No\-Moc\-Imb : No Market On Close (MOC) Imbalance. The difference between the number of shares to buy MOC and the number of shares to sell MOC is less than 50,000. \item Order\-Imb : Non-regulatory condition: a significant imbalance of buy or sell orders exists for this security. \item Order\-Inf : Non-regulatory condition where there is a significant influx of orders. \item Order\-Imb\-Buy : Non-regulatory condition: a significant imbalance of buy orders exists for this security. \item Order\-Imb\-Sell : Non-regulatory condition: a significant imbalance of sell orders exists for this security. \item Order\-Imb\-None : The earlier imbalance of buy or sell orders no longer exists for this security. It also might mean that there is no imbalance to begin with. \item Range\-Ind : Trading Range Indication. Not an Opening Delay or Trading Halted condition: this condition is used prior to the opening of a security to denote a probable trading range (bid and offer prices, no sizes). \item Its\-Pre\-Open : ITS pre-opening indication. \item Reserved : Reserved (e.g., CME). \item Frozen : Frozen (e.g., CME). \item Pre\-Open : Preopening state (e.g., CME). \item Add\-Info : Additional Information. For a security that is Opening Delayed or Trading Halted, if inadequate information is disclosed during a \char`\"{}news dissemination or news pending\char`\"{} Opening Delay or Trading Halt, the Opening Delay or Trading Halt reason could be subsequently reported as \char`\"{}Additional Information.\char`\"{} \item Open\-Delay : Security's opening has been delayed by exchange. This value is usually followed by another value specifying the reason for the opening delay. \item No\-Open\-No\-Resume : Indicates that trading halt or opening delay will be in effect for the remainder of the trading day. \item Price\-Ind : An approximation of what a security's opening or re-opening price range (bid and offer prices, no sizes) will be when trading resumes after a delayed opening or after a trading halt. \item Equipment : Non-regulatory condition: the ability to trade this security by a participant is temporarily inhibited due to a systems, equipment or communications facility problem, or for other technical reasons. \item Filings : Not current in regulatory filings. \item News : News pending. Denotes a regulatory trading halt due to an expected news announcement which influence the security. An Opening Delay or Trading Halt may be continued once the news has been disseminated. \item News\-Dissem : News Dissemination. Denotes a regulatory trading halt when relevant news influencing the security is being disseminated. Trading is suspended until the primary market determines that an adequate publication or disclosure of information has occurred. \item Listing : Listing Noncompliance. \item Operation : Operational Halt \item Info : Information Requested. Regulatory condition: more disclosure of information is requested by the exchange for this security. \item SEC : SEC Suspension. \item Times : News Resumption Times. \item Other : Other Regulatory Halt. \item Related : Related Security; In View Of Common. Non-regulatory condition: the halt or opening delay in this security is due to its relationship with another security. This condition also applies to non-common associated securities (e.g. warrants, rights, preferreds, classes, etc.) in view of the common stock. \item IPO : Upcoming IPO issue not yet trading. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status qualifier. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_c75f88870e36e581ef460d88c0fa4719}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_9f8513907a453b1f2e5b7fad4f6c8b01}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusNative@{getSecurityStatusNative}}
+\index{getSecurityStatusNative@{getSecurityStatusNative}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusNative]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Native () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_9f8513907a453b1f2e5b7fad4f6c8b01}
+
+
+Original \char`\"{}security status\char`\"{} field sent by the feed. 
+
+NYSE Technologies feed handlers also send normalized security status.
+
+\begin{Desc}
+\item[Returns:]The exchange provided security status. \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaSecStatusListener_b1b6d523017888af27f4c3745c2e7fc0}{get\-Security\-Status()} \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_db270a035cf0896af0326704b5799689}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_5d6a7b1c018030dbc0a3839bed5bbccb}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusStr@{getSecurityStatusStr}}
+\index{getSecurityStatusStr@{getSecurityStatusStr}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusStr]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Str () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_5d6a7b1c018030dbc0a3839bed5bbccb}
+
+
+NYSE Technologies normalised security status. 
+
+See get\-Security\-Status\-Orig for the original exchange value.
+
+\begin{itemize}
+\item None : No security status is known/available for this security. \item Normal : Security is open for normal quoting and trading \item Closed : Security is closed (usually before or after market open) \item Halted : Security has been halted by exchange. \item Not\-Exist : Security does not currently exist in cache (but it might in the future). \item Deleted : Security has been deleted (e.g., merger, expiration, etc.)  \item Auction : Security has done into auction. \item Crossing : Security crossing \item Unknown : Security status is currently unknown. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_4f195cb017b796ba8d82cd3c3b1c1504}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_4e5aae3d78147807618e44d3bfe96275}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusQualStr@{getSecurityStatusQualStr}}
+\index{getSecurityStatusQualStr@{getSecurityStatusQualStr}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusQualStr]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Qual\-Str () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_4e5aae3d78147807618e44d3bfe96275}
+
+
+Security status qualifier. 
+
+\begin{itemize}
+\item None : No security status qualifier is known/available for this security. \item Excused : An Excused withdrawl from the market. \item Withdrawn : Non-excused withdrawl by the market maker. \item Suspended : Suspended Trading \item Resume : Resume trading/quoting after halt. \item Quote\-Resume : Resume quoting after halt. Nasdaq distinguishes between resumption of quoting versus trading, although these appear to always occur one after the other. \item Trade\-Resume : Resume trading after halt. Nasdaq distinguishes between resumption of quoting versus trading, although these appear to always occur one after the other. \item Resume\-Time : When the security is expected to resume trading. \item Mkt\-Imb\-Buy : Market Imbalance - Buy. A 50,000 share or more excess of market orders to buy over market orders to sell as of 9:00am on expiration days. A Mkt\-Imb\-Buy implies an ordinary order imbalance (Ord\-Imb\-Buy). \item Mkt\-Imb\-Sell : Market Imbalance - Sell. A 50,000 share or more excess of market orders to sell over market orders to buy as of 9:00am on expiration days. A Mkt\-Imb\-Sell implies an ordinary order imbalance (Ord\-Imb\-Sell). \item No\-Mkt\-Imb : No Market Imbalance. Indicates that the imbalance of market orders for a security is less than 50,000 shares as of 9:00am on expiration days. \item Moc\-Imb\-Buy : Market On Close Imbalance - Buy. An excess of 50,000 share or more of MOC orders to buy over MOC orders to sell (including MOC sell plus and MOC sell short orders). A Moc\-Imb\-Buy implies an ordinary order imbalance (Ord\-Imb\-Buy). \item Moc\-Imb\-Sell : Market On Close Imbalance - Sell. An excess of 50,000 share or more of MOC orders to sell (not including MOC sell short and MOC sell plus orders) over orders to buy (including MOC orders to buy minus). A Moc\-Imb\-Sell implies an ordinary order imbalance (Ord\-Imb\-Sell). \item No\-Moc\-Imb : No Market On Close (MOC) Imbalance. The difference between the number of shares to buy MOC and the number of shares to sell MOC is less than 50,000. \item Order\-Imb : Non-regulatory condition: a significant imbalance of buy or sell orders exists for this security. \item Order\-Inf : Non-regulatory condition where there is a significant influx of orders. \item Order\-Imb\-Buy : Non-regulatory condition: a significant imbalance of buy orders exists for this security. \item Order\-Imb\-Sell : Non-regulatory condition: a significant imbalance of sell orders exists for this security. \item Order\-Imb\-None : The earlier imbalance of buy or sell orders no longer exists for this security. It also might mean that there is no imbalance to begin with. \item Range\-Ind : Trading Range Indication. Not an Opening Delay or Trading Halted condition: this condition is used prior to the opening of a security to denote a probable trading range (bid and offer prices, no sizes). \item Its\-Pre\-Open : ITS pre-opening indication. \item Reserved : Reserved (e.g., CME). \item Frozen : Frozen (e.g., CME). \item Pre\-Open : Preopening state (e.g., CME). \item Add\-Info : Additional Information. For a security that is Opening Delayed or Trading Halted, if inadequate information is disclosed during a \char`\"{}news dissemination or news pending\char`\"{} Opening Delay or Trading Halt, the Opening Delay or Trading Halt reason could be subsequently reported as \char`\"{}Additional Information.\char`\"{} \item Open\-Delay : Security's opening has been delayed by exchange. This value is usually followed by another value specifying the reason for the opening delay. \item No\-Open\-No\-Resume : Indicates that trading halt or opening delay will be in effect for the remainder of the trading day. \item Price\-Ind : An approximation of what a security's opening or re-opening price range (bid and offer prices, no sizes) will be when trading resumes after a delayed opening or after a trading halt. \item Equipment : Non-regulatory condition: the ability to trade this security by a participant is temporarily inhibited due to a systems, equipment or communications facility problem, or for other technical reasons. \item Filings : Not current in regulatory filings. \item News : News pending. Denotes a regulatory trading halt due to an expected news announcement which influence the security. An Opening Delay or Trading Halt may be continued once the news has been disseminated. \item News\-Dissem : News Dissemination. Denotes a regulatory trading halt when relevant news influencing the security is being disseminated. Trading is suspended until the primary market determines that an adequate publication or disclosure of information has occurred. \item Listing : Listing Noncompliance. \item Operation : Operational Halt \item Info : Information Requested. Regulatory condition: more disclosure of information is requested by the exchange for this security. \item SEC : SEC Suspension. \item Times : News Resumption Times. \item Other : Other Regulatory Halt. \item Related : Related Security; In View Of Common. Non-regulatory condition: the halt or opening delay in this security is due to its relationship with another security. This condition also applies to non-common associated securities (e.g. warrants, rights, preferreds, classes, etc.) in view of the common stock. \item IPO : Upcoming IPO issue not yet trading. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status qualifier. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_770dd1fad1b1e74527b98062e0426759}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_2cff8818f54794f33a5b0a697bd8215a}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusEnum@{getSecurityStatusEnum}}
+\index{getSecurityStatusEnum@{getSecurityStatusEnum}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusEnum]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b}{Mamda\-Security\-Status} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Enum () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_2cff8818f54794f33a5b0a697bd8215a}
+
+
+NYSE Technologies normalised security status. 
+
+See get\-Security\-Status\-Orig for the original exchange value.
+
+\begin{itemize}
+\item SECURITY\_\-STATUS\_\-NONE : No security status is known/available for this security. \item SECURITY\_\-STATUS\_\-NORMAL : Security is open for normal quoting and trading \item SECURITY\_\-STATUS\_\-CLOSED : Security is closed (usually before or after market open) \item SECURITY\_\-STATUS\_\-HALTED : Security has been halted by exchange. \item SECURITY\_\-STATUS\_\-NOT\_\-EXIST : Security does not currently exist in cache (but it might in the future). \item SECURITY\_\-STATUS\_\-DELETED : Security has been deleted (e.g., merger, expiration, etc.)  \item SECURITY\_\-STATUS\_\-AUCTION : Security has gone into auction. \item SECURITY\_\-STATUS\_\-CROSSING : Security crossing \item SECURITY\_\-STATUS\_\-UNKNOWN : Security status is currently unknown. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status as an enumerated value. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_79969c1a88df2ff54d7746876cebb653}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_23df8eda9a22fae28680615ce0de4a0f}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusQualifierEnum@{getSecurityStatusQualifierEnum}}
+\index{getSecurityStatusQualifierEnum@{getSecurityStatusQualifierEnum}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusQualifierEnum]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_2de6f22c731ba94169dc24b8054862b8}{Mamda\-Security\-Status\-Qual} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Qualifier\-Enum () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_23df8eda9a22fae28680615ce0de4a0f}
+
+
+Security status qualifier. 
+
+\begin{itemize}
+\item SECURITY\_\-STATUS\_\-QUAL\_\-NONE : No security status qualifier is known/available for this security. \item SECURITY\_\-STATUS\_\-QUAL\_\-EXCUSED : An Excused withdrawl from the market. \item SECURITY\_\-STATUS\_\-QUAL\_\-WITHDRAWN : Non-excused withdrawl by the market maker. \item SECURITY\_\-STATUS\_\-QUAL\_\-SUSPENDED : Suspended Trading \item SECURITY\_\-STATUS\_\-QUAL\_\-RESUME : Resume trading/quoting after halt. \item SECURITY\_\-STATUS\_\-QUAL\_\-QUOTE\_\-RESUME : Resume quoting after halt. Nasdaq distinguishes between resumption of quoting versus trading, although these appear to always occur one after the other. \item SECURITY\_\-STATUS\_\-QUAL\_\-TRADE\_\-RESUME : Resume trading after halt. Nasdaq distinguishes between resumption of quoting versus trading, although these appear to always occur one after the other. \item SECURITY\_\-STATUS\_\-QUAL\_\-RESUME\_\-TIME : When the security is expected to resume trading. \item SECURITY\_\-STATUS\_\-QUAL\_\-MKT\_\-IMB\_\-BUY : Market Imbalance - Buy. A 50,000 share or more excess of market orders to buy over market orders to sell as of 9:00am on expiration days. A Mkt\-Imb\-Buy implies an ordinary order imbalance (Ord\-Imb\-Buy). \item SECURITY\_\-STATUS\_\-QUAL\_\-MKT\_\-IMB\_\-SELL : Market Imbalance - Sell. A 50,000 share or more excess of market orders to sell over market orders to buy as of 9:00am on expiration days. A Mkt\-Imb\-Sell implies an ordinary order imbalance (Ord\-Imb\-Sell). \item SECURITY\_\-STATUS\_\-QUAL\_\-NO\_\-MKT\_\-IMB : No Market Imbalance. Indicates that the imbalance of market orders for a security is less than 50,000 shares as of 9:00am on expiration days. \item SECURITY\_\-STATUS\_\-QUAL\_\-MOC\_\-IMB\_\-BUY : Market On Close Imbalance - Buy. An excess of 50,000 share or more of MOC orders to buy over MOC orders to sell (including MOC sell plus and MOC sell short orders). A Moc\-Imb\-Buy implies an ordinary order imbalance (Ord\-Imb\-Buy). \item SECURITY\_\-STATUS\_\-QUAL\_\-MOC\_\-IMB\_\-SELL : Market On Close Imbalance - Sell. An excess of 50,000 share or more of MOC orders to sell (not including MOC sell short and MOC sell plus orders) over orders to buy (including MOC orders to buy minus). A Moc\-Imb\-Sell implies an ordinary order imbalance (Ord\-Imb\-Sell). \item SECURITY\_\-STATUS\_\-QUAL\_\-NO\_\-MOC\_\-IMB : No Market On Close (MOC) Imbalance. The difference between the number of shares to buy MOC and the number of shares to sell MOC is less than 50,000. \item SECURITY\_\-STATUS\_\-QUAL\_\-ORDER\_\-IMB : Non-regulatory condition: a significant imbalance of buy orders exists for this security. \item SECURITY\_\-STATUS\_\-QUAL\_\-ORDER\_\-IMB\_\-SELL : Non-regulatory condition: a significant imbalance of sell orders exists for this security. \item SECURITY\_\-STATUS\_\-QUAL\_\-ORDER\_\-OMB\_\-NONE : The earlier imbalance of buy or sell orders no longer exists for this security. It also might mean that there is no imbalance to begin with. \item SECURITY\_\-STATUS\_\-QUAL\_\-RANGE\_\-IND : Trading Range Indication. Not an Opening Delay or Trading Halted condition: this condition is used prior to the opening of a security to denote a probable trading range (bid and offer prices, no sizes). \item SECURITY\_\-STATUS\_\-QUAL\_\-ITS\_\-PRE\_\-OPEN : ITS pre-opening indication. \item SECURITY\_\-STATUS\_\-QUAL\_\-RESERVED : Reserved (e.g., CME). \item SECURITY\_\-STATUS\_\-QUAL\_\-FROZEN : Frozen (e.g., CME). \item SECURITY\_\-STATUS\_\-QUAL\_\-PRE\_\-OPEN : Preopening state (e.g., CME). \item SECURITY\_\-STATUS\_\-QUAL\_\-ADD\_\-INFO : Additional Information. For a security that is Opening Delayed or Trading Halted, if inadequate information is disclosed during a \char`\"{}news dissemination or news pending\char`\"{} Opening Delay or Trading Halt, the Opening Delay or Trading Halt reason could be subsequently reported as \char`\"{}Additional Information.\char`\"{} \item SECURITY\_\-STATUS\_\-QUAL\_\-OPEN\_\-DELAY : Security's opening has been delayed by exchange. This value is usually followed by another value specifying the reason for the opening delay. \item SECURITY\_\-STATUS\_\-QUAL\_\-NO\_\-OPEN\_\-RESUME : Indicates that trading halt or opening delay will be in effect for the remainder of the trading day. \item SECURITY\_\-STATUS\_\-QUAL\_\-PRICE\_\-IND : An approximation of what a security's opening or re-opening price range (bid and offer prices, no sizes) will be when trading resumes after a delayed opening or after a trading halt. \item SECURITY\_\-STATUS\_\-QUAL\_\-EQUIPMENT : Non-regulatory condition: the ability to trade this security by a participant is temporarily inhibited due to a systems, equipment or communications facility problem, or for other technical reasons. \item SECURITY\_\-STATUS\_\-QUAL\_\-FILINGS : Not current in regulatory filings. \item SECURITY\_\-STATUS\_\-QUAL\_\-NEWS : News pending. Denotes a regulatory trading halt due to an expected news announcement which influence the security. An Opening Delay or Trading Halt may be continued once the news has been disseminated. \item SECURITY\_\-STATUS\_\-QUAL\_\-NEWS\_\-DISSEM : News Dissemination. Denotes a regulatory trading halt when relevant news influencing the security is being disseminated. Trading is suspended until the primary market determines that an adequate publication or disclosure of information has occurred. v\item SECURITY\_\-STATUS\_\-QUAL\_\-LISTING : Listing Noncompliance. \item SECURITY\_\-STATUS\_\-QUAL\_\-OPERATION : Operational Halt \item SECURITY\_\-STATUS\_\-QUAL\_\-INFO : Information Requested. Regulatory condition: more disclosure of information is requested by the exchange for this security. \item SECURITY\_\-STATUS\_\-QUAL\_\-SEC : SEC Suspension. \item SECURITY\_\-STATUS\_\-QUAL\_\-TIMES : News Resumption Times. \item SECURITY\_\-STATUS\_\-QUAL\_\-OTHER : Other Regulatory Halt. \item SECURITY\_\-STATUS\_\-QUAL\_\-RELATED : Related Security; In View Of Common. Non-regulatory condition: the halt or opening delay in this security is due to its relationship with another security. This condition also applies to non-common associated securities (e.g. warrants, rights, preferreds, classes, etc.) in view of the common stock. \item SECURITY\_\-STATUS\_\-QUAL\_\-IPO : Upcoming IPO issue not yet trading. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status qualifier. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_3e290ab8d414a7f40d224bdf4518da02}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_cfc40e59afe20f90ea1c0aa616397882}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getFreeText@{getFreeText}}
+\index{getFreeText@{getFreeText}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getFreeText]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Sec\-Status\-Listener::get\-Free\-Text () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_cfc40e59afe20f90ea1c0aa616397882}
+
+
+Arbitrary free text associated with the security status change. 
+
+\begin{Desc}
+\item[Returns:]Free text associated with the security status change. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_df2540961aed13114c3799839d59d975}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_bfbb5289809053bd0864dbbec9f40edf}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getIssueSymbolFieldState@{getIssueSymbolFieldState}}
+\index{getIssueSymbolFieldState@{getIssueSymbolFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getIssueSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Issue\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_bfbb5289809053bd0864dbbec9f40edf}
+
+
+Get the issue symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_9ec78fc150849e2bda7802f01d5b692c}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_b24a32e99973888050277f1cac1a23f5}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getReasonFieldState@{getReasonFieldState}}
+\index{getReasonFieldState@{getReasonFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getReasonFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Reason\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_b24a32e99973888050277f1cac1a23f5}
+
+
+Get the reason field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_63fcfbc175a0bab1fcf500007b831974}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_3a220f61dbc73b122840f7f3986d2b9c}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityActionFieldState@{getSecurityActionFieldState}}
+\index{getSecurityActionFieldState@{getSecurityActionFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityActionFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Action\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_3a220f61dbc73b122840f7f3986d2b9c}
+
+
+Get the security action field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_771481bb771bdd1bb86ab54be9e9247b}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_a6bf492643a4963d80cdc05134955358}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}}
+\index{getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getShortSaleCircuitBreakerFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Short\-Sale\-Circuit\-Breaker\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_a6bf492643a4963d80cdc05134955358}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaSecStatusRecap_ab1dabb0f90d5d2bccb7e6a5c2a80f98}{Mamda\-Sec\-Status\-Recap::get\-Short\-Sale\-Circuit\-Breaker\-Field\-State()} \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_6bd9783d55cd92b9c4d7c7a2db736e27}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_61d631913cca79d7919a225c9d42e5d1}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityTypeFieldState@{getSecurityTypeFieldState}}
+\index{getSecurityTypeFieldState@{getSecurityTypeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityTypeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Type\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_61d631913cca79d7919a225c9d42e5d1}
+
+
+Get the security type field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_ab32e4e57845c7982605e64abadbcaf0}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_f5a0928dfb229b6c39fd64c07628d37a}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusFieldState@{getSecurityStatusFieldState}}
+\index{getSecurityStatusFieldState@{getSecurityStatusFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_f5a0928dfb229b6c39fd64c07628d37a}
+
+
+Get the security status field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_1b7b8b27b2bf2302c50b34261af61f39}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_96338fb8e8ae1b6ab9d8ca695f711925}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusQualFieldState@{getSecurityStatusQualFieldState}}
+\index{getSecurityStatusQualFieldState@{getSecurityStatusQualFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_96338fb8e8ae1b6ab9d8ca695f711925}
+
+
+Get the security status qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_2552980479d78154cf754c3bcf4647c3}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_6ceb039c9b33e50e458383e108670f67}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusNativeFieldState@{getSecurityStatusNativeFieldState}}
+\index{getSecurityStatusNativeFieldState@{getSecurityStatusNativeFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_6ceb039c9b33e50e458383e108670f67}
+
+
+Get the native security status field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_e12cf50355eda32ff167910636c5629f}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_3ab7eddbc0cb17286b8d14330470a927}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusStrFieldState@{getSecurityStatusStrFieldState}}
+\index{getSecurityStatusStrFieldState@{getSecurityStatusStrFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusStrFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Str\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_3ab7eddbc0cb17286b8d14330470a927}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_f95c229e668def717ef05e1d8dc746ce}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_31cde3bb8da5542a23a39227caa7106a}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusQualStrFieldState@{getSecurityStatusQualStrFieldState}}
+\index{getSecurityStatusQualStrFieldState@{getSecurityStatusQualStrFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusQualStrFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Qual\-Str\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_31cde3bb8da5542a23a39227caa7106a}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status qualifier field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_65f3b09b216df6fbe543f00934b8f93e}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_835f73068705630588709dcdaae9ccda}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusEnumFieldState@{getSecurityStatusEnumFieldState}}
+\index{getSecurityStatusEnumFieldState@{getSecurityStatusEnumFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusEnumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Enum\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_835f73068705630588709dcdaae9ccda}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status (enumerated value) field State \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_abd7b41fb4189d19dc1a064d78c58d3f}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_e3202a65672a14d3d890a4318f391856}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getSecurityStatusQualifierEnumFieldState@{getSecurityStatusQualifierEnumFieldState}}
+\index{getSecurityStatusQualifierEnumFieldState@{getSecurityStatusQualifierEnumFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getSecurityStatusQualifierEnumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Security\-Status\-Qualifier\-Enum\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_e3202a65672a14d3d890a4318f391856}
+
+
+\begin{Desc}
+\item[Returns:]The normalized security status qualifier field state \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusRecap_c5c0501e80486a14693e4acbb2b17b8e}{Wombat::Mamda\-Sec\-Status\-Recap}.\hypertarget{classWombat_1_1MamdaSecStatusListener_b0f983bb92ba0f415d5e60ed6405c157}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!getFreeTextFieldState@{getFreeTextFieldState}}
+\index{getFreeTextFieldState@{getFreeTextFieldState}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[getFreeTextFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Sec\-Status\-Listener::get\-Free\-Text\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_b0f983bb92ba0f415d5e60ed6405c157}
+
+
+Get the free text field field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatus_f54b5d795c53c279499fc3fca9748622}{Wombat::Mamda\-Sec\-Status}.\hypertarget{classWombat_1_1MamdaSecStatusListener_09bafa70e9b3d41a37175135bd355d72}{
+\index{Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaSecStatusListener@{Wombat::Mamda\-Sec\-Status\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Sec\-Status\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusListener_09bafa70e9b3d41a37175135bd355d72}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

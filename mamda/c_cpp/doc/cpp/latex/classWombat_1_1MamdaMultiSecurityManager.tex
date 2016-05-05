@@ -1,0 +1,89 @@
+\hypertarget{classWombat_1_1MamdaMultiSecurityManager}{
+\section{Wombat::Mamda\-Multi\-Security\-Manager Class Reference}
+\label{classWombat_1_1MamdaMultiSecurityManager}\index{Wombat::MamdaMultiSecurityManager@{Wombat::MamdaMultiSecurityManager}}
+}
+\hyperlink{classWombat_1_1MamdaMultiSecurityManager}{Mamda\-Multi\-Security\-Manager} is a class that manages updates on an arbitrary number of securities that may be traded on multiple exchanges.  
+
+
+{\tt \#include $<$Mamda\-Multi\-Security\-Manager.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Multi\-Security\-Manager::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaMultiSecurityManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaMultiSecurityManager_80f97c60287c0e93b06a557b8ccd021b}{Mamda\-Multi\-Security\-Manager} (const char $\ast$symbol)
+\begin{CompactList}\small\item\em Create a manager for consolidated securities. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaMultiSecurityManager_2e68188ad4b4b5a093771428fc5820b4}{$\sim$Mamda\-Multi\-Security\-Manager} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiSecurityManager_1a3afde9cf3c54cfc637a461346b3041}{add\-Handler} (\hyperlink{classWombat_1_1MamdaMultiSecurityHandler}{Mamda\-Multi\-Security\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized handler for notifications about each security in the group. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiSecurityManager_91699087725a9bfeadd57f3e958c3439}{add\-Security\-Listener} (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$listener, const char $\ast$security\-Symbol)
+\begin{CompactList}\small\item\em Add a specialized message listener (e.g., a \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, etc. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiSecurityManager_c850052340fb02a8c2485677fdc4cac9}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaMultiSecurityManager}{Mamda\-Multi\-Security\-Manager} is a class that manages updates on an arbitrary number of securities that may be traded on multiple exchanges. 
+
+Developers are notified of each security available, including the national best bid and offer, and each regional exchange, if applicable. Developers can pick and choose which elements they wish to provide handling for (e.g., BBO-only, certain regional exchanges, etc.). 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaMultiSecurityManager_80f97c60287c0e93b06a557b8ccd021b}{
+\index{Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}!MamdaMultiSecurityManager@{MamdaMultiSecurityManager}}
+\index{MamdaMultiSecurityManager@{MamdaMultiSecurityManager}!Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}}
+\subsubsection[MamdaMultiSecurityManager]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Multi\-Security\-Manager::Mamda\-Multi\-Security\-Manager (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamdaMultiSecurityManager_80f97c60287c0e93b06a557b8ccd021b}
+
+
+Create a manager for consolidated securities. 
+
+\hypertarget{classWombat_1_1MamdaMultiSecurityManager_2e68188ad4b4b5a093771428fc5820b4}{
+\index{Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}!~MamdaMultiSecurityManager@{$\sim$MamdaMultiSecurityManager}}
+\index{~MamdaMultiSecurityManager@{$\sim$MamdaMultiSecurityManager}!Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}}
+\subsubsection[$\sim$MamdaMultiSecurityManager]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Multi\-Security\-Manager::$\sim$Mamda\-Multi\-Security\-Manager ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiSecurityManager_2e68188ad4b4b5a093771428fc5820b4}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaMultiSecurityManager_1a3afde9cf3c54cfc637a461346b3041}{
+\index{Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Security\-Manager::add\-Handler (\hyperlink{classWombat_1_1MamdaMultiSecurityHandler}{Mamda\-Multi\-Security\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaMultiSecurityManager_1a3afde9cf3c54cfc637a461346b3041}
+
+
+Add a specialized handler for notifications about each security in the group. 
+
+The handler is responsible for initializing any data structures and listeners for each security. Currently, only one handler can be registered. \hypertarget{classWombat_1_1MamdaMultiSecurityManager_91699087725a9bfeadd57f3e958c3439}{
+\index{Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}!addSecurityListener@{addSecurityListener}}
+\index{addSecurityListener@{addSecurityListener}!Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}}
+\subsubsection[addSecurityListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Security\-Manager::add\-Security\-Listener (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$ {\em listener}, const char $\ast$ {\em security\-Symbol})}}
+\label{classWombat_1_1MamdaMultiSecurityManager_91699087725a9bfeadd57f3e958c3439}
+
+
+Add a specialized message listener (e.g., a \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, etc. 
+
+) for a security. \hypertarget{classWombat_1_1MamdaMultiSecurityManager_c850052340fb02a8c2485677fdc4cac9}{
+\index{Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaMultiSecurityManager@{Wombat::Mamda\-Multi\-Security\-Manager}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Security\-Manager::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiSecurityManager_c850052340fb02a8c2485677fdc4cac9}
+
+
+Implementation of \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

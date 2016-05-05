@@ -1,0 +1,99 @@
+\hypertarget{classWombat_1_1MamdaQuoteClosing}{
+\section{Wombat::Mamda\-Quote\-Closing Class Reference}
+\label{classWombat_1_1MamdaQuoteClosing}\index{Wombat::MamdaQuoteClosing@{Wombat::MamdaQuoteClosing}}
+}
+\hyperlink{classWombat_1_1MamdaQuoteClosing}{Mamda\-Quote\-Closing} is an interface that provides access to quote closing related fields.  
+
+
+{\tt \#include $<$Mamda\-Quote\-Closing.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Quote\-Closing::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaQuoteClosing}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteClosing_49a102e8abafb806713366521b9adeea}{get\-Bid\-Close\-Price} () const =0
+\begin{CompactList}\small\item\em Get the closing bid price. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteClosing_b9a5522238b0f2c1d64a7192b28d4644}{get\-Bid\-Close\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the closing bid price field state. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteClosing_0db88ef67d6459e31b0568e9bbd44d59}{get\-Ask\-Close\-Price} () const =0
+\begin{CompactList}\small\item\em Get the closing ask price. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteClosing_d6c65af52adcf386c114c5b757338072}{get\-Ask\-Close\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the closing bid price field state. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaQuoteClosing_9f5ff866d3758fe3abd59f561348964c}{$\sim$Mamda\-Quote\-Closing} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaQuoteClosing}{Mamda\-Quote\-Closing} is an interface that provides access to quote closing related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteClosing_9f5ff866d3758fe3abd59f561348964c}{
+\index{Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}!~MamdaQuoteClosing@{$\sim$MamdaQuoteClosing}}
+\index{~MamdaQuoteClosing@{$\sim$MamdaQuoteClosing}!Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}}
+\subsubsection[$\sim$MamdaQuoteClosing]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Quote\-Closing::$\sim$Mamda\-Quote\-Closing ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteClosing_9f5ff866d3758fe3abd59f561348964c}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteClosing_49a102e8abafb806713366521b9adeea}{
+\index{Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}!getBidClosePrice@{getBidClosePrice}}
+\index{getBidClosePrice@{getBidClosePrice}!Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}}
+\subsubsection[getBidClosePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Quote\-Closing::get\-Bid\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteClosing_49a102e8abafb806713366521b9adeea}
+
+
+Get the closing bid price. 
+
+\begin{Desc}
+\item[Returns:]Today's closing bid price, after the market has closed and the stock has traded today. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaQuoteListener_0c5bde1b3a4bfafdaef20c99c0c63c07}{Wombat::Mamda\-Quote\-Listener}.\hypertarget{classWombat_1_1MamdaQuoteClosing_b9a5522238b0f2c1d64a7192b28d4644}{
+\index{Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}!getBidClosePriceFieldState@{getBidClosePriceFieldState}}
+\index{getBidClosePriceFieldState@{getBidClosePriceFieldState}!Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}}
+\subsubsection[getBidClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Closing::get\-Bid\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteClosing_b9a5522238b0f2c1d64a7192b28d4644}
+
+
+Get the closing bid price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaQuoteListener_168cfd897d5c3f532d49e36c0e380db3}{Wombat::Mamda\-Quote\-Listener}.\hypertarget{classWombat_1_1MamdaQuoteClosing_0db88ef67d6459e31b0568e9bbd44d59}{
+\index{Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}!getAskClosePrice@{getAskClosePrice}}
+\index{getAskClosePrice@{getAskClosePrice}!Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}}
+\subsubsection[getAskClosePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Quote\-Closing::get\-Ask\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteClosing_0db88ef67d6459e31b0568e9bbd44d59}
+
+
+Get the closing ask price. 
+
+\begin{Desc}
+\item[Returns:]Today's closing ask price, after the market has closed and the stock has traded today. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaQuoteListener_1c6e2936fa8677578ee30e6a50ee29bf}{Wombat::Mamda\-Quote\-Listener}.\hypertarget{classWombat_1_1MamdaQuoteClosing_d6c65af52adcf386c114c5b757338072}{
+\index{Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}!getAskClosePriceFieldState@{getAskClosePriceFieldState}}
+\index{getAskClosePriceFieldState@{getAskClosePriceFieldState}!Wombat::MamdaQuoteClosing@{Wombat::Mamda\-Quote\-Closing}}
+\subsubsection[getAskClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Closing::get\-Ask\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteClosing_d6c65af52adcf386c114c5b757338072}
+
+
+Get the closing bid price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaQuoteListener_a6dcf6a065420d6fdf9d5e07093ed603}{Wombat::Mamda\-Quote\-Listener}.

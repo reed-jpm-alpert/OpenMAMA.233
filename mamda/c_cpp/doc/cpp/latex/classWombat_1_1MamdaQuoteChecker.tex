@@ -1,0 +1,99 @@
+\hypertarget{classWombat_1_1MamdaQuoteChecker}{
+\section{Wombat::Mamda\-Quote\-Checker Class Reference}
+\label{classWombat_1_1MamdaQuoteChecker}\index{Wombat::MamdaQuoteChecker@{Wombat::MamdaQuoteChecker}}
+}
+\hyperlink{classWombat_1_1MamdaQuoteChecker}{Mamda\-Quote\-Checker} is a class that provides quotes sanity checking by periodically requesting snapshots of the quotes from the publisher and comparing that with an quotes being maintained in real time.  
+
+
+{\tt \#include $<$Mamda\-Quote\-Checker.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaQuoteChecker_0ca2d9c04378c17e85e681d594b0a3c7}{Mamda\-Quote\-Checker} (Mama\-Queue $\ast$queue, \hyperlink{classWombat_1_1MamdaCheckerHandler}{Mamda\-Checker\-Handler} $\ast$handler, Mama\-Source $\ast$source, const char $\ast$symbol, mama\_\-f64\_\-t interval\-Seconds)
+\item 
+\hyperlink{classWombat_1_1MamdaQuoteChecker_13019a47a0962b84ae5475b9bc1dfdf1}{$\sim$Mamda\-Quote\-Checker} ()
+\begin{CompactList}\small\item\em Desctructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaQuoteChecker_84e1ea28c2c97eac58859c06b9c65190}{check\-Snap\-Shot\-Now} ()
+\begin{CompactList}\small\item\em Perform an ad hoc snapshot check now. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaQuoteChecker_1b7d7013d73ff3162c2ec7c5f764c656}{get\-Success\-Count} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaQuoteChecker_49868058145c3fcaea3c5cb32294bd62}{get\-Inconclusive\-Count} () const 
+\begin{CompactList}\small\item\em Return the nmber of inconclusive counts. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaQuoteChecker_5a09592269398e1bbf7b0fc4ee2b6276}{get\-Failure\-Count} () const 
+\begin{CompactList}\small\item\em Return the number of failed checks. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaQuoteChecker}{Mamda\-Quote\-Checker} is a class that provides quotes sanity checking by periodically requesting snapshots of the quotes from the publisher and comparing that with an quotes being maintained in real time. 
+
+This class is purely for testing purposes, to test for possible configuration or programming errors in the quotes publisher and in MAMDA quotes management code.
+
+The developer registers a handler that contains callbacks for successful, inconclusive and failure events. The developer also provides an interval representing the frequency of the snapshot checks. The first check will take place at some random point in time between zero and the interval. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteChecker_0ca2d9c04378c17e85e681d594b0a3c7}{
+\index{Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}!MamdaQuoteChecker@{MamdaQuoteChecker}}
+\index{MamdaQuoteChecker@{MamdaQuoteChecker}!Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}}
+\subsubsection[MamdaQuoteChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Quote\-Checker::Mamda\-Quote\-Checker (Mama\-Queue $\ast$ {\em queue}, \hyperlink{classWombat_1_1MamdaCheckerHandler}{Mamda\-Checker\-Handler} $\ast$ {\em handler}, Mama\-Source $\ast$ {\em source}, const char $\ast$ {\em symbol}, mama\_\-f64\_\-t {\em interval\-Seconds})}}
+\label{classWombat_1_1MamdaQuoteChecker_0ca2d9c04378c17e85e681d594b0a3c7}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteChecker_13019a47a0962b84ae5475b9bc1dfdf1}{
+\index{Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}!~MamdaQuoteChecker@{$\sim$MamdaQuoteChecker}}
+\index{~MamdaQuoteChecker@{$\sim$MamdaQuoteChecker}!Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}}
+\subsubsection[$\sim$MamdaQuoteChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Quote\-Checker::$\sim$Mamda\-Quote\-Checker ()}}
+\label{classWombat_1_1MamdaQuoteChecker_13019a47a0962b84ae5475b9bc1dfdf1}
+
+
+Desctructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteChecker_84e1ea28c2c97eac58859c06b9c65190}{
+\index{Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}!checkSnapShotNow@{checkSnapShotNow}}
+\index{checkSnapShotNow@{checkSnapShotNow}!Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}}
+\subsubsection[checkSnapShotNow]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Quote\-Checker::check\-Snap\-Shot\-Now ()}}
+\label{classWombat_1_1MamdaQuoteChecker_84e1ea28c2c97eac58859c06b9c65190}
+
+
+Perform an ad hoc snapshot check now. 
+
+This may be useful if the checking is to be performed by some external trigger event. \hypertarget{classWombat_1_1MamdaQuoteChecker_1b7d7013d73ff3162c2ec7c5f764c656}{
+\index{Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}!getSuccessCount@{getSuccessCount}}
+\index{getSuccessCount@{getSuccessCount}!Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}}
+\subsubsection[getSuccessCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Quote\-Checker::get\-Success\-Count () const}}
+\label{classWombat_1_1MamdaQuoteChecker_1b7d7013d73ff3162c2ec7c5f764c656}
+
+
+\begin{Desc}
+\item[Returns:]The number of successful checks. \end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteChecker_49868058145c3fcaea3c5cb32294bd62}{
+\index{Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}!getInconclusiveCount@{getInconclusiveCount}}
+\index{getInconclusiveCount@{getInconclusiveCount}!Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}}
+\subsubsection[getInconclusiveCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Quote\-Checker::get\-Inconclusive\-Count () const}}
+\label{classWombat_1_1MamdaQuoteChecker_49868058145c3fcaea3c5cb32294bd62}
+
+
+Return the nmber of inconclusive counts. 
+
+An attempt to check the order book may be inconclusive if the order book sequence numbers do not match up.
+
+\begin{Desc}
+\item[Returns:]The number of inconclusive checks. \end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteChecker_5a09592269398e1bbf7b0fc4ee2b6276}{
+\index{Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}!getFailureCount@{getFailureCount}}
+\index{getFailureCount@{getFailureCount}!Wombat::MamdaQuoteChecker@{Wombat::Mamda\-Quote\-Checker}}
+\subsubsection[getFailureCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Quote\-Checker::get\-Failure\-Count () const}}
+\label{classWombat_1_1MamdaQuoteChecker_5a09592269398e1bbf7b0fc4ee2b6276}
+
+
+Return the number of failed checks. 
+
+This should be zero, of course.
+
+\begin{Desc}
+\item[Returns:]The number of failed checks. \end{Desc}

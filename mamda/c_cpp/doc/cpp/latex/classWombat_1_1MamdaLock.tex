@@ -1,0 +1,145 @@
+\hypertarget{classWombat_1_1MamdaLock}{
+\section{Wombat::Mamda\-Lock Class Reference}
+\label{classWombat_1_1MamdaLock}\index{Wombat::MamdaLock@{Wombat::MamdaLock}}
+}
+{\tt \#include $<$Mamda\-Lock.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e1aec4e883d9cb850c1369479aef9e1db}{SHARED}
+\item 
+\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32eebbe078a8c76bade4e757bc04016e07a}{EXCLUSIVE}
+\item 
+\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bb63c4e0bc9ebb8acb34b11cfc05b0a73}{READ}
+\item 
+\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bc464b2bdb2ad0d83befc7163693d3cb5}{WRITE}
+\item 
+enum \hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{Scheme} \{ \hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e1aec4e883d9cb850c1369479aef9e1db}{SHARED}, 
+\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32eebbe078a8c76bade4e757bc04016e07a}{EXCLUSIVE}
+ \}
+\item 
+enum \hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} \{ \hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bb63c4e0bc9ebb8acb34b11cfc05b0a73}{READ}, 
+\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bc464b2bdb2ad0d83befc7163693d3cb5}{WRITE}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaLock_e5029e03a8f6cf4925390a622f6054c9}{Mamda\-Lock} (\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{Scheme} scheme, const char $\ast$context, int threads=0)
+\item 
+\hyperlink{classWombat_1_1MamdaLock_c44daceadd98c555b2ee54cc695c84e3}{$\sim$Mamda\-Lock} ()
+\item 
+bool \hyperlink{classWombat_1_1MamdaLock_246d89c8fc22d0eb3e539ce6a0dc4b2d}{acquire} (\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} type)
+\item 
+bool \hyperlink{classWombat_1_1MamdaLock_c6eb40859055455de9f63b5aa6a47f23}{release} (\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} type)
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static const char $\ast$ \hyperlink{classWombat_1_1MamdaLock_bb8af28636c6a343cd9118e568f19068}{type} (\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} type)
+\item 
+static const char $\ast$ \hyperlink{classWombat_1_1MamdaLock_c622986074209cfe944e3d163a5538e7}{scheme} (\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{Scheme} scheme)
+\item 
+static bool \hyperlink{classWombat_1_1MamdaLock_9e49f016c806144085a104b8bc490894}{locking\-Enabled} ()
+\end{CompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!Scheme@{Scheme}}
+\index{Scheme@{Scheme}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[Scheme]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{Wombat::Mamda\-Lock::Scheme}}}
+\label{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{SHARED@{SHARED}!Wombat::MamdaLock@{Wombat::MamdaLock}}\index{Wombat::MamdaLock@{Wombat::MamdaLock}!SHARED@{SHARED}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e1aec4e883d9cb850c1369479aef9e1db}{
+SHARED}
+\label{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e1aec4e883d9cb850c1369479aef9e1db}
+}]\index{EXCLUSIVE@{EXCLUSIVE}!Wombat::MamdaLock@{Wombat::MamdaLock}}\index{Wombat::MamdaLock@{Wombat::MamdaLock}!EXCLUSIVE@{EXCLUSIVE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32eebbe078a8c76bade4e757bc04016e07a}{
+EXCLUSIVE}
+\label{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32eebbe078a8c76bade4e757bc04016e07a}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!Type@{Type}}
+\index{Type@{Type}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[Type]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Wombat::Mamda\-Lock::Type}}}
+\label{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}
+
+
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{READ@{READ}!Wombat::MamdaLock@{Wombat::MamdaLock}}\index{Wombat::MamdaLock@{Wombat::MamdaLock}!READ@{READ}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bb63c4e0bc9ebb8acb34b11cfc05b0a73}{
+READ}
+\label{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bb63c4e0bc9ebb8acb34b11cfc05b0a73}
+}]\index{WRITE@{WRITE}!Wombat::MamdaLock@{Wombat::MamdaLock}}\index{Wombat::MamdaLock@{Wombat::MamdaLock}!WRITE@{WRITE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bc464b2bdb2ad0d83befc7163693d3cb5}{
+WRITE}
+\label{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85bc464b2bdb2ad0d83befc7163693d3cb5}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaLock_e5029e03a8f6cf4925390a622f6054c9}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!MamdaLock@{MamdaLock}}
+\index{MamdaLock@{MamdaLock}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[MamdaLock]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Lock::Mamda\-Lock (\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{Scheme} {\em scheme}, const char $\ast$ {\em context}, int {\em threads} = {\tt 0})}}
+\label{classWombat_1_1MamdaLock_e5029e03a8f6cf4925390a622f6054c9}
+
+
+\hypertarget{classWombat_1_1MamdaLock_c44daceadd98c555b2ee54cc695c84e3}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!~MamdaLock@{$\sim$MamdaLock}}
+\index{~MamdaLock@{$\sim$MamdaLock}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[$\sim$MamdaLock]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Lock::$\sim$Mamda\-Lock ()}}
+\label{classWombat_1_1MamdaLock_c44daceadd98c555b2ee54cc695c84e3}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaLock_246d89c8fc22d0eb3e539ce6a0dc4b2d}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!acquire@{acquire}}
+\index{acquire@{acquire}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[acquire]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Lock::acquire (\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} {\em type})}}
+\label{classWombat_1_1MamdaLock_246d89c8fc22d0eb3e539ce6a0dc4b2d}
+
+
+\hypertarget{classWombat_1_1MamdaLock_c6eb40859055455de9f63b5aa6a47f23}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!release@{release}}
+\index{release@{release}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[release]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Lock::release (\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} {\em type})}}
+\label{classWombat_1_1MamdaLock_c6eb40859055455de9f63b5aa6a47f23}
+
+
+\hypertarget{classWombat_1_1MamdaLock_bb8af28636c6a343cd9118e568f19068}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!type@{type}}
+\index{type@{type}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[type]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ Wombat::Mamda\-Lock::type (\hyperlink{classWombat_1_1MamdaLock_93b6f826e707ab70c51dac7b99bce85b}{Type} {\em type})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaLock_bb8af28636c6a343cd9118e568f19068}
+
+
+\hypertarget{classWombat_1_1MamdaLock_c622986074209cfe944e3d163a5538e7}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!scheme@{scheme}}
+\index{scheme@{scheme}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[scheme]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ Wombat::Mamda\-Lock::scheme (\hyperlink{classWombat_1_1MamdaLock_87d4e5bd1d3db6a91d9f769315bfd32e}{Scheme} {\em scheme})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaLock_c622986074209cfe944e3d163a5538e7}
+
+
+\hypertarget{classWombat_1_1MamdaLock_9e49f016c806144085a104b8bc490894}{
+\index{Wombat::MamdaLock@{Wombat::Mamda\-Lock}!lockingEnabled@{lockingEnabled}}
+\index{lockingEnabled@{lockingEnabled}!Wombat::MamdaLock@{Wombat::Mamda\-Lock}}
+\subsubsection[lockingEnabled]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Lock::locking\-Enabled ()\hspace{0.3cm}{\tt  \mbox{[}inline, static\mbox{]}}}}
+\label{classWombat_1_1MamdaLock_9e49f016c806144085a104b8bc490894}
+
+

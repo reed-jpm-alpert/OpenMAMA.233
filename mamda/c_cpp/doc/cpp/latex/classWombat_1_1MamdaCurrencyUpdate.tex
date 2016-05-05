@@ -1,0 +1,99 @@
+\hypertarget{classWombat_1_1MamdaCurrencyUpdate}{
+\section{Wombat::Mamda\-Currency\-Update Class Reference}
+\label{classWombat_1_1MamdaCurrencyUpdate}\index{Wombat::MamdaCurrencyUpdate@{Wombat::MamdaCurrencyUpdate}}
+}
+\hyperlink{classWombat_1_1MamdaCurrencyUpdate}{Mamda\-Currency\-Update} is an interface that provides access to the currency related fields.  
+
+
+{\tt \#include $<$Mamda\-Currency\-Update.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Currency\-Update::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaCurrencyUpdate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaCurrencyUpdate_b3e155fe59d759e148c319ff92e8003b}{get\-Bid\-Price} () const =0
+\begin{CompactList}\small\item\em Get the currency bid price. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaCurrencyUpdate_a176e102ce277c24aa48d4ee2767ad6f}{get\-Ask\-Price} () const =0
+\begin{CompactList}\small\item\em Get the currency ask price. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyUpdate_cb8f38e834099963b5bee3d771b6573a}{get\-Bid\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the quote ask price field\-State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyUpdate_43b7f8357bf87770254d215bd949d2b5}{get\-Ask\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the quote ask price field\-State. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaCurrencyUpdate_e5503eb4785cb3a1817a94b235b3cd3d}{$\sim$Mamda\-Currency\-Update} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaCurrencyUpdate}{Mamda\-Currency\-Update} is an interface that provides access to the currency related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaCurrencyUpdate_e5503eb4785cb3a1817a94b235b3cd3d}{
+\index{Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}!~MamdaCurrencyUpdate@{$\sim$MamdaCurrencyUpdate}}
+\index{~MamdaCurrencyUpdate@{$\sim$MamdaCurrencyUpdate}!Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}}
+\subsubsection[$\sim$MamdaCurrencyUpdate]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Currency\-Update::$\sim$Mamda\-Currency\-Update ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyUpdate_e5503eb4785cb3a1817a94b235b3cd3d}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaCurrencyUpdate_b3e155fe59d759e148c319ff92e8003b}{
+\index{Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}!getBidPrice@{getBidPrice}}
+\index{getBidPrice@{getBidPrice}!Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}}
+\subsubsection[getBidPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Currency\-Update::get\-Bid\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyUpdate_b3e155fe59d759e148c319ff92e8003b}
+
+
+Get the currency bid price. 
+
+\begin{Desc}
+\item[Returns:]Bid price. The highest price that the representative party/group is willing to pay to buy the security. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaCurrencyListener_3563aac40f16c6dd61f64e9d9c2e1b2e}{Wombat::Mamda\-Currency\-Listener}.\hypertarget{classWombat_1_1MamdaCurrencyUpdate_a176e102ce277c24aa48d4ee2767ad6f}{
+\index{Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}!getAskPrice@{getAskPrice}}
+\index{getAskPrice@{getAskPrice}!Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}}
+\subsubsection[getAskPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Currency\-Update::get\-Ask\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyUpdate_a176e102ce277c24aa48d4ee2767ad6f}
+
+
+Get the currency ask price. 
+
+\begin{Desc}
+\item[Returns:]Ask price. The lowest price that the representative party/group is willing to take to sell the security. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaCurrencyListener_7e0b54e9607f5e4770ab22d2da0c63fe}{Wombat::Mamda\-Currency\-Listener}.\hypertarget{classWombat_1_1MamdaCurrencyUpdate_cb8f38e834099963b5bee3d771b6573a}{
+\index{Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}!getBidPriceFieldState@{getBidPriceFieldState}}
+\index{getBidPriceFieldState@{getBidPriceFieldState}!Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}}
+\subsubsection[getBidPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Update::get\-Bid\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyUpdate_cb8f38e834099963b5bee3d771b6573a}
+
+
+Get the quote ask price field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaCurrencyListener_5db8b40b06fe6b4fb3fa1e388502a8c2}{Wombat::Mamda\-Currency\-Listener}.\hypertarget{classWombat_1_1MamdaCurrencyUpdate_43b7f8357bf87770254d215bd949d2b5}{
+\index{Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}!getAskPriceFieldState@{getAskPriceFieldState}}
+\index{getAskPriceFieldState@{getAskPriceFieldState}!Wombat::MamdaCurrencyUpdate@{Wombat::Mamda\-Currency\-Update}}
+\subsubsection[getAskPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Update::get\-Ask\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyUpdate_43b7f8357bf87770254d215bd949d2b5}
+
+
+Get the quote ask price field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaCurrencyListener_485502d95a2b9f71119353b736719d57}{Wombat::Mamda\-Currency\-Listener}.

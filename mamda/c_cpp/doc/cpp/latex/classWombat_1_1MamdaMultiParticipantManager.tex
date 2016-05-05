@@ -1,0 +1,102 @@
+\hypertarget{classWombat_1_1MamdaMultiParticipantManager}{
+\section{Wombat::Mamda\-Multi\-Participant\-Manager Class Reference}
+\label{classWombat_1_1MamdaMultiParticipantManager}\index{Wombat::MamdaMultiParticipantManager@{Wombat::MamdaMultiParticipantManager}}
+}
+\hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} is a class that manages updates on a consolidated basis for securities that may be traded on multiple exchanges and which may have a national best bid and offer.  
+
+
+{\tt \#include $<$Mamda\-Multi\-Participant\-Manager.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Multi\-Participant\-Manager::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaMultiParticipantManager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaMultiParticipantManager_799180862cc602700bde5e4cda9bddb4}{Mamda\-Multi\-Participant\-Manager} (const char $\ast$symbol)
+\begin{CompactList}\small\item\em Create a manager for consolidated securities. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaMultiParticipantManager_8fe05673332e0d57f0a77cc45fe32866}{$\sim$Mamda\-Multi\-Participant\-Manager} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiParticipantManager_15c57fa29aab488747d1febedba15111}{add\-Handler} (\hyperlink{classWombat_1_1MamdaMultiParticipantHandler}{Mamda\-Multi\-Participant\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized handler for notifications about the multi-participant security. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiParticipantManager_37997b38e78d2c76f470738087a0cb34}{add\-Consolidated\-Listener} (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$listener)
+\begin{CompactList}\small\item\em Add a specialized message listener (e.g., a \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, etc. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiParticipantManager_296f3ce08825ffaa6997a6c5fb67c496}{add\-Participant\-Listener} (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$listener, const char $\ast$part\-Id)
+\begin{CompactList}\small\item\em Add a specialized message listener (e.g., a \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, etc. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaMultiParticipantManager_7c7586474bb08e9d9d05198459fdf245}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} is a class that manages updates on a consolidated basis for securities that may be traded on multiple exchanges and which may have a national best bid and offer. 
+
+Developers are notified of each element available for the consolidated security, including the national best bid and offer, and each regional exchange. Developers can pick and choose which elements they wish to provide handling for (e.g., BBO-only, certain regional exchanges, etc.).
+
+Note: the \hyperlink{classWombat_1_1MamdaMultiParticipantManager}{Mamda\-Multi\-Participant\-Manager} can also be used for securities that are not traded on multiple exchanges. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaMultiParticipantManager_799180862cc602700bde5e4cda9bddb4}{
+\index{Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}!MamdaMultiParticipantManager@{MamdaMultiParticipantManager}}
+\index{MamdaMultiParticipantManager@{MamdaMultiParticipantManager}!Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}}
+\subsubsection[MamdaMultiParticipantManager]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Multi\-Participant\-Manager::Mamda\-Multi\-Participant\-Manager (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamdaMultiParticipantManager_799180862cc602700bde5e4cda9bddb4}
+
+
+Create a manager for consolidated securities. 
+
+\hypertarget{classWombat_1_1MamdaMultiParticipantManager_8fe05673332e0d57f0a77cc45fe32866}{
+\index{Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}!~MamdaMultiParticipantManager@{$\sim$MamdaMultiParticipantManager}}
+\index{~MamdaMultiParticipantManager@{$\sim$MamdaMultiParticipantManager}!Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}}
+\subsubsection[$\sim$MamdaMultiParticipantManager]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Multi\-Participant\-Manager::$\sim$Mamda\-Multi\-Participant\-Manager ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiParticipantManager_8fe05673332e0d57f0a77cc45fe32866}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaMultiParticipantManager_15c57fa29aab488747d1febedba15111}{
+\index{Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Participant\-Manager::add\-Handler (\hyperlink{classWombat_1_1MamdaMultiParticipantHandler}{Mamda\-Multi\-Participant\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaMultiParticipantManager_15c57fa29aab488747d1febedba15111}
+
+
+Add a specialized handler for notifications about the multi-participant security. 
+
+The handler is responsible for initializing any data structures and listeners for each participant as well as the consolidated. Currently, only one handler can be registered. \hypertarget{classWombat_1_1MamdaMultiParticipantManager_37997b38e78d2c76f470738087a0cb34}{
+\index{Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}!addConsolidatedListener@{addConsolidatedListener}}
+\index{addConsolidatedListener@{addConsolidatedListener}!Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}}
+\subsubsection[addConsolidatedListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Participant\-Manager::add\-Consolidated\-Listener (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$ {\em listener})}}
+\label{classWombat_1_1MamdaMultiParticipantManager_37997b38e78d2c76f470738087a0cb34}
+
+
+Add a specialized message listener (e.g., a \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, etc. 
+
+) for the consolidated data. \hypertarget{classWombat_1_1MamdaMultiParticipantManager_296f3ce08825ffaa6997a6c5fb67c496}{
+\index{Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}!addParticipantListener@{addParticipantListener}}
+\index{addParticipantListener@{addParticipantListener}!Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}}
+\subsubsection[addParticipantListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Participant\-Manager::add\-Participant\-Listener (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$ {\em listener}, const char $\ast$ {\em part\-Id})}}
+\label{classWombat_1_1MamdaMultiParticipantManager_296f3ce08825ffaa6997a6c5fb67c496}
+
+
+Add a specialized message listener (e.g., a \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, etc. 
+
+) for a participant. \hypertarget{classWombat_1_1MamdaMultiParticipantManager_7c7586474bb08e9d9d05198459fdf245}{
+\index{Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaMultiParticipantManager@{Wombat::Mamda\-Multi\-Participant\-Manager}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Multi\-Participant\-Manager::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaMultiParticipantManager_7c7586474bb08e9d9d05198459fdf245}
+
+
+Implementation of \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

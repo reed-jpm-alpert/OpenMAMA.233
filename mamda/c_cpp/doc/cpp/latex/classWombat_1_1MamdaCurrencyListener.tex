@@ -1,0 +1,419 @@
+\hypertarget{classWombat_1_1MamdaCurrencyListener}{
+\section{Wombat::Mamda\-Currency\-Listener Class Reference}
+\label{classWombat_1_1MamdaCurrencyListener}\index{Wombat::MamdaCurrencyListener@{Wombat::MamdaCurrencyListener}}
+}
+\hyperlink{classWombat_1_1MamdaCurrencyListener}{Mamda\-Currency\-Listener} is a class that specializes in handling currency data, Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaCurrencyHandler}{Mamda\-Currency\-Handler} interface and will be delivered notifications for updates in the currency data.  
+
+
+{\tt \#include $<$Mamda\-Currency\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Currency\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.66667cm]{classWombat_1_1MamdaCurrencyListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaCurrencyListener_331d5b71016ebdcdd47de7ff9ded97d2}{Mamda\-Currency\-Listener} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaCurrencyListener_250629c22714ba9d7ac3f52cef462f86}{$\sim$Mamda\-Currency\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaCurrencyListener_120979ebd57b91ead52d29e344b224d1}{add\-Handler} (\hyperlink{classWombat_1_1MamdaCurrencyHandler}{Mamda\-Currency\-Handler} $\ast$handler)
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaCurrencyListener_6c9b1053a22182c09cdfd9ac020d71b9}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the instruments string symbol. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaCurrencyListener_2a5ec025f8c088274a68563ebe51f063}{get\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the participant identifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaCurrencyListener_04fcdfcdc9376b9a0daf71773e28b58e}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaCurrencyListener_3d35c47919af62b2900d2c560b66d898}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaCurrencyListener_1f9fa224749c87c92668bf55bcb2cfa5}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaCurrencyListener_dc787103b73d10a395458a270e78d69b}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaCurrencyListener_4d9a6975f01379ea3f3bfbf11ae1fb13}{get\-Event\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em Get the event sequence number. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaCurrencyListener_f50eaef7c50bd1b1e58f0d38967d2b1c}{get\-Event\-Time} () const 
+\begin{CompactList}\small\item\em Get the event time. \item\end{CompactList}\item 
+const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaCurrencyListener_e130dc6327ffac134a0302293c4956e9}{get\-Msg\-Qual} () const 
+\begin{CompactList}\small\item\em Get the message qualifier. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaCurrencyListener_33eb7435735c7a88d240714973a1f6a6}{is\-Initialised} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_80336ebcd54d9fdb027c620335529f1a}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_78906357e4729fb45bf3e80b4d625689}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the participant identifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_8a309624a9e76fb5e943560e17dd7bf8}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_7ad1cdb959dcb619780b27383704d157}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_a1c7db47ff4db093c4d13fddc44fd7e6}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_5cbf04e2668f868816b2d7b6461d97dc}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_811aa7d57b26e148bbcbfd66f7f4f963}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event sequence number field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_88df072f42678a7b2bb71e6c88e97dac}{get\-Event\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_36f04bd57be711459aedc2857be8b621}{get\-Msg\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the message qualifier field state. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaCurrencyListener_3563aac40f16c6dd61f64e9d9c2e1b2e}{get\-Bid\-Price} () const 
+\begin{CompactList}\small\item\em Get the currency bid price. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaCurrencyListener_7e0b54e9607f5e4770ab22d2da0c63fe}{get\-Ask\-Price} () const 
+\begin{CompactList}\small\item\em Get the currency ask price. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_5db8b40b06fe6b4fb3fa1e388502a8c2}{get\-Bid\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote ask price field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaCurrencyListener_485502d95a2b9f71119353b736719d57}{get\-Ask\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote ask price field\-State. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaCurrencyListener_0cc612d96663c187bab76d284912dbfe}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaCurrencyListener}{Mamda\-Currency\-Listener} is a class that specializes in handling currency data, Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaCurrencyHandler}{Mamda\-Currency\-Handler} interface and will be delivered notifications for updates in the currency data. 
+
+An obvious application for this MAMDA class is any kind of currency analysis application.
+
+\hyperlink{classWombat_1_1MamdaCurrencyListener}{Mamda\-Currency\-Listener} should initialize the \hyperlink{classWombat_1_1MamdaCurrencyFields}{Mamda\-Currency\-Fields} class prior to receiving the first message by calling \hyperlink{classWombat_1_1MamdaCurrencyFields_b8f7dae141b38d0f2fb8559cbdc5d2ac}{Mamda\-Currency\-Fields::set\-Dictionary()} with a valid dictionary object which contains Currency related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaCurrencyListener_331d5b71016ebdcdd47de7ff9ded97d2}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!MamdaCurrencyListener@{MamdaCurrencyListener}}
+\index{MamdaCurrencyListener@{MamdaCurrencyListener}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[MamdaCurrencyListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Currency\-Listener::Mamda\-Currency\-Listener ()}}
+\label{classWombat_1_1MamdaCurrencyListener_331d5b71016ebdcdd47de7ff9ded97d2}
+
+
+\hypertarget{classWombat_1_1MamdaCurrencyListener_250629c22714ba9d7ac3f52cef462f86}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!~MamdaCurrencyListener@{$\sim$MamdaCurrencyListener}}
+\index{~MamdaCurrencyListener@{$\sim$MamdaCurrencyListener}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[$\sim$MamdaCurrencyListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Currency\-Listener::$\sim$Mamda\-Currency\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_250629c22714ba9d7ac3f52cef462f86}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaCurrencyListener_120979ebd57b91ead52d29e344b224d1}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Currency\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaCurrencyHandler}{Mamda\-Currency\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaCurrencyListener_120979ebd57b91ead52d29e344b224d1}
+
+
+\hypertarget{classWombat_1_1MamdaCurrencyListener_6c9b1053a22182c09cdfd9ac020d71b9}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Currency\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_6c9b1053a22182c09cdfd9ac020d71b9}
+
+
+Get the instruments string symbol. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_8783b136a1305d21c578ced8618c090b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_2a5ec025f8c088274a68563ebe51f063}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Currency\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_2a5ec025f8c088274a68563ebe51f063}
+
+
+Get the participant identifier. 
+
+\begin{Desc}
+\item[Returns:]Participant ID. This may be an exchange identifier, a market maker ID, etc., or NULL (if this is not related to any specific participant). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_94e531c6ae9ae7798725db14facbd6e2}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_04fcdfcdc9376b9a0daf71773e28b58e}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Currency\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_04fcdfcdc9376b9a0daf71773e28b58e}
+
+
+Get the source time. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_60b5d51f3799c4762090505ef5b213e9}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_3d35c47919af62b2900d2c560b66d898}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Currency\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_3d35c47919af62b2900d2c560b66d898}
+
+
+Get the activity time. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b3810afc69474ef3b192ee4c9307e714}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_1f9fa224749c87c92668bf55bcb2cfa5}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Currency\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_1f9fa224749c87c92668bf55bcb2cfa5}
+
+
+Get the line time. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3fcc26fa1a6446bcec12b11ac74ed26d}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_dc787103b73d10a395458a270e78d69b}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Currency\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_dc787103b73d10a395458a270e78d69b}
+
+
+Get the send time. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b0602a83bec20cd8b341ec866ff3bffa}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_4d9a6975f01379ea3f3bfbf11ae1fb13}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Currency\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_4d9a6975f01379ea3f3bfbf11ae1fb13}
+
+
+Get the event sequence number. 
+
+\begin{Desc}
+\item[Returns:]Source sequence number. The exchange generated sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_1fd845d48e95b4ee3beafc72d1ac2adf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_f50eaef7c50bd1b1e58f0d38967d2b1c}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Currency\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_f50eaef7c50bd1b1e58f0d38967d2b1c}
+
+
+Get the event time. 
+
+\begin{Desc}
+\item[Returns:]Event time. Typically, when the event actually occurred. This is often the same as the \char`\"{}source time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_7285491c2c657207a64b1b0449c0339b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_e130dc6327ffac134a0302293c4956e9}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Msg\-Qual\& Wombat::Mamda\-Currency\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_e130dc6327ffac134a0302293c4956e9}
+
+
+Get the message qualifier. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_675ce8f1de581548426335423d6b3864}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_33eb7435735c7a88d240714973a1f6a6}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!isInitialised@{isInitialised}}
+\index{isInitialised@{isInitialised}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[isInitialised]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Currency\-Listener::is\-Initialised () const}}
+\label{classWombat_1_1MamdaCurrencyListener_33eb7435735c7a88d240714973a1f6a6}
+
+
+\hypertarget{classWombat_1_1MamdaCurrencyListener_80336ebcd54d9fdb027c620335529f1a}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_80336ebcd54d9fdb027c620335529f1a}
+
+
+Get the string symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ef95e19f4babb0e5ea8549d6cf29d13f}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_78906357e4729fb45bf3e80b4d625689}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_78906357e4729fb45bf3e80b4d625689}
+
+
+Get the participant identifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_c361c99af2cf7eb9f5621d89f744fc62}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_8a309624a9e76fb5e943560e17dd7bf8}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_8a309624a9e76fb5e943560e17dd7bf8}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_9cd58f3d7b5ebea42fa86e5dde46ab18}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_7ad1cdb959dcb619780b27383704d157}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_7ad1cdb959dcb619780b27383704d157}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_a61a566e3442181ca1fadc4524296cd0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_a1c7db47ff4db093c4d13fddc44fd7e6}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_a1c7db47ff4db093c4d13fddc44fd7e6}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_eb06352aca3280c5e89bad7a3b185cdf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_5cbf04e2668f868816b2d7b6461d97dc}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_5cbf04e2668f868816b2d7b6461d97dc}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_418ecb29b412cd42581b54c87b5360fd}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_811aa7d57b26e148bbcbfd66f7f4f963}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_811aa7d57b26e148bbcbfd66f7f4f963}
+
+
+Get the event sequence number field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_51cc0b9d4c2b8a982ccd18b339707cb5}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_88df072f42678a7b2bb71e6c88e97dac}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_88df072f42678a7b2bb71e6c88e97dac}
+
+
+Get the event time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ff3932065e16e660fb6cd9285b46f7d0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_36f04bd57be711459aedc2857be8b621}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_36f04bd57be711459aedc2857be8b621}
+
+
+Get the message qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3454d51e1131d9949691ee4b4153cd97}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaCurrencyListener_3563aac40f16c6dd61f64e9d9c2e1b2e}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getBidPrice@{getBidPrice}}
+\index{getBidPrice@{getBidPrice}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getBidPrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Currency\-Listener::get\-Bid\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_3563aac40f16c6dd61f64e9d9c2e1b2e}
+
+
+Get the currency bid price. 
+
+\begin{Desc}
+\item[Returns:]Bid price. The highest price that the representative party/group is willing to pay to buy the security. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaCurrencyRecap_bce12f317bf48ecab3175f6d1581f853}{Wombat::Mamda\-Currency\-Recap}.\hypertarget{classWombat_1_1MamdaCurrencyListener_7e0b54e9607f5e4770ab22d2da0c63fe}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getAskPrice@{getAskPrice}}
+\index{getAskPrice@{getAskPrice}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getAskPrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Currency\-Listener::get\-Ask\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_7e0b54e9607f5e4770ab22d2da0c63fe}
+
+
+Get the currency ask price. 
+
+\begin{Desc}
+\item[Returns:]Ask price. The lowest price that the representative party/group is willing to take to sell the security. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaCurrencyRecap_7f59a08ae952cfc742c9530d343784b7}{Wombat::Mamda\-Currency\-Recap}.\hypertarget{classWombat_1_1MamdaCurrencyListener_5db8b40b06fe6b4fb3fa1e388502a8c2}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getBidPriceFieldState@{getBidPriceFieldState}}
+\index{getBidPriceFieldState@{getBidPriceFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getBidPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Bid\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_5db8b40b06fe6b4fb3fa1e388502a8c2}
+
+
+Get the quote ask price field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaCurrencyRecap_402c9cbe8f4b3a19f0cd579cb5871b5b}{Wombat::Mamda\-Currency\-Recap}.\hypertarget{classWombat_1_1MamdaCurrencyListener_485502d95a2b9f71119353b736719d57}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!getAskPriceFieldState@{getAskPriceFieldState}}
+\index{getAskPriceFieldState@{getAskPriceFieldState}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[getAskPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Currency\-Listener::get\-Ask\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_485502d95a2b9f71119353b736719d57}
+
+
+Get the quote ask price field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaCurrencyRecap_9c164af05a5d96f69f20dfdfd46d2211}{Wombat::Mamda\-Currency\-Recap}.\hypertarget{classWombat_1_1MamdaCurrencyListener_0cc612d96663c187bab76d284912dbfe}{
+\index{Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaCurrencyListener@{Wombat::Mamda\-Currency\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Currency\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCurrencyListener_0cc612d96663c187bab76d284912dbfe}
+
+
+Implementation of Mamda\-Listener interface. 
+
+\par
+ \begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em $<$Mama\-Status$>$}]\{MAMDA default implementation.\} \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

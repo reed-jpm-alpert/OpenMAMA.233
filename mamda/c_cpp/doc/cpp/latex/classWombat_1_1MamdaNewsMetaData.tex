@@ -1,0 +1,262 @@
+\hypertarget{classWombat_1_1MamdaNewsMetaData}{
+\section{Wombat::Mamda\-News\-Meta\-Data Class Reference}
+\label{classWombat_1_1MamdaNewsMetaData}\index{Wombat::MamdaNewsMetaData@{Wombat::MamdaNewsMetaData}}
+}
+\hyperlink{classWombat_1_1MamdaNewsMetaData}{Mamda\-News\-Meta\-Data} represents information about many types of attributes associated with the news headline.  
+
+
+{\tt \#include $<$Mamda\-News\-Meta\-Data.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-News\-Meta\-Data::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaNewsMetaData}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaNewsMetaData_c80a30c0b95497091c32972658ab4340}{get\-Headline\-Text} () const =0
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaNewsMetaData_bc4fae00154c4b27324e1da1d25585ce}{get\-News\-Source\-Id} () const =0
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaNewsMetaData_5fe17063b6df522e76b7016884f964d1}{get\-News\-Orig\-Source\-Id} () const =0
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaNewsMetaData_213a4b9676abf7cf91a311a599edc2d3}{get\-Language\-Id} () const =0
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_2eee46712fbf04831baf811695678aeb}{get\-Native\-Codes} (const char $\ast$$\ast$\&codes, mama\_\-size\_\-t \&num\-Codes) const =0
+\begin{CompactList}\small\item\em Get an array of native meta-data codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_64e79bec2fd98b5669ea62bb9c51fec2}{get\-Native\-Related\-Symbols} (const char $\ast$$\ast$\&symbols, mama\_\-size\_\-t \&num\-Symbols) const =0
+\begin{CompactList}\small\item\em Get an array of native feed symbol codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_dd73f4b456cf4c7720d3ba86e4d71a4c}{get\-Industries} (const char $\ast$$\ast$\&industries, mama\_\-size\_\-t \&num\-Industries) const =0
+\begin{CompactList}\small\item\em Get an array of normalized industry codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_f3882b3a14540a56a2a58d863755549d}{get\-Market\-Sectors} (const char $\ast$$\ast$\&market\-Sectors, mama\_\-size\_\-t \&num\-Market\-Sectors) const =0
+\begin{CompactList}\small\item\em Get an array of normalized market sector codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_8eaa05007b92a32e985794c6b326b639}{get\-Regions} (const char $\ast$$\ast$\&regions, mama\_\-size\_\-t \&num\-Regions) const =0
+\begin{CompactList}\small\item\em Get an array of normalized region codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_c91f16ff5d1b843a872254a5e8493cc3}{get\-Countries} (const char $\ast$$\ast$\&countries, mama\_\-size\_\-t \&num\-Countries) const =0
+\begin{CompactList}\small\item\em Get an array of ISO country codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_2f4ff23afa293710b658b94ecb0ab63d}{get\-Topics} (const char $\ast$$\ast$\&topics, mama\_\-size\_\-t \&num\-Topics) const =0
+\begin{CompactList}\small\item\em Get an array of normalized topic (or \char`\"{}subject\char`\"{}) codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_1b7d9ba9d0e807d16ada32145c937e73}{get\-Products} (const char $\ast$$\ast$\&products, mama\_\-size\_\-t \&num\-Products) const =0
+\begin{CompactList}\small\item\em Get an array of normalized product codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_548e87226465849d482b2644c103c67e}{get\-Misc\-Codes} (const char $\ast$$\ast$\&misc\-Codes, mama\_\-size\_\-t \&num\-Misc\-Codes) const =0
+\begin{CompactList}\small\item\em Get an array of normalized miscellaneous codes associated with this news story. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsMetaData_8ed97f443c8892110d53d7c2a42b8fbf}{get\-Related\-Symbols} (const char $\ast$$\ast$\&symbols, mama\_\-size\_\-t \&num\-Symbols) const =0
+\begin{CompactList}\small\item\em Get an array of normalized symbol codes associated with this news story. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_faa7709d230f261c8aeb71420f6dd012}{Mamda\-News\-Priority} \hyperlink{classWombat_1_1MamdaNewsMetaData_1d004d2cccd57b8cdb88bc0bae62d685}{get\-News\-Priority} () const =0
+\item 
+virtual mama\_\-u16\_\-t \hyperlink{classWombat_1_1MamdaNewsMetaData_58b2e7b0cdd5e496b54df349b3b65676}{get\-News\-Story\-Rev\-Number} () const =0
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaNewsMetaData_2102fe268a03b09d9e899e9f7935949c}{get\-News\-Orig\-Story\-Time} () const =0
+\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsMetaData_3435e4bd338604cebfb3f5c6a34ad090}{$\sim$Mamda\-News\-Meta\-Data} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaNewsMetaData}{Mamda\-News\-Meta\-Data} represents information about many types of attributes associated with the news headline. 
+
+Note that some information is inherited from the \hyperlink{classWombat_1_1MamdaBasicEvent}{Mamda\-Basic\-Event}, including the source time (the time the data source sent the headline) and the event time (the time the article was actually published). Depending upon the richness of information provided by a particular data source, the source time and event time may be the same. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaNewsMetaData_3435e4bd338604cebfb3f5c6a34ad090}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!~MamdaNewsMetaData@{$\sim$MamdaNewsMetaData}}
+\index{~MamdaNewsMetaData@{$\sim$MamdaNewsMetaData}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[$\sim$MamdaNewsMetaData]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-News\-Meta\-Data::$\sim$Mamda\-News\-Meta\-Data ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_3435e4bd338604cebfb3f5c6a34ad090}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaNewsMetaData_c80a30c0b95497091c32972658ab4340}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getHeadlineText@{getHeadlineText}}
+\index{getHeadlineText@{getHeadlineText}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getHeadlineText]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-News\-Meta\-Data::get\-Headline\-Text () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_c80a30c0b95497091c32972658ab4340}
+
+
+\begin{Desc}
+\item[Returns:]The text of the headline for the story. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_7c4c336c485773a27dd12ccbc93bcfce}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_bc4fae00154c4b27324e1da1d25585ce}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNewsSourceId@{getNewsSourceId}}
+\index{getNewsSourceId@{getNewsSourceId}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNewsSourceId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-News\-Meta\-Data::get\-News\-Source\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_bc4fae00154c4b27324e1da1d25585ce}
+
+
+\begin{Desc}
+\item[Returns:]The data source ID of the news story. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_7566bd0297c11ef707348d9d3646363b}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_5fe17063b6df522e76b7016884f964d1}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNewsOrigSourceId@{getNewsOrigSourceId}}
+\index{getNewsOrigSourceId@{getNewsOrigSourceId}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNewsOrigSourceId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-News\-Meta\-Data::get\-News\-Orig\-Source\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_5fe17063b6df522e76b7016884f964d1}
+
+
+\begin{Desc}
+\item[Returns:]The original data source ID of the news story (e.g., if the story was provided by a news aggregator). \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_1e7a0a1b7ac2373b2d59c474f8962527}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_213a4b9676abf7cf91a311a599edc2d3}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getLanguageId@{getLanguageId}}
+\index{getLanguageId@{getLanguageId}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getLanguageId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-News\-Meta\-Data::get\-Language\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_213a4b9676abf7cf91a311a599edc2d3}
+
+
+\begin{Desc}
+\item[Returns:]The ANSI language ID of the news story. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_9142e41e5db9786622ffcd517b68d3b9}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_2eee46712fbf04831baf811695678aeb}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNativeCodes@{getNativeCodes}}
+\index{getNativeCodes@{getNativeCodes}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNativeCodes]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Native\-Codes (const char $\ast$$\ast$\& {\em codes}, mama\_\-size\_\-t \& {\em num\-Codes}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_2eee46712fbf04831baf811695678aeb}
+
+
+Get an array of native meta-data codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_49a407e757b36783514598581d4ce941}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_64e79bec2fd98b5669ea62bb9c51fec2}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNativeRelatedSymbols@{getNativeRelatedSymbols}}
+\index{getNativeRelatedSymbols@{getNativeRelatedSymbols}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNativeRelatedSymbols]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Native\-Related\-Symbols (const char $\ast$$\ast$\& {\em symbols}, mama\_\-size\_\-t \& {\em num\-Symbols}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_64e79bec2fd98b5669ea62bb9c51fec2}
+
+
+Get an array of native feed symbol codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_35caf4a0f9aa24db2903ae45042200c1}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_dd73f4b456cf4c7720d3ba86e4d71a4c}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getIndustries@{getIndustries}}
+\index{getIndustries@{getIndustries}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getIndustries]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Industries (const char $\ast$$\ast$\& {\em industries}, mama\_\-size\_\-t \& {\em num\-Industries}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_dd73f4b456cf4c7720d3ba86e4d71a4c}
+
+
+Get an array of normalized industry codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_6dd281e1212cf8a7efca3da2aec7d020}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_f3882b3a14540a56a2a58d863755549d}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getMarketSectors@{getMarketSectors}}
+\index{getMarketSectors@{getMarketSectors}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getMarketSectors]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Market\-Sectors (const char $\ast$$\ast$\& {\em market\-Sectors}, mama\_\-size\_\-t \& {\em num\-Market\-Sectors}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_f3882b3a14540a56a2a58d863755549d}
+
+
+Get an array of normalized market sector codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_c060c9e66c0fb02c4039f1ca5c14502c}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_8eaa05007b92a32e985794c6b326b639}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getRegions@{getRegions}}
+\index{getRegions@{getRegions}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getRegions]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Regions (const char $\ast$$\ast$\& {\em regions}, mama\_\-size\_\-t \& {\em num\-Regions}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_8eaa05007b92a32e985794c6b326b639}
+
+
+Get an array of normalized region codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_7f6db5ebceef1b50448604c270d31c4f}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_c91f16ff5d1b843a872254a5e8493cc3}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getCountries@{getCountries}}
+\index{getCountries@{getCountries}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getCountries]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Countries (const char $\ast$$\ast$\& {\em countries}, mama\_\-size\_\-t \& {\em num\-Countries}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_c91f16ff5d1b843a872254a5e8493cc3}
+
+
+Get an array of ISO country codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_9f753e8e23984a3f229cd860f031cb7a}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_2f4ff23afa293710b658b94ecb0ab63d}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getTopics@{getTopics}}
+\index{getTopics@{getTopics}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getTopics]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Topics (const char $\ast$$\ast$\& {\em topics}, mama\_\-size\_\-t \& {\em num\-Topics}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_2f4ff23afa293710b658b94ecb0ab63d}
+
+
+Get an array of normalized topic (or \char`\"{}subject\char`\"{}) codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_32409e948ff75b589569022baa988cbf}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_1b7d9ba9d0e807d16ada32145c937e73}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getProducts@{getProducts}}
+\index{getProducts@{getProducts}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getProducts]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Products (const char $\ast$$\ast$\& {\em products}, mama\_\-size\_\-t \& {\em num\-Products}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_1b7d9ba9d0e807d16ada32145c937e73}
+
+
+Get an array of normalized product codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_d1b777bc5eab51d090ace0e858e15649}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_548e87226465849d482b2644c103c67e}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getMiscCodes@{getMiscCodes}}
+\index{getMiscCodes@{getMiscCodes}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getMiscCodes]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Misc\-Codes (const char $\ast$$\ast$\& {\em misc\-Codes}, mama\_\-size\_\-t \& {\em num\-Misc\-Codes}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_548e87226465849d482b2644c103c67e}
+
+
+Get an array of normalized miscellaneous codes associated with this news story. 
+
+Miscellaneous codes are those not categorized as industry, market sector, region, country or product codes. 
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_e072447d35b0890cd27e694f02859705}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_8ed97f443c8892110d53d7c2a42b8fbf}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getRelatedSymbols@{getRelatedSymbols}}
+\index{getRelatedSymbols@{getRelatedSymbols}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getRelatedSymbols]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Meta\-Data::get\-Related\-Symbols (const char $\ast$$\ast$\& {\em symbols}, mama\_\-size\_\-t \& {\em num\-Symbols}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_8ed97f443c8892110d53d7c2a42b8fbf}
+
+
+Get an array of normalized symbol codes associated with this news story. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_dfa06642c61fa25ebd63f55d587f54fe}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_1d004d2cccd57b8cdb88bc0bae62d685}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNewsPriority@{getNewsPriority}}
+\index{getNewsPriority@{getNewsPriority}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNewsPriority]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_faa7709d230f261c8aeb71420f6dd012}{Mamda\-News\-Priority} Wombat::Mamda\-News\-Meta\-Data::get\-News\-Priority () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_1d004d2cccd57b8cdb88bc0bae62d685}
+
+
+\begin{Desc}
+\item[Returns:]Whether the feed provider has designated this story as with normal priority or \char`\"{}hot\char`\"{} (important) priority. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_716f900c705f9d4ee783bdb791779e68}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_58b2e7b0cdd5e496b54df349b3b65676}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNewsStoryRevNumber@{getNewsStoryRevNumber}}
+\index{getNewsStoryRevNumber@{getNewsStoryRevNumber}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNewsStoryRevNumber]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u16\_\-t Wombat::Mamda\-News\-Meta\-Data::get\-News\-Story\-Rev\-Number () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_58b2e7b0cdd5e496b54df349b3b65676}
+
+
+\begin{Desc}
+\item[Returns:]The revision number. Note: the value returned is zero if the data source does not provide revision numbers. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_75fde990077f814ccc4fb601de8a6d20}{Wombat::Mamda\-News\-Headline}.\hypertarget{classWombat_1_1MamdaNewsMetaData_2102fe268a03b09d9e899e9f7935949c}{
+\index{Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}!getNewsOrigStoryTime@{getNewsOrigStoryTime}}
+\index{getNewsOrigStoryTime@{getNewsOrigStoryTime}!Wombat::MamdaNewsMetaData@{Wombat::Mamda\-News\-Meta\-Data}}
+\subsubsection[getNewsOrigStoryTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-News\-Meta\-Data::get\-News\-Orig\-Story\-Time () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsMetaData_2102fe268a03b09d9e899e9f7935949c}
+
+
+\begin{Desc}
+\item[Returns:]The original publish time of the news story. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaNewsHeadline_a61ffab170f414fe6ffc986aec9c5ddb}{Wombat::Mamda\-News\-Headline}.

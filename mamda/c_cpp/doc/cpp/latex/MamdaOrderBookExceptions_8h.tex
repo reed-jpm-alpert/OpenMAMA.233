@@ -1,0 +1,23 @@
+\hypertarget{MamdaOrderBookExceptions_8h}{
+\section{Mamda\-Order\-Book\-Exceptions.h File Reference}
+\label{MamdaOrderBookExceptions_8h}\index{MamdaOrderBookExceptions.h@{MamdaOrderBookExceptions.h}}
+}
+{\tt \#include $<$stdexcept$>$}\par
+{\tt \#include $<$string$>$}\par
+{\tt \#include $<$mamda/Mamda\-Optional\-Config.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceWombat}{Wombat}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamdaOrderBookException}{Wombat::Mamda\-Order\-Book\-Exception}
+\begin{CompactList}\small\item\em \hyperlink{classWombat_1_1MamdaOrderBookException}{Mamda\-Order\-Book\-Exception} is generated when an inconsistent state is detected in an order book. \item\end{CompactList}\item 
+class \hyperlink{classWombat_1_1MamdaOrderBookDuplicateEntry}{Wombat::Mamda\-Order\-Book\-Duplicate\-Entry}
+\begin{CompactList}\small\item\em \hyperlink{classWombat_1_1MamdaOrderBookDuplicateEntry}{Mamda\-Order\-Book\-Duplicate\-Entry} is generated when an existing entry is unexpectedly encountered when updating a \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} or \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager}. \item\end{CompactList}\item 
+class \hyperlink{classWombat_1_1MamdaOrderBookMissingEntry}{Wombat::Mamda\-Order\-Book\-Missing\-Entry}
+\begin{CompactList}\small\item\em \hyperlink{classWombat_1_1MamdaOrderBookMissingEntry}{Mamda\-Order\-Book\-Missing\-Entry} is generated when an expected entry is not found when updating a \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} or \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager}. \item\end{CompactList}\item 
+class \hyperlink{classWombat_1_1MamdaOrderBookInvalidEntry}{Wombat::Mamda\-Order\-Book\-Invalid\-Entry}
+\begin{CompactList}\small\item\em \hyperlink{classWombat_1_1MamdaOrderBookInvalidEntry}{Mamda\-Order\-Book\-Invalid\-Entry} is generated when an entry is applied as an update to or deletion from an order book but the internal references to price level and/or order book do not exist. \item\end{CompactList}\end{CompactItemize}

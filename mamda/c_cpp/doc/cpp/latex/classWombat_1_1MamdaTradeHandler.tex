@@ -1,0 +1,168 @@
+\hypertarget{classWombat_1_1MamdaTradeHandler}{
+\section{Wombat::Mamda\-Trade\-Handler Class Reference}
+\label{classWombat_1_1MamdaTradeHandler}\index{Wombat::MamdaTradeHandler@{Wombat::MamdaTradeHandler}}
+}
+\hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} is an interface for applications that want to have an easy way to handle trade updates.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_1b60cb151264fa92967be4c6468e2fbe}{on\-Trade\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when the current last-trade information for the security is available. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_627de635c463dad8736b3c4fbf6f40ed}{on\-Trade\-Report} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeReport}{Mamda\-Trade\-Report} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when a trade is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_ba0b748342b02c74f6cc52c9f53426f1}{on\-Trade\-Gap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeGap}{Mamda\-Trade\-Gap} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when a gap in trade reports is discovered. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_8be83b1075f878cd7dffc3f0127741e9}{on\-Trade\-Cancel\-Or\-Error} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeCancelOrError}{Mamda\-Trade\-Cancel\-Or\-Error} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when a trade cancel or error is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_369167600f7eadb0a4509246eb912e4a}{on\-Trade\-Correction} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeCorrection}{Mamda\-Trade\-Correction} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when a trade correction is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_1e6ee074b064105c2b018c7465617d8c}{on\-Trade\-Closing} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeClosing}{Mamda\-Trade\-Closing} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked for a closing report. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_473839f9695a2ae3d41308ac8a223a14}{on\-Trade\-Out\-Of\-Sequence} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradeOutOfSequence}{Mamda\-Trade\-Out\-Of\-Sequence} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked for a message marked as out of sequence. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaTradeHandler_7ee70ea10323bc436c6445b0de502b34}{on\-Trade\-Possibly\-Duplicate} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate}{Mamda\-Trade\-Possibly\-Duplicate} \&event, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked for a message which is marked as possibly duplicate Listener must be configured to check the Msg Qualifier, i.e., call {\tt set\-Control\-Processing\-By\-Msg\-Qual} on listener passing a value of true;. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaTradeHandler_d4baa77255511ab84e6dc3152ea3682f}{$\sim$Mamda\-Trade\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} is an interface for applications that want to have an easy way to handle trade updates. 
+
+The interface defines callback methods for different types of trade-related events: trades, errors/cancels, corrections, recaps and closing reports. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeHandler_d4baa77255511ab84e6dc3152ea3682f}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!~MamdaTradeHandler@{$\sim$MamdaTradeHandler}}
+\index{~MamdaTradeHandler@{$\sim$MamdaTradeHandler}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[$\sim$MamdaTradeHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Handler::$\sim$Mamda\-Trade\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_d4baa77255511ab84e6dc3152ea3682f}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeHandler_1b60cb151264fa92967be4c6468e2fbe}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeRecap@{onTradeRecap}}
+\index{onTradeRecap@{onTradeRecap}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_1b60cb151264fa92967be4c6468e2fbe}
+
+
+Method invoked when the current last-trade information for the security is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked the callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em recap}]Access to the details in the trade recap. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_627de635c463dad8736b3c4fbf6f40ed}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeReport@{onTradeReport}}
+\index{onTradeReport@{onTradeReport}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeReport]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Report (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeReport}{Mamda\-Trade\-Report} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_627de635c463dad8736b3c4fbf6f40ed}
+
+
+Method invoked when a trade is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received this update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Access to the trade report event details. \item[{\em recap}]Access to all trade related fields. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_ba0b748342b02c74f6cc52c9f53426f1}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeGap@{onTradeGap}}
+\index{onTradeGap@{onTradeGap}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeGap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Gap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeGap}{Mamda\-Trade\-Gap} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_ba0b748342b02c74f6cc52c9f53426f1}
+
+
+Method invoked when a gap in trade reports is discovered. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which detected the gap. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg which triggered this invocation. \item[{\em event}]Access to the gap event details. \item[{\em recap}]Access to the complete trade information. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_8be83b1075f878cd7dffc3f0127741e9}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeCancelOrError@{onTradeCancelOrError}}
+\index{onTradeCancelOrError@{onTradeCancelOrError}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeCancelOrError]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Cancel\-Or\-Error (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeCancelOrError}{Mamda\-Trade\-Cancel\-Or\-Error} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_8be83b1075f878cd7dffc3f0127741e9}
+
+
+Method invoked when a trade cancel or error is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Access to the details of the trade cancel or error event. \item[{\em recap}]Access to the full trade details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_369167600f7eadb0a4509246eb912e4a}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeCorrection@{onTradeCorrection}}
+\index{onTradeCorrection@{onTradeCorrection}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeCorrection]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Correction (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeCorrection}{Mamda\-Trade\-Correction} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_369167600f7eadb0a4509246eb912e4a}
+
+
+Method invoked when a trade correction is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Access to the trade correction event details. \item[{\em recap}]Access to the full trade details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_1e6ee074b064105c2b018c7465617d8c}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeClosing@{onTradeClosing}}
+\index{onTradeClosing@{onTradeClosing}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeClosing]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Closing (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeClosing}{Mamda\-Trade\-Closing} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_1e6ee074b064105c2b018c7465617d8c}
+
+
+Method invoked for a closing report. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Access to the trade closing event details. \item[{\em recap}]Access to the full trade details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_473839f9695a2ae3d41308ac8a223a14}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradeOutOfSequence@{onTradeOutOfSequence}}
+\index{onTradeOutOfSequence@{onTradeOutOfSequence}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradeOutOfSequence]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Out\-Of\-Sequence (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradeOutOfSequence}{Mamda\-Trade\-Out\-Of\-Sequence} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_473839f9695a2ae3d41308ac8a223a14}
+
+
+Method invoked for a message marked as out of sequence. 
+
+Listener must be configured to check the Msg Qualifier, i.e., call {\tt set\-Control\-Processing\-By\-Msg\-Qual()} on listener passing a value of true;
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The trade listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Details on the out of sequence trade event. \item[{\em recap}]Access to the full trade details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeHandler_7ee70ea10323bc436c6445b0de502b34}{
+\index{Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}!onTradePossiblyDuplicate@{onTradePossiblyDuplicate}}
+\index{onTradePossiblyDuplicate@{onTradePossiblyDuplicate}!Wombat::MamdaTradeHandler@{Wombat::Mamda\-Trade\-Handler}}
+\subsubsection[onTradePossiblyDuplicate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Trade\-Handler::on\-Trade\-Possibly\-Duplicate (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate}{Mamda\-Trade\-Possibly\-Duplicate} \& {\em event}, const \hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeHandler_7ee70ea10323bc436c6445b0de502b34}
+
+
+Method invoked for a message which is marked as possibly duplicate Listener must be configured to check the Msg Qualifier, i.e., call {\tt set\-Control\-Processing\-By\-Msg\-Qual} on listener passing a value of true;. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The trade listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Details on the possibly duplicate trade event. \item[{\em recap}]Access to the full trade details. \end{description}
+\end{Desc}

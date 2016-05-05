@@ -1,0 +1,397 @@
+\hypertarget{classWombat_1_1MamdaPubStatusListener}{
+\section{Wombat::Mamda\-Pub\-Status\-Listener Class Reference}
+\label{classWombat_1_1MamdaPubStatusListener}\index{Wombat::MamdaPubStatusListener@{Wombat::MamdaPubStatusListener}}
+}
+\hyperlink{classWombat_1_1MamdaPubStatusListener}{Mamda\-Pub\-Status\-Listener} is a class that specializes in handling Publisher (Feed Handler) Status updates.  
+
+
+{\tt \#include $<$Mamda\-Pub\-Status\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Pub\-Status\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaPubStatusListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaPubStatusListener_85f58413cd22007f86b9b8c061812f05}{Mamda\-Pub\-Status\-Listener} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaPubStatusListener_03f02d6928f876a1d35c39522da47f8d}{$\sim$Mamda\-Pub\-Status\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaPubStatusListener_8fd61b0b01ae58ac9aa0087ef361206c}{add\-Handler} (\hyperlink{classWombat_1_1MamdaPubStatusHandler}{Mamda\-Pub\-Status\-Handler} $\ast$handler)
+\item 
+void \hyperlink{classWombat_1_1MamdaPubStatusListener_2af5146fb7e9e8b4427e78809c20377a}{update\-Field\-States} ()
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_6a45bb477632be814f1a3bd00082c06c}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Accessor function for generic fields applicable to all 5 publisher status message types. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_ffedad037842c408272dbded18f676f6}{get\-Activity\-Time} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_0b14cc9aec4ec454b0095cf4f82fab5e}{get\-Activity\-Date} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_48e9eaf72c6faf1bab703c5993c1adf7}{get\-Pub\-Id} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_838ffb83c7d46bf52b743f659dd733d9}{get\-Pub\-Class} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_0623f4d8813595a3306cb929b518664e}{get\-Pub\-Host\-Name} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_5072c477fd34a25138e39f6fb732956b}{get\-Symbol\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_4a6dd432e42df809ec71070125d617e5}{get\-Activity\-Time\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_978079b77f029cc821ff70b4b381f80f}{get\-Activity\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_b6166da7512cfa7b06bb971eb945a39a}{get\-Pub\-Id\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_ffcb6fab4b381b52cdfe3483f2e2965c}{get\-Pub\-Class\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_0113c4afc2de92bbae16a85dbd0b76a5}{get\-Pub\-Host\-Name\-Field\-State} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_e18c97b1a454d45755dd48f8a56a742d}{get\-Status\-Msg\-Type} () const 
+\begin{CompactList}\small\item\em Accessor function to the publisher status message type:\begin{itemize}
+\item HB, FT, LS, MH, or GP. \end{itemize}
+\item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_f9c9da5b1ab98b723a87fe8a460b3901}{get\-Status\-Msg\-Type\-Field\-State} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_1015e3575a3a8473801927af37687d66}{get\-Pub\-Ft\-Mode} () const 
+\begin{CompactList}\small\item\em Accessor functions for fields specific to a particular message type. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_2cec9d2c120cdf4cfaab88ef273712aa}{get\-Pub\-Mh\-Mode} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_6a41fa38621e9165330688951656e3c3}{get\-Line\-Status} () const 
+\item 
+long \hyperlink{classWombat_1_1MamdaPubStatusListener_a3125f864d901d9d788778238c50c370}{get\-Status\-Seq\-Num} () const 
+\item 
+long \hyperlink{classWombat_1_1MamdaPubStatusListener_ce7c4b6ae1c1508087ae25b2a8e1d61e}{get\-Begin\-Gap\-Seq\-Num} () const 
+\item 
+long \hyperlink{classWombat_1_1MamdaPubStatusListener_cb0a6dff2e7c85b4c299444c743f7b36}{get\-End\-Gap\-Seq\-Num} () const 
+\item 
+long \hyperlink{classWombat_1_1MamdaPubStatusListener_1ba02d9db2e8b657ec61b6de7d489e07}{get\-Pub\-Cache\-Size} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaPubStatusListener_ac4c3ecbefe9170ecaa873e725cac4f3}{get\-Free\-Text} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_b377a65c443b4a09b13d0e6a7c269ee9}{get\-Pub\-Ft\-Mode\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_94bb9e1391c14ff70c13813bd8598182}{get\-Pub\-Mh\-Mode\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_7e8e85060e206e639d9a61c608ddb48f}{get\-Line\-Status\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_d17d5c19c2ac8ca47502eea6a9931845}{get\-Status\-Seq\-Num\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_df5268fab3cedd4a767fbb8f3e29e7ec}{get\-Begin\-Gap\-Seq\-Num\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_54fd8bef174d993cc0c9f5710f585b07}{get\-End\-Gap\-Seq\-Num\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_af630b2a9c628d5bad3f6b48bb1de598}{get\-Pub\-Cache\-Size\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaPubStatusListener_2ae0c7afe5e413d50eb94497163d400f}{get\-Free\-Text\-Field\-State} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaPubStatusListener_310318bfb5b54acdee23429c6db68dd2}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaPubStatusListener}{Mamda\-Pub\-Status\-Listener} is a class that specializes in handling Publisher (Feed Handler) Status updates. 
+
+There are 5 types of publisher status msg:\begin{itemize}
+\item Heart Beat (Status\-Msg\-Type = \char`\"{}HB\char`\"{})\item Fault Tolerance (Status\-Msg\-Type = \char`\"{}FT\char`\"{})\item Line Status (Status\-Msg\-Type = \char`\"{}LS\char`\"{})\item Message Handler (Status\-Msg\-Type = \char`\"{}MH\char`\"{})\item Gap (Status\-Msg\-Type = \char`\"{}GP\char`\"{})\end{itemize}
+
+
+Note: The \hyperlink{classWombat_1_1MamdaPubStatusListener}{Mamda\-Pub\-Status\-Listener} class cache is cleared when an new update message arrives
+
+\hyperlink{classWombat_1_1MamdaPubStatusListener}{Mamda\-Pub\-Status\-Listener} should initialize the \hyperlink{classWombat_1_1MamdaPubStatusFields}{Mamda\-Pub\-Status\-Fields} class prior to receiving the first message by calling \hyperlink{classWombat_1_1MamdaPubStatusFields_0244fb3aa4d6a3696bb88ecbdc4089b7}{Mamda\-Pub\-Status\-Fields::set\-Dictionary()} with a valid dictionary object which contains Pub\-Status related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaPubStatusListener_85f58413cd22007f86b9b8c061812f05}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!MamdaPubStatusListener@{MamdaPubStatusListener}}
+\index{MamdaPubStatusListener@{MamdaPubStatusListener}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[MamdaPubStatusListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Pub\-Status\-Listener::Mamda\-Pub\-Status\-Listener ()}}
+\label{classWombat_1_1MamdaPubStatusListener_85f58413cd22007f86b9b8c061812f05}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_03f02d6928f876a1d35c39522da47f8d}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!~MamdaPubStatusListener@{$\sim$MamdaPubStatusListener}}
+\index{~MamdaPubStatusListener@{$\sim$MamdaPubStatusListener}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[$\sim$MamdaPubStatusListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Pub\-Status\-Listener::$\sim$Mamda\-Pub\-Status\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_03f02d6928f876a1d35c39522da47f8d}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaPubStatusListener_8fd61b0b01ae58ac9aa0087ef361206c}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Pub\-Status\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaPubStatusHandler}{Mamda\-Pub\-Status\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaPubStatusListener_8fd61b0b01ae58ac9aa0087ef361206c}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_2af5146fb7e9e8b4427e78809c20377a}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!updateFieldStates@{updateFieldStates}}
+\index{updateFieldStates@{updateFieldStates}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[updateFieldStates]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Pub\-Status\-Listener::update\-Field\-States ()}}
+\label{classWombat_1_1MamdaPubStatusListener_2af5146fb7e9e8b4427e78809c20377a}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_6a45bb477632be814f1a3bd00082c06c}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_6a45bb477632be814f1a3bd00082c06c}
+
+
+Accessor function for generic fields applicable to all 5 publisher status message types. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_a891a47fbe902368dbf46ab84773eff9}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_ffedad037842c408272dbded18f676f6}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_ffedad037842c408272dbded18f676f6}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_fe58ce33fc151a3cd9d64f82e27a2058}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_0b14cc9aec4ec454b0095cf4f82fab5e}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getActivityDate@{getActivityDate}}
+\index{getActivityDate@{getActivityDate}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getActivityDate]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Activity\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_0b14cc9aec4ec454b0095cf4f82fab5e}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_2d1131459438c3e833583d0233c1c102}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_48e9eaf72c6faf1bab703c5993c1adf7}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubId@{getPubId}}
+\index{getPubId@{getPubId}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_48e9eaf72c6faf1bab703c5993c1adf7}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_31447dec5db0e9837e8816a03cba88e4}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_838ffb83c7d46bf52b743f659dd733d9}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubClass@{getPubClass}}
+\index{getPubClass@{getPubClass}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubClass]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Class () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_838ffb83c7d46bf52b743f659dd733d9}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_ebb16e566721f6f423bf09124245c50e}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_0623f4d8813595a3306cb929b518664e}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubHostName@{getPubHostName}}
+\index{getPubHostName@{getPubHostName}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubHostName]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Host\-Name () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_0623f4d8813595a3306cb929b518664e}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_3d9fde3f554888ebb5f104c134decf60}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_5072c477fd34a25138e39f6fb732956b}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Symbol\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_5072c477fd34a25138e39f6fb732956b}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_4a6dd432e42df809ec71070125d617e5}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Activity\-Time\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_4a6dd432e42df809ec71070125d617e5}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_978079b77f029cc821ff70b4b381f80f}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getActivityDateFieldState@{getActivityDateFieldState}}
+\index{getActivityDateFieldState@{getActivityDateFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getActivityDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Activity\-Date\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_978079b77f029cc821ff70b4b381f80f}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_b6166da7512cfa7b06bb971eb945a39a}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubIdFieldState@{getPubIdFieldState}}
+\index{getPubIdFieldState@{getPubIdFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Id\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_b6166da7512cfa7b06bb971eb945a39a}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_ffcb6fab4b381b52cdfe3483f2e2965c}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubClassFieldState@{getPubClassFieldState}}
+\index{getPubClassFieldState@{getPubClassFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubClassFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Class\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_ffcb6fab4b381b52cdfe3483f2e2965c}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_0113c4afc2de92bbae16a85dbd0b76a5}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubHostNameFieldState@{getPubHostNameFieldState}}
+\index{getPubHostNameFieldState@{getPubHostNameFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubHostNameFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Host\-Name\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_0113c4afc2de92bbae16a85dbd0b76a5}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_e18c97b1a454d45755dd48f8a56a742d}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getStatusMsgType@{getStatusMsgType}}
+\index{getStatusMsgType@{getStatusMsgType}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getStatusMsgType]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Status\-Msg\-Type () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_e18c97b1a454d45755dd48f8a56a742d}
+
+
+Accessor function to the publisher status message type:\begin{itemize}
+\item HB, FT, LS, MH, or GP. \end{itemize}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_72d3f8a795323662c919e6f7cdd12a66}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_f9c9da5b1ab98b723a87fe8a460b3901}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getStatusMsgTypeFieldState@{getStatusMsgTypeFieldState}}
+\index{getStatusMsgTypeFieldState@{getStatusMsgTypeFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getStatusMsgTypeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Status\-Msg\-Type\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_f9c9da5b1ab98b723a87fe8a460b3901}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_1015e3575a3a8473801927af37687d66}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubFtMode@{getPubFtMode}}
+\index{getPubFtMode@{getPubFtMode}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubFtMode]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Ft\-Mode () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_1015e3575a3a8473801927af37687d66}
+
+
+Accessor functions for fields specific to a particular message type. 
+
+The applicability of each accessor function to a given message type is defined in the comments below; e.g., \char`\"{}get\-Pub\-Ft\-Mode\char`\"{} is only relevant and will only be populated for Heart Beat (HB) and Fault Tolerance (FT) publisher status messages 
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_11e1cacd11604090bf1c5387b0ac7f43}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_2cec9d2c120cdf4cfaab88ef273712aa}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubMhMode@{getPubMhMode}}
+\index{getPubMhMode@{getPubMhMode}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubMhMode]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Mh\-Mode () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_2cec9d2c120cdf4cfaab88ef273712aa}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_e79db14a783d2831413c89f1e3c4527e}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_6a41fa38621e9165330688951656e3c3}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getLineStatus@{getLineStatus}}
+\index{getLineStatus@{getLineStatus}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getLineStatus]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Line\-Status () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_6a41fa38621e9165330688951656e3c3}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_553635179dab937c8ee88019f66ca0de}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_a3125f864d901d9d788778238c50c370}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getStatusSeqNum@{getStatusSeqNum}}
+\index{getStatusSeqNum@{getStatusSeqNum}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getStatusSeqNum]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Pub\-Status\-Listener::get\-Status\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_a3125f864d901d9d788778238c50c370}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_d954ab6ff4df01d45ff44a616745e515}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_ce7c4b6ae1c1508087ae25b2a8e1d61e}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Pub\-Status\-Listener::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_ce7c4b6ae1c1508087ae25b2a8e1d61e}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_61827ba531d12dfb8de2e8713fd8f628}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_cb0a6dff2e7c85b4c299444c743f7b36}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Pub\-Status\-Listener::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_cb0a6dff2e7c85b4c299444c743f7b36}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_96f29e18a6b74143b81a8a523e8bbeea}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_1ba02d9db2e8b657ec61b6de7d489e07}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubCacheSize@{getPubCacheSize}}
+\index{getPubCacheSize@{getPubCacheSize}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubCacheSize]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Cache\-Size () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_1ba02d9db2e8b657ec61b6de7d489e07}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_7edfe04c5f0e4e7b5deba2f68ae47f2e}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_ac4c3ecbefe9170ecaa873e725cac4f3}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getFreeText@{getFreeText}}
+\index{getFreeText@{getFreeText}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getFreeText]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Pub\-Status\-Listener::get\-Free\-Text () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_ac4c3ecbefe9170ecaa873e725cac4f3}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaPubStatus_b64900c7cdfbf708a639036dc0251165}{Wombat::Mamda\-Pub\-Status}.\hypertarget{classWombat_1_1MamdaPubStatusListener_b377a65c443b4a09b13d0e6a7c269ee9}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubFtModeFieldState@{getPubFtModeFieldState}}
+\index{getPubFtModeFieldState@{getPubFtModeFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubFtModeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Ft\-Mode\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_b377a65c443b4a09b13d0e6a7c269ee9}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_94bb9e1391c14ff70c13813bd8598182}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubMhModeFieldState@{getPubMhModeFieldState}}
+\index{getPubMhModeFieldState@{getPubMhModeFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubMhModeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Mh\-Mode\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_94bb9e1391c14ff70c13813bd8598182}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_7e8e85060e206e639d9a61c608ddb48f}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getLineStatusFieldState@{getLineStatusFieldState}}
+\index{getLineStatusFieldState@{getLineStatusFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getLineStatusFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Line\-Status\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_7e8e85060e206e639d9a61c608ddb48f}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_d17d5c19c2ac8ca47502eea6a9931845}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getStatusSeqNumFieldState@{getStatusSeqNumFieldState}}
+\index{getStatusSeqNumFieldState@{getStatusSeqNumFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getStatusSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Status\-Seq\-Num\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_d17d5c19c2ac8ca47502eea6a9931845}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_df5268fab3cedd4a767fbb8f3e29e7ec}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getBeginGapSeqNumFieldState@{getBeginGapSeqNumFieldState}}
+\index{getBeginGapSeqNumFieldState@{getBeginGapSeqNumFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getBeginGapSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Begin\-Gap\-Seq\-Num\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_df5268fab3cedd4a767fbb8f3e29e7ec}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_54fd8bef174d993cc0c9f5710f585b07}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getEndGapSeqNumFieldState@{getEndGapSeqNumFieldState}}
+\index{getEndGapSeqNumFieldState@{getEndGapSeqNumFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getEndGapSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-End\-Gap\-Seq\-Num\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_54fd8bef174d993cc0c9f5710f585b07}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_af630b2a9c628d5bad3f6b48bb1de598}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getPubCacheSizeFieldState@{getPubCacheSizeFieldState}}
+\index{getPubCacheSizeFieldState@{getPubCacheSizeFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getPubCacheSizeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Pub\-Cache\-Size\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_af630b2a9c628d5bad3f6b48bb1de598}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_2ae0c7afe5e413d50eb94497163d400f}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!getFreeTextFieldState@{getFreeTextFieldState}}
+\index{getFreeTextFieldState@{getFreeTextFieldState}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[getFreeTextFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Pub\-Status\-Listener::get\-Free\-Text\-Field\-State () const}}
+\label{classWombat_1_1MamdaPubStatusListener_2ae0c7afe5e413d50eb94497163d400f}
+
+
+\hypertarget{classWombat_1_1MamdaPubStatusListener_310318bfb5b54acdee23429c6db68dd2}{
+\index{Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaPubStatusListener@{Wombat::Mamda\-Pub\-Status\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Pub\-Status\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaPubStatusListener_310318bfb5b54acdee23429c6db68dd2}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

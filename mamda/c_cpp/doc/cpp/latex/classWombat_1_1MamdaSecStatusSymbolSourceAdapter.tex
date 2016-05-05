@@ -1,0 +1,119 @@
+\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter}{
+\section{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter Class Reference}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter}\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::MamdaSecStatusSymbolSourceAdapter}}
+}
+\hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter}{Mamda\-Sec\-Status\-Symbol\-Source\-Adapter} is a simple adapter class that can be added as a handler to the \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} turning it into a Mamda\-Symbol\-Source.  
+
+
+{\tt \#include $<$Mamda\-Sec\-Status\-Symbol\-Source\-Adapter.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.90476cm]{classWombat_1_1MamdaSecStatusSymbolSourceAdapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_ab1ff4e29b6e34af13c02fa1fa90e3f0}{Mamda\-Sec\-Status\-Symbol\-Source\-Adapter} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_eefe3bdc4aebc9cbf00766a9e90898c3}{$\sim$Mamda\-Sec\-Status\-Symbol\-Source\-Adapter} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_85be28217f8f4eb344b96f460d085c06}{add\-Handler} (\hyperlink{classWombat_1_1MamdaSymbolSourceHandler}{Mamda\-Symbol\-Source\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Register a handler implementing the \hyperlink{classWombat_1_1MamdaSymbolSourceHandler}{Mamda\-Symbol\-Source\-Handler} interface. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_1d8ac176b7946080fc1d7f665e5a19ed}{get\-Sourced\-Symbol} () const 
+\begin{CompactList}\small\item\em Return the sourced symbol. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_a1a7e7d772ee646d2104beb1f764efba}{on\-Sec\-Status\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaSecStatusRecap}{Mamda\-Sec\-Status\-Recap} \&recap)
+\begin{CompactList}\small\item\em Implementation of \hyperlink{classWombat_1_1MamdaSecStatusHandler}{Mamda\-Sec\-Status\-Handler} interface. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_4671f467c1425728565861501e610ba3}{on\-Sec\-Status\-Update} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \&listener, const Mama\-Msg \&msg)
+\begin{CompactList}\small\item\em Method invoked when a security status update is received. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter}{Mamda\-Sec\-Status\-Symbol\-Source\-Adapter} is a simple adapter class that can be added as a handler to the \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} turning it into a Mamda\-Symbol\-Source. 
+
+Objects implementing the Mamda\-Symbol\-Source interface can register with this adapter and receive notification of newly announced symbols indirectly from the \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} via this adapter. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_ab1ff4e29b6e34af13c02fa1fa90e3f0}{
+\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}!MamdaSecStatusSymbolSourceAdapter@{MamdaSecStatusSymbolSourceAdapter}}
+\index{MamdaSecStatusSymbolSourceAdapter@{MamdaSecStatusSymbolSourceAdapter}!Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}}
+\subsubsection[MamdaSecStatusSymbolSourceAdapter]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter ()}}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_ab1ff4e29b6e34af13c02fa1fa90e3f0}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_eefe3bdc4aebc9cbf00766a9e90898c3}{
+\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}!~MamdaSecStatusSymbolSourceAdapter@{$\sim$MamdaSecStatusSymbolSourceAdapter}}
+\index{~MamdaSecStatusSymbolSourceAdapter@{$\sim$MamdaSecStatusSymbolSourceAdapter}!Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}}
+\subsubsection[$\sim$MamdaSecStatusSymbolSourceAdapter]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::$\sim$Mamda\-Sec\-Status\-Symbol\-Source\-Adapter ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_eefe3bdc4aebc9cbf00766a9e90898c3}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_85be28217f8f4eb344b96f460d085c06}{
+\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::add\-Handler (\hyperlink{classWombat_1_1MamdaSymbolSourceHandler}{Mamda\-Symbol\-Source\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_85be28217f8f4eb344b96f460d085c06}
+
+
+Register a handler implementing the \hyperlink{classWombat_1_1MamdaSymbolSourceHandler}{Mamda\-Symbol\-Source\-Handler} interface. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]The symbol source handler \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_1d8ac176b7946080fc1d7f665e5a19ed}{
+\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}!getSourcedSymbol@{getSourcedSymbol}}
+\index{getSourcedSymbol@{getSourcedSymbol}!Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}}
+\subsubsection[getSourcedSymbol]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::get\-Sourced\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_1d8ac176b7946080fc1d7f665e5a19ed}
+
+
+Return the sourced symbol. 
+
+Implementation of the \hyperlink{classWombat_1_1MamdaSymbolSourceEvent}{Mamda\-Symbol\-Source\-Event} interface
+
+\begin{Desc}
+\item[Returns:]sourced symbol \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSymbolSourceEvent_f55521a5c392761f1a17d3a3a0e24411}{Wombat::Mamda\-Symbol\-Source\-Event}.\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_a1a7e7d772ee646d2104beb1f764efba}{
+\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}!onSecStatusRecap@{onSecStatusRecap}}
+\index{onSecStatusRecap@{onSecStatusRecap}!Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}}
+\subsubsection[onSecStatusRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::on\-Sec\-Status\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaSecStatusRecap}{Mamda\-Sec\-Status\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_a1a7e7d772ee646d2104beb1f764efba}
+
+
+Implementation of \hyperlink{classWombat_1_1MamdaSecStatusHandler}{Mamda\-Sec\-Status\-Handler} interface. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The security status subscription. \item[{\em listener}]The security status listener. \item[{\em msg}]The security status update message. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusHandler_7f49ada42883a664440776560fd6f083}{Wombat::Mamda\-Sec\-Status\-Handler}.\hypertarget{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_4671f467c1425728565861501e610ba3}{
+\index{Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}!onSecStatusUpdate@{onSecStatusUpdate}}
+\index{onSecStatusUpdate@{onSecStatusUpdate}!Wombat::MamdaSecStatusSymbolSourceAdapter@{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}}
+\subsubsection[onSecStatusUpdate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter::on\-Sec\-Status\-Update (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_4671f467c1425728565861501e610ba3}
+
+
+Method invoked when a security status update is received. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaSecStatusHandler_db36d5defe6bca39835cca9c9732bef2}{Wombat::Mamda\-Sec\-Status\-Handler}.

@@ -1,0 +1,101 @@
+\hypertarget{classWombat_1_1MamdaTradeChecker}{
+\section{Wombat::Mamda\-Trade\-Checker Class Reference}
+\label{classWombat_1_1MamdaTradeChecker}\index{Wombat::MamdaTradeChecker@{Wombat::MamdaTradeChecker}}
+}
+\hyperlink{classWombat_1_1MamdaTradeChecker}{Mamda\-Trade\-Checker} is a class that provides trades sanity checking by periodically requesting snapshots of the trades from the publisher and comparing that with an trades being maintained in real time.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Checker.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaTradeChecker_9964b7fcd51f6da299c0188501bf0737}{Mamda\-Trade\-Checker} (Mama\-Queue $\ast$queue, \hyperlink{classWombat_1_1MamdaCheckerHandler}{Mamda\-Checker\-Handler} $\ast$handler, Mama\-Source $\ast$source, const char $\ast$symbol, mama\_\-f64\_\-t interval\-Seconds)
+\begin{CompactList}\small\item\em Constructor. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaTradeChecker_2eae95f41e52377a28985bb3adf25079}{$\sim$Mamda\-Trade\-Checker} ()
+\begin{CompactList}\small\item\em Desctructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaTradeChecker_8cd6151eec6a3ddba8b3dc45406bfbd2}{check\-Snap\-Shot\-Now} ()
+\begin{CompactList}\small\item\em Perform an ad hoc snapshot check now. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeChecker_6c6dde0cd55dd602c984c5a1759c51e7}{get\-Success\-Count} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeChecker_d940914dca854c639cac67bb8ca45049}{get\-Inconclusive\-Count} () const 
+\begin{CompactList}\small\item\em Return the nmber of inconclusive counts. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeChecker_04d7890044b0731514743f646e7cdb02}{get\-Failure\-Count} () const 
+\begin{CompactList}\small\item\em Return the number of failed checks. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeChecker}{Mamda\-Trade\-Checker} is a class that provides trades sanity checking by periodically requesting snapshots of the trades from the publisher and comparing that with an trades being maintained in real time. 
+
+This class is purely for testing purposes, to test for possible configuration or programming errors in the trades publisher and in MAMDA trades management code.
+
+The developer registers a handler that contains callbacks for successful, inconclusive and failure events. The developer also provides an interval representing the frequency of the snapshot checks. The first check will take place at some random point in time between zero and the interval. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeChecker_9964b7fcd51f6da299c0188501bf0737}{
+\index{Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}!MamdaTradeChecker@{MamdaTradeChecker}}
+\index{MamdaTradeChecker@{MamdaTradeChecker}!Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}}
+\subsubsection[MamdaTradeChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Trade\-Checker::Mamda\-Trade\-Checker (Mama\-Queue $\ast$ {\em queue}, \hyperlink{classWombat_1_1MamdaCheckerHandler}{Mamda\-Checker\-Handler} $\ast$ {\em handler}, Mama\-Source $\ast$ {\em source}, const char $\ast$ {\em symbol}, mama\_\-f64\_\-t {\em interval\-Seconds})}}
+\label{classWombat_1_1MamdaTradeChecker_9964b7fcd51f6da299c0188501bf0737}
+
+
+Constructor. 
+
+\hypertarget{classWombat_1_1MamdaTradeChecker_2eae95f41e52377a28985bb3adf25079}{
+\index{Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}!~MamdaTradeChecker@{$\sim$MamdaTradeChecker}}
+\index{~MamdaTradeChecker@{$\sim$MamdaTradeChecker}!Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}}
+\subsubsection[$\sim$MamdaTradeChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Trade\-Checker::$\sim$Mamda\-Trade\-Checker ()}}
+\label{classWombat_1_1MamdaTradeChecker_2eae95f41e52377a28985bb3adf25079}
+
+
+Desctructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeChecker_8cd6151eec6a3ddba8b3dc45406bfbd2}{
+\index{Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}!checkSnapShotNow@{checkSnapShotNow}}
+\index{checkSnapShotNow@{checkSnapShotNow}!Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}}
+\subsubsection[checkSnapShotNow]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Trade\-Checker::check\-Snap\-Shot\-Now ()}}
+\label{classWombat_1_1MamdaTradeChecker_8cd6151eec6a3ddba8b3dc45406bfbd2}
+
+
+Perform an ad hoc snapshot check now. 
+
+This may be useful if the checking is to be performed by some external trigger event. \hypertarget{classWombat_1_1MamdaTradeChecker_6c6dde0cd55dd602c984c5a1759c51e7}{
+\index{Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}!getSuccessCount@{getSuccessCount}}
+\index{getSuccessCount@{getSuccessCount}!Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}}
+\subsubsection[getSuccessCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Checker::get\-Success\-Count () const}}
+\label{classWombat_1_1MamdaTradeChecker_6c6dde0cd55dd602c984c5a1759c51e7}
+
+
+\begin{Desc}
+\item[Returns:]The number of successful checks. \end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeChecker_d940914dca854c639cac67bb8ca45049}{
+\index{Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}!getInconclusiveCount@{getInconclusiveCount}}
+\index{getInconclusiveCount@{getInconclusiveCount}!Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}}
+\subsubsection[getInconclusiveCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Checker::get\-Inconclusive\-Count () const}}
+\label{classWombat_1_1MamdaTradeChecker_d940914dca854c639cac67bb8ca45049}
+
+
+Return the nmber of inconclusive counts. 
+
+An attempt to check the order book may be inconclusive if the order book sequence numbers do not match up.
+
+\begin{Desc}
+\item[Returns:]The number of inconclusive checks. \end{Desc}
+\hypertarget{classWombat_1_1MamdaTradeChecker_04d7890044b0731514743f646e7cdb02}{
+\index{Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}!getFailureCount@{getFailureCount}}
+\index{getFailureCount@{getFailureCount}!Wombat::MamdaTradeChecker@{Wombat::Mamda\-Trade\-Checker}}
+\subsubsection[getFailureCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Checker::get\-Failure\-Count () const}}
+\label{classWombat_1_1MamdaTradeChecker_04d7890044b0731514743f646e7cdb02}
+
+
+Return the number of failed checks. 
+
+This should be zero, of course.
+
+\begin{Desc}
+\item[Returns:]The number of failed checks. \end{Desc}

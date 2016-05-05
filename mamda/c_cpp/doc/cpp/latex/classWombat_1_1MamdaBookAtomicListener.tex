@@ -1,0 +1,696 @@
+\hypertarget{classWombat_1_1MamdaBookAtomicListener}{
+\section{Wombat::Mamda\-Book\-Atomic\-Listener Class Reference}
+\label{classWombat_1_1MamdaBookAtomicListener}\index{Wombat::MamdaBookAtomicListener@{Wombat::MamdaBookAtomicListener}}
+}
+\hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} is a class that specializes in handling order book updates.  
+
+
+{\tt \#include $<$Mamda\-Book\-Atomic\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Book\-Atomic\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.76471cm]{classWombat_1_1MamdaBookAtomicListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaBookAtomicListener_63f5ebdd93ecd7cad9c07af399508aec}{Mamda\-Book\-Atomic\-Listener} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaBookAtomicListener_e5fac16c2989c755913451373c5d4fbf}{$\sim$Mamda\-Book\-Atomic\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaBookAtomicListener_d1d58170780173a80d63128d3a12425c}{add\-Book\-Handler} (\hyperlink{classWombat_1_1MamdaBookAtomicBookHandler}{Mamda\-Book\-Atomic\-Book\-Handler} $\ast$handler)
+\item 
+void \hyperlink{classWombat_1_1MamdaBookAtomicListener_8ee92b1c11caaf8fb358904dad96b7b7}{add\-Level\-Handler} (\hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} $\ast$handler)
+\item 
+void \hyperlink{classWombat_1_1MamdaBookAtomicListener_749db39c3d4f92bc109377a20ed0a631}{add\-Level\-Entry\-Handler} (\hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{Mamda\-Book\-Atomic\-Level\-Entry\-Handler} $\ast$handler)
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaBookAtomicListener_70cfa31bc3d1010dc24c768525dbd62c}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the instruments string symbol. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaBookAtomicListener_b976bfe1cf039410ca1c586214d6f2f2}{get\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the participant identifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_a43104e4c912b926990c05ff0f35ef02}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_84a6cb534ed359f19138a48d9f1f2812}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_e390bbef9be51d4e4a63f3c7bab42926}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_b3acc7062c4aefa9bc7da4a6f810f5d1}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time. \item\end{CompactList}\item 
+const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_f51b3cfbfefe29104627fe7fec17f1a2}{get\-Msg\-Qual} () const 
+\begin{CompactList}\small\item\em Get the message qualifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_b84977f1c114cc2841c34e0d0efa9055}{get\-Event\-Time} () const 
+\begin{CompactList}\small\item\em Get the event time. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_8110769b71d79b631531693c52449b72}{get\-Event\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em Get the event sequence number. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_6d0fa4b94f34bf538d1324ee65a08cdf}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_43081dcece02d10a8291cd9326c550f3}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the participant identifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_3ee620bcb87714cb80033e9eeda630dc}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event sequence number field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_db8ff2c8d4bcbf00307474add61e741e}{get\-Event\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_22cb444aedd516da0ea66a2a6ca85d39}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_9910ae16b92a548bce1821ed98de8956}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_74f25a0ce9a9b71b44d482017457e260}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_158632d4f501353404c44410f71555c4}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaBookAtomicListener_fb7817c15ad089fe8840f16acf6a89d6}{get\-Msg\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the message qualifier field state. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_b7b3fe18e82667b4ab2db1b10c535b30}{get\-Price\-Level\-Num\-Levels} () const 
+\begin{CompactList}\small\item\em Return the number of price levels in the order book update. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_0e9aca6717995e413ba7038d38be5f63}{get\-Price\-Level\-Num} () const 
+\begin{CompactList}\small\item\em Return at which position this level is within an update containing a number of levels. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaBookAtomicListener_7139c6ddcae27c429e7dade0c5e91358}{get\-Price\-Level\-Price} () const 
+\begin{CompactList}\small\item\em Return the price for this price level. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_a71f90d4ad1c3297f35676b7a4363488}{get\-Price\-Level\-Mama\-Price} () const 
+\begin{CompactList}\small\item\em Return the Mama\-Price for this price level. \item\end{CompactList}\item 
+mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_9bb50db078f337545e39e94cfcb89f0e}{get\-Price\-Level\-Size} () const 
+\begin{CompactList}\small\item\em Return the number of order entries comprising this price level. \item\end{CompactList}\item 
+mama\_\-i64\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_f94e0c100149bd2543be4c5c5ae891a2}{get\-Price\-Level\-Size\-Change} () const 
+\begin{CompactList}\small\item\em Aggregate size at current price level. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaBookAtomicListener_9bbc72a64bd32fba449ba581b369a980}{get\-Price\-Level\-Action} () const 
+\begin{CompactList}\small\item\em The action to apply to the orderbook for this price level. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaBookAtomicListener_3031081549b1df511c872068f58e8ade}{get\-Price\-Level\-Side} () const 
+\begin{CompactList}\small\item\em Side of book at current price level. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_85bb50891ec86cc8e1850b4097498a89}{get\-Price\-Level\-Time} () const 
+\begin{CompactList}\small\item\em Time of order book price level. \item\end{CompactList}\item 
+mama\_\-f32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_85367024e7790ce720c241849bf38ec2}{get\-Price\-Level\-Num\-Entries} () const 
+\begin{CompactList}\small\item\em Number of order book entries at current price level. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_0ea6d18818fa9ec05f3e678e0aa58a35}{get\-Price\-Level\-Act\-Num\-Entries} () const 
+\item 
+char \hyperlink{classWombat_1_1MamdaBookAtomicListener_561b2a785ed0546d0d1d2097b77a4f91}{get\-Price\-Level\-Entry\-Action} () const 
+\begin{CompactList}\small\item\em Order book entry action to apply to the full order book. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaBookAtomicListener_b7643da89cf38905b17b2bb8a2930f53}{get\-Price\-Level\-Entry\-Reason} () const 
+\begin{CompactList}\small\item\em Order book entry reason. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaBookAtomicListener_fde019fedeb06b7edcb5dbad7cb2b598}{get\-Price\-Level\-Entry\-Id} () const 
+\begin{CompactList}\small\item\em Order book entry Id. \item\end{CompactList}\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_47bcfe27887db5dab390d398706f96fe}{get\-Price\-Level\-Entry\-Size} () const 
+\begin{CompactList}\small\item\em Return the order book entry size. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicListener_fa4686145cc28c1225b9e546399c4ff4}{get\-Price\-Level\-Entry\-Time} () const 
+\begin{CompactList}\small\item\em Return the time of order book entry update. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} \hyperlink{classWombat_1_1MamdaBookAtomicListener_0c3b1f7657aed8bba468e8500dded596}{get\-Order\-Type} () const 
+\begin{CompactList}\small\item\em Get the Order Type. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBookAtomicListener_e79c2bbb2c0431a40df5788700a26c32}{set\-Order\-Type} (\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} order\-Type) const 
+\begin{CompactList}\small\item\em Set the Order Type. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaBookAtomicListener_67cf7b76360ca22ced5384aa52bf9873}{get\-Has\-Market\-Orders} () const 
+\item 
+void \hyperlink{classWombat_1_1MamdaBookAtomicListener_70a97f14892aaa3a9887b12ccc816651}{set\-Process\-Market\-Orders} (bool process) const 
+\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_9d33a337ef8f16888f6189f704ad1412}{get\-Begin\-Gap\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em The starting number of a detected sequence number gap in order book updates from the feedhandler. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicListener_b965aab29205f4f229ad021094d6b16e}{get\-End\-Gap\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em The ending number of a detected sequence number gap in order book updates from the feedhandler. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicListener_f8e8325226362f8accab387ebcfe4c68}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} is a class that specializes in handling order book updates. 
+
+Unlike the \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} no actual order book is built or maintained. The sole purpose of this is to provide clients direct access to the orderbook updates without the overhead of maintaining a book. Developers provide their own implementation of either or both the \hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} and the \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{Mamda\-Book\-Atomic\-Level\-Entry\-Handler} interfaces and will be delivered notifications for order book recaps and deltas. While the \hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} handles recaps and deltas at a Price Level granularity the \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{Mamda\-Book\-Atomic\-Level\-Entry\-Handler} handles recaps and deltas at a Price Level Entry level (both level \& entry data). Notifications for order book deltas include only the delta. An obvious application for this MAMDA class is any kind of program trading application that needs to build its own order book or an application that needs to archive order book data.
+
+Note: The \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} class caches only order book deltas. If only an \hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} is add to this listener updates and deltas are only processed to Price Level granularity and Entry Level data ignored saving on processing time. Among other reasons, caching of these fields makes it possible to provide complete trade-related callbacks, even when the publisher (e.g., feed handler) is only publishing deltas containing modified fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_63f5ebdd93ecd7cad9c07af399508aec}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!MamdaBookAtomicListener@{MamdaBookAtomicListener}}
+\index{MamdaBookAtomicListener@{MamdaBookAtomicListener}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[MamdaBookAtomicListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Book\-Atomic\-Listener::Mamda\-Book\-Atomic\-Listener ()}}
+\label{classWombat_1_1MamdaBookAtomicListener_63f5ebdd93ecd7cad9c07af399508aec}
+
+
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_e5fac16c2989c755913451373c5d4fbf}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!~MamdaBookAtomicListener@{$\sim$MamdaBookAtomicListener}}
+\index{~MamdaBookAtomicListener@{$\sim$MamdaBookAtomicListener}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[$\sim$MamdaBookAtomicListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Book\-Atomic\-Listener::$\sim$Mamda\-Book\-Atomic\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_e5fac16c2989c755913451373c5d4fbf}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_d1d58170780173a80d63128d3a12425c}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!addBookHandler@{addBookHandler}}
+\index{addBookHandler@{addBookHandler}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[addBookHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Book\-Atomic\-Listener::add\-Book\-Handler (\hyperlink{classWombat_1_1MamdaBookAtomicBookHandler}{Mamda\-Book\-Atomic\-Book\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaBookAtomicListener_d1d58170780173a80d63128d3a12425c}
+
+
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_8ee92b1c11caaf8fb358904dad96b7b7}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!addLevelHandler@{addLevelHandler}}
+\index{addLevelHandler@{addLevelHandler}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[addLevelHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Book\-Atomic\-Listener::add\-Level\-Handler (\hyperlink{classWombat_1_1MamdaBookAtomicLevelHandler}{Mamda\-Book\-Atomic\-Level\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaBookAtomicListener_8ee92b1c11caaf8fb358904dad96b7b7}
+
+
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_749db39c3d4f92bc109377a20ed0a631}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!addLevelEntryHandler@{addLevelEntryHandler}}
+\index{addLevelEntryHandler@{addLevelEntryHandler}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[addLevelEntryHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Book\-Atomic\-Listener::add\-Level\-Entry\-Handler (\hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{Mamda\-Book\-Atomic\-Level\-Entry\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaBookAtomicListener_749db39c3d4f92bc109377a20ed0a631}
+
+
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_70cfa31bc3d1010dc24c768525dbd62c}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Book\-Atomic\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_70cfa31bc3d1010dc24c768525dbd62c}
+
+
+Get the instruments string symbol. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_8783b136a1305d21c578ced8618c090b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_b976bfe1cf039410ca1c586214d6f2f2}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Book\-Atomic\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_b976bfe1cf039410ca1c586214d6f2f2}
+
+
+Get the participant identifier. 
+
+\begin{Desc}
+\item[Returns:]Participant ID. This may be an exchange identifier, a market maker ID, etc., or NULL (if this is not related to any specific participant). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_94e531c6ae9ae7798725db14facbd6e2}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_a43104e4c912b926990c05ff0f35ef02}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_a43104e4c912b926990c05ff0f35ef02}
+
+
+Get the source time. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_60b5d51f3799c4762090505ef5b213e9}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_84a6cb534ed359f19138a48d9f1f2812}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_84a6cb534ed359f19138a48d9f1f2812}
+
+
+Get the activity time. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b3810afc69474ef3b192ee4c9307e714}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_e390bbef9be51d4e4a63f3c7bab42926}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_e390bbef9be51d4e4a63f3c7bab42926}
+
+
+Get the line time. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3fcc26fa1a6446bcec12b11ac74ed26d}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_b3acc7062c4aefa9bc7da4a6f810f5d1}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_b3acc7062c4aefa9bc7da4a6f810f5d1}
+
+
+Get the send time. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b0602a83bec20cd8b341ec866ff3bffa}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_f51b3cfbfefe29104627fe7fec17f1a2}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Msg\-Qual\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_f51b3cfbfefe29104627fe7fec17f1a2}
+
+
+Get the message qualifier. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_675ce8f1de581548426335423d6b3864}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_b84977f1c114cc2841c34e0d0efa9055}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_b84977f1c114cc2841c34e0d0efa9055}
+
+
+Get the event time. 
+
+\begin{Desc}
+\item[Returns:]Event time. Typically, when the event actually occurred. This is often the same as the \char`\"{}source time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_7285491c2c657207a64b1b0449c0339b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_8110769b71d79b631531693c52449b72}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_8110769b71d79b631531693c52449b72}
+
+
+Get the event sequence number. 
+
+\begin{Desc}
+\item[Returns:]Source sequence number. The exchange generated sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_1fd845d48e95b4ee3beafc72d1ac2adf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_6d0fa4b94f34bf538d1324ee65a08cdf}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_6d0fa4b94f34bf538d1324ee65a08cdf}
+
+
+Get the string symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ef95e19f4babb0e5ea8549d6cf29d13f}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_43081dcece02d10a8291cd9326c550f3}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_43081dcece02d10a8291cd9326c550f3}
+
+
+Get the participant identifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_c361c99af2cf7eb9f5621d89f744fc62}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_3ee620bcb87714cb80033e9eeda630dc}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_3ee620bcb87714cb80033e9eeda630dc}
+
+
+Get the event sequence number field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_51cc0b9d4c2b8a982ccd18b339707cb5}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_db8ff2c8d4bcbf00307474add61e741e}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_db8ff2c8d4bcbf00307474add61e741e}
+
+
+Get the event time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ff3932065e16e660fb6cd9285b46f7d0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_22cb444aedd516da0ea66a2a6ca85d39}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_22cb444aedd516da0ea66a2a6ca85d39}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_9cd58f3d7b5ebea42fa86e5dde46ab18}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_9910ae16b92a548bce1821ed98de8956}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_9910ae16b92a548bce1821ed98de8956}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_a61a566e3442181ca1fadc4524296cd0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_74f25a0ce9a9b71b44d482017457e260}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_74f25a0ce9a9b71b44d482017457e260}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_eb06352aca3280c5e89bad7a3b185cdf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_158632d4f501353404c44410f71555c4}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_158632d4f501353404c44410f71555c4}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_418ecb29b412cd42581b54c87b5360fd}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_fb7817c15ad089fe8840f16acf6a89d6}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_fb7817c15ad089fe8840f16acf6a89d6}
+
+
+Get the message qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3454d51e1131d9949691ee4b4153cd97}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_b7b3fe18e82667b4ab2db1b10c535b30}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelNumLevels@{getPriceLevelNumLevels}}
+\index{getPriceLevelNumLevels@{getPriceLevelNumLevels}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelNumLevels]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Num\-Levels () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_b7b3fe18e82667b4ab2db1b10c535b30}
+
+
+Return the number of price levels in the order book update. 
+
+\begin{Desc}
+\item[Returns:]The number of price levels. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_9b93f1c575fa54e72ce1da2d81034bb7}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_0e9aca6717995e413ba7038d38be5f63}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelNum@{getPriceLevelNum}}
+\index{getPriceLevelNum@{getPriceLevelNum}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_0e9aca6717995e413ba7038d38be5f63}
+
+
+Return at which position this level is within an update containing a number of levels. 
+
+(i.e. level m of n levels in the update)
+
+\begin{Desc}
+\item[Returns:]The position of this level in the update received. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_9805eb2f6cd0313e9923070c2f50bf1a}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_7139c6ddcae27c429e7dade0c5e91358}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelPrice@{getPriceLevelPrice}}
+\index{getPriceLevelPrice@{getPriceLevelPrice}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelPrice]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_7139c6ddcae27c429e7dade0c5e91358}
+
+
+Return the price for this price level. 
+
+\begin{Desc}
+\item[Returns:]The price level price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_5bcc378cd2085048f8fa1870265e5ce0}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_a71f90d4ad1c3297f35676b7a4363488}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelMamaPrice@{getPriceLevelMamaPrice}}
+\index{getPriceLevelMamaPrice@{getPriceLevelMamaPrice}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelMamaPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Mama\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_a71f90d4ad1c3297f35676b7a4363488}
+
+
+Return the Mama\-Price for this price level. 
+
+\begin{Desc}
+\item[Returns:]The price level price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_e250b6d0ba73f1396a7ac16a18564fc7}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_9bb50db078f337545e39e94cfcb89f0e}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelSize@{getPriceLevelSize}}
+\index{getPriceLevelSize@{getPriceLevelSize}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelSize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f64\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Size () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_9bb50db078f337545e39e94cfcb89f0e}
+
+
+Return the number of order entries comprising this price level. 
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The number of entries in this price level. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_bf9d9609a53a7344d6232ba70407d069}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_f94e0c100149bd2543be4c5c5ae891a2}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelSizeChange@{getPriceLevelSizeChange}}
+\index{getPriceLevelSizeChange@{getPriceLevelSizeChange}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelSizeChange]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i64\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Size\-Change () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_f94e0c100149bd2543be4c5c5ae891a2}
+
+
+Aggregate size at current price level. 
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The aggregate size at the current price level. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_55c19ae02d863ce2007f4332af271f9b}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_9bbc72a64bd32fba449ba581b369a980}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelAction@{getPriceLevelAction}}
+\index{getPriceLevelAction@{getPriceLevelAction}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelAction]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Action () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_9bbc72a64bd32fba449ba581b369a980}
+
+
+The action to apply to the orderbook for this price level. 
+
+Can have a value of: \begin{itemize}
+\item A : Add a new price level \item U : Update an existing price level \item D : Delete an existing price level \item C : Closing information for price level (often treat the same as Update). \end{itemize}
+
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The price level action. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_01015a77e67f21af4f1b53f25d6df2f0}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_3031081549b1df511c872068f58e8ade}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelSide@{getPriceLevelSide}}
+\index{getPriceLevelSide@{getPriceLevelSide}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelSide]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Side () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_3031081549b1df511c872068f58e8ade}
+
+
+Side of book at current price level. 
+
+\begin{itemize}
+\item B : Bid side. Same as 'buy' side. \item A : Ask side. Same as 'sell' side. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The price level side. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_db64c3729d50e3334a5d1eeb40aba6a4}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_85bb50891ec86cc8e1850b4097498a89}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelTime@{getPriceLevelTime}}
+\index{getPriceLevelTime@{getPriceLevelTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_85bb50891ec86cc8e1850b4097498a89}
+
+
+Time of order book price level. 
+
+\begin{Desc}
+\item[Returns:]The time of the orderbook price level. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_8eebd8c5bc48668b4f42afdcfa2e11ff}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_85367024e7790ce720c241849bf38ec2}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelNumEntries@{getPriceLevelNumEntries}}
+\index{getPriceLevelNumEntries@{getPriceLevelNumEntries}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelNumEntries]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-f32\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Num\-Entries () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_85367024e7790ce720c241849bf38ec2}
+
+
+Number of order book entries at current price level. 
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The number of entries at the current price level. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_8a11dfebeccc889960a783b7e4377735}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_0ea6d18818fa9ec05f3e678e0aa58a35}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelActNumEntries@{getPriceLevelActNumEntries}}
+\index{getPriceLevelActNumEntries@{getPriceLevelActNumEntries}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelActNumEntries]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Act\-Num\-Entries () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_0ea6d18818fa9ec05f3e678e0aa58a35}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry_9c206e1b9ce877f5a5386dc79721aed6}{Wombat::Mamda\-Book\-Atomic\-Level\-Entry}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_561b2a785ed0546d0d1d2097b77a4f91}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelEntryAction@{getPriceLevelEntryAction}}
+\index{getPriceLevelEntryAction@{getPriceLevelEntryAction}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelEntryAction]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Entry\-Action () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_561b2a785ed0546d0d1d2097b77a4f91}
+
+
+Order book entry action to apply to the full order book. 
+
+\begin{itemize}
+\item A : Add entry to the price level. \item U : Update existing entry in the price level. \item D : Delete existing entry from the price level. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The orderbook entry action. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry_685db14a553ce94346b62f7d7b8b5b5a}{Wombat::Mamda\-Book\-Atomic\-Level\-Entry}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_b7643da89cf38905b17b2bb8a2930f53}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelEntryReason@{getPriceLevelEntryReason}}
+\index{getPriceLevelEntryReason@{getPriceLevelEntryReason}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelEntryReason]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Entry\-Reason () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_b7643da89cf38905b17b2bb8a2930f53}
+
+
+Order book entry reason. 
+
+\begin{Desc}
+\item[Returns:]The orderbook entry reason. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry_222418d457ef30752c22e8aa63a61b50}{Wombat::Mamda\-Book\-Atomic\-Level\-Entry}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_fde019fedeb06b7edcb5dbad7cb2b598}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelEntryId@{getPriceLevelEntryId}}
+\index{getPriceLevelEntryId@{getPriceLevelEntryId}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelEntryId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Entry\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_fde019fedeb06b7edcb5dbad7cb2b598}
+
+
+Order book entry Id. 
+
+(order ID, participant ID, etc.)
+
+\begin{Desc}
+\item[Returns:]The entry id \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry_38c3e2bffcc1bce4ff9453e278141d13}{Wombat::Mamda\-Book\-Atomic\-Level\-Entry}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_47bcfe27887db5dab390d398706f96fe}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelEntrySize@{getPriceLevelEntrySize}}
+\index{getPriceLevelEntrySize@{getPriceLevelEntrySize}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelEntrySize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Entry\-Size () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_47bcfe27887db5dab390d398706f96fe}
+
+
+Return the order book entry size. 
+
+\begin{Desc}
+\item[Returns:]Order book entry size \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry_1c086ffcdec385808fc04a111eddf1d0}{Wombat::Mamda\-Book\-Atomic\-Level\-Entry}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_fa4686145cc28c1225b9e546399c4ff4}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getPriceLevelEntryTime@{getPriceLevelEntryTime}}
+\index{getPriceLevelEntryTime@{getPriceLevelEntryTime}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getPriceLevelEntryTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Listener::get\-Price\-Level\-Entry\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_fa4686145cc28c1225b9e546399c4ff4}
+
+
+Return the time of order book entry update. 
+
+\begin{Desc}
+\item[Returns:]Time of order book entry update. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry_dec1931e3377c2f62bfee4900e51ce8a}{Wombat::Mamda\-Book\-Atomic\-Level\-Entry}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_0c3b1f7657aed8bba468e8500dded596}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getOrderType@{getOrderType}}
+\index{getOrderType@{getOrderType}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getOrderType]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} Wombat::Mamda\-Book\-Atomic\-Listener::get\-Order\-Type () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_0c3b1f7657aed8bba468e8500dded596}
+
+
+Get the Order Type. 
+
+\begin{Desc}
+\item[Returns:]The order Type. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_23ff595e16fe3926bb2714c5c2026841}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_e79c2bbb2c0431a40df5788700a26c32}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!setOrderType@{setOrderType}}
+\index{setOrderType@{setOrderType}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[setOrderType]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Book\-Atomic\-Listener::set\-Order\-Type (\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} {\em order\-Type}) const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_e79c2bbb2c0431a40df5788700a26c32}
+
+
+Set the Order Type. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicLevel_6b9fa11952fb136aceda2810f3131aeb}{Wombat::Mamda\-Book\-Atomic\-Level}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_67cf7b76360ca22ced5384aa52bf9873}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getHasMarketOrders@{getHasMarketOrders}}
+\index{getHasMarketOrders@{getHasMarketOrders}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getHasMarketOrders]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Book\-Atomic\-Listener::get\-Has\-Market\-Orders () const}}
+\label{classWombat_1_1MamdaBookAtomicListener_67cf7b76360ca22ced5384aa52bf9873}
+
+
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_70a97f14892aaa3a9887b12ccc816651}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!setProcessMarketOrders@{setProcessMarketOrders}}
+\index{setProcessMarketOrders@{setProcessMarketOrders}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[setProcessMarketOrders]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Book\-Atomic\-Listener::set\-Process\-Market\-Orders (bool {\em process}) const}}
+\label{classWombat_1_1MamdaBookAtomicListener_70a97f14892aaa3a9887b12ccc816651}
+
+
+\hypertarget{classWombat_1_1MamdaBookAtomicListener_9d33a337ef8f16888f6189f704ad1412}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_9d33a337ef8f16888f6189f704ad1412}
+
+
+The starting number of a detected sequence number gap in order book updates from the feedhandler. 
+
+\begin{Desc}
+\item[Returns:]Starting sequence number of a sequence number gap. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicGap_8023460971323b5c43af54d8a39592e2}{Wombat::Mamda\-Book\-Atomic\-Gap}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_b965aab29205f4f229ad021094d6b16e}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Book\-Atomic\-Listener::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_b965aab29205f4f229ad021094d6b16e}
+
+
+The ending number of a detected sequence number gap in order book updates from the feedhandler. 
+
+\begin{Desc}
+\item[Returns:]Ending sequence number of a sequence number gap. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBookAtomicGap_54152f40fa9bc51cb2b67d3b64a911c3}{Wombat::Mamda\-Book\-Atomic\-Gap}.\hypertarget{classWombat_1_1MamdaBookAtomicListener_f8e8325226362f8accab387ebcfe4c68}{
+\index{Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaBookAtomicListener@{Wombat::Mamda\-Book\-Atomic\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicListener_f8e8325226362f8accab387ebcfe4c68}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

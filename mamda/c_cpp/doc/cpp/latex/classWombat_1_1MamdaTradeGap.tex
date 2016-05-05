@@ -1,0 +1,95 @@
+\hypertarget{classWombat_1_1MamdaTradeGap}{
+\section{Wombat::Mamda\-Trade\-Gap Class Reference}
+\label{classWombat_1_1MamdaTradeGap}\index{Wombat::MamdaTradeGap@{Wombat::MamdaTradeGap}}
+}
+\hyperlink{classWombat_1_1MamdaTradeGap}{Mamda\-Trade\-Gap} is an interface that provides access to trade gap related fields.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Gap.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Trade\-Gap::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaTradeGap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeGap_1b3619649178e414cbee977c9f16d125}{get\-Begin\-Gap\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em The starting sequence number of detected missing trades based on the trade count. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeGap_891a25b9fc967b839326754b5cc8010e}{get\-Begin\-Gap\-Seq\-Num\-Field\-State} () const =0
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeGap_585fad255869d86be104a783d14987ca}{get\-End\-Gap\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em The end sequence number of detected missing trades based on the trade count. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeGap_9b5d0283e086dd58e28f871c756ddca5}{get\-End\-Gap\-Seq\-Num\-Field\-State} () const =0
+\item 
+virtual \hyperlink{classWombat_1_1MamdaTradeGap_fd26421b7a89895ebdee612cab74f78e}{$\sim$Mamda\-Trade\-Gap} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeGap}{Mamda\-Trade\-Gap} is an interface that provides access to trade gap related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeGap_fd26421b7a89895ebdee612cab74f78e}{
+\index{Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}!~MamdaTradeGap@{$\sim$MamdaTradeGap}}
+\index{~MamdaTradeGap@{$\sim$MamdaTradeGap}!Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}}
+\subsubsection[$\sim$MamdaTradeGap]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Gap::$\sim$Mamda\-Trade\-Gap ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeGap_fd26421b7a89895ebdee612cab74f78e}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeGap_1b3619649178e414cbee977c9f16d125}{
+\index{Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Gap::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeGap_1b3619649178e414cbee977c9f16d125}
+
+
+The starting sequence number of detected missing trades based on the trade count. 
+
+\begin{Desc}
+\item[Returns:]The start of the sequence number gap. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_62f2fd151a022948527e1f6ed74ced3d}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeGap_891a25b9fc967b839326754b5cc8010e}{
+\index{Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}!getBeginGapSeqNumFieldState@{getBeginGapSeqNumFieldState}}
+\index{getBeginGapSeqNumFieldState@{getBeginGapSeqNumFieldState}!Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}}
+\subsubsection[getBeginGapSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Gap::get\-Begin\-Gap\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeGap_891a25b9fc967b839326754b5cc8010e}
+
+
+\begin{Desc}
+\item[Returns:]The Field State of the start of the sequence number gap. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_95aa1252a009b9d4805205cf776557eb}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeGap_585fad255869d86be104a783d14987ca}{
+\index{Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Gap::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeGap_585fad255869d86be104a783d14987ca}
+
+
+The end sequence number of detected missing trades based on the trade count. 
+
+\begin{Desc}
+\item[Returns:]The end of the sequence number gap. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_44737862aaa29034fd1b42173dae3a5d}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeGap_9b5d0283e086dd58e28f871c756ddca5}{
+\index{Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}!getEndGapSeqNumFieldState@{getEndGapSeqNumFieldState}}
+\index{getEndGapSeqNumFieldState@{getEndGapSeqNumFieldState}!Wombat::MamdaTradeGap@{Wombat::Mamda\-Trade\-Gap}}
+\subsubsection[getEndGapSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Gap::get\-End\-Gap\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeGap_9b5d0283e086dd58e28f871c756ddca5}
+
+
+\begin{Desc}
+\item[Returns:]The field state of the end of the sequence number gap. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_dccea0e36079c7120b9d63506b0f0543}{Wombat::Mamda\-Trade\-Listener}.

@@ -1,0 +1,50 @@
+\hypertarget{classWombat_1_1MamdaNewsHeadlineHandler}{
+\section{Wombat::Mamda\-News\-Headline\-Handler Class Reference}
+\label{classWombat_1_1MamdaNewsHeadlineHandler}\index{Wombat::MamdaNewsHeadlineHandler@{Wombat::MamdaNewsHeadlineHandler}}
+}
+Mamda\-News\-Handler is an interface for applications that want to have an easy way to handle news headlines.  
+
+
+{\tt \#include $<$Mamda\-News\-Headline\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsHeadlineHandler_68c983d4ff1d6e0e1ddbe2bc4d33c0cc}{on\-News\-Headline} (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \&manager, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \&headline, void $\ast$closure)=0
+\begin{CompactList}\small\item\em Method invoked when a news headline is received. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsHeadlineHandler_c9c4b8b97e23bd71dcef739b7c724b97}{$\sim$Mamda\-News\-Headline\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Mamda\-News\-Handler is an interface for applications that want to have an easy way to handle news headlines. 
+
+The interface defines callback methods for different types of trade-related events: trades, errors/cancels, corrections, recaps and closing reports. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaNewsHeadlineHandler_c9c4b8b97e23bd71dcef739b7c724b97}{
+\index{Wombat::MamdaNewsHeadlineHandler@{Wombat::Mamda\-News\-Headline\-Handler}!~MamdaNewsHeadlineHandler@{$\sim$MamdaNewsHeadlineHandler}}
+\index{~MamdaNewsHeadlineHandler@{$\sim$MamdaNewsHeadlineHandler}!Wombat::MamdaNewsHeadlineHandler@{Wombat::Mamda\-News\-Headline\-Handler}}
+\subsubsection[$\sim$MamdaNewsHeadlineHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-News\-Headline\-Handler::$\sim$Mamda\-News\-Headline\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsHeadlineHandler_c9c4b8b97e23bd71dcef739b7c724b97}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaNewsHeadlineHandler_68c983d4ff1d6e0e1ddbe2bc4d33c0cc}{
+\index{Wombat::MamdaNewsHeadlineHandler@{Wombat::Mamda\-News\-Headline\-Handler}!onNewsHeadline@{onNewsHeadline}}
+\index{onNewsHeadline@{onNewsHeadline}!Wombat::MamdaNewsHeadlineHandler@{Wombat::Mamda\-News\-Headline\-Handler}}
+\subsubsection[onNewsHeadline]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Headline\-Handler::on\-News\-Headline (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \& {\em manager}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \& {\em headline}, void $\ast$ {\em closure})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsHeadlineHandler_68c983d4ff1d6e0e1ddbe2bc4d33c0cc}
+
+
+Method invoked when a news headline is received. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em manager}]The news manager invoking the callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em headline}]Access to the headline details. \item[{\em closure}]Access to the user supplied closure data. \end{description}
+\end{Desc}

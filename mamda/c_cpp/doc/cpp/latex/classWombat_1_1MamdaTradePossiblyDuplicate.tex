@@ -1,0 +1,352 @@
+\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate}{
+\section{Wombat::Mamda\-Trade\-Possibly\-Duplicate Class Reference}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate}\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::MamdaTradePossiblyDuplicate}}
+}
+\hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate}{Mamda\-Trade\-Possibly\-Duplicate} is an interface that provides access to fields related to trade updates which have been identified as being possible duplicates of previous updates.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Possibly\-Duplicate.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Trade\-Possibly\-Duplicate::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaTradePossiblyDuplicate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_af6c3350ba0d73411c51a8cc475e73ab}{get\-Trade\-Price} () const =0
+\begin{CompactList}\small\item\em Get the trade price. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_223865efb46d5616004c9d14da3c457b}{get\-Trade\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_f738f7c49a0e026f53dad8e9f2cf4a01}{get\-Trade\-Volume} () const =0
+\begin{CompactList}\small\item\em Get the trade volume for this transaction. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_fd783feb0c4a319b6e442613ecdf1c6c}{get\-Trade\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_72a73e8ae29f30d81b3d78401f96589b}{get\-Trade\-Part\-Id} () const =0
+\begin{CompactList}\small\item\em Get the participant identifier for this trade. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_67970ff40f57b63e0ef46f280947a641}{get\-Trade\-Part\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_62f7b023cc1c27db3e18ace440695d68}{get\-Trade\-Qual} () const =0
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_471d0034889bada3b664ad8dbca21b41}{get\-Trade\-Qual\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_ea042cedf017d3e9b495a68e20879de7}{get\-Trade\-Qual\-Native} () const =0
+\begin{CompactList}\small\item\em Feed-specific trade qualifier code(s). \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_c74fec65a80f2b42976ebb509a9abfeb}{get\-Trade\-Qual\-Native\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_96cd3f338219a7dd5c9cb3d7b761296d}{get\-Trade\-Sellers\-Sale\-Days} () const =0
+\begin{CompactList}\small\item\em Used when the trade qualifier is \char`\"{}Seller\char`\"{}. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_dadaa92d7ee001dd310ba0bb411011e8}{get\-Trade\-Sellers\-Sale\-Days\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual char \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_ee52eadfef02fa09483632232a943503}{get\-Trade\-Stop\-Stock} () const =0
+\begin{CompactList}\small\item\em Condition related to certain NYSE trading rules. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_5ab03194fc902b4dabda0ad0291cc7ff}{get\-Trade\-Stop\-Stock\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_63462036a60908fbbaf8d6a462332c35}{get\-Is\-Irregular} () const =0
+\begin{CompactList}\small\item\em In general, only \char`\"{}regular\char`\"{} trades qualify to update the official last price and high/low prices. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_d71ae9976fe6a0f141fb1a9d2cd60b8d}{get\-Is\-Irregular\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_8df1610925e943b7d585993e0f4192a9}{get\-Order\-Id} () const =0
+\begin{CompactList}\small\item\em Get the order id for the trade, if available. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_84a85c0772c805d3c0fa9f8ae5cb1a67}{get\-Order\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_2a7aee53f11e466f34e82052dff20529}{$\sim$Mamda\-Trade\-Possibly\-Duplicate} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate}{Mamda\-Trade\-Possibly\-Duplicate} is an interface that provides access to fields related to trade updates which have been identified as being possible duplicates of previous updates. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_2a7aee53f11e466f34e82052dff20529}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!~MamdaTradePossiblyDuplicate@{$\sim$MamdaTradePossiblyDuplicate}}
+\index{~MamdaTradePossiblyDuplicate@{$\sim$MamdaTradePossiblyDuplicate}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[$\sim$MamdaTradePossiblyDuplicate]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Possibly\-Duplicate::$\sim$Mamda\-Trade\-Possibly\-Duplicate ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_2a7aee53f11e466f34e82052dff20529}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_af6c3350ba0d73411c51a8cc475e73ab}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradePrice@{getTradePrice}}
+\index{getTradePrice@{getTradePrice}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_af6c3350ba0d73411c51a8cc475e73ab}
+
+
+Get the trade price. 
+
+\begin{Desc}
+\item[Returns:]The monetary value of an individual share of the security at the time of the trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f2f5cd501bc1fcb6717a81c001004228}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_223865efb46d5616004c9d14da3c457b}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradePriceFieldState@{getTradePriceFieldState}}
+\index{getTradePriceFieldState@{getTradePriceFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_223865efb46d5616004c9d14da3c457b}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f1dc31d1863ca41868f8b4a384c7ac46}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_f738f7c49a0e026f53dad8e9f2cf4a01}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeVolume@{getTradeVolume}}
+\index{getTradeVolume@{getTradeVolume}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_f738f7c49a0e026f53dad8e9f2cf4a01}
+
+
+Get the trade volume for this transaction. 
+
+\begin{Desc}
+\item[Returns:]The number of shares traded in a single transaction for an individual security. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_59830d5b7d9bf0df2e274f8f4ce49cc6}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_fd783feb0c4a319b6e442613ecdf1c6c}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeVolumeFieldState@{getTradeVolumeFieldState}}
+\index{getTradeVolumeFieldState@{getTradeVolumeFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_fd783feb0c4a319b6e442613ecdf1c6c}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5fa909b1c87c6380e204dba43ab9baa7}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_72a73e8ae29f30d81b3d78401f96589b}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradePartId@{getTradePartId}}
+\index{getTradePartId@{getTradePartId}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradePartId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_72a73e8ae29f30d81b3d78401f96589b}
+
+
+Get the participant identifier for this trade. 
+
+\begin{Desc}
+\item[Returns:]Trade participant ID. This is typically an exchange ID or a market maker ID. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a9e5a20840963992b58ec19cf717cfab}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_67970ff40f57b63e0ef46f280947a641}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradePartIdFieldState@{getTradePartIdFieldState}}
+\index{getTradePartIdFieldState@{getTradePartIdFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradePartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_67970ff40f57b63e0ef46f280947a641}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e386075d2c6a4d5f33d25e820ac81559}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_62f7b023cc1c27db3e18ace440695d68}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeQual@{getTradeQual}}
+\index{getTradeQual@{getTradeQual}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeQual]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_62f7b023cc1c27db3e18ace440695d68}
+
+
+\begin{Desc}
+\item[Returns:]Trade qualifier. A normalized set of qualifiers for the current trade for the security. This field may contain multiple string values, separated by the colon(:) character. In the future, we will make this a configurable enumeration.\end{Desc}
+\begin{TabularC}{2}
+\hline
+{\bf Value}&{\bf Meaning} \\\hline
+Normal &Regular trade. A trade made without stated conditions is deemed regular way for settlement on the third $\ast$ business day following the transaction $\ast$ date.  \\\hline
+Acquisition &A transaction made on the Exchange as a result of an Exchange acquisition.  \\\hline
+Bunched &A trade representing an aggregate of two or more regular trades in a security occurring at the same price either simultaneously or within the same 60 second period, with no individual trade exceeding 10,000 shares.  \\\hline
+Cash &A transaction which calls for the delivery of securities and payment on the same day the trade takes place.  \\\hline
+Distribution &Sale of a large block of stock in such a manner that the price is not adversely affected.  \\\hline
+Bunched\-Sold &A bunched trade which is reported late  \\\hline
+Rule155 &To qualify as a 155 print, a specialist arranges for the sale of the block at one "clean-up" price or at the different price limits on his book. If the block is sold at a \char`\"{}clean-up\char`\"{} price, the specialist should execute at the same price all the executable buy orders on his book. The sale qualifier is only applicable for AMEX trades.  \\\hline
+Sold\-Last &Sold Last is used when a trade prints in sequence but is reported late or printed in conformance to the One or Two Point Rule.  \\\hline
+Next\-Day &A transaction which calls for delivery of securities on the first business day after the trade date.  \\\hline
+Opened &Indicates an opening transaction that is printed out of sequence or reported late or printed in conformance to the One or Two Point Rule.  \\\hline
+Prior\-Ref &An executed trade that relates to an obligation to trade at an earlier point in the trading day or that refer to a prior reference price. This may be the result of an order that was lost or misplaced or a Select\-Net order that was not executed on a timely basis.  \\\hline
+Seller &A Seller's option transaction is a special transaction which gives the seller the right to deliver the stock at any time within a specific period, ranging from not less than four calendar days to no more than 60 calendar days.  \\\hline
+Split\-Trade &An execution in two markets when the specialist or Market Maker in the market first receiving the order agrees to execute a portion of it at whatever price is realized in another market to which the balance of the order is forwarded for execution.  \\\hline
+Form\-T &See Pre\-Post\-Mkt. Currently, all feed handlers that post Form-T trades - except CTA - send this qualifier for Form-T trades. In the next major release, all fields will use Pre\-Post\-Mkt and Form\-T will be obsolete.  \\\hline
+Pre\-Post\-Mkt &A trade reported before or after the normal trade reporting day. This is also known as a Form-T trade. The volume of Form-T trades will be included in the calculation of total volume. The price information in Form-T trades will not be used to update high, low and last sale data for individual securities or Indices since they occur outside of normal trade reporting hours. Currently, all feed handlers that post Form-T trades - except CTA - send the \char`\"{}Form\-T\char`\"{} qualifier for Fot-T trades. In the next major release, all feed handlers will use Pre\-Post\-Mkt and Form\-T will be obsolete.  \\\hline
+Av\-Price &A trade where the price reported is based upon an average of the prices for transactions in a security during all or any portion of the trading day.  \\\hline
+Sold &Sold is used when a trade is printed (reported) out of sequence and at a time different from the actual transaction time.  \\\hline
+Adjusted &~  \\\hline
+Auto &A sale condition code that identifies a NYSE trade that has been automatically executed without the potential benefit of price improvement.   \\\hline
+Basket &~  \\\hline
+Cash\-Only &~  \\\hline
+Next\-Day\-Only &~  \\\hline
+Spec\-Terms &~  \\\hline
+Stopped &~  \\\hline
+CATS &~  \\\hline
+VCT &~  \\\hline
+Rule127 &~  \\\hline
+Burst\-Basket &A burst basket execution signifies a trade wherein the equity Specialists, acting in the aggregate as a market maker, purchase or sell the component stocks required for execution of a specific basket trade.  \\\hline
+Open\-Detail &Opening trade detail message. Sent by CTS only and is a duplicate report of an earlier trade. Note: since feed handler version 2.14.32, it is configurable whether these detail messages are published.  \\\hline
+Detail &Trade detail message. Sent by CTS only and is a duplicate report of an earlier trade. Note: since feed handler version 2.14.32, it is configurable whether these detail messages are published.  \\\hline
+Reserved &~  \\\hline
+Basket\-Cross &~  \\\hline
+Unknown &~  \\\hline
+\end{TabularC}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0f03f8d8b20f08eab587e439a939d0fc}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_471d0034889bada3b664ad8dbca21b41}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeQualFieldState@{getTradeQualFieldState}}
+\index{getTradeQualFieldState@{getTradeQualFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_471d0034889bada3b664ad8dbca21b41}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_958ea55776c3afa0a572b8819d9c04c8}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_ea042cedf017d3e9b495a68e20879de7}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeQualNative@{getTradeQualNative}}
+\index{getTradeQualNative@{getTradeQualNative}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeQualNative]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Qual\-Native () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_ea042cedf017d3e9b495a68e20879de7}
+
+
+Feed-specific trade qualifier code(s). 
+
+This field is provided primarily for completeness and/or troubleshooting.
+
+\begin{Desc}
+\item[Returns:]Trade condition (a.k.a. \char`\"{}sale condition\char`\"{}). \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaTradePossiblyDuplicate_62f7b023cc1c27db3e18ace440695d68}{get\-Trade\-Qual()} \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7b01373c290fe46a0a1e00a861996a06}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_c74fec65a80f2b42976ebb509a9abfeb}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeQualNativeFieldState@{getTradeQualNativeFieldState}}
+\index{getTradeQualNativeFieldState@{getTradeQualNativeFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeQualNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Qual\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_c74fec65a80f2b42976ebb509a9abfeb}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2e60dd06819139125a4812e84d5803c0}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_96cd3f338219a7dd5c9cb3d7b761296d}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeSellersSaleDays@{getTradeSellersSaleDays}}
+\index{getTradeSellersSaleDays@{getTradeSellersSaleDays}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeSellersSaleDays]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Sellers\-Sale\-Days () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_96cd3f338219a7dd5c9cb3d7b761296d}
+
+
+Used when the trade qualifier is \char`\"{}Seller\char`\"{}. 
+
+Specifies the number of days that may elapse before delivery of the security.
+
+\begin{Desc}
+\item[Returns:]Seller's sale days. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_719ed8fafd8f299b274ba2f11981b3ba}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_dadaa92d7ee001dd310ba0bb411011e8}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeSellersSaleDaysFieldState@{getTradeSellersSaleDaysFieldState}}
+\index{getTradeSellersSaleDaysFieldState@{getTradeSellersSaleDaysFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeSellersSaleDaysFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Sellers\-Sale\-Days\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_dadaa92d7ee001dd310ba0bb411011e8}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2090b9605a4191bf78b5cef58c7e1fbe}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_ee52eadfef02fa09483632232a943503}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeStopStock@{getTradeStopStock}}
+\index{getTradeStopStock@{getTradeStopStock}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeStopStock]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Stop\-Stock () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_ee52eadfef02fa09483632232a943503}
+
+
+Condition related to certain NYSE trading rules. 
+
+This is not related to a halted security status. (0 == N/A; 1 == Applicable)
+
+\begin{Desc}
+\item[Returns:]Stopped stock indicator. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2d4333ba424d00cbda5e88a846ef3c8c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_5ab03194fc902b4dabda0ad0291cc7ff}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getTradeStopStockFieldState@{getTradeStopStockFieldState}}
+\index{getTradeStopStockFieldState@{getTradeStopStockFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getTradeStopStockFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Trade\-Stop\-Stock\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_5ab03194fc902b4dabda0ad0291cc7ff}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_ba6a73453e3956f883f40b5ae7d127d0}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_63462036a60908fbbaf8d6a462332c35}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getIsIrregular@{getIsIrregular}}
+\index{getIsIrregular@{getIsIrregular}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getIsIrregular]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Is\-Irregular () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_63462036a60908fbbaf8d6a462332c35}
+
+
+In general, only \char`\"{}regular\char`\"{} trades qualify to update the official last price and high/low prices. 
+
+\begin{Desc}
+\item[Returns:]Whether or not the trade qualifies as an irregular trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_1a5b54d3d63c62bf8720cc29dd40b25a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_d71ae9976fe6a0f141fb1a9d2cd60b8d}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getIsIrregularFieldState@{getIsIrregularFieldState}}
+\index{getIsIrregularFieldState@{getIsIrregularFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getIsIrregularFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Is\-Irregular\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_d71ae9976fe6a0f141fb1a9d2cd60b8d}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f8e874c8dc039fb83f1e9f4a8bdcbc6f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_8df1610925e943b7d585993e0f4192a9}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getOrderId@{getOrderId}}
+\index{getOrderId@{getOrderId}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getOrderId]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u64\_\-t Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Order\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_8df1610925e943b7d585993e0f4192a9}
+
+
+Get the order id for the trade, if available. 
+
+\begin{Desc}
+\item[Returns:]The trade message unique order id number (if available). \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_46c9913f3bc9f7e31f07afa76eaed7ff}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradePossiblyDuplicate_84a85c0772c805d3c0fa9f8ae5cb1a67}{
+\index{Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}!getOrderIdFieldState@{getOrderIdFieldState}}
+\index{getOrderIdFieldState@{getOrderIdFieldState}!Wombat::MamdaTradePossiblyDuplicate@{Wombat::Mamda\-Trade\-Possibly\-Duplicate}}
+\subsubsection[getOrderIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Possibly\-Duplicate::get\-Order\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradePossiblyDuplicate_84a85c0772c805d3c0fa9f8ae5cb1a67}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f0f77145439c12c8bae3640307b50401}{Wombat::Mamda\-Trade\-Listener}.

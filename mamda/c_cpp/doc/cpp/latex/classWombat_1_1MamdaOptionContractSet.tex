@@ -1,0 +1,113 @@
+\hypertarget{classWombat_1_1MamdaOptionContractSet}{
+\section{Wombat::Mamda\-Option\-Contract\-Set Class Reference}
+\label{classWombat_1_1MamdaOptionContractSet}\index{Wombat::MamdaOptionContractSet@{Wombat::MamdaOptionContractSet}}
+}
+A class that represents a set of option contracts at a given strike price.  
+
+
+{\tt \#include $<$Mamda\-Option\-Contract\-Set.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Option\-Contract\-Set::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaOptionContractSet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOptionContractSet_4d7fca2711028aea1020f1ad45bf292c}{Mamda\-Option\-Contract\-Set} ()
+\item 
+\hyperlink{classWombat_1_1MamdaOptionContractSet_b936965d38c1d42183634eb785276a67}{$\sim$Mamda\-Option\-Contract\-Set} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaOptionContractSet_d5ed4d66ce4e34d8b143245cb5ca6473}{set\-Bbo\-Contract} (\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$contract)
+\begin{CompactList}\small\item\em Set the contract for the best bid and offer. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContractSet_360ce213c19a6db9d21e0a63fe8b78f8}{set\-Wombat\-Bbo\-Contract} (\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$contract)
+\begin{CompactList}\small\item\em Set the contract for the best bid and offer, as calculated by NYSE Technologies. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContractSet_03643ebac542997c30111732754c485c}{set\-Exchange\-Contract} (const char $\ast$exchange, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$contract)
+\begin{CompactList}\small\item\em Set the contract for the particular exchange. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ \hyperlink{classWombat_1_1MamdaOptionContractSet_e643beece623c917a6b496ce2152217b}{get\-Bbo\-Contract} () const 
+\begin{CompactList}\small\item\em Return the contract for the best bid and offer. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ \hyperlink{classWombat_1_1MamdaOptionContractSet_1f26638ea5009048fa21d9d6e61ace3a}{get\-Wombat\-Bbo\-Contract} () const 
+\begin{CompactList}\small\item\em Return the contract for the best bid and offer, as calculated by NYSE Technologies. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ \hyperlink{classWombat_1_1MamdaOptionContractSet_5077c90f87d60c589172a33634f8cc2c}{get\-Exchange\-Contract} (const char $\ast$exchange) const 
+\begin{CompactList}\small\item\em Return the contract for the particular exchange. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class that represents a set of option contracts at a given strike price. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOptionContractSet_4d7fca2711028aea1020f1ad45bf292c}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!MamdaOptionContractSet@{MamdaOptionContractSet}}
+\index{MamdaOptionContractSet@{MamdaOptionContractSet}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[MamdaOptionContractSet]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Contract\-Set::Mamda\-Option\-Contract\-Set ()}}
+\label{classWombat_1_1MamdaOptionContractSet_4d7fca2711028aea1020f1ad45bf292c}
+
+
+\hypertarget{classWombat_1_1MamdaOptionContractSet_b936965d38c1d42183634eb785276a67}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!~MamdaOptionContractSet@{$\sim$MamdaOptionContractSet}}
+\index{~MamdaOptionContractSet@{$\sim$MamdaOptionContractSet}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[$\sim$MamdaOptionContractSet]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Contract\-Set::$\sim$Mamda\-Option\-Contract\-Set ()}}
+\label{classWombat_1_1MamdaOptionContractSet_b936965d38c1d42183634eb785276a67}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionContractSet_d5ed4d66ce4e34d8b143245cb5ca6473}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!setBboContract@{setBboContract}}
+\index{setBboContract@{setBboContract}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[setBboContract]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract\-Set::set\-Bbo\-Contract (\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ {\em contract})}}
+\label{classWombat_1_1MamdaOptionContractSet_d5ed4d66ce4e34d8b143245cb5ca6473}
+
+
+Set the contract for the best bid and offer. 
+
+\hypertarget{classWombat_1_1MamdaOptionContractSet_360ce213c19a6db9d21e0a63fe8b78f8}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!setWombatBboContract@{setWombatBboContract}}
+\index{setWombatBboContract@{setWombatBboContract}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[setWombatBboContract]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract\-Set::set\-Wombat\-Bbo\-Contract (\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ {\em contract})}}
+\label{classWombat_1_1MamdaOptionContractSet_360ce213c19a6db9d21e0a63fe8b78f8}
+
+
+Set the contract for the best bid and offer, as calculated by NYSE Technologies. 
+
+\hypertarget{classWombat_1_1MamdaOptionContractSet_03643ebac542997c30111732754c485c}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!setExchangeContract@{setExchangeContract}}
+\index{setExchangeContract@{setExchangeContract}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[setExchangeContract]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract\-Set::set\-Exchange\-Contract (const char $\ast$ {\em exchange}, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ {\em contract})}}
+\label{classWombat_1_1MamdaOptionContractSet_03643ebac542997c30111732754c485c}
+
+
+Set the contract for the particular exchange. 
+
+\hypertarget{classWombat_1_1MamdaOptionContractSet_e643beece623c917a6b496ce2152217b}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!getBboContract@{getBboContract}}
+\index{getBboContract@{getBboContract}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[getBboContract]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract}$\ast$ Wombat::Mamda\-Option\-Contract\-Set::get\-Bbo\-Contract () const}}
+\label{classWombat_1_1MamdaOptionContractSet_e643beece623c917a6b496ce2152217b}
+
+
+Return the contract for the best bid and offer. 
+
+\hypertarget{classWombat_1_1MamdaOptionContractSet_1f26638ea5009048fa21d9d6e61ace3a}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!getWombatBboContract@{getWombatBboContract}}
+\index{getWombatBboContract@{getWombatBboContract}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[getWombatBboContract]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract}$\ast$ Wombat::Mamda\-Option\-Contract\-Set::get\-Wombat\-Bbo\-Contract () const}}
+\label{classWombat_1_1MamdaOptionContractSet_1f26638ea5009048fa21d9d6e61ace3a}
+
+
+Return the contract for the best bid and offer, as calculated by NYSE Technologies. 
+
+\hypertarget{classWombat_1_1MamdaOptionContractSet_5077c90f87d60c589172a33634f8cc2c}{
+\index{Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}!getExchangeContract@{getExchangeContract}}
+\index{getExchangeContract@{getExchangeContract}!Wombat::MamdaOptionContractSet@{Wombat::Mamda\-Option\-Contract\-Set}}
+\subsubsection[getExchangeContract]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract}$\ast$ Wombat::Mamda\-Option\-Contract\-Set::get\-Exchange\-Contract (const char $\ast$ {\em exchange}) const}}
+\label{classWombat_1_1MamdaOptionContractSet_5077c90f87d60c589172a33634f8cc2c}
+
+
+Return the contract for the particular exchange. 
+

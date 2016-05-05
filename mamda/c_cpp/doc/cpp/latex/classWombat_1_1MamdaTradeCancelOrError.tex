@@ -1,0 +1,482 @@
+\hypertarget{classWombat_1_1MamdaTradeCancelOrError}{
+\section{Wombat::Mamda\-Trade\-Cancel\-Or\-Error Class Reference}
+\label{classWombat_1_1MamdaTradeCancelOrError}\index{Wombat::MamdaTradeCancelOrError@{Wombat::MamdaTradeCancelOrError}}
+}
+\hyperlink{classWombat_1_1MamdaTradeCancelOrError}{Mamda\-Trade\-Cancel\-Or\-Error} is an interface that provides access to trade cancellation related fields.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Cancel\-Or\-Error.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Trade\-Cancel\-Or\-Error::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaTradeCancelOrError}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual bool \hyperlink{classWombat_1_1MamdaTradeCancelOrError_2dc051dab18a59a13febfe4edcaa34ae}{get\-Is\-Cancel} () const =0
+\begin{CompactList}\small\item\em Return whether this event is a trade cancel. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeCancelOrError_b60912ebb0e47bea0b5a0f0560f9fcfa}{get\-Orig\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Original feed-generated sequence for a correction/cancel/error. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_fb7e94b42033b155bc02f70ed2756062}{get\-Orig\-Seq\-Num\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeCancelOrError_f30fe9dc7c0325555e8fa31f0865d4b4}{get\-Orig\-Price} () const =0
+\begin{CompactList}\small\item\em Original trade price in a correction/cancel/error. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_8de66475d67639ac8bbececda9f73d95}{get\-Orig\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeCancelOrError_e821262ca4d590263adc9a6bacd014b0}{get\-Orig\-Volume} () const =0
+\begin{CompactList}\small\item\em Original trade size in a correction/cancel/error. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_c23958d17e2f14b4e29d7e360be35098}{get\-Orig\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeCancelOrError_081cabbd540153e1d7ac93b927ff3542}{get\-Orig\-Part\-Id} () const =0
+\begin{CompactList}\small\item\em Original trade participant identifier in a correction/cancel/error. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_0aa9f79553091ce4de69eb380be0f7b5}{get\-Orig\-Part\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeCancelOrError_970107e24e85f02515bc3d5ae182aafc}{get\-Orig\-Qual} () const =0
+\begin{CompactList}\small\item\em A normalized set of qualifiers for the original trade for the security in a correction/cancel/error. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_8204745a6698558a00ec0140622de754}{get\-Orig\-Qual\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeCancelOrError_905aa15d1b3b2b36fe28b395e059231a}{get\-Orig\-Qual\-Native} () const =0
+\begin{CompactList}\small\item\em Feed-specific trade qualifier code(s) for original trade. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_9ce7c8f5f35a4a4caacf5ed43637f067}{get\-Orig\-Qual\-Native\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeCancelOrError_6df3a025f99a8d6328bcdda0fb4491f1}{get\-Orig\-Sellers\-Sale\-Days} () const =0
+\begin{CompactList}\small\item\em Seller's sale days for original trade. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_75ac88d2442d768d3094a8263329adc2}{get\-Orig\-Sellers\-Sale\-Days\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual char \hyperlink{classWombat_1_1MamdaTradeCancelOrError_c7cf998aa454b310389b03c0b8be095e}{get\-Orig\-Stop\-Stock} () const =0
+\begin{CompactList}\small\item\em Stopped stock indicator for original trade. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_79f84c7ff2fee996c7cb5e6472dbe471}{get\-Orig\-Stop\-Stock\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeCancelOrError_8eb9d5cce72be475cf039ec16aac3b3a}{get\-Trade\-Qual} () const =0
+\begin{CompactList}\small\item\em Get the wombat normalized trade qualifier. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_db80e8a70132f714c2d351adac821cf7}{get\-Trade\-Qual\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade qual Field State. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaTradeCancelOrError_a066daf6f361384f809a91dd4085149e}{get\-Is\-Irregular} () const =0
+\begin{CompactList}\small\item\em Get whether the trade is irregular. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_f44398c02c719db7a0f706a177590297}{get\-Is\-Irregular\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The is\-Irregular Field State. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaTradeCancelOrError_5ce3c13612b7670f2517b21d4541c39e}{get\-Generic\-Flag} () const =0
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_dcb98107626628f22341cccc440b54e0}{get\-Generic\-Flag\-Field\-State} () const =0
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeCancelOrError_77edcaedced6b03219438ef4b2bcef68}{get\-Orig\-Trade\-Id} () const =0
+\begin{CompactList}\small\item\em Get the original trade id. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_ed7b73cb88b3c9813bbe7a79e1a25c87}{get\-Orig\-Trade\-Id\-Field\-State} () const =0
+\item 
+virtual char \hyperlink{classWombat_1_1MamdaTradeCancelOrError_54da84a40ec7c8cba6bc119c4fac7614}{get\-Orig\-Short\-Sale\-Circuit\-Breaker} () const =0
+\begin{CompactList}\small\item\em get the Orig\-Short\-Sale\-Circuit\-Breaker \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeCancelOrError_5d43acfae05347c26f47fab7f0fcdd95}{get\-Orig\-Short\-Sale\-Circuit\-Breaker\-Field\-State} () const =0
+\item 
+virtual \hyperlink{classWombat_1_1MamdaTradeCancelOrError_c757fae5b09ac2af4f9de14969cea565}{$\sim$Mamda\-Trade\-Cancel\-Or\-Error} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeCancelOrError}{Mamda\-Trade\-Cancel\-Or\-Error} is an interface that provides access to trade cancellation related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeCancelOrError_c757fae5b09ac2af4f9de14969cea565}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!~MamdaTradeCancelOrError@{$\sim$MamdaTradeCancelOrError}}
+\index{~MamdaTradeCancelOrError@{$\sim$MamdaTradeCancelOrError}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[$\sim$MamdaTradeCancelOrError]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Cancel\-Or\-Error::$\sim$Mamda\-Trade\-Cancel\-Or\-Error ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_c757fae5b09ac2af4f9de14969cea565}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeCancelOrError_2dc051dab18a59a13febfe4edcaa34ae}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getIsCancel@{getIsCancel}}
+\index{getIsCancel@{getIsCancel}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getIsCancel]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Is\-Cancel () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_2dc051dab18a59a13febfe4edcaa34ae}
+
+
+Return whether this event is a trade cancel. 
+
+If false, the event is a trade error.
+
+\begin{Desc}
+\item[Returns:]Whether this is a trade cancel. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_d27b9e42599cbf198fbaf59df252a708}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_b60912ebb0e47bea0b5a0f0560f9fcfa}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigSeqNum@{getOrigSeqNum}}
+\index{getOrigSeqNum@{getOrigSeqNum}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_b60912ebb0e47bea0b5a0f0560f9fcfa}
+
+
+Original feed-generated sequence for a correction/cancel/error. 
+
+\begin{Desc}
+\item[Returns:]The original sequence number. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_571a08fa4c669481abf0417a36064205}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_fb7e94b42033b155bc02f70ed2756062}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigSeqNumFieldState@{getOrigSeqNumFieldState}}
+\index{getOrigSeqNumFieldState@{getOrigSeqNumFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_fb7e94b42033b155bc02f70ed2756062}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0767574a3f0c34ae680fbbfadf296e0e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_f30fe9dc7c0325555e8fa31f0865d4b4}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigPrice@{getOrigPrice}}
+\index{getOrigPrice@{getOrigPrice}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_f30fe9dc7c0325555e8fa31f0865d4b4}
+
+
+Original trade price in a correction/cancel/error. 
+
+\begin{Desc}
+\item[Returns:]The original trade price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7550297d285f7e2ab6b6e7060ed28f74}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_8de66475d67639ac8bbececda9f73d95}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigPriceFieldState@{getOrigPriceFieldState}}
+\index{getOrigPriceFieldState@{getOrigPriceFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_8de66475d67639ac8bbececda9f73d95}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_63ccde5fa2b5725b0b1c4efb0ef70880}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_e821262ca4d590263adc9a6bacd014b0}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigVolume@{getOrigVolume}}
+\index{getOrigVolume@{getOrigVolume}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_e821262ca4d590263adc9a6bacd014b0}
+
+
+Original trade size in a correction/cancel/error. 
+
+\begin{Desc}
+\item[Returns:]The original trade volume. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0e179272d95923e3da5df3bf67bfb643}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_c23958d17e2f14b4e29d7e360be35098}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigVolumeFieldState@{getOrigVolumeFieldState}}
+\index{getOrigVolumeFieldState@{getOrigVolumeFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_c23958d17e2f14b4e29d7e360be35098}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_359006736d830e51323d578d45f7adc7}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_081cabbd540153e1d7ac93b927ff3542}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigPartId@{getOrigPartId}}
+\index{getOrigPartId@{getOrigPartId}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigPartId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_081cabbd540153e1d7ac93b927ff3542}
+
+
+Original trade participant identifier in a correction/cancel/error. 
+
+\begin{Desc}
+\item[Returns:]The original trade participant identifier. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_473edf5c6bb8db20a5d2d57f503d7601}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_0aa9f79553091ce4de69eb380be0f7b5}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigPartIdFieldState@{getOrigPartIdFieldState}}
+\index{getOrigPartIdFieldState@{getOrigPartIdFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_0aa9f79553091ce4de69eb380be0f7b5}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5e083be5035140d2130f39d19ad79829}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_970107e24e85f02515bc3d5ae182aafc}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigQual@{getOrigQual}}
+\index{getOrigQual@{getOrigQual}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigQual]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_970107e24e85f02515bc3d5ae182aafc}
+
+
+A normalized set of qualifiers for the original trade for the security in a correction/cancel/error. 
+
+\begin{Desc}
+\item[Returns:]The original trade qualifier. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_65563a27266a0f48eff3f44b5a4216b7}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_8204745a6698558a00ec0140622de754}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigQualFieldState@{getOrigQualFieldState}}
+\index{getOrigQualFieldState@{getOrigQualFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_8204745a6698558a00ec0140622de754}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_04acb5179a6d640a0a54fd30df321b85}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_905aa15d1b3b2b36fe28b395e059231a}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigQualNative@{getOrigQualNative}}
+\index{getOrigQualNative@{getOrigQualNative}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigQualNative]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Qual\-Native () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_905aa15d1b3b2b36fe28b395e059231a}
+
+
+Feed-specific trade qualifier code(s) for original trade. 
+
+This field is provided primarily for completeness and/or troubleshooting.
+
+\begin{Desc}
+\item[Returns:]The original trade condition. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3d7a8290418015b6f8e1bc2e412225b1}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_9ce7c8f5f35a4a4caacf5ed43637f067}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigQualNativeFieldState@{getOrigQualNativeFieldState}}
+\index{getOrigQualNativeFieldState@{getOrigQualNativeFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigQualNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Qual\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_9ce7c8f5f35a4a4caacf5ed43637f067}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3901e347c7b178d7c30d016180133738}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_6df3a025f99a8d6328bcdda0fb4491f1}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigSellersSaleDays@{getOrigSellersSaleDays}}
+\index{getOrigSellersSaleDays@{getOrigSellersSaleDays}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigSellersSaleDays]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Sellers\-Sale\-Days () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_6df3a025f99a8d6328bcdda0fb4491f1}
+
+
+Seller's sale days for original trade. 
+
+Used when the trade qualifier is \char`\"{}Seller\char`\"{}. Specifies the number of days that may elapse before delivery of the security.
+
+\begin{Desc}
+\item[Returns:]The original seller's sale days. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7020c24d5e41e1a14734ffd8673ac860}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_75ac88d2442d768d3094a8263329adc2}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigSellersSaleDaysFieldState@{getOrigSellersSaleDaysFieldState}}
+\index{getOrigSellersSaleDaysFieldState@{getOrigSellersSaleDaysFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigSellersSaleDaysFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Sellers\-Sale\-Days\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_75ac88d2442d768d3094a8263329adc2}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e4e53df493af564fb26c91e1cf6f0a0e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_c7cf998aa454b310389b03c0b8be095e}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigStopStock@{getOrigStopStock}}
+\index{getOrigStopStock@{getOrigStopStock}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigStopStock]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Stop\-Stock () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_c7cf998aa454b310389b03c0b8be095e}
+
+
+Stopped stock indicator for original trade. 
+
+Condition related to certain NYSE trading rules. This is not related to a halted security status. (0 == N/A; 1 == Applicable)
+
+\begin{Desc}
+\item[Returns:]The original stopped stock indicator. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_4a5498e32feec686f6989e3ced92a984}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_79f84c7ff2fee996c7cb5e6472dbe471}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigStopStockFieldState@{getOrigStopStockFieldState}}
+\index{getOrigStopStockFieldState@{getOrigStopStockFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigStopStockFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Stop\-Stock\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_79f84c7ff2fee996c7cb5e6472dbe471}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f877c87cdd8ba3db4e1c41f8465ed249}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_8eb9d5cce72be475cf039ec16aac3b3a}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getTradeQual@{getTradeQual}}
+\index{getTradeQual@{getTradeQual}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getTradeQual]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Trade\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_8eb9d5cce72be475cf039ec16aac3b3a}
+
+
+Get the wombat normalized trade qualifier. 
+
+\begin{Desc}
+\item[Returns:]Trade qualifier. A normalized set of qualifiers for the current trade for the security. This field may contain multiple string values, separated by the colon(:) character.\end{Desc}
+\begin{TabularC}{2}
+\hline
+{\bf Value}&{\bf Meaning} \\\hline
+Normal &Regular trade. A trade made without stated conditions is deemed regular way for settlement on the third $\ast$ business day following the transaction $\ast$ date.  \\\hline
+Acquisition &A transaction made on the Exchange as a result of an Exchange acquisition.  \\\hline
+Bunched &A trade representing an aggregate of two or more regular trades in a security occurring at the same price either simultaneously or within the same 60 second period, with no individual trade exceeding 10,000 shares.  \\\hline
+Cash &A transaction which calls for the delivery of securities and payment on the same day the trade takes place.  \\\hline
+Distribution &Sale of a large block of stock in such a manner that the price is not adversely affected.  \\\hline
+Bunched\-Sold &A bunched trade which is reported late  \\\hline
+Rule155 &To qualify as a 155 print, a specialist arranges for the sale of the block at one "clean-up" price or at the different price limits on his book. If the block is sold at a \char`\"{}clean-up\char`\"{} price, the specialist should execute at the same price all the executable buy orders on his book. The sale qualifier is only applicable for AMEX trades.  \\\hline
+Sold\-Last &Sold Last is used when a trade prints in sequence but is reported late or printed in conformance to the One or Two Point Rule.  \\\hline
+Next\-Day &A transaction which calls for delivery of securities on the first business day after the trade date.  \\\hline
+Opened &Indicates an opening transaction that is printed out of sequence or reported late or printed in conformance to the One or Two Point Rule.  \\\hline
+Prior\-Ref &An executed trade that relates to an obligation to trade at an earlier point in the trading day or that refer to a prior reference price. This may be the result of an order that was lost or misplaced or a Select\-Net order that was not executed on a timely basis.  \\\hline
+Seller &A Seller's option transaction is a special transaction which gives the seller the right to deliver the stock at any time within a specific period, ranging from not less than four calendar days to no more than 60 calendar days.  \\\hline
+Split\-Trade &An execution in two markets when the specialist or Market Maker in the market first receiving the order agrees to execute a portion of it at whatever price is realized in another market to which the balance of the order is forwarded for execution.  \\\hline
+Form\-T &See Pre\-Post\-Mkt. Currently, all feed handlers that post Form-T trades - except CTA - send this qualifier for Form-T trades. In the next major release, all fields will use Pre\-Post\-Mkt and Form\-T will be obsolete.  \\\hline
+Pre\-Post\-Mkt &A trade reported before or after the normal trade reporting day. This is also known as a Form-T trade. The volume of Form-T trades will be included in the calculation of total volume. The price information in Form-T trades will not be used to update high, low and last sale data for individual securities or Indices since they occur outside of normal trade reporting hours. Currently, all feed handlers that post Form-T trades - except CTA - send the \char`\"{}Form\-T\char`\"{} qualifier for Fot-T trades. In the next major release, all feed handlers will use Pre\-Post\-Mkt and Form\-T will be obsolete.  \\\hline
+Av\-Price &A trade where the price reported is based upon an average of the prices for transactions in a security during all or any portion of the trading day.  \\\hline
+Sold &Sold is used when a trade is printed (reported) out of sequence and at a time different from the actual transaction time.  \\\hline
+Adjusted &~  \\\hline
+Auto &A sale condition code that identifies a NYSE trade that has been automatically executed without the potential benefit of price improvement.   \\\hline
+Basket &~  \\\hline
+Cash\-Only &~  \\\hline
+Next\-Day\-Only &~  \\\hline
+Spec\-Terms &~  \\\hline
+Stopped &~  \\\hline
+CATS &~  \\\hline
+VCT &~  \\\hline
+Rule127 &~  \\\hline
+Burst\-Basket &A burst basket execution signifies a trade wherein the equity Specialists, acting in the aggregate as a market maker, purchase or sell the component stocks required for execution of a specific basket trade.  \\\hline
+Open\-Detail &Opening trade detail message. Sent by CTS only and is a duplicate report of an earlier trade. Note: since feed handler version 2.14.32, it is configurable whether these detail messages are published.  \\\hline
+Detail &Trade detail message. Sent by CTS only and is a duplicate report of an earlier trade. Note: since feed handler version 2.14.32, it is configurable whether these detail messages are published.  \\\hline
+Reserved &~  \\\hline
+Basket\-Cross &~  \\\hline
+Basket\-Index\-On\-Close &A basket index on close transaction signifies a trade involving paired basket orders,the execution of which is based on the closing value of the index. These trades are reported after the close when the index closing value is determined.  \\\hline
+Intermarket\-Sweep &Indicates to CTS data recipients that the execution price reflects the order instruction not to send the order to another market that may have a superior price.  \\\hline
+Yellow\-Flag &Regular trades reported during specific events as out of the ordinary.  \\\hline
+Market\-Center\-Open &~  \\\hline
+Market\-Center\-Close &~  \\\hline
+Unknown &~  \\\hline
+\end{TabularC}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0f03f8d8b20f08eab587e439a939d0fc}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_db80e8a70132f714c2d351adac821cf7}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getTradeQualFieldState@{getTradeQualFieldState}}
+\index{getTradeQualFieldState@{getTradeQualFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getTradeQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Trade\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_db80e8a70132f714c2d351adac821cf7}
+
+
+The trade qual Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_958ea55776c3afa0a572b8819d9c04c8}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_a066daf6f361384f809a91dd4085149e}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getIsIrregular@{getIsIrregular}}
+\index{getIsIrregular@{getIsIrregular}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getIsIrregular]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Is\-Irregular () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_a066daf6f361384f809a91dd4085149e}
+
+
+Get whether the trade is irregular. 
+
+\begin{Desc}
+\item[Returns:]Whether or not the trade qualifies as an irregular trade. In general, only \char`\"{}regular\char`\"{} trades qualify to update the official last price and high/low prices. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_1a5b54d3d63c62bf8720cc29dd40b25a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_f44398c02c719db7a0f706a177590297}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getIsIrregularFieldState@{getIsIrregularFieldState}}
+\index{getIsIrregularFieldState@{getIsIrregularFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getIsIrregularFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Is\-Irregular\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_f44398c02c719db7a0f706a177590297}
+
+
+The is\-Irregular Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f8e874c8dc039fb83f1e9f4a8bdcbc6f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_5ce3c13612b7670f2517b21d4541c39e}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getGenericFlag@{getGenericFlag}}
+\index{getGenericFlag@{getGenericFlag}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getGenericFlag]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Generic\-Flag () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_5ce3c13612b7670f2517b21d4541c39e}
+
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f6591781ca46aa1392877bbf12c9e2f5}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_dcb98107626628f22341cccc440b54e0}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getGenericFlagFieldState@{getGenericFlagFieldState}}
+\index{getGenericFlagFieldState@{getGenericFlagFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getGenericFlagFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Generic\-Flag\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_dcb98107626628f22341cccc440b54e0}
+
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_98bb7d4f99af6f7b565506fb9b79665d}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_77edcaedced6b03219438ef4b2bcef68}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigTradeId@{getOrigTradeId}}
+\index{getOrigTradeId@{getOrigTradeId}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigTradeId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Trade\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_77edcaedced6b03219438ef4b2bcef68}
+
+
+Get the original trade id. 
+
+\begin{Desc}
+\item[Returns:]the original trade id \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f63f45ca9303c611b885390a012d6b87}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_ed7b73cb88b3c9813bbe7a79e1a25c87}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigTradeIdFieldState@{getOrigTradeIdFieldState}}
+\index{getOrigTradeIdFieldState@{getOrigTradeIdFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigTradeIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Trade\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_ed7b73cb88b3c9813bbe7a79e1a25c87}
+
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0bb23e403d65e8c21a3e9474fba0273a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_54da84a40ec7c8cba6bc119c4fac7614}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigShortSaleCircuitBreaker@{getOrigShortSaleCircuitBreaker}}
+\index{getOrigShortSaleCircuitBreaker@{getOrigShortSaleCircuitBreaker}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigShortSaleCircuitBreaker]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Short\-Sale\-Circuit\-Breaker () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_54da84a40ec7c8cba6bc119c4fac7614}
+
+
+get the Orig\-Short\-Sale\-Circuit\-Breaker 
+
+\begin{Desc}
+\item[Returns:]Orig\-Short\-Sale\-Circuit\-Breaker \begin{itemize}
+\item return values: \item Blank: Short Sale Restriction Not in Effect. \item A: Short Sale Restriction Activiated. \item C: Short Sale Restriction Continued. \item D: Sale Restriction Deactivated. \item E: Sale Restriction in Effect. \end{itemize}
+\end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_faa29432bc36076ea95e370398b3cbae}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeCancelOrError_5d43acfae05347c26f47fab7f0fcdd95}{
+\index{Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}!getOrigShortSaleCircuitBreakerFieldState@{getOrigShortSaleCircuitBreakerFieldState}}
+\index{getOrigShortSaleCircuitBreakerFieldState@{getOrigShortSaleCircuitBreakerFieldState}!Wombat::MamdaTradeCancelOrError@{Wombat::Mamda\-Trade\-Cancel\-Or\-Error}}
+\subsubsection[getOrigShortSaleCircuitBreakerFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Cancel\-Or\-Error::get\-Orig\-Short\-Sale\-Circuit\-Breaker\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeCancelOrError_5d43acfae05347c26f47fab7f0fcdd95}
+
+
+\begin{Desc}
+\item[Returns:]The Orig\-Short\-Sale\-Circuit\-Breaker Field State. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_1035dcb4392a8dbab128ae62cf9a6607}{Wombat::Mamda\-Trade\-Listener}.

@@ -1,0 +1,78 @@
+\hypertarget{classWombat_1_1MamdaAuctionHandler}{
+\section{Wombat::Mamda\-Auction\-Handler Class Reference}
+\label{classWombat_1_1MamdaAuctionHandler}\index{Wombat::MamdaAuctionHandler@{Wombat::MamdaAuctionHandler}}
+}
+\hyperlink{classWombat_1_1MamdaAuctionHandler}{Mamda\-Auction\-Handler} is an interface for applications that want to have an easy way to access currency data.  
+
+
+{\tt \#include $<$Mamda\-Auction\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaAuctionHandler_2e59d05ab16c4fb329abff8b3381b5f9}{on\-Auction\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaAuctionListener}{Mamda\-Auction\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaAuctionRecap}{Mamda\-Auction\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when the current auction information for the security is available. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaAuctionHandler_5e83ef0df411ddb008dc39cc4a876e54}{on\-Auction\-Update} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaAuctionListener}{Mamda\-Auction\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaAuctionRecap}{Mamda\-Auction\-Recap} \&recap, const \hyperlink{classWombat_1_1MamdaAuctionUpdate}{Mamda\-Auction\-Update} \&update)=0
+\begin{CompactList}\small\item\em Method invoked when one or more of the Auction fields have been updated by one of the following market data events:\begin{itemize}
+\item Initial image. \end{itemize}
+\item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaAuctionHandler_e293d223852deea28b9c41cfde5c7d3f}{$\sim$Mamda\-Auction\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaAuctionHandler}{Mamda\-Auction\-Handler} is an interface for applications that want to have an easy way to access currency data. 
+
+The interface defines callback methods for for receiving updates on currency data. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaAuctionHandler_e293d223852deea28b9c41cfde5c7d3f}{
+\index{Wombat::MamdaAuctionHandler@{Wombat::Mamda\-Auction\-Handler}!~MamdaAuctionHandler@{$\sim$MamdaAuctionHandler}}
+\index{~MamdaAuctionHandler@{$\sim$MamdaAuctionHandler}!Wombat::MamdaAuctionHandler@{Wombat::Mamda\-Auction\-Handler}}
+\subsubsection[$\sim$MamdaAuctionHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Auction\-Handler::$\sim$Mamda\-Auction\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaAuctionHandler_e293d223852deea28b9c41cfde5c7d3f}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaAuctionHandler_2e59d05ab16c4fb329abff8b3381b5f9}{
+\index{Wombat::MamdaAuctionHandler@{Wombat::Mamda\-Auction\-Handler}!onAuctionRecap@{onAuctionRecap}}
+\index{onAuctionRecap@{onAuctionRecap}!Wombat::MamdaAuctionHandler@{Wombat::Mamda\-Auction\-Handler}}
+\subsubsection[onAuctionRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Auction\-Handler::on\-Auction\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaAuctionListener}{Mamda\-Auction\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaAuctionRecap}{Mamda\-Auction\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaAuctionHandler_2e59d05ab16c4fb329abff8b3381b5f9}
+
+
+Method invoked when the current auction information for the security is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em recap}]Access to the full auction recap details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaAuctionHandler_5e83ef0df411ddb008dc39cc4a876e54}{
+\index{Wombat::MamdaAuctionHandler@{Wombat::Mamda\-Auction\-Handler}!onAuctionUpdate@{onAuctionUpdate}}
+\index{onAuctionUpdate@{onAuctionUpdate}!Wombat::MamdaAuctionHandler@{Wombat::Mamda\-Auction\-Handler}}
+\subsubsection[onAuctionUpdate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Auction\-Handler::on\-Auction\-Update (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaAuctionListener}{Mamda\-Auction\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaAuctionRecap}{Mamda\-Auction\-Recap} \& {\em recap}, const \hyperlink{classWombat_1_1MamdaAuctionUpdate}{Mamda\-Auction\-Update} \& {\em update})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaAuctionHandler_5e83ef0df411ddb008dc39cc4a876e54}
+
+
+Method invoked when one or more of the Auction fields have been updated by one of the following market data events:\begin{itemize}
+\item Initial image. \end{itemize}
+
+
+\begin{itemize}
+\item Recap update (e.g., after server fault tolerant event or data quality event.)\item Generic update..\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em recap}]Access to the full auction recap details. \item[{\em update}]Access to the auction update details. \end{description}
+\end{Desc}

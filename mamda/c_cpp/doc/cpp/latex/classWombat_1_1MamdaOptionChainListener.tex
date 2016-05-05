@@ -1,0 +1,439 @@
+\hypertarget{classWombat_1_1MamdaOptionChainListener}{
+\section{Wombat::Mamda\-Option\-Chain\-Listener Class Reference}
+\label{classWombat_1_1MamdaOptionChainListener}\index{Wombat::MamdaOptionChainListener@{Wombat::MamdaOptionChainListener}}
+}
+\hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} is a class that specializes in handling and managing option chain updates.  
+
+
+{\tt \#include $<$Mamda\-Option\-Chain\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Option\-Chain\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaOptionChainListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOptionChainListener_ed246a918ce9f7f820daf0fedac8c540}{Mamda\-Option\-Chain\-Listener} (const char $\ast$underlying\-Symbol)
+\begin{CompactList}\small\item\em Create a specialized option chain listener. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChainListener_34b3a4c1ef0cb23d98863c5852d3657f}{Mamda\-Option\-Chain\-Listener} (\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} $\ast$chain)
+\begin{CompactList}\small\item\em Create a specialized option chain listener. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOptionChainListener_3417b532649e5cba25f53cb9b3c46c30}{$\sim$Mamda\-Option\-Chain\-Listener} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainListener_8fb40267dabfb52a3bc1ae63e10f84e5}{set\-Manditory\-Fields} (bool expire\-Date, bool strike\-Price, bool put\-Call)
+\begin{CompactList}\small\item\em Call this function to control whether or not option contracts, which are missing expire\-Date, strike\-Price, or put\-Call fields are exposed to the user app by calling the registered on\-Option\-Contract\-Create(. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainListener_1f3d13c81de522368bf30257965e87ea}{add\-Handler} (\hyperlink{classWombat_1_1MamdaOptionChainHandler}{Mamda\-Option\-Chain\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized option chain handler. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \& \hyperlink{classWombat_1_1MamdaOptionChainListener_0cf73723053cf9ba983f7a156d2fa1ae}{get\-Option\-Chain} ()
+\begin{CompactList}\small\item\em Return the option chain associated with this listener. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionChainListener_74e03d49241666a1670a07e4187bf955}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the instruments string symbol. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionChainListener_742fc512426cd4b38cdddc67747ea269}{get\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the participant identifier. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainListener_c708f2e0adbf7309762ea71632e80b71}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOptionChainListener_7efc05e17f323d3b3fe4da601048886b}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOptionChainListener_4a54b34d8e87413ea30e83b8e75d9d78}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOptionChainListener_4d3d107d4aea29b42a262071c0a4d0ed}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOptionChainListener_81cfb2c76079da7867841b94da24b6de}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time. \item\end{CompactList}\item 
+const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaOptionChainListener_18b3d2b0c1db64719b2693e89d5583e5}{get\-Msg\-Qual} () const 
+\begin{CompactList}\small\item\em Get the message qualifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOptionChainListener_5cf26056ce6135a00627d5efea861dfc}{get\-Event\-Time} () const 
+\begin{CompactList}\small\item\em Get the event time. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOptionChainListener_936a15ecd68edbee310aba01fc7ae7b5}{get\-Event\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em Get the event sequence number. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ \hyperlink{classWombat_1_1MamdaOptionChainListener_af867698910e7291e62db6ecc8e47799}{get\-Option\-Contract} () const 
+\item 
+char \hyperlink{classWombat_1_1MamdaOptionChainListener_b1606745ac13faa4da7d9318705491a6}{get\-Option\-Action} () const 
+\begin{CompactList}\small\item\em Return the action related to the last series update message. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_7329d289f1c07002d10f50a04a1ea8fc}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_8766c380f388bac26dc3ba51312b8e09}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the participant identifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_b268208b087785469f9d86c71e01811b}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event sequence number field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_8942c3987173fa87ec07f38cba68fc15}{get\-Event\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_7f2c10954ad153ad4b6e051705fd60fe}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_2d0bea759653d2e73734d2fbfd01574a}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_659564bc5b35a81418fa01d1c4982ad5}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_6034b14704cebdcddf147a4cf9316637}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOptionChainListener_55c3258edcbe570b4a68dd463b0f0f24}{get\-Msg\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the message qualifier field state. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} is a class that specializes in handling and managing option chain updates. 
+
+Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaOptionChainHandler}{Mamda\-Option\-Chain\-Handler} interface and will be delivered notifications for various types of options-related events. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_ed246a918ce9f7f820daf0fedac8c540}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!MamdaOptionChainListener@{MamdaOptionChainListener}}
+\index{MamdaOptionChainListener@{MamdaOptionChainListener}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[MamdaOptionChainListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Chain\-Listener::Mamda\-Option\-Chain\-Listener (const char $\ast$ {\em underlying\-Symbol})}}
+\label{classWombat_1_1MamdaOptionChainListener_ed246a918ce9f7f820daf0fedac8c540}
+
+
+Create a specialized option chain listener. 
+
+This listener handles option chain updates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em underlying\-Symbol}]The underlying symbol for the option chain. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_34b3a4c1ef0cb23d98863c5852d3657f}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!MamdaOptionChainListener@{MamdaOptionChainListener}}
+\index{MamdaOptionChainListener@{MamdaOptionChainListener}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[MamdaOptionChainListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Chain\-Listener::Mamda\-Option\-Chain\-Listener (\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} $\ast$ {\em chain})}}
+\label{classWombat_1_1MamdaOptionChainListener_34b3a4c1ef0cb23d98863c5852d3657f}
+
+
+Create a specialized option chain listener. 
+
+This listener handles option chain updates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chain}]The option chain object. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_3417b532649e5cba25f53cb9b3c46c30}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!~MamdaOptionChainListener@{$\sim$MamdaOptionChainListener}}
+\index{~MamdaOptionChainListener@{$\sim$MamdaOptionChainListener}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[$\sim$MamdaOptionChainListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Option\-Chain\-Listener::$\sim$Mamda\-Option\-Chain\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_3417b532649e5cba25f53cb9b3c46c30}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_8fb40267dabfb52a3bc1ae63e10f84e5}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!setManditoryFields@{setManditoryFields}}
+\index{setManditoryFields@{setManditoryFields}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[setManditoryFields]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-Listener::set\-Manditory\-Fields (bool {\em expire\-Date}, bool {\em strike\-Price}, bool {\em put\-Call})}}
+\label{classWombat_1_1MamdaOptionChainListener_8fb40267dabfb52a3bc1ae63e10f84e5}
+
+
+Call this function to control whether or not option contracts, which are missing expire\-Date, strike\-Price, or put\-Call fields are exposed to the user app by calling the registered on\-Option\-Contract\-Create(. 
+
+.) callbacks. Passing a value of false will allow contracts without the particular field to be exposed, passing a value of true will ensure options without this field will not reach the user app. By default all three fields are considered mandatory.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em expire\-Date}]Whether the expiration date is mandatory. \item[{\em strike\-Price}]Whether the strike\-Price is mandatory. \item[{\em put\-Call}]Whether the put/call indicator is mandatory. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_1f3d13c81de522368bf30257965e87ea}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaOptionChainHandler}{Mamda\-Option\-Chain\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaOptionChainListener_1f3d13c81de522368bf30257965e87ea}
+
+
+Add a specialized option chain handler. 
+
+Currently, only one handler can (and must) be registered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]An instance of the handler which will receive callback updates for activity on the option chain. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_0cf73723053cf9ba983f7a156d2fa1ae}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getOptionChain@{getOptionChain}}
+\index{getOptionChain@{getOptionChain}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getOptionChain]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain}\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Option\-Chain ()}}
+\label{classWombat_1_1MamdaOptionChainListener_0cf73723053cf9ba983f7a156d2fa1ae}
+
+
+Return the option chain associated with this listener. 
+
+\begin{Desc}
+\item[Returns:]The option chain being maintained by this listener instance. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainListener_74e03d49241666a1670a07e4187bf955}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Chain\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_74e03d49241666a1670a07e4187bf955}
+
+
+Get the instruments string symbol. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_8783b136a1305d21c578ced8618c090b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_742fc512426cd4b38cdddc67747ea269}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Chain\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_742fc512426cd4b38cdddc67747ea269}
+
+
+Get the participant identifier. 
+
+\begin{Desc}
+\item[Returns:]Participant ID. This may be an exchange identifier, a market maker ID, etc., or NULL (if this is not related to any specific participant). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_94e531c6ae9ae7798725db14facbd6e2}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_c708f2e0adbf7309762ea71632e80b71}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_c708f2e0adbf7309762ea71632e80b71}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.\hypertarget{classWombat_1_1MamdaOptionChainListener_7efc05e17f323d3b3fe4da601048886b}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_7efc05e17f323d3b3fe4da601048886b}
+
+
+Get the source time. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_60b5d51f3799c4762090505ef5b213e9}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_4a54b34d8e87413ea30e83b8e75d9d78}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_4a54b34d8e87413ea30e83b8e75d9d78}
+
+
+Get the activity time. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b3810afc69474ef3b192ee4c9307e714}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_4d3d107d4aea29b42a262071c0a4d0ed}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_4d3d107d4aea29b42a262071c0a4d0ed}
+
+
+Get the line time. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3fcc26fa1a6446bcec12b11ac74ed26d}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_81cfb2c76079da7867841b94da24b6de}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_81cfb2c76079da7867841b94da24b6de}
+
+
+Get the send time. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b0602a83bec20cd8b341ec866ff3bffa}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_18b3d2b0c1db64719b2693e89d5583e5}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Msg\-Qual\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_18b3d2b0c1db64719b2693e89d5583e5}
+
+
+Get the message qualifier. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_675ce8f1de581548426335423d6b3864}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_5cf26056ce6135a00627d5efea861dfc}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Option\-Chain\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_5cf26056ce6135a00627d5efea861dfc}
+
+
+Get the event time. 
+
+\begin{Desc}
+\item[Returns:]Event time. Typically, when the event actually occurred. This is often the same as the \char`\"{}source time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_7285491c2c657207a64b1b0449c0339b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_936a15ecd68edbee310aba01fc7ae7b5}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Option\-Chain\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_936a15ecd68edbee310aba01fc7ae7b5}
+
+
+Get the event sequence number. 
+
+\begin{Desc}
+\item[Returns:]Source sequence number. The exchange generated sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_1fd845d48e95b4ee3beafc72d1ac2adf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_af867698910e7291e62db6ecc8e47799}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getOptionContract@{getOptionContract}}
+\index{getOptionContract@{getOptionContract}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getOptionContract]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract}$\ast$ Wombat::Mamda\-Option\-Chain\-Listener::get\-Option\-Contract () const}}
+\label{classWombat_1_1MamdaOptionChainListener_af867698910e7291e62db6ecc8e47799}
+
+
+\begin{Desc}
+\item[Returns:]The option contract to which the most recent event applies. If the contract is new, it will have already been added to the chain. If it is being removed, it will have already been removed from the chain. \end{Desc}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_9aa226dbd2c289c60828ac1279d8777a}{Wombat::Mamda\-Option\-Series\-Update}.\hypertarget{classWombat_1_1MamdaOptionChainListener_b1606745ac13faa4da7d9318705491a6}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getOptionAction@{getOptionAction}}
+\index{getOptionAction@{getOptionAction}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getOptionAction]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Option\-Chain\-Listener::get\-Option\-Action () const}}
+\label{classWombat_1_1MamdaOptionChainListener_b1606745ac13faa4da7d9318705491a6}
+
+
+Return the action related to the last series update message. 
+
+\begin{Desc}
+\item[Returns:]The action related to the last series update message. \end{Desc}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_ae453033ff713e3a48251f3f747946db}{Wombat::Mamda\-Option\-Series\-Update}.\hypertarget{classWombat_1_1MamdaOptionChainListener_7329d289f1c07002d10f50a04a1ea8fc}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_7329d289f1c07002d10f50a04a1ea8fc}
+
+
+Get the string symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ef95e19f4babb0e5ea8549d6cf29d13f}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_8766c380f388bac26dc3ba51312b8e09}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_8766c380f388bac26dc3ba51312b8e09}
+
+
+Get the participant identifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_c361c99af2cf7eb9f5621d89f744fc62}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_b268208b087785469f9d86c71e01811b}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_b268208b087785469f9d86c71e01811b}
+
+
+Get the event sequence number field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_51cc0b9d4c2b8a982ccd18b339707cb5}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_8942c3987173fa87ec07f38cba68fc15}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_8942c3987173fa87ec07f38cba68fc15}
+
+
+Get the event time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ff3932065e16e660fb6cd9285b46f7d0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_7f2c10954ad153ad4b6e051705fd60fe}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_7f2c10954ad153ad4b6e051705fd60fe}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_9cd58f3d7b5ebea42fa86e5dde46ab18}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_2d0bea759653d2e73734d2fbfd01574a}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_2d0bea759653d2e73734d2fbfd01574a}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_a61a566e3442181ca1fadc4524296cd0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_659564bc5b35a81418fa01d1c4982ad5}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_659564bc5b35a81418fa01d1c4982ad5}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_eb06352aca3280c5e89bad7a3b185cdf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_6034b14704cebdcddf147a4cf9316637}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_6034b14704cebdcddf147a4cf9316637}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_418ecb29b412cd42581b54c87b5360fd}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOptionChainListener_55c3258edcbe570b4a68dd463b0f0f24}{
+\index{Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaOptionChainListener@{Wombat::Mamda\-Option\-Chain\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Option\-Chain\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainListener_55c3258edcbe570b4a68dd463b0f0f24}
+
+
+Get the message qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3454d51e1131d9949691ee4b4153cd97}{Wombat::Mamda\-Basic\-Event}.

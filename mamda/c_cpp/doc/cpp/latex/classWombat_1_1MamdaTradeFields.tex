@@ -1,0 +1,876 @@
+\hypertarget{classWombat_1_1MamdaTradeFields}{
+\section{Wombat::Mamda\-Trade\-Fields Class Reference}
+\label{classWombat_1_1MamdaTradeFields}\index{Wombat::MamdaTradeFields@{Wombat::MamdaTradeFields}}
+}
+Utility cache of {\tt Mama\-Field\-Descriptor}s which are used internally by the API when accessing trade related fields from update messages.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Fields.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{classWombat_1_1MamdaTradeFields_24f9db0ce37349e5a86bcd18f9c93d27}{set\-Dictionary} (const Mama\-Dictionary \&dictionary)
+\item 
+static void \hyperlink{classWombat_1_1MamdaTradeFields_32e1cb689e126579d6298cbd91fe44fd}{reset} ()
+\begin{CompactList}\small\item\em Reset the dictionary for trade update fields. \item\end{CompactList}\item 
+static uint16\_\-t \hyperlink{classWombat_1_1MamdaTradeFields_7eeedbd0f1b765a307258dc799177881}{get\-Max\-Fid} ()
+\item 
+static bool \hyperlink{classWombat_1_1MamdaTradeFields_185ffef6d974050df73f337f52ac4f68}{is\-Set} ()
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c31684b8cd859faa39f3667d800251a4}{TRADE\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d352e18b6a100f63ba69b7cd1b8fdbcf}{TRADE\_\-DATE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_489a22aa13c199f52adc525f42e4c17a}{TRADE\_\-SIDE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_8d76fbcd235f0a017c250d1bb0d046b3}{AGGRESSOR\_\-SIDE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a2a29223ba29fc76a509cfc5b8a07f86}{TRADE\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_2e4b6108572cf8630c0da4a7dd92352f}{LAST\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6454093ec627b9e602d55a526fc96706}{LAST\_\-VOLUME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_63ad97c46807040d061e09add6d0e066}{LAST\_\-DATE\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0772bce076015f719acbdf2269fbd96b}{LAST\_\-PART\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c491446ae286c84cebedad263ade2773}{LAST\_\-DIRECTION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d82f6483b9ce4c51802b26e12081123e}{NET\_\-CHANGE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6660740a6794b766f6449f4b56e89333}{PCT\_\-CHANGE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d330bd57df4a8c1d80114ba006b84a49}{TRADE\_\-SIZE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_dccfc4d9e121e80325dc8e348e717c10}{TOTAL\_\-VOLUME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_aea6105e2943749ac8bdd0f9b32dfb3e}{OFF\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_02d88960945dd4ddcd80129a4d5712d7}{ON\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6bc190d6110f6d474dabc2724d71fa5f}{TRADE\_\-UNITS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_1f32883b2a1311abfc0450c6a40eb17b}{HIGH\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0fea1065d1953418df3d2cf25e44b51b}{LOW\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_e8e593c8043ff2fe4d961bdf6fbe0723}{OPEN\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_dd92da5a4c7e6dc3c5e270a9ed66fd4b}{CLOSE\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c6073def88685c23e719fd1b33d5a989}{CLOSE\_\-DATE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4c455ddb9954226594f316c1c5f8052b}{PREV\_\-CLOSE\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_e6fab4db03cda1a04978ce52f60b2f8f}{PREV\_\-CLOSE\_\-DATE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_db201de137fa76ebb43aaf3102b71af9}{ADJ\_\-PREV\_\-CLOSE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_bf7a96f80cfac70b232f81be8c339b19}{PREV\_\-VOLUME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ce7528ed223ca335d3930e71c45c4b99}{TRADE\_\-SEQNUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7f69f889fa4ca604862502356af026b4}{TRADE\_\-QUALIFIER}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_497d497834276275d80598ee473bf7fb}{TRADE\_\-PART\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6920201b1fa1f1038d4197f691c197a8}{TOTAL\_\-VALUE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_717ae134d77d96f906ab623f331b5d9b}{OFF\_\-EXCHANGE\_\-TOTAL\_\-VALUE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_60c81d33667f4368dbc465b043d69837}{ON\_\-EXCHANGE\_\-TOTAL\_\-VALUE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_42571181bda9b1960596eb43f4bed4bd}{VWAP}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_3cadc3e8e4dee2bcb33e94d5ccd61950}{OFF\_\-EXCHANGE\_\-VWAP}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6a61bbc368a916396aaace1adfaf449b}{ON\_\-EXCHANGE\_\-VWAP}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_f70a54c4b4e898fb67174065584deeb3}{STD\_\-DEV}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ae928651068cc99b18cf81dcd9316c5e}{STD\_\-DEV\_\-SUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c893dd72ef0c314bbac5343dd27a96bb}{STD\_\-DEV\_\-SUM\_\-SQUARES}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a42d2901c067527a5a9f81abaf5c4715}{SALE\_\-CONDITION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_f3474948411eaaa9298ac0d0615bb3fa}{SELLERS\_\-SALE\_\-DAYS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a8fb24ec4c53a138b57e8c7f23ca4dd7}{IS\_\-IRREGULAR}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_2ec6d44872ab573e246e9ad76d0571e0}{IRREG\_\-PART\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_34dd9267e45f5e42e3dd742d643ac277}{IRREG\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_8f3e4b7246b09ecd6eb5c0c182163731}{IRREG\_\-SIZE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_814a54aa0564be977dece5911c3c5526}{IRREG\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_32ebc5f94be402c21581d972d71fe2cb}{ORIG\_\-PART\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_df954e60aface17e3855a745568e75e8}{ORIG\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7b887c2ba4c6928a759632935c3997ac}{ORIG\_\-SIZE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0dbe02df598d6a126ee49c5aaa8a05a4}{ORIG\_\-SEQNUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_58662eb4c1d3561e04712a70e95eac48}{ORIG\_\-TRADE\_\-QUALIFIER}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_34ced09149ed0b1d8eb74c7c8a895393}{ORIG\_\-SALE\_\-CONDITION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_16b62103586d1e6ea3973e0aa397a00d}{ORIG\_\-SELLERS\_\-SALE\_\-DAYS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a6e1f19a93c90ff95093e90177deb9c7}{ORIG\_\-STOP\_\-STOCK\_\-IND}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ef1ba4de27357d660131b2b6c98e8331}{STOP\_\-STOCK\_\-IND}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a0f007e26e35f4dd3ccdd689ade185dd}{CORR\_\-PART\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_cba894ca00b326c2a205264900bcf66e}{CORR\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d008a5963d9faf440be04b61f8dcccb9}{CORR\_\-SIZE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_680194565d0cd7c7a61ba9c36955bc4c}{CORR\_\-TRADE\_\-QUALIFIER}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_40c013ec1bc3127ce7f9558214a38a77}{CORR\_\-SALE\_\-CONDITION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_fbcd6a93c569892c7ba3c93a1d6f5ceb}{CORR\_\-TRADE\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c9e9f2460c98449fbd35d329cf9e5198}{CORR\_\-SELLERS\_\-SALE\_\-DAYS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4980f61d0f62f5a65e88438a58b4ffd8}{CORR\_\-STOP\_\-STOCK\_\-IND}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_fa751421a24f890f68730ea770f0f825}{CORR\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_59d45f7dbd5ca2dd105c8eef8f1b394e}{CANCEL\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_5b403a15990d1d1d880cf948bc518dc2}{TRADE\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_63e9b5118fcfc41a004a4e7b233c98b8}{ORIG\_\-TRADE\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d125cc538dd14188b01bbe541d32730a}{PRIMARY\_\-EXCH}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_1fba98a60e6df31d9e81752e774da724}{TRADE\_\-COUNT}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a29616e4fa10016edb9ce81a8077dcd6}{BLOCK\_\-COUNT}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_00edc0c65af9c0330be597700be1a5df}{BLOCK\_\-VOLUME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c127f75db6e5e1474193e6f48cc1691a}{ORDER\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4627d2f5a7b8c6f0039937746e43d70c}{UPDATE\_\-AS\_\-TRADE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_fe5bc671e92982a0470777c8fdf212fd}{CURRENCY\_\-CODE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7ffcf2b7f73dbdc4e3be0125ef72d200}{SETTLE\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_53c3e7a05c0f4f51bff06dfa6e92c97f}{SETTLE\_\-DATE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_e670e24c98f50bca23665d0a6eb0b635}{HIGH\_\-SEQNUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4bbf31d42c6c1cdbfa45e9f9a0f7d361}{LOW\_\-SEQNUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6fa17497b82b094359150d95ca11dc09}{LAST\_\-SEQNUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7c482bbc03ef706f02812fd8d4583ca5}{TOTAL\_\-VOLUME\_\-SEQNUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_af2ad21c98357d5e12577fdcd1dc40d9}{UNIQUE\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0bd4ba9dd7d22062dd526c9ab719c3fb}{TRADE\_\-ACTION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_60b345020cc6a16272a283590829ccfe}{TRADE\_\-EXEC\_\-VENUE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_31fcff0fd8d226d47c80b375871d0855}{OFF\_\-EXCHANGE\_\-TRADE\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_42d2e222639e61c5b6b03385c42c0f41}{ON\_\-EXCHANGE\_\-TRADE\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_70b70fd3681eac1e7e6e3092720b8af7}{TRADE\_\-CONTRIBUTORS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_3428193f62baa321da4b8fabc6c2f854}{GENERIC\_\-FLAG}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ea1f3f9534bf2d3f55a1be4e425a4a3d}{TRADE\_\-RECAPS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_08935a4c527a67f176bfff17d0edff54}{SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_44d45b6dc1a8124b717c6c55124bde43}{ORIG\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_1f5755c44eb2062a5e78ede6dd1fbe89}{CORR\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Utility cache of {\tt Mama\-Field\-Descriptor}s which are used internally by the API when accessing trade related fields from update messages. 
+
+This class should be initialized prior to using the {\tt \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}} by calling \hyperlink{classWombat_1_1MamdaTradeFields_24f9db0ce37349e5a86bcd18f9c93d27}{set\-Dictionary()} with a valid dictionary object which contains trade related fields. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeFields_24f9db0ce37349e5a86bcd18f9c93d27}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!setDictionary@{setDictionary}}
+\index{setDictionary@{setDictionary}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[setDictionary]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Trade\-Fields::set\-Dictionary (const Mama\-Dictionary \& {\em dictionary})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_24f9db0ce37349e5a86bcd18f9c93d27}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_32e1cb689e126579d6298cbd91fe44fd}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!reset@{reset}}
+\index{reset@{reset}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[reset]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Trade\-Fields::reset ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_32e1cb689e126579d6298cbd91fe44fd}
+
+
+Reset the dictionary for trade update fields. 
+
+\hypertarget{classWombat_1_1MamdaTradeFields_7eeedbd0f1b765a307258dc799177881}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!getMaxFid@{getMaxFid}}
+\index{getMaxFid@{getMaxFid}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[getMaxFid]{\setlength{\rightskip}{0pt plus 5cm}static uint16\_\-t Wombat::Mamda\-Trade\-Fields::get\-Max\-Fid ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_7eeedbd0f1b765a307258dc799177881}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_185ffef6d974050df73f337f52ac4f68}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!isSet@{isSet}}
+\index{isSet@{isSet}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[isSet]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Trade\-Fields::is\-Set ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_185ffef6d974050df73f337f52ac4f68}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaTradeFields_c31684b8cd859faa39f3667d800251a4}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_PRICE@{TRADE\_\-PRICE}}
+\index{TRADE_PRICE@{TRADE\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c31684b8cd859faa39f3667d800251a4}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_c31684b8cd859faa39f3667d800251a4}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_d352e18b6a100f63ba69b7cd1b8fdbcf}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_DATE@{TRADE\_\-DATE}}
+\index{TRADE_DATE@{TRADE\_\-DATE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-DATE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d352e18b6a100f63ba69b7cd1b8fdbcf}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-DATE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_d352e18b6a100f63ba69b7cd1b8fdbcf}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_489a22aa13c199f52adc525f42e4c17a}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_SIDE@{TRADE\_\-SIDE}}
+\index{TRADE_SIDE@{TRADE\_\-SIDE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-SIDE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_489a22aa13c199f52adc525f42e4c17a}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-SIDE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_489a22aa13c199f52adc525f42e4c17a}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_8d76fbcd235f0a017c250d1bb0d046b3}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!AGGRESSOR_SIDE@{AGGRESSOR\_\-SIDE}}
+\index{AGGRESSOR_SIDE@{AGGRESSOR\_\-SIDE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[AGGRESSOR\_\-SIDE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_8d76fbcd235f0a017c250d1bb0d046b3}{Wombat::Mamda\-Trade\-Fields::AGGRESSOR\_\-SIDE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_8d76fbcd235f0a017c250d1bb0d046b3}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_a2a29223ba29fc76a509cfc5b8a07f86}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_TIME@{TRADE\_\-TIME}}
+\index{TRADE_TIME@{TRADE\_\-TIME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a2a29223ba29fc76a509cfc5b8a07f86}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_a2a29223ba29fc76a509cfc5b8a07f86}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_2e4b6108572cf8630c0da4a7dd92352f}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LAST_PRICE@{LAST\_\-PRICE}}
+\index{LAST_PRICE@{LAST\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LAST\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_2e4b6108572cf8630c0da4a7dd92352f}{Wombat::Mamda\-Trade\-Fields::LAST\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_2e4b6108572cf8630c0da4a7dd92352f}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_6454093ec627b9e602d55a526fc96706}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LAST_VOLUME@{LAST\_\-VOLUME}}
+\index{LAST_VOLUME@{LAST\_\-VOLUME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LAST\_\-VOLUME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6454093ec627b9e602d55a526fc96706}{Wombat::Mamda\-Trade\-Fields::LAST\_\-VOLUME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_6454093ec627b9e602d55a526fc96706}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_63ad97c46807040d061e09add6d0e066}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LAST_DATE_TIME@{LAST\_\-DATE\_\-TIME}}
+\index{LAST_DATE_TIME@{LAST\_\-DATE\_\-TIME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LAST\_\-DATE\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_63ad97c46807040d061e09add6d0e066}{Wombat::Mamda\-Trade\-Fields::LAST\_\-DATE\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_63ad97c46807040d061e09add6d0e066}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_0772bce076015f719acbdf2269fbd96b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LAST_PART_ID@{LAST\_\-PART\_\-ID}}
+\index{LAST_PART_ID@{LAST\_\-PART\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LAST\_\-PART\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0772bce076015f719acbdf2269fbd96b}{Wombat::Mamda\-Trade\-Fields::LAST\_\-PART\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_0772bce076015f719acbdf2269fbd96b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_c491446ae286c84cebedad263ade2773}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LAST_DIRECTION@{LAST\_\-DIRECTION}}
+\index{LAST_DIRECTION@{LAST\_\-DIRECTION}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LAST\_\-DIRECTION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c491446ae286c84cebedad263ade2773}{Wombat::Mamda\-Trade\-Fields::LAST\_\-DIRECTION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_c491446ae286c84cebedad263ade2773}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_d82f6483b9ce4c51802b26e12081123e}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!NET_CHANGE@{NET\_\-CHANGE}}
+\index{NET_CHANGE@{NET\_\-CHANGE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[NET\_\-CHANGE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d82f6483b9ce4c51802b26e12081123e}{Wombat::Mamda\-Trade\-Fields::NET\_\-CHANGE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_d82f6483b9ce4c51802b26e12081123e}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_6660740a6794b766f6449f4b56e89333}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!PCT_CHANGE@{PCT\_\-CHANGE}}
+\index{PCT_CHANGE@{PCT\_\-CHANGE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[PCT\_\-CHANGE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6660740a6794b766f6449f4b56e89333}{Wombat::Mamda\-Trade\-Fields::PCT\_\-CHANGE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_6660740a6794b766f6449f4b56e89333}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_d330bd57df4a8c1d80114ba006b84a49}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_SIZE@{TRADE\_\-SIZE}}
+\index{TRADE_SIZE@{TRADE\_\-SIZE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-SIZE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d330bd57df4a8c1d80114ba006b84a49}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-SIZE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_d330bd57df4a8c1d80114ba006b84a49}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_dccfc4d9e121e80325dc8e348e717c10}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TOTAL_VOLUME@{TOTAL\_\-VOLUME}}
+\index{TOTAL_VOLUME@{TOTAL\_\-VOLUME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TOTAL\_\-VOLUME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_dccfc4d9e121e80325dc8e348e717c10}{Wombat::Mamda\-Trade\-Fields::TOTAL\_\-VOLUME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_dccfc4d9e121e80325dc8e348e717c10}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_aea6105e2943749ac8bdd0f9b32dfb3e}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!OFF_EXCHANGE_TOTAL_VOLUME@{OFF\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}}
+\index{OFF_EXCHANGE_TOTAL_VOLUME@{OFF\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[OFF\_\-EXCHANGE\_\-TOTAL\_\-VOLUME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_aea6105e2943749ac8bdd0f9b32dfb3e}{Wombat::Mamda\-Trade\-Fields::OFF\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_aea6105e2943749ac8bdd0f9b32dfb3e}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_02d88960945dd4ddcd80129a4d5712d7}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ON_EXCHANGE_TOTAL_VOLUME@{ON\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}}
+\index{ON_EXCHANGE_TOTAL_VOLUME@{ON\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ON\_\-EXCHANGE\_\-TOTAL\_\-VOLUME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_02d88960945dd4ddcd80129a4d5712d7}{Wombat::Mamda\-Trade\-Fields::ON\_\-EXCHANGE\_\-TOTAL\_\-VOLUME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_02d88960945dd4ddcd80129a4d5712d7}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_6bc190d6110f6d474dabc2724d71fa5f}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_UNITS@{TRADE\_\-UNITS}}
+\index{TRADE_UNITS@{TRADE\_\-UNITS}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-UNITS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6bc190d6110f6d474dabc2724d71fa5f}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-UNITS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_6bc190d6110f6d474dabc2724d71fa5f}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_1f32883b2a1311abfc0450c6a40eb17b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!HIGH_PRICE@{HIGH\_\-PRICE}}
+\index{HIGH_PRICE@{HIGH\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[HIGH\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_1f32883b2a1311abfc0450c6a40eb17b}{Wombat::Mamda\-Trade\-Fields::HIGH\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_1f32883b2a1311abfc0450c6a40eb17b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_0fea1065d1953418df3d2cf25e44b51b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LOW_PRICE@{LOW\_\-PRICE}}
+\index{LOW_PRICE@{LOW\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LOW\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0fea1065d1953418df3d2cf25e44b51b}{Wombat::Mamda\-Trade\-Fields::LOW\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_0fea1065d1953418df3d2cf25e44b51b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_e8e593c8043ff2fe4d961bdf6fbe0723}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!OPEN_PRICE@{OPEN\_\-PRICE}}
+\index{OPEN_PRICE@{OPEN\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[OPEN\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_e8e593c8043ff2fe4d961bdf6fbe0723}{Wombat::Mamda\-Trade\-Fields::OPEN\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_e8e593c8043ff2fe4d961bdf6fbe0723}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_dd92da5a4c7e6dc3c5e270a9ed66fd4b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CLOSE_PRICE@{CLOSE\_\-PRICE}}
+\index{CLOSE_PRICE@{CLOSE\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CLOSE\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_dd92da5a4c7e6dc3c5e270a9ed66fd4b}{Wombat::Mamda\-Trade\-Fields::CLOSE\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_dd92da5a4c7e6dc3c5e270a9ed66fd4b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_c6073def88685c23e719fd1b33d5a989}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CLOSE_DATE@{CLOSE\_\-DATE}}
+\index{CLOSE_DATE@{CLOSE\_\-DATE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CLOSE\_\-DATE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c6073def88685c23e719fd1b33d5a989}{Wombat::Mamda\-Trade\-Fields::CLOSE\_\-DATE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_c6073def88685c23e719fd1b33d5a989}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_4c455ddb9954226594f316c1c5f8052b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!PREV_CLOSE_PRICE@{PREV\_\-CLOSE\_\-PRICE}}
+\index{PREV_CLOSE_PRICE@{PREV\_\-CLOSE\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[PREV\_\-CLOSE\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4c455ddb9954226594f316c1c5f8052b}{Wombat::Mamda\-Trade\-Fields::PREV\_\-CLOSE\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_4c455ddb9954226594f316c1c5f8052b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_e6fab4db03cda1a04978ce52f60b2f8f}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!PREV_CLOSE_DATE@{PREV\_\-CLOSE\_\-DATE}}
+\index{PREV_CLOSE_DATE@{PREV\_\-CLOSE\_\-DATE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[PREV\_\-CLOSE\_\-DATE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_e6fab4db03cda1a04978ce52f60b2f8f}{Wombat::Mamda\-Trade\-Fields::PREV\_\-CLOSE\_\-DATE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_e6fab4db03cda1a04978ce52f60b2f8f}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_db201de137fa76ebb43aaf3102b71af9}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ADJ_PREV_CLOSE@{ADJ\_\-PREV\_\-CLOSE}}
+\index{ADJ_PREV_CLOSE@{ADJ\_\-PREV\_\-CLOSE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ADJ\_\-PREV\_\-CLOSE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_db201de137fa76ebb43aaf3102b71af9}{Wombat::Mamda\-Trade\-Fields::ADJ\_\-PREV\_\-CLOSE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_db201de137fa76ebb43aaf3102b71af9}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_bf7a96f80cfac70b232f81be8c339b19}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!PREV_VOLUME@{PREV\_\-VOLUME}}
+\index{PREV_VOLUME@{PREV\_\-VOLUME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[PREV\_\-VOLUME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_bf7a96f80cfac70b232f81be8c339b19}{Wombat::Mamda\-Trade\-Fields::PREV\_\-VOLUME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_bf7a96f80cfac70b232f81be8c339b19}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_ce7528ed223ca335d3930e71c45c4b99}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_SEQNUM@{TRADE\_\-SEQNUM}}
+\index{TRADE_SEQNUM@{TRADE\_\-SEQNUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-SEQNUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ce7528ed223ca335d3930e71c45c4b99}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-SEQNUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_ce7528ed223ca335d3930e71c45c4b99}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_7f69f889fa4ca604862502356af026b4}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_QUALIFIER@{TRADE\_\-QUALIFIER}}
+\index{TRADE_QUALIFIER@{TRADE\_\-QUALIFIER}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-QUALIFIER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7f69f889fa4ca604862502356af026b4}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-QUALIFIER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_7f69f889fa4ca604862502356af026b4}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_497d497834276275d80598ee473bf7fb}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_PART_ID@{TRADE\_\-PART\_\-ID}}
+\index{TRADE_PART_ID@{TRADE\_\-PART\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-PART\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_497d497834276275d80598ee473bf7fb}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-PART\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_497d497834276275d80598ee473bf7fb}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_6920201b1fa1f1038d4197f691c197a8}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TOTAL_VALUE@{TOTAL\_\-VALUE}}
+\index{TOTAL_VALUE@{TOTAL\_\-VALUE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TOTAL\_\-VALUE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6920201b1fa1f1038d4197f691c197a8}{Wombat::Mamda\-Trade\-Fields::TOTAL\_\-VALUE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_6920201b1fa1f1038d4197f691c197a8}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_717ae134d77d96f906ab623f331b5d9b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!OFF_EXCHANGE_TOTAL_VALUE@{OFF\_\-EXCHANGE\_\-TOTAL\_\-VALUE}}
+\index{OFF_EXCHANGE_TOTAL_VALUE@{OFF\_\-EXCHANGE\_\-TOTAL\_\-VALUE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[OFF\_\-EXCHANGE\_\-TOTAL\_\-VALUE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_717ae134d77d96f906ab623f331b5d9b}{Wombat::Mamda\-Trade\-Fields::OFF\_\-EXCHANGE\_\-TOTAL\_\-VALUE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_717ae134d77d96f906ab623f331b5d9b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_60c81d33667f4368dbc465b043d69837}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ON_EXCHANGE_TOTAL_VALUE@{ON\_\-EXCHANGE\_\-TOTAL\_\-VALUE}}
+\index{ON_EXCHANGE_TOTAL_VALUE@{ON\_\-EXCHANGE\_\-TOTAL\_\-VALUE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ON\_\-EXCHANGE\_\-TOTAL\_\-VALUE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_60c81d33667f4368dbc465b043d69837}{Wombat::Mamda\-Trade\-Fields::ON\_\-EXCHANGE\_\-TOTAL\_\-VALUE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_60c81d33667f4368dbc465b043d69837}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_42571181bda9b1960596eb43f4bed4bd}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!VWAP@{VWAP}}
+\index{VWAP@{VWAP}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[VWAP]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_42571181bda9b1960596eb43f4bed4bd}{Wombat::Mamda\-Trade\-Fields::VWAP}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_42571181bda9b1960596eb43f4bed4bd}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_3cadc3e8e4dee2bcb33e94d5ccd61950}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!OFF_EXCHANGE_VWAP@{OFF\_\-EXCHANGE\_\-VWAP}}
+\index{OFF_EXCHANGE_VWAP@{OFF\_\-EXCHANGE\_\-VWAP}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[OFF\_\-EXCHANGE\_\-VWAP]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_3cadc3e8e4dee2bcb33e94d5ccd61950}{Wombat::Mamda\-Trade\-Fields::OFF\_\-EXCHANGE\_\-VWAP}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_3cadc3e8e4dee2bcb33e94d5ccd61950}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_6a61bbc368a916396aaace1adfaf449b}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ON_EXCHANGE_VWAP@{ON\_\-EXCHANGE\_\-VWAP}}
+\index{ON_EXCHANGE_VWAP@{ON\_\-EXCHANGE\_\-VWAP}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ON\_\-EXCHANGE\_\-VWAP]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6a61bbc368a916396aaace1adfaf449b}{Wombat::Mamda\-Trade\-Fields::ON\_\-EXCHANGE\_\-VWAP}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_6a61bbc368a916396aaace1adfaf449b}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_f70a54c4b4e898fb67174065584deeb3}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!STD_DEV@{STD\_\-DEV}}
+\index{STD_DEV@{STD\_\-DEV}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[STD\_\-DEV]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_f70a54c4b4e898fb67174065584deeb3}{Wombat::Mamda\-Trade\-Fields::STD\_\-DEV}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_f70a54c4b4e898fb67174065584deeb3}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_ae928651068cc99b18cf81dcd9316c5e}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!STD_DEV_SUM@{STD\_\-DEV\_\-SUM}}
+\index{STD_DEV_SUM@{STD\_\-DEV\_\-SUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[STD\_\-DEV\_\-SUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ae928651068cc99b18cf81dcd9316c5e}{Wombat::Mamda\-Trade\-Fields::STD\_\-DEV\_\-SUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_ae928651068cc99b18cf81dcd9316c5e}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_c893dd72ef0c314bbac5343dd27a96bb}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!STD_DEV_SUM_SQUARES@{STD\_\-DEV\_\-SUM\_\-SQUARES}}
+\index{STD_DEV_SUM_SQUARES@{STD\_\-DEV\_\-SUM\_\-SQUARES}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[STD\_\-DEV\_\-SUM\_\-SQUARES]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c893dd72ef0c314bbac5343dd27a96bb}{Wombat::Mamda\-Trade\-Fields::STD\_\-DEV\_\-SUM\_\-SQUARES}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_c893dd72ef0c314bbac5343dd27a96bb}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_a42d2901c067527a5a9f81abaf5c4715}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!SALE_CONDITION@{SALE\_\-CONDITION}}
+\index{SALE_CONDITION@{SALE\_\-CONDITION}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[SALE\_\-CONDITION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a42d2901c067527a5a9f81abaf5c4715}{Wombat::Mamda\-Trade\-Fields::SALE\_\-CONDITION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_a42d2901c067527a5a9f81abaf5c4715}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_f3474948411eaaa9298ac0d0615bb3fa}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!SELLERS_SALE_DAYS@{SELLERS\_\-SALE\_\-DAYS}}
+\index{SELLERS_SALE_DAYS@{SELLERS\_\-SALE\_\-DAYS}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[SELLERS\_\-SALE\_\-DAYS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_f3474948411eaaa9298ac0d0615bb3fa}{Wombat::Mamda\-Trade\-Fields::SELLERS\_\-SALE\_\-DAYS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_f3474948411eaaa9298ac0d0615bb3fa}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_a8fb24ec4c53a138b57e8c7f23ca4dd7}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!IS_IRREGULAR@{IS\_\-IRREGULAR}}
+\index{IS_IRREGULAR@{IS\_\-IRREGULAR}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[IS\_\-IRREGULAR]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a8fb24ec4c53a138b57e8c7f23ca4dd7}{Wombat::Mamda\-Trade\-Fields::IS\_\-IRREGULAR}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_a8fb24ec4c53a138b57e8c7f23ca4dd7}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_2ec6d44872ab573e246e9ad76d0571e0}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!IRREG_PART_ID@{IRREG\_\-PART\_\-ID}}
+\index{IRREG_PART_ID@{IRREG\_\-PART\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[IRREG\_\-PART\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_2ec6d44872ab573e246e9ad76d0571e0}{Wombat::Mamda\-Trade\-Fields::IRREG\_\-PART\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_2ec6d44872ab573e246e9ad76d0571e0}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_34dd9267e45f5e42e3dd742d643ac277}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!IRREG_PRICE@{IRREG\_\-PRICE}}
+\index{IRREG_PRICE@{IRREG\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[IRREG\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_34dd9267e45f5e42e3dd742d643ac277}{Wombat::Mamda\-Trade\-Fields::IRREG\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_34dd9267e45f5e42e3dd742d643ac277}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_8f3e4b7246b09ecd6eb5c0c182163731}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!IRREG_SIZE@{IRREG\_\-SIZE}}
+\index{IRREG_SIZE@{IRREG\_\-SIZE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[IRREG\_\-SIZE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_8f3e4b7246b09ecd6eb5c0c182163731}{Wombat::Mamda\-Trade\-Fields::IRREG\_\-SIZE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_8f3e4b7246b09ecd6eb5c0c182163731}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_814a54aa0564be977dece5911c3c5526}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!IRREG_TIME@{IRREG\_\-TIME}}
+\index{IRREG_TIME@{IRREG\_\-TIME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[IRREG\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_814a54aa0564be977dece5911c3c5526}{Wombat::Mamda\-Trade\-Fields::IRREG\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_814a54aa0564be977dece5911c3c5526}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_32ebc5f94be402c21581d972d71fe2cb}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_PART_ID@{ORIG\_\-PART\_\-ID}}
+\index{ORIG_PART_ID@{ORIG\_\-PART\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-PART\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_32ebc5f94be402c21581d972d71fe2cb}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-PART\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_32ebc5f94be402c21581d972d71fe2cb}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_df954e60aface17e3855a745568e75e8}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_PRICE@{ORIG\_\-PRICE}}
+\index{ORIG_PRICE@{ORIG\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_df954e60aface17e3855a745568e75e8}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_df954e60aface17e3855a745568e75e8}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_7b887c2ba4c6928a759632935c3997ac}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_SIZE@{ORIG\_\-SIZE}}
+\index{ORIG_SIZE@{ORIG\_\-SIZE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-SIZE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7b887c2ba4c6928a759632935c3997ac}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-SIZE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_7b887c2ba4c6928a759632935c3997ac}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_0dbe02df598d6a126ee49c5aaa8a05a4}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_SEQNUM@{ORIG\_\-SEQNUM}}
+\index{ORIG_SEQNUM@{ORIG\_\-SEQNUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-SEQNUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0dbe02df598d6a126ee49c5aaa8a05a4}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-SEQNUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_0dbe02df598d6a126ee49c5aaa8a05a4}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_58662eb4c1d3561e04712a70e95eac48}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_TRADE_QUALIFIER@{ORIG\_\-TRADE\_\-QUALIFIER}}
+\index{ORIG_TRADE_QUALIFIER@{ORIG\_\-TRADE\_\-QUALIFIER}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-TRADE\_\-QUALIFIER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_58662eb4c1d3561e04712a70e95eac48}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-TRADE\_\-QUALIFIER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_58662eb4c1d3561e04712a70e95eac48}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_34ced09149ed0b1d8eb74c7c8a895393}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_SALE_CONDITION@{ORIG\_\-SALE\_\-CONDITION}}
+\index{ORIG_SALE_CONDITION@{ORIG\_\-SALE\_\-CONDITION}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-SALE\_\-CONDITION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_34ced09149ed0b1d8eb74c7c8a895393}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-SALE\_\-CONDITION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_34ced09149ed0b1d8eb74c7c8a895393}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_16b62103586d1e6ea3973e0aa397a00d}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_SELLERS_SALE_DAYS@{ORIG\_\-SELLERS\_\-SALE\_\-DAYS}}
+\index{ORIG_SELLERS_SALE_DAYS@{ORIG\_\-SELLERS\_\-SALE\_\-DAYS}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-SELLERS\_\-SALE\_\-DAYS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_16b62103586d1e6ea3973e0aa397a00d}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-SELLERS\_\-SALE\_\-DAYS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_16b62103586d1e6ea3973e0aa397a00d}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_a6e1f19a93c90ff95093e90177deb9c7}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_STOP_STOCK_IND@{ORIG\_\-STOP\_\-STOCK\_\-IND}}
+\index{ORIG_STOP_STOCK_IND@{ORIG\_\-STOP\_\-STOCK\_\-IND}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-STOP\_\-STOCK\_\-IND]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a6e1f19a93c90ff95093e90177deb9c7}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-STOP\_\-STOCK\_\-IND}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_a6e1f19a93c90ff95093e90177deb9c7}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_ef1ba4de27357d660131b2b6c98e8331}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!STOP_STOCK_IND@{STOP\_\-STOCK\_\-IND}}
+\index{STOP_STOCK_IND@{STOP\_\-STOCK\_\-IND}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[STOP\_\-STOCK\_\-IND]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ef1ba4de27357d660131b2b6c98e8331}{Wombat::Mamda\-Trade\-Fields::STOP\_\-STOCK\_\-IND}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_ef1ba4de27357d660131b2b6c98e8331}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_a0f007e26e35f4dd3ccdd689ade185dd}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_PART_ID@{CORR\_\-PART\_\-ID}}
+\index{CORR_PART_ID@{CORR\_\-PART\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-PART\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a0f007e26e35f4dd3ccdd689ade185dd}{Wombat::Mamda\-Trade\-Fields::CORR\_\-PART\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_a0f007e26e35f4dd3ccdd689ade185dd}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_cba894ca00b326c2a205264900bcf66e}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_PRICE@{CORR\_\-PRICE}}
+\index{CORR_PRICE@{CORR\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_cba894ca00b326c2a205264900bcf66e}{Wombat::Mamda\-Trade\-Fields::CORR\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_cba894ca00b326c2a205264900bcf66e}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_d008a5963d9faf440be04b61f8dcccb9}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_SIZE@{CORR\_\-SIZE}}
+\index{CORR_SIZE@{CORR\_\-SIZE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-SIZE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d008a5963d9faf440be04b61f8dcccb9}{Wombat::Mamda\-Trade\-Fields::CORR\_\-SIZE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_d008a5963d9faf440be04b61f8dcccb9}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_680194565d0cd7c7a61ba9c36955bc4c}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_TRADE_QUALIFIER@{CORR\_\-TRADE\_\-QUALIFIER}}
+\index{CORR_TRADE_QUALIFIER@{CORR\_\-TRADE\_\-QUALIFIER}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-TRADE\_\-QUALIFIER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_680194565d0cd7c7a61ba9c36955bc4c}{Wombat::Mamda\-Trade\-Fields::CORR\_\-TRADE\_\-QUALIFIER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_680194565d0cd7c7a61ba9c36955bc4c}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_40c013ec1bc3127ce7f9558214a38a77}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_SALE_CONDITION@{CORR\_\-SALE\_\-CONDITION}}
+\index{CORR_SALE_CONDITION@{CORR\_\-SALE\_\-CONDITION}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-SALE\_\-CONDITION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_40c013ec1bc3127ce7f9558214a38a77}{Wombat::Mamda\-Trade\-Fields::CORR\_\-SALE\_\-CONDITION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_40c013ec1bc3127ce7f9558214a38a77}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_fbcd6a93c569892c7ba3c93a1d6f5ceb}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_TRADE_ID@{CORR\_\-TRADE\_\-ID}}
+\index{CORR_TRADE_ID@{CORR\_\-TRADE\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-TRADE\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_fbcd6a93c569892c7ba3c93a1d6f5ceb}{Wombat::Mamda\-Trade\-Fields::CORR\_\-TRADE\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_fbcd6a93c569892c7ba3c93a1d6f5ceb}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_c9e9f2460c98449fbd35d329cf9e5198}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_SELLERS_SALE_DAYS@{CORR\_\-SELLERS\_\-SALE\_\-DAYS}}
+\index{CORR_SELLERS_SALE_DAYS@{CORR\_\-SELLERS\_\-SALE\_\-DAYS}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-SELLERS\_\-SALE\_\-DAYS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c9e9f2460c98449fbd35d329cf9e5198}{Wombat::Mamda\-Trade\-Fields::CORR\_\-SELLERS\_\-SALE\_\-DAYS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_c9e9f2460c98449fbd35d329cf9e5198}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_4980f61d0f62f5a65e88438a58b4ffd8}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_STOP_STOCK_IND@{CORR\_\-STOP\_\-STOCK\_\-IND}}
+\index{CORR_STOP_STOCK_IND@{CORR\_\-STOP\_\-STOCK\_\-IND}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-STOP\_\-STOCK\_\-IND]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4980f61d0f62f5a65e88438a58b4ffd8}{Wombat::Mamda\-Trade\-Fields::CORR\_\-STOP\_\-STOCK\_\-IND}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_4980f61d0f62f5a65e88438a58b4ffd8}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_fa751421a24f890f68730ea770f0f825}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_TIME@{CORR\_\-TIME}}
+\index{CORR_TIME@{CORR\_\-TIME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_fa751421a24f890f68730ea770f0f825}{Wombat::Mamda\-Trade\-Fields::CORR\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_fa751421a24f890f68730ea770f0f825}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_59d45f7dbd5ca2dd105c8eef8f1b394e}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CANCEL_TIME@{CANCEL\_\-TIME}}
+\index{CANCEL_TIME@{CANCEL\_\-TIME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CANCEL\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_59d45f7dbd5ca2dd105c8eef8f1b394e}{Wombat::Mamda\-Trade\-Fields::CANCEL\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_59d45f7dbd5ca2dd105c8eef8f1b394e}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_5b403a15990d1d1d880cf948bc518dc2}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_ID@{TRADE\_\-ID}}
+\index{TRADE_ID@{TRADE\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_5b403a15990d1d1d880cf948bc518dc2}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_5b403a15990d1d1d880cf948bc518dc2}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_63e9b5118fcfc41a004a4e7b233c98b8}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_TRADE_ID@{ORIG\_\-TRADE\_\-ID}}
+\index{ORIG_TRADE_ID@{ORIG\_\-TRADE\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-TRADE\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_63e9b5118fcfc41a004a4e7b233c98b8}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-TRADE\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_63e9b5118fcfc41a004a4e7b233c98b8}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_d125cc538dd14188b01bbe541d32730a}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!PRIMARY_EXCH@{PRIMARY\_\-EXCH}}
+\index{PRIMARY_EXCH@{PRIMARY\_\-EXCH}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[PRIMARY\_\-EXCH]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_d125cc538dd14188b01bbe541d32730a}{Wombat::Mamda\-Trade\-Fields::PRIMARY\_\-EXCH}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_d125cc538dd14188b01bbe541d32730a}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_1fba98a60e6df31d9e81752e774da724}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_COUNT@{TRADE\_\-COUNT}}
+\index{TRADE_COUNT@{TRADE\_\-COUNT}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-COUNT]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_1fba98a60e6df31d9e81752e774da724}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-COUNT}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_1fba98a60e6df31d9e81752e774da724}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_a29616e4fa10016edb9ce81a8077dcd6}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!BLOCK_COUNT@{BLOCK\_\-COUNT}}
+\index{BLOCK_COUNT@{BLOCK\_\-COUNT}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[BLOCK\_\-COUNT]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_a29616e4fa10016edb9ce81a8077dcd6}{Wombat::Mamda\-Trade\-Fields::BLOCK\_\-COUNT}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_a29616e4fa10016edb9ce81a8077dcd6}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_00edc0c65af9c0330be597700be1a5df}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!BLOCK_VOLUME@{BLOCK\_\-VOLUME}}
+\index{BLOCK_VOLUME@{BLOCK\_\-VOLUME}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[BLOCK\_\-VOLUME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_00edc0c65af9c0330be597700be1a5df}{Wombat::Mamda\-Trade\-Fields::BLOCK\_\-VOLUME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_00edc0c65af9c0330be597700be1a5df}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_c127f75db6e5e1474193e6f48cc1691a}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORDER_ID@{ORDER\_\-ID}}
+\index{ORDER_ID@{ORDER\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORDER\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_c127f75db6e5e1474193e6f48cc1691a}{Wombat::Mamda\-Trade\-Fields::ORDER\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_c127f75db6e5e1474193e6f48cc1691a}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_4627d2f5a7b8c6f0039937746e43d70c}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!UPDATE_AS_TRADE@{UPDATE\_\-AS\_\-TRADE}}
+\index{UPDATE_AS_TRADE@{UPDATE\_\-AS\_\-TRADE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[UPDATE\_\-AS\_\-TRADE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4627d2f5a7b8c6f0039937746e43d70c}{Wombat::Mamda\-Trade\-Fields::UPDATE\_\-AS\_\-TRADE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_4627d2f5a7b8c6f0039937746e43d70c}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_fe5bc671e92982a0470777c8fdf212fd}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CURRENCY_CODE@{CURRENCY\_\-CODE}}
+\index{CURRENCY_CODE@{CURRENCY\_\-CODE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CURRENCY\_\-CODE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_fe5bc671e92982a0470777c8fdf212fd}{Wombat::Mamda\-Trade\-Fields::CURRENCY\_\-CODE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_fe5bc671e92982a0470777c8fdf212fd}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_7ffcf2b7f73dbdc4e3be0125ef72d200}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!SETTLE_PRICE@{SETTLE\_\-PRICE}}
+\index{SETTLE_PRICE@{SETTLE\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[SETTLE\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7ffcf2b7f73dbdc4e3be0125ef72d200}{Wombat::Mamda\-Trade\-Fields::SETTLE\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_7ffcf2b7f73dbdc4e3be0125ef72d200}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_53c3e7a05c0f4f51bff06dfa6e92c97f}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!SETTLE_DATE@{SETTLE\_\-DATE}}
+\index{SETTLE_DATE@{SETTLE\_\-DATE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[SETTLE\_\-DATE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_53c3e7a05c0f4f51bff06dfa6e92c97f}{Wombat::Mamda\-Trade\-Fields::SETTLE\_\-DATE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_53c3e7a05c0f4f51bff06dfa6e92c97f}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_e670e24c98f50bca23665d0a6eb0b635}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!HIGH_SEQNUM@{HIGH\_\-SEQNUM}}
+\index{HIGH_SEQNUM@{HIGH\_\-SEQNUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[HIGH\_\-SEQNUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_e670e24c98f50bca23665d0a6eb0b635}{Wombat::Mamda\-Trade\-Fields::HIGH\_\-SEQNUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_e670e24c98f50bca23665d0a6eb0b635}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_4bbf31d42c6c1cdbfa45e9f9a0f7d361}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LOW_SEQNUM@{LOW\_\-SEQNUM}}
+\index{LOW_SEQNUM@{LOW\_\-SEQNUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LOW\_\-SEQNUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_4bbf31d42c6c1cdbfa45e9f9a0f7d361}{Wombat::Mamda\-Trade\-Fields::LOW\_\-SEQNUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_4bbf31d42c6c1cdbfa45e9f9a0f7d361}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_6fa17497b82b094359150d95ca11dc09}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!LAST_SEQNUM@{LAST\_\-SEQNUM}}
+\index{LAST_SEQNUM@{LAST\_\-SEQNUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[LAST\_\-SEQNUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_6fa17497b82b094359150d95ca11dc09}{Wombat::Mamda\-Trade\-Fields::LAST\_\-SEQNUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_6fa17497b82b094359150d95ca11dc09}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_7c482bbc03ef706f02812fd8d4583ca5}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TOTAL_VOLUME_SEQNUM@{TOTAL\_\-VOLUME\_\-SEQNUM}}
+\index{TOTAL_VOLUME_SEQNUM@{TOTAL\_\-VOLUME\_\-SEQNUM}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TOTAL\_\-VOLUME\_\-SEQNUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_7c482bbc03ef706f02812fd8d4583ca5}{Wombat::Mamda\-Trade\-Fields::TOTAL\_\-VOLUME\_\-SEQNUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_7c482bbc03ef706f02812fd8d4583ca5}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_af2ad21c98357d5e12577fdcd1dc40d9}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!UNIQUE_ID@{UNIQUE\_\-ID}}
+\index{UNIQUE_ID@{UNIQUE\_\-ID}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[UNIQUE\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_af2ad21c98357d5e12577fdcd1dc40d9}{Wombat::Mamda\-Trade\-Fields::UNIQUE\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_af2ad21c98357d5e12577fdcd1dc40d9}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_0bd4ba9dd7d22062dd526c9ab719c3fb}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_ACTION@{TRADE\_\-ACTION}}
+\index{TRADE_ACTION@{TRADE\_\-ACTION}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-ACTION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_0bd4ba9dd7d22062dd526c9ab719c3fb}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-ACTION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_0bd4ba9dd7d22062dd526c9ab719c3fb}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_60b345020cc6a16272a283590829ccfe}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_EXEC_VENUE@{TRADE\_\-EXEC\_\-VENUE}}
+\index{TRADE_EXEC_VENUE@{TRADE\_\-EXEC\_\-VENUE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-EXEC\_\-VENUE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_60b345020cc6a16272a283590829ccfe}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-EXEC\_\-VENUE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_60b345020cc6a16272a283590829ccfe}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_31fcff0fd8d226d47c80b375871d0855}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!OFF_EXCHANGE_TRADE_PRICE@{OFF\_\-EXCHANGE\_\-TRADE\_\-PRICE}}
+\index{OFF_EXCHANGE_TRADE_PRICE@{OFF\_\-EXCHANGE\_\-TRADE\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[OFF\_\-EXCHANGE\_\-TRADE\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_31fcff0fd8d226d47c80b375871d0855}{Wombat::Mamda\-Trade\-Fields::OFF\_\-EXCHANGE\_\-TRADE\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_31fcff0fd8d226d47c80b375871d0855}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_42d2e222639e61c5b6b03385c42c0f41}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ON_EXCHANGE_TRADE_PRICE@{ON\_\-EXCHANGE\_\-TRADE\_\-PRICE}}
+\index{ON_EXCHANGE_TRADE_PRICE@{ON\_\-EXCHANGE\_\-TRADE\_\-PRICE}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ON\_\-EXCHANGE\_\-TRADE\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_42d2e222639e61c5b6b03385c42c0f41}{Wombat::Mamda\-Trade\-Fields::ON\_\-EXCHANGE\_\-TRADE\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_42d2e222639e61c5b6b03385c42c0f41}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_70b70fd3681eac1e7e6e3092720b8af7}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_CONTRIBUTORS@{TRADE\_\-CONTRIBUTORS}}
+\index{TRADE_CONTRIBUTORS@{TRADE\_\-CONTRIBUTORS}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-CONTRIBUTORS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_70b70fd3681eac1e7e6e3092720b8af7}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-CONTRIBUTORS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_70b70fd3681eac1e7e6e3092720b8af7}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_3428193f62baa321da4b8fabc6c2f854}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!GENERIC_FLAG@{GENERIC\_\-FLAG}}
+\index{GENERIC_FLAG@{GENERIC\_\-FLAG}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[GENERIC\_\-FLAG]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_3428193f62baa321da4b8fabc6c2f854}{Wombat::Mamda\-Trade\-Fields::GENERIC\_\-FLAG}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_3428193f62baa321da4b8fabc6c2f854}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_ea1f3f9534bf2d3f55a1be4e425a4a3d}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!TRADE_RECAPS@{TRADE\_\-RECAPS}}
+\index{TRADE_RECAPS@{TRADE\_\-RECAPS}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[TRADE\_\-RECAPS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_ea1f3f9534bf2d3f55a1be4e425a4a3d}{Wombat::Mamda\-Trade\-Fields::TRADE\_\-RECAPS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_ea1f3f9534bf2d3f55a1be4e425a4a3d}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_08935a4c527a67f176bfff17d0edff54}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!SHORT_SALE_CIRCUIT_BREAKER@{SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}}
+\index{SHORT_SALE_CIRCUIT_BREAKER@{SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_08935a4c527a67f176bfff17d0edff54}{Wombat::Mamda\-Trade\-Fields::SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_08935a4c527a67f176bfff17d0edff54}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_44d45b6dc1a8124b717c6c55124bde43}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!ORIG_SHORT_SALE_CIRCUIT_BREAKER@{ORIG\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}}
+\index{ORIG_SHORT_SALE_CIRCUIT_BREAKER@{ORIG\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[ORIG\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_44d45b6dc1a8124b717c6c55124bde43}{Wombat::Mamda\-Trade\-Fields::ORIG\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_44d45b6dc1a8124b717c6c55124bde43}
+
+
+\hypertarget{classWombat_1_1MamdaTradeFields_1f5755c44eb2062a5e78ede6dd1fbe89}{
+\index{Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}!CORR_SHORT_SALE_CIRCUIT_BREAKER@{CORR\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}}
+\index{CORR_SHORT_SALE_CIRCUIT_BREAKER@{CORR\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}!Wombat::MamdaTradeFields@{Wombat::Mamda\-Trade\-Fields}}
+\subsubsection[CORR\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaTradeFields_1f5755c44eb2062a5e78ede6dd1fbe89}{Wombat::Mamda\-Trade\-Fields::CORR\_\-SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeFields_1f5755c44eb2062a5e78ede6dd1fbe89}
+
+

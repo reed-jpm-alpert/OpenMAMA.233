@@ -1,0 +1,70 @@
+\hypertarget{classWombat_1_1MamdaSecStatusHandler}{
+\section{Wombat::Mamda\-Sec\-Status\-Handler Class Reference}
+\label{classWombat_1_1MamdaSecStatusHandler}\index{Wombat::MamdaSecStatusHandler@{Wombat::MamdaSecStatusHandler}}
+}
+\hyperlink{classWombat_1_1MamdaSecStatusHandler}{Mamda\-Sec\-Status\-Handler} is an interface for applications that want to have an easy way to handle security status updates.  
+
+
+{\tt \#include $<$Mamda\-Sec\-Status\-Handler.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Sec\-Status\-Handler::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaSecStatusHandler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaSecStatusHandler_7f49ada42883a664440776560fd6f083}{on\-Sec\-Status\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaSecStatusRecap}{Mamda\-Sec\-Status\-Recap} \&recap)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaSecStatusHandler_db36d5defe6bca39835cca9c9732bef2}{on\-Sec\-Status\-Update} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \&listener, const Mama\-Msg \&msg)=0
+\begin{CompactList}\small\item\em Method invoked when a security status update is received. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaSecStatusHandler_58d2847fe2bdcb98b81dc311e25a581b}{$\sim$Mamda\-Sec\-Status\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaSecStatusHandler}{Mamda\-Sec\-Status\-Handler} is an interface for applications that want to have an easy way to handle security status updates. 
+
+The interface defines callback methods for security status events: 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusHandler_58d2847fe2bdcb98b81dc311e25a581b}{
+\index{Wombat::MamdaSecStatusHandler@{Wombat::Mamda\-Sec\-Status\-Handler}!~MamdaSecStatusHandler@{$\sim$MamdaSecStatusHandler}}
+\index{~MamdaSecStatusHandler@{$\sim$MamdaSecStatusHandler}!Wombat::MamdaSecStatusHandler@{Wombat::Mamda\-Sec\-Status\-Handler}}
+\subsubsection[$\sim$MamdaSecStatusHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Sec\-Status\-Handler::$\sim$Mamda\-Sec\-Status\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusHandler_58d2847fe2bdcb98b81dc311e25a581b}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusHandler_7f49ada42883a664440776560fd6f083}{
+\index{Wombat::MamdaSecStatusHandler@{Wombat::Mamda\-Sec\-Status\-Handler}!onSecStatusRecap@{onSecStatusRecap}}
+\index{onSecStatusRecap@{onSecStatusRecap}!Wombat::MamdaSecStatusHandler@{Wombat::Mamda\-Sec\-Status\-Handler}}
+\subsubsection[onSecStatusRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Sec\-Status\-Handler::on\-Sec\-Status\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaSecStatusRecap}{Mamda\-Sec\-Status\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusHandler_7f49ada42883a664440776560fd6f083}
+
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_a1a7e7d772ee646d2104beb1f764efba}{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}.\hypertarget{classWombat_1_1MamdaSecStatusHandler_db36d5defe6bca39835cca9c9732bef2}{
+\index{Wombat::MamdaSecStatusHandler@{Wombat::Mamda\-Sec\-Status\-Handler}!onSecStatusUpdate@{onSecStatusUpdate}}
+\index{onSecStatusUpdate@{onSecStatusUpdate}!Wombat::MamdaSecStatusHandler@{Wombat::Mamda\-Sec\-Status\-Handler}}
+\subsubsection[onSecStatusUpdate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Sec\-Status\-Handler::on\-Sec\-Status\-Update (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaSecStatusListener}{Mamda\-Sec\-Status\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusHandler_db36d5defe6bca39835cca9c9732bef2}
+
+
+Method invoked when a security status update is received. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \end{description}
+\end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaSecStatusSymbolSourceAdapter_4671f467c1425728565861501e610ba3}{Wombat::Mamda\-Sec\-Status\-Symbol\-Source\-Adapter}.

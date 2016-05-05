@@ -1,0 +1,407 @@
+\hypertarget{classWombat_1_1MamdaOrderBookFields}{
+\section{Wombat::Mamda\-Order\-Book\-Fields Class Reference}
+\label{classWombat_1_1MamdaOrderBookFields}\index{Wombat::MamdaOrderBookFields@{Wombat::MamdaOrderBookFields}}
+}
+Utility cache of {\tt Mama\-Field\-Descriptor}s which are used internally by the API when accessing orderbook related fields from update messages.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Fields.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{classWombat_1_1MamdaOrderBookFields_3d622bb24f97096258fc46622e586245}{set\-Dictionary} (const Mama\-Dictionary \&dictionary)
+\item 
+static void \hyperlink{classWombat_1_1MamdaOrderBookFields_b1747b309cee6f9140434a2472d7a8e7}{reset} ()
+\item 
+static mama\_\-u16\_\-t \hyperlink{classWombat_1_1MamdaOrderBookFields_5074b0085379448da33287231d63a3a9}{get\-Max\-Fid} ()
+\item 
+static bool \hyperlink{classWombat_1_1MamdaOrderBookFields_1ce2d061ca668c45263e6fe9f71df6e1}{is\-Set} ()
+\item 
+static int \hyperlink{classWombat_1_1MamdaOrderBookFields_677cc576cc2746f93e16955da0901052}{get\-Num\-Level\-Fields} ()
+\begin{CompactList}\small\item\em Internal. \item\end{CompactList}\item 
+static int \hyperlink{classWombat_1_1MamdaOrderBookFields_f409d69017eeecc76221e1dfb4f75ffe}{get\-Num\-Entry\-Fields} ()
+\begin{CompactList}\small\item\em Internal. \item\end{CompactList}\item 
+static bool \hyperlink{classWombat_1_1MamdaOrderBookFields_cbae2a4519faa1c9dbe8a6d2694d3618}{get\-Has\-Vector\-Fields} ()
+\begin{CompactList}\small\item\em Internal. \item\end{CompactList}\item 
+static bool \hyperlink{classWombat_1_1MamdaOrderBookFields_d3ed0b8d3b8d4f3c0f13ce9b4ca378b5}{get\-Has\-Fixed\-Level\-Fields} ()
+\begin{CompactList}\small\item\em Internal. \item\end{CompactList}\item 
+static const Mama\-Dictionary \& \hyperlink{classWombat_1_1MamdaOrderBookFields_beff72a3c0730d7cbb55bcc717af13cc}{get\-Dictionary} ()
+\begin{CompactList}\small\item\em Get the dictionary used to setup the fields. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_04859b3d0adfbde9261497ede9bb50a8}{BOOK\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_3ad71b502d9479a0fa06734e43e4bfd2}{NUM\_\-LEVELS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_867fd7b7676f0520810b5afddb4c33ce}{BOOK\_\-PROPERTIES}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_0004d0b389819a6dfa94be11f9ea25ff}{BOOK\_\-TYPE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_df81cad9ff8d769c4cd3f15b07ba4d20}{BOOK\_\-PROP\_\-MSG\_\-TYPE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_d67bbacb5cd5e4073d82ea992beaba7e}{PRICE\_\-LEVELS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_bf19e07918099e6eb778e109cde0f30c}{PL\_\-ACTION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_119f690871ddc49ea876e9af6e60eb9b}{PL\_\-PRICE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_5d3d689a5986ae6df04e277a68d0985f}{PL\_\-SIDE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_fd82c2a77cd3b2ba171185507eb5d738}{PL\_\-SIZE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_24d5744fd2926d304821a6a8ea05ef4d}{PL\_\-SIZE\_\-CHANGE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_4e99e0eff55a32f95a81ad35a8234f02}{PL\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_2454d12c5917b7c56ed04466eb912b5b}{PL\_\-NUM\_\-ENTRIES}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_324c67ee932c10000fd2f8ce8f4a538d}{PL\_\-NUM\_\-ATTACH}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_2c227acb5e43bb610ec0747306777e68}{PL\_\-ENTRIES}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_90ad84e33b7423bae56802bd55dbdf97}{PL\_\-PROPERTIES}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_0dd719edd812c3557d3503c4aad7e687}{PL\_\-PROP\_\-MSG\_\-TYPE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_50bed0b3a1ce50ae2c1f2f290094eadb}{ENTRY\_\-ID}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_05a8ea107ecfd10a0e08382b27cb78c6}{ENTRY\_\-ACTION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_1ce5d6995239b7ca2e4596c24310db9b}{ENTRY\_\-REASON}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_72225203218104c06315b90e214f86e6}{ENTRY\_\-SIZE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_416d0ec9fbe6850153d54463cdf40ee9}{ENTRY\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_81191021a4d256939aa065ab6fb768f1}{ENTRY\_\-STATUS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_6b8fc3862dea588b764001ec2fc383ff}{ENTRY\_\-PROPERTIES}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_d622780a6082a84ffc347a7049b667a2}{ENTRY\_\-PROP\_\-MSG\_\-TYPE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_ffce12973e36788619433da8b886b489}{BID\_\-MARKET\_\-ORDERS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_d2610afd35e8db866d7ff8c2f5edcaa5}{ASK\_\-MARKET\_\-ORDERS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_e6d95a7d462349a2ebccb2d935fbb4de}{PRICE\_\-LEVEL}
+\item 
+static int \hyperlink{classWombat_1_1MamdaOrderBookFields_51723ea73bbad34192da9acb662806c2}{PRICE\_\-LEVEL\_\-LENGTH}
+\item 
+static const Mama\-Field\-Descriptor $\ast$$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_4e16493f242368a418ebf0d0edcee951}{PL\_\-ENTRY}
+\item 
+static int \hyperlink{classWombat_1_1MamdaOrderBookFields_314afa702237567d3d7e2e80df3a2f93}{PL\_\-ENTRY\_\-LENGTH}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_2a39ae0dbfa7955d4ecdd204234d75d2}{BOOK\_\-CONTRIBUTORS}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Utility cache of {\tt Mama\-Field\-Descriptor}s which are used internally by the API when accessing orderbook related fields from update messages. 
+
+This class should be initialized prior to using the {\tt \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener}} by calling {\tt \hyperlink{classWombat_1_1MamdaOrderBookFields_3d622bb24f97096258fc46622e586245}{set\-Dictionary()}} with a valid dictionary object which contains orderbook related fields. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookFields_3d622bb24f97096258fc46622e586245}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!setDictionary@{setDictionary}}
+\index{setDictionary@{setDictionary}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[setDictionary]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Order\-Book\-Fields::set\-Dictionary (const Mama\-Dictionary \& {\em dictionary})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_3d622bb24f97096258fc46622e586245}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_b1747b309cee6f9140434a2472d7a8e7}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!reset@{reset}}
+\index{reset@{reset}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[reset]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Order\-Book\-Fields::reset ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_b1747b309cee6f9140434a2472d7a8e7}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_5074b0085379448da33287231d63a3a9}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!getMaxFid@{getMaxFid}}
+\index{getMaxFid@{getMaxFid}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[getMaxFid]{\setlength{\rightskip}{0pt plus 5cm}static mama\_\-u16\_\-t Wombat::Mamda\-Order\-Book\-Fields::get\-Max\-Fid ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_5074b0085379448da33287231d63a3a9}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_1ce2d061ca668c45263e6fe9f71df6e1}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!isSet@{isSet}}
+\index{isSet@{isSet}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[isSet]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Order\-Book\-Fields::is\-Set ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_1ce2d061ca668c45263e6fe9f71df6e1}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_677cc576cc2746f93e16955da0901052}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!getNumLevelFields@{getNumLevelFields}}
+\index{getNumLevelFields@{getNumLevelFields}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[getNumLevelFields]{\setlength{\rightskip}{0pt plus 5cm}static int Wombat::Mamda\-Order\-Book\-Fields::get\-Num\-Level\-Fields ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_677cc576cc2746f93e16955da0901052}
+
+
+Internal. 
+
+Returns the number of fixed (non-vector) price level fields. \hypertarget{classWombat_1_1MamdaOrderBookFields_f409d69017eeecc76221e1dfb4f75ffe}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!getNumEntryFields@{getNumEntryFields}}
+\index{getNumEntryFields@{getNumEntryFields}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[getNumEntryFields]{\setlength{\rightskip}{0pt plus 5cm}static int Wombat::Mamda\-Order\-Book\-Fields::get\-Num\-Entry\-Fields ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_f409d69017eeecc76221e1dfb4f75ffe}
+
+
+Internal. 
+
+Returns the number of fixed (non-vector) entry fields. \hypertarget{classWombat_1_1MamdaOrderBookFields_cbae2a4519faa1c9dbe8a6d2694d3618}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!getHasVectorFields@{getHasVectorFields}}
+\index{getHasVectorFields@{getHasVectorFields}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[getHasVectorFields]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Order\-Book\-Fields::get\-Has\-Vector\-Fields ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_cbae2a4519faa1c9dbe8a6d2694d3618}
+
+
+Internal. 
+
+Returns whether the dictionary contains vector fields (important when unpacking order book messages). \hypertarget{classWombat_1_1MamdaOrderBookFields_d3ed0b8d3b8d4f3c0f13ce9b4ca378b5}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!getHasFixedLevelFields@{getHasFixedLevelFields}}
+\index{getHasFixedLevelFields@{getHasFixedLevelFields}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[getHasFixedLevelFields]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Order\-Book\-Fields::get\-Has\-Fixed\-Level\-Fields ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_d3ed0b8d3b8d4f3c0f13ce9b4ca378b5}
+
+
+Internal. 
+
+Returns whether the dictionary contains fixed price level fields (important when unpacking order book messages). \hypertarget{classWombat_1_1MamdaOrderBookFields_beff72a3c0730d7cbb55bcc717af13cc}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!getDictionary@{getDictionary}}
+\index{getDictionary@{getDictionary}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[getDictionary]{\setlength{\rightskip}{0pt plus 5cm}static const Mama\-Dictionary\& Wombat::Mamda\-Order\-Book\-Fields::get\-Dictionary ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_beff72a3c0730d7cbb55bcc717af13cc}
+
+
+Get the dictionary used to setup the fields. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookFields_04859b3d0adfbde9261497ede9bb50a8}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!BOOK_TIME@{BOOK\_\-TIME}}
+\index{BOOK_TIME@{BOOK\_\-TIME}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[BOOK\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_04859b3d0adfbde9261497ede9bb50a8}{Wombat::Mamda\-Order\-Book\-Fields::BOOK\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_04859b3d0adfbde9261497ede9bb50a8}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_3ad71b502d9479a0fa06734e43e4bfd2}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!NUM_LEVELS@{NUM\_\-LEVELS}}
+\index{NUM_LEVELS@{NUM\_\-LEVELS}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[NUM\_\-LEVELS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_3ad71b502d9479a0fa06734e43e4bfd2}{Wombat::Mamda\-Order\-Book\-Fields::NUM\_\-LEVELS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_3ad71b502d9479a0fa06734e43e4bfd2}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_867fd7b7676f0520810b5afddb4c33ce}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!BOOK_PROPERTIES@{BOOK\_\-PROPERTIES}}
+\index{BOOK_PROPERTIES@{BOOK\_\-PROPERTIES}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[BOOK\_\-PROPERTIES]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_867fd7b7676f0520810b5afddb4c33ce}{Wombat::Mamda\-Order\-Book\-Fields::BOOK\_\-PROPERTIES}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_867fd7b7676f0520810b5afddb4c33ce}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_0004d0b389819a6dfa94be11f9ea25ff}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!BOOK_TYPE@{BOOK\_\-TYPE}}
+\index{BOOK_TYPE@{BOOK\_\-TYPE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[BOOK\_\-TYPE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_0004d0b389819a6dfa94be11f9ea25ff}{Wombat::Mamda\-Order\-Book\-Fields::BOOK\_\-TYPE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_0004d0b389819a6dfa94be11f9ea25ff}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_df81cad9ff8d769c4cd3f15b07ba4d20}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!BOOK_PROP_MSG_TYPE@{BOOK\_\-PROP\_\-MSG\_\-TYPE}}
+\index{BOOK_PROP_MSG_TYPE@{BOOK\_\-PROP\_\-MSG\_\-TYPE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[BOOK\_\-PROP\_\-MSG\_\-TYPE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_df81cad9ff8d769c4cd3f15b07ba4d20}{Wombat::Mamda\-Order\-Book\-Fields::BOOK\_\-PROP\_\-MSG\_\-TYPE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_df81cad9ff8d769c4cd3f15b07ba4d20}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_d67bbacb5cd5e4073d82ea992beaba7e}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PRICE_LEVELS@{PRICE\_\-LEVELS}}
+\index{PRICE_LEVELS@{PRICE\_\-LEVELS}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PRICE\_\-LEVELS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_d67bbacb5cd5e4073d82ea992beaba7e}{Wombat::Mamda\-Order\-Book\-Fields::PRICE\_\-LEVELS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_d67bbacb5cd5e4073d82ea992beaba7e}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_bf19e07918099e6eb778e109cde0f30c}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_ACTION@{PL\_\-ACTION}}
+\index{PL_ACTION@{PL\_\-ACTION}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-ACTION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_bf19e07918099e6eb778e109cde0f30c}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-ACTION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_bf19e07918099e6eb778e109cde0f30c}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_119f690871ddc49ea876e9af6e60eb9b}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_PRICE@{PL\_\-PRICE}}
+\index{PL_PRICE@{PL\_\-PRICE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-PRICE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_119f690871ddc49ea876e9af6e60eb9b}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-PRICE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_119f690871ddc49ea876e9af6e60eb9b}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_5d3d689a5986ae6df04e277a68d0985f}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_SIDE@{PL\_\-SIDE}}
+\index{PL_SIDE@{PL\_\-SIDE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-SIDE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_5d3d689a5986ae6df04e277a68d0985f}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-SIDE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_5d3d689a5986ae6df04e277a68d0985f}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_fd82c2a77cd3b2ba171185507eb5d738}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_SIZE@{PL\_\-SIZE}}
+\index{PL_SIZE@{PL\_\-SIZE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-SIZE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_fd82c2a77cd3b2ba171185507eb5d738}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-SIZE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_fd82c2a77cd3b2ba171185507eb5d738}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_24d5744fd2926d304821a6a8ea05ef4d}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_SIZE_CHANGE@{PL\_\-SIZE\_\-CHANGE}}
+\index{PL_SIZE_CHANGE@{PL\_\-SIZE\_\-CHANGE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-SIZE\_\-CHANGE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_24d5744fd2926d304821a6a8ea05ef4d}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-SIZE\_\-CHANGE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_24d5744fd2926d304821a6a8ea05ef4d}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_4e99e0eff55a32f95a81ad35a8234f02}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_TIME@{PL\_\-TIME}}
+\index{PL_TIME@{PL\_\-TIME}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_4e99e0eff55a32f95a81ad35a8234f02}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_4e99e0eff55a32f95a81ad35a8234f02}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_2454d12c5917b7c56ed04466eb912b5b}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_NUM_ENTRIES@{PL\_\-NUM\_\-ENTRIES}}
+\index{PL_NUM_ENTRIES@{PL\_\-NUM\_\-ENTRIES}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-NUM\_\-ENTRIES]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_2454d12c5917b7c56ed04466eb912b5b}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-NUM\_\-ENTRIES}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_2454d12c5917b7c56ed04466eb912b5b}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_324c67ee932c10000fd2f8ce8f4a538d}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_NUM_ATTACH@{PL\_\-NUM\_\-ATTACH}}
+\index{PL_NUM_ATTACH@{PL\_\-NUM\_\-ATTACH}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-NUM\_\-ATTACH]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_324c67ee932c10000fd2f8ce8f4a538d}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-NUM\_\-ATTACH}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_324c67ee932c10000fd2f8ce8f4a538d}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_2c227acb5e43bb610ec0747306777e68}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_ENTRIES@{PL\_\-ENTRIES}}
+\index{PL_ENTRIES@{PL\_\-ENTRIES}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-ENTRIES]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_2c227acb5e43bb610ec0747306777e68}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-ENTRIES}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_2c227acb5e43bb610ec0747306777e68}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_90ad84e33b7423bae56802bd55dbdf97}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_PROPERTIES@{PL\_\-PROPERTIES}}
+\index{PL_PROPERTIES@{PL\_\-PROPERTIES}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-PROPERTIES]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_90ad84e33b7423bae56802bd55dbdf97}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-PROPERTIES}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_90ad84e33b7423bae56802bd55dbdf97}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_0dd719edd812c3557d3503c4aad7e687}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_PROP_MSG_TYPE@{PL\_\-PROP\_\-MSG\_\-TYPE}}
+\index{PL_PROP_MSG_TYPE@{PL\_\-PROP\_\-MSG\_\-TYPE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-PROP\_\-MSG\_\-TYPE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_0dd719edd812c3557d3503c4aad7e687}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-PROP\_\-MSG\_\-TYPE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_0dd719edd812c3557d3503c4aad7e687}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_50bed0b3a1ce50ae2c1f2f290094eadb}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_ID@{ENTRY\_\-ID}}
+\index{ENTRY_ID@{ENTRY\_\-ID}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-ID]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_50bed0b3a1ce50ae2c1f2f290094eadb}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-ID}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_50bed0b3a1ce50ae2c1f2f290094eadb}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_05a8ea107ecfd10a0e08382b27cb78c6}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_ACTION@{ENTRY\_\-ACTION}}
+\index{ENTRY_ACTION@{ENTRY\_\-ACTION}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-ACTION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_05a8ea107ecfd10a0e08382b27cb78c6}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-ACTION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_05a8ea107ecfd10a0e08382b27cb78c6}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_1ce5d6995239b7ca2e4596c24310db9b}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_REASON@{ENTRY\_\-REASON}}
+\index{ENTRY_REASON@{ENTRY\_\-REASON}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-REASON]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_1ce5d6995239b7ca2e4596c24310db9b}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-REASON}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_1ce5d6995239b7ca2e4596c24310db9b}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_72225203218104c06315b90e214f86e6}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_SIZE@{ENTRY\_\-SIZE}}
+\index{ENTRY_SIZE@{ENTRY\_\-SIZE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-SIZE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_72225203218104c06315b90e214f86e6}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-SIZE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_72225203218104c06315b90e214f86e6}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_416d0ec9fbe6850153d54463cdf40ee9}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_TIME@{ENTRY\_\-TIME}}
+\index{ENTRY_TIME@{ENTRY\_\-TIME}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_416d0ec9fbe6850153d54463cdf40ee9}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_416d0ec9fbe6850153d54463cdf40ee9}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_81191021a4d256939aa065ab6fb768f1}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_STATUS@{ENTRY\_\-STATUS}}
+\index{ENTRY_STATUS@{ENTRY\_\-STATUS}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-STATUS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_81191021a4d256939aa065ab6fb768f1}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-STATUS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_81191021a4d256939aa065ab6fb768f1}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_6b8fc3862dea588b764001ec2fc383ff}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_PROPERTIES@{ENTRY\_\-PROPERTIES}}
+\index{ENTRY_PROPERTIES@{ENTRY\_\-PROPERTIES}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-PROPERTIES]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_6b8fc3862dea588b764001ec2fc383ff}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-PROPERTIES}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_6b8fc3862dea588b764001ec2fc383ff}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_d622780a6082a84ffc347a7049b667a2}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ENTRY_PROP_MSG_TYPE@{ENTRY\_\-PROP\_\-MSG\_\-TYPE}}
+\index{ENTRY_PROP_MSG_TYPE@{ENTRY\_\-PROP\_\-MSG\_\-TYPE}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ENTRY\_\-PROP\_\-MSG\_\-TYPE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_d622780a6082a84ffc347a7049b667a2}{Wombat::Mamda\-Order\-Book\-Fields::ENTRY\_\-PROP\_\-MSG\_\-TYPE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_d622780a6082a84ffc347a7049b667a2}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_ffce12973e36788619433da8b886b489}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!BID_MARKET_ORDERS@{BID\_\-MARKET\_\-ORDERS}}
+\index{BID_MARKET_ORDERS@{BID\_\-MARKET\_\-ORDERS}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[BID\_\-MARKET\_\-ORDERS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_ffce12973e36788619433da8b886b489}{Wombat::Mamda\-Order\-Book\-Fields::BID\_\-MARKET\_\-ORDERS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_ffce12973e36788619433da8b886b489}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_d2610afd35e8db866d7ff8c2f5edcaa5}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!ASK_MARKET_ORDERS@{ASK\_\-MARKET\_\-ORDERS}}
+\index{ASK_MARKET_ORDERS@{ASK\_\-MARKET\_\-ORDERS}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[ASK\_\-MARKET\_\-ORDERS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_d2610afd35e8db866d7ff8c2f5edcaa5}{Wombat::Mamda\-Order\-Book\-Fields::ASK\_\-MARKET\_\-ORDERS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_d2610afd35e8db866d7ff8c2f5edcaa5}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_e6d95a7d462349a2ebccb2d935fbb4de}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PRICE_LEVEL@{PRICE\_\-LEVEL}}
+\index{PRICE_LEVEL@{PRICE\_\-LEVEL}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PRICE\_\-LEVEL]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_e6d95a7d462349a2ebccb2d935fbb4de}{Wombat::Mamda\-Order\-Book\-Fields::PRICE\_\-LEVEL}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_e6d95a7d462349a2ebccb2d935fbb4de}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_51723ea73bbad34192da9acb662806c2}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PRICE_LEVEL_LENGTH@{PRICE\_\-LEVEL\_\-LENGTH}}
+\index{PRICE_LEVEL_LENGTH@{PRICE\_\-LEVEL\_\-LENGTH}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PRICE\_\-LEVEL\_\-LENGTH]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{classWombat_1_1MamdaOrderBookFields_51723ea73bbad34192da9acb662806c2}{Wombat::Mamda\-Order\-Book\-Fields::PRICE\_\-LEVEL\_\-LENGTH}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_51723ea73bbad34192da9acb662806c2}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_4e16493f242368a418ebf0d0edcee951}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_ENTRY@{PL\_\-ENTRY}}
+\index{PL_ENTRY@{PL\_\-ENTRY}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-ENTRY]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_4e16493f242368a418ebf0d0edcee951}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-ENTRY}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_4e16493f242368a418ebf0d0edcee951}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_314afa702237567d3d7e2e80df3a2f93}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!PL_ENTRY_LENGTH@{PL\_\-ENTRY\_\-LENGTH}}
+\index{PL_ENTRY_LENGTH@{PL\_\-ENTRY\_\-LENGTH}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[PL\_\-ENTRY\_\-LENGTH]{\setlength{\rightskip}{0pt plus 5cm}int \hyperlink{classWombat_1_1MamdaOrderBookFields_314afa702237567d3d7e2e80df3a2f93}{Wombat::Mamda\-Order\-Book\-Fields::PL\_\-ENTRY\_\-LENGTH}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_314afa702237567d3d7e2e80df3a2f93}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookFields_2a39ae0dbfa7955d4ecdd204234d75d2}{
+\index{Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}!BOOK_CONTRIBUTORS@{BOOK\_\-CONTRIBUTORS}}
+\index{BOOK_CONTRIBUTORS@{BOOK\_\-CONTRIBUTORS}!Wombat::MamdaOrderBookFields@{Wombat::Mamda\-Order\-Book\-Fields}}
+\subsubsection[BOOK\_\-CONTRIBUTORS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookFields_2a39ae0dbfa7955d4ecdd204234d75d2}{Wombat::Mamda\-Order\-Book\-Fields::BOOK\_\-CONTRIBUTORS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookFields_2a39ae0dbfa7955d4ecdd204234d75d2}
+
+

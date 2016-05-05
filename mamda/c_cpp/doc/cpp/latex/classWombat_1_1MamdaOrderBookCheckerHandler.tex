@@ -1,0 +1,68 @@
+\hypertarget{classWombat_1_1MamdaOrderBookCheckerHandler}{
+\section{Wombat::Mamda\-Order\-Book\-Checker\-Handler Class Reference}
+\label{classWombat_1_1MamdaOrderBookCheckerHandler}\index{Wombat::MamdaOrderBookCheckerHandler@{Wombat::MamdaOrderBookCheckerHandler}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler}{Mamda\-Order\-Book\-Checker\-Handler} is an interface for applications that want to handle the results of the \hyperlink{classWombat_1_1MamdaOrderBookChecker}{Mamda\-Order\-Book\-Checker}.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Checker\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler_2ee6882d164d81f8e3adf8d469d32657}{on\-Success} (\hyperlink{namespaceWombat_6f15e7af875f3469c5fb0afe58b21667}{Mamda\-Order\-Book\-Check\-Type} check\-Type)=0
+\begin{CompactList}\small\item\em Method invoked when a successful check is completed. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler_c85eae2e0dfb1167f7cbec2a9204bea8}{on\-Inconclusive} (\hyperlink{namespaceWombat_6f15e7af875f3469c5fb0afe58b21667}{Mamda\-Order\-Book\-Check\-Type} check\-Type, const char $\ast$reason)=0
+\begin{CompactList}\small\item\em Method invoked when check is completed inconclusively. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler_66f7e02589afd6749e8765a80c997f4a}{on\-Failure} (\hyperlink{namespaceWombat_6f15e7af875f3469c5fb0afe58b21667}{Mamda\-Order\-Book\-Check\-Type} check\-Type, const char $\ast$reason, const Mama\-Msg $\ast$msg, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&real\-Time\-Book, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&check\-Book)=0
+\begin{CompactList}\small\item\em Method invoked when a failed check is completed. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler_ea324a1e89bb217d77be13e807bcfa2a}{$\sim$Mamda\-Order\-Book\-Checker\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler}{Mamda\-Order\-Book\-Checker\-Handler} is an interface for applications that want to handle the results of the \hyperlink{classWombat_1_1MamdaOrderBookChecker}{Mamda\-Order\-Book\-Checker}. 
+
+Callback interfaces are provided for correct and erroneous checks. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookCheckerHandler_ea324a1e89bb217d77be13e807bcfa2a}{
+\index{Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}!~MamdaOrderBookCheckerHandler@{$\sim$MamdaOrderBookCheckerHandler}}
+\index{~MamdaOrderBookCheckerHandler@{$\sim$MamdaOrderBookCheckerHandler}!Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}}
+\subsubsection[$\sim$MamdaOrderBookCheckerHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Book\-Checker\-Handler::$\sim$Mamda\-Order\-Book\-Checker\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookCheckerHandler_ea324a1e89bb217d77be13e807bcfa2a}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookCheckerHandler_2ee6882d164d81f8e3adf8d469d32657}{
+\index{Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}!onSuccess@{onSuccess}}
+\index{onSuccess@{onSuccess}!Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}}
+\subsubsection[onSuccess]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Checker\-Handler::on\-Success (\hyperlink{namespaceWombat_6f15e7af875f3469c5fb0afe58b21667}{Mamda\-Order\-Book\-Check\-Type} {\em check\-Type})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookCheckerHandler_2ee6882d164d81f8e3adf8d469d32657}
+
+
+Method invoked when a successful check is completed. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookCheckerHandler_c85eae2e0dfb1167f7cbec2a9204bea8}{
+\index{Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}!onInconclusive@{onInconclusive}}
+\index{onInconclusive@{onInconclusive}!Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}}
+\subsubsection[onInconclusive]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Checker\-Handler::on\-Inconclusive (\hyperlink{namespaceWombat_6f15e7af875f3469c5fb0afe58b21667}{Mamda\-Order\-Book\-Check\-Type} {\em check\-Type}, const char $\ast$ {\em reason})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookCheckerHandler_c85eae2e0dfb1167f7cbec2a9204bea8}
+
+
+Method invoked when check is completed inconclusively. 
+
+An attempt to check the order book may be inconclusive if the order book sequence numbers do not match up. \hypertarget{classWombat_1_1MamdaOrderBookCheckerHandler_66f7e02589afd6749e8765a80c997f4a}{
+\index{Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}!onFailure@{onFailure}}
+\index{onFailure@{onFailure}!Wombat::MamdaOrderBookCheckerHandler@{Wombat::Mamda\-Order\-Book\-Checker\-Handler}}
+\subsubsection[onFailure]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Checker\-Handler::on\-Failure (\hyperlink{namespaceWombat_6f15e7af875f3469c5fb0afe58b21667}{Mamda\-Order\-Book\-Check\-Type} {\em check\-Type}, const char $\ast$ {\em reason}, const Mama\-Msg $\ast$ {\em msg}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em real\-Time\-Book}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em check\-Book})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookCheckerHandler_66f7e02589afd6749e8765a80c997f4a}
+
+
+Method invoked when a failed check is completed. 
+
+The message provided, if non-NULL, is the one received for the snapshot or delta, depending upon the value of check\-Type. 

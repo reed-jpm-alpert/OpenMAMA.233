@@ -1,0 +1,705 @@
+\hypertarget{classWombat_1_1MamdaOrderBookEntry}{
+\section{Wombat::Mamda\-Order\-Book\-Entry Class Reference}
+\label{classWombat_1_1MamdaOrderBookEntry}\index{Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} is a class that represents an entry within a price level of an order book.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Entry.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef466fb1d9c39c7abfcf3a432b58926d157}{MAMDA\_\-BOOK\_\-ACTION\_\-ADD} = Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-ADD
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef426db32b982503db4ade08f2d09952530}{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE} = Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef41b058536086b44fb87d75096a72ac807}{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE} = Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-DELETE
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4050d930aa82af0d23736d2cf7b3c8527}{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN} = Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN
+\item 
+enum \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} \{ \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef466fb1d9c39c7abfcf3a432b58926d157}{MAMDA\_\-BOOK\_\-ACTION\_\-ADD} =  Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-ADD, 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef426db32b982503db4ade08f2d09952530}{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE} =  Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE, 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef41b058536086b44fb87d75096a72ac807}{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE} =  Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-DELETE, 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4050d930aa82af0d23736d2cf7b3c8527}{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN} =  Mamda\-Order\-Book\-Types::MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN
+ \}
+\begin{CompactList}\small\item\em An enumeration for book entry actions. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_57528ab4a86fde1ec6f8537692018081}{Mamda\-Order\-Book\-Entry} ()
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_129d31bda758f3a6bccd78c21cf7e8f0}{Mamda\-Order\-Book\-Entry} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&copy)
+\begin{CompactList}\small\item\em Copy constructor. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_2a7ac7cb5c1c23187f96d7b62f852d67}{Mamda\-Order\-Book\-Entry} (const char $\ast$entry\-Id, mama\_\-quantity\_\-t size, \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} action, const Mama\-Date\-Time \&entry\-Time, const Mama\-Source\-Derivative $\ast$deriv)
+\begin{CompactList}\small\item\em Constructor that takes the basic information for the entry ID, size, action and time. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_e6da5c0e8daa8389cbee60184ce76d45}{$\sim$Mamda\-Order\-Book\-Entry} ()
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& \hyperlink{classWombat_1_1MamdaOrderBookEntry_b0353343c7f983936ee81934c910222c}{operator=} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&rhs)
+\begin{CompactList}\small\item\em Assignment operator. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_6fed9081344e5c08a50cc151b595bf63}{clear} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_ddda14d720fdf2813216321603aa71c2}{copy} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&copy)
+\begin{CompactList}\small\item\em Copy an order book entry. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_9625d949cdf4904dc40c98c937b738fc}{set\-Id} (const char $\ast$id)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_e3315def6ef4641b52b5fd1ec4581c11}{set\-Unique\-Id} (const char $\ast$id)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_0520962406e35793f0925845ff32791f}{set\-Size} (mama\_\-quantity\_\-t size)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_57ad02d4d138a273e6471e900fdf2c14}{set\-Action} (\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} action)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_0474d09c574c9fab3b2340c5d1aeff6d}{set\-Reason} (\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{Mamda\-Order\-Book\-Types::Reason} reason)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_10387ca9c9405ffcaa167ae9b93127ac}{set\-Time} (const Mama\-Date\-Time \&time)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_d54939cc5ed80ff7d4f282e0fa0f5aac}{set\-Status} (mama\_\-u16\_\-t status)
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_a0ba36b1717312d26696ef172ed2dd8b}{set\-Details} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&copy)
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_1c02f6be28f007199af0108f96c829c8}{get\-Id} () const 
+\begin{CompactList}\small\item\em If supported, Order book entry ID (order ID, participant ID, etc. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_8957ccfa3dbebb3da96905becc584220}{get\-Unique\-Id} () const 
+\begin{CompactList}\small\item\em If supported, Order book entry unique ID (order ID, participant ID, etc. \item\end{CompactList}\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaOrderBookEntry_137d6488b4264e8b3f4509fe1f543aee}{get\-Size} () const 
+\begin{CompactList}\small\item\em The size of the order entry. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} \hyperlink{classWombat_1_1MamdaOrderBookEntry_ff550a6c85a7eab221361f352d7d9306}{get\-Action} () const 
+\begin{CompactList}\small\item\em Whether to ADD, UPDATE or DELETE the entry. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{Mamda\-Order\-Book\-Types::Reason} \hyperlink{classWombat_1_1MamdaOrderBookEntry_0b9f3dbc9f5961c9776fa66f29c426bd}{get\-Reason} () const 
+\begin{CompactList}\small\item\em Reason for a change. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderBookEntry_8b116df66b253570f5be048ce8e49ade}{get\-Time} () const 
+\begin{CompactList}\small\item\em Time of order book entry update. \item\end{CompactList}\item 
+mama\_\-u16\_\-t \hyperlink{classWombat_1_1MamdaOrderBookEntry_03034329cb1dffcf13c4f9521d51532b}{get\-Status} () const 
+\begin{CompactList}\small\item\em Get the status. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaOrderBookEntry_f1538d504b6b16b45d44a9d9137e899c}{get\-Price} () const 
+\begin{CompactList}\small\item\em Get the price for this entry. \item\end{CompactList}\item 
+Mama\-Price \hyperlink{classWombat_1_1MamdaOrderBookEntry_c80d40d8f66442d7c61ec41c6da43400}{get\-Mama\-Price} () const 
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_384c34b0a74d874b8969dee9b0d3718d}{Mamda\-Order\-Book\-Price\-Level::Side} \hyperlink{classWombat_1_1MamdaOrderBookEntry_927b3698111419c12f246c8772e7524c}{get\-Side} () const 
+\begin{CompactList}\small\item\em Get the price for this entry. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaOrderBookEntry_8fa9b93116640f02e93e3fa4eea3dee2}{get\-Position} (mama\_\-u32\_\-t max\-Pos=0) const 
+\begin{CompactList}\small\item\em Get the position in the order book for this entry. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOrderBookEntry_ed761cda818725c86f8230388c5711b0}{equal\-Id} (const char $\ast$id) const 
+\begin{CompactList}\small\item\em Whether two participant ids are equal. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOrderBookEntry_321cbae34ac538e2afe23be61c7c9d63}{operator==} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&rhs) const 
+\begin{CompactList}\small\item\em Equality operator. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOrderBookEntry_d39539dde14628be1035513ed5c57b03}{operator!=} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&rhs) const 
+\begin{CompactList}\small\item\em Non-equality operator. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_8e9225992aec78b2bd455d0d14c8d257}{set\-Price\-Level} (\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$level)
+\begin{CompactList}\small\item\em Set the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object to which this entry belongs. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_f150c5dddafcd155d418db41239d2f7c}{get\-Price\-Level} () const 
+\begin{CompactList}\small\item\em Get the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object to which this entry belongs. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_253ddeced9d61df56ddbc7b68cfdabf4}{get\-Order\-Book} () const 
+\begin{CompactList}\small\item\em Get the order book for this entry, if possible. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_7892c5a0b18aaae44b0a33d5696881a3}{set\-Manager} (\hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} $\ast$manager)
+\begin{CompactList}\small\item\em Set the \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} object to which this entry belongs. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_3f55243859e0552706d4ac6bfa762a36}{get\-Manager} () const 
+\begin{CompactList}\small\item\em Get the \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} object to which this entry belongs. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_fe56862c94f658e8d505bf9b3d2633e9}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the symbol for this entry, if possible. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_5b88fb6172c7418c6e92043d6b74a631}{set\-Source\-Derivative} (const Mama\-Source\-Derivative $\ast$deriv)
+\begin{CompactList}\small\item\em Set the Mama\-Source\-Derivative for this book entry. \item\end{CompactList}\item 
+const Mama\-Source\-Derivative $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_9a41b69fc139d40f295771c0ca49c294}{get\-Source\-Derivative} () const 
+\begin{CompactList}\small\item\em Return the Mama\-Source\-Derivative for this book entry. \item\end{CompactList}\item 
+const Mama\-Source $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_cda4031007b43ade5911dd36d015baf5}{get\-Source} () const 
+\begin{CompactList}\small\item\em Return the Mama\-Source for this book entry. \item\end{CompactList}\item 
+mama\-Source\-State \hyperlink{classWombat_1_1MamdaOrderBookEntry_e119e549d0645a5d67d1d2ee465c0f46}{get\-Source\-State} () const 
+\begin{CompactList}\small\item\em Get the source state. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOrderBookEntry_60be50a62ad2b949f2ddf9d0a7d842fd}{get\-Check\-Source\-State} () const 
+\begin{CompactList}\small\item\em Get whether this order book wants to check the source state. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_d478ee4fa730c31a1e9fec604d60f357}{set\-Quality} (mama\-Quality quality)
+\begin{CompactList}\small\item\em Set the entry-level quality factor. \item\end{CompactList}\item 
+mama\-Quality \hyperlink{classWombat_1_1MamdaOrderBookEntry_34dd081ea5b06781ec96a86e211ba2b0}{get\-Quality} () const 
+\begin{CompactList}\small\item\em Get the entry-level quality factor. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOrderBookEntry_1080d7c9464713e1b9171b105cd27190}{is\-Visible} () const 
+\begin{CompactList}\small\item\em Get whether this entry is \char`\"{}visible\char`\"{} in this book. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_649b46a82d497681198796ebf61dea3b}{set\-Closure} (void $\ast$closure)
+\begin{CompactList}\small\item\em Set the order book entry closure handle. \item\end{CompactList}\item 
+void $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookEntry_d9674c47219a35f72beef4c5b893071d}{get\-Closure} () const 
+\begin{CompactList}\small\item\em Get the order book entry closure handle. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookEntry_17d40e2ec3b848f5fed1b81c92e7b329}{assert\-Equal} (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \&rhs) const 
+\begin{CompactList}\small\item\em Order book entry equality verification. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{classWombat_1_1MamdaOrderBookEntry_b39d4646a59b7285c4f4fe6fb71ef43a}{set\-Strict\-Checking} (bool strict)
+\begin{CompactList}\small\item\em Enforce strict checking of order book modifications (at the expense of some performance). \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} is a class that represents an entry within a price level of an order book. 
+
+In addition to being referenced in a \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level}, an order book entry may also be stored in a \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager}. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!Action@{Action}}
+\index{Action@{Action}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[Action]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Wombat::Mamda\-Order\-Book\-Entry::Action}}}
+\label{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}
+
+
+An enumeration for book entry actions. 
+
+Price level actions differ from entry actions because, for example, a price level message with ACTION\_\-UPDATE may consist of entries with ACTION\_\-ADD, ACTION\_\-UPDATE or ACTION\_\-DELETE. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMDA_BOOK_ACTION_ADD@{MAMDA\_\-BOOK\_\-ACTION\_\-ADD}!Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}}\index{Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}!MAMDA_BOOK_ACTION_ADD@{MAMDA\_\-BOOK\_\-ACTION\_\-ADD}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef466fb1d9c39c7abfcf3a432b58926d157}{
+MAMDA\_\-BOOK\_\-ACTION\_\-ADD}
+\label{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef466fb1d9c39c7abfcf3a432b58926d157}
+}]\index{MAMDA_BOOK_ACTION_UPDATE@{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE}!Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}}\index{Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}!MAMDA_BOOK_ACTION_UPDATE@{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef426db32b982503db4ade08f2d09952530}{
+MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE}
+\label{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef426db32b982503db4ade08f2d09952530}
+}]\index{MAMDA_BOOK_ACTION_DELETE@{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE}!Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}}\index{Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}!MAMDA_BOOK_ACTION_DELETE@{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef41b058536086b44fb87d75096a72ac807}{
+MAMDA\_\-BOOK\_\-ACTION\_\-DELETE}
+\label{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef41b058536086b44fb87d75096a72ac807}
+}]\index{MAMDA_BOOK_ACTION_UNKNOWN@{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN}!Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}}\index{Wombat::MamdaOrderBookEntry@{Wombat::MamdaOrderBookEntry}!MAMDA_BOOK_ACTION_UNKNOWN@{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4050d930aa82af0d23736d2cf7b3c8527}{
+MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN}
+\label{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4050d930aa82af0d23736d2cf7b3c8527}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_57528ab4a86fde1ec6f8537692018081}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!MamdaOrderBookEntry@{MamdaOrderBookEntry}}
+\index{MamdaOrderBookEntry@{MamdaOrderBookEntry}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[MamdaOrderBookEntry]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Entry::Mamda\-Order\-Book\-Entry ()}}
+\label{classWombat_1_1MamdaOrderBookEntry_57528ab4a86fde1ec6f8537692018081}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_129d31bda758f3a6bccd78c21cf7e8f0}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!MamdaOrderBookEntry@{MamdaOrderBookEntry}}
+\index{MamdaOrderBookEntry@{MamdaOrderBookEntry}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[MamdaOrderBookEntry]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Entry::Mamda\-Order\-Book\-Entry (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em copy})}}
+\label{classWombat_1_1MamdaOrderBookEntry_129d31bda758f3a6bccd78c21cf7e8f0}
+
+
+Copy constructor. 
+
+Note that the associated price level of the original copy is not copied. \hypertarget{classWombat_1_1MamdaOrderBookEntry_2a7ac7cb5c1c23187f96d7b62f852d67}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!MamdaOrderBookEntry@{MamdaOrderBookEntry}}
+\index{MamdaOrderBookEntry@{MamdaOrderBookEntry}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[MamdaOrderBookEntry]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Entry::Mamda\-Order\-Book\-Entry (const char $\ast$ {\em entry\-Id}, mama\_\-quantity\_\-t {\em size}, \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} {\em action}, const Mama\-Date\-Time \& {\em entry\-Time}, const Mama\-Source\-Derivative $\ast$ {\em deriv})}}
+\label{classWombat_1_1MamdaOrderBookEntry_2a7ac7cb5c1c23187f96d7b62f852d67}
+
+
+Constructor that takes the basic information for the entry ID, size, action and time. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_e6da5c0e8daa8389cbee60184ce76d45}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!~MamdaOrderBookEntry@{$\sim$MamdaOrderBookEntry}}
+\index{~MamdaOrderBookEntry@{$\sim$MamdaOrderBookEntry}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[$\sim$MamdaOrderBookEntry]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Entry::$\sim$Mamda\-Order\-Book\-Entry ()}}
+\label{classWombat_1_1MamdaOrderBookEntry_e6da5c0e8daa8389cbee60184ce76d45}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_b0353343c7f983936ee81934c910222c}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry}\& Wombat::Mamda\-Order\-Book\-Entry::operator= (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em rhs})}}
+\label{classWombat_1_1MamdaOrderBookEntry_b0353343c7f983936ee81934c910222c}
+
+
+Assignment operator. 
+
+Note that the associated price level of the original copy is not copied. \hypertarget{classWombat_1_1MamdaOrderBookEntry_6fed9081344e5c08a50cc151b595bf63}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[clear]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::clear ()}}
+\label{classWombat_1_1MamdaOrderBookEntry_6fed9081344e5c08a50cc151b595bf63}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_ddda14d720fdf2813216321603aa71c2}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!copy@{copy}}
+\index{copy@{copy}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[copy]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::copy (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em copy})}}
+\label{classWombat_1_1MamdaOrderBookEntry_ddda14d720fdf2813216321603aa71c2}
+
+
+Copy an order book entry. 
+
+Note that the associated price level of the original copy is not copied. \hypertarget{classWombat_1_1MamdaOrderBookEntry_9625d949cdf4904dc40c98c937b738fc}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setId@{setId}}
+\index{setId@{setId}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setId]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Id (const char $\ast$ {\em id})}}
+\label{classWombat_1_1MamdaOrderBookEntry_9625d949cdf4904dc40c98c937b738fc}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_e3315def6ef4641b52b5fd1ec4581c11}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setUniqueId@{setUniqueId}}
+\index{setUniqueId@{setUniqueId}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setUniqueId]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Unique\-Id (const char $\ast$ {\em id})}}
+\label{classWombat_1_1MamdaOrderBookEntry_e3315def6ef4641b52b5fd1ec4581c11}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_0520962406e35793f0925845ff32791f}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setSize@{setSize}}
+\index{setSize@{setSize}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setSize]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Size (mama\_\-quantity\_\-t {\em size})}}
+\label{classWombat_1_1MamdaOrderBookEntry_0520962406e35793f0925845ff32791f}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_57ad02d4d138a273e6471e900fdf2c14}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setAction@{setAction}}
+\index{setAction@{setAction}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setAction]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Action (\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} {\em action})}}
+\label{classWombat_1_1MamdaOrderBookEntry_57ad02d4d138a273e6471e900fdf2c14}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_0474d09c574c9fab3b2340c5d1aeff6d}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setReason@{setReason}}
+\index{setReason@{setReason}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setReason]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Reason (\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{Mamda\-Order\-Book\-Types::Reason} {\em reason})}}
+\label{classWombat_1_1MamdaOrderBookEntry_0474d09c574c9fab3b2340c5d1aeff6d}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_10387ca9c9405ffcaa167ae9b93127ac}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setTime@{setTime}}
+\index{setTime@{setTime}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setTime]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Time (const Mama\-Date\-Time \& {\em time})}}
+\label{classWombat_1_1MamdaOrderBookEntry_10387ca9c9405ffcaa167ae9b93127ac}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_d54939cc5ed80ff7d4f282e0fa0f5aac}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setStatus]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Status (mama\_\-u16\_\-t {\em status})}}
+\label{classWombat_1_1MamdaOrderBookEntry_d54939cc5ed80ff7d4f282e0fa0f5aac}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_a0ba36b1717312d26696ef172ed2dd8b}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setDetails@{setDetails}}
+\index{setDetails@{setDetails}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setDetails]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Details (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em copy})}}
+\label{classWombat_1_1MamdaOrderBookEntry_a0ba36b1717312d26696ef172ed2dd8b}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_1c02f6be28f007199af0108f96c829c8}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getId@{getId}}
+\index{getId@{getId}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Id () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_1c02f6be28f007199af0108f96c829c8}
+
+
+If supported, Order book entry ID (order ID, participant ID, etc. 
+
+)
+
+\begin{Desc}
+\item[Returns:]The entry id \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_8957ccfa3dbebb3da96905becc584220}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getUniqueId@{getUniqueId}}
+\index{getUniqueId@{getUniqueId}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getUniqueId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Unique\-Id () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_8957ccfa3dbebb3da96905becc584220}
+
+
+If supported, Order book entry unique ID (order ID, participant ID, etc. 
+
+). The unique ID should be unique throughout the order book. If no explicit unique ID has been set, then it assumed that the basic ID is unique and that is returned.
+
+\begin{Desc}
+\item[Returns:]The unique entry id \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_137d6488b4264e8b3f4509fe1f543aee}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getSize@{getSize}}
+\index{getSize@{getSize}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getSize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t Wombat::Mamda\-Order\-Book\-Entry::get\-Size () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_137d6488b4264e8b3f4509fe1f543aee}
+
+
+The size of the order entry. 
+
+\begin{Desc}
+\item[Returns:]The size of the order entry. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_ff550a6c85a7eab221361f352d7d9306}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getAction@{getAction}}
+\index{getAction@{getAction}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getAction]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Action} Wombat::Mamda\-Order\-Book\-Entry::get\-Action () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_ff550a6c85a7eab221361f352d7d9306}
+
+
+Whether to ADD, UPDATE or DELETE the entry. 
+
+\begin{Desc}
+\item[Returns:]The order entry action. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_0b9f3dbc9f5961c9776fa66f29c426bd}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getReason@{getReason}}
+\index{getReason@{getReason}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getReason]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{Mamda\-Order\-Book\-Types::Reason} Wombat::Mamda\-Order\-Book\-Entry::get\-Reason () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_0b9f3dbc9f5961c9776fa66f29c426bd}
+
+
+Reason for a change. 
+
+\begin{Desc}
+\item[Returns:]The order entry reason \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_8b116df66b253570f5be048ce8e49ade}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getTime@{getTime}}
+\index{getTime@{getTime}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Order\-Book\-Entry::get\-Time () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_8b116df66b253570f5be048ce8e49ade}
+
+
+Time of order book entry update. 
+
+\begin{Desc}
+\item[Returns:]The time of the order entry update. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_03034329cb1dffcf13c4f9521d51532b}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getStatus]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u16\_\-t Wombat::Mamda\-Order\-Book\-Entry::get\-Status () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_03034329cb1dffcf13c4f9521d51532b}
+
+
+Get the status. 
+
+\begin{Desc}
+\item[Returns:]the status. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_f1538d504b6b16b45d44a9d9137e899c}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getPrice]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Order\-Book\-Entry::get\-Price () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_f1538d504b6b16b45d44a9d9137e899c}
+
+
+Get the price for this entry. 
+
+This method will throw a \hyperlink{classWombat_1_1MamdaOrderBookInvalidEntry}{Mamda\-Order\-Book\-Invalid\-Entry} if no Mamda\-Price\-Level is associated with it because order book price information is only stored in \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} objects.
+
+\begin{Desc}
+\item[Returns:]The price for this entry. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_c80d40d8f66442d7c61ec41c6da43400}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getMamaPrice@{getMamaPrice}}
+\index{getMamaPrice@{getMamaPrice}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getMamaPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price Wombat::Mamda\-Order\-Book\-Entry::get\-Mama\-Price () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_c80d40d8f66442d7c61ec41c6da43400}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_927b3698111419c12f246c8772e7524c}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getSide@{getSide}}
+\index{getSide@{getSide}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getSide]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_384c34b0a74d874b8969dee9b0d3718d}{Mamda\-Order\-Book\-Price\-Level::Side} Wombat::Mamda\-Order\-Book\-Entry::get\-Side () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_927b3698111419c12f246c8772e7524c}
+
+
+Get the price for this entry. 
+
+This method will throw a \hyperlink{classWombat_1_1MamdaOrderBookInvalidEntry}{Mamda\-Order\-Book\-Invalid\-Entry} if no Mamda\-Price\-Level is associated with it because order book price information is only stored in \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} objects.
+
+\begin{Desc}
+\item[Returns:]The side for this entry. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_8fa9b93116640f02e93e3fa4eea3dee2}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getPosition]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Order\-Book\-Entry::get\-Position (mama\_\-u32\_\-t {\em max\-Pos} = {\tt 0}) const}}
+\label{classWombat_1_1MamdaOrderBookEntry_8fa9b93116640f02e93e3fa4eea3dee2}
+
+
+Get the position in the order book for this entry. 
+
+If max\-Pos is not zero, then the method will return a result no greater than max\-Pos. This is to prevent searching the entire book when only a limited search is necessary. Note: the logic used in the positional search is to use the number of entries that \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_a2e83c8a0e607cb5e73982573eb267f4}{Mamda\-Order\-Book\-Price\-Level::get\-Num\-Entries()} returns for price levels above the entry's price level. -1 is return if the entry is in the book but not currently \char`\"{}visible\char`\"{} (i.e., it is being omitted because the MAMA source is turned off). A \hyperlink{classWombat_1_1MamdaOrderBookInvalidEntry}{Mamda\-Order\-Book\-Invalid\-Entry} is thrown if the entry is not found in the book.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em max\-Pos}]The maximum position to return;\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The position of this entry in the order book. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_ed761cda818725c86f8230388c5711b0}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!equalId@{equalId}}
+\index{equalId@{equalId}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[equalId]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Order\-Book\-Entry::equal\-Id (const char $\ast$ {\em id}) const}}
+\label{classWombat_1_1MamdaOrderBookEntry_ed761cda818725c86f8230388c5711b0}
+
+
+Whether two participant ids are equal. 
+
+\begin{Desc}
+\item[Returns:]true if the two id's are equal. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_321cbae34ac538e2afe23be61c7c9d63}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!operator==@{operator==}}
+\index{operator==@{operator==}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[operator==]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Order\-Book\-Entry::operator== (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em rhs}) const}}
+\label{classWombat_1_1MamdaOrderBookEntry_321cbae34ac538e2afe23be61c7c9d63}
+
+
+Equality operator. 
+
+Two order book entries are equal if their members are identical.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rhs}]The order book entry to compare this entry to.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Whether the two entries are equal. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_d39539dde14628be1035513ed5c57b03}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[operator"!=]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Order\-Book\-Entry::operator!= (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em rhs}) const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookEntry_d39539dde14628be1035513ed5c57b03}
+
+
+Non-equality operator. 
+
+Two order book entries are equal if their members are identical.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rhs}]The order book entry to compare this entry to.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Whether the two entries are not equal. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_8e9225992aec78b2bd455d0d14c8d257}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setPriceLevel@{setPriceLevel}}
+\index{setPriceLevel@{setPriceLevel}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setPriceLevel]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Price\-Level (\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$ {\em level})}}
+\label{classWombat_1_1MamdaOrderBookEntry_8e9225992aec78b2bd455d0d14c8d257}
+
+
+Set the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object to which this entry belongs. 
+
+This method is invoked automatically internally, by the MAMDA API, when an entry is added to a price level.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em level}]The price level to be associated with. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_f150c5dddafcd155d418db41239d2f7c}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getPriceLevel@{getPriceLevel}}
+\index{getPriceLevel@{getPriceLevel}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getPriceLevel]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level}$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Price\-Level () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_f150c5dddafcd155d418db41239d2f7c}
+
+
+Get the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object to which this entry belongs. 
+
+\begin{Desc}
+\item[Returns:]The price level currently associated with this entry. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_253ddeced9d61df56ddbc7b68cfdabf4}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getOrderBook@{getOrderBook}}
+\index{getOrderBook@{getOrderBook}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getOrderBook]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Order\-Book () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_253ddeced9d61df56ddbc7b68cfdabf4}
+
+
+Get the order book for this entry, if possible. 
+
+This can only be done if the entry is part of a price level and the price level is part of an order book. NULL is returned if no order book can be found.
+
+\begin{Desc}
+\item[Returns:]The order book or NULL. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_7892c5a0b18aaae44b0a33d5696881a3}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setManager@{setManager}}
+\index{setManager@{setManager}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setManager]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Manager (\hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} $\ast$ {\em manager})}}
+\label{classWombat_1_1MamdaOrderBookEntry_7892c5a0b18aaae44b0a33d5696881a3}
+
+
+Set the \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} object to which this entry belongs. 
+
+This method is invoked automatically internally, by the MAMDA API, when an entry is added to an entry manager.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em manager}]pointer to the \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_3f55243859e0552706d4ac6bfa762a36}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getManager@{getManager}}
+\index{getManager@{getManager}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getManager]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager}$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Manager () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_3f55243859e0552706d4ac6bfa762a36}
+
+
+Get the \hyperlink{classWombat_1_1MamdaOrderBookEntryManager}{Mamda\-Order\-Book\-Entry\-Manager} object to which this entry belongs. 
+
+\begin{Desc}
+\item[Returns:]The manager currently associated with this entry. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_fe56862c94f658e8d505bf9b3d2633e9}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Symbol () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_fe56862c94f658e8d505bf9b3d2633e9}
+
+
+Get the symbol for this entry, if possible. 
+
+This can only be done if the entry is part of a price level and the price level is part of an order book. NULL is returned if no symbol can be found.
+
+\begin{Desc}
+\item[Returns:]The symbol or NULL. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_5b88fb6172c7418c6e92043d6b74a631}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setSourceDerivative@{setSourceDerivative}}
+\index{setSourceDerivative@{setSourceDerivative}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setSourceDerivative]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Source\-Derivative (const Mama\-Source\-Derivative $\ast$ {\em deriv})}}
+\label{classWombat_1_1MamdaOrderBookEntry_5b88fb6172c7418c6e92043d6b74a631}
+
+
+Set the Mama\-Source\-Derivative for this book entry. 
+
+The source derivative is used to help determine what the quality of order book entry is and to efficiently identify all of the entries for a given source (e.g. for aggregated order books).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em deriv}]The MAMA source derivative \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_9a41b69fc139d40f295771c0ca49c294}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getSourceDerivative@{getSourceDerivative}}
+\index{getSourceDerivative@{getSourceDerivative}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getSourceDerivative]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Source\-Derivative$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Source\-Derivative () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_9a41b69fc139d40f295771c0ca49c294}
+
+
+Return the Mama\-Source\-Derivative for this book entry. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_cda4031007b43ade5911dd36d015baf5}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getSource@{getSource}}
+\index{getSource@{getSource}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getSource]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Source$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Source () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_cda4031007b43ade5911dd36d015baf5}
+
+
+Return the Mama\-Source for this book entry. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_e119e549d0645a5d67d1d2ee465c0f46}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getSourceState@{getSourceState}}
+\index{getSourceState@{getSourceState}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getSourceState]{\setlength{\rightskip}{0pt plus 5cm}mama\-Source\-State Wombat::Mamda\-Order\-Book\-Entry::get\-Source\-State () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_e119e549d0645a5d67d1d2ee465c0f46}
+
+
+Get the source state. 
+
+\begin{Desc}
+\item[Returns:]The current MAMA source state. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_60be50a62ad2b949f2ddf9d0a7d842fd}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getCheckSourceState@{getCheckSourceState}}
+\index{getCheckSourceState@{getCheckSourceState}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getCheckSourceState]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Order\-Book\-Entry::get\-Check\-Source\-State () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_60be50a62ad2b949f2ddf9d0a7d842fd}
+
+
+Get whether this order book wants to check the source state. 
+
+\begin{Desc}
+\item[Returns:]Whether to check source state. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_d478ee4fa730c31a1e9fec604d60f357}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setQuality@{setQuality}}
+\index{setQuality@{setQuality}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setQuality]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Quality (mama\-Quality {\em quality})}}
+\label{classWombat_1_1MamdaOrderBookEntry_d478ee4fa730c31a1e9fec604d60f357}
+
+
+Set the entry-level quality factor. 
+
+This level, if not MAMA\_\-QUALITY\_\-OK, overrides the source-level level.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em quality}]The new entry-level MAMA quality level. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_34dd081ea5b06781ec96a86e211ba2b0}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getQuality@{getQuality}}
+\index{getQuality@{getQuality}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getQuality]{\setlength{\rightskip}{0pt plus 5cm}mama\-Quality Wombat::Mamda\-Order\-Book\-Entry::get\-Quality () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_34dd081ea5b06781ec96a86e211ba2b0}
+
+
+Get the entry-level quality factor. 
+
+If the entry-level quality is MAMA\_\-QUALITY\_\-OK, then this method returns the source-level quality.
+
+\begin{Desc}
+\item[Returns:]The current MAMA quality level. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_1080d7c9464713e1b9171b105cd27190}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[isVisible]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Order\-Book\-Entry::is\-Visible () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_1080d7c9464713e1b9171b105cd27190}
+
+
+Get whether this entry is \char`\"{}visible\char`\"{} in this book. 
+
+Visibility is controlled by the status of the Mama\-Source\-Derivative for the entry.
+
+\begin{Desc}
+\item[Returns:]Whether the entry is visible. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_649b46a82d497681198796ebf61dea3b}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setClosure]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::set\-Closure (void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaOrderBookEntry_649b46a82d497681198796ebf61dea3b}
+
+
+Set the order book entry closure handle. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em closure}]The closure. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_d9674c47219a35f72beef4c5b893071d}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[getClosure]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::Mamda\-Order\-Book\-Entry::get\-Closure () const}}
+\label{classWombat_1_1MamdaOrderBookEntry_d9674c47219a35f72beef4c5b893071d}
+
+
+Get the order book entry closure handle. 
+
+\begin{Desc}
+\item[Returns:]The entry closure. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_17d40e2ec3b848f5fed1b81c92e7b329}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!assertEqual@{assertEqual}}
+\index{assertEqual@{assertEqual}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[assertEqual]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Entry::assert\-Equal (const \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} \& {\em rhs}) const}}
+\label{classWombat_1_1MamdaOrderBookEntry_17d40e2ec3b848f5fed1b81c92e7b329}
+
+
+Order book entry equality verification. 
+
+A \hyperlink{classWombat_1_1MamdaOrderBookException}{Mamda\-Order\-Book\-Exception} is thrown if the entries within a price level are not equal, along with the reason for the inequality.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rhs}]The entry which this entry is being compared to.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em $<$Mamda\-Order\-Book\-Exception$>$}]Exception thrown if any errors encountered during book processing. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookEntry_b39d4646a59b7285c4f4fe6fb71ef43a}{
+\index{Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}!setStrictChecking@{setStrictChecking}}
+\index{setStrictChecking@{setStrictChecking}!Wombat::MamdaOrderBookEntry@{Wombat::Mamda\-Order\-Book\-Entry}}
+\subsubsection[setStrictChecking]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Order\-Book\-Entry::set\-Strict\-Checking (bool {\em strict})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookEntry_b39d4646a59b7285c4f4fe6fb71ef43a}
+
+
+Enforce strict checking of order book modifications (at the expense of some performance). 
+
+This setting is automatically updated by \hyperlink{classWombat_1_1MamdaOrderBook_469f47b99322ce6b9e002429a75a8efd}{Mamda\-Order\-Book::set\-Strict\-Checking()}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em strict}]Whether strict checking should be employed. \end{description}
+\end{Desc}

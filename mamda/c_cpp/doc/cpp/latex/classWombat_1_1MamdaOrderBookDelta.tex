@@ -1,0 +1,53 @@
+\hypertarget{classWombat_1_1MamdaOrderBookDelta}{
+\section{Wombat::Mamda\-Order\-Book\-Delta Class Reference}
+\label{classWombat_1_1MamdaOrderBookDelta}\index{Wombat::MamdaOrderBookDelta@{Wombat::MamdaOrderBookDelta}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookDelta}{Mamda\-Order\-Book\-Delta} is an interface that provides access to order book related fields.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Delta.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Order\-Book\-Delta::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaOrderBookDelta}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& \hyperlink{classWombat_1_1MamdaOrderBookDelta_4bd9e50ba3d3131925d4d200a9ab60ab}{get\-Delta\-Order\-Book} () const =0
+\begin{CompactList}\small\item\em Return the order book delta. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBookDelta_a10bb01dfd7807dc9ebf21080798b357}{$\sim$Mamda\-Order\-Book\-Delta} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookDelta}{Mamda\-Order\-Book\-Delta} is an interface that provides access to order book related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookDelta_a10bb01dfd7807dc9ebf21080798b357}{
+\index{Wombat::MamdaOrderBookDelta@{Wombat::Mamda\-Order\-Book\-Delta}!~MamdaOrderBookDelta@{$\sim$MamdaOrderBookDelta}}
+\index{~MamdaOrderBookDelta@{$\sim$MamdaOrderBookDelta}!Wombat::MamdaOrderBookDelta@{Wombat::Mamda\-Order\-Book\-Delta}}
+\subsubsection[$\sim$MamdaOrderBookDelta]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Book\-Delta::$\sim$Mamda\-Order\-Book\-Delta ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookDelta_a10bb01dfd7807dc9ebf21080798b357}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookDelta_4bd9e50ba3d3131925d4d200a9ab60ab}{
+\index{Wombat::MamdaOrderBookDelta@{Wombat::Mamda\-Order\-Book\-Delta}!getDeltaOrderBook@{getDeltaOrderBook}}
+\index{getDeltaOrderBook@{getDeltaOrderBook}!Wombat::MamdaOrderBookDelta@{Wombat::Mamda\-Order\-Book\-Delta}}
+\subsubsection[getDeltaOrderBook]{\setlength{\rightskip}{0pt plus 5cm}virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}\& Wombat::Mamda\-Order\-Book\-Delta::get\-Delta\-Order\-Book () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookDelta_4bd9e50ba3d3131925d4d200a9ab60ab}
+
+
+Return the order book delta. 
+
+In the case of recap order book, the delta will be the entire recap.
+
+\begin{Desc}
+\item[Returns:]The order book delta. \end{Desc}

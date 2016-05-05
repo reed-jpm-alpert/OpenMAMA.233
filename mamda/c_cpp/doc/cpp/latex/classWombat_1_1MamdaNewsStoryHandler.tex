@@ -1,0 +1,52 @@
+\hypertarget{classWombat_1_1MamdaNewsStoryHandler}{
+\section{Wombat::Mamda\-News\-Story\-Handler Class Reference}
+\label{classWombat_1_1MamdaNewsStoryHandler}\index{Wombat::MamdaNewsStoryHandler@{Wombat::MamdaNewsStoryHandler}}
+}
+Mamda\-News\-Handler is an interface for applications that want to have an easy way to handle news stories.  
+
+
+{\tt \#include $<$Mamda\-News\-Story\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsStoryHandler_e519358a9619a104431605d9313cee58}{on\-News\-Story} (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \&manager, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \&story, void $\ast$closure)=0
+\begin{CompactList}\small\item\em Method invoked when a news story response is received. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsStoryHandler_8073b40cb9d0d6ae6b881ba3c83d5a1e}{$\sim$Mamda\-News\-Story\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Mamda\-News\-Handler is an interface for applications that want to have an easy way to handle news stories. 
+
+The interface defines callback methods for different types of news story events.
+
+Instances of \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} do not survive beyond the \hyperlink{classWombat_1_1MamdaNewsStoryHandler_e519358a9619a104431605d9313cee58}{on\-News\-Story()} callback and should be copied if they need to be preserved beyond that callback. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaNewsStoryHandler_8073b40cb9d0d6ae6b881ba3c83d5a1e}{
+\index{Wombat::MamdaNewsStoryHandler@{Wombat::Mamda\-News\-Story\-Handler}!~MamdaNewsStoryHandler@{$\sim$MamdaNewsStoryHandler}}
+\index{~MamdaNewsStoryHandler@{$\sim$MamdaNewsStoryHandler}!Wombat::MamdaNewsStoryHandler@{Wombat::Mamda\-News\-Story\-Handler}}
+\subsubsection[$\sim$MamdaNewsStoryHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-News\-Story\-Handler::$\sim$Mamda\-News\-Story\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStoryHandler_8073b40cb9d0d6ae6b881ba3c83d5a1e}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaNewsStoryHandler_e519358a9619a104431605d9313cee58}{
+\index{Wombat::MamdaNewsStoryHandler@{Wombat::Mamda\-News\-Story\-Handler}!onNewsStory@{onNewsStory}}
+\index{onNewsStory@{onNewsStory}!Wombat::MamdaNewsStoryHandler@{Wombat::Mamda\-News\-Story\-Handler}}
+\subsubsection[onNewsStory]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Story\-Handler::on\-News\-Story (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \& {\em manager}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \& {\em story}, void $\ast$ {\em closure})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsStoryHandler_e519358a9619a104431605d9313cee58}
+
+
+Method invoked when a news story response is received. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em manager}]The \hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} that is managing this news service. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em story}]The requested news story. \item[{\em closure}]The closure argument to the story request. \end{description}
+\end{Desc}

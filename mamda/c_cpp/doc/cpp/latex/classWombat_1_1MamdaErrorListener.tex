@@ -1,0 +1,44 @@
+\hypertarget{classWombat_1_1MamdaErrorListener}{
+\section{Wombat::Mamda\-Error\-Listener Class Reference}
+\label{classWombat_1_1MamdaErrorListener}\index{Wombat::MamdaErrorListener@{Wombat::MamdaErrorListener}}
+}
+\hyperlink{classWombat_1_1MamdaErrorListener}{Mamda\-Error\-Listener} defines an interface for handling error notifications for a \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription}.  
+
+
+{\tt \#include $<$Mamda\-Error\-Listener.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaErrorListener_415a2478c568c6b5e5e8d5d8ef7b40ee}{on\-Error} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{namespaceWombat_10f0aa05514c69e0d8e360af40278c8c}{Mamda\-Error\-Severity} severity, \hyperlink{namespaceWombat_0bef5aac9df8b606704a54a376f45597}{Mamda\-Error\-Code} error\-Code, const char $\ast$error\-Str)=0
+\begin{CompactList}\small\item\em Provide a callback to handle errors. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaErrorListener_dbe5538f6b7c44630de95268e597aa68}{$\sim$Mamda\-Error\-Listener} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaErrorListener}{Mamda\-Error\-Listener} defines an interface for handling error notifications for a \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription}. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaErrorListener_dbe5538f6b7c44630de95268e597aa68}{
+\index{Wombat::MamdaErrorListener@{Wombat::Mamda\-Error\-Listener}!~MamdaErrorListener@{$\sim$MamdaErrorListener}}
+\index{~MamdaErrorListener@{$\sim$MamdaErrorListener}!Wombat::MamdaErrorListener@{Wombat::Mamda\-Error\-Listener}}
+\subsubsection[$\sim$MamdaErrorListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Error\-Listener::$\sim$Mamda\-Error\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaErrorListener_dbe5538f6b7c44630de95268e597aa68}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaErrorListener_415a2478c568c6b5e5e8d5d8ef7b40ee}{
+\index{Wombat::MamdaErrorListener@{Wombat::Mamda\-Error\-Listener}!onError@{onError}}
+\index{onError@{onError}!Wombat::MamdaErrorListener@{Wombat::Mamda\-Error\-Listener}}
+\subsubsection[onError]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Error\-Listener::on\-Error (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{namespaceWombat_10f0aa05514c69e0d8e360af40278c8c}{Mamda\-Error\-Severity} {\em severity}, \hyperlink{namespaceWombat_0bef5aac9df8b606704a54a376f45597}{Mamda\-Error\-Code} {\em error\-Code}, const char $\ast$ {\em error\-Str})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaErrorListener_415a2478c568c6b5e5e8d5d8ef7b40ee}
+
+
+Provide a callback to handle errors. 
+
+The severity is intended as a hint to indicate whether the error is recoverable. 

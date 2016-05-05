@@ -1,0 +1,117 @@
+\hypertarget{classWombat_1_1MamdaOrderBookChecker}{
+\section{Wombat::Mamda\-Order\-Book\-Checker Class Reference}
+\label{classWombat_1_1MamdaOrderBookChecker}\index{Wombat::MamdaOrderBookChecker@{Wombat::MamdaOrderBookChecker}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookChecker}{Mamda\-Order\-Book\-Checker} is a class that provides order book sanity checking by periodically requesting snapshots of the order book from the publisher and comparing that with an order book being maintained in real time.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Checker.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookChecker_f0427cac9cac0835084c247632702863}{Mamda\-Order\-Book\-Checker} (const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&real\-Time\-Book, const \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} \&real\-Time\-Subsc, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&real\-Time\-Listener, \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler}{Mamda\-Order\-Book\-Checker\-Handler} $\ast$handler, mama\_\-f64\_\-t interval\-Seconds)
+\begin{CompactList}\small\item\em Constructor for the order book checker. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookChecker_6e5a49015e8d82944d395d1c242fe32e}{Mamda\-Order\-Book\-Checker} (Mama\-Queue $\ast$queue, \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler}{Mamda\-Order\-Book\-Checker\-Handler} $\ast$handler, Mama\-Source $\ast$source, const char $\ast$symbol, mama\_\-f64\_\-t interval\-Seconds)
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookChecker_cc281bbb5f7fa277c30adbb773bfa3b2}{$\sim$Mamda\-Order\-Book\-Checker} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookChecker_c16e5f139b6d15c90f5b22f74d63f1e6}{check\-Snap\-Shot\-Now} ()
+\begin{CompactList}\small\item\em Perform an ad hoc snapshot check now. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaOrderBookChecker_bec33786f8ed6f0db835f4e4569bdfe6}{get\-Success\-Count} () const 
+\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaOrderBookChecker_5d7747faefdbf0dd53adc6b1dfae7567}{get\-Inconclusive\-Count} () const 
+\begin{CompactList}\small\item\em Return the number of inconclusive counts. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaOrderBookChecker_66714db80a06cc1c1582e4bdfd1279ba}{get\-Failure\-Count} () const 
+\begin{CompactList}\small\item\em Return the number of failed checks. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookChecker}{Mamda\-Order\-Book\-Checker} is a class that provides order book sanity checking by periodically requesting snapshots of the order book from the publisher and comparing that with an order book being maintained in real time. 
+
+This class is purely for testing purposes, to test for possible configuration or programming errors in the order book publisher and in MAMDA order book management code.
+
+The developer registers a handler that contains callbacks for successful, inconclusive and failure events. The developer also provides an interval representing the frequency of the snapshot checks. The first check will take place at some random point in time between zero and the interval. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookChecker_f0427cac9cac0835084c247632702863}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!MamdaOrderBookChecker@{MamdaOrderBookChecker}}
+\index{MamdaOrderBookChecker@{MamdaOrderBookChecker}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[MamdaOrderBookChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Checker::Mamda\-Order\-Book\-Checker (const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em real\-Time\-Book}, const \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} \& {\em real\-Time\-Subsc}, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em real\-Time\-Listener}, \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler}{Mamda\-Order\-Book\-Checker\-Handler} $\ast$ {\em handler}, mama\_\-f64\_\-t {\em interval\-Seconds})}}
+\label{classWombat_1_1MamdaOrderBookChecker_f0427cac9cac0835084c247632702863}
+
+
+Constructor for the order book checker. 
+
+The caller registers a callback for events related to the checker.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em real\-Time\-Book}]The real time order book to compare against. This param is \char`\"{}const\char`\"{} because we are not supposed to change it, even though it will change underneath us.\item[{\em real\-Time\-Subsc}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} associated with the real\-Time\-Book. We need it to access the message-level sequence number. This param is \char`\"{}const\char`\"{} because we are not supposed to change it, even though it will change underneath us.\item[{\em real\-Time\-Listener}]The \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} associated with the real\-Time\-Book.\item[{\em handler}]The user-provided callback handler.\item[{\em interval\-Seconds}]The number of seconds between checks. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookChecker_6e5a49015e8d82944d395d1c242fe32e}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!MamdaOrderBookChecker@{MamdaOrderBookChecker}}
+\index{MamdaOrderBookChecker@{MamdaOrderBookChecker}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[MamdaOrderBookChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Checker::Mamda\-Order\-Book\-Checker (Mama\-Queue $\ast$ {\em queue}, \hyperlink{classWombat_1_1MamdaOrderBookCheckerHandler}{Mamda\-Order\-Book\-Checker\-Handler} $\ast$ {\em handler}, Mama\-Source $\ast$ {\em source}, const char $\ast$ {\em symbol}, mama\_\-f64\_\-t {\em interval\-Seconds})}}
+\label{classWombat_1_1MamdaOrderBookChecker_6e5a49015e8d82944d395d1c242fe32e}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookChecker_cc281bbb5f7fa277c30adbb773bfa3b2}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!~MamdaOrderBookChecker@{$\sim$MamdaOrderBookChecker}}
+\index{~MamdaOrderBookChecker@{$\sim$MamdaOrderBookChecker}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[$\sim$MamdaOrderBookChecker]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Checker::$\sim$Mamda\-Order\-Book\-Checker ()}}
+\label{classWombat_1_1MamdaOrderBookChecker_cc281bbb5f7fa277c30adbb773bfa3b2}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookChecker_c16e5f139b6d15c90f5b22f74d63f1e6}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!checkSnapShotNow@{checkSnapShotNow}}
+\index{checkSnapShotNow@{checkSnapShotNow}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[checkSnapShotNow]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Checker::check\-Snap\-Shot\-Now ()}}
+\label{classWombat_1_1MamdaOrderBookChecker_c16e5f139b6d15c90f5b22f74d63f1e6}
+
+
+Perform an ad hoc snapshot check now. 
+
+This may be useful if the checking is to be performed by some external trigger event. \hypertarget{classWombat_1_1MamdaOrderBookChecker_bec33786f8ed6f0db835f4e4569bdfe6}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!getSuccessCount@{getSuccessCount}}
+\index{getSuccessCount@{getSuccessCount}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[getSuccessCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Order\-Book\-Checker::get\-Success\-Count () const}}
+\label{classWombat_1_1MamdaOrderBookChecker_bec33786f8ed6f0db835f4e4569bdfe6}
+
+
+\begin{Desc}
+\item[Returns:]The number of successful checks. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookChecker_5d7747faefdbf0dd53adc6b1dfae7567}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!getInconclusiveCount@{getInconclusiveCount}}
+\index{getInconclusiveCount@{getInconclusiveCount}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[getInconclusiveCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Order\-Book\-Checker::get\-Inconclusive\-Count () const}}
+\label{classWombat_1_1MamdaOrderBookChecker_5d7747faefdbf0dd53adc6b1dfae7567}
+
+
+Return the number of inconclusive counts. 
+
+An attempt to check the order book may be inconclusive if the order book sequence numbers do not match up.
+
+\begin{Desc}
+\item[Returns:]The number of inconclusive checks. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookChecker_66714db80a06cc1c1582e4bdfd1279ba}{
+\index{Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}!getFailureCount@{getFailureCount}}
+\index{getFailureCount@{getFailureCount}!Wombat::MamdaOrderBookChecker@{Wombat::Mamda\-Order\-Book\-Checker}}
+\subsubsection[getFailureCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Order\-Book\-Checker::get\-Failure\-Count () const}}
+\label{classWombat_1_1MamdaOrderBookChecker_66714db80a06cc1c1582e4bdfd1279ba}
+
+
+Return the number of failed checks. 
+
+This should be zero, of course.
+
+\begin{Desc}
+\item[Returns:]The number of failed checks. \end{Desc}

@@ -1,0 +1,283 @@
+\hypertarget{classWombat_1_1MamdaOptionChainView}{
+\section{Wombat::Mamda\-Option\-Chain\-View Class Reference}
+\label{classWombat_1_1MamdaOptionChainView}\index{Wombat::MamdaOptionChainView@{Wombat::MamdaOptionChainView}}
+}
+A class that represents a \char`\"{}view\char`\"{} of a subset of an option chain.  
+
+
+{\tt \#include $<$Mamda\-Option\-Chain\-View.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Option\-Chain\-View::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaOptionChainView}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOptionChainView_43112fa4380c42105f61f5b96f5968f2}{Mamda\-Option\-Chain\-View} (\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \&chain)
+\begin{CompactList}\small\item\em Create a view on the given option chain. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOptionChainView_d21c53ec82e1d894f5dcd8ccf4c282c7}{$\sim$Mamda\-Option\-Chain\-View} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionChainView_061781cf7cba60ad4c6b22a4df457511}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Return the symbol for the option chain. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_007f361ace810f89307a2546432fe00f}{set\-At\-The\-Money\-Type} (\hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} at\-The\-Money\-Type)
+\begin{CompactList}\small\item\em Set how the underlying price (\char`\"{}at the money\char`\"{}) is determined. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_c76bb8a0940dbb60297010fb3e8504a6}{set\-Strike\-Range\-Percent} (double percent\-Margin)
+\begin{CompactList}\small\item\em Set the range of strike prices to be included in the view by percentage variation from the underlying price. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_3c81aaafb26be5be4817009bc766b688}{set\-Strike\-Range\-Number} (int number)
+\begin{CompactList}\small\item\em Set the number of strike prices to be included in the view. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_2d8ab089e9fb64bed9a8a3be612ac618}{set\-Expiration\-Range\-Days} (int expiration\-Days)
+\begin{CompactList}\small\item\em Set the range of expiration dates to be included in the view by the maximum number of days until expiration. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_0fb174b905a2babf5fd0b92fb5a69650}{set\-Number\-Of\-Expirations} (int num\-Expirations)
+\begin{CompactList}\small\item\em Set the number of expiration dates to be included in the view. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_37549b6a122846ba40e229057f254e84}{set\-Jitter\-Margin} (double percent\-Margin)
+\begin{CompactList}\small\item\em Set a \char`\"{}jitter margin\char`\"{} to avoid having the range jump between different strike prices when the underlying price hovers right on the edge of a range boundary. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionChainView_75400cd672fc2befd3d1525d2bf1d4ce}{is\-Visible} (const \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} \&contract) const 
+\begin{CompactList}\small\item\em Return whether an option contract falls within this view's parameters. \item\end{CompactList}\item 
+const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& \hyperlink{classWombat_1_1MamdaOptionChainView_a177b7d79939b2e73baca1c04c8fba61}{get\-Expire\-Date\-Set} () const 
+\begin{CompactList}\small\item\em Return the option expiration date set, which contains the subset of strike prices for the view, and the contracts within the strike price. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_462b2193ed1b852f15859742008dd5b7}{on\-Option\-Chain\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \&chain)
+\begin{CompactList}\small\item\em Handler option chain recaps and initial values. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_ebb618efb4207ac512e1a1dda0b5cc73}{on\-Option\-Contract\-Create} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} \&contract, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \&chain)
+\begin{CompactList}\small\item\em Handler for option chain structural updates. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_749c42258d71ce7e20d6d2cd71b22d13}{on\-Option\-Series\-Update} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate}{Mamda\-Option\-Series\-Update} \&event, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \&chain)
+\begin{CompactList}\small\item\em Handler for option chain structural updates. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChainView_989c1ca9d94e400765440ced2b9ba9a0}{on\-Option\-Chain\-Gap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \&chain)
+\begin{CompactList}\small\item\em Handler for gaps. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class that represents a \char`\"{}view\char`\"{} of a subset of an option chain. 
+
+The view can be restricted to a percentage or number of strike prices around \char`\"{}the money\char`\"{} as well as to a maximum number of days into the future. The view will be adjusted to include strike prices within the range as the underlying price moves. This means that the range of strike prices will change over time. In order to avoid a \char`\"{}jitter\char`\"{} in the range of strike prices when the underlying price hovers right on the edge of a range boundary, the class also provides a \char`\"{}jitter margin\char`\"{} as some percentage of the underlying price (default is 0.5\%). 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOptionChainView_43112fa4380c42105f61f5b96f5968f2}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!MamdaOptionChainView@{MamdaOptionChainView}}
+\index{MamdaOptionChainView@{MamdaOptionChainView}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[MamdaOptionChainView]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Chain\-View::Mamda\-Option\-Chain\-View (\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \& {\em chain})}}
+\label{classWombat_1_1MamdaOptionChainView_43112fa4380c42105f61f5b96f5968f2}
+
+
+Create a view on the given option chain. 
+
+Multiple views are supported on any given option chain.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chain}]The {\tt \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain}} on which to provide a view. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_d21c53ec82e1d894f5dcd8ccf4c282c7}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!~MamdaOptionChainView@{$\sim$MamdaOptionChainView}}
+\index{~MamdaOptionChainView@{$\sim$MamdaOptionChainView}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[$\sim$MamdaOptionChainView]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Option\-Chain\-View::$\sim$Mamda\-Option\-Chain\-View ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainView_d21c53ec82e1d894f5dcd8ccf4c282c7}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionChainView_061781cf7cba60ad4c6b22a4df457511}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Chain\-View::get\-Symbol () const}}
+\label{classWombat_1_1MamdaOptionChainView_061781cf7cba60ad4c6b22a4df457511}
+
+
+Return the symbol for the option chain. 
+
+\begin{Desc}
+\item[Returns:]The symbol for the option chain. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_007f361ace810f89307a2546432fe00f}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!setAtTheMoneyType@{setAtTheMoneyType}}
+\index{setAtTheMoneyType@{setAtTheMoneyType}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[setAtTheMoneyType]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::set\-At\-The\-Money\-Type (\hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} {\em at\-The\-Money\-Type})}}
+\label{classWombat_1_1MamdaOptionChainView_007f361ace810f89307a2546432fe00f}
+
+
+Set how the underlying price (\char`\"{}at the money\char`\"{}) is determined. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em at\-The\-Money\-Type}]The comparator enumeration to determine how at the money is determined.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_c76bb8a0940dbb60297010fb3e8504a6}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!setStrikeRangePercent@{setStrikeRangePercent}}
+\index{setStrikeRangePercent@{setStrikeRangePercent}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[setStrikeRangePercent]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::set\-Strike\-Range\-Percent (double {\em percent\-Margin})}}
+\label{classWombat_1_1MamdaOptionChainView_c76bb8a0940dbb60297010fb3e8504a6}
+
+
+Set the range of strike prices to be included in the view by percentage variation from the underlying price. 
+
+The range of strike prices in the view will vary as the underlying varies. The \char`\"{}jitter margin\char`\"{} avoids switching between ranges too often.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em percent\-Margin}]Percentage variation the strike price has from the underlying. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_3c81aaafb26be5be4817009bc766b688}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!setStrikeRangeNumber@{setStrikeRangeNumber}}
+\index{setStrikeRangeNumber@{setStrikeRangeNumber}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[setStrikeRangeNumber]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::set\-Strike\-Range\-Number (int {\em number})}}
+\label{classWombat_1_1MamdaOptionChainView_3c81aaafb26be5be4817009bc766b688}
+
+
+Set the number of strike prices to be included in the view. 
+
+The \char`\"{}jitter margin\char`\"{} avoids switching between ranges too often.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em number}]The number of strikes to include in the view. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_2d8ab089e9fb64bed9a8a3be612ac618}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!setExpirationRangeDays@{setExpirationRangeDays}}
+\index{setExpirationRangeDays@{setExpirationRangeDays}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[setExpirationRangeDays]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::set\-Expiration\-Range\-Days (int {\em expiration\-Days})}}
+\label{classWombat_1_1MamdaOptionChainView_2d8ab089e9fb64bed9a8a3be612ac618}
+
+
+Set the range of expiration dates to be included in the view by the maximum number of days until expiration. 
+
+Note: a non-zero range overrides a specific number of expirations set by \hyperlink{classWombat_1_1MamdaOptionChainView_0fb174b905a2babf5fd0b92fb5a69650}{set\-Number\-Of\-Expirations()}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em expiration\-Days}]The maximum number of days until expiration. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_0fb174b905a2babf5fd0b92fb5a69650}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!setNumberOfExpirations@{setNumberOfExpirations}}
+\index{setNumberOfExpirations@{setNumberOfExpirations}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[setNumberOfExpirations]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::set\-Number\-Of\-Expirations (int {\em num\-Expirations})}}
+\label{classWombat_1_1MamdaOptionChainView_0fb174b905a2babf5fd0b92fb5a69650}
+
+
+Set the number of expiration dates to be included in the view. 
+
+Note: a non-zero range (set by \hyperlink{classWombat_1_1MamdaOptionChainView_2d8ab089e9fb64bed9a8a3be612ac618}{set\-Expiration\-Range\-Days()}) overrides a specific number of expirations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em num\-Expirations}]The number of expiration dates to include in the view. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_37549b6a122846ba40e229057f254e84}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!setJitterMargin@{setJitterMargin}}
+\index{setJitterMargin@{setJitterMargin}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[setJitterMargin]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::set\-Jitter\-Margin (double {\em percent\-Margin})}}
+\label{classWombat_1_1MamdaOptionChainView_37549b6a122846ba40e229057f254e84}
+
+
+Set a \char`\"{}jitter margin\char`\"{} to avoid having the range jump between different strike prices when the underlying price hovers right on the edge of a range boundary. 
+
+The underlying is allowed to fluctuate within the jitter margin without the range being reset. When the underlying moves beyond the jitter margin, the range is reset.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em percent\-Margin}]Percentage from the range boundary the underlying price can fluctuate without resetting the range. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_75400cd672fc2befd3d1525d2bf1d4ce}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!isVisible@{isVisible}}
+\index{isVisible@{isVisible}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[isVisible]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Chain\-View::is\-Visible (const \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} \& {\em contract}) const}}
+\label{classWombat_1_1MamdaOptionChainView_75400cd672fc2befd3d1525d2bf1d4ce}
+
+
+Return whether an option contract falls within this view's parameters. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em contract}]The contract which is being checked for visibility by the current view. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_a177b7d79939b2e73baca1c04c8fba61}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!getExpireDateSet@{getExpireDateSet}}
+\index{getExpireDateSet@{getExpireDateSet}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[getExpireDateSet]{\setlength{\rightskip}{0pt plus 5cm}const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set}\& Wombat::Mamda\-Option\-Chain\-View::get\-Expire\-Date\-Set () const}}
+\label{classWombat_1_1MamdaOptionChainView_a177b7d79939b2e73baca1c04c8fba61}
+
+
+Return the option expiration date set, which contains the subset of strike prices for the view, and the contracts within the strike price. 
+
+\begin{Desc}
+\item[Returns:]The expiration date set for the option. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionChainView_462b2193ed1b852f15859742008dd5b7}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!onOptionChainRecap@{onOptionChainRecap}}
+\index{onOptionChainRecap@{onOptionChainRecap}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[onOptionChainRecap]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::on\-Option\-Chain\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \& {\em chain})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainView_462b2193ed1b852f15859742008dd5b7}
+
+
+Handler option chain recaps and initial values. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener instance which invoked this callback. \item[{\em msg}]The msg which resulted in the callback being invoked. \item[{\em chain}]The complete option chain. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOptionChainHandler_be6d7d71f55b09f40273a1ee5120f260}{Wombat::Mamda\-Option\-Chain\-Handler}.\hypertarget{classWombat_1_1MamdaOptionChainView_ebb618efb4207ac512e1a1dda0b5cc73}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!onOptionContractCreate@{onOptionContractCreate}}
+\index{onOptionContractCreate@{onOptionContractCreate}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[onOptionContractCreate]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::on\-Option\-Contract\-Create (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} \& {\em contract}, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \& {\em chain})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainView_ebb618efb4207ac512e1a1dda0b5cc73}
+
+
+Handler for option chain structural updates. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener instance which invoked this callback. \item[{\em msg}]The msg which resulted in the callback being invoked. \item[{\em contract}]The newly created option contract. \item[{\em chain}]The complete option chain. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOptionChainHandler_a3cfccdc231b70111443aa096cf9a606}{Wombat::Mamda\-Option\-Chain\-Handler}.\hypertarget{classWombat_1_1MamdaOptionChainView_749c42258d71ce7e20d6d2cd71b22d13}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!onOptionSeriesUpdate@{onOptionSeriesUpdate}}
+\index{onOptionSeriesUpdate@{onOptionSeriesUpdate}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[onOptionSeriesUpdate]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::on\-Option\-Series\-Update (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate}{Mamda\-Option\-Series\-Update} \& {\em event}, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \& {\em chain})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainView_749c42258d71ce7e20d6d2cd71b22d13}
+
+
+Handler for option chain structural updates. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The msg which resulted in the callback being invoked. \item[{\em event}]Access to the series update event details. \item[{\em chain}]The complete option chain. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOptionChainHandler_0f2ed7a5229483349b2c26330a0afb03}{Wombat::Mamda\-Option\-Chain\-Handler}.\hypertarget{classWombat_1_1MamdaOptionChainView_989c1ca9d94e400765440ced2b9ba9a0}{
+\index{Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}!onOptionChainGap@{onOptionChainGap}}
+\index{onOptionChainGap@{onOptionChainGap}!Wombat::MamdaOptionChainView@{Wombat::Mamda\-Option\-Chain\-View}}
+\subsubsection[onOptionChainGap]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain\-View::on\-Option\-Chain\-Gap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \& {\em chain})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionChainView_989c1ca9d94e400765440ced2b9ba9a0}
+
+
+Handler for gaps. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The msg which resulted in the callback being invoked. \item[{\em chain}]The complete option chain. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOptionChainHandler_336567cf64826492141bbd7eb010b840}{Wombat::Mamda\-Option\-Chain\-Handler}.

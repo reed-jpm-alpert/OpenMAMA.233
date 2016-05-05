@@ -1,0 +1,37 @@
+\hypertarget{MamdaSecurityStatus_8h}{
+\section{Mamda\-Security\-Status.h File Reference}
+\label{MamdaSecurityStatus_8h}\index{MamdaSecurityStatus.h@{MamdaSecurityStatus.h}}
+}
+{\tt \#include $<$mamda/Mamda\-Config.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceWombat}{Wombat}
+\end{CompactItemize}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b}{Wombat::Mamda\-Security\-Status} \{ \par
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b0769f003b770a9a28a51c347948d390f}{Wombat::SECURITY\_\-STATUS\_\-NONE}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b7335e84b4585bd660c6b531d70bb2fc1}{Wombat::SECURITY\_\-STATUS\_\-NORMAL}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b60a77eb01632c89172f1693a0a18ffb4}{Wombat::SECURITY\_\-STATUS\_\-CLOSED}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4be011caa165bc42be80239654981acb5b}{Wombat::SECURITY\_\-STATUS\_\-HALTED}, 
+\par
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b968f866ea3983ac4433b4533a6a8dc84}{Wombat::SECURITY\_\-STATUS\_\-NOT\_\-EXIST}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b9487aff982c0997934641e4c97fd895d}{Wombat::SECURITY\_\-STATUS\_\-DELETED}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4bb3bad99c26818274844ceb8cfa61d3f1}{Wombat::SECURITY\_\-STATUS\_\-AUCTION}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b34284ab98d26e3255fc04e7591197a85}{Wombat::SECURITY\_\-STATUS\_\-CROSSING}, 
+\par
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b20f36c5f104ca09b77d4d2710eb9b730}{Wombat::SECURITY\_\-STATUS\_\-SUSPENDED}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4bd99f9c3725c52e3eb3b123344a793bd2}{Wombat::SECURITY\_\-STATUS\_\-AT\_\-LAST}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b46410152f0495b13771ec5e293859491}{Wombat::SECURITY\_\-STATUS\_\-INACTIVE}, 
+\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4bf34caba9fab80f5778c6b988e4b551fb}{Wombat::SECURITY\_\-STATUS\_\-UNKNOWN} =  99
+ \}
+\begin{CompactList}\small\item\em An enumeration representing the status of a security such as whether or not it is halted or closed for trading. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+MAMDAExp\-DLL const char $\ast$ \hyperlink{namespaceWombat_3f6d8c7884a574324c63379d915be1c3}{Wombat::to\-String} (\hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b}{Mamda\-Security\-Status} security\-Status)
+\begin{CompactList}\small\item\em Convert a Mamda\-Security\-Status to an appropriate, displayable string. \item\end{CompactList}\item 
+MAMDAExp\-DLL \hyperlink{namespaceWombat_073e683b7aeffa26cf3d2791dda32b4b}{Mamda\-Security\-Status} \hyperlink{namespaceWombat_6b90a072d040ebf093cb4d1c87218108}{Wombat::mamda\-Security\-Status\-From\-String} (const char $\ast$security\-Status\-Str)
+\begin{CompactList}\small\item\em Convert a string representation of a security status to the enumeration. \item\end{CompactList}\end{CompactItemize}

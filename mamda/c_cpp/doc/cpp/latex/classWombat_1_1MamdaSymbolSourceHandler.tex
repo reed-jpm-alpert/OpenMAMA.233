@@ -1,0 +1,50 @@
+\hypertarget{classWombat_1_1MamdaSymbolSourceHandler}{
+\section{Wombat::Mamda\-Symbol\-Source\-Handler Class Reference}
+\label{classWombat_1_1MamdaSymbolSourceHandler}\index{Wombat::MamdaSymbolSourceHandler@{Wombat::MamdaSymbolSourceHandler}}
+}
+\hyperlink{classWombat_1_1MamdaSymbolSourceHandler}{Mamda\-Symbol\-Source\-Handler} is an interface for applications that want to have an easy way to handle newly sourced symbol events.  
+
+
+{\tt \#include $<$Mamda\-Symbol\-Source\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaSymbolSourceHandler_228ac54d0c2631e57612efbfa2701128}{on\-Symbol} (const \hyperlink{classWombat_1_1MamdaSymbolSourceEvent}{Mamda\-Symbol\-Source\-Event} \&event)=0
+\begin{CompactList}\small\item\em Method invoked when a new symbol has been sourced. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaSymbolSourceHandler_1725b2e33b959e1c7c1938726d244b5e}{$\sim$Mamda\-Symbol\-Source\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaSymbolSourceHandler}{Mamda\-Symbol\-Source\-Handler} is an interface for applications that want to have an easy way to handle newly sourced symbol events. 
+
+The interface defines the callback method for the new symbol event: on\-Symbol 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaSymbolSourceHandler_1725b2e33b959e1c7c1938726d244b5e}{
+\index{Wombat::MamdaSymbolSourceHandler@{Wombat::Mamda\-Symbol\-Source\-Handler}!~MamdaSymbolSourceHandler@{$\sim$MamdaSymbolSourceHandler}}
+\index{~MamdaSymbolSourceHandler@{$\sim$MamdaSymbolSourceHandler}!Wombat::MamdaSymbolSourceHandler@{Wombat::Mamda\-Symbol\-Source\-Handler}}
+\subsubsection[$\sim$MamdaSymbolSourceHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Symbol\-Source\-Handler::$\sim$Mamda\-Symbol\-Source\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSymbolSourceHandler_1725b2e33b959e1c7c1938726d244b5e}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaSymbolSourceHandler_228ac54d0c2631e57612efbfa2701128}{
+\index{Wombat::MamdaSymbolSourceHandler@{Wombat::Mamda\-Symbol\-Source\-Handler}!onSymbol@{onSymbol}}
+\index{onSymbol@{onSymbol}!Wombat::MamdaSymbolSourceHandler@{Wombat::Mamda\-Symbol\-Source\-Handler}}
+\subsubsection[onSymbol]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Symbol\-Source\-Handler::on\-Symbol (const \hyperlink{classWombat_1_1MamdaSymbolSourceEvent}{Mamda\-Symbol\-Source\-Event} \& {\em event})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaSymbolSourceHandler_228ac54d0c2631e57612efbfa2701128}
+
+
+Method invoked when a new symbol has been sourced. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em event}]The \hyperlink{classWombat_1_1MamdaSymbolSourceEvent}{Mamda\-Symbol\-Source\-Event} object. \end{description}
+\end{Desc}

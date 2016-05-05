@@ -1,0 +1,302 @@
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta}{
+\section{Wombat::Mamda\-Order\-Book\-Basic\-Delta Class Reference}
+\label{classWombat_1_1MamdaOrderBookBasicDelta}\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::MamdaOrderBookBasicDelta}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookBasicDelta}{Mamda\-Order\-Book\-Basic\-Delta} is a class that saves information about a basic order book delta.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Basic\-Delta.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Order\-Book\-Basic\-Delta::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaOrderBookBasicDelta}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_1df71590f9c90f9b53c4e7873ee2ddfe}{Mamda\-Order\-Book\-Basic\-Delta} ()
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_fc3c3d8060a8423abce7c3dbb104057f}{Mamda\-Order\-Book\-Basic\-Delta} (const \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta}{Mamda\-Order\-Book\-Basic\-Delta} \&)
+\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_a286af598256857e898fd6ce033fbd18}{$\sim$Mamda\-Order\-Book\-Basic\-Delta} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_9cc22c9747cad413d8f6428231f6740c}{clear} ()
+\begin{CompactList}\small\item\em Clear the delta. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_7d5c8a70ea4d2d9acd4ff67426837a3c}{set} (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$entry, \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$level, mama\_\-quantity\_\-t pl\-Delta\-Size, \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} pl\-Action, \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} entry\-Action)
+\begin{CompactList}\small\item\em Set the delta info. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_793e97408911d035d6f6c0b29f0ea152}{set\-Price\-Level} (\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$level)
+\begin{CompactList}\small\item\em Set the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object to which this entry belongs. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_6dc1d989eee8644c10006986976d26e2}{set\-Pl\-Delta\-Action} (\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} action)
+\begin{CompactList}\small\item\em Set the delta action with respect to the price level. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_bc98251910a63a9b698ab55f7f514124}{set\-Pl\-Delta\-Size} (mama\_\-quantity\_\-t size)
+\begin{CompactList}\small\item\em Set the price level delta size. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_2a3a1aadfd9cb9326943280a63bb7f75}{apply\-Pl\-Delta\-Size} (mama\_\-quantity\_\-t size)
+\begin{CompactList}\small\item\em Apply the price level delta size to the existing size, giving the net effect. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_511d4ed672e4c05354145021890ebf66}{get\-Price\-Level} () const 
+\begin{CompactList}\small\item\em Get the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object related to this basic delta. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_5a631f929f45d7b8a476ff8bd97d6236}{get\-Entry} () const 
+\begin{CompactList}\small\item\em Get the \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} object related to this basic delta. \item\end{CompactList}\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_53cad3d942a1c100cdbadc0cf0f4ddd3}{get\-Pl\-Delta\-Size} () const 
+\begin{CompactList}\small\item\em Get the difference in size for the price level. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_010b4c53083f76c3f10c5a33dd45cec8}{get\-Pl\-Delta\-Action} () const 
+\begin{CompactList}\small\item\em Get the delta action with respect to the price level. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_54c664c4fa696cf6ae79f62db7d434da}{get\-Entry\-Delta\-Action} () const 
+\begin{CompactList}\small\item\em Get the delta action with respect to the entry. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_a891db48e540e1c71fc2fb11552e8e95}{set\-Entry\-Delta\-Action} (\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} action)
+\begin{CompactList}\small\item\em Get the delta action with respect to the entry. \item\end{CompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_9fb6ae94903535161a689fce7dc7cc4d}{get\-Order\-Book} () const 
+\begin{CompactList}\small\item\em Get the \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} object to which this delta belongs. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_f3387069184400eb065fb59bf27b2812}{dump} (ostream \&output) const 
+\begin{CompactList}\small\item\em Dump the simple update to the output stream. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_abd82c385997d03c79df774d690699f4}{m\-Price\-Level}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_6c98a2021f67c632baa255236b20f288}{m\-Entry}
+\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_a82abf62a468b5d0a66ada05af24a88f}{m\-Pl\-Delta\-Size}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_39972009cf7a450a5b897d4def106eb0}{m\-Pl\-Action}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_dc1c0ab3dca14e09b1de5d931da4cf59}{m\-Entry\-Action}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookBasicDelta}{Mamda\-Order\-Book\-Basic\-Delta} is a class that saves information about a basic order book delta. 
+
+A basic delta is one that affects a single order book entry. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_1df71590f9c90f9b53c4e7873ee2ddfe}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!MamdaOrderBookBasicDelta@{MamdaOrderBookBasicDelta}}
+\index{MamdaOrderBookBasicDelta@{MamdaOrderBookBasicDelta}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[MamdaOrderBookBasicDelta]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Basic\-Delta::Mamda\-Order\-Book\-Basic\-Delta ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_1df71590f9c90f9b53c4e7873ee2ddfe}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_fc3c3d8060a8423abce7c3dbb104057f}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!MamdaOrderBookBasicDelta@{MamdaOrderBookBasicDelta}}
+\index{MamdaOrderBookBasicDelta@{MamdaOrderBookBasicDelta}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[MamdaOrderBookBasicDelta]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Basic\-Delta::Mamda\-Order\-Book\-Basic\-Delta (const \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta}{Mamda\-Order\-Book\-Basic\-Delta} \&)}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_fc3c3d8060a8423abce7c3dbb104057f}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_a286af598256857e898fd6ce033fbd18}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!~MamdaOrderBookBasicDelta@{$\sim$MamdaOrderBookBasicDelta}}
+\index{~MamdaOrderBookBasicDelta@{$\sim$MamdaOrderBookBasicDelta}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[$\sim$MamdaOrderBookBasicDelta]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Book\-Basic\-Delta::$\sim$Mamda\-Order\-Book\-Basic\-Delta ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_a286af598256857e898fd6ce033fbd18}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_9cc22c9747cad413d8f6428231f6740c}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[clear]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Basic\-Delta::clear ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_9cc22c9747cad413d8f6428231f6740c}
+
+
+Clear the delta. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_7d5c8a70ea4d2d9acd4ff67426837a3c}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!set@{set}}
+\index{set@{set}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[set]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Basic\-Delta::set (\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} $\ast$ {\em entry}, \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$ {\em level}, mama\_\-quantity\_\-t {\em pl\-Delta\-Size}, \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} {\em pl\-Action}, \hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} {\em entry\-Action})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_7d5c8a70ea4d2d9acd4ff67426837a3c}
+
+
+Set the delta info. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_793e97408911d035d6f6c0b29f0ea152}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!setPriceLevel@{setPriceLevel}}
+\index{setPriceLevel@{setPriceLevel}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[setPriceLevel]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Basic\-Delta::set\-Price\-Level (\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} $\ast$ {\em level})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_793e97408911d035d6f6c0b29f0ea152}
+
+
+Set the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object to which this entry belongs. 
+
+This method is invoked internally, by the MAMDA API, when an entry is added to a price level.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em level}]The price level to be associated with. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_6dc1d989eee8644c10006986976d26e2}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!setPlDeltaAction@{setPlDeltaAction}}
+\index{setPlDeltaAction@{setPlDeltaAction}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[setPlDeltaAction]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Basic\-Delta::set\-Pl\-Delta\-Action (\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} {\em action})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_6dc1d989eee8644c10006986976d26e2}
+
+
+Set the delta action with respect to the price level. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em action}]The price level action \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_bc98251910a63a9b698ab55f7f514124}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!setPlDeltaSize@{setPlDeltaSize}}
+\index{setPlDeltaSize@{setPlDeltaSize}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[setPlDeltaSize]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Basic\-Delta::set\-Pl\-Delta\-Size (mama\_\-quantity\_\-t {\em size})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_bc98251910a63a9b698ab55f7f514124}
+
+
+Set the price level delta size. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em action}]The price level action \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_2a3a1aadfd9cb9326943280a63bb7f75}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!applyPlDeltaSize@{applyPlDeltaSize}}
+\index{applyPlDeltaSize@{applyPlDeltaSize}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[applyPlDeltaSize]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Basic\-Delta::apply\-Pl\-Delta\-Size (mama\_\-quantity\_\-t {\em size})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_2a3a1aadfd9cb9326943280a63bb7f75}
+
+
+Apply the price level delta size to the existing size, giving the net effect. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em action}]The price level action \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_511d4ed672e4c05354145021890ebf66}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!getPriceLevel@{getPriceLevel}}
+\index{getPriceLevel@{getPriceLevel}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[getPriceLevel]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level}$\ast$ Wombat::Mamda\-Order\-Book\-Basic\-Delta::get\-Price\-Level () const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_511d4ed672e4c05354145021890ebf66}
+
+
+Get the \hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level} object related to this basic delta. 
+
+\begin{Desc}
+\item[Returns:]The price level. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_5a631f929f45d7b8a476ff8bd97d6236}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!getEntry@{getEntry}}
+\index{getEntry@{getEntry}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[getEntry]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry}$\ast$ Wombat::Mamda\-Order\-Book\-Basic\-Delta::get\-Entry () const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_5a631f929f45d7b8a476ff8bd97d6236}
+
+
+Get the \hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry} object related to this basic delta. 
+
+\begin{Desc}
+\item[Returns:]The entry. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_53cad3d942a1c100cdbadc0cf0f4ddd3}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!getPlDeltaSize@{getPlDeltaSize}}
+\index{getPlDeltaSize@{getPlDeltaSize}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[getPlDeltaSize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t Wombat::Mamda\-Order\-Book\-Basic\-Delta::get\-Pl\-Delta\-Size () const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_53cad3d942a1c100cdbadc0cf0f4ddd3}
+
+
+Get the difference in size for the price level. 
+
+\begin{Desc}
+\item[Returns:]The price level size delta. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_010b4c53083f76c3f10c5a33dd45cec8}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!getPlDeltaAction@{getPlDeltaAction}}
+\index{getPlDeltaAction@{getPlDeltaAction}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[getPlDeltaAction]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} Wombat::Mamda\-Order\-Book\-Basic\-Delta::get\-Pl\-Delta\-Action () const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_010b4c53083f76c3f10c5a33dd45cec8}
+
+
+Get the delta action with respect to the price level. 
+
+\begin{Desc}
+\item[Returns:]The price level action. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_54c664c4fa696cf6ae79f62db7d434da}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!getEntryDeltaAction@{getEntryDeltaAction}}
+\index{getEntryDeltaAction@{getEntryDeltaAction}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[getEntryDeltaAction]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} Wombat::Mamda\-Order\-Book\-Basic\-Delta::get\-Entry\-Delta\-Action () const\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_54c664c4fa696cf6ae79f62db7d434da}
+
+
+Get the delta action with respect to the entry. 
+
+\begin{Desc}
+\item[Returns:]The entry action. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_a891db48e540e1c71fc2fb11552e8e95}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!setEntryDeltaAction@{setEntryDeltaAction}}
+\index{setEntryDeltaAction@{setEntryDeltaAction}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[setEntryDeltaAction]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Basic\-Delta::set\-Entry\-Delta\-Action (\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} {\em action})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_a891db48e540e1c71fc2fb11552e8e95}
+
+
+Get the delta action with respect to the entry. 
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_9fb6ae94903535161a689fce7dc7cc4d}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!getOrderBook@{getOrderBook}}
+\index{getOrderBook@{getOrderBook}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[getOrderBook]{\setlength{\rightskip}{0pt plus 5cm}virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}$\ast$ Wombat::Mamda\-Order\-Book\-Basic\-Delta::get\-Order\-Book () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_9fb6ae94903535161a689fce7dc7cc4d}
+
+
+Get the \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} object to which this delta belongs. 
+
+\begin{Desc}
+\item[Returns:]The order book related to this delta. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_f3387069184400eb065fb59bf27b2812}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!dump@{dump}}
+\index{dump@{dump}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[dump]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Book\-Basic\-Delta::dump (ostream \& {\em output}) const}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_f3387069184400eb065fb59bf27b2812}
+
+
+Dump the simple update to the output stream. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em output}]The {\tt ostream} to write the update to. \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_abd82c385997d03c79df774d690699f4}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!mPriceLevel@{mPriceLevel}}
+\index{mPriceLevel@{mPriceLevel}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[mPriceLevel]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel}{Mamda\-Order\-Book\-Price\-Level}$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_abd82c385997d03c79df774d690699f4}{Wombat::Mamda\-Order\-Book\-Basic\-Delta::m\-Price\-Level}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_abd82c385997d03c79df774d690699f4}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_6c98a2021f67c632baa255236b20f288}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!mEntry@{mEntry}}
+\index{mEntry@{mEntry}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[mEntry]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry}{Mamda\-Order\-Book\-Entry}$\ast$ \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_6c98a2021f67c632baa255236b20f288}{Wombat::Mamda\-Order\-Book\-Basic\-Delta::m\-Entry}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_6c98a2021f67c632baa255236b20f288}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_a82abf62a468b5d0a66ada05af24a88f}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!mPlDeltaSize@{mPlDeltaSize}}
+\index{mPlDeltaSize@{mPlDeltaSize}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[mPlDeltaSize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_a82abf62a468b5d0a66ada05af24a88f}{Wombat::Mamda\-Order\-Book\-Basic\-Delta::m\-Pl\-Delta\-Size}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_a82abf62a468b5d0a66ada05af24a88f}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_39972009cf7a450a5b897d4def106eb0}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!mPlAction@{mPlAction}}
+\index{mPlAction@{mPlAction}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[mPlAction]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookPriceLevel_bd3407b4250fc6f7a42d94b6d32e358a}{Mamda\-Order\-Book\-Price\-Level::Action} \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_39972009cf7a450a5b897d4def106eb0}{Wombat::Mamda\-Order\-Book\-Basic\-Delta::m\-Pl\-Action}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_39972009cf7a450a5b897d4def106eb0}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookBasicDelta_dc1c0ab3dca14e09b1de5d931da4cf59}{
+\index{Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}!mEntryAction@{mEntryAction}}
+\index{mEntryAction@{mEntryAction}!Wombat::MamdaOrderBookBasicDelta@{Wombat::Mamda\-Order\-Book\-Basic\-Delta}}
+\subsubsection[mEntryAction]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOrderBookEntry_fc6cb1d67c7601d093a36f59cf9bcef4}{Mamda\-Order\-Book\-Entry::Action} \hyperlink{classWombat_1_1MamdaOrderBookBasicDelta_dc1c0ab3dca14e09b1de5d931da4cf59}{Wombat::Mamda\-Order\-Book\-Basic\-Delta::m\-Entry\-Action}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookBasicDelta_dc1c0ab3dca14e09b1de5d931da4cf59}
+
+

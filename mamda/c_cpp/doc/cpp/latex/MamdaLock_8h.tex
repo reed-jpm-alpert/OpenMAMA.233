@@ -1,0 +1,93 @@
+\hypertarget{MamdaLock_8h}{
+\section{Mamda\-Lock.h File Reference}
+\label{MamdaLock_8h}\index{MamdaLock.h@{MamdaLock.h}}
+}
+{\tt \#include $<$mamda/Mamda\-Config.h$>$}\par
+\subsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespaceWombat}{Wombat}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamdaLock}{Wombat::Mamda\-Lock}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{MamdaLock_8h_bdf0633d9a63db2b25d3e86fe653a89c}{ACQUIRE\_\-WLOCK}(lock)~(lock).acquire(Mamda\-Lock::WRITE)
+\item 
+\#define \hyperlink{MamdaLock_8h_11e6a4c2449882cb60631419ded8c1ef}{ACQUIRE\_\-RLOCK}(lock)~(lock).acquire(Mamda\-Lock::READ)
+\item 
+\#define \hyperlink{MamdaLock_8h_f075fec0d1c4f150cde1a8052b052ece}{RELEASE\_\-WLOCK}(lock)~(lock).release(Mamda\-Lock::WRITE)
+\item 
+\#define \hyperlink{MamdaLock_8h_9648b0a1f9f21c51982463a8d5a3e06e}{RELEASE\_\-RLOCK}(lock)~(lock).release(Mamda\-Lock::READ)
+\item 
+\#define \hyperlink{MamdaLock_8h_a26ce7180bab5c36417bc47608fe3ebd}{ACQUIRE\_\-LOCK}(lock, write\-Needed)
+\item 
+\#define \hyperlink{MamdaLock_8h_fc044ccdc8dcabc4ec48b24bcab7d167}{RELEASE\_\-LOCK}(lock, is\-Write)
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{MamdaLock_8h_bdf0633d9a63db2b25d3e86fe653a89c}{
+\index{MamdaLock.h@{Mamda\-Lock.h}!ACQUIRE_WLOCK@{ACQUIRE\_\-WLOCK}}
+\index{ACQUIRE_WLOCK@{ACQUIRE\_\-WLOCK}!MamdaLock.h@{Mamda\-Lock.h}}
+\subsubsection[ACQUIRE\_\-WLOCK]{\setlength{\rightskip}{0pt plus 5cm}\#define ACQUIRE\_\-WLOCK(lock)~(lock).acquire(Mamda\-Lock::WRITE)}}
+\label{MamdaLock_8h_bdf0633d9a63db2b25d3e86fe653a89c}
+
+
+\hypertarget{MamdaLock_8h_11e6a4c2449882cb60631419ded8c1ef}{
+\index{MamdaLock.h@{Mamda\-Lock.h}!ACQUIRE_RLOCK@{ACQUIRE\_\-RLOCK}}
+\index{ACQUIRE_RLOCK@{ACQUIRE\_\-RLOCK}!MamdaLock.h@{Mamda\-Lock.h}}
+\subsubsection[ACQUIRE\_\-RLOCK]{\setlength{\rightskip}{0pt plus 5cm}\#define ACQUIRE\_\-RLOCK(lock)~(lock).acquire(Mamda\-Lock::READ)}}
+\label{MamdaLock_8h_11e6a4c2449882cb60631419ded8c1ef}
+
+
+\hypertarget{MamdaLock_8h_f075fec0d1c4f150cde1a8052b052ece}{
+\index{MamdaLock.h@{Mamda\-Lock.h}!RELEASE_WLOCK@{RELEASE\_\-WLOCK}}
+\index{RELEASE_WLOCK@{RELEASE\_\-WLOCK}!MamdaLock.h@{Mamda\-Lock.h}}
+\subsubsection[RELEASE\_\-WLOCK]{\setlength{\rightskip}{0pt plus 5cm}\#define RELEASE\_\-WLOCK(lock)~(lock).release(Mamda\-Lock::WRITE)}}
+\label{MamdaLock_8h_f075fec0d1c4f150cde1a8052b052ece}
+
+
+\hypertarget{MamdaLock_8h_9648b0a1f9f21c51982463a8d5a3e06e}{
+\index{MamdaLock.h@{Mamda\-Lock.h}!RELEASE_RLOCK@{RELEASE\_\-RLOCK}}
+\index{RELEASE_RLOCK@{RELEASE\_\-RLOCK}!MamdaLock.h@{Mamda\-Lock.h}}
+\subsubsection[RELEASE\_\-RLOCK]{\setlength{\rightskip}{0pt plus 5cm}\#define RELEASE\_\-RLOCK(lock)~(lock).release(Mamda\-Lock::READ)}}
+\label{MamdaLock_8h_9648b0a1f9f21c51982463a8d5a3e06e}
+
+
+\hypertarget{MamdaLock_8h_a26ce7180bab5c36417bc47608fe3ebd}{
+\index{MamdaLock.h@{Mamda\-Lock.h}!ACQUIRE_LOCK@{ACQUIRE\_\-LOCK}}
+\index{ACQUIRE_LOCK@{ACQUIRE\_\-LOCK}!MamdaLock.h@{Mamda\-Lock.h}}
+\subsubsection[ACQUIRE\_\-LOCK]{\setlength{\rightskip}{0pt plus 5cm}\#define ACQUIRE\_\-LOCK(lock, write\-Needed)}}
+\label{MamdaLock_8h_a26ce7180bab5c36417bc47608fe3ebd}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}do {                                        \
+        if (writeNeeded)                        \
+            (lock).acquire(MamdaLock::WRITE);   \
+        else                                    \
+            (lock).acquire(MamdaLock::READ);    \
+    } while (0)
+\end{verbatim}\end{Code}
+\hypertarget{MamdaLock_8h_fc044ccdc8dcabc4ec48b24bcab7d167}{
+\index{MamdaLock.h@{Mamda\-Lock.h}!RELEASE_LOCK@{RELEASE\_\-LOCK}}
+\index{RELEASE_LOCK@{RELEASE\_\-LOCK}!MamdaLock.h@{Mamda\-Lock.h}}
+\subsubsection[RELEASE\_\-LOCK]{\setlength{\rightskip}{0pt plus 5cm}\#define RELEASE\_\-LOCK(lock, is\-Write)}}
+\label{MamdaLock_8h_fc044ccdc8dcabc4ec48b24bcab7d167}
+
+
+\textbf{Value:}
+
+\begin{Code}\begin{verbatim}do {                                        \
+        if (isWrite)                            \
+            (lock).release(MamdaLock::WRITE);   \
+        else                                    \
+            (lock).release(MamdaLock::READ);    \
+    } while (0)
+\end{verbatim}\end{Code}

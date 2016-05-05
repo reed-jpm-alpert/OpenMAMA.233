@@ -1,0 +1,210 @@
+\hypertarget{classMamdaOrderBookDepthFilter}{
+\section{Mamda\-Order\-Book\-Depth\-Filter Class Reference}
+\label{classMamdaOrderBookDepthFilter}\index{MamdaOrderBookDepthFilter@{MamdaOrderBookDepthFilter}}
+}
+{\tt \#include $<$Mamda\-Order\-Book\-Depth\-Filter.h$>$}
+
+Inheritance diagram for Mamda\-Order\-Book\-Depth\-Filter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classMamdaOrderBookDepthFilter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classMamdaOrderBookDepthFilter_d45bb83d3e4b75f23000ab10f753d6c5}{Mamda\-Order\-Book\-Depth\-Filter} (\hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&parent, size\_\-t depth)
+\item 
+virtual \hyperlink{classMamdaOrderBookDepthFilter_016e593f9247c58f54ff1fca80373e9b}{$\sim$Mamda\-Order\-Book\-Depth\-Filter} ()
+\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_60862fa9b9c5835445940630b5f982d6}{add\-Handler} (\hyperlink{classWombat_1_1MamdaOrderBookHandler}{Mamda\-Order\-Book\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized order book handler. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_699f621c1462b0787b6c1391bd48f32a}{remove\-Handlers} ()
+\begin{CompactList}\small\item\em Remove the reference of handlers from the internal list. \item\end{CompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ \hyperlink{classMamdaOrderBookDepthFilter_8ea01fc66c28b7ac4dbb3939e340aad0}{get\-Order\-Book} () const 
+\begin{CompactList}\small\item\em Return the filtered orderbook. \item\end{CompactList}\item 
+virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ \hyperlink{classMamdaOrderBookDepthFilter_c1e0b29a1272610fb3b425cafe70410c}{get\-Full\-Order\-Book} () const 
+\begin{CompactList}\small\item\em Return the full depth orderbook. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_0d514d92284c0fefa84201aae411111d}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_5d9d813f0c49a0afe232d333a46236c8}{on\-Book\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&listener, const Mama\-Msg $\ast$msg, const \hyperlink{classWombat_1_1MamdaOrderBookComplexDelta}{Mamda\-Order\-Book\-Complex\-Delta} $\ast$delta, const \hyperlink{classWombat_1_1MamdaOrderBookRecap}{Mamda\-Order\-Book\-Recap} \&event, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&book)
+\begin{CompactList}\small\item\em Method invoked when a full refresh of the order book for the security is available. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_f4fc478bf1306d3eb5af4f0278bfb198}{on\-Book\-Delta} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&listener, const Mama\-Msg $\ast$msg, const \hyperlink{classWombat_1_1MamdaOrderBookSimpleDelta}{Mamda\-Order\-Book\-Simple\-Delta} \&event, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&book)
+\begin{CompactList}\small\item\em Method invoked when a basic order book delta is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_1816fe7b1f93ae44a94127c8995f7a26}{on\-Book\-Complex\-Delta} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&listener, const Mama\-Msg $\ast$msg, const \hyperlink{classWombat_1_1MamdaOrderBookComplexDelta}{Mamda\-Order\-Book\-Complex\-Delta} \&event, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&book)
+\begin{CompactList}\small\item\em Method invoked when an order book delta is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_70d8025a3e8ce565c80dfeb5c6dc66eb}{on\-Book\-Clear} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&listener, const Mama\-Msg $\ast$msg, const \hyperlink{classWombat_1_1MamdaOrderBookClear}{Mamda\-Order\-Book\-Clear} \&event, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&book)
+\begin{CompactList}\small\item\em Method invoked when an order book is cleared. \item\end{CompactList}\item 
+virtual void \hyperlink{classMamdaOrderBookDepthFilter_ae2a8192b2034af1d1b3d6ef71521e8a}{on\-Book\-Gap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \&listener, const Mama\-Msg $\ast$msg, const \hyperlink{classWombat_1_1MamdaOrderBookGap}{Mamda\-Order\-Book\-Gap} \&event, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&book)
+\begin{CompactList}\small\item\em Method invoked when a gap in order book updates is discovered. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMamdaOrderBookDepthFilter_d45bb83d3e4b75f23000ab10f753d6c5}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!MamdaOrderBookDepthFilter@{MamdaOrderBookDepthFilter}}
+\index{MamdaOrderBookDepthFilter@{MamdaOrderBookDepthFilter}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[MamdaOrderBookDepthFilter]{\setlength{\rightskip}{0pt plus 5cm}Mamda\-Order\-Book\-Depth\-Filter::Mamda\-Order\-Book\-Depth\-Filter (\hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em parent}, size\_\-t {\em depth})}}
+\label{classMamdaOrderBookDepthFilter_d45bb83d3e4b75f23000ab10f753d6c5}
+
+
+\hypertarget{classMamdaOrderBookDepthFilter_016e593f9247c58f54ff1fca80373e9b}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!~MamdaOrderBookDepthFilter@{$\sim$MamdaOrderBookDepthFilter}}
+\index{~MamdaOrderBookDepthFilter@{$\sim$MamdaOrderBookDepthFilter}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[$\sim$MamdaOrderBookDepthFilter]{\setlength{\rightskip}{0pt plus 5cm}virtual Mamda\-Order\-Book\-Depth\-Filter::$\sim$Mamda\-Order\-Book\-Depth\-Filter ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_016e593f9247c58f54ff1fca80373e9b}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMamdaOrderBookDepthFilter_60862fa9b9c5835445940630b5f982d6}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::add\-Handler (\hyperlink{classWombat_1_1MamdaOrderBookHandler}{Mamda\-Order\-Book\-Handler} $\ast$ {\em handler})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_60862fa9b9c5835445940630b5f982d6}
+
+
+Add a specialized order book handler. 
+
+Currently, only one handler can (and must) be registered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]The hadler registered to receive order book update callbacks. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamdaOrderBookListener_81c34135bae76175b72fed83c3a6325c}{Wombat::Mamda\-Order\-Book\-Listener}.\hypertarget{classMamdaOrderBookDepthFilter_699f621c1462b0787b6c1391bd48f32a}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!removeHandlers@{removeHandlers}}
+\index{removeHandlers@{removeHandlers}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[removeHandlers]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::remove\-Handlers ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_699f621c1462b0787b6c1391bd48f32a}
+
+
+Remove the reference of handlers from the internal list. 
+
+Memory is not freed. 
+
+Reimplemented from \hyperlink{classWombat_1_1MamdaOrderBookListener_ba3e661b148450a0865b07cf169a12b1}{Wombat::Mamda\-Order\-Book\-Listener}.\hypertarget{classMamdaOrderBookDepthFilter_8ea01fc66c28b7ac4dbb3939e340aad0}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!getOrderBook@{getOrderBook}}
+\index{getOrderBook@{getOrderBook}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[getOrderBook]{\setlength{\rightskip}{0pt plus 5cm}virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}$\ast$ Mamda\-Order\-Book\-Depth\-Filter::get\-Order\-Book () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_8ea01fc66c28b7ac4dbb3939e340aad0}
+
+
+Return the filtered orderbook. 
+
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamdaOrderBookListener_882be50b668154aed7f170dbb2f47d34}{Wombat::Mamda\-Order\-Book\-Listener}.\hypertarget{classMamdaOrderBookDepthFilter_c1e0b29a1272610fb3b425cafe70410c}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!getFullOrderBook@{getFullOrderBook}}
+\index{getFullOrderBook@{getFullOrderBook}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[getFullOrderBook]{\setlength{\rightskip}{0pt plus 5cm}virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}$\ast$ Mamda\-Order\-Book\-Depth\-Filter::get\-Full\-Order\-Book () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_c1e0b29a1272610fb3b425cafe70410c}
+
+
+Return the full depth orderbook. 
+
+\hypertarget{classMamdaOrderBookDepthFilter_0d514d92284c0fefa84201aae411111d}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_0d514d92284c0fefa84201aae411111d}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Reimplemented from \hyperlink{classWombat_1_1MamdaOrderBookListener_25b4001c57c2a140040baad9f84bbec4}{Wombat::Mamda\-Order\-Book\-Listener}.\hypertarget{classMamdaOrderBookDepthFilter_5d9d813f0c49a0afe232d333a46236c8}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!onBookRecap@{onBookRecap}}
+\index{onBookRecap@{onBookRecap}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[onBookRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::on\-Book\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em listener}, const Mama\-Msg $\ast$ {\em msg}, const \hyperlink{classWombat_1_1MamdaOrderBookComplexDelta}{Mamda\-Order\-Book\-Complex\-Delta} $\ast$ {\em delta}, const \hyperlink{classWombat_1_1MamdaOrderBookRecap}{Mamda\-Order\-Book\-Recap} \& {\em event}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em book})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_5d9d813f0c49a0afe232d333a46236c8}
+
+
+Method invoked when a full refresh of the order book for the security is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Start-of-day book state.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The order book listener that invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em delta}]Always NULL. Reserved for future use. \item[{\em event}]The order book recap event. \item[{\em book}]The current full book. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderBookHandler_2c353b638002894e89b98de5991f77ad}{Wombat::Mamda\-Order\-Book\-Handler}.\hypertarget{classMamdaOrderBookDepthFilter_f4fc478bf1306d3eb5af4f0278bfb198}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!onBookDelta@{onBookDelta}}
+\index{onBookDelta@{onBookDelta}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[onBookDelta]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::on\-Book\-Delta (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em listener}, const Mama\-Msg $\ast$ {\em msg}, const \hyperlink{classWombat_1_1MamdaOrderBookSimpleDelta}{Mamda\-Order\-Book\-Simple\-Delta} \& {\em event}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em book})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_f4fc478bf1306d3eb5af4f0278bfb198}
+
+
+Method invoked when a basic order book delta is reported. 
+
+A basic delta consists of one price levels (add/update/delete), which contains zero or one entries (add/update/delete). Some feeds do not provide order book entry information.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The Mamda\-Subscription handle. \item[{\em listener}]The order book listener that received the update. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Details of the delta event. \item[{\em book}]The current full book (after applying the delta). \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderBookHandler_b24be779d6029bfcc87ad85f469aa89f}{Wombat::Mamda\-Order\-Book\-Handler}.\hypertarget{classMamdaOrderBookDepthFilter_1816fe7b1f93ae44a94127c8995f7a26}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!onBookComplexDelta@{onBookComplexDelta}}
+\index{onBookComplexDelta@{onBookComplexDelta}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[onBookComplexDelta]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::on\-Book\-Complex\-Delta (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em listener}, const Mama\-Msg $\ast$ {\em msg}, const \hyperlink{classWombat_1_1MamdaOrderBookComplexDelta}{Mamda\-Order\-Book\-Complex\-Delta} \& {\em event}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em book})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_1816fe7b1f93ae44a94127c8995f7a26}
+
+
+Method invoked when an order book delta is reported. 
+
+A delta consists of one or more price levels (add/update/delete), each of which contains zero or more entries (add/update/delete). Some feeds do not provide order book entry information.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The Mamda\-Subscription handle. \item[{\em listener}]The order book listener that received the update. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Details of the the delta. \item[{\em book}]The current full book (after applying the delta). \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderBookHandler_eaeaeb1763785a609ba8552960acce8f}{Wombat::Mamda\-Order\-Book\-Handler}.\hypertarget{classMamdaOrderBookDepthFilter_70d8025a3e8ce565c80dfeb5c6dc66eb}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!onBookClear@{onBookClear}}
+\index{onBookClear@{onBookClear}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[onBookClear]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::on\-Book\-Clear (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em listener}, const Mama\-Msg $\ast$ {\em msg}, const \hyperlink{classWombat_1_1MamdaOrderBookClear}{Mamda\-Order\-Book\-Clear} \& {\em event}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em book})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_70d8025a3e8ce565c80dfeb5c6dc66eb}
+
+
+Method invoked when an order book is cleared. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The Mamda\-Subscription handle. \item[{\em listener}]The order book listener that caused the clear. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]The clear event. \item[{\em book}]The current state of the book (empty). \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderBookHandler_2035c156ec11491cb9b7af92a592f278}{Wombat::Mamda\-Order\-Book\-Handler}.\hypertarget{classMamdaOrderBookDepthFilter_ae2a8192b2034af1d1b3d6ef71521e8a}{
+\index{MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}!onBookGap@{onBookGap}}
+\index{onBookGap@{onBookGap}!MamdaOrderBookDepthFilter@{Mamda\-Order\-Book\-Depth\-Filter}}
+\subsubsection[onBookGap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mamda\-Order\-Book\-Depth\-Filter::on\-Book\-Gap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} \& {\em listener}, const Mama\-Msg $\ast$ {\em msg}, const \hyperlink{classWombat_1_1MamdaOrderBookGap}{Mamda\-Order\-Book\-Gap} \& {\em event}, const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em book})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classMamdaOrderBookDepthFilter_ae2a8192b2034af1d1b3d6ef71521e8a}
+
+
+Method invoked when a gap in order book updates is discovered. 
+
+It is usual for a recap to follow shortly after an order book gap is detected.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The Mamda\-Subscription handle. \item[{\em listener}]The order book listener that detected the gap. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Provides the sequence number gap range. \item[{\em book}]The current state of the book. \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderBookHandler_54d949ce0ddfe085be5c6112a5682cec}{Wombat::Mamda\-Order\-Book\-Handler}.

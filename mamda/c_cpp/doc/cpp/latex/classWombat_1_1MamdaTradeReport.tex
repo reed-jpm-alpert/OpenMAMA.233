@@ -1,0 +1,511 @@
+\hypertarget{classWombat_1_1MamdaTradeReport}{
+\section{Wombat::Mamda\-Trade\-Report Class Reference}
+\label{classWombat_1_1MamdaTradeReport}\index{Wombat::MamdaTradeReport@{Wombat::MamdaTradeReport}}
+}
+\hyperlink{classWombat_1_1MamdaTradeReport}{Mamda\-Trade\-Report} is an interface that provides access to fields related to a trade report.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Report.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Trade\-Report::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaTradeReport}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeReport_97a38026a45edb298ffe62530d43cde4}{get\-Trade\-Price} () const =0
+\begin{CompactList}\small\item\em Get the trade price. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeReport_167dd8f71093494ce5d0ff7a85739cbf}{get\-Trade\-Volume} () const =0
+\begin{CompactList}\small\item\em Get the volume of shares in the trade. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_eb865e0b7c57732356d925d532364c7b}{get\-Trade\-Part\-Id} () const =0
+\begin{CompactList}\small\item\em Get the participant identifier for the trade. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_01f6e34bc27e4c6a9d2262327c2961d7}{get\-Trade\-Qual} () const =0
+\begin{CompactList}\small\item\em Get the NYSE Technologies normalized trade qualifier. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_e904b58ff3ad3cb36442c4f1db2a7523}{get\-Trade\-Qual\-Native} () const =0
+\begin{CompactList}\small\item\em Get the native feed trade qualifier. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_ceb8234499a7ebd85378094dbed4705a}{get\-Side} () const =0
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_1ff93d3fe09098e58d436b2f273c1030}{get\-Side\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The Trade\-Side or Aggressor\-Side Field State. \item\end{CompactList}\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeReport_c9ed0e49599c96128f6be2a1e3390a33}{get\-Trade\-Sellers\-Sale\-Days} () const =0
+\begin{CompactList}\small\item\em Get the trade sellers sale days. \item\end{CompactList}\item 
+virtual char \hyperlink{classWombat_1_1MamdaTradeReport_5e97df5f0d331db50a07db5ebf9336da}{get\-Trade\-Stop\-Stock} () const =0
+\begin{CompactList}\small\item\em Get the trade stop stock indicator. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaTradeReport_ae1e4952c9fb7450300864c44c715637}{get\-Is\-Irregular} () const =0
+\begin{CompactList}\small\item\em Get whether the trade is irregular. \item\end{CompactList}\item 
+virtual mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamdaTradeReport_d4b975d041261a0dcca2e2413c25e72e}{get\-Order\-Id} () const =0
+\begin{CompactList}\small\item\em Get the order id, if available. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_76e8e93ea2a7f53fb2b0287572dbf7ec}{get\-Unique\-Id} () const =0
+\begin{CompactList}\small\item\em Get the unique ID. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_488ca9ba3b64fd6c0996e0df649c5834}{get\-Trade\-Action} () const =0
+\begin{CompactList}\small\item\em Get the trade action. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeReport_8bccbbb68ce93d26fd87db95f2f7ff26}{get\-Trade\-Id} () const =0
+\begin{CompactList}\small\item\em Get the trade id. \item\end{CompactList}\item 
+virtual char \hyperlink{classWombat_1_1MamdaTradeReport_e772189728321b1bd833baf28e387c15}{get\-Short\-Sale\-Circuit\-Breaker} () const =0
+\begin{CompactList}\small\item\em get the Short\-Sale\-Circuit\-Breaker \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_338b8a504dc519bff3fc7de0cd882423}{get\-Trade\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_3ce3d260e50a07bc6b9f93f8f866d973}{get\-Trade\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_3b5756a75180c823a4908d3d2b820d3a}{get\-Trade\-Part\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade part ID Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_902afe48248ed43e56d481ba755888b6}{get\-Trade\-Qual\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade qual Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_871557683cafde19e08e1a2e5c6f1f42}{get\-Trade\-Qual\-Native\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade quality native Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_da39a0b22fe34276bbf3fb4eefe510d3}{get\-Trade\-Sellers\-Sale\-Days\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade sellers sale days Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_cca5c5f38da9a0a129b2c8b386ead49b}{get\-Trade\-Stop\-Stock\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade stop stock Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_69578220fbe3f7892865d86384d35b4b}{get\-Is\-Irregular\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The is\-Irregular Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_544b8f3a730cfc1553bdc756372cd12b}{get\-Order\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The order ID Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_32722ba8f872d14f9790fd3869b17640}{get\-Unique\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The unique ID Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_c5344ba42657f2ba5a35c30240a384f1}{get\-Trade\-Action\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade action Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_9ff0c7bf7e478588bb42718123fc62ca}{get\-Trade\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade ID Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeReport_346b7f2e68f75aef22d4a0c8640f1bf4}{get\-Short\-Sale\-Circuit\-Breaker\-Field\-State} () const =0
+\item 
+virtual \hyperlink{classWombat_1_1MamdaTradeReport_ea6554151d67418f4865dc9ba3bf22b9}{$\sim$Mamda\-Trade\-Report} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeReport}{Mamda\-Trade\-Report} is an interface that provides access to fields related to a trade report. 
+
+This class is used for all trade reports, whether those trades qualify as regular or irregular trades. (A regular trade generally qualifies to update the official last price and intraday high/low prices.) 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeReport_ea6554151d67418f4865dc9ba3bf22b9}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!~MamdaTradeReport@{$\sim$MamdaTradeReport}}
+\index{~MamdaTradeReport@{$\sim$MamdaTradeReport}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[$\sim$MamdaTradeReport]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Report::$\sim$Mamda\-Trade\-Report ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_ea6554151d67418f4865dc9ba3bf22b9}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeReport_97a38026a45edb298ffe62530d43cde4}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradePrice@{getTradePrice}}
+\index{getTradePrice@{getTradePrice}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Report::get\-Trade\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_97a38026a45edb298ffe62530d43cde4}
+
+
+Get the trade price. 
+
+\begin{Desc}
+\item[Returns:]The monetary value of an individual share of the security at the time of the trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f2f5cd501bc1fcb6717a81c001004228}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_167dd8f71093494ce5d0ff7a85739cbf}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeVolume@{getTradeVolume}}
+\index{getTradeVolume@{getTradeVolume}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Report::get\-Trade\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_167dd8f71093494ce5d0ff7a85739cbf}
+
+
+Get the volume of shares in the trade. 
+
+\begin{Desc}
+\item[Returns:]The number of shares traded in a single transaction for an individual security. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_59830d5b7d9bf0df2e274f8f4ce49cc6}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_eb865e0b7c57732356d925d532364c7b}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradePartId@{getTradePartId}}
+\index{getTradePartId@{getTradePartId}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradePartId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Trade\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_eb865e0b7c57732356d925d532364c7b}
+
+
+Get the participant identifier for the trade. 
+
+\begin{Desc}
+\item[Returns:]Trade participant ID. This is typically an exchange ID or a market maker ID. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a9e5a20840963992b58ec19cf717cfab}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_01f6e34bc27e4c6a9d2262327c2961d7}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeQual@{getTradeQual}}
+\index{getTradeQual@{getTradeQual}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeQual]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Trade\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_01f6e34bc27e4c6a9d2262327c2961d7}
+
+
+Get the NYSE Technologies normalized trade qualifier. 
+
+\begin{Desc}
+\item[Returns:]Trade qualifier. A normalized set of qualifiers for the current trade for the security. This field may contain multiple string values, separated by the colon(:) character.\end{Desc}
+\begin{TabularC}{2}
+\hline
+{\bf Value}&{\bf Meaning} \\\hline
+Normal &Regular trade. A trade made without stated conditions is deemed regular way for settlement on the third $\ast$ business day following the transaction $\ast$ date.  \\\hline
+Acquisition &A transaction made on the Exchange as a result of an Exchange acquisition.  \\\hline
+Bunched &A trade representing an aggregate of two or more regular trades in a security occurring at the same price either simultaneously or within the same 60 second period, with no individual trade exceeding 10,000 shares.  \\\hline
+Cash &A transaction which calls for the delivery of securities and payment on the same day the trade takes place.  \\\hline
+Distribution &Sale of a large block of stock in such a manner that the price is not adversely affected.  \\\hline
+Bunched\-Sold &A bunched trade which is reported late  \\\hline
+Rule155 &To qualify as a 155 print, a specialist arranges for the sale of the block at one "clean-up" price or at the different price limits on his book. If the block is sold at a \char`\"{}clean-up\char`\"{} price, the specialist should execute at the same price all the executable buy orders on his book. The sale qualifier is only applicable for AMEX trades.  \\\hline
+Sold\-Last &Sold Last is used when a trade prints in sequence but is reported late or printed in conformance to the One or Two Point Rule.  \\\hline
+Next\-Day &A transaction which calls for delivery of securities on the first business day after the trade date.  \\\hline
+Opened &Indicates an opening transaction that is printed out of sequence or reported late or printed in conformance to the One or Two Point Rule.  \\\hline
+Prior\-Ref &An executed trade that relates to an obligation to trade at an earlier point in the trading day or that refer to a prior reference price. This may be the result of an order that was lost or misplaced or a Select\-Net order that was not executed on a timely basis.  \\\hline
+Seller &A Seller's option transaction is a special transaction which gives the seller the right to deliver the stock at any time within a specific period, ranging from not less than four calendar days to no more than 60 calendar days.  \\\hline
+Split\-Trade &An execution in two markets when the specialist or Market Maker in the market first receiving the order agrees to execute a portion of it at whatever price is realized in another market to which the balance of the order is forwarded for execution.  \\\hline
+Form\-T &See Pre\-Post\-Mkt. Currently, all feed handlers that post Form-T trades - except CTA - send this qualifier for Form-T trades. In the next major release, all fields will use Pre\-Post\-Mkt and Form\-T will be obsolete.  \\\hline
+Pre\-Post\-Mkt &A trade reported before or after the normal trade reporting day. This is also known as a Form-T trade. The volume of Form-T trades will be included in the calculation of total volume. The price information in Form-T trades will not be used to update high, low and last sale data for individual securities or Indices since they occur outside of normal trade reporting hours. Currently, all feed handlers that post Form-T trades - except CTA - send the \char`\"{}Form\-T\char`\"{} qualifier for Fot-T trades. In the next major release, all feed handlers will use Pre\-Post\-Mkt and Form\-T will be obsolete.  \\\hline
+Av\-Price &A trade where the price reported is based upon an average of the prices for transactions in a security during all or any portion of the trading day.  \\\hline
+Sold &Sold is used when a trade is printed (reported) out of sequence and at a time different from the actual transaction time.  \\\hline
+Adjusted &~  \\\hline
+Auto &A sale condition code that identifies a NYSE trade that has been automatically executed without the potential benefit of price improvement.   \\\hline
+Basket &~  \\\hline
+Cash\-Only &~  \\\hline
+Next\-Day\-Only &~  \\\hline
+Spec\-Terms &~  \\\hline
+Stopped &~  \\\hline
+CATS &~  \\\hline
+VCT &~  \\\hline
+Rule127 &~  \\\hline
+Burst\-Basket &A burst basket execution signifies a trade wherein the equity Specialists, acting in the aggregate as a market maker, purchase or sell the component stocks required for execution of a specific basket trade.  \\\hline
+Open\-Detail &Opening trade detail message. Sent by CTS only and is a duplicate report of an earlier trade. Note: since feed handler version 2.14.32, it is configurable whether these detail messages are published.  \\\hline
+Detail &Trade detail message. Sent by CTS only and is a duplicate report of an earlier trade. Note: since feed handler version 2.14.32, it is configurable whether these detail messages are published.  \\\hline
+Reserved &~  \\\hline
+Basket\-Cross &~  \\\hline
+Basket\-Index\-On\-Close &A basket index on close transaction signifies a trade involving paired basket orders,the execution of which is based on the closing value of the index. These trades are reported after the close when the index closing value is determined.  \\\hline
+Intermarket\-Sweep &Indicates to CTS data recipients that the execution price reflects the order instruction not to send the order to another market that may have a superior price.  \\\hline
+Yellow\-Flag &Regular trades reported during specific events as out of the ordinary.  \\\hline
+Market\-Center\-Open &~  \\\hline
+Market\-Center\-Close &~  \\\hline
+Unknown &~  \\\hline
+\end{TabularC}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0f03f8d8b20f08eab587e439a939d0fc}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_e904b58ff3ad3cb36442c4f1db2a7523}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeQualNative@{getTradeQualNative}}
+\index{getTradeQualNative@{getTradeQualNative}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeQualNative]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Trade\-Qual\-Native () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_e904b58ff3ad3cb36442c4f1db2a7523}
+
+
+Get the native feed trade qualifier. 
+
+\begin{Desc}
+\item[Returns:]Native trade qualifier (a.k.a. \char`\"{}sale condition\char`\"{}). Feed-specific trade qualifier code(s). This field is provided primarily for completeness and/or troubleshooting. \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaTradeReport_01f6e34bc27e4c6a9d2262327c2961d7}{get\-Trade\-Qual}. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7b01373c290fe46a0a1e00a861996a06}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_ceb8234499a7ebd85378094dbed4705a}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getSide@{getSide}}
+\index{getSide@{getSide}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getSide]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Side () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_ceb8234499a7ebd85378094dbed4705a}
+
+
+\begin{Desc}
+\item[Returns:]the Aggressor Side or Trade\-Side Trade\-Side \begin{itemize}
+\item 0 : No Trade\-Side is currently known/available. \item 1 or B : Buy \item 2 or S : Sell \begin{itemize}
+\end{itemize}
+\begin{itemize}
+\item 0 : No Aggressor\-Side is currently known/available. \item 1 or B : Buy \item 2 or S : Sell \begin{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e3cca817a27a4e6b9e5b699f548cd22a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_1ff93d3fe09098e58d436b2f273c1030}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getSideFieldState@{getSideFieldState}}
+\index{getSideFieldState@{getSideFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getSideFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Side\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_1ff93d3fe09098e58d436b2f273c1030}
+
+
+The Trade\-Side or Aggressor\-Side Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_9943001740bebfecd4801267dac6daca}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_c9ed0e49599c96128f6be2a1e3390a33}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeSellersSaleDays@{getTradeSellersSaleDays}}
+\index{getTradeSellersSaleDays@{getTradeSellersSaleDays}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeSellersSaleDays]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Report::get\-Trade\-Sellers\-Sale\-Days () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_c9ed0e49599c96128f6be2a1e3390a33}
+
+
+Get the trade sellers sale days. 
+
+\begin{Desc}
+\item[Returns:]Seller's sale days. Used when the trade qualifier is \char`\"{}Seller\char`\"{}. Specifies the number of days that may elapse before delivery of the security. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_719ed8fafd8f299b274ba2f11981b3ba}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_5e97df5f0d331db50a07db5ebf9336da}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeStopStock@{getTradeStopStock}}
+\index{getTradeStopStock@{getTradeStopStock}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeStopStock]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Trade\-Report::get\-Trade\-Stop\-Stock () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_5e97df5f0d331db50a07db5ebf9336da}
+
+
+Get the trade stop stock indicator. 
+
+\begin{Desc}
+\item[Returns:]Stopped stock indicator. Condition related to certain NYSE trading rules. This is not related to a halted security status. (0 == N/A; 1 == Applicable) \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2d4333ba424d00cbda5e88a846ef3c8c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_ae1e4952c9fb7450300864c44c715637}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getIsIrregular@{getIsIrregular}}
+\index{getIsIrregular@{getIsIrregular}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getIsIrregular]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Trade\-Report::get\-Is\-Irregular () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_ae1e4952c9fb7450300864c44c715637}
+
+
+Get whether the trade is irregular. 
+
+\begin{Desc}
+\item[Returns:]Whether or not the trade qualifies as an irregular trade. In general, only \char`\"{}regular\char`\"{} trades qualify to update the official last price and high/low prices. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_1a5b54d3d63c62bf8720cc29dd40b25a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_d4b975d041261a0dcca2e2413c25e72e}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getOrderId@{getOrderId}}
+\index{getOrderId@{getOrderId}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getOrderId]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u64\_\-t Wombat::Mamda\-Trade\-Report::get\-Order\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_d4b975d041261a0dcca2e2413c25e72e}
+
+
+Get the order id, if available. 
+
+\begin{Desc}
+\item[Returns:]The trade message unique order id number (if available). \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_46c9913f3bc9f7e31f07afa76eaed7ff}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_76e8e93ea2a7f53fb2b0287572dbf7ec}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getUniqueId@{getUniqueId}}
+\index{getUniqueId@{getUniqueId}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getUniqueId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Unique\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_76e8e93ea2a7f53fb2b0287572dbf7ec}
+
+
+Get the unique ID. 
+
+\begin{Desc}
+\item[Returns:]The unique ID \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_997416236d779434a70ff52427ac9b8f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_488ca9ba3b64fd6c0996e0df649c5834}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeAction@{getTradeAction}}
+\index{getTradeAction@{getTradeAction}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeAction]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Trade\-Action () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_488ca9ba3b64fd6c0996e0df649c5834}
+
+
+Get the trade action. 
+
+\begin{Desc}
+\item[Returns:]The trade action \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_9201b4749efd0f17dc42abf5c2bc2060}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_8bccbbb68ce93d26fd87db95f2f7ff26}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeId@{getTradeId}}
+\index{getTradeId@{getTradeId}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Report::get\-Trade\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_8bccbbb68ce93d26fd87db95f2f7ff26}
+
+
+Get the trade id. 
+
+\begin{Desc}
+\item[Returns:]the trade id \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_4dcba79f4a1e795b26c382b80b6f18b5}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_e772189728321b1bd833baf28e387c15}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}}
+\index{getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getShortSaleCircuitBreaker]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Trade\-Report::get\-Short\-Sale\-Circuit\-Breaker () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_e772189728321b1bd833baf28e387c15}
+
+
+get the Short\-Sale\-Circuit\-Breaker 
+
+\begin{Desc}
+\item[Returns:]Short\-Sale\-Circuit\-Breaker \begin{itemize}
+\item return values: \item Blank: Short Sale Restriction Not in Effect. \item A: Short Sale Restriction Activiated. \item C: Short Sale Restriction Continued. \item D: Sale Restriction Deactivated. \item E: Sale Restriction in Effect. \end{itemize}
+\end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_8d5969ac94475afb4eeeb8b252106e6f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_338b8a504dc519bff3fc7de0cd882423}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradePriceFieldState@{getTradePriceFieldState}}
+\index{getTradePriceFieldState@{getTradePriceFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_338b8a504dc519bff3fc7de0cd882423}
+
+
+The trade price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f1dc31d1863ca41868f8b4a384c7ac46}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_3ce3d260e50a07bc6b9f93f8f866d973}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeVolumeFieldState@{getTradeVolumeFieldState}}
+\index{getTradeVolumeFieldState@{getTradeVolumeFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_3ce3d260e50a07bc6b9f93f8f866d973}
+
+
+The trade volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5fa909b1c87c6380e204dba43ab9baa7}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_3b5756a75180c823a4908d3d2b820d3a}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradePartIdFieldState@{getTradePartIdFieldState}}
+\index{getTradePartIdFieldState@{getTradePartIdFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradePartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_3b5756a75180c823a4908d3d2b820d3a}
+
+
+The trade part ID Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e386075d2c6a4d5f33d25e820ac81559}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_902afe48248ed43e56d481ba755888b6}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeQualFieldState@{getTradeQualFieldState}}
+\index{getTradeQualFieldState@{getTradeQualFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_902afe48248ed43e56d481ba755888b6}
+
+
+The trade qual Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_958ea55776c3afa0a572b8819d9c04c8}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_871557683cafde19e08e1a2e5c6f1f42}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeQualNativeFieldState@{getTradeQualNativeFieldState}}
+\index{getTradeQualNativeFieldState@{getTradeQualNativeFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeQualNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Qual\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_871557683cafde19e08e1a2e5c6f1f42}
+
+
+The trade quality native Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2e60dd06819139125a4812e84d5803c0}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_da39a0b22fe34276bbf3fb4eefe510d3}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeSellersSaleDaysFieldState@{getTradeSellersSaleDaysFieldState}}
+\index{getTradeSellersSaleDaysFieldState@{getTradeSellersSaleDaysFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeSellersSaleDaysFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Sellers\-Sale\-Days\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_da39a0b22fe34276bbf3fb4eefe510d3}
+
+
+The trade sellers sale days Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2090b9605a4191bf78b5cef58c7e1fbe}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_cca5c5f38da9a0a129b2c8b386ead49b}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeStopStockFieldState@{getTradeStopStockFieldState}}
+\index{getTradeStopStockFieldState@{getTradeStopStockFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeStopStockFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Stop\-Stock\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_cca5c5f38da9a0a129b2c8b386ead49b}
+
+
+The trade stop stock Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_ba6a73453e3956f883f40b5ae7d127d0}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_69578220fbe3f7892865d86384d35b4b}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getIsIrregularFieldState@{getIsIrregularFieldState}}
+\index{getIsIrregularFieldState@{getIsIrregularFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getIsIrregularFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Is\-Irregular\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_69578220fbe3f7892865d86384d35b4b}
+
+
+The is\-Irregular Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f8e874c8dc039fb83f1e9f4a8bdcbc6f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_544b8f3a730cfc1553bdc756372cd12b}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getOrderIdFieldState@{getOrderIdFieldState}}
+\index{getOrderIdFieldState@{getOrderIdFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getOrderIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Order\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_544b8f3a730cfc1553bdc756372cd12b}
+
+
+The order ID Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f0f77145439c12c8bae3640307b50401}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_32722ba8f872d14f9790fd3869b17640}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getUniqueIdFieldState@{getUniqueIdFieldState}}
+\index{getUniqueIdFieldState@{getUniqueIdFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getUniqueIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Unique\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_32722ba8f872d14f9790fd3869b17640}
+
+
+The unique ID Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_b0093f9dcf1bb03c17beb2915518a179}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_c5344ba42657f2ba5a35c30240a384f1}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeActionFieldState@{getTradeActionFieldState}}
+\index{getTradeActionFieldState@{getTradeActionFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeActionFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Action\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_c5344ba42657f2ba5a35c30240a384f1}
+
+
+The trade action Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_bf9d994153ef2fa8b823517c2a061a28}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_9ff0c7bf7e478588bb42718123fc62ca}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getTradeIdFieldState@{getTradeIdFieldState}}
+\index{getTradeIdFieldState@{getTradeIdFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getTradeIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Trade\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_9ff0c7bf7e478588bb42718123fc62ca}
+
+
+The trade ID Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2475e2a2f9dd0cbd3425b64f84beb258}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeReport_346b7f2e68f75aef22d4a0c8640f1bf4}{
+\index{Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}!getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}}
+\index{getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}!Wombat::MamdaTradeReport@{Wombat::Mamda\-Trade\-Report}}
+\subsubsection[getShortSaleCircuitBreakerFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Report::get\-Short\-Sale\-Circuit\-Breaker\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeReport_346b7f2e68f75aef22d4a0c8640f1bf4}
+
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2630b69a9a27a1772e3f4315c254a466}{Wombat::Mamda\-Trade\-Listener}.

@@ -1,0 +1,1554 @@
+\hypertarget{classWombat_1_1MamdaQuoteListener}{
+\section{Wombat::Mamda\-Quote\-Listener Class Reference}
+\label{classWombat_1_1MamdaQuoteListener}\index{Wombat::MamdaQuoteListener@{Wombat::MamdaQuoteListener}}
+}
+\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} is a class that specializes in handling quote updates.  
+
+
+{\tt \#include $<$Mamda\-Quote\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Quote\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.979592cm]{classWombat_1_1MamdaQuoteListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaQuoteListener_56668574b9fb979163182cda591364e2}{Mamda\-Quote\-Listener} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaQuoteListener_163781eff5c0f36fac9f5288ca1a6929}{$\sim$Mamda\-Quote\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaQuoteListener_4576a9bd2d264d2072a9825eabc348f1}{add\-Handler} (\hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} $\ast$handler)
+\item 
+void \hyperlink{classWombat_1_1MamdaQuoteListener_7a4ec42c2a90846db4f55e74d41e456c}{process\-Pos\-Dup\-And\-Out\-Of\-Seq\-As\-Transient} (bool tf)
+\item 
+void \hyperlink{classWombat_1_1MamdaQuoteListener_1ab499ae23c87f687a7b27d4de0a52df}{resolve\-Possibly\-Duplicate} (bool tf)
+\item 
+void \hyperlink{classWombat_1_1MamdaQuoteListener_7daf84de8c0a48b6a227ef4f2c819991}{use\-Pos\-Dup\-And\-Out\-Of\-Seq\-Handlers} (bool tf)
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_e94788daaae88602911d3b1a5b9ae3aa}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the instruments string symbol. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_7d1a662d35580eaf5d03260c977999a6}{get\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the participant identifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_3632c2277d9c0a6bf0882f484966f71c}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_367521366aaadbe118e70ab32508d7c4}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_4aa61f82eb9452a38d2c483a5626b8b1}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_3937e363870aeca07238a7253653ee6a}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time. \item\end{CompactList}\item 
+const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaQuoteListener_3350ee73b06ee1e205b280b070cea298}{get\-Msg\-Qual} () const 
+\begin{CompactList}\small\item\em Get the message qualifier. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_1ba9fa01139733d0011380af2ae8bd96}{get\-Pub\-Id} () const 
+\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_af4b7f010c56303476dc4de64fa0b3f4}{get\-Bid\-Price} () const 
+\begin{CompactList}\small\item\em Get the quote bid price. \item\end{CompactList}\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_578f45a1ddaa18b8447cda08b943153e}{get\-Bid\-Size} () const 
+\begin{CompactList}\small\item\em Get the quote bid size. \item\end{CompactList}\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_3f4909f6e25bef5324df4c4fa89bda74}{get\-Bid\-Depth} () const 
+\begin{CompactList}\small\item\em Get the quote bid depth. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_0256d6b1b2181919a00cf6d6e903b014}{get\-Bid\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the quote bid participant identifier. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_0c5bde1b3a4bfafdaef20c99c0c63c07}{get\-Bid\-Close\-Price} () const 
+\begin{CompactList}\small\item\em Get the closing bid price. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_8b67bfdd143925309c46e4bb86a5a53f}{get\-Bid\-Close\-Date} () const 
+\begin{CompactList}\small\item\em Get the bid closing date. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_637f9ad1c4a4523725dd5b9f12da169e}{get\-Bid\-Prev\-Close\-Price} () const 
+\begin{CompactList}\small\item\em Get the previous bid closing price. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_e1cbe538d859cde30b322ca78616df43}{get\-Bid\-Prev\-Close\-Date} () const 
+\begin{CompactList}\small\item\em Get the previous bid closing date. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_3f80653343c9fef6d788cf0ab4e33de7}{get\-Bid\-High} () const 
+\begin{CompactList}\small\item\em Get the high bid price for the day. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_8e61cef3c5d211789ec168c0d8866f18}{get\-Bid\-Low} () const 
+\begin{CompactList}\small\item\em Get the low bid price for the day. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_b4c49376d3d07db48065adc6d74da196}{get\-Ask\-Price} () const 
+\begin{CompactList}\small\item\em Get the quote ask price. \item\end{CompactList}\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_4808439461507148c55e678a3dffbb5d}{get\-Ask\-Size} () const 
+\begin{CompactList}\small\item\em Get the quote ask size. \item\end{CompactList}\item 
+mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_4bc38582299115bc9d45411e4fabc76d}{get\-Ask\-Depth} () const 
+\begin{CompactList}\small\item\em Get the quote ask depth. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_b8a1c5463eb9ebf89fc402c32e2c81c7}{get\-Ask\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the quote ask participant identifier. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_1c6e2936fa8677578ee30e6a50ee29bf}{get\-Ask\-Close\-Price} () const 
+\begin{CompactList}\small\item\em Get the closing ask price. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_3454bc5865c264f87778000ed9348f91}{get\-Ask\-Close\-Date} () const 
+\begin{CompactList}\small\item\em Get the ask quote closing date. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_e0afe79ab166febbcf94861365dc31c7}{get\-Ask\-Prev\-Close\-Price} () const 
+\begin{CompactList}\small\item\em Get the previous ask closing price. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_58dfc1cbbf19d48e01d51ee715256c15}{get\-Ask\-Prev\-Close\-Date} () const 
+\begin{CompactList}\small\item\em Get the previous ask closing date. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_44860382a77a09c7fcca4bcd2e92e1ae}{get\-Ask\-High} () const 
+\begin{CompactList}\small\item\em Get the high ask price for the day. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_5c3d63363fd9894fc2949fd769b3af00}{get\-Ask\-Low} () const 
+\begin{CompactList}\small\item\em Get the low ask price for the day. \item\end{CompactList}\item 
+const Mama\-Price \& \hyperlink{classWombat_1_1MamdaQuoteListener_b74788d3c90fce551bab93ed062a0458}{get\-Quote\-Mid\-Price} () const 
+\begin{CompactList}\small\item\em Get the quote mid price. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_85066bf1980233f52a8db81584537edf}{get\-Quote\-Count} () const 
+\begin{CompactList}\small\item\em Get the quote count. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_e33ca4e1fa76fb882185676c0d865be7}{get\-Quote\-Qual\-Str} () const 
+\begin{CompactList}\small\item\em Get the quote qualifiers. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_b7ff05baca5f30eb44a863e2bed6ce1b}{get\-Quote\-Qual\-Native} () const 
+\begin{CompactList}\small\item\em Get the native feed quote qualifier. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_fa0883ea81d5b2286d1014616407b690}{get\-Event\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em Get the event sequence number. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_3d5fbd8aa814552de16c665b3eca1dfc}{get\-Event\-Time} () const 
+\begin{CompactList}\small\item\em Get the event time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_b7fa56da5969989fe36247d8e8d32f3f}{get\-Quote\-Date} () const 
+\begin{CompactList}\small\item\em Get the quote date. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_d54593507488bdf2f07f532c4eb00549}{get\-Begin\-Gap\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em The starting sequence number of detected missing quotes based on the quote count. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_bc314f778476b46c392f6a775c3a9d61}{get\-End\-Gap\-Seq\-Num} () const 
+\begin{CompactList}\small\item\em The end sequence number of detected missing quotes based on the quote count. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaQuoteListener_3f4102824e3e3d8a0032c0978067387f}{get\-Short\-Sale\-Bid\-Tick} () const 
+\begin{CompactList}\small\item\em NASDAQ Bid Tick Indicator for Short Sale Rule Compliance. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_2b0b0dd373fe54f67149a708ee147e79}{get\-Ask\-Time} () const 
+\begin{CompactList}\small\item\em Get the quote ask time. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaQuoteListener_467043c393ad5906990c6c90c777e56b}{get\-Bid\-Time} () const 
+\begin{CompactList}\small\item\em Get the quote bid time. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_fac643c6fb9ad15e2d443d6a03304dfe}{get\-Ask\-Indicator} () const 
+\begin{CompactList}\small\item\em Get the quote ask indicator. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_2ac1e2dabc677e93e414cf0c1d1fa94f}{get\-Bid\-Indicator} () const 
+\begin{CompactList}\small\item\em Get the quote bid indicator. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_f1cf490659772cef488d7207b3587958}{get\-Ask\-Update\-Count} () const 
+\begin{CompactList}\small\item\em Get the quote ask update count. \item\end{CompactList}\item 
+mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaQuoteListener_d9c60e9325eaaa4ae2b5af91201dfb3f}{get\-Bid\-Update\-Count} () const 
+\begin{CompactList}\small\item\em Get the quote bid update count. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaQuoteListener_49a6a64974327a037d1470cf433d93e0}{get\-Ask\-Yield} () const 
+\begin{CompactList}\small\item\em Get the quote ask yield. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaQuoteListener_17999949e20889d0d319e71874949d25}{get\-Bid\-Yield} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_9aa5070318fdfb0cc239fb6f11e286c0}{get\-Ask\-Sizes\-List} () const 
+\begin{CompactList}\small\item\em Get the ask sizes list. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaQuoteListener_93be6aa13008fc17858aafac4d212eb5}{get\-Bid\-Sizes\-List} () const 
+\begin{CompactList}\small\item\em Get the bid sizes list. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaQuoteListener_2638f27bca3f6fa7c673e5b6924e3842}{get\-Short\-Sale\-Circuit\-Breaker} () const 
+\begin{CompactList}\small\item\em get the Short\-Sale\-Circuit\-Breaker \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_e5281f487264bda71fde9182921d6ae5}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_edb910c741c98a43134d0abcb325079e}{get\-Bid\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_00ecbc2964d5439e77d04ffc2d00d9e9}{get\-Bid\-Size\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_f9ff48ba9ea68b551b07e18ebef77a51}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the participant identifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_50550dbdc63d6a518052710d8414387c}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_79f601394c430d4883bcb41f0b470b29}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_35e889726482c3d6865c20adfd311e0b}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_751c64ca7bad56ffc99ca72e1494fb01}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_5c9caa111b19d3141eb64767b3e82ba1}{get\-Pub\-Id\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_84d03b5c192d75a4f5d6806028203c2e}{get\-Msg\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the message qualifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_98ff1dc2bd71e67918d73b21f76046bb}{get\-Pub\-Id\-Modified} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_98c0e8e6190f6cb27684fd9abcf4a356}{get\-Bid\-Depth\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_01e681d0b51718516807df702714f7ba}{get\-Bid\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_168cfd897d5c3f532d49e36c0e380db3}{get\-Bid\-Close\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the closing bid price field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_a61f3b17ec3755be6696abb38db5d65e}{get\-Bid\-Close\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_71d4b27da209e537018ed78be16b9b35}{get\-Bid\-Prev\-Close\-Price\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_03a1620ee6559319e5d24a9519f9ba83}{get\-Bid\-Prev\-Close\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_8c2949e6f90e88d5d2fcabebf0c5e173}{get\-Bid\-High\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_d35cb68b55f7b1bef90b4b9097958c62}{get\-Bid\-Low\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_28dd174c3b718a3def1d09b04ab68577}{get\-Ask\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_4e3d063324f15dacfaf2eec0f7f31e71}{get\-Ask\-Size\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_f43a394a5e090162a80b749f682ecc38}{get\-Ask\-Depth\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_9208a03480064d6bd80ed3b95136c752}{get\-Ask\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_a6dcf6a065420d6fdf9d5e07093ed603}{get\-Ask\-Close\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the closing bid price field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_b9c4ee5e4eda57e1d1c127adc37e544e}{get\-Ask\-Close\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_c49f1d6608af00cc869839845491cd23}{get\-Ask\-Prev\-Close\-Price\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_2c70b33f8a62de075ddc02e953ee199b}{get\-Ask\-Prev\-Close\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_eeafa59d487408997b68812a8c6686e2}{get\-Ask\-High\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_eaf6f8cbb1ca477e3d4ffedb4753e105}{get\-Ask\-Low\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_19d19b0f64db3586e14b88f4a502ecbf}{get\-Quote\-Mid\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_3b4f752b2a7b92e5177b1d19abc1606e}{get\-Quote\-Count\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_90a6df719e3f391f19edf4796f947b35}{get\-Quote\-Qual\-Str\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_9c5a520a83919f48b66dc8989d509c4c}{get\-Quote\-Qual\-Native\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the native feed quote qualifier field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_14657763833e473324025f3093119656}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event sequence number field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_b401d95157253e35d0465c5cdb4f7da0}{get\-Event\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the event time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_bbf7249c368d73feb54836bb02a7269a}{get\-Quote\-Date\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote date field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_7b146afc82cbcba47503e2720fd4ac5e}{get\-Begin\-Gap\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_65056fc3d3db0cb1eef24134de986b33}{get\-End\-Gap\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_35f256d26e13d0dc0302c256567f54ba}{get\-Short\-Sale\-Bid\-Tick\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the short sale bid tick field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_355651d7e3a9641c607fa3e82ce8e833}{get\-Ask\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote ask time field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_a8d10456d404dc1ed3fe7231e89a62b3}{get\-Bid\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid time field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_20c6b7c6cf1359fdd184a7d83bc93521}{get\-Ask\-Indicator\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote ask indicator field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_276b02c48efaa043e0d394569fe68a02}{get\-Bid\-Indicator\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid indicator field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_a9d06f74666624d69ff4e6303a626532}{get\-Ask\-Update\-Count\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote ask update count field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_94564b543817c0a2c9a0711ae7e63ad5}{get\-Bid\-Update\-Count\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid update count field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_94700f1e9995a69f5005efce5dc368d1}{get\-Ask\-Yield\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote ask yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_fbf8ab1785c570733df4e0790947e489}{get\-Bid\-Yield\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the quote bid yield field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_b943a6dc805ddb2d213d60539538d290}{get\-Ask\-Sizes\-List\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the ask sizes list field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_1b8e1f6e95a20180b0f69df8fb9fdced}{get\-Bid\-Sizes\-List\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the bid sizes list field\-State. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaQuoteListener_741a0cdce0ceb5247ec54a883b265374}{get\-Short\-Sale\-Circuit\-Breaker\-Field\-State} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteListener_ecb41b49b757309bc1738e23d087bd25}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaQuoteListener_7d77206089991983a9fbaafc13be9cdf}{assert\-Equal} (\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} $\ast$listener)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} is a class that specializes in handling quote updates. 
+
+Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} interface and will be delivered notifications for quotes and quote closing prices. An obvious application for this MAMDA class is any kind of quote tick capture application.
+
+Note: The \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} class caches quote-related field values. Among other reasons, caching of these fields makes it possible to provide complete quote-related callbacks, even when the publisher (e.g., feed handler) is only publishing deltas containing modified fields.
+
+\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} should initialize the \hyperlink{classWombat_1_1MamdaQuoteFields}{Mamda\-Quote\-Fields} class prior to receiving the first message by calling \hyperlink{classWombat_1_1MamdaQuoteFields_b862fe0cd2d5874ef65f7f25703df471}{Mamda\-Quote\-Fields::set\-Dictionary()} with a valid dictionary object which contains Quote related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteListener_56668574b9fb979163182cda591364e2}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!MamdaQuoteListener@{MamdaQuoteListener}}
+\index{MamdaQuoteListener@{MamdaQuoteListener}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[MamdaQuoteListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Quote\-Listener::Mamda\-Quote\-Listener ()}}
+\label{classWombat_1_1MamdaQuoteListener_56668574b9fb979163182cda591364e2}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_163781eff5c0f36fac9f5288ca1a6929}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!~MamdaQuoteListener@{$\sim$MamdaQuoteListener}}
+\index{~MamdaQuoteListener@{$\sim$MamdaQuoteListener}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[$\sim$MamdaQuoteListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Quote\-Listener::$\sim$Mamda\-Quote\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_163781eff5c0f36fac9f5288ca1a6929}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteListener_4576a9bd2d264d2072a9825eabc348f1}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Quote\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaQuoteListener_4576a9bd2d264d2072a9825eabc348f1}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_7a4ec42c2a90846db4f55e74d41e456c}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!processPosDupAndOutOfSeqAsTransient@{processPosDupAndOutOfSeqAsTransient}}
+\index{processPosDupAndOutOfSeqAsTransient@{processPosDupAndOutOfSeqAsTransient}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[processPosDupAndOutOfSeqAsTransient]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Quote\-Listener::process\-Pos\-Dup\-And\-Out\-Of\-Seq\-As\-Transient (bool {\em tf})}}
+\label{classWombat_1_1MamdaQuoteListener_7a4ec42c2a90846db4f55e74d41e456c}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_1ab499ae23c87f687a7b27d4de0a52df}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!resolvePossiblyDuplicate@{resolvePossiblyDuplicate}}
+\index{resolvePossiblyDuplicate@{resolvePossiblyDuplicate}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[resolvePossiblyDuplicate]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Quote\-Listener::resolve\-Possibly\-Duplicate (bool {\em tf})}}
+\label{classWombat_1_1MamdaQuoteListener_1ab499ae23c87f687a7b27d4de0a52df}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_7daf84de8c0a48b6a227ef4f2c819991}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!usePosDupAndOutOfSeqHandlers@{usePosDupAndOutOfSeqHandlers}}
+\index{usePosDupAndOutOfSeqHandlers@{usePosDupAndOutOfSeqHandlers}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[usePosDupAndOutOfSeqHandlers]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Quote\-Listener::use\-Pos\-Dup\-And\-Out\-Of\-Seq\-Handlers (bool {\em tf})}}
+\label{classWombat_1_1MamdaQuoteListener_7daf84de8c0a48b6a227ef4f2c819991}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_e94788daaae88602911d3b1a5b9ae3aa}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_e94788daaae88602911d3b1a5b9ae3aa}
+
+
+Get the instruments string symbol. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_8783b136a1305d21c578ced8618c090b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_7d1a662d35580eaf5d03260c977999a6}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_7d1a662d35580eaf5d03260c977999a6}
+
+
+Get the participant identifier. 
+
+\begin{Desc}
+\item[Returns:]Participant ID. This may be an exchange identifier, a market maker ID, etc., or NULL (if this is not related to any specific participant). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_94e531c6ae9ae7798725db14facbd6e2}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_3632c2277d9c0a6bf0882f484966f71c}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3632c2277d9c0a6bf0882f484966f71c}
+
+
+Get the source time. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_60b5d51f3799c4762090505ef5b213e9}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_367521366aaadbe118e70ab32508d7c4}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_367521366aaadbe118e70ab32508d7c4}
+
+
+Get the activity time. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b3810afc69474ef3b192ee4c9307e714}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_4aa61f82eb9452a38d2c483a5626b8b1}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_4aa61f82eb9452a38d2c483a5626b8b1}
+
+
+Get the line time. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3fcc26fa1a6446bcec12b11ac74ed26d}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_3937e363870aeca07238a7253653ee6a}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3937e363870aeca07238a7253653ee6a}
+
+
+Get the send time. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b0602a83bec20cd8b341ec866ff3bffa}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_3350ee73b06ee1e205b280b070cea298}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Msg\-Qual\& Wombat::Mamda\-Quote\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3350ee73b06ee1e205b280b070cea298}
+
+
+Get the message qualifier. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_675ce8f1de581548426335423d6b3864}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_1ba9fa01139733d0011380af2ae8bd96}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getPubId@{getPubId}}
+\index{getPubId@{getPubId}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getPubId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Pub\-Id () const}}
+\label{classWombat_1_1MamdaQuoteListener_1ba9fa01139733d0011380af2ae8bd96}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_af4b7f010c56303476dc4de64fa0b3f4}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPrice@{getBidPrice}}
+\index{getBidPrice@{getBidPrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_af4b7f010c56303476dc4de64fa0b3f4}
+
+
+Get the quote bid price. 
+
+\begin{Desc}
+\item[Returns:]Bid price. The highest price that the representative party/group is willing to pay to buy the security. For most feeds, this size is represented in round lots. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_af6014e4342076750ed12bcb4cefe62d}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_578f45a1ddaa18b8447cda08b943153e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidSize@{getBidSize}}
+\index{getBidSize@{getBidSize}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidSize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t Wombat::Mamda\-Quote\-Listener::get\-Bid\-Size () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_578f45a1ddaa18b8447cda08b943153e}
+
+
+Get the quote bid size. 
+
+\begin{Desc}
+\item[Returns:]Total share size available for the current bid price. Note: many feeds provide this size in terms of round lots. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_75acf46a72e24b7d535bdcc4d495566a}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_3f4909f6e25bef5324df4c4fa89bda74}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidDepth@{getBidDepth}}
+\index{getBidDepth@{getBidDepth}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidDepth]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t Wombat::Mamda\-Quote\-Listener::get\-Bid\-Depth () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3f4909f6e25bef5324df4c4fa89bda74}
+
+
+Get the quote bid depth. 
+
+\begin{Desc}
+\item[Returns:]The total size available at the current best bid price. Only supported by some exchanges. The total size may differ from the \char`\"{}best\char`\"{} size in that the total may be aggregated from multiple sources. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_3f27ce9e3648fbacc6cfdd4cb19c4f2c}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_0256d6b1b2181919a00cf6d6e903b014}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPartId@{getBidPartId}}
+\index{getBidPartId@{getBidPartId}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Bid\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_0256d6b1b2181919a00cf6d6e903b014}
+
+
+Get the quote bid participant identifier. 
+
+`
+
+\begin{Desc}
+\item[Returns:]The identifier of the market participant (e.g. exchange or market maker) contributing the bid price field. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_b48217f292612f65d8a0ab93954a223c}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_0c5bde1b3a4bfafdaef20c99c0c63c07}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidClosePrice@{getBidClosePrice}}
+\index{getBidClosePrice@{getBidClosePrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidClosePrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_0c5bde1b3a4bfafdaef20c99c0c63c07}
+
+
+Get the closing bid price. 
+
+\begin{Desc}
+\item[Returns:]Today's closing bid price, after the market has closed and the stock has traded today. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteClosing_49a102e8abafb806713366521b9adeea}{Wombat::Mamda\-Quote\-Closing}.\hypertarget{classWombat_1_1MamdaQuoteListener_8b67bfdd143925309c46e4bb86a5a53f}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidCloseDate@{getBidCloseDate}}
+\index{getBidCloseDate@{getBidCloseDate}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidCloseDate]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Close\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_8b67bfdd143925309c46e4bb86a5a53f}
+
+
+Get the bid closing date. 
+
+\begin{Desc}
+\item[Returns:]Date of the Bid\-Close\-Price, if that value is non-zero. This is always the most recent day that the market was open, including today. This is different to Bid\-Prev\-Close\-Date. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_fe853f4d35ca2a5c464110529c97c20f}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_637f9ad1c4a4523725dd5b9f12da169e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPrevClosePrice@{getBidPrevClosePrice}}
+\index{getBidPrevClosePrice@{getBidPrevClosePrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPrevClosePrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Prev\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_637f9ad1c4a4523725dd5b9f12da169e}
+
+
+Get the previous bid closing price. 
+
+\begin{Desc}
+\item[Returns:]The previous closing price, prior to any trade today. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_5a0ba795de4b02302093d082484030f8}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_e1cbe538d859cde30b322ca78616df43}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPrevCloseDate@{getBidPrevCloseDate}}
+\index{getBidPrevCloseDate@{getBidPrevCloseDate}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPrevCloseDate]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Prev\-Close\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_e1cbe538d859cde30b322ca78616df43}
+
+
+Get the previous bid closing date. 
+
+\begin{Desc}
+\item[Returns:]Date of the previous closing price, prior to any trade today. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_2695af7f24f5782cf586e354eefe41fe}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_3f80653343c9fef6d788cf0ab4e33de7}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidHigh@{getBidHigh}}
+\index{getBidHigh@{getBidHigh}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidHigh]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-High () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3f80653343c9fef6d788cf0ab4e33de7}
+
+
+Get the high bid price for the day. 
+
+\begin{Desc}
+\item[Returns:]High bid price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_c8ebabdee903b477922310050931ced6}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_8e61cef3c5d211789ec168c0d8866f18}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidLow@{getBidLow}}
+\index{getBidLow@{getBidLow}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidLow]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Low () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_8e61cef3c5d211789ec168c0d8866f18}
+
+
+Get the low bid price for the day. 
+
+\begin{Desc}
+\item[Returns:]Low bid price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_8ee3dce6e5aab4ef5219e3bacb98798d}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_b4c49376d3d07db48065adc6d74da196}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPrice@{getAskPrice}}
+\index{getAskPrice@{getAskPrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b4c49376d3d07db48065adc6d74da196}
+
+
+Get the quote ask price. 
+
+\begin{Desc}
+\item[Returns:]Ask price. The lowest price that the representative party/group is willing to take to sell the security. For most feeds, this size is represented in round lots. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_59c673bb5940ecc1b3096a7e523eaf2f}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_4808439461507148c55e678a3dffbb5d}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskSize@{getAskSize}}
+\index{getAskSize@{getAskSize}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskSize]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t Wombat::Mamda\-Quote\-Listener::get\-Ask\-Size () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_4808439461507148c55e678a3dffbb5d}
+
+
+Get the quote ask size. 
+
+\begin{Desc}
+\item[Returns:]Total share size available for the current ask price. Note: many feeds provide this size in terms of round lots. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_4ce63ffd5bba87b803bb07ebceb53dc1}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_4bc38582299115bc9d45411e4fabc76d}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskDepth@{getAskDepth}}
+\index{getAskDepth@{getAskDepth}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskDepth]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-quantity\_\-t Wombat::Mamda\-Quote\-Listener::get\-Ask\-Depth () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_4bc38582299115bc9d45411e4fabc76d}
+
+
+Get the quote ask depth. 
+
+\begin{Desc}
+\item[Returns:]The total size available at the current best ask price. Only supported by some exchanges. The total size may differ from the \char`\"{}best\char`\"{} size in that the total may be aggregated from multiple sources. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_c225d8c6500428e7ab5c34c1a403a230}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_b8a1c5463eb9ebf89fc402c32e2c81c7}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPartId@{getAskPartId}}
+\index{getAskPartId@{getAskPartId}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Ask\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b8a1c5463eb9ebf89fc402c32e2c81c7}
+
+
+Get the quote ask participant identifier. 
+
+\begin{Desc}
+\item[Returns:]The identifier of the market participant (e.g. exchange or market maker) contributing the ask price field. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_12c5be28761ab6796c44466e06bbc37a}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_1c6e2936fa8677578ee30e6a50ee29bf}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskClosePrice@{getAskClosePrice}}
+\index{getAskClosePrice@{getAskClosePrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskClosePrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_1c6e2936fa8677578ee30e6a50ee29bf}
+
+
+Get the closing ask price. 
+
+\begin{Desc}
+\item[Returns:]Today's closing ask price, after the market has closed and the stock has traded today. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteClosing_0db88ef67d6459e31b0568e9bbd44d59}{Wombat::Mamda\-Quote\-Closing}.\hypertarget{classWombat_1_1MamdaQuoteListener_3454bc5865c264f87778000ed9348f91}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskCloseDate@{getAskCloseDate}}
+\index{getAskCloseDate@{getAskCloseDate}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskCloseDate]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Close\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3454bc5865c264f87778000ed9348f91}
+
+
+Get the ask quote closing date. 
+
+\begin{Desc}
+\item[Returns:]Date of the Ask\-Close\-Price, if that value is non-zero. This is always the most recent day that the market was open, including today. This is different to Ask\-Prev\-Close\-Date. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_4f95ffdb921180d5a7a5d6f488b6014c}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_e0afe79ab166febbcf94861365dc31c7}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPrevClosePrice@{getAskPrevClosePrice}}
+\index{getAskPrevClosePrice@{getAskPrevClosePrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPrevClosePrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Prev\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_e0afe79ab166febbcf94861365dc31c7}
+
+
+Get the previous ask closing price. 
+
+\begin{Desc}
+\item[Returns:]The previous closing price, prior to any trade today. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_521a7513135af4b11b964473ce74bc88}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_58dfc1cbbf19d48e01d51ee715256c15}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPrevCloseDate@{getAskPrevCloseDate}}
+\index{getAskPrevCloseDate@{getAskPrevCloseDate}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPrevCloseDate]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Prev\-Close\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_58dfc1cbbf19d48e01d51ee715256c15}
+
+
+Get the previous ask closing date. 
+
+\begin{Desc}
+\item[Returns:]Date of previous closing price, prior to any trade today. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_f18eefde8f4c853642da3176bb7cf84e}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_44860382a77a09c7fcca4bcd2e92e1ae}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskHigh@{getAskHigh}}
+\index{getAskHigh@{getAskHigh}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskHigh]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-High () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_44860382a77a09c7fcca4bcd2e92e1ae}
+
+
+Get the high ask price for the day. 
+
+\begin{Desc}
+\item[Returns:]High ask price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_d775066ddd925c5cfc3f736b6da9b3d8}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_5c3d63363fd9894fc2949fd769b3af00}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskLow@{getAskLow}}
+\index{getAskLow@{getAskLow}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskLow]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Low () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_5c3d63363fd9894fc2949fd769b3af00}
+
+
+Get the low ask price for the day. 
+
+\begin{Desc}
+\item[Returns:]Low ask price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_0d1047a74037b9bf740e1ac49e602ae2}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_b74788d3c90fce551bab93ed062a0458}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteMidPrice@{getQuoteMidPrice}}
+\index{getQuoteMidPrice@{getQuoteMidPrice}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteMidPrice]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Price\& Wombat::Mamda\-Quote\-Listener::get\-Quote\-Mid\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b74788d3c90fce551bab93ed062a0458}
+
+
+Get the quote mid price. 
+
+\begin{Desc}
+\item[Returns:]The mid price of the current quote. Usually, this is the average of the bid and ask prices, but some exchanges provide this field explicitly (e.g. LSE). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_fa1e82ccf6a101f0581a557399ea9adc}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_85066bf1980233f52a8db81584537edf}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteCount@{getQuoteCount}}
+\index{getQuoteCount@{getQuoteCount}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Quote\-Listener::get\-Quote\-Count () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_85066bf1980233f52a8db81584537edf}
+
+
+Get the quote count. 
+
+\begin{Desc}
+\item[Returns:]The number of quotes generated for this security during the current trading session. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_538b0e423e2ecf6b4be494bfc07186eb}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_e33ca4e1fa76fb882185676c0d865be7}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteQualStr@{getQuoteQualStr}}
+\index{getQuoteQualStr@{getQuoteQualStr}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteQualStr]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Quote\-Qual\-Str () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_e33ca4e1fa76fb882185676c0d865be7}
+
+
+Get the quote qualifiers. 
+
+\begin{Desc}
+\item[Returns:]A normalized set of qualifiers for the last quote for the security. This field may contain multiple string values, separated by the colon(:) character.\end{Desc}
+\begin{TabularC}{2}
+\hline
+{\bf Value}&{\bf Meaning} \\\hline
+Normal &Regular quote; no special condition  \\\hline
+Depth\-Ask &Depth on ask side  \\\hline
+Depth\-Bid &Depth on bid side  \\\hline
+Fast &Fast trading  \\\hline
+Non\-Firm &Non-firm quote  \\\hline
+Rotation &?  \\\hline
+Auto &Automatic trade  \\\hline
+Inactive &?  \\\hline
+Spec\-Bid &Specialist bid  \\\hline
+Spec\-Ask &Specialist ask  \\\hline
+Locked &Locked market - Bid is equal to Ask for OTCBB issues (Recaps only)  \\\hline
+Crossed &Crossed market - Bid is greater than Ask for OTCBB (Recaps only)  \\\hline
+Synd &Syndicate bid  \\\hline
+Pre\-Synd &Pre-syndicate bid  \\\hline
+Penalty &Penalty bid  \\\hline
+Unsol\-Bid &Unsolicited bid  \\\hline
+Unsol\-Ask &Unsolicited ask  \\\hline
+Unsol\-Quote &Unsolicited quote  \\\hline
+Firm &?  \\\hline
+Range\-Ind &?  \\\hline
+Xpress\-Bid &NYSE Liquidity\-Quote Xpress bid indicator  \\\hline
+Xpress\-Ask &NYSE Liquidity\-Quote Xpress ask indicator  \\\hline
+\end{TabularC}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_0207954904250e999a94c275c9b77192}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_b7ff05baca5f30eb44a863e2bed6ce1b}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteQualNative@{getQuoteQualNative}}
+\index{getQuoteQualNative@{getQuoteQualNative}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteQualNative]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Quote\-Qual\-Native () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b7ff05baca5f30eb44a863e2bed6ce1b}
+
+
+Get the native feed quote qualifier. 
+
+\begin{Desc}
+\item[Returns:]Native quote qualifier (a.k.a. \char`\"{}quote condition\char`\"{}). Feed-specific quote qualifier code(s). This field is provided primarily for completeness and/or troubleshooting. \end{Desc}
+\begin{Desc}
+\item[See also:]get\-Quote\-Qual. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_79543d52d9809abd98abfce3fe4e29e9}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_fa0883ea81d5b2286d1014616407b690}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Quote\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_fa0883ea81d5b2286d1014616407b690}
+
+
+Get the event sequence number. 
+
+\begin{Desc}
+\item[Returns:]Source sequence number. The exchange generated sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_1fd845d48e95b4ee3beafc72d1ac2adf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_3d5fbd8aa814552de16c665b3eca1dfc}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3d5fbd8aa814552de16c665b3eca1dfc}
+
+
+Get the event time. 
+
+\begin{Desc}
+\item[Returns:]Event time. Typically, when the event actually occurred. This is often the same as the \char`\"{}source time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_7285491c2c657207a64b1b0449c0339b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_b7fa56da5969989fe36247d8e8d32f3f}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteDate@{getQuoteDate}}
+\index{getQuoteDate@{getQuoteDate}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteDate]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Quote\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b7fa56da5969989fe36247d8e8d32f3f}
+
+
+Get the quote date. 
+
+\begin{Desc}
+\item[Returns:]The quote date. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_1400aa5f7ac60907d95f07fb3fd2192b}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_d54593507488bdf2f07f532c4eb00549}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Quote\-Listener::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_d54593507488bdf2f07f532c4eb00549}
+
+
+The starting sequence number of detected missing quotes based on the quote count. 
+
+\begin{Desc}
+\item[Returns:]The start gap sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteGap_f87125caab3a18c6dde0b5dc5e13f35a}{Wombat::Mamda\-Quote\-Gap}.\hypertarget{classWombat_1_1MamdaQuoteListener_bc314f778476b46c392f6a775c3a9d61}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Quote\-Listener::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_bc314f778476b46c392f6a775c3a9d61}
+
+
+The end sequence number of detected missing quotes based on the quote count. 
+
+\begin{Desc}
+\item[Returns:]The end gap sequence number. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteGap_167d4cb258854b3665a5a7624824103d}{Wombat::Mamda\-Quote\-Gap}.\hypertarget{classWombat_1_1MamdaQuoteListener_3f4102824e3e3d8a0032c0978067387f}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getShortSaleBidTick@{getShortSaleBidTick}}
+\index{getShortSaleBidTick@{getShortSaleBidTick}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getShortSaleBidTick]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Quote\-Listener::get\-Short\-Sale\-Bid\-Tick () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_3f4102824e3e3d8a0032c0978067387f}
+
+
+NASDAQ Bid Tick Indicator for Short Sale Rule Compliance. 
+
+National Bid Tick Indicator based on changes to the bid price of the National Best Bid or Offer (National BBO).
+
+\begin{TabularC}{2}
+\hline
+{\bf Value}&{\bf Meaning} \\\hline
+U &Up Tick. The current Best Bid Price price is higher than the previous Best Bid Price for the given NNM security.  \\\hline
+D &Down Tick. The current Best Bid Price price is lower than the previous Best Bid Price for the given NNM security.  \\\hline
+N &No Tick. The NASD Short Sale Rule does not apply to issue (i.e. NASDAQ Small\-Cap listed security).  \\\hline
+Z &Unset - default value within the API  \\\hline
+\end{TabularC}
+
+
+\begin{Desc}
+\item[Returns:]The tick bid indicator. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_350d0a476aaaa5bec2a007b5de79f7ff}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_2b0b0dd373fe54f67149a708ee147e79}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskTime@{getAskTime}}
+\index{getAskTime@{getAskTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Ask\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_2b0b0dd373fe54f67149a708ee147e79}
+
+
+Get the quote ask time. 
+
+\begin{Desc}
+\item[Returns:]The quote ask time. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_4d1e7288ed0a726a23f66aa9ed212afa}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_467043c393ad5906990c6c90c777e56b}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidTime@{getBidTime}}
+\index{getBidTime@{getBidTime}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Quote\-Listener::get\-Bid\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_467043c393ad5906990c6c90c777e56b}
+
+
+Get the quote bid time. 
+
+\begin{Desc}
+\item[Returns:]The quote bid time. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_42016fe76b884a22fb769c3eceac39ad}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_fac643c6fb9ad15e2d443d6a03304dfe}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskIndicator@{getAskIndicator}}
+\index{getAskIndicator@{getAskIndicator}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskIndicator]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Ask\-Indicator () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_fac643c6fb9ad15e2d443d6a03304dfe}
+
+
+Get the quote ask indicator. 
+
+\begin{Desc}
+\item[Returns:]The quote ask indicator. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_f2cd889d5838aa3204784eb57e447d4e}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_2ac1e2dabc677e93e414cf0c1d1fa94f}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidIndicator@{getBidIndicator}}
+\index{getBidIndicator@{getBidIndicator}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidIndicator]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Bid\-Indicator () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_2ac1e2dabc677e93e414cf0c1d1fa94f}
+
+
+Get the quote bid indicator. 
+
+\begin{Desc}
+\item[Returns:]The quote bid indicator. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_91a0dbca4e481e0e3179af813128fba9}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_f1cf490659772cef488d7207b3587958}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskUpdateCount@{getAskUpdateCount}}
+\index{getAskUpdateCount@{getAskUpdateCount}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskUpdateCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Quote\-Listener::get\-Ask\-Update\-Count () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_f1cf490659772cef488d7207b3587958}
+
+
+Get the quote ask update count. 
+
+\begin{Desc}
+\item[Returns:]The quote ask update count. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_99ae27dd8ca7ed8507afcc66cdfe0f1c}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_d9c60e9325eaaa4ae2b5af91201dfb3f}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidUpdateCount@{getBidUpdateCount}}
+\index{getBidUpdateCount@{getBidUpdateCount}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidUpdateCount]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u32\_\-t Wombat::Mamda\-Quote\-Listener::get\-Bid\-Update\-Count () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_d9c60e9325eaaa4ae2b5af91201dfb3f}
+
+
+Get the quote bid update count. 
+
+\begin{Desc}
+\item[Returns:]The quote bid update count. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_36e64c863a6c89641b58451c2792744b}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_49a6a64974327a037d1470cf433d93e0}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskYield@{getAskYield}}
+\index{getAskYield@{getAskYield}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskYield]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Quote\-Listener::get\-Ask\-Yield () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_49a6a64974327a037d1470cf433d93e0}
+
+
+Get the quote ask yield. 
+
+\begin{Desc}
+\item[Returns:]The quote ask yield. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_2c27e50701aa2a56fa132d81a6b4be42}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_17999949e20889d0d319e71874949d25}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidYield@{getBidYield}}
+\index{getBidYield@{getBidYield}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidYield]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Quote\-Listener::get\-Bid\-Yield () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_17999949e20889d0d319e71874949d25}
+
+
+Get the quote bid yield. 
+
+\begin{Desc}
+\item[Returns:]The quote bid yield. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_29c021892c5abee2c716d01f15b7b6fe}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_9aa5070318fdfb0cc239fb6f11e286c0}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskSizesList@{getAskSizesList}}
+\index{getAskSizesList@{getAskSizesList}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskSizesList]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Ask\-Sizes\-List () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_9aa5070318fdfb0cc239fb6f11e286c0}
+
+
+Get the ask sizes list. 
+
+\begin{Desc}
+\item[Returns:]The ask sizes list. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_0f3dfc61d4c0ce17a69505bdb0977267}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_93be6aa13008fc17858aafac4d212eb5}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidSizesList@{getBidSizesList}}
+\index{getBidSizesList@{getBidSizesList}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidSizesList]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Quote\-Listener::get\-Bid\-Sizes\-List () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_93be6aa13008fc17858aafac4d212eb5}
+
+
+Get the bid sizes list. 
+
+\begin{Desc}
+\item[Returns:]The bid sizes list. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_38b96c274919a6554a103604e582ac87}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_2638f27bca3f6fa7c673e5b6924e3842}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}}
+\index{getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getShortSaleCircuitBreaker]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Quote\-Listener::get\-Short\-Sale\-Circuit\-Breaker () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_2638f27bca3f6fa7c673e5b6924e3842}
+
+
+get the Short\-Sale\-Circuit\-Breaker 
+
+\begin{Desc}
+\item[Returns:]Short\-Sale\-Circuit\-Breaker \begin{itemize}
+\item return values: \item Blank: Short Sale Restriction Not in Effect. \item A: Short Sale Restriction Activiated. \item C: Short Sale Restriction Continued. \item D: Sale Restriction Deactivated. \item E: Sale Restriction in Effect. \end{itemize}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_b9d92f8b80dfe1efbb6452ce38c192b8}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_e5281f487264bda71fde9182921d6ae5}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_e5281f487264bda71fde9182921d6ae5}
+
+
+Get the string symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ef95e19f4babb0e5ea8549d6cf29d13f}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_edb910c741c98a43134d0abcb325079e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPriceFieldState@{getBidPriceFieldState}}
+\index{getBidPriceFieldState@{getBidPriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_edb910c741c98a43134d0abcb325079e}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_0c70e9a4b5c452a8f22d79f3faf67cf7}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_00ecbc2964d5439e77d04ffc2d00d9e9}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidSizeFieldState@{getBidSizeFieldState}}
+\index{getBidSizeFieldState@{getBidSizeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidSizeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Size\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_00ecbc2964d5439e77d04ffc2d00d9e9}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_349931c22f5522b07b991efc90c06140}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_f9ff48ba9ea68b551b07e18ebef77a51}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_f9ff48ba9ea68b551b07e18ebef77a51}
+
+
+Get the participant identifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_c361c99af2cf7eb9f5621d89f744fc62}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_50550dbdc63d6a518052710d8414387c}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_50550dbdc63d6a518052710d8414387c}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_9cd58f3d7b5ebea42fa86e5dde46ab18}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_79f601394c430d4883bcb41f0b470b29}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_79f601394c430d4883bcb41f0b470b29}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_a61a566e3442181ca1fadc4524296cd0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_35e889726482c3d6865c20adfd311e0b}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_35e889726482c3d6865c20adfd311e0b}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_eb06352aca3280c5e89bad7a3b185cdf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_751c64ca7bad56ffc99ca72e1494fb01}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_751c64ca7bad56ffc99ca72e1494fb01}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_418ecb29b412cd42581b54c87b5360fd}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_5c9caa111b19d3141eb64767b3e82ba1}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getPubIdFieldState@{getPubIdFieldState}}
+\index{getPubIdFieldState@{getPubIdFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getPubIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Pub\-Id\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_5c9caa111b19d3141eb64767b3e82ba1}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_84d03b5c192d75a4f5d6806028203c2e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_84d03b5c192d75a4f5d6806028203c2e}
+
+
+Get the message qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3454d51e1131d9949691ee4b4153cd97}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_98ff1dc2bd71e67918d73b21f76046bb}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getPubIdModified@{getPubIdModified}}
+\index{getPubIdModified@{getPubIdModified}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getPubIdModified]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Pub\-Id\-Modified () const}}
+\label{classWombat_1_1MamdaQuoteListener_98ff1dc2bd71e67918d73b21f76046bb}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_98c0e8e6190f6cb27684fd9abcf4a356}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidDepthFieldState@{getBidDepthFieldState}}
+\index{getBidDepthFieldState@{getBidDepthFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidDepthFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Depth\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_98c0e8e6190f6cb27684fd9abcf4a356}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_9755be1e5c5d476b19ec99e71d1bd3ea}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_01e681d0b51718516807df702714f7ba}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPartIdFieldState@{getBidPartIdFieldState}}
+\index{getBidPartIdFieldState@{getBidPartIdFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_01e681d0b51718516807df702714f7ba}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_f98691d7c7a4d1234474a849fbc15c36}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_168cfd897d5c3f532d49e36c0e380db3}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidClosePriceFieldState@{getBidClosePriceFieldState}}
+\index{getBidClosePriceFieldState@{getBidClosePriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_168cfd897d5c3f532d49e36c0e380db3}
+
+
+Get the closing bid price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteClosing_b9a5522238b0f2c1d64a7192b28d4644}{Wombat::Mamda\-Quote\-Closing}.\hypertarget{classWombat_1_1MamdaQuoteListener_a61f3b17ec3755be6696abb38db5d65e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidCloseDateFieldState@{getBidCloseDateFieldState}}
+\index{getBidCloseDateFieldState@{getBidCloseDateFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidCloseDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Close\-Date\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_a61f3b17ec3755be6696abb38db5d65e}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_71d4b27da209e537018ed78be16b9b35}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPrevClosePriceFieldState@{getBidPrevClosePriceFieldState}}
+\index{getBidPrevClosePriceFieldState@{getBidPrevClosePriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPrevClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Prev\-Close\-Price\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_71d4b27da209e537018ed78be16b9b35}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_03a1620ee6559319e5d24a9519f9ba83}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidPrevCloseDateFieldState@{getBidPrevCloseDateFieldState}}
+\index{getBidPrevCloseDateFieldState@{getBidPrevCloseDateFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidPrevCloseDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Prev\-Close\-Date\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_03a1620ee6559319e5d24a9519f9ba83}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_8c2949e6f90e88d5d2fcabebf0c5e173}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidHighFieldState@{getBidHighFieldState}}
+\index{getBidHighFieldState@{getBidHighFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidHighFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-High\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_8c2949e6f90e88d5d2fcabebf0c5e173}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_d35cb68b55f7b1bef90b4b9097958c62}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidLowFieldState@{getBidLowFieldState}}
+\index{getBidLowFieldState@{getBidLowFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidLowFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Low\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_d35cb68b55f7b1bef90b4b9097958c62}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_28dd174c3b718a3def1d09b04ab68577}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPriceFieldState@{getAskPriceFieldState}}
+\index{getAskPriceFieldState@{getAskPriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_28dd174c3b718a3def1d09b04ab68577}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_40369fc6cc5d586d7be261e868895988}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_4e3d063324f15dacfaf2eec0f7f31e71}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskSizeFieldState@{getAskSizeFieldState}}
+\index{getAskSizeFieldState@{getAskSizeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskSizeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Size\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_4e3d063324f15dacfaf2eec0f7f31e71}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_df0784fb2f32f6deec369c5f0fbc269b}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_f43a394a5e090162a80b749f682ecc38}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskDepthFieldState@{getAskDepthFieldState}}
+\index{getAskDepthFieldState@{getAskDepthFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskDepthFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Depth\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_f43a394a5e090162a80b749f682ecc38}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_60ddd7a94b309e3a80aec05000be0c0e}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_9208a03480064d6bd80ed3b95136c752}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPartIdFieldState@{getAskPartIdFieldState}}
+\index{getAskPartIdFieldState@{getAskPartIdFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_9208a03480064d6bd80ed3b95136c752}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_bf3a795aa218100f1d59fa05aec2748e}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_a6dcf6a065420d6fdf9d5e07093ed603}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskClosePriceFieldState@{getAskClosePriceFieldState}}
+\index{getAskClosePriceFieldState@{getAskClosePriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_a6dcf6a065420d6fdf9d5e07093ed603}
+
+
+Get the closing bid price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteClosing_d6c65af52adcf386c114c5b757338072}{Wombat::Mamda\-Quote\-Closing}.\hypertarget{classWombat_1_1MamdaQuoteListener_b9c4ee5e4eda57e1d1c127adc37e544e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskCloseDateFieldState@{getAskCloseDateFieldState}}
+\index{getAskCloseDateFieldState@{getAskCloseDateFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskCloseDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Close\-Date\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_b9c4ee5e4eda57e1d1c127adc37e544e}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_c49f1d6608af00cc869839845491cd23}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPrevClosePriceFieldState@{getAskPrevClosePriceFieldState}}
+\index{getAskPrevClosePriceFieldState@{getAskPrevClosePriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPrevClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Prev\-Close\-Price\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_c49f1d6608af00cc869839845491cd23}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_2c70b33f8a62de075ddc02e953ee199b}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskPrevCloseDateFieldState@{getAskPrevCloseDateFieldState}}
+\index{getAskPrevCloseDateFieldState@{getAskPrevCloseDateFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskPrevCloseDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Prev\-Close\-Date\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_2c70b33f8a62de075ddc02e953ee199b}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_eeafa59d487408997b68812a8c6686e2}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskHighFieldState@{getAskHighFieldState}}
+\index{getAskHighFieldState@{getAskHighFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskHighFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-High\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_eeafa59d487408997b68812a8c6686e2}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_eaf6f8cbb1ca477e3d4ffedb4753e105}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskLowFieldState@{getAskLowFieldState}}
+\index{getAskLowFieldState@{getAskLowFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskLowFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Low\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_eaf6f8cbb1ca477e3d4ffedb4753e105}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_19d19b0f64db3586e14b88f4a502ecbf}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteMidPriceFieldState@{getQuoteMidPriceFieldState}}
+\index{getQuoteMidPriceFieldState@{getQuoteMidPriceFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteMidPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Quote\-Mid\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_19d19b0f64db3586e14b88f4a502ecbf}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_52c9ce74d5b5b74fd48280cac925ce8d}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_3b4f752b2a7b92e5177b1d19abc1606e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteCountFieldState@{getQuoteCountFieldState}}
+\index{getQuoteCountFieldState@{getQuoteCountFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteCountFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Quote\-Count\-Field\-State () const}}
+\label{classWombat_1_1MamdaQuoteListener_3b4f752b2a7b92e5177b1d19abc1606e}
+
+
+\hypertarget{classWombat_1_1MamdaQuoteListener_90a6df719e3f391f19edf4796f947b35}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteQualStrFieldState@{getQuoteQualStrFieldState}}
+\index{getQuoteQualStrFieldState@{getQuoteQualStrFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteQualStrFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Quote\-Qual\-Str\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_90a6df719e3f391f19edf4796f947b35}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence_d8ffb3eab13dd519e846dc59c387924b}{Wombat::Mamda\-Quote\-Out\-Of\-Sequence}.\hypertarget{classWombat_1_1MamdaQuoteListener_9c5a520a83919f48b66dc8989d509c4c}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteQualNativeFieldState@{getQuoteQualNativeFieldState}}
+\index{getQuoteQualNativeFieldState@{getQuoteQualNativeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteQualNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Quote\-Qual\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_9c5a520a83919f48b66dc8989d509c4c}
+
+
+Get the native feed quote qualifier field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_1d5b1c7bd433ee7e444e83ec39c2de62}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_14657763833e473324025f3093119656}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_14657763833e473324025f3093119656}
+
+
+Get the event sequence number field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_51cc0b9d4c2b8a982ccd18b339707cb5}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_b401d95157253e35d0465c5cdb4f7da0}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b401d95157253e35d0465c5cdb4f7da0}
+
+
+Get the event time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ff3932065e16e660fb6cd9285b46f7d0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaQuoteListener_bbf7249c368d73feb54836bb02a7269a}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getQuoteDateFieldState@{getQuoteDateFieldState}}
+\index{getQuoteDateFieldState@{getQuoteDateFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getQuoteDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Quote\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_bbf7249c368d73feb54836bb02a7269a}
+
+
+Get the quote date field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_475b6c9bd5ed474b3ac1e463cf199d8c}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_7b146afc82cbcba47503e2720fd4ac5e}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBeginGapSeqNumFieldState@{getBeginGapSeqNumFieldState}}
+\index{getBeginGapSeqNumFieldState@{getBeginGapSeqNumFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBeginGapSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Begin\-Gap\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_7b146afc82cbcba47503e2720fd4ac5e}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteGap_3fef0c397fa74bb7bdd1102002869012}{Wombat::Mamda\-Quote\-Gap}.\hypertarget{classWombat_1_1MamdaQuoteListener_65056fc3d3db0cb1eef24134de986b33}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getEndGapSeqNumFieldState@{getEndGapSeqNumFieldState}}
+\index{getEndGapSeqNumFieldState@{getEndGapSeqNumFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getEndGapSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-End\-Gap\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_65056fc3d3db0cb1eef24134de986b33}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteGap_79a42883fe6a8fcb0832fab98202b912}{Wombat::Mamda\-Quote\-Gap}.\hypertarget{classWombat_1_1MamdaQuoteListener_35f256d26e13d0dc0302c256567f54ba}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getShortSaleBidTickFieldState@{getShortSaleBidTickFieldState}}
+\index{getShortSaleBidTickFieldState@{getShortSaleBidTickFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getShortSaleBidTickFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Short\-Sale\-Bid\-Tick\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_35f256d26e13d0dc0302c256567f54ba}
+
+
+Get the short sale bid tick field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_cfcc9d7209b6d09009c084f37e2e0510}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_355651d7e3a9641c607fa3e82ce8e833}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskTimeFieldState@{getAskTimeFieldState}}
+\index{getAskTimeFieldState@{getAskTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_355651d7e3a9641c607fa3e82ce8e833}
+
+
+Get the quote ask time field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_bea1b72396575311378b1b4063ab1734}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_a8d10456d404dc1ed3fe7231e89a62b3}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidTimeFieldState@{getBidTimeFieldState}}
+\index{getBidTimeFieldState@{getBidTimeFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_a8d10456d404dc1ed3fe7231e89a62b3}
+
+
+Get the quote bid time field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_c5406a153ad823049ce414a442f6a25b}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_20c6b7c6cf1359fdd184a7d83bc93521}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskIndicatorFieldState@{getAskIndicatorFieldState}}
+\index{getAskIndicatorFieldState@{getAskIndicatorFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskIndicatorFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Indicator\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_20c6b7c6cf1359fdd184a7d83bc93521}
+
+
+Get the quote ask indicator field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_b788be211493a7091449796df22c6173}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_276b02c48efaa043e0d394569fe68a02}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidIndicatorFieldState@{getBidIndicatorFieldState}}
+\index{getBidIndicatorFieldState@{getBidIndicatorFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidIndicatorFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Indicator\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_276b02c48efaa043e0d394569fe68a02}
+
+
+Get the quote bid indicator field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_ff522048df5c7fe409315f4d694ddaca}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_a9d06f74666624d69ff4e6303a626532}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskUpdateCountFieldState@{getAskUpdateCountFieldState}}
+\index{getAskUpdateCountFieldState@{getAskUpdateCountFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskUpdateCountFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Update\-Count\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_a9d06f74666624d69ff4e6303a626532}
+
+
+Get the quote ask update count field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_c9fddc7ecb8d6b3cccd075b95917d2e2}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_94564b543817c0a2c9a0711ae7e63ad5}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidUpdateCountFieldState@{getBidUpdateCountFieldState}}
+\index{getBidUpdateCountFieldState@{getBidUpdateCountFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidUpdateCountFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Update\-Count\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_94564b543817c0a2c9a0711ae7e63ad5}
+
+
+Get the quote bid update count field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_a1fde4201397013b41115b90913c4f06}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_94700f1e9995a69f5005efce5dc368d1}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskYieldFieldState@{getAskYieldFieldState}}
+\index{getAskYieldFieldState@{getAskYieldFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskYieldFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Yield\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_94700f1e9995a69f5005efce5dc368d1}
+
+
+Get the quote ask yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_ef5f4c7d1f09607a9730da3dc5c782d6}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_fbf8ab1785c570733df4e0790947e489}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidYieldFieldState@{getBidYieldFieldState}}
+\index{getBidYieldFieldState@{getBidYieldFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidYieldFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Yield\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_fbf8ab1785c570733df4e0790947e489}
+
+
+Get the quote bid yield field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_015aa2464a9035bc0fc46e8b22464b2d}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_b943a6dc805ddb2d213d60539538d290}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getAskSizesListFieldState@{getAskSizesListFieldState}}
+\index{getAskSizesListFieldState@{getAskSizesListFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getAskSizesListFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Ask\-Sizes\-List\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_b943a6dc805ddb2d213d60539538d290}
+
+
+Get the ask sizes list field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_c159beb494cd9e208bf472bd4af0c194}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_1b8e1f6e95a20180b0f69df8fb9fdced}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getBidSizesListFieldState@{getBidSizesListFieldState}}
+\index{getBidSizesListFieldState@{getBidSizesListFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getBidSizesListFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Bid\-Sizes\-List\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_1b8e1f6e95a20180b0f69df8fb9fdced}
+
+
+Get the bid sizes list field\-State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_8f599613010d229d59ab812227aa3373}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_741a0cdce0ceb5247ec54a883b265374}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}}
+\index{getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[getShortSaleCircuitBreakerFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Quote\-Listener::get\-Short\-Sale\-Circuit\-Breaker\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_741a0cdce0ceb5247ec54a883b265374}
+
+
+\begin{Desc}
+\item[Returns:]The Short\-Sale\-Circuit\-Breaker Field State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaQuoteRecap_d36a516b29285e3f16b488fbe7e5ba1a}{Wombat::Mamda\-Quote\-Recap}.\hypertarget{classWombat_1_1MamdaQuoteListener_ecb41b49b757309bc1738e23d087bd25}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteListener_ecb41b49b757309bc1738e23d087bd25}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.\hypertarget{classWombat_1_1MamdaQuoteListener_7d77206089991983a9fbaafc13be9cdf}{
+\index{Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}!assertEqual@{assertEqual}}
+\index{assertEqual@{assertEqual}!Wombat::MamdaQuoteListener@{Wombat::Mamda\-Quote\-Listener}}
+\subsubsection[assertEqual]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Quote\-Listener::assert\-Equal (\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} $\ast$ {\em listener})}}
+\label{classWombat_1_1MamdaQuoteListener_7d77206089991983a9fbaafc13be9cdf}
+
+

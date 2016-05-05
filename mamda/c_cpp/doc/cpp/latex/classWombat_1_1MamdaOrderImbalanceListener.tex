@@ -1,0 +1,881 @@
+\hypertarget{classWombat_1_1MamdaOrderImbalanceListener}{
+\section{Wombat::Mamda\-Order\-Imbalance\-Listener Class Reference}
+\label{classWombat_1_1MamdaOrderImbalanceListener}\index{Wombat::MamdaOrderImbalanceListener@{Wombat::MamdaOrderImbalanceListener}}
+}
+A \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} is class that specializes in handling an imbalance order updates.  
+
+
+{\tt \#include $<$Mamda\-Order\-Imbalance\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Order\-Imbalance\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.26721cm]{classWombat_1_1MamdaOrderImbalanceListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderImbalanceListener_715d1ae2811b3dfc5bf2475dbc45ce59}{Mamda\-Order\-Imbalance\-Listener} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ac342b8ded254fe784abe31afb3dfb91}{$\sim$Mamda\-Order\-Imbalance\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_13083aab1c61080615dd411b4caa8ce6}{add\-Handler} (\hyperlink{classWombat_1_1MamdaOrderImbalanceHandler}{Mamda\-Order\-Imbalance\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized order imbalance handler. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_596c5c1e351924b74e0f81af784a45a1}{get\-High\-Indication\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_6272673c1cf08580d09ec73d0e458734}{get\-High\-Indication\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-High\-Indication\-Price field state. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_d52ff9594f69255d8ac514ffa8eabc84}{get\-Low\-Indication\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_e6c44322841ce2147abacb25a5cf8fae}{get\-Low\-Indication\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Low\-Indication\-Price field state. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ecc32af60d82a040a0ca3e7c79075fc5}{get\-Imbalance\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_44f4f51fd6248a092825200e42c008a5}{get\-Imbalance\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Indication\-Price field state. \item\end{CompactList}\item 
+int64\_\-t \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_7f5cb04154fe3ec2673e616a5958b9f2}{get\-Buy\-Volume} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_979197d028cd40ebe9d689c52377f02c}{get\-Buy\-Volume\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Buy\-Volume field state. \item\end{CompactList}\item 
+int64\_\-t \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_fce0392a0c33cf57e534908cb29cd10e}{get\-Sell\-Volume} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_83655805e56c6a77ef48d0b6a5129f7b}{get\-Sell\-Volume\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Sell\-Volume field state. \item\end{CompactList}\item 
+int64\_\-t \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_db5df0bb4c22c84ef0572046aaf98220}{get\-Match\-Volume} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_bbba7d810e3b01e9b2041d3a0e0e517d}{get\-Match\-Volume\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Match\-Volume field state. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_0c165617508c80658877e499eb3c2e41}{get\-Imbalance\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_63cc4f92d2bbd8f122922d5f4fb2932b}{get\-Imbalance\-State\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Security\-Status\-Qual field state. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_d55a2fc95960a2629c498eba6fb8b43d}{get\-Match\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ca43f8571100db2c3dc6a81c9ece7d4b}{get\-Match\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Inside\-Match\-Price field state. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_f794cdda271d04cc569e18222146e3a6}{get\-Far\-Clearing\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_9a23b7703628b621deed5abcbc1b0e97}{get\-Far\-Clearing\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Far\-Clearing\-Price field state. \item\end{CompactList}\item 
+Mama\-Price \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_179bd16864d6c3bc9bf7758759f2e336}{get\-Near\-Clearing\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_f7935fdf67c67ffefadc39456a39448d}{get\-Near\-Clearing\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Near\-Clearing\-Price field state. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_c9c3e649371b664623b47f1153927024}{get\-No\-Clearing\-Price} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_c0d44a700d7ff3107cd46c0531c4634f}{get\-No\-Clearing\-Price\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-No\-Clearing\-Price field state. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_dcb92d290caa24fbf12d5521f5917fe4}{get\-Price\-Var\-Ind} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_b59ba04652f3f591eab16bd569caa711}{get\-Price\-Var\-Ind\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Price\-Var\-Ind field state. \item\end{CompactList}\item 
+char \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_068ff249e302d5490189e747622fae22}{get\-Cross\-Type} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ad35a45f28ab61abc265d15c76a26c37}{get\-Cross\-Type\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Cross\-Type field state. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_6cac146703cca68aecfd579f512d8b99}{get\-Event\-Time} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_b9da1457422c7e005b4d1cb097621e01}{get\-Event\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Event\-Time field state. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_3a6ecd36b855f2e1f122d07764a6b691}{get\-Event\-Seq\-Num} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_1daae80b39ea6a070f2fa736fe90437d}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Event\-Seq\-Num field state. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_62085e018b55aee3a14325d692dea2c5}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_6f070f42d8d7bf1b6260014835020c11}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_f6441d47955f9cf7d8572a7c6e2816d3}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_e01441cb3be1b7466ece277699971fa3}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+mama\_\-i32\_\-t \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_041c934f699fe71fb16d9154bc444bf0}{get\-Msg\-Type} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_69ecc694f33d3fb39064a3fa1b0d8ef3}{get\-Msg\-Type\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Msg\-Type field state. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_3cbc1356e4c8a1e6287aa4fd39124cbd}{get\-Issue\-Symbol} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_e65164421eb2d6835ada9d3185734021}{get\-Issue\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Issue\-Symbol field state. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_2f47719f14e5d1280791c8d832522589}{get\-Part\-Id} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_d8f5442d6f66c8a21c32581c66033146}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Part\-Id field state. \item\end{CompactList}\item 
+mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_dc73bf6c66194774ffd211ab9fb44b6c}{get\-Seq\-Num} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_59ef970a6b416d746105d9e766c1d1a8}{get\-Seq\-Num\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Seq\-Num field state. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ea12f359de6aa79408f26d36ea8db179}{get\-Security\-Status\-Orig} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_1748b68453c66e890d34f666d6525832}{get\-Security\-Status\-Orig\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Security\-Status\-Orig field state. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_1e72e1cbb405c48d7acab9ea19b3014e}{get\-Security\-Status\-Time} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_7588daaf6700cd13510c480612e19fe0}{get\-Security\-Status\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Security\-Status\-Time field state. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ce6a5772582fd4c526fbce36f1edee13}{get\-Auction\-Time} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_34beab82ba1bcb31a0a67df3fd9fa4bd}{get\-Auction\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the my\-Auction\-Time field state. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_39ab83f80c21af82d0327dbb11a517d3}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_e5911efbbda1cb87fb25f7869a01a103}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_ccbfe5ac89809e35624d42faa0c40a1b}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_938d4210b58560bf6ee8cb155546a3d8}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_de961c5bbeedc9f69136682e1adaf495}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the instruments string symbol. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_0598f54a0e0c05667551187418173c22}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state. \item\end{CompactList}\item 
+const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_5420e2c89b36475cf11a698bda2fdb05}{get\-Msg\-Qual} () const 
+\begin{CompactList}\small\item\em Get the message qualifier. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_5847f899d32947c2d9a0356733f84e78}{get\-Msg\-Qual\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the message qualifier field state. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_4d482115146d7030c0550acf8f63b2b6}{update\-Field\-States} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderImbalanceListener_b2125b8a0df3f3c01fc9b2f3efa088ce}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} is class that specializes in handling an imbalance order updates. 
+
+An imbalance order occurs when too many orders of a particular type - either buy, sell or limit - for listed securities and not enough of the other, matching orders are received by an exchange. Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaOrderImbalanceHandler}{Mamda\-Order\-Imbalance\-Handler} interface and will be delivered notifications for imbalance updates. An obvious application for this MAMDA class is any kind of tick capture application.
+
+\hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} should initialize the \hyperlink{classWombat_1_1MamdaOrderImbalanceFields}{Mamda\-Order\-Imbalance\-Fields} class prior to receiving the first message by calling \hyperlink{classWombat_1_1MamdaOrderImbalanceFields_e63c54bfcd113c93e66a29bae959770f}{Mamda\-Order\-Imbalance\-Fields::set\-Dictionary()} with a valid dictionary object which contains Order\-Imbalance related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_715d1ae2811b3dfc5bf2475dbc45ce59}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!MamdaOrderImbalanceListener@{MamdaOrderImbalanceListener}}
+\index{MamdaOrderImbalanceListener@{MamdaOrderImbalanceListener}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[MamdaOrderImbalanceListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Imbalance\-Listener::Mamda\-Order\-Imbalance\-Listener ()}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_715d1ae2811b3dfc5bf2475dbc45ce59}
+
+
+\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ac342b8ded254fe784abe31afb3dfb91}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!~MamdaOrderImbalanceListener@{$\sim$MamdaOrderImbalanceListener}}
+\index{~MamdaOrderImbalanceListener@{$\sim$MamdaOrderImbalanceListener}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[$\sim$MamdaOrderImbalanceListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Imbalance\-Listener::$\sim$Mamda\-Order\-Imbalance\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ac342b8ded254fe784abe31afb3dfb91}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_13083aab1c61080615dd411b4caa8ce6}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Imbalance\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaOrderImbalanceHandler}{Mamda\-Order\-Imbalance\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_13083aab1c61080615dd411b4caa8ce6}
+
+
+Add a specialized order imbalance handler. 
+
+\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_596c5c1e351924b74e0f81af784a45a1}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getHighIndicationPrice@{getHighIndicationPrice}}
+\index{getHighIndicationPrice@{getHighIndicationPrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getHighIndicationPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-High\-Indication\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_596c5c1e351924b74e0f81af784a45a1}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-High\-Indication\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_1d1c151048651f612b924b30d378db9f}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_6272673c1cf08580d09ec73d0e458734}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getHighIndicationPriceFieldState@{getHighIndicationPriceFieldState}}
+\index{getHighIndicationPriceFieldState@{getHighIndicationPriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getHighIndicationPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-High\-Indication\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_6272673c1cf08580d09ec73d0e458734}
+
+
+Get the my\-High\-Indication\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_7515d1c6c386cc1e68039922968fdb9d}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_d52ff9594f69255d8ac514ffa8eabc84}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getLowIndicationPrice@{getLowIndicationPrice}}
+\index{getLowIndicationPrice@{getLowIndicationPrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getLowIndicationPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Low\-Indication\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_d52ff9594f69255d8ac514ffa8eabc84}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Low\-Indication\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_b5dda63ec532e8d11a6a07a380d5470f}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_e6c44322841ce2147abacb25a5cf8fae}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getLowIndicationPriceFieldState@{getLowIndicationPriceFieldState}}
+\index{getLowIndicationPriceFieldState@{getLowIndicationPriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getLowIndicationPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Low\-Indication\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_e6c44322841ce2147abacb25a5cf8fae}
+
+
+Get the my\-Low\-Indication\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_7e2c182069b4e4ec378447998ee72819}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ecc32af60d82a040a0ca3e7c79075fc5}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getImbalancePrice@{getImbalancePrice}}
+\index{getImbalancePrice@{getImbalancePrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getImbalancePrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Imbalance\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ecc32af60d82a040a0ca3e7c79075fc5}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Indication\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_2de9b81042cfa08034717b7930d436f0}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_44f4f51fd6248a092825200e42c008a5}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getImbalancePriceFieldState@{getImbalancePriceFieldState}}
+\index{getImbalancePriceFieldState@{getImbalancePriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getImbalancePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Imbalance\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_44f4f51fd6248a092825200e42c008a5}
+
+
+Get the my\-Indication\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_0ac5312b01a0b1bf7f3347332280a6dd}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_7f5cb04154fe3ec2673e616a5958b9f2}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getBuyVolume@{getBuyVolume}}
+\index{getBuyVolume@{getBuyVolume}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getBuyVolume]{\setlength{\rightskip}{0pt plus 5cm}int64\_\-t Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Buy\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_7f5cb04154fe3ec2673e616a5958b9f2}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Buy\-Volume. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_f5d0601b43944ff04a80d98601a041da}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_979197d028cd40ebe9d689c52377f02c}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getBuyVolumeFieldState@{getBuyVolumeFieldState}}
+\index{getBuyVolumeFieldState@{getBuyVolumeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getBuyVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Buy\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_979197d028cd40ebe9d689c52377f02c}
+
+
+Get the my\-Buy\-Volume field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_869bc84756e63963c4b47e0c63ae92c4}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_fce0392a0c33cf57e534908cb29cd10e}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSellVolume@{getSellVolume}}
+\index{getSellVolume@{getSellVolume}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSellVolume]{\setlength{\rightskip}{0pt plus 5cm}int64\_\-t Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Sell\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_fce0392a0c33cf57e534908cb29cd10e}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Sell\-Volume. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_cb0e8ad41a7b39232e2ccb88a661d566}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_83655805e56c6a77ef48d0b6a5129f7b}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSellVolumeFieldState@{getSellVolumeFieldState}}
+\index{getSellVolumeFieldState@{getSellVolumeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSellVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Sell\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_83655805e56c6a77ef48d0b6a5129f7b}
+
+
+Get the my\-Sell\-Volume field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_cc07b533268359fb2a968d83ffe618be}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_db5df0bb4c22c84ef0572046aaf98220}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMatchVolume@{getMatchVolume}}
+\index{getMatchVolume@{getMatchVolume}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMatchVolume]{\setlength{\rightskip}{0pt plus 5cm}int64\_\-t Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Match\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_db5df0bb4c22c84ef0572046aaf98220}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Match\-Volume. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_2d983f66653cb0ca55dc88093794d850}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_bbba7d810e3b01e9b2041d3a0e0e517d}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMatchVolumeFieldState@{getMatchVolumeFieldState}}
+\index{getMatchVolumeFieldState@{getMatchVolumeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMatchVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Match\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_bbba7d810e3b01e9b2041d3a0e0e517d}
+
+
+Get the my\-Match\-Volume field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_f634674460d3c12123544852fcda939c}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_0c165617508c80658877e499eb3c2e41}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getImbalanceState@{getImbalanceState}}
+\index{getImbalanceState@{getImbalanceState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getImbalanceState]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Imbalance\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_0c165617508c80658877e499eb3c2e41}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Security\-Status\-Qual. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_380353bc10d950df839870cb6423def3}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_63cc4f92d2bbd8f122922d5f4fb2932b}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getImbalanceStateFieldState@{getImbalanceStateFieldState}}
+\index{getImbalanceStateFieldState@{getImbalanceStateFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getImbalanceStateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Imbalance\-State\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_63cc4f92d2bbd8f122922d5f4fb2932b}
+
+
+Get the my\-Security\-Status\-Qual field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_a9ffa2d99183cc651c0981c0c310eef9}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_d55a2fc95960a2629c498eba6fb8b43d}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMatchPrice@{getMatchPrice}}
+\index{getMatchPrice@{getMatchPrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMatchPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Match\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_d55a2fc95960a2629c498eba6fb8b43d}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Inside\-Match\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_fd8f72c21ac091a298c09bde0d4ed146}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ca43f8571100db2c3dc6a81c9ece7d4b}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMatchPriceFieldState@{getMatchPriceFieldState}}
+\index{getMatchPriceFieldState@{getMatchPriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMatchPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Match\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ca43f8571100db2c3dc6a81c9ece7d4b}
+
+
+Get the my\-Inside\-Match\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_3f065a9bdc4535525b7f4842f997ce9c}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_f794cdda271d04cc569e18222146e3a6}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getFarClearingPrice@{getFarClearingPrice}}
+\index{getFarClearingPrice@{getFarClearingPrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getFarClearingPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Far\-Clearing\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_f794cdda271d04cc569e18222146e3a6}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Far\-Clearing\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_0ca93b87f7f9e0dcf21db29dfced88f7}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_9a23b7703628b621deed5abcbc1b0e97}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getFarClearingPriceFieldState@{getFarClearingPriceFieldState}}
+\index{getFarClearingPriceFieldState@{getFarClearingPriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getFarClearingPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Far\-Clearing\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_9a23b7703628b621deed5abcbc1b0e97}
+
+
+Get the my\-Far\-Clearing\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_dce3165730870835e74d2fb704965cad}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_179bd16864d6c3bc9bf7758759f2e336}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getNearClearingPrice@{getNearClearingPrice}}
+\index{getNearClearingPrice@{getNearClearingPrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getNearClearingPrice]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Price\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Near\-Clearing\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_179bd16864d6c3bc9bf7758759f2e336}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Near\-Clearing\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_b9c9fff21f52344038f8b2aca1a5e672}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_f7935fdf67c67ffefadc39456a39448d}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getNearClearingPriceFieldState@{getNearClearingPriceFieldState}}
+\index{getNearClearingPriceFieldState@{getNearClearingPriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getNearClearingPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Near\-Clearing\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_f7935fdf67c67ffefadc39456a39448d}
+
+
+Get the my\-Near\-Clearing\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_dd69e2d456848710dbeff6a835c2b3ce}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_c9c3e649371b664623b47f1153927024}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getNoClearingPrice@{getNoClearingPrice}}
+\index{getNoClearingPrice@{getNoClearingPrice}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getNoClearingPrice]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Order\-Imbalance\-Listener::get\-No\-Clearing\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_c9c3e649371b664623b47f1153927024}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-No\-Clearing\-Price. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_448c70dec05ba4ec25e00cb497310cb8}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_c0d44a700d7ff3107cd46c0531c4634f}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getNoClearingPriceFieldState@{getNoClearingPriceFieldState}}
+\index{getNoClearingPriceFieldState@{getNoClearingPriceFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getNoClearingPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-No\-Clearing\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_c0d44a700d7ff3107cd46c0531c4634f}
+
+
+Get the my\-No\-Clearing\-Price field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_51b77c591dfe229e9c977d1c72e93536}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_dcb92d290caa24fbf12d5521f5917fe4}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getPriceVarInd@{getPriceVarInd}}
+\index{getPriceVarInd@{getPriceVarInd}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getPriceVarInd]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Price\-Var\-Ind () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_dcb92d290caa24fbf12d5521f5917fe4}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Price\-Var\-Ind. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_3aa9b6bbac27f9e29b8a1b9b43b11258}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_b59ba04652f3f591eab16bd569caa711}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getPriceVarIndFieldState@{getPriceVarIndFieldState}}
+\index{getPriceVarIndFieldState@{getPriceVarIndFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getPriceVarIndFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Price\-Var\-Ind\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_b59ba04652f3f591eab16bd569caa711}
+
+
+Get the my\-Price\-Var\-Ind field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_00676cadceeeccb79a6e27f2001580ca}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_068ff249e302d5490189e747622fae22}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getCrossType@{getCrossType}}
+\index{getCrossType@{getCrossType}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getCrossType]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Cross\-Type () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_068ff249e302d5490189e747622fae22}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Cross\-Type. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_9ecbfc392c96d8fadb6fda3a0b976de1}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ad35a45f28ab61abc265d15c76a26c37}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getCrossTypeFieldState@{getCrossTypeFieldState}}
+\index{getCrossTypeFieldState@{getCrossTypeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getCrossTypeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Cross\-Type\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ad35a45f28ab61abc265d15c76a26c37}
+
+
+Get the my\-Cross\-Type field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_be84e053623cff05c86acfabcb0a77a8}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_6cac146703cca68aecfd579f512d8b99}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_6cac146703cca68aecfd579f512d8b99}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Event\-Time. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_7ee6f3e229298d61cb56b5780795303b}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_b9da1457422c7e005b4d1cb097621e01}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_b9da1457422c7e005b4d1cb097621e01}
+
+
+Get the my\-Event\-Time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_5a99f2d259050eb8aa9e014ff7bb69de}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_3a6ecd36b855f2e1f122d07764a6b691}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_3a6ecd36b855f2e1f122d07764a6b691}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Event\-Seq\-Num. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_f49f74200cc7ca60a7509f4801a1f74e}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_1daae80b39ea6a070f2fa736fe90437d}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_1daae80b39ea6a070f2fa736fe90437d}
+
+
+Get the my\-Event\-Seq\-Num field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_09091e1441752ff0aaed931532d6fb7d}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_62085e018b55aee3a14325d692dea2c5}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_62085e018b55aee3a14325d692dea2c5}
+
+
+Get the source time. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_60b5d51f3799c4762090505ef5b213e9}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_6f070f42d8d7bf1b6260014835020c11}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_6f070f42d8d7bf1b6260014835020c11}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_9cd58f3d7b5ebea42fa86e5dde46ab18}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_f6441d47955f9cf7d8572a7c6e2816d3}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_f6441d47955f9cf7d8572a7c6e2816d3}
+
+
+Get the activity time. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b3810afc69474ef3b192ee4c9307e714}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_e01441cb3be1b7466ece277699971fa3}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_e01441cb3be1b7466ece277699971fa3}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_a61a566e3442181ca1fadc4524296cd0}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_041c934f699fe71fb16d9154bc444bf0}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMsgType@{getMsgType}}
+\index{getMsgType@{getMsgType}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMsgType]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-i32\_\-t Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Msg\-Type () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_041c934f699fe71fb16d9154bc444bf0}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Msg\-Type. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_45cda967241f1a5ff39a115c1395d06b}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_69ecc694f33d3fb39064a3fa1b0d8ef3}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMsgTypeFieldState@{getMsgTypeFieldState}}
+\index{getMsgTypeFieldState@{getMsgTypeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMsgTypeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Msg\-Type\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_69ecc694f33d3fb39064a3fa1b0d8ef3}
+
+
+Get the my\-Msg\-Type field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_458ec8a6c2f84a218af924a747f1a410}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_3cbc1356e4c8a1e6287aa4fd39124cbd}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getIssueSymbol@{getIssueSymbol}}
+\index{getIssueSymbol@{getIssueSymbol}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getIssueSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Issue\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_3cbc1356e4c8a1e6287aa4fd39124cbd}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Issue\-Symbol. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_7a63844c647b4b13d5f2d07f5e27d719}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_e65164421eb2d6835ada9d3185734021}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getIssueSymbolFieldState@{getIssueSymbolFieldState}}
+\index{getIssueSymbolFieldState@{getIssueSymbolFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getIssueSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Issue\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_e65164421eb2d6835ada9d3185734021}
+
+
+Get the my\-Issue\-Symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_955e7f821258342ee01c9d897f6c3d34}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_2f47719f14e5d1280791c8d832522589}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_2f47719f14e5d1280791c8d832522589}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Part\-Id. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_a6b1ce60263dc71feb68e3387359f31e}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_d8f5442d6f66c8a21c32581c66033146}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_d8f5442d6f66c8a21c32581c66033146}
+
+
+Get the my\-Part\-Id field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_841fcf0b983e68acb4da8b3aad428d47}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_dc73bf6c66194774ffd211ab9fb44b6c}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSeqNum@{getSeqNum}}
+\index{getSeqNum@{getSeqNum}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSeqNum]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_dc73bf6c66194774ffd211ab9fb44b6c}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Seq\-Num. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_2602c30d3dfd6dc8dd9aceaa33c4de24}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_59ef970a6b416d746105d9e766c1d1a8}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSeqNumFieldState@{getSeqNumFieldState}}
+\index{getSeqNumFieldState@{getSeqNumFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_59ef970a6b416d746105d9e766c1d1a8}
+
+
+Get the my\-Seq\-Num field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_5a26737b3bf2abcb981786581875357c}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ea12f359de6aa79408f26d36ea8db179}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSecurityStatusOrig@{getSecurityStatusOrig}}
+\index{getSecurityStatusOrig@{getSecurityStatusOrig}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSecurityStatusOrig]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Security\-Status\-Orig () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ea12f359de6aa79408f26d36ea8db179}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Security\-Status\-Orig. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_50880a888721be863d184627c984125b}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_1748b68453c66e890d34f666d6525832}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSecurityStatusOrigFieldState@{getSecurityStatusOrigFieldState}}
+\index{getSecurityStatusOrigFieldState@{getSecurityStatusOrigFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSecurityStatusOrigFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Security\-Status\-Orig\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_1748b68453c66e890d34f666d6525832}
+
+
+Get the my\-Security\-Status\-Orig field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_562a82c0673ef879851e3bbc2f0ac308}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_1e72e1cbb405c48d7acab9ea19b3014e}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSecurityStatusTime@{getSecurityStatusTime}}
+\index{getSecurityStatusTime@{getSecurityStatusTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSecurityStatusTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Security\-Status\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_1e72e1cbb405c48d7acab9ea19b3014e}
+
+
+\begin{Desc}
+\item[Returns:]Returns the my\-Security\-Status\-Time. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_f8a6454c6f2df2cec6d1bf0947cb4863}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_7588daaf6700cd13510c480612e19fe0}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSecurityStatusTimeFieldState@{getSecurityStatusTimeFieldState}}
+\index{getSecurityStatusTimeFieldState@{getSecurityStatusTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSecurityStatusTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Security\-Status\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_7588daaf6700cd13510c480612e19fe0}
+
+
+Get the my\-Security\-Status\-Time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_57f208148935324b7c942a10f8591433}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ce6a5772582fd4c526fbce36f1edee13}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getAuctionTime@{getAuctionTime}}
+\index{getAuctionTime@{getAuctionTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getAuctionTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Auction\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ce6a5772582fd4c526fbce36f1edee13}
+
+
+\begin{Desc}
+\item[Returns:]Returns the Auction Time. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_55fb46c69e5aff98475169a4ddbb4ae6}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_34beab82ba1bcb31a0a67df3fd9fa4bd}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getAuctionTimeFieldState@{getAuctionTimeFieldState}}
+\index{getAuctionTimeFieldState@{getAuctionTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getAuctionTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Auction\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_34beab82ba1bcb31a0a67df3fd9fa4bd}
+
+
+Get the my\-Auction\-Time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap_bb7f149026c917f1a04059c7bf2cc22f}{Wombat::Mamda\-Order\-Imbalance\-Recap}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_39ab83f80c21af82d0327dbb11a517d3}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_39ab83f80c21af82d0327dbb11a517d3}
+
+
+Get the line time. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3fcc26fa1a6446bcec12b11ac74ed26d}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_e5911efbbda1cb87fb25f7869a01a103}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_e5911efbbda1cb87fb25f7869a01a103}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_eb06352aca3280c5e89bad7a3b185cdf}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_ccbfe5ac89809e35624d42faa0c40a1b}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Date\-Time\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_ccbfe5ac89809e35624d42faa0c40a1b}
+
+
+Get the send time. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_b0602a83bec20cd8b341ec866ff3bffa}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_938d4210b58560bf6ee8cb155546a3d8}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_938d4210b58560bf6ee8cb155546a3d8}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_418ecb29b412cd42581b54c87b5360fd}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_de961c5bbeedc9f69136682e1adaf495}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_de961c5bbeedc9f69136682e1adaf495}
+
+
+Get the instruments string symbol. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_8783b136a1305d21c578ced8618c090b}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_0598f54a0e0c05667551187418173c22}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_0598f54a0e0c05667551187418173c22}
+
+
+Get the string symbol field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_ef95e19f4babb0e5ea8549d6cf29d13f}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_5420e2c89b36475cf11a698bda2fdb05}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Msg\-Qual\& Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_5420e2c89b36475cf11a698bda2fdb05}
+
+
+Get the message qualifier. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_675ce8f1de581548426335423d6b3864}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_5847f899d32947c2d9a0356733f84e78}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Imbalance\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_5847f899d32947c2d9a0356733f84e78}
+
+
+Get the message qualifier field state. 
+
+\begin{Desc}
+\item[Returns:]Message Qualifier. The message qualifier provides information in relation to messages duplicate, delayed or out-of-sequence status. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicEvent_3454d51e1131d9949691ee4b4153cd97}{Wombat::Mamda\-Basic\-Event}.\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_4d482115146d7030c0550acf8f63b2b6}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!updateFieldStates@{updateFieldStates}}
+\index{updateFieldStates@{updateFieldStates}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[updateFieldStates]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Order\-Imbalance\-Listener::update\-Field\-States ()}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_4d482115146d7030c0550acf8f63b2b6}
+
+
+\hypertarget{classWombat_1_1MamdaOrderImbalanceListener_b2125b8a0df3f3c01fc9b2f3efa088ce}{
+\index{Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaOrderImbalanceListener@{Wombat::Mamda\-Order\-Imbalance\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Imbalance\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceListener_b2125b8a0df3f3c01fc9b2f3efa088ce}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

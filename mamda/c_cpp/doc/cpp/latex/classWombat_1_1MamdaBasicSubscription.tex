@@ -1,0 +1,210 @@
+\hypertarget{classWombat_1_1MamdaBasicSubscription}{
+\section{Wombat::Mamda\-Basic\-Subscription Class Reference}
+\label{classWombat_1_1MamdaBasicSubscription}\index{Wombat::MamdaBasicSubscription@{Wombat::MamdaBasicSubscription}}
+}
+A \hyperlink{classWombat_1_1MamdaBasicSubscription}{Mamda\-Basic\-Subscription} is used to register interest in a particular symbol.  
+
+
+{\tt \#include $<$Mamda\-Basic\-Subscription.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaBasicSubscription_65cfae1eec84ef7ca6cc8861408d1c20}{Mamda\-Basic\-Subscription} ()
+\item 
+\hyperlink{classWombat_1_1MamdaBasicSubscription_32f280431e1a02439d2c6e81f619d7d1}{$\sim$Mamda\-Basic\-Subscription} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_3c27e4c6bf7b6c23464049840aff22e0}{create} (Mama\-Transport $\ast$transport, Mama\-Queue $\ast$queue, const char $\ast$symbol, void $\ast$closure=NULL)
+\begin{CompactList}\small\item\em Create and activate the subscription. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_8c1d89cc23a0231367c494c780c9bf60}{set\-Timeout} (double timeout)
+\begin{CompactList}\small\item\em Set the subscription timeout (in seconds). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_85589ccc88a8e13160b56060fd97450c}{add\-Msg\-Listener} (\hyperlink{classWombat_1_1MamdaBasicMsgListener}{Mamda\-Basic\-Msg\-Listener} $\ast$listener)
+\begin{CompactList}\small\item\em Add a listener for regular messages. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_2144d4ffbedc27f3977fb6d3f3b22177}{add\-Quality\-Listener} (\hyperlink{classWombat_1_1MamdaBasicQualityListener}{Mamda\-Basic\-Quality\-Listener} $\ast$listener)
+\begin{CompactList}\small\item\em Add a listener for changes in quality status. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_603860e2a70d52d81b58c1144d917134}{add\-Error\-Listener} (\hyperlink{classWombat_1_1MamdaBasicErrorListener}{Mamda\-Basic\-Error\-Listener} $\ast$listener)
+\begin{CompactList}\small\item\em Add a listener for error events. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate} ()
+\begin{CompactList}\small\item\em Activate the subscription. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_08fea356e431659a445fa51f1771e915}{deactivate} ()
+\begin{CompactList}\small\item\em Deactivate the subscription. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_bf05607bd5df80605cac565166196723}{set\-Symbol} (const char $\ast$symbol)
+\begin{CompactList}\small\item\em Set the symbol for the subscription. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaBasicSubscription_70c8ddc491827feafae615113552ae0e}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the symbol for the subscription. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_6d23691eadd41cac4ce2f3469290e674}{set\-Closure} (void $\ast$closure)
+\begin{CompactList}\small\item\em Set the closure for the subscription. \item\end{CompactList}\item 
+void $\ast$ \hyperlink{classWombat_1_1MamdaBasicSubscription_53fc877dc1f0050f49fd565726c22893}{get\-Closure} () const 
+\begin{CompactList}\small\item\em Get the additional object passed as the closure to the \hyperlink{classWombat_1_1MamdaBasicSubscription_3c27e4c6bf7b6c23464049840aff22e0}{create()} method. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_0d1173c5d3fc9dcfde323417ef8c9fbd}{set\-Transport} (Mama\-Transport $\ast$transport)
+\begin{CompactList}\small\item\em Set the MAMA transport. \item\end{CompactList}\item 
+Mama\-Transport $\ast$ \hyperlink{classWombat_1_1MamdaBasicSubscription_2f7c11930674c5d70a80021c8a472eaa}{get\-Transport} () const 
+\begin{CompactList}\small\item\em Get the Mama\-Transport for this subscription. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaBasicSubscription_1f4c83cf81bc3e0696f8491b611c75a2}{set\-Queue} (Mama\-Queue $\ast$queue)
+\begin{CompactList}\small\item\em Set the MAMA queue. \item\end{CompactList}\item 
+Mama\-Queue $\ast$ \hyperlink{classWombat_1_1MamdaBasicSubscription_9cc1e11b05ef14fbfd8092c831ac300a}{get\-Queue} () const 
+\begin{CompactList}\small\item\em Get the MAMA queue for this subscription. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classWombat_1_1MamdaBasicSubscription}{Mamda\-Basic\-Subscription} is used to register interest in a particular symbol. 
+
+A Mama\-Transport is required to actually activate the subscription.
+
+Multiple listeners can be added to the \hyperlink{classWombat_1_1MamdaBasicSubscription}{Mamda\-Basic\-Subscription}. In this way, an application can make use of more than one of the specialized value added MAMDA listeners, such as Mamda\-Calc\-Listener 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBasicSubscription_65cfae1eec84ef7ca6cc8861408d1c20}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!MamdaBasicSubscription@{MamdaBasicSubscription}}
+\index{MamdaBasicSubscription@{MamdaBasicSubscription}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[MamdaBasicSubscription]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Basic\-Subscription::Mamda\-Basic\-Subscription ()}}
+\label{classWombat_1_1MamdaBasicSubscription_65cfae1eec84ef7ca6cc8861408d1c20}
+
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_32f280431e1a02439d2c6e81f619d7d1}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!~MamdaBasicSubscription@{$\sim$MamdaBasicSubscription}}
+\index{~MamdaBasicSubscription@{$\sim$MamdaBasicSubscription}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[$\sim$MamdaBasicSubscription]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Basic\-Subscription::$\sim$Mamda\-Basic\-Subscription ()}}
+\label{classWombat_1_1MamdaBasicSubscription_32f280431e1a02439d2c6e81f619d7d1}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBasicSubscription_3c27e4c6bf7b6c23464049840aff22e0}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!create@{create}}
+\index{create@{create}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[create]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::create (Mama\-Transport $\ast$ {\em transport}, Mama\-Queue $\ast$ {\em queue}, const char $\ast$ {\em symbol}, void $\ast$ {\em closure} = {\tt NULL})}}
+\label{classWombat_1_1MamdaBasicSubscription_3c27e4c6bf7b6c23464049840aff22e0}
+
+
+Create and activate the subscription. 
+
+You can alternatively set all objects and properties and then call activate is you wish. \hypertarget{classWombat_1_1MamdaBasicSubscription_8c1d89cc23a0231367c494c780c9bf60}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[setTimeout]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::set\-Timeout (double {\em timeout})}}
+\label{classWombat_1_1MamdaBasicSubscription_8c1d89cc23a0231367c494c780c9bf60}
+
+
+Set the subscription timeout (in seconds). 
+
+Do this before calling \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate()}. \hypertarget{classWombat_1_1MamdaBasicSubscription_85589ccc88a8e13160b56060fd97450c}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!addMsgListener@{addMsgListener}}
+\index{addMsgListener@{addMsgListener}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[addMsgListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::add\-Msg\-Listener (\hyperlink{classWombat_1_1MamdaBasicMsgListener}{Mamda\-Basic\-Msg\-Listener} $\ast$ {\em listener})}}
+\label{classWombat_1_1MamdaBasicSubscription_85589ccc88a8e13160b56060fd97450c}
+
+
+Add a listener for regular messages. 
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_2144d4ffbedc27f3977fb6d3f3b22177}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!addQualityListener@{addQualityListener}}
+\index{addQualityListener@{addQualityListener}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[addQualityListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::add\-Quality\-Listener (\hyperlink{classWombat_1_1MamdaBasicQualityListener}{Mamda\-Basic\-Quality\-Listener} $\ast$ {\em listener})}}
+\label{classWombat_1_1MamdaBasicSubscription_2144d4ffbedc27f3977fb6d3f3b22177}
+
+
+Add a listener for changes in quality status. 
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_603860e2a70d52d81b58c1144d917134}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!addErrorListener@{addErrorListener}}
+\index{addErrorListener@{addErrorListener}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[addErrorListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::add\-Error\-Listener (\hyperlink{classWombat_1_1MamdaBasicErrorListener}{Mamda\-Basic\-Error\-Listener} $\ast$ {\em listener})}}
+\label{classWombat_1_1MamdaBasicSubscription_603860e2a70d52d81b58c1144d917134}
+
+
+Add a listener for error events. 
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!activate@{activate}}
+\index{activate@{activate}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[activate]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::activate ()}}
+\label{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}
+
+
+Activate the subscription. 
+
+Until this method is invoked, no updates will be received. Is called by \hyperlink{classWombat_1_1MamdaBasicSubscription_3c27e4c6bf7b6c23464049840aff22e0}{create()}. \hypertarget{classWombat_1_1MamdaBasicSubscription_08fea356e431659a445fa51f1771e915}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[deactivate]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::deactivate ()}}
+\label{classWombat_1_1MamdaBasicSubscription_08fea356e431659a445fa51f1771e915}
+
+
+Deactivate the subscription. 
+
+No more updates will be received for this subscription (unless \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate()} is invoked again). \hypertarget{classWombat_1_1MamdaBasicSubscription_bf05607bd5df80605cac565166196723}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!setSymbol@{setSymbol}}
+\index{setSymbol@{setSymbol}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[setSymbol]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::set\-Symbol (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamdaBasicSubscription_bf05607bd5df80605cac565166196723}
+
+
+Set the symbol for the subscription. 
+
+Do this before calling \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate()}. \hypertarget{classWombat_1_1MamdaBasicSubscription_70c8ddc491827feafae615113552ae0e}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Basic\-Subscription::get\-Symbol () const}}
+\label{classWombat_1_1MamdaBasicSubscription_70c8ddc491827feafae615113552ae0e}
+
+
+Get the symbol for the subscription. 
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_6d23691eadd41cac4ce2f3469290e674}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!setClosure@{setClosure}}
+\index{setClosure@{setClosure}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[setClosure]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::set\-Closure (void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaBasicSubscription_6d23691eadd41cac4ce2f3469290e674}
+
+
+Set the closure for the subscription. 
+
+Do this before calling \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate()}. \hypertarget{classWombat_1_1MamdaBasicSubscription_53fc877dc1f0050f49fd565726c22893}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!getClosure@{getClosure}}
+\index{getClosure@{getClosure}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[getClosure]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::Mamda\-Basic\-Subscription::get\-Closure () const}}
+\label{classWombat_1_1MamdaBasicSubscription_53fc877dc1f0050f49fd565726c22893}
+
+
+Get the additional object passed as the closure to the \hyperlink{classWombat_1_1MamdaBasicSubscription_3c27e4c6bf7b6c23464049840aff22e0}{create()} method. 
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_0d1173c5d3fc9dcfde323417ef8c9fbd}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!setTransport@{setTransport}}
+\index{setTransport@{setTransport}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[setTransport]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::set\-Transport (Mama\-Transport $\ast$ {\em transport})}}
+\label{classWombat_1_1MamdaBasicSubscription_0d1173c5d3fc9dcfde323417ef8c9fbd}
+
+
+Set the MAMA transport. 
+
+Do this before calling \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate()}. \hypertarget{classWombat_1_1MamdaBasicSubscription_2f7c11930674c5d70a80021c8a472eaa}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!getTransport@{getTransport}}
+\index{getTransport@{getTransport}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[getTransport]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Transport$\ast$ Wombat::Mamda\-Basic\-Subscription::get\-Transport () const}}
+\label{classWombat_1_1MamdaBasicSubscription_2f7c11930674c5d70a80021c8a472eaa}
+
+
+Get the Mama\-Transport for this subscription. 
+
+\hypertarget{classWombat_1_1MamdaBasicSubscription_1f4c83cf81bc3e0696f8491b611c75a2}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!setQueue@{setQueue}}
+\index{setQueue@{setQueue}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[setQueue]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Basic\-Subscription::set\-Queue (Mama\-Queue $\ast$ {\em queue})}}
+\label{classWombat_1_1MamdaBasicSubscription_1f4c83cf81bc3e0696f8491b611c75a2}
+
+
+Set the MAMA queue. 
+
+Do this before calling \hyperlink{classWombat_1_1MamdaBasicSubscription_704ba0b8ec4c027d0357d3e482314605}{activate()}. \hypertarget{classWombat_1_1MamdaBasicSubscription_9cc1e11b05ef14fbfd8092c831ac300a}{
+\index{Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}!getQueue@{getQueue}}
+\index{getQueue@{getQueue}!Wombat::MamdaBasicSubscription@{Wombat::Mamda\-Basic\-Subscription}}
+\subsubsection[getQueue]{\setlength{\rightskip}{0pt plus 5cm}Mama\-Queue$\ast$ Wombat::Mamda\-Basic\-Subscription::get\-Queue () const}}
+\label{classWombat_1_1MamdaBasicSubscription_9cc1e11b05ef14fbfd8092c831ac300a}
+
+
+Get the MAMA queue for this subscription. 
+

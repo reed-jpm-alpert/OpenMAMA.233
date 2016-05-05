@@ -1,0 +1,201 @@
+\hypertarget{classWombat_1_1MamdaSecStatusFields}{
+\section{Wombat::Mamda\-Sec\-Status\-Fields Class Reference}
+\label{classWombat_1_1MamdaSecStatusFields}\index{Wombat::MamdaSecStatusFields@{Wombat::MamdaSecStatusFields}}
+}
+Utility cache of {\tt Mama\-Field\-Descriptor}s which are used internally by the API when accessing security status related fields from update messages.  
+
+
+{\tt \#include $<$Mamda\-Sec\-Status\-Fields.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static void \hyperlink{classWombat_1_1MamdaSecStatusFields_17d03af8bead7f50d20d3bef3752df39}{set\-Dictionary} (const Mama\-Dictionary \&dictionary)
+\item 
+static void \hyperlink{classWombat_1_1MamdaSecStatusFields_12b1044449ea4ba845122fdf708b5615}{reset} ()
+\begin{CompactList}\small\item\em Reset the dictionary for security status update fields. \item\end{CompactList}\item 
+static uint16\_\-t \hyperlink{classWombat_1_1MamdaSecStatusFields_1c3eacda9d519ad0eb43ffd061e03a3b}{get\-Max\-Fid} ()
+\item 
+static bool \hyperlink{classWombat_1_1MamdaSecStatusFields_8fb0b970030599ffdba6ba1811d5d377}{is\-Set} ()
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_cb411ef6db5eadef356f8eb09f752265}{PUB\_\-CLASS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_14d9e1339db83fffe57a1e211f747456}{REASON}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_1d485dd0267c6fbb41afc51c39612b63}{SECURITY\_\-ACTION}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_168c233714e52c248760a8be2fedc56c}{SECURITY\_\-TYPE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_08b4fa5f438fab93dce14bd693f02476}{SECURITY\_\-STATUS}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_f95de09df2db9954afecc1d0e5c8a9ed}{SECURITY\_\-STATUS\_\-QUAL}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_165f4445e71a5b2390d1ea2dcbb5ee7e}{SECURITY\_\-STATUS\_\-NATIVE}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_1ecf812ee874ff88684efce54ba3fcae}{SECURITY\_\-STATUS\_\-TIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_1f28d36c8607d7892514042b9038ca7a}{EVENT\_\-SEQ\_\-NUM}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_95f43e98c060cfc9be64200ca481f55f}{FREE\_\-TEXT}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_4c83e286a950d8339ecb6ded8ac81973}{SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_4f09f557ade9e5f3a938b017dfe7e310}{LULDINDICATOR}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_01ebfb00008b7e2aa243bec653c565d4}{LULDTIME}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_6242c574f7cd90f90335c62426ee13c8}{LULDHIGHLIMIT}
+\item 
+static const Mama\-Field\-Descriptor $\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_e094d04fdb1790325f2dea6e600fffb6}{LULDLOWLIMIT}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Utility cache of {\tt Mama\-Field\-Descriptor}s which are used internally by the API when accessing security status related fields from update messages. 
+
+This class should be initialized prior to using the {\tt Mamda\-Security\-Status\-Listener} by calling {\tt Mamda\-Sec\-Status\-Listener.set\-Dictionary()} with a valid dictionary object which contains security status related fields. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusFields_17d03af8bead7f50d20d3bef3752df39}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!setDictionary@{setDictionary}}
+\index{setDictionary@{setDictionary}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[setDictionary]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Sec\-Status\-Fields::set\-Dictionary (const Mama\-Dictionary \& {\em dictionary})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_17d03af8bead7f50d20d3bef3752df39}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_12b1044449ea4ba845122fdf708b5615}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!reset@{reset}}
+\index{reset@{reset}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[reset]{\setlength{\rightskip}{0pt plus 5cm}static void Wombat::Mamda\-Sec\-Status\-Fields::reset ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_12b1044449ea4ba845122fdf708b5615}
+
+
+Reset the dictionary for security status update fields. 
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_1c3eacda9d519ad0eb43ffd061e03a3b}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!getMaxFid@{getMaxFid}}
+\index{getMaxFid@{getMaxFid}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[getMaxFid]{\setlength{\rightskip}{0pt plus 5cm}static uint16\_\-t Wombat::Mamda\-Sec\-Status\-Fields::get\-Max\-Fid ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_1c3eacda9d519ad0eb43ffd061e03a3b}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_8fb0b970030599ffdba6ba1811d5d377}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!isSet@{isSet}}
+\index{isSet@{isSet}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[isSet]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Sec\-Status\-Fields::is\-Set ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_8fb0b970030599ffdba6ba1811d5d377}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaSecStatusFields_cb411ef6db5eadef356f8eb09f752265}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!PUB_CLASS@{PUB\_\-CLASS}}
+\index{PUB_CLASS@{PUB\_\-CLASS}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[PUB\_\-CLASS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_cb411ef6db5eadef356f8eb09f752265}{Wombat::Mamda\-Sec\-Status\-Fields::PUB\_\-CLASS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_cb411ef6db5eadef356f8eb09f752265}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_14d9e1339db83fffe57a1e211f747456}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!REASON@{REASON}}
+\index{REASON@{REASON}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[REASON]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_14d9e1339db83fffe57a1e211f747456}{Wombat::Mamda\-Sec\-Status\-Fields::REASON}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_14d9e1339db83fffe57a1e211f747456}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_1d485dd0267c6fbb41afc51c39612b63}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SECURITY_ACTION@{SECURITY\_\-ACTION}}
+\index{SECURITY_ACTION@{SECURITY\_\-ACTION}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SECURITY\_\-ACTION]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_1d485dd0267c6fbb41afc51c39612b63}{Wombat::Mamda\-Sec\-Status\-Fields::SECURITY\_\-ACTION}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_1d485dd0267c6fbb41afc51c39612b63}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_168c233714e52c248760a8be2fedc56c}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SECURITY_TYPE@{SECURITY\_\-TYPE}}
+\index{SECURITY_TYPE@{SECURITY\_\-TYPE}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SECURITY\_\-TYPE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_168c233714e52c248760a8be2fedc56c}{Wombat::Mamda\-Sec\-Status\-Fields::SECURITY\_\-TYPE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_168c233714e52c248760a8be2fedc56c}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_08b4fa5f438fab93dce14bd693f02476}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SECURITY_STATUS@{SECURITY\_\-STATUS}}
+\index{SECURITY_STATUS@{SECURITY\_\-STATUS}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SECURITY\_\-STATUS]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_08b4fa5f438fab93dce14bd693f02476}{Wombat::Mamda\-Sec\-Status\-Fields::SECURITY\_\-STATUS}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_08b4fa5f438fab93dce14bd693f02476}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_f95de09df2db9954afecc1d0e5c8a9ed}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SECURITY_STATUS_QUAL@{SECURITY\_\-STATUS\_\-QUAL}}
+\index{SECURITY_STATUS_QUAL@{SECURITY\_\-STATUS\_\-QUAL}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SECURITY\_\-STATUS\_\-QUAL]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_f95de09df2db9954afecc1d0e5c8a9ed}{Wombat::Mamda\-Sec\-Status\-Fields::SECURITY\_\-STATUS\_\-QUAL}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_f95de09df2db9954afecc1d0e5c8a9ed}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_165f4445e71a5b2390d1ea2dcbb5ee7e}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SECURITY_STATUS_NATIVE@{SECURITY\_\-STATUS\_\-NATIVE}}
+\index{SECURITY_STATUS_NATIVE@{SECURITY\_\-STATUS\_\-NATIVE}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SECURITY\_\-STATUS\_\-NATIVE]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_165f4445e71a5b2390d1ea2dcbb5ee7e}{Wombat::Mamda\-Sec\-Status\-Fields::SECURITY\_\-STATUS\_\-NATIVE}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_165f4445e71a5b2390d1ea2dcbb5ee7e}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_1ecf812ee874ff88684efce54ba3fcae}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SECURITY_STATUS_TIME@{SECURITY\_\-STATUS\_\-TIME}}
+\index{SECURITY_STATUS_TIME@{SECURITY\_\-STATUS\_\-TIME}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SECURITY\_\-STATUS\_\-TIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_1ecf812ee874ff88684efce54ba3fcae}{Wombat::Mamda\-Sec\-Status\-Fields::SECURITY\_\-STATUS\_\-TIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_1ecf812ee874ff88684efce54ba3fcae}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_1f28d36c8607d7892514042b9038ca7a}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!EVENT_SEQ_NUM@{EVENT\_\-SEQ\_\-NUM}}
+\index{EVENT_SEQ_NUM@{EVENT\_\-SEQ\_\-NUM}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[EVENT\_\-SEQ\_\-NUM]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_1f28d36c8607d7892514042b9038ca7a}{Wombat::Mamda\-Sec\-Status\-Fields::EVENT\_\-SEQ\_\-NUM}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_1f28d36c8607d7892514042b9038ca7a}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_95f43e98c060cfc9be64200ca481f55f}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!FREE_TEXT@{FREE\_\-TEXT}}
+\index{FREE_TEXT@{FREE\_\-TEXT}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[FREE\_\-TEXT]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_95f43e98c060cfc9be64200ca481f55f}{Wombat::Mamda\-Sec\-Status\-Fields::FREE\_\-TEXT}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_95f43e98c060cfc9be64200ca481f55f}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_4c83e286a950d8339ecb6ded8ac81973}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!SHORT_SALE_CIRCUIT_BREAKER@{SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}}
+\index{SHORT_SALE_CIRCUIT_BREAKER@{SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_4c83e286a950d8339ecb6ded8ac81973}{Wombat::Mamda\-Sec\-Status\-Fields::SHORT\_\-SALE\_\-CIRCUIT\_\-BREAKER}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_4c83e286a950d8339ecb6ded8ac81973}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_4f09f557ade9e5f3a938b017dfe7e310}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!LULDINDICATOR@{LULDINDICATOR}}
+\index{LULDINDICATOR@{LULDINDICATOR}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[LULDINDICATOR]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_4f09f557ade9e5f3a938b017dfe7e310}{Wombat::Mamda\-Sec\-Status\-Fields::LULDINDICATOR}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_4f09f557ade9e5f3a938b017dfe7e310}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_01ebfb00008b7e2aa243bec653c565d4}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!LULDTIME@{LULDTIME}}
+\index{LULDTIME@{LULDTIME}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[LULDTIME]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_01ebfb00008b7e2aa243bec653c565d4}{Wombat::Mamda\-Sec\-Status\-Fields::LULDTIME}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_01ebfb00008b7e2aa243bec653c565d4}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_6242c574f7cd90f90335c62426ee13c8}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!LULDHIGHLIMIT@{LULDHIGHLIMIT}}
+\index{LULDHIGHLIMIT@{LULDHIGHLIMIT}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[LULDHIGHLIMIT]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_6242c574f7cd90f90335c62426ee13c8}{Wombat::Mamda\-Sec\-Status\-Fields::LULDHIGHLIMIT}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_6242c574f7cd90f90335c62426ee13c8}
+
+
+\hypertarget{classWombat_1_1MamdaSecStatusFields_e094d04fdb1790325f2dea6e600fffb6}{
+\index{Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}!LULDLOWLIMIT@{LULDLOWLIMIT}}
+\index{LULDLOWLIMIT@{LULDLOWLIMIT}!Wombat::MamdaSecStatusFields@{Wombat::Mamda\-Sec\-Status\-Fields}}
+\subsubsection[LULDLOWLIMIT]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Field\-Descriptor$\ast$ \hyperlink{classWombat_1_1MamdaSecStatusFields_e094d04fdb1790325f2dea6e600fffb6}{Wombat::Mamda\-Sec\-Status\-Fields::LULDLOWLIMIT}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaSecStatusFields_e094d04fdb1790325f2dea6e600fffb6}
+
+

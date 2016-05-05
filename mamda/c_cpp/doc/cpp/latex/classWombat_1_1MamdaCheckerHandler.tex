@@ -1,0 +1,56 @@
+\hypertarget{classWombat_1_1MamdaCheckerHandler}{
+\section{Wombat::Mamda\-Checker\-Handler Class Reference}
+\label{classWombat_1_1MamdaCheckerHandler}\index{Wombat::MamdaCheckerHandler@{Wombat::MamdaCheckerHandler}}
+}
+\hyperlink{classWombat_1_1MamdaCheckerHandler}{Mamda\-Checker\-Handler} is an interface for applications that want to handle the results of the \hyperlink{classWombat_1_1MamdaQuoteChecker}{Mamda\-Quote\-Checker} and \hyperlink{classWombat_1_1MamdaTradeChecker}{Mamda\-Trade\-Checker}.  
+
+
+{\tt \#include $<$Mamda\-Checker\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaCheckerHandler_84a0fdc7401c71483159eff705b4a290}{on\-Success} (\hyperlink{namespaceWombat_f4416a38ea95baf743f07d19ac9b6a4a}{Mamda\-Checker\-Type} check\-Type)=0
+\begin{CompactList}\small\item\em Method invoked when a successful check is completed. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaCheckerHandler_ee8b075a8d39a266787d6262a8346ea5}{on\-Inconclusive} (\hyperlink{namespaceWombat_f4416a38ea95baf743f07d19ac9b6a4a}{Mamda\-Checker\-Type} check\-Type, const char $\ast$reason)=0
+\begin{CompactList}\small\item\em Method invoked when check is completed inconclusively. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaCheckerHandler_42e88268913899c069f2b91dd8ad7399}{on\-Failure} (\hyperlink{namespaceWombat_f4416a38ea95baf743f07d19ac9b6a4a}{Mamda\-Checker\-Type} check\-Type, const char $\ast$reason, const Mama\-Msg \&msg)=0
+\begin{CompactList}\small\item\em Method invoked when a failed check is completed. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaCheckerHandler}{Mamda\-Checker\-Handler} is an interface for applications that want to handle the results of the \hyperlink{classWombat_1_1MamdaQuoteChecker}{Mamda\-Quote\-Checker} and \hyperlink{classWombat_1_1MamdaTradeChecker}{Mamda\-Trade\-Checker}. 
+
+Callback interfaces are provided for correct and erroneous checks. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaCheckerHandler_84a0fdc7401c71483159eff705b4a290}{
+\index{Wombat::MamdaCheckerHandler@{Wombat::Mamda\-Checker\-Handler}!onSuccess@{onSuccess}}
+\index{onSuccess@{onSuccess}!Wombat::MamdaCheckerHandler@{Wombat::Mamda\-Checker\-Handler}}
+\subsubsection[onSuccess]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Checker\-Handler::on\-Success (\hyperlink{namespaceWombat_f4416a38ea95baf743f07d19ac9b6a4a}{Mamda\-Checker\-Type} {\em check\-Type})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCheckerHandler_84a0fdc7401c71483159eff705b4a290}
+
+
+Method invoked when a successful check is completed. 
+
+\hypertarget{classWombat_1_1MamdaCheckerHandler_ee8b075a8d39a266787d6262a8346ea5}{
+\index{Wombat::MamdaCheckerHandler@{Wombat::Mamda\-Checker\-Handler}!onInconclusive@{onInconclusive}}
+\index{onInconclusive@{onInconclusive}!Wombat::MamdaCheckerHandler@{Wombat::Mamda\-Checker\-Handler}}
+\subsubsection[onInconclusive]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Checker\-Handler::on\-Inconclusive (\hyperlink{namespaceWombat_f4416a38ea95baf743f07d19ac9b6a4a}{Mamda\-Checker\-Type} {\em check\-Type}, const char $\ast$ {\em reason})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCheckerHandler_ee8b075a8d39a266787d6262a8346ea5}
+
+
+Method invoked when check is completed inconclusively. 
+
+An attempt to check the order book may be inconclusive if the order book sequence numbers do not match up. \hypertarget{classWombat_1_1MamdaCheckerHandler_42e88268913899c069f2b91dd8ad7399}{
+\index{Wombat::MamdaCheckerHandler@{Wombat::Mamda\-Checker\-Handler}!onFailure@{onFailure}}
+\index{onFailure@{onFailure}!Wombat::MamdaCheckerHandler@{Wombat::Mamda\-Checker\-Handler}}
+\subsubsection[onFailure]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Checker\-Handler::on\-Failure (\hyperlink{namespaceWombat_f4416a38ea95baf743f07d19ac9b6a4a}{Mamda\-Checker\-Type} {\em check\-Type}, const char $\ast$ {\em reason}, const Mama\-Msg \& {\em msg})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaCheckerHandler_42e88268913899c069f2b91dd8ad7399}
+
+
+Method invoked when a failed check is completed. 
+
+The message provided, if non-NULL, is the one received for the snapshot or delta, depending upon the value of check\-Type. 

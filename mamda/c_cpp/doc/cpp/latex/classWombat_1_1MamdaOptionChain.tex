@@ -1,0 +1,263 @@
+\hypertarget{classWombat_1_1MamdaOptionChain}{
+\section{Wombat::Mamda\-Option\-Chain Class Reference}
+\label{classWombat_1_1MamdaOptionChain}\index{Wombat::MamdaOptionChain@{Wombat::MamdaOptionChain}}
+}
+\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} is a specialized class to represent market data option chains.  
+
+
+{\tt \#include $<$Mamda\-Option\-Chain.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOptionChain_c696e591f54e1237478eb9fb03fde9ad}{Mamda\-Option\-Chain} (const char $\ast$symbol)
+\begin{CompactList}\small\item\em \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} Constructor. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChain_1571f9e007a6fa33adfc6734201d18e9}{$\sim$Mamda\-Option\-Chain} ()
+\begin{CompactList}\small\item\em \hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_73abe9e7b8d73a0f7508cd12fa1a763e}{set\-Symbol} (const char $\ast$symbol)
+\begin{CompactList}\small\item\em Set the underlying symbol for the option chain. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionChain_a2d2a98a0f219cb7a83a273710bafa8e}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the underlying symbol for the option chain. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_5a4d5775be29a6f0e63d40723c9f2a0e}{set\-Underlying\-Quote\-Listener} (const \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} $\ast$quote\-Listener)
+\begin{CompactList}\small\item\em Set the underlying quote information. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_5402589f97170ab7b23cdc6d6444043b}{set\-Underlying\-Trade\-Listener} (const \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} $\ast$trade\-Listener)
+\begin{CompactList}\small\item\em Set the underlying trade information. \item\end{CompactList}\item 
+const \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} $\ast$ \hyperlink{classWombat_1_1MamdaOptionChain_0eaa6dd3566c4ef4307c111196b052a7}{get\-Underlying\-Quote\-Listener} () const 
+\begin{CompactList}\small\item\em Get the underlying quote information. \item\end{CompactList}\item 
+const \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} $\ast$ \hyperlink{classWombat_1_1MamdaOptionChain_0063439822d2ce9579359a364c4a08c7}{get\-Underlying\-Trade\-Listener} () const 
+\begin{CompactList}\small\item\em Get the underlying trade information. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_bf155ef60b006915b493d70243e06640}{add\-Contract} (const char $\ast$contract\-Symbol, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$contract)
+\begin{CompactList}\small\item\em Add an option contract. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_5beee45c6d8385a030c99f114259657f}{process\-New\-Contract\-Details} (const char $\ast$contract\-Symbol, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$contract)
+\begin{CompactList}\small\item\em Add the contract to value-added-structures such as Put and Call side mappings and expiration by strike set, etc. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_0eed67c8d6b07d556716d25eb5c66e2a}{remove\-Contract} (const char $\ast$contract\-Symbol)
+\begin{CompactList}\small\item\em Remove an option contract. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaOptionChain_57a5adfcdfe5568e51707d9a84051eaa}{get\-At\-The\-Money} (\hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} compare\-Type)
+\begin{CompactList}\small\item\em Determine the underlying price (\char`\"{}at the money\char`\"{}), based on the mode of calculation. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_d009476aa7401aaf6cb09ddaa782f262}{get\-Strikes\-Within\-Percent} (\hyperlink{namespaceWombat_302d481a195bac5c9315c82cdbc79447}{Strike\-Set} \&strike\-Set, double percentage, \hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} compare\-Type)
+\begin{CompactList}\small\item\em Determine the set of strike prices that are included in a given percentage range of the underlying price. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_e49d773a9a0767a928ef2f55b4bd6d10}{get\-Strikes\-Within\-Range\-Size} (\hyperlink{namespaceWombat_302d481a195bac5c9315c82cdbc79447}{Strike\-Set} \&strike\-Set, int range\-Length, \hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} compare\-Type)
+\begin{CompactList}\small\item\em Determine the set of strike prices that are included in a given fixed size range of strikes surrounding the underlying price. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionChain_f9a271be645a3afdba8e3a7d13d824ab}{get\-Is\-Price\-Within\-Percent\-Of\-Money} (double price, double percentage, \hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} compare\-Type)
+\begin{CompactList}\small\item\em Determine whether some price (e.g. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamdaOptionChain_67f773d9967e44398ea03cd44f0fcc48}{call\-Iterator} ()
+\begin{CompactList}\small\item\em Obtain an iterator to the beginning of the list of call options. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator}{iterator} \hyperlink{classWombat_1_1MamdaOptionChain_9e94ee48221e0be5f47c33e9d5065345}{put\-Iterator} ()
+\begin{CompactList}\small\item\em Obtain an iterator to the beginning of the list of put options. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChain_1_1const__iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamdaOptionChain_ad8f3535caee91bda7f8165da6ffc36d}{call\-Iterator} () const 
+\begin{CompactList}\small\item\em Obtain an iterator to the beginning of the list of call options. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionChain_1_1const__iterator}{const\_\-iterator} \hyperlink{classWombat_1_1MamdaOptionChain_051522c5af2231be1771c9482a017e84}{put\-Iterator} () const 
+\begin{CompactList}\small\item\em Obtain an iterator to the beginning of the list of put options. \item\end{CompactList}\item 
+const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& \hyperlink{classWombat_1_1MamdaOptionChain_f55c38897392baaea74b1f2905d3e026}{get\-All\-Expirations} () const 
+\begin{CompactList}\small\item\em Return the set of all expiration dates (which can be iterated over one date at a time). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionChain_9149b46f6ba398eb7f3ef458cc43a09c}{dump} ()
+\begin{CompactList}\small\item\em Dump the option chain to standard output. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classWombat_1_1MamdaOptionChain_1_1const__iterator}{const\_\-iterator}
+\item 
+class \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator}{iterator}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} is a specialized class to represent market data option chains. 
+
+The class has capabilities to store the current state of an entire option chain, or a subset of the chain. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOptionChain_c696e591f54e1237478eb9fb03fde9ad}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!MamdaOptionChain@{MamdaOptionChain}}
+\index{MamdaOptionChain@{MamdaOptionChain}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[MamdaOptionChain]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Chain::Mamda\-Option\-Chain (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamdaOptionChain_c696e591f54e1237478eb9fb03fde9ad}
+
+
+\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} Constructor. 
+
+\hypertarget{classWombat_1_1MamdaOptionChain_1571f9e007a6fa33adfc6734201d18e9}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!~MamdaOptionChain@{$\sim$MamdaOptionChain}}
+\index{~MamdaOptionChain@{$\sim$MamdaOptionChain}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[$\sim$MamdaOptionChain]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Chain::$\sim$Mamda\-Option\-Chain ()}}
+\label{classWombat_1_1MamdaOptionChain_1571f9e007a6fa33adfc6734201d18e9}
+
+
+\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionChain_73abe9e7b8d73a0f7508cd12fa1a763e}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!setSymbol@{setSymbol}}
+\index{setSymbol@{setSymbol}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[setSymbol]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::set\-Symbol (const char $\ast$ {\em symbol})}}
+\label{classWombat_1_1MamdaOptionChain_73abe9e7b8d73a0f7508cd12fa1a763e}
+
+
+Set the underlying symbol for the option chain. 
+
+\hypertarget{classWombat_1_1MamdaOptionChain_a2d2a98a0f219cb7a83a273710bafa8e}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Chain::get\-Symbol () const}}
+\label{classWombat_1_1MamdaOptionChain_a2d2a98a0f219cb7a83a273710bafa8e}
+
+
+Get the underlying symbol for the option chain. 
+
+\hypertarget{classWombat_1_1MamdaOptionChain_5a4d5775be29a6f0e63d40723c9f2a0e}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!setUnderlyingQuoteListener@{setUnderlyingQuoteListener}}
+\index{setUnderlyingQuoteListener@{setUnderlyingQuoteListener}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[setUnderlyingQuoteListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::set\-Underlying\-Quote\-Listener (const \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} $\ast$ {\em quote\-Listener})}}
+\label{classWombat_1_1MamdaOptionChain_5a4d5775be29a6f0e63d40723c9f2a0e}
+
+
+Set the underlying quote information. 
+
+The \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} object would likely be an object that gets automatically updated by events handled elsewhere. \hypertarget{classWombat_1_1MamdaOptionChain_5402589f97170ab7b23cdc6d6444043b}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!setUnderlyingTradeListener@{setUnderlyingTradeListener}}
+\index{setUnderlyingTradeListener@{setUnderlyingTradeListener}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[setUnderlyingTradeListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::set\-Underlying\-Trade\-Listener (const \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} $\ast$ {\em trade\-Listener})}}
+\label{classWombat_1_1MamdaOptionChain_5402589f97170ab7b23cdc6d6444043b}
+
+
+Set the underlying trade information. 
+
+The \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} object would likely be an object that gets automatically updated by events handled elsewhere. \hypertarget{classWombat_1_1MamdaOptionChain_0eaa6dd3566c4ef4307c111196b052a7}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getUnderlyingQuoteListener@{getUnderlyingQuoteListener}}
+\index{getUnderlyingQuoteListener@{getUnderlyingQuoteListener}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getUnderlyingQuoteListener]{\setlength{\rightskip}{0pt plus 5cm}const \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}$\ast$ Wombat::Mamda\-Option\-Chain::get\-Underlying\-Quote\-Listener () const}}
+\label{classWombat_1_1MamdaOptionChain_0eaa6dd3566c4ef4307c111196b052a7}
+
+
+Get the underlying quote information. 
+
+Returns the object provided by \hyperlink{classWombat_1_1MamdaOptionChain_5a4d5775be29a6f0e63d40723c9f2a0e}{set\-Underlying\-Quote\-Listener()}, if any. \hypertarget{classWombat_1_1MamdaOptionChain_0063439822d2ce9579359a364c4a08c7}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getUnderlyingTradeListener@{getUnderlyingTradeListener}}
+\index{getUnderlyingTradeListener@{getUnderlyingTradeListener}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getUnderlyingTradeListener]{\setlength{\rightskip}{0pt plus 5cm}const \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}$\ast$ Wombat::Mamda\-Option\-Chain::get\-Underlying\-Trade\-Listener () const}}
+\label{classWombat_1_1MamdaOptionChain_0063439822d2ce9579359a364c4a08c7}
+
+
+Get the underlying trade information. 
+
+Returns the object provided by \hyperlink{classWombat_1_1MamdaOptionChain_5402589f97170ab7b23cdc6d6444043b}{set\-Underlying\-Trade\-Listener()}, if any. \hypertarget{classWombat_1_1MamdaOptionChain_bf155ef60b006915b493d70243e06640}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!addContract@{addContract}}
+\index{addContract@{addContract}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[addContract]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::add\-Contract (const char $\ast$ {\em contract\-Symbol}, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ {\em contract})}}
+\label{classWombat_1_1MamdaOptionChain_bf155ef60b006915b493d70243e06640}
+
+
+Add an option contract. 
+
+This method would not normally be invoked by a user application. Rather, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} would be most likely to call this method. \hypertarget{classWombat_1_1MamdaOptionChain_5beee45c6d8385a030c99f114259657f}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!processNewContractDetails@{processNewContractDetails}}
+\index{processNewContractDetails@{processNewContractDetails}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[processNewContractDetails]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::process\-New\-Contract\-Details (const char $\ast$ {\em contract\-Symbol}, \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ {\em contract})}}
+\label{classWombat_1_1MamdaOptionChain_5beee45c6d8385a030c99f114259657f}
+
+
+Add the contract to value-added-structures such as Put and Call side mappings and expiration by strike set, etc. 
+
+Called by Add\-Contract(const char$\ast$, Mamda\-Option\-Contract$\ast$). Can be called directly on a contract when additional mandatory fields are acquired for the contract that may enable it to be added to value-added-structures it wasn't added to (due to the lack of information) when first added to the chain. \hypertarget{classWombat_1_1MamdaOptionChain_0eed67c8d6b07d556716d25eb5c66e2a}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!removeContract@{removeContract}}
+\index{removeContract@{removeContract}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[removeContract]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::remove\-Contract (const char $\ast$ {\em contract\-Symbol})}}
+\label{classWombat_1_1MamdaOptionChain_0eed67c8d6b07d556716d25eb5c66e2a}
+
+
+Remove an option contract. 
+
+This method would not normally be invoked by a user application. Rather, \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener} would be most likely to call this method. \hypertarget{classWombat_1_1MamdaOptionChain_57a5adfcdfe5568e51707d9a84051eaa}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getAtTheMoney@{getAtTheMoney}}
+\index{getAtTheMoney@{getAtTheMoney}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getAtTheMoney]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Option\-Chain::get\-At\-The\-Money (\hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} {\em compare\-Type})}}
+\label{classWombat_1_1MamdaOptionChain_57a5adfcdfe5568e51707d9a84051eaa}
+
+
+Determine the underlying price (\char`\"{}at the money\char`\"{}), based on the mode of calculation. 
+
+\hypertarget{classWombat_1_1MamdaOptionChain_d009476aa7401aaf6cb09ddaa782f262}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getStrikesWithinPercent@{getStrikesWithinPercent}}
+\index{getStrikesWithinPercent@{getStrikesWithinPercent}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getStrikesWithinPercent]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::get\-Strikes\-Within\-Percent (\hyperlink{namespaceWombat_302d481a195bac5c9315c82cdbc79447}{Strike\-Set} \& {\em strike\-Set}, double {\em percentage}, \hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} {\em compare\-Type})}}
+\label{classWombat_1_1MamdaOptionChain_d009476aa7401aaf6cb09ddaa782f262}
+
+
+Determine the set of strike prices that are included in a given percentage range of the underlying price. 
+
+If there are no strikes within the percentage range, then the set will be empty. \hypertarget{classWombat_1_1MamdaOptionChain_e49d773a9a0767a928ef2f55b4bd6d10}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getStrikesWithinRangeSize@{getStrikesWithinRangeSize}}
+\index{getStrikesWithinRangeSize@{getStrikesWithinRangeSize}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getStrikesWithinRangeSize]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::get\-Strikes\-Within\-Range\-Size (\hyperlink{namespaceWombat_302d481a195bac5c9315c82cdbc79447}{Strike\-Set} \& {\em strike\-Set}, int {\em range\-Length}, \hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} {\em compare\-Type})}}
+\label{classWombat_1_1MamdaOptionChain_e49d773a9a0767a928ef2f55b4bd6d10}
+
+
+Determine the set of strike prices that are included in a given fixed size range of strikes surrounding the underlying price. 
+
+If range\-Len is odd, then the strike price nearest to the underlying price is treated as a higher strike price. If range\-Len is even and the underlying price is exactly equal to a strike price, then that strike price is treated as a higher strike price. \hypertarget{classWombat_1_1MamdaOptionChain_f9a271be645a3afdba8e3a7d13d824ab}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getIsPriceWithinPercentOfMoney@{getIsPriceWithinPercentOfMoney}}
+\index{getIsPriceWithinPercentOfMoney@{getIsPriceWithinPercentOfMoney}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getIsPriceWithinPercentOfMoney]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Chain::get\-Is\-Price\-Within\-Percent\-Of\-Money (double {\em price}, double {\em percentage}, \hyperlink{namespaceWombat_a07b06a78fb02e1f93ee37a2d944c33a}{Mamda\-Option\-At\-The\-Money\-Compare\-Type} {\em compare\-Type})}}
+\label{classWombat_1_1MamdaOptionChain_f9a271be645a3afdba8e3a7d13d824ab}
+
+
+Determine whether some price (e.g. 
+
+a strike price) is within a given percentage range of the underlying (at the money) price. \hypertarget{classWombat_1_1MamdaOptionChain_67f773d9967e44398ea03cd44f0fcc48}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!callIterator@{callIterator}}
+\index{callIterator@{callIterator}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[callIterator]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator}{iterator} Wombat::Mamda\-Option\-Chain::call\-Iterator ()}}
+\label{classWombat_1_1MamdaOptionChain_67f773d9967e44398ea03cd44f0fcc48}
+
+
+Obtain an iterator to the beginning of the list of call options. 
+
+Use the \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_2b7d07e58b4f3b0134d57483388f106c}{iterator::has\-Next()} to test for a subsequent iterator and use \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_ca4efaeb0cd56b2ec22bcc8288e78a81}{iterator::next()} method to move to it. \hypertarget{classWombat_1_1MamdaOptionChain_9e94ee48221e0be5f47c33e9d5065345}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!putIterator@{putIterator}}
+\index{putIterator@{putIterator}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[putIterator]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator}{iterator} Wombat::Mamda\-Option\-Chain::put\-Iterator ()}}
+\label{classWombat_1_1MamdaOptionChain_9e94ee48221e0be5f47c33e9d5065345}
+
+
+Obtain an iterator to the beginning of the list of put options. 
+
+Use the \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_2b7d07e58b4f3b0134d57483388f106c}{iterator::has\-Next()} to test for a subsequent iterator and use \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_ca4efaeb0cd56b2ec22bcc8288e78a81}{iterator::next()} method to move to it. \hypertarget{classWombat_1_1MamdaOptionChain_ad8f3535caee91bda7f8165da6ffc36d}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!callIterator@{callIterator}}
+\index{callIterator@{callIterator}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[callIterator]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionChain_1_1const__iterator}{const\_\-iterator} Wombat::Mamda\-Option\-Chain::call\-Iterator () const}}
+\label{classWombat_1_1MamdaOptionChain_ad8f3535caee91bda7f8165da6ffc36d}
+
+
+Obtain an iterator to the beginning of the list of call options. 
+
+Use the \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_2b7d07e58b4f3b0134d57483388f106c}{iterator::has\-Next()} to test for a subsequent iterator and use \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_ca4efaeb0cd56b2ec22bcc8288e78a81}{iterator::next()} method to move to it. \hypertarget{classWombat_1_1MamdaOptionChain_051522c5af2231be1771c9482a017e84}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!putIterator@{putIterator}}
+\index{putIterator@{putIterator}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[putIterator]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionChain_1_1const__iterator}{const\_\-iterator} Wombat::Mamda\-Option\-Chain::put\-Iterator () const}}
+\label{classWombat_1_1MamdaOptionChain_051522c5af2231be1771c9482a017e84}
+
+
+Obtain an iterator to the beginning of the list of put options. 
+
+Use the \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_2b7d07e58b4f3b0134d57483388f106c}{iterator::has\-Next()} to test for a subsequent iterator and use \hyperlink{classWombat_1_1MamdaOptionChain_1_1iterator_ca4efaeb0cd56b2ec22bcc8288e78a81}{iterator::next()} method to move to it. \hypertarget{classWombat_1_1MamdaOptionChain_f55c38897392baaea74b1f2905d3e026}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!getAllExpirations@{getAllExpirations}}
+\index{getAllExpirations@{getAllExpirations}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[getAllExpirations]{\setlength{\rightskip}{0pt plus 5cm}const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set}\& Wombat::Mamda\-Option\-Chain::get\-All\-Expirations () const}}
+\label{classWombat_1_1MamdaOptionChain_f55c38897392baaea74b1f2905d3e026}
+
+
+Return the set of all expiration dates (which can be iterated over one date at a time). 
+
+\hypertarget{classWombat_1_1MamdaOptionChain_9149b46f6ba398eb7f3ef458cc43a09c}{
+\index{Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}!dump@{dump}}
+\index{dump@{dump}!Wombat::MamdaOptionChain@{Wombat::Mamda\-Option\-Chain}}
+\subsubsection[dump]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Chain::dump ()}}
+\label{classWombat_1_1MamdaOptionChain_9149b46f6ba398eb7f3ef458cc43a09c}
+
+
+Dump the option chain to standard output. 
+

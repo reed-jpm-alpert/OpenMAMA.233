@@ -1,0 +1,94 @@
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet}{
+\section{Wombat::Mamda\-Option\-Expiration\-Date\-Set Class Reference}
+\label{classWombat_1_1MamdaOptionExpirationDateSet}\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::MamdaOptionExpirationDateSet}}
+}
+A class that represents a set of expiration dates, each of which contains a set of strike prices, each of which contains a set of option contracts, each of which contains exchange-specific contracts.  
+
+
+{\tt \#include $<$Mamda\-Option\-Expiration\-Date\-Set.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Option\-Expiration\-Date\-Set::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaOptionExpirationDateSet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_d4d423540db1d29fef11c563b451dc69}{Mamda\-Option\-Expiration\-Date\-Set} ()
+\item 
+\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_51ec0f5167345aab435049f011d31b4d}{Mamda\-Option\-Expiration\-Date\-Set} (const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \&copy)
+\item 
+\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_a912bfba725281fbfb94d9ea33beef74}{$\sim$Mamda\-Option\-Expiration\-Date\-Set} ()
+\item 
+\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_44ae713d433431323e784c43f3305e84}{operator=} (const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \&rhs)
+\item 
+void \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_a58c1ab06b95af9bbee919d6fe7b373a}{get\-Expirations\-Before} (\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \&result, const Mama\-Date\-Time \&date) const 
+\item 
+void \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_b756b2efe9defc35104d65ef398d378e}{get\-Expirations} (\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \&result, int num\-Expirations) const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet_31ab5b6e52a84706308c7f04c44d702c}{to\-String} () const 
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class that represents a set of expiration dates, each of which contains a set of strike prices, each of which contains a set of option contracts, each of which contains exchange-specific contracts. 
+
+To access a set of strike prices for a given expiration date, use the find method (inherited from \hyperlink{classstd_1_1map}{std::map}). 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_d4d423540db1d29fef11c563b451dc69}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!MamdaOptionExpirationDateSet@{MamdaOptionExpirationDateSet}}
+\index{MamdaOptionExpirationDateSet@{MamdaOptionExpirationDateSet}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[MamdaOptionExpirationDateSet]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Expiration\-Date\-Set::Mamda\-Option\-Expiration\-Date\-Set ()}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_d4d423540db1d29fef11c563b451dc69}
+
+
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_51ec0f5167345aab435049f011d31b4d}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!MamdaOptionExpirationDateSet@{MamdaOptionExpirationDateSet}}
+\index{MamdaOptionExpirationDateSet@{MamdaOptionExpirationDateSet}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[MamdaOptionExpirationDateSet]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Expiration\-Date\-Set::Mamda\-Option\-Expiration\-Date\-Set (const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& {\em copy})}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_51ec0f5167345aab435049f011d31b4d}
+
+
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_a912bfba725281fbfb94d9ea33beef74}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!~MamdaOptionExpirationDateSet@{$\sim$MamdaOptionExpirationDateSet}}
+\index{~MamdaOptionExpirationDateSet@{$\sim$MamdaOptionExpirationDateSet}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[$\sim$MamdaOptionExpirationDateSet]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Expiration\-Date\-Set::$\sim$Mamda\-Option\-Expiration\-Date\-Set ()}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_a912bfba725281fbfb94d9ea33beef74}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_44ae713d433431323e784c43f3305e84}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!operator=@{operator=}}
+\index{operator=@{operator=}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[operator=]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set}\& Wombat::Mamda\-Option\-Expiration\-Date\-Set::operator= (const \hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& {\em rhs})}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_44ae713d433431323e784c43f3305e84}
+
+
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_a58c1ab06b95af9bbee919d6fe7b373a}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!getExpirationsBefore@{getExpirationsBefore}}
+\index{getExpirationsBefore@{getExpirationsBefore}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[getExpirationsBefore]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Expiration\-Date\-Set::get\-Expirations\-Before (\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& {\em result}, const Mama\-Date\-Time \& {\em date}) const}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_a58c1ab06b95af9bbee919d6fe7b373a}
+
+
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_b756b2efe9defc35104d65ef398d378e}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!getExpirations@{getExpirations}}
+\index{getExpirations@{getExpirations}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[getExpirations]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Expiration\-Date\-Set::get\-Expirations (\hyperlink{classWombat_1_1MamdaOptionExpirationDateSet}{Mamda\-Option\-Expiration\-Date\-Set} \& {\em result}, int {\em num\-Expirations}) const}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_b756b2efe9defc35104d65ef398d378e}
+
+
+\hypertarget{classWombat_1_1MamdaOptionExpirationDateSet_31ab5b6e52a84706308c7f04c44d702c}{
+\index{Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}!toString@{toString}}
+\index{toString@{toString}!Wombat::MamdaOptionExpirationDateSet@{Wombat::Mamda\-Option\-Expiration\-Date\-Set}}
+\subsubsection[toString]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Expiration\-Date\-Set::to\-String () const}}
+\label{classWombat_1_1MamdaOptionExpirationDateSet_31ab5b6e52a84706308c7f04c44d702c}
+
+

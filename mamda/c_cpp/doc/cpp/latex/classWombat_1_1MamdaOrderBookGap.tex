@@ -1,0 +1,64 @@
+\hypertarget{classWombat_1_1MamdaOrderBookGap}{
+\section{Wombat::Mamda\-Order\-Book\-Gap Class Reference}
+\label{classWombat_1_1MamdaOrderBookGap}\index{Wombat::MamdaOrderBookGap@{Wombat::MamdaOrderBookGap}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookGap}{Mamda\-Order\-Book\-Gap} is an interface that provides access to order book gap related fields.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Gap.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Order\-Book\-Gap::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classWombat_1_1MamdaOrderBookGap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderBookGap_0875bc220d82aaec977cd1dbb006cc0f}{get\-Begin\-Gap\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Beginning sequence number in a detected gap event. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderBookGap_3d69b4d1f1b9c8ae0c36d261fca578f8}{get\-End\-Gap\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Ending sequence number in a detected gap event. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBookGap_0941369e62306f8b3ea72144f75a8cd4}{$\sim$Mamda\-Order\-Book\-Gap} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookGap}{Mamda\-Order\-Book\-Gap} is an interface that provides access to order book gap related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookGap_0941369e62306f8b3ea72144f75a8cd4}{
+\index{Wombat::MamdaOrderBookGap@{Wombat::Mamda\-Order\-Book\-Gap}!~MamdaOrderBookGap@{$\sim$MamdaOrderBookGap}}
+\index{~MamdaOrderBookGap@{$\sim$MamdaOrderBookGap}!Wombat::MamdaOrderBookGap@{Wombat::Mamda\-Order\-Book\-Gap}}
+\subsubsection[$\sim$MamdaOrderBookGap]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Book\-Gap::$\sim$Mamda\-Order\-Book\-Gap ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookGap_0941369e62306f8b3ea72144f75a8cd4}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookGap_0875bc220d82aaec977cd1dbb006cc0f}{
+\index{Wombat::MamdaOrderBookGap@{Wombat::Mamda\-Order\-Book\-Gap}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaOrderBookGap@{Wombat::Mamda\-Order\-Book\-Gap}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Book\-Gap::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookGap_0875bc220d82aaec977cd1dbb006cc0f}
+
+
+Beginning sequence number in a detected gap event. 
+
+\begin{Desc}
+\item[Returns:]The starting sequence number of the gap. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookGap_3d69b4d1f1b9c8ae0c36d261fca578f8}{
+\index{Wombat::MamdaOrderBookGap@{Wombat::Mamda\-Order\-Book\-Gap}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaOrderBookGap@{Wombat::Mamda\-Order\-Book\-Gap}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Book\-Gap::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookGap_3d69b4d1f1b9c8ae0c36d261fca578f8}
+
+
+Ending sequence number in a detected gap event. 
+
+\begin{Desc}
+\item[Returns:]The ending sequence number of the gap. \end{Desc}

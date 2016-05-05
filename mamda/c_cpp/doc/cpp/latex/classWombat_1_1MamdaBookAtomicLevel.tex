@@ -1,0 +1,235 @@
+\hypertarget{classWombat_1_1MamdaBookAtomicLevel}{
+\section{Wombat::Mamda\-Book\-Atomic\-Level Class Reference}
+\label{classWombat_1_1MamdaBookAtomicLevel}\index{Wombat::MamdaBookAtomicLevel@{Wombat::MamdaBookAtomicLevel}}
+}
+\hyperlink{classWombat_1_1MamdaBookAtomicLevel}{Mamda\-Book\-Atomic\-Level} is an interface that provides access to trade related fields.  
+
+
+{\tt \#include $<$Mamda\-Book\-Atomic\-Level.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Book\-Atomic\-Level::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaBookAtomicLevel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicLevel_9b93f1c575fa54e72ce1da2d81034bb7}{get\-Price\-Level\-Num\-Levels} () const =0
+\begin{CompactList}\small\item\em Return the number of price levels in the order book update. \item\end{CompactList}\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicLevel_9805eb2f6cd0313e9923070c2f50bf1a}{get\-Price\-Level\-Num} () const =0
+\begin{CompactList}\small\item\em Return at which position this level is within an update containing a number of levels. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaBookAtomicLevel_5bcc378cd2085048f8fa1870265e5ce0}{get\-Price\-Level\-Price} () const =0
+\begin{CompactList}\small\item\em Return the price for this price level. \item\end{CompactList}\item 
+virtual Mama\-Price \& \hyperlink{classWombat_1_1MamdaBookAtomicLevel_e250b6d0ba73f1396a7ac16a18564fc7}{get\-Price\-Level\-Mama\-Price} () const =0
+\begin{CompactList}\small\item\em Return the Mama\-Price for this price level. \item\end{CompactList}\item 
+virtual mama\_\-f64\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicLevel_bf9d9609a53a7344d6232ba70407d069}{get\-Price\-Level\-Size} () const =0
+\begin{CompactList}\small\item\em Return the number of order entries comprising this price level. \item\end{CompactList}\item 
+virtual mama\_\-i64\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicLevel_55c19ae02d863ce2007f4332af271f9b}{get\-Price\-Level\-Size\-Change} () const =0
+\begin{CompactList}\small\item\em Aggregate size at current price level. \item\end{CompactList}\item 
+virtual char \hyperlink{classWombat_1_1MamdaBookAtomicLevel_01015a77e67f21af4f1b53f25d6df2f0}{get\-Price\-Level\-Action} () const =0
+\begin{CompactList}\small\item\em The action to apply to the orderbook for this price level. \item\end{CompactList}\item 
+virtual char \hyperlink{classWombat_1_1MamdaBookAtomicLevel_db64c3729d50e3334a5d1eeb40aba6a4}{get\-Price\-Level\-Side} () const =0
+\begin{CompactList}\small\item\em Side of book at current price level. \item\end{CompactList}\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaBookAtomicLevel_8eebd8c5bc48668b4f42afdcfa2e11ff}{get\-Price\-Level\-Time} () const =0
+\begin{CompactList}\small\item\em Time of order book price level. \item\end{CompactList}\item 
+virtual mama\_\-f32\_\-t \hyperlink{classWombat_1_1MamdaBookAtomicLevel_8a11dfebeccc889960a783b7e4377735}{get\-Price\-Level\-Num\-Entries} () const =0
+\begin{CompactList}\small\item\em Number of order book entries at current price level. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} \hyperlink{classWombat_1_1MamdaBookAtomicLevel_23ff595e16fe3926bb2714c5c2026841}{get\-Order\-Type} () const =0
+\begin{CompactList}\small\item\em Get the Order Type. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicLevel_6b9fa11952fb136aceda2810f3131aeb}{set\-Order\-Type} (\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} order\-Type) const =0
+\begin{CompactList}\small\item\em Set the Order Type. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaBookAtomicLevel_99b1bdf06263710172d794c9b0e08563}{$\sim$Mamda\-Book\-Atomic\-Level} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaBookAtomicLevel}{Mamda\-Book\-Atomic\-Level} is an interface that provides access to trade related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevel_99b1bdf06263710172d794c9b0e08563}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!~MamdaBookAtomicLevel@{$\sim$MamdaBookAtomicLevel}}
+\index{~MamdaBookAtomicLevel@{$\sim$MamdaBookAtomicLevel}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[$\sim$MamdaBookAtomicLevel]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Book\-Atomic\-Level::$\sim$Mamda\-Book\-Atomic\-Level ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_99b1bdf06263710172d794c9b0e08563}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevel_9b93f1c575fa54e72ce1da2d81034bb7}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelNumLevels@{getPriceLevelNumLevels}}
+\index{getPriceLevelNumLevels@{getPriceLevelNumLevels}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelNumLevels]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Num\-Levels () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_9b93f1c575fa54e72ce1da2d81034bb7}
+
+
+Return the number of price levels in the order book update. 
+
+\begin{Desc}
+\item[Returns:]The number of price levels. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_b7b3fe18e82667b4ab2db1b10c535b30}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_9805eb2f6cd0313e9923070c2f50bf1a}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelNum@{getPriceLevelNum}}
+\index{getPriceLevelNum@{getPriceLevelNum}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_9805eb2f6cd0313e9923070c2f50bf1a}
+
+
+Return at which position this level is within an update containing a number of levels. 
+
+(i.e. level m of n levels in the update)
+
+\begin{Desc}
+\item[Returns:]The position of this level in the update received. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_0e9aca6717995e413ba7038d38be5f63}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_5bcc378cd2085048f8fa1870265e5ce0}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelPrice@{getPriceLevelPrice}}
+\index{getPriceLevelPrice@{getPriceLevelPrice}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_5bcc378cd2085048f8fa1870265e5ce0}
+
+
+Return the price for this price level. 
+
+\begin{Desc}
+\item[Returns:]The price level price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_7139c6ddcae27c429e7dade0c5e91358}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_e250b6d0ba73f1396a7ac16a18564fc7}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelMamaPrice@{getPriceLevelMamaPrice}}
+\index{getPriceLevelMamaPrice@{getPriceLevelMamaPrice}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelMamaPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual Mama\-Price\& Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Mama\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_e250b6d0ba73f1396a7ac16a18564fc7}
+
+
+Return the Mama\-Price for this price level. 
+
+\begin{Desc}
+\item[Returns:]The price level price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_a71f90d4ad1c3297f35676b7a4363488}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_bf9d9609a53a7344d6232ba70407d069}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelSize@{getPriceLevelSize}}
+\index{getPriceLevelSize@{getPriceLevelSize}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelSize]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-f64\_\-t Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Size () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_bf9d9609a53a7344d6232ba70407d069}
+
+
+Return the number of order entries comprising this price level. 
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The number of entries in this price level. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_9bb50db078f337545e39e94cfcb89f0e}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_55c19ae02d863ce2007f4332af271f9b}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelSizeChange@{getPriceLevelSizeChange}}
+\index{getPriceLevelSizeChange@{getPriceLevelSizeChange}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelSizeChange]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-i64\_\-t Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Size\-Change () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_55c19ae02d863ce2007f4332af271f9b}
+
+
+Aggregate size at current price level. 
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The aggregate size at the current price level. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_f94e0c100149bd2543be4c5c5ae891a2}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_01015a77e67f21af4f1b53f25d6df2f0}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelAction@{getPriceLevelAction}}
+\index{getPriceLevelAction@{getPriceLevelAction}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelAction]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Action () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_01015a77e67f21af4f1b53f25d6df2f0}
+
+
+The action to apply to the orderbook for this price level. 
+
+Can have a value of: \begin{itemize}
+\item A : Add a new price level \item U : Update an existing price level \item D : Delete an existing price level \item C : Closing information for price level (often treat the same as Update). \end{itemize}
+
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The price level action. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_9bbc72a64bd32fba449ba581b369a980}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_db64c3729d50e3334a5d1eeb40aba6a4}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelSide@{getPriceLevelSide}}
+\index{getPriceLevelSide@{getPriceLevelSide}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelSide]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Side () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_db64c3729d50e3334a5d1eeb40aba6a4}
+
+
+Side of book at current price level. 
+
+\begin{itemize}
+\item B : Bid side. Same as 'buy' side. \item A : Ask side. Same as 'sell' side. \end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The price level side. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_3031081549b1df511c872068f58e8ade}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_8eebd8c5bc48668b4f42afdcfa2e11ff}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelTime@{getPriceLevelTime}}
+\index{getPriceLevelTime@{getPriceLevelTime}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Time () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_8eebd8c5bc48668b4f42afdcfa2e11ff}
+
+
+Time of order book price level. 
+
+\begin{Desc}
+\item[Returns:]The time of the orderbook price level. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_85bb50891ec86cc8e1850b4097498a89}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_8a11dfebeccc889960a783b7e4377735}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getPriceLevelNumEntries@{getPriceLevelNumEntries}}
+\index{getPriceLevelNumEntries@{getPriceLevelNumEntries}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getPriceLevelNumEntries]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-f32\_\-t Wombat::Mamda\-Book\-Atomic\-Level::get\-Price\-Level\-Num\-Entries () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_8a11dfebeccc889960a783b7e4377735}
+
+
+Number of order book entries at current price level. 
+
+\begin{Desc}
+\item[Warning:]Not supported for V5 entry book updates.\end{Desc}
+\begin{Desc}
+\item[Returns:]The number of entries at the current price level. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_85367024e7790ce720c241849bf38ec2}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_23ff595e16fe3926bb2714c5c2026841}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!getOrderType@{getOrderType}}
+\index{getOrderType@{getOrderType}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[getOrderType]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} Wombat::Mamda\-Book\-Atomic\-Level::get\-Order\-Type () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_23ff595e16fe3926bb2714c5c2026841}
+
+
+Get the Order Type. 
+
+\begin{Desc}
+\item[Returns:]The order Type. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_0c3b1f7657aed8bba468e8500dded596}{Wombat::Mamda\-Book\-Atomic\-Listener}.\hypertarget{classWombat_1_1MamdaBookAtomicLevel_6b9fa11952fb136aceda2810f3131aeb}{
+\index{Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}!setOrderType@{setOrderType}}
+\index{setOrderType@{setOrderType}!Wombat::MamdaBookAtomicLevel@{Wombat::Mamda\-Book\-Atomic\-Level}}
+\subsubsection[setOrderType]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Level::set\-Order\-Type (\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Mamda\-Order\-Book\-Types::Order\-Type} {\em order\-Type}) const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevel_6b9fa11952fb136aceda2810f3131aeb}
+
+
+Set the Order Type. 
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaBookAtomicListener_e79c2bbb2c0431a40df5788700a26c32}{Wombat::Mamda\-Book\-Atomic\-Listener}.

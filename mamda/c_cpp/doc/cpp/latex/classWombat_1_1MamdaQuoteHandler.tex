@@ -1,0 +1,136 @@
+\hypertarget{classWombat_1_1MamdaQuoteHandler}{
+\section{Wombat::Mamda\-Quote\-Handler Class Reference}
+\label{classWombat_1_1MamdaQuoteHandler}\index{Wombat::MamdaQuoteHandler@{Wombat::MamdaQuoteHandler}}
+}
+\hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} is an interface for applications that want to have an easy way to handle quote updates.  
+
+
+{\tt \#include $<$Mamda\-Quote\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteHandler_c89e4a78d1e7d7d99a7dd39319d06b1e}{on\-Quote\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when the current last-quote information for the security is available. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteHandler_6db8e745d6668d72d04114e6d9a908b4}{on\-Quote\-Update} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaQuoteUpdate}{Mamda\-Quote\-Update} \&quote, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when a quote is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteHandler_6fa51f8243ef1a46825813c02c4f05f1}{on\-Quote\-Gap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaQuoteGap}{Mamda\-Quote\-Gap} \&event, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked when a gap in quote reports is discovered. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteHandler_6f073c562e2a7c4c5acace68e1eadd83}{on\-Quote\-Closing} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaQuoteClosing}{Mamda\-Quote\-Closing} \&event, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked for a closing report. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteHandler_313ca96dc5f5e98fffb000895b1671b3}{on\-Quote\-Out\-Of\-Sequence} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence}{Mamda\-Quote\-Out\-Of\-Sequence} \&event, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked for a message marked as out of sequence. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaQuoteHandler_3882274ea1964f319cf831ccd058c7f3}{on\-Quote\-Possibly\-Duplicate} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaQuotePossiblyDuplicate}{Mamda\-Quote\-Possibly\-Duplicate} \&event, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \&recap)=0
+\begin{CompactList}\small\item\em Method invoked for a message which is marked as possibly duplicate Listener must be configured to check the Msg Qualifier, i.e., call {\tt set\-Control\-Processing\-By\-Msg\-Qual} on listener passing a value of true. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaQuoteHandler_552d394cad5214d6118e560f9007d0a1}{$\sim$Mamda\-Quote\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} is an interface for applications that want to have an easy way to handle quote updates. 
+
+The interface defines callback methods for different types of quote-related events: quotes and closing-quote updates. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_552d394cad5214d6118e560f9007d0a1}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!~MamdaQuoteHandler@{$\sim$MamdaQuoteHandler}}
+\index{~MamdaQuoteHandler@{$\sim$MamdaQuoteHandler}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[$\sim$MamdaQuoteHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Quote\-Handler::$\sim$Mamda\-Quote\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_552d394cad5214d6118e560f9007d0a1}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_c89e4a78d1e7d7d99a7dd39319d06b1e}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!onQuoteRecap@{onQuoteRecap}}
+\index{onQuoteRecap@{onQuoteRecap}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[onQuoteRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Handler::on\-Quote\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_c89e4a78d1e7d7d99a7dd39319d06b1e}
+
+
+Method invoked when the current last-quote information for the security is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em recap}]Access to the full quote recap details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_6db8e745d6668d72d04114e6d9a908b4}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!onQuoteUpdate@{onQuoteUpdate}}
+\index{onQuoteUpdate@{onQuoteUpdate}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[onQuoteUpdate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Handler::on\-Quote\-Update (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaQuoteUpdate}{Mamda\-Quote\-Update} \& {\em quote}, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_6db8e745d6668d72d04114e6d9a908b4}
+
+
+Method invoked when a quote is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em quote}]Access to the quote update details. \item[{\em recap}]Access to the full quote details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_6fa51f8243ef1a46825813c02c4f05f1}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!onQuoteGap@{onQuoteGap}}
+\index{onQuoteGap@{onQuoteGap}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[onQuoteGap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Handler::on\-Quote\-Gap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaQuoteGap}{Mamda\-Quote\-Gap} \& {\em event}, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_6fa51f8243ef1a46825813c02c4f05f1}
+
+
+Method invoked when a gap in quote reports is discovered. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Access to the quote gap event details. \item[{\em recap}]Access to the full quote details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_6f073c562e2a7c4c5acace68e1eadd83}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!onQuoteClosing@{onQuoteClosing}}
+\index{onQuoteClosing@{onQuoteClosing}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[onQuoteClosing]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Handler::on\-Quote\-Closing (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaQuoteClosing}{Mamda\-Quote\-Closing} \& {\em event}, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_6f073c562e2a7c4c5acace68e1eadd83}
+
+
+Method invoked for a closing report. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]Access to the closing quote details. \item[{\em recap}]Access to the full quote details. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_313ca96dc5f5e98fffb000895b1671b3}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!onQuoteOutOfSequence@{onQuoteOutOfSequence}}
+\index{onQuoteOutOfSequence@{onQuoteOutOfSequence}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[onQuoteOutOfSequence]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Handler::on\-Quote\-Out\-Of\-Sequence (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaQuoteOutOfSequence}{Mamda\-Quote\-Out\-Of\-Sequence} \& {\em event}, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_313ca96dc5f5e98fffb000895b1671b3}
+
+
+Method invoked for a message marked as out of sequence. 
+
+Listener must be configured to check the Msg Qualifier, i.e., call {\tt set\-Control\-Processing\-By\-Msg\-Qual()} on listener passing a value of true.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the callback. \item[{\em listener}]The quote listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]The possibly out of sequence event object. \item[{\em recap}]The recap object. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaQuoteHandler_3882274ea1964f319cf831ccd058c7f3}{
+\index{Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}!onQuotePossiblyDuplicate@{onQuotePossiblyDuplicate}}
+\index{onQuotePossiblyDuplicate@{onQuotePossiblyDuplicate}!Wombat::MamdaQuoteHandler@{Wombat::Mamda\-Quote\-Handler}}
+\subsubsection[onQuotePossiblyDuplicate]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Quote\-Handler::on\-Quote\-Possibly\-Duplicate (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaQuotePossiblyDuplicate}{Mamda\-Quote\-Possibly\-Duplicate} \& {\em event}, const \hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& {\em recap})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaQuoteHandler_3882274ea1964f319cf831ccd058c7f3}
+
+
+Method invoked for a message which is marked as possibly duplicate Listener must be configured to check the Msg Qualifier, i.e., call {\tt set\-Control\-Processing\-By\-Msg\-Qual} on listener passing a value of true. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The quote listener. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em event}]The possibly duplicate event object. \item[{\em recap}]The recap object. \end{description}
+\end{Desc}

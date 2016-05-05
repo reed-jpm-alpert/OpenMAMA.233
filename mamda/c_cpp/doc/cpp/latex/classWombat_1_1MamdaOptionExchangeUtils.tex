@@ -1,0 +1,60 @@
+\hypertarget{classWombat_1_1MamdaOptionExchangeUtils}{
+\section{Wombat::Mamda\-Option\-Exchange\-Utils Class Reference}
+\label{classWombat_1_1MamdaOptionExchangeUtils}\index{Wombat::MamdaOptionExchangeUtils@{Wombat::MamdaOptionExchangeUtils}}
+}
+A class with static utility functions for dealing with exchanges.  
+
+
+{\tt \#include $<$Mamda\-Option\-Exchange\-Utils.h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static bool \hyperlink{classWombat_1_1MamdaOptionExchangeUtils_89d3ef764dcabfffcd30bf19a4716ef0}{is\-Bbo} (const char $\ast$exchange)
+\begin{CompactList}\small\item\em Return whether the exchange ID is the one used to represent the best bid and offer. \item\end{CompactList}\item 
+static bool \hyperlink{classWombat_1_1MamdaOptionExchangeUtils_f667d49e25e581cd95a39b1fda2802c1}{is\-Wombat\-Bbo} (const char $\ast$exchange)
+\begin{CompactList}\small\item\em Return whether the exchange ID is the one used to represent the NYSE Technologies-calculated best bid and offer. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class with static utility functions for dealing with exchanges. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionExchangeUtils_89d3ef764dcabfffcd30bf19a4716ef0}{
+\index{Wombat::MamdaOptionExchangeUtils@{Wombat::Mamda\-Option\-Exchange\-Utils}!isBbo@{isBbo}}
+\index{isBbo@{isBbo}!Wombat::MamdaOptionExchangeUtils@{Wombat::Mamda\-Option\-Exchange\-Utils}}
+\subsubsection[isBbo]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Option\-Exchange\-Utils::is\-Bbo (const char $\ast$ {\em exchange})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionExchangeUtils_89d3ef764dcabfffcd30bf19a4716ef0}
+
+
+Return whether the exchange ID is the one used to represent the best bid and offer. 
+
+Currently it will match \char`\"{}\char`\"{}, \char`\"{}BBO\char`\"{} and \char`\"{}Z\char`\"{}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em exchange}]The exchange Id.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Whether the given exchange id is being used to identify the BBO (Best Bid and Offer) record. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionExchangeUtils_f667d49e25e581cd95a39b1fda2802c1}{
+\index{Wombat::MamdaOptionExchangeUtils@{Wombat::Mamda\-Option\-Exchange\-Utils}!isWombatBbo@{isWombatBbo}}
+\index{isWombatBbo@{isWombatBbo}!Wombat::MamdaOptionExchangeUtils@{Wombat::Mamda\-Option\-Exchange\-Utils}}
+\subsubsection[isWombatBbo]{\setlength{\rightskip}{0pt plus 5cm}static bool Wombat::Mamda\-Option\-Exchange\-Utils::is\-Wombat\-Bbo (const char $\ast$ {\em exchange})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionExchangeUtils_f667d49e25e581cd95a39b1fda2802c1}
+
+
+Return whether the exchange ID is the one used to represent the NYSE Technologies-calculated best bid and offer. 
+
+Currently will match \char`\"{}BBO\char`\"{},
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em exchange}]The exchange id.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Whether the given exchange id is being used to identify the Wombat\-BBO (Best Bid and Offer) record. \end{Desc}

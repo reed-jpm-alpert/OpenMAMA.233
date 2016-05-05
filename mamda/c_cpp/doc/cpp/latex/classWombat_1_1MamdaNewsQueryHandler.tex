@@ -1,0 +1,68 @@
+\hypertarget{classWombat_1_1MamdaNewsQueryHandler}{
+\section{Wombat::Mamda\-News\-Query\-Handler Class Reference}
+\label{classWombat_1_1MamdaNewsQueryHandler}\index{Wombat::MamdaNewsQueryHandler@{Wombat::MamdaNewsQueryHandler}}
+}
+Mamda\-News\-Handler is an interface for applications that want to have an easy way to handle news queries.  
+
+
+{\tt \#include $<$Mamda\-News\-Query\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsQueryHandler_3ce9f8db36f347d0fedd9a85ef3d6d5d}{on\-News\-Query\-Headline} (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \&manager, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \&headline, const \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} \&query, void $\ast$closure)=0
+\begin{CompactList}\small\item\em Method invoked when a news headline is received. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsQueryHandler_10584e9759028e8f7896423c848cb08f}{on\-News\-Query\-Error} (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \&manager, Mama\-Msg $\ast$msg, const char $\ast$error\-Str, const Mama\-Status \&status, const \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} \&query, void $\ast$closure)=0
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaNewsQueryHandler_5c419b05befece5ad135ab983fc8f5ac}{on\-News\-Query\-Complete} (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \&manager, const \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} \&query, void $\ast$closure)
+\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsQueryHandler_8ef2b61870d827f05705231859a901c9}{$\sim$Mamda\-News\-Query\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Mamda\-News\-Handler is an interface for applications that want to have an easy way to handle news queries. 
+
+The interface defines callback methods for different types of trade-related events: trades, errors/cancels, corrections, recaps and closing reports. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaNewsQueryHandler_8ef2b61870d827f05705231859a901c9}{
+\index{Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}!~MamdaNewsQueryHandler@{$\sim$MamdaNewsQueryHandler}}
+\index{~MamdaNewsQueryHandler@{$\sim$MamdaNewsQueryHandler}!Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}}
+\subsubsection[$\sim$MamdaNewsQueryHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-News\-Query\-Handler::$\sim$Mamda\-News\-Query\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsQueryHandler_8ef2b61870d827f05705231859a901c9}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaNewsQueryHandler_3ce9f8db36f347d0fedd9a85ef3d6d5d}{
+\index{Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}!onNewsQueryHeadline@{onNewsQueryHeadline}}
+\index{onNewsQueryHeadline@{onNewsQueryHeadline}!Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}}
+\subsubsection[onNewsQueryHeadline]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Query\-Handler::on\-News\-Query\-Headline (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \& {\em manager}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \& {\em headline}, const \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} \& {\em query}, void $\ast$ {\em closure})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsQueryHandler_3ce9f8db36f347d0fedd9a85ef3d6d5d}
+
+
+Method invoked when a news headline is received. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em manager}]The news manager invoking the callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em headline}]Access to the headline details. \item[{\em closure}]Access to the user supplied closure data. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaNewsQueryHandler_10584e9759028e8f7896423c848cb08f}{
+\index{Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}!onNewsQueryError@{onNewsQueryError}}
+\index{onNewsQueryError@{onNewsQueryError}!Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}}
+\subsubsection[onNewsQueryError]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Query\-Handler::on\-News\-Query\-Error (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \& {\em manager}, Mama\-Msg $\ast$ {\em msg}, const char $\ast$ {\em error\-Str}, const Mama\-Status \& {\em status}, const \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} \& {\em query}, void $\ast$ {\em closure})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsQueryHandler_10584e9759028e8f7896423c848cb08f}
+
+
+\hypertarget{classWombat_1_1MamdaNewsQueryHandler_5c419b05befece5ad135ab983fc8f5ac}{
+\index{Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}!onNewsQueryComplete@{onNewsQueryComplete}}
+\index{onNewsQueryComplete@{onNewsQueryComplete}!Wombat::MamdaNewsQueryHandler@{Wombat::Mamda\-News\-Query\-Handler}}
+\subsubsection[onNewsQueryComplete]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-News\-Query\-Handler::on\-News\-Query\-Complete (\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} \& {\em manager}, const \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} \& {\em query}, void $\ast$ {\em closure})\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsQueryHandler_5c419b05befece5ad135ab983fc8f5ac}
+
+

@@ -1,0 +1,70 @@
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{
+\section{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler Class Reference}
+\label{classWombat_1_1MamdaBookAtomicLevelEntryHandler}\index{Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::MamdaBookAtomicLevelEntryHandler}}
+}
+\hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{Mamda\-Book\-Atomic\-Level\-Entry\-Handler} is an interface for applications that want to have an easy way to handle order book Price Level \& Entry updates.  
+
+
+{\tt \#include $<$Mamda\-Book\-Atomic\-Level\-Entry\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler_f0b3d4101df368122f799f2f55793c3a}{on\-Book\-Atomic\-Level\-Entry\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry}{Mamda\-Book\-Atomic\-Level\-Entry} \&level\-Entry)=0
+\begin{CompactList}\small\item\em Method invoked when a full refresh of the order book for the security is available. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler_a3a33ed581eed6abe4738bdced91cfb5}{on\-Book\-Atomic\-Level\-Entry\-Delta} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry}{Mamda\-Book\-Atomic\-Level\-Entry} \&level\-Entry)=0
+\begin{CompactList}\small\item\em Method invoked when an order book delta is reported. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler_9192c0bbed11d9a84680eb024b0a908f}{$\sim$Mamda\-Book\-Atomic\-Level\-Entry\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaBookAtomicLevelEntryHandler}{Mamda\-Book\-Atomic\-Level\-Entry\-Handler} is an interface for applications that want to have an easy way to handle order book Price Level \& Entry updates. 
+
+The interface defines callback methods for different types of order\-Book-related events: order book recaps and updates. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelEntryHandler_9192c0bbed11d9a84680eb024b0a908f}{
+\index{Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler}!~MamdaBookAtomicLevelEntryHandler@{$\sim$MamdaBookAtomicLevelEntryHandler}}
+\index{~MamdaBookAtomicLevelEntryHandler@{$\sim$MamdaBookAtomicLevelEntryHandler}!Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler}}
+\subsubsection[$\sim$MamdaBookAtomicLevelEntryHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler::$\sim$Mamda\-Book\-Atomic\-Level\-Entry\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevelEntryHandler_9192c0bbed11d9a84680eb024b0a908f}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelEntryHandler_f0b3d4101df368122f799f2f55793c3a}{
+\index{Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler}!onBookAtomicLevelEntryRecap@{onBookAtomicLevelEntryRecap}}
+\index{onBookAtomicLevelEntryRecap@{onBookAtomicLevelEntryRecap}!Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler}}
+\subsubsection[onBookAtomicLevelEntryRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler::on\-Book\-Atomic\-Level\-Entry\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry}{Mamda\-Book\-Atomic\-Level\-Entry} \& {\em level\-Entry})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevelEntryHandler_f0b3d4101df368122f799f2f55793c3a}
+
+
+Method invoked when a full refresh of the order book for the security is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling the recap. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em level\-Entry}]The Price Level Entry recap. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaBookAtomicLevelEntryHandler_a3a33ed581eed6abe4738bdced91cfb5}{
+\index{Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler}!onBookAtomicLevelEntryDelta@{onBookAtomicLevelEntryDelta}}
+\index{onBookAtomicLevelEntryDelta@{onBookAtomicLevelEntryDelta}!Wombat::MamdaBookAtomicLevelEntryHandler@{Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler}}
+\subsubsection[onBookAtomicLevelEntryDelta]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Book\-Atomic\-Level\-Entry\-Handler::on\-Book\-Atomic\-Level\-Entry\-Delta (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaBookAtomicListener}{Mamda\-Book\-Atomic\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaBookAtomicLevelEntry}{Mamda\-Book\-Atomic\-Level\-Entry} \& {\em level\-Entry})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaBookAtomicLevelEntryHandler_a3a33ed581eed6abe4738bdced91cfb5}
+
+
+Method invoked when an order book delta is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The \hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} handle. \item[{\em listener}]The listener handling the update. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em level\-Entry}]The Price Level Entry update. \end{description}
+\end{Desc}

@@ -1,0 +1,1504 @@
+\hypertarget{classWombat_1_1MamdaTradeRecap}{
+\section{Wombat::Mamda\-Trade\-Recap Class Reference}
+\label{classWombat_1_1MamdaTradeRecap}\index{Wombat::MamdaTradeRecap@{Wombat::MamdaTradeRecap}}
+}
+\hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} is an interface that provides access to trade related fields.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Recap.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Trade\-Recap::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaTradeRecap}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_24a18014e43ec6df41a6405e3b2e0b03}{get\-Last\-Price} () const =0
+\begin{CompactList}\small\item\em Monetary value of an individual share of the security at the time of the trade. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_095f2490ee5cb36624d26e34bf01547b}{get\-Last\-Volume} () const =0
+\begin{CompactList}\small\item\em Number of shares traded in a single transaction for an individual security. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeRecap_67a37388f66bd17d38a51e72c09d9549}{get\-Last\-Part\-Id} () const =0
+\begin{CompactList}\small\item\em Trade participant ID. \item\end{CompactList}\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaTradeRecap_b589580af79ac95e51a3055014c99d2e}{get\-Last\-Time} () const =0
+\begin{CompactList}\small\item\em Time corresponding to the last trade, as reported by the feed. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_5d274713697f09773b0bf6c5c30c637d}{get\-Irreg\-Price} () const =0
+\begin{CompactList}\small\item\em Monetary value of an individual share of the security at the time of the last irregular trade. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_b361bc0a511353d976e092fb7972018d}{get\-Irreg\-Volume} () const =0
+\begin{CompactList}\small\item\em Number of shares traded in a single transaction for an individual security. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeRecap_0b7056cac747d7dad3679df840219adc}{get\-Irreg\-Part\-Id} () const =0
+\begin{CompactList}\small\item\em Irregular trade participant ID. \item\end{CompactList}\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaTradeRecap_3583496cc2f74b2b1537176b8d91f5d9}{get\-Irreg\-Time} () const =0
+\begin{CompactList}\small\item\em Time corresponding to the last irregular trade, as reported by the feed. \item\end{CompactList}\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaTradeRecap_c613c40f5f339c6c7508000c92cda65c}{get\-Trade\-Date} () const =0
+\begin{CompactList}\small\item\em Time corresponding to the last trade, as reported by the feed. \item\end{CompactList}\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_16854299d7b7266d833c7d8ce405baf2}{get\-Trade\-Count} () const =0
+\begin{CompactList}\small\item\em The number of trades today. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_1e7f8f77a649030465d7a4ccfa1baef0}{get\-Acc\-Volume} () const =0
+\begin{CompactList}\small\item\em Total volume of shares traded in a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_5df4b8f6c1238676d1c50fb8d50ed2df}{get\-Off\-Ex\-Acc\-Volume} () const =0
+\begin{CompactList}\small\item\em Total volume of off-exchange shares traded in a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_a876a7f85a983eec3a529d125721615b}{get\-On\-Ex\-Acc\-Volume} () const =0
+\begin{CompactList}\small\item\em Total volume of on-exchange shares traded in a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_6f0e8f7dd9edd3f29e29c1d983d6b7ff}{get\-Net\-Change} () const =0
+\begin{CompactList}\small\item\em Change in price compared with the previous closing price (i.e. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_05f9cfbfd50d3783a2d5716064ed7b9f}{get\-Pct\-Change} () const =0
+\begin{CompactList}\small\item\em Percentage change in price compared with the previous closing price (i.e. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_d2479765bb418204c8ccfd3785d2bdbe}{Mamda\-Trade\-Direction} \hyperlink{classWombat_1_1MamdaTradeRecap_abbd87f4ea29275d32a78e20426cafca}{get\-Trade\-Direction} () const =0
+\begin{CompactList}\small\item\em Trade tick direction. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_cb3b351b6f32e8e1ec3c7a33864b8726}{get\-Open\-Price} () const =0
+\begin{CompactList}\small\item\em The price of the first qualifying trade in the security during the current trading day. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_2ae346c9697a98d723110ae092742a53}{get\-High\-Price} () const =0
+\begin{CompactList}\small\item\em Highest price paid for security during the trading day. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_ecd5be58d9917221102b8d35102f2ff7}{get\-Low\-Price} () const =0
+\begin{CompactList}\small\item\em Lowest price paid for security during the trading day. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_3a566a9b8bc9a4d2ac34eec055b91a92}{get\-Close\-Price} () const =0
+\begin{CompactList}\small\item\em Today's closing price. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_a612fcb5d25ec608317992115fd05349}{get\-Prev\-Close\-Price} () const =0
+\begin{CompactList}\small\item\em The last qualifying trade price on the previous trading day. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_6b50a84a3848169713d4110fc6ac1280}{get\-Adj\-Prev\-Close\-Price} () const =0
+\begin{CompactList}\small\item\em The previous close price adjusted by corporate actions, such as dividends and stock splits on the ex-date. \item\end{CompactList}\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaTradeRecap_cbe424a55e6fd1e9cd086b9884b7a6fc}{get\-Prev\-Close\-Date} () const =0
+\begin{CompactList}\small\item\em Date corresponding to w\-Prev\-Close\-Price. \item\end{CompactList}\item 
+virtual mama\_\-u32\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_083bcc57e26be2e79bd391b8a2177e3f}{get\-Block\-Count} () const =0
+\begin{CompactList}\small\item\em The number of block trades (at least 10,000 shares) today. \item\end{CompactList}\item 
+virtual mama\_\-quantity\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_dc17d00de0594da995227b3f915d5fda}{get\-Block\-Volume} () const =0
+\begin{CompactList}\small\item\em Total volume of block trades today. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_b80bace23fde9c5712351bc6a9f2344b}{get\-Vwap} () const =0
+\begin{CompactList}\small\item\em Volume-weighted average price of a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_9c9488d1b62675928ec13e2f8d9fdd53}{get\-Off\-Ex\-Vwap} () const =0
+\begin{CompactList}\small\item\em Volume-weighted average price of an off-exchange security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_dd064f9710f59f8f07309dec3d11411a}{get\-On\-Ex\-Vwap} () const =0
+\begin{CompactList}\small\item\em Volume-weighted average price of an on-exchange security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_5dd7f2055b4a80d111661c4a1da2abb9}{get\-Total\-Value} () const =0
+\begin{CompactList}\small\item\em Total value of all shares traded in a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_96ea4f22af059b55175f2fa99696ea80}{get\-Off\-Ex\-Total\-Value} () const =0
+\begin{CompactList}\small\item\em Total value of all off-exchange shares traded in a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_3e76017039351d288886d5f467d9364c}{get\-On\-Ex\-Total\-Value} () const =0
+\begin{CompactList}\small\item\em Total value of all on-exchange shares traded in a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_388ccb8e0d7bbc9be4c2fbdbef376aa8}{get\-Std\-Dev} () const =0
+\begin{CompactList}\small\item\em Standard deviation of last trade price of a security at the time it is disseminated. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_65b971acc07bbbc6f593b7e7a803e6c4}{get\-Std\-Dev\-Sum} () const =0
+\begin{CompactList}\small\item\em Sum of the standard deviations. \item\end{CompactList}\item 
+virtual double \hyperlink{classWombat_1_1MamdaTradeRecap_a2fb46ed6a57f14eb2a25ddbca0d902a}{get\-Std\-Dev\-Sum\-Squares} () const =0
+\begin{CompactList}\small\item\em Square of the sum of the standard deviations. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeRecap_f1d081fdecd01cd5e59210ff4be63d16}{get\-Trade\-Units} () const =0
+\begin{CompactList}\small\item\em Reuters trade units. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_ce7f7d8ec0c4d3df1905f7f68c16d42b}{get\-Last\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Sequence number of the last trade. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_f87da76851c02f0248c635836b7260ae}{get\-High\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Sequence number of incoming message which gives high value. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_459c619eee736e8cfc32f4ff45873d16}{get\-Low\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Sequence number of incoming message which gives low value. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_51ff9ff94e560b2dfbf16fd4ca64cdb6}{get\-Event\-Seq\-Num} () const =0
+\begin{CompactList}\small\item\em Sequence number of trade. \item\end{CompactList}\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaTradeRecap_8474365e849b98332d5d9762347e5aae}{get\-Total\-Volume\-Seq\-Num} () const =0
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeRecap_6587bdc84af742abd6cbb742737cc6db}{get\-Currency\-Code} () const =0
+\begin{CompactList}\small\item\em Currency of the trade (eg US\$). \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_859bb4a768932a59460651ade04e4b81}{get\-Settle\-Price} () const =0
+\begin{CompactList}\small\item\em Settle price of trade. \item\end{CompactList}\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaTradeRecap_80a2aabb513c40dc4d7d22173077b5db}{get\-Settle\-Date} () const =0
+\begin{CompactList}\small\item\em Settle date of trade. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_daf4c098665070a9e45bf835bad3548a}{Mamda\-Trade\-Exec\-Venue} \hyperlink{classWombat_1_1MamdaTradeRecap_6df7435306c01b0d0828d9a524fbe0bd}{get\-Trade\-Exec\-Venue} () const =0
+\begin{CompactList}\small\item\em Trade execution venue. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_4441eab85326326aa600c783a33a55bd}{get\-Off\-Exchange\-Trade\-Price} () const =0
+\begin{CompactList}\small\item\em Monetary value of an individual share of the security off exchange at the time of the trade. \item\end{CompactList}\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeRecap_9979bc1d67b53dca01261a34a06d0834}{get\-On\-Exchange\-Trade\-Price} () const =0
+\begin{CompactList}\small\item\em Monetary value of an individual share of the security on exchange at the time of the trade. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaTradeRecap_43b14f3da3e3df82401ac524cb33f6a5}{get\-Side} () const =0
+\item 
+virtual char \hyperlink{classWombat_1_1MamdaTradeRecap_8fffec973ff9978944e72d9438c6a1cd}{get\-Short\-Sale\-Circuit\-Breaker} () const =0
+\begin{CompactList}\small\item\em get the Short\-Sale\-Circuit\-Breaker \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_f4508406463e09aab15652b4b30b0bbc}{get\-Last\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The last trade price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_71887b4616edf5af0fccc2bae90a607c}{get\-Last\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The last volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_a2b712b3f95d4613d5a1c98c61b00902}{get\-Last\-Part\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The last part Id Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_cb3823e27dc163ff09b61e8a41ff960f}{get\-Last\-Time\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The last time Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_1d1057e7954bcab91c82c327944b622d}{get\-Irreg\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The irreg price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_b6b5d24579ced7928a72bb76518e10fa}{get\-Irreg\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The irreg volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_7279903433d1059bf0fa02ea3af73f2d}{get\-Irreg\-Part\-Id\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The irreg part Id Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_edaa9f3db0011e8175309628b7d17f09}{get\-Irreg\-Time\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The irregular time Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_825b27f46b43bbe98dacb9377b32e0e3}{get\-Trade\-Date\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade date Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_6de11a97ec493b1e7fd9c843406127bc}{get\-Trade\-Count\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade count Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_ee7ddb433c0825515166da7226852b4b}{get\-Acc\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The accumulated volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_84fad7757aecfad7c39e563709091c46}{get\-Off\-Ex\-Acc\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The off exchange accumulated volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_da9986c1440a9f58b1c3c477b4367bbe}{get\-On\-Ex\-Acc\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The on exchange accumulated volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_d9ba46964e6719b4a53c2d9abcf30314}{get\-Net\-Change\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The net change Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_83948885b739f36f7e593d8923cb542f}{get\-Pct\-Change\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The percentage change Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_285abbfee630b27b7b20957f35250f19}{get\-Trade\-Direction\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade direction Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_aa06d51b6f953dbef06a4d59a8438ec1}{get\-Open\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The open price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_a96180881510aca5fb838905052fffa5}{get\-High\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The high price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_db9836665c7f6b15c26f379ab680c374}{get\-Low\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The low price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_a45cdea8950502d698ccdbd052b456c1}{get\-Close\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The close price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_59c935c0a3b018e48fd9b1bb476cd4b7}{get\-Prev\-Close\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The previous close price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_c19498f35c75d790cbfa74fc249824eb}{get\-Adj\-Prev\-Close\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The adjusted previous close date Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_33ca111d0e9e5b1bbe9e5c3ccd3d4c8c}{get\-Prev\-Close\-Date\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The previous close date Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_9b4768cd8bfe696c5a217d32926426f1}{get\-Block\-Count\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The block count Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_f39bf8db19885374b44a37a6b36311b1}{get\-Block\-Volume\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The block volume Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_4a05775b568f16662fdcf8f34f5cecde}{get\-Vwap\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The Vwap Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_73079a6a76e523eb7693e9102743ba7c}{get\-Off\-Ex\-Vwap\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The off exchange Vwap Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_28e307415c29dc4a04b1790fabd3ad4f}{get\-On\-Ex\-Vwap\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The on exchange Vwap Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_26e3f460f499d5bfe7e2d47a77a881ce}{get\-Total\-Value\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The total value Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_6db0ccb47fa8aac3e063a1833d9e0208}{get\-Off\-Ex\-Total\-Value\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The Off Exchange Total Value Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_bd3a92c7aa26621a03cd80ef45f37f12}{get\-On\-Ex\-Total\-Value\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The On Exchange Total Value Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_0555b4b9265d2aecd14660dacd6e8bf3}{get\-Std\-Dev\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The std deviation Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_301b9d3bf67f823437080caa7dbd0804}{get\-Std\-Dev\-Sum\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The std deviation sum Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_45483e8e818629de79c926ed89feaa9d}{get\-Std\-Dev\-Sum\-Squares\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The Std\-Dev\-Sum\-Squares Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_76b2a0d55943b5bae38766f11bcc400e}{get\-Trade\-Units\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The trade units Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_97b6fab4e918ee8397fe7586b9d710c2}{get\-Last\-Seq\-Num\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The last Seq\-Num Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_6553b87e01893b7740590f0b079ca87f}{get\-High\-Seq\-Num\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The high seq\-Num Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_faa2d571451bc8a124a85a00e67f6fef}{get\-Low\-Seq\-Num\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The low Seq\-Num Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_13ffda2f1178cc9c6297b3624d0b9912}{get\-Event\-Seq\-Num\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The event Seq\-Num Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_6a0c576b7c4902e34d3b144cc7120ec4}{get\-Total\-Volume\-Seq\-Num\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The total volume seq\-Num Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_f8812af3a07b9b5da681289918a38f73}{get\-Currency\-Code\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The currency code Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_a2424806f6356557b09ee35c4fc5c573}{get\-Settle\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The settle price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_8f2dc16d498df59f741eb2eab59ca95a}{get\-Settle\-Date\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The last trade price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_da82568c7dabc3507fe6a3a8b27324c0}{get\-Off\-Exchange\-Trade\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The settle date Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_f64ddeb0f184484bab7fcb380995b6a5}{get\-On\-Exchange\-Trade\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The on\-Exchange trade price Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_69f58e9304fcfeedd22b8e9067c6b47a}{get\-Side\-Field\-State} () const =0
+\begin{CompactList}\small\item\em The Trade\-Side or Aggressor\-Side Field State. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeRecap_6808f080463130d2426dad0cc2ba9c16}{get\-Short\-Sale\-Circuit\-Breaker\-Field\-State} () const =0
+\item 
+virtual \hyperlink{classWombat_1_1MamdaTradeRecap_391a37196e643307b660fb486191c219}{$\sim$Mamda\-Trade\-Recap} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} is an interface that provides access to trade related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeRecap_391a37196e643307b660fb486191c219}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!~MamdaTradeRecap@{$\sim$MamdaTradeRecap}}
+\index{~MamdaTradeRecap@{$\sim$MamdaTradeRecap}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[$\sim$MamdaTradeRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Recap::$\sim$Mamda\-Trade\-Recap ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_391a37196e643307b660fb486191c219}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeRecap_24a18014e43ec6df41a6405e3b2e0b03}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastPrice@{getLastPrice}}
+\index{getLastPrice@{getLastPrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Last\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_24a18014e43ec6df41a6405e3b2e0b03}
+
+
+Monetary value of an individual share of the security at the time of the trade. 
+
+\begin{Desc}
+\item[Returns:]The last trade price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_71cbfa975acf8586bd072615f32337ff}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_095f2490ee5cb36624d26e34bf01547b}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastVolume@{getLastVolume}}
+\index{getLastVolume@{getLastVolume}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Recap::get\-Last\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_095f2490ee5cb36624d26e34bf01547b}
+
+
+Number of shares traded in a single transaction for an individual security. 
+
+\begin{Desc}
+\item[Returns:]The last trade volume. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_d8de6f0f0a88393c9f57d9627570ee96}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_67a37388f66bd17d38a51e72c09d9549}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastPartId@{getLastPartId}}
+\index{getLastPartId@{getLastPartId}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastPartId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Recap::get\-Last\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_67a37388f66bd17d38a51e72c09d9549}
+
+
+Trade participant ID. 
+
+This is typically an exchange ID, sometimes a market maker ID.
+
+\begin{Desc}
+\item[Returns:]The last trade participant identifier. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2e1bdae3c8609e4b8fe5709c0ea5c0f2}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_b589580af79ac95e51a3055014c99d2e}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastTime@{getLastTime}}
+\index{getLastTime@{getLastTime}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Trade\-Recap::get\-Last\-Time () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_b589580af79ac95e51a3055014c99d2e}
+
+
+Time corresponding to the last trade, as reported by the feed. 
+
+The exact time of the trade may not be available, since rules governing trade reporting allow for a trades to be reported within a specified time limit.
+
+\begin{Desc}
+\item[Returns:]The last trade time. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e113087de67a4d24fae82add1dfdaba2}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_5d274713697f09773b0bf6c5c30c637d}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregPrice@{getIrregPrice}}
+\index{getIrregPrice@{getIrregPrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_5d274713697f09773b0bf6c5c30c637d}
+
+
+Monetary value of an individual share of the security at the time of the last irregular trade. 
+
+\begin{Desc}
+\item[Returns:]The last irregular trade price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_95fdb22b7d58d3767d31a82ced35df77}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_b361bc0a511353d976e092fb7972018d}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregVolume@{getIrregVolume}}
+\index{getIrregVolume@{getIrregVolume}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_b361bc0a511353d976e092fb7972018d}
+
+
+Number of shares traded in a single transaction for an individual security. 
+
+\begin{Desc}
+\item[Returns:]The last irregular trade volume. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_9af4b2845a866803636bdd1983940a28}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_0b7056cac747d7dad3679df840219adc}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregPartId@{getIrregPartId}}
+\index{getIrregPartId@{getIrregPartId}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregPartId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_0b7056cac747d7dad3679df840219adc}
+
+
+Irregular trade participant ID. 
+
+This is typically an exchange ID, sometimes a market maker ID.
+
+\begin{Desc}
+\item[Returns:]The last irregular trade participant identifier. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a8ee06db46d55e03adf400ade37b18e1}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_3583496cc2f74b2b1537176b8d91f5d9}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregTime@{getIrregTime}}
+\index{getIrregTime@{getIrregTime}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Time () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_3583496cc2f74b2b1537176b8d91f5d9}
+
+
+Time corresponding to the last irregular trade, as reported by the feed. 
+
+The exact time of the trade may not be available, since rules governing trade reporting allow for a trades to be reported within a specified time limit.
+
+\begin{Desc}
+\item[Returns:]The last irregular trade time. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a8b74cc931fd2f5453ad7f393145402e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_c613c40f5f339c6c7508000c92cda65c}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeDate@{getTradeDate}}
+\index{getTradeDate@{getTradeDate}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeDate]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Trade\-Recap::get\-Trade\-Date () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_c613c40f5f339c6c7508000c92cda65c}
+
+
+Time corresponding to the last trade, as reported by the feed. 
+
+The exact time of the trade may not be available, since rules governing trade reporting allow for a trades to be reported within a specified time limit.
+
+\begin{Desc}
+\item[Returns:]The last trade time. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_078b15ccd771aae1890bf26e0471c0a6}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_16854299d7b7266d833c7d8ce405baf2}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeCount@{getTradeCount}}
+\index{getTradeCount@{getTradeCount}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeCount]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Recap::get\-Trade\-Count () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_16854299d7b7266d833c7d8ce405baf2}
+
+
+The number of trades today. 
+
+\begin{Desc}
+\item[Returns:]The number of trades so far today. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_09698082a48276bf7d67a160bdff61b7}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_1e7f8f77a649030465d7a4ccfa1baef0}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getAccVolume@{getAccVolume}}
+\index{getAccVolume@{getAccVolume}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getAccVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Recap::get\-Acc\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_1e7f8f77a649030465d7a4ccfa1baef0}
+
+
+Total volume of shares traded in a security at the time it is disseminated. 
+
+\begin{Desc}
+\item[Returns:]Accumulated trade volume. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7636476d5939f0128bf0a7fba1960cd6}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_5df4b8f6c1238676d1c50fb8d50ed2df}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExAccVolume@{getOffExAccVolume}}
+\index{getOffExAccVolume@{getOffExAccVolume}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExAccVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Recap::get\-Off\-Ex\-Acc\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_5df4b8f6c1238676d1c50fb8d50ed2df}
+
+
+Total volume of off-exchange shares traded in a security at the time it is disseminated. 
+
+\begin{Desc}
+\item[Returns:]Accumulated off-exchange trade volume. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e4a1bd8bfd6143e85e08ebd98fa8b8c1}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a876a7f85a983eec3a529d125721615b}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExAccVolume@{getOnExAccVolume}}
+\index{getOnExAccVolume@{getOnExAccVolume}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExAccVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Recap::get\-On\-Ex\-Acc\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a876a7f85a983eec3a529d125721615b}
+
+
+Total volume of on-exchange shares traded in a security at the time it is disseminated. 
+
+\begin{Desc}
+\item[Returns:]Accumulated on-exhange trade volume. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5de3d861733f64d1a4b941c32cd1bb4b}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6f0e8f7dd9edd3f29e29c1d983d6b7ff}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getNetChange@{getNetChange}}
+\index{getNetChange@{getNetChange}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getNetChange]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Net\-Change () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6f0e8f7dd9edd3f29e29c1d983d6b7ff}
+
+
+Change in price compared with the previous closing price (i.e. 
+
+previous closing price - trade price).
+
+\begin{Desc}
+\item[Returns:]Price change compared to previous price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f9dc99814388d51987fa19c1b13ff07d}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_05f9cfbfd50d3783a2d5716064ed7b9f}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getPctChange@{getPctChange}}
+\index{getPctChange@{getPctChange}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getPctChange]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Pct\-Change () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_05f9cfbfd50d3783a2d5716064ed7b9f}
+
+
+Percentage change in price compared with the previous closing price (i.e. 
+
+previous closing price - trade price).
+
+\begin{Desc}
+\item[Returns:]Percentage price change compared to previous price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a1d7053dbff245beccdd8357c72d662c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_abbd87f4ea29275d32a78e20426cafca}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeDirection@{getTradeDirection}}
+\index{getTradeDirection@{getTradeDirection}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeDirection]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_d2479765bb418204c8ccfd3785d2bdbe}{Mamda\-Trade\-Direction} Wombat::Mamda\-Trade\-Recap::get\-Trade\-Direction () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_abbd87f4ea29275d32a78e20426cafca}
+
+
+Trade tick direction. 
+
+See \hyperlink{MamdaTradeDirection_8h}{Mamda\-Trade\-Direction.h} for details.
+
+\begin{Desc}
+\item[Returns:]The tick direction. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_1acaaeffe975eb7f5a9541703ca49f7e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_cb3b351b6f32e8e1ec3c7a33864b8726}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOpenPrice@{getOpenPrice}}
+\index{getOpenPrice@{getOpenPrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOpenPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Open\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_cb3b351b6f32e8e1ec3c7a33864b8726}
+
+
+The price of the first qualifying trade in the security during the current trading day. 
+
+\begin{Desc}
+\item[Returns:]The opening price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0960023261509bd4192432edb22059c2}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_2ae346c9697a98d723110ae092742a53}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getHighPrice@{getHighPrice}}
+\index{getHighPrice@{getHighPrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getHighPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-High\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_2ae346c9697a98d723110ae092742a53}
+
+
+Highest price paid for security during the trading day. 
+
+\begin{Desc}
+\item[Returns:]The highest trade price for the day. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_caff6510c7f5bce0b6d4065c5ae8df53}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_ecd5be58d9917221102b8d35102f2ff7}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLowPrice@{getLowPrice}}
+\index{getLowPrice@{getLowPrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLowPrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Low\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_ecd5be58d9917221102b8d35102f2ff7}
+
+
+Lowest price paid for security during the trading day. 
+
+\begin{Desc}
+\item[Returns:]The lowest trade price for the day. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3358318d745bd8ae681eceba0c7df077}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_3a566a9b8bc9a4d2ac34eec055b91a92}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getClosePrice@{getClosePrice}}
+\index{getClosePrice@{getClosePrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getClosePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_3a566a9b8bc9a4d2ac34eec055b91a92}
+
+
+Today's closing price. 
+
+The closing price field is populated when official closing prices are sent by the feed after the session close.
+
+\begin{Desc}
+\item[Returns:]The closing price for the day. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_cdd9837ec44cbdfb5bd15b563d99ba7b}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a612fcb5d25ec608317992115fd05349}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getPrevClosePrice@{getPrevClosePrice}}
+\index{getPrevClosePrice@{getPrevClosePrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getPrevClosePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Prev\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a612fcb5d25ec608317992115fd05349}
+
+
+The last qualifying trade price on the previous trading day. 
+
+This field may be copied from the close price field during the morning \char`\"{}roll\char`\"{} of records in the feedhandler, or it may be obtained from a secondary source, or it may be explicitly sent by the feed prior to the opening of trading for the current day.
+
+\begin{Desc}
+\item[Returns:]The last qualifying trade price on the previous trading day. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7cef846e6625cd78c1c05cd25ea8ee09}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6b50a84a3848169713d4110fc6ac1280}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getAdjPrevClosePrice@{getAdjPrevClosePrice}}
+\index{getAdjPrevClosePrice@{getAdjPrevClosePrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getAdjPrevClosePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Adj\-Prev\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6b50a84a3848169713d4110fc6ac1280}
+
+
+The previous close price adjusted by corporate actions, such as dividends and stock splits on the ex-date. 
+
+\begin{Desc}
+\item[Returns:]The adjusted previous closing price. \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaTradeRecap_a612fcb5d25ec608317992115fd05349}{get\-Prev\-Close\-Price()} \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e8de0253e81ad8f4e22380854e0a1750}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_cbe424a55e6fd1e9cd086b9884b7a6fc}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getPrevCloseDate@{getPrevCloseDate}}
+\index{getPrevCloseDate@{getPrevCloseDate}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getPrevCloseDate]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Trade\-Recap::get\-Prev\-Close\-Date () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_cbe424a55e6fd1e9cd086b9884b7a6fc}
+
+
+Date corresponding to w\-Prev\-Close\-Price. 
+
+\begin{Desc}
+\item[Returns:]The closing price from the previous trading day. \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaTradeRecap_a612fcb5d25ec608317992115fd05349}{get\-Prev\-Close\-Price()}. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_ce42d352a2c3d93d2f7fd2d9131559e9}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_083bcc57e26be2e79bd391b8a2177e3f}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getBlockCount@{getBlockCount}}
+\index{getBlockCount@{getBlockCount}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getBlockCount]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-u32\_\-t Wombat::Mamda\-Trade\-Recap::get\-Block\-Count () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_083bcc57e26be2e79bd391b8a2177e3f}
+
+
+The number of block trades (at least 10,000 shares) today. 
+
+\begin{Desc}
+\item[Returns:]Number of block trades. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_ef024667c725e6c83fc55a2a356899b4}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_dc17d00de0594da995227b3f915d5fda}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getBlockVolume@{getBlockVolume}}
+\index{getBlockVolume@{getBlockVolume}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getBlockVolume]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-quantity\_\-t Wombat::Mamda\-Trade\-Recap::get\-Block\-Volume () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_dc17d00de0594da995227b3f915d5fda}
+
+
+Total volume of block trades today. 
+
+\begin{Desc}
+\item[Returns:]Total volumn of block trades. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5d1de91179c83b06f897ee66c93174c1}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_b80bace23fde9c5712351bc6a9f2344b}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getVwap@{getVwap}}
+\index{getVwap@{getVwap}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getVwap]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Vwap () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_b80bace23fde9c5712351bc6a9f2344b}
+
+
+Volume-weighted average price of a security at the time it is disseminated. 
+
+Equivalent to dividing total value by total volume.
+
+\begin{Desc}
+\item[Returns:]The VWAP (Volume-weighted average price) \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3ca5f333c3c1962ad59dc7f87e6ea053}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_9c9488d1b62675928ec13e2f8d9fdd53}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExVwap@{getOffExVwap}}
+\index{getOffExVwap@{getOffExVwap}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExVwap]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Off\-Ex\-Vwap () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_9c9488d1b62675928ec13e2f8d9fdd53}
+
+
+Volume-weighted average price of an off-exchange security at the time it is disseminated. 
+
+Equivalent to dividing the off-exchange total value by the off-exchange total volume.
+
+\begin{Desc}
+\item[Returns:]The off-exchange VWAP (Volume-weighted average price) \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a7d5a2f66aa6979d4ebd2e8d72621008}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_dd064f9710f59f8f07309dec3d11411a}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExVwap@{getOnExVwap}}
+\index{getOnExVwap@{getOnExVwap}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExVwap]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-On\-Ex\-Vwap () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_dd064f9710f59f8f07309dec3d11411a}
+
+
+Volume-weighted average price of an on-exchange security at the time it is disseminated. 
+
+Equivalent to dividing on-echange total value by the on-exchange total volume.
+
+\begin{Desc}
+\item[Returns:]The on-exchange VWAP (Volume-weighted average price) \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e0e6940f05e4ba0c6f60c46990d6dbd1}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_5dd7f2055b4a80d111661c4a1da2abb9}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTotalValue@{getTotalValue}}
+\index{getTotalValue@{getTotalValue}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTotalValue]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Total\-Value () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_5dd7f2055b4a80d111661c4a1da2abb9}
+
+
+Total value of all shares traded in a security at the time it is disseminated. 
+
+Calculated by summing the result of multiplying the trade price by trade volume for each qualifying trade.
+
+\begin{Desc}
+\item[Returns:]Total value of all instruments traded. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7b7e5520279a385cde727081db1874d3}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_96ea4f22af059b55175f2fa99696ea80}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExTotalValue@{getOffExTotalValue}}
+\index{getOffExTotalValue@{getOffExTotalValue}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExTotalValue]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Off\-Ex\-Total\-Value () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_96ea4f22af059b55175f2fa99696ea80}
+
+
+Total value of all off-exchange shares traded in a security at the time it is disseminated. 
+
+Calculated by summing the result of multiplying the trade price by trade volume for each qualifying trade.
+
+\begin{Desc}
+\item[Returns:]Total value of all off-exhange instruments traded. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0b0a3e74b09f916b4d202379842a243e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_3e76017039351d288886d5f467d9364c}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExTotalValue@{getOnExTotalValue}}
+\index{getOnExTotalValue@{getOnExTotalValue}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExTotalValue]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-On\-Ex\-Total\-Value () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_3e76017039351d288886d5f467d9364c}
+
+
+Total value of all on-exchange shares traded in a security at the time it is disseminated. 
+
+Calculated by summing the result of multiplying the trade price by trade volume for each qualifying trade.
+
+\begin{Desc}
+\item[Returns:]Total value of all on-exchange instruments traded. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_b9865f1c180226bf4f9c30efb9a996ab}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_388ccb8e0d7bbc9be4c2fbdbef376aa8}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getStdDev@{getStdDev}}
+\index{getStdDev@{getStdDev}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getStdDev]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Std\-Dev () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_388ccb8e0d7bbc9be4c2fbdbef376aa8}
+
+
+Standard deviation of last trade price of a security at the time it is disseminated. 
+
+\begin{Desc}
+\item[Returns:]The standard deviation of last trade price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_52d70de1c585fa3d02f31fb963b2788a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_65b971acc07bbbc6f593b7e7a803e6c4}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getStdDevSum@{getStdDevSum}}
+\index{getStdDevSum@{getStdDevSum}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getStdDevSum]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Std\-Dev\-Sum () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_65b971acc07bbbc6f593b7e7a803e6c4}
+
+
+Sum of the standard deviations. 
+
+\begin{Desc}
+\item[Returns:]The sum of the standard deviations. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3fa0c29ee90e004a4f9d56dccb1f9d28}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a2fb46ed6a57f14eb2a25ddbca0d902a}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getStdDevSumSquares@{getStdDevSumSquares}}
+\index{getStdDevSumSquares@{getStdDevSumSquares}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getStdDevSumSquares]{\setlength{\rightskip}{0pt plus 5cm}virtual double Wombat::Mamda\-Trade\-Recap::get\-Std\-Dev\-Sum\-Squares () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a2fb46ed6a57f14eb2a25ddbca0d902a}
+
+
+Square of the sum of the standard deviations. 
+
+\begin{Desc}
+\item[Returns:]The square of the sum of the standard deviations. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_42d76e2ecd19afbf40e583c079221e02}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_f1d081fdecd01cd5e59210ff4be63d16}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeUnits@{getTradeUnits}}
+\index{getTradeUnits@{getTradeUnits}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeUnits]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Recap::get\-Trade\-Units () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_f1d081fdecd01cd5e59210ff4be63d16}
+
+
+Reuters trade units. 
+
+\begin{Desc}
+\item[Returns:]Reuters trade units \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_c4b602c4ce2f49e81d4d20eef7d60711}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_ce7f7d8ec0c4d3df1905f7f68c16d42b}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastSeqNum@{getLastSeqNum}}
+\index{getLastSeqNum@{getLastSeqNum}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Recap::get\-Last\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_ce7f7d8ec0c4d3df1905f7f68c16d42b}
+
+
+Sequence number of the last trade. 
+
+\begin{Desc}
+\item[Returns:]The sequence number of the last trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_bac3ca4094b86f6dd797e68417f04c15}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_f87da76851c02f0248c635836b7260ae}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getHighSeqNum@{getHighSeqNum}}
+\index{getHighSeqNum@{getHighSeqNum}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getHighSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Recap::get\-High\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_f87da76851c02f0248c635836b7260ae}
+
+
+Sequence number of incoming message which gives high value. 
+
+\begin{Desc}
+\item[Returns:]Sequence number of incoming message which gives high value. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_cfa0551c486d97d5cb04e17f2d2483d4}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_459c619eee736e8cfc32f4ff45873d16}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLowSeqNum@{getLowSeqNum}}
+\index{getLowSeqNum@{getLowSeqNum}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLowSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Recap::get\-Low\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_459c619eee736e8cfc32f4ff45873d16}
+
+
+Sequence number of incoming message which gives low value. 
+
+\begin{Desc}
+\item[Returns:]Sequence number of incoming message which gives low value. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5b4c5e492cb7d005e416e21c7ef819f2}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_51ff9ff94e560b2dfbf16fd4ca64cdb6}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Recap::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_51ff9ff94e560b2dfbf16fd4ca64cdb6}
+
+
+Sequence number of trade. 
+
+\begin{Desc}
+\item[Returns:]Sequence number of trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_8289ac1ca750b7fb99e29c122e37caad}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_8474365e849b98332d5d9762347e5aae}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTotalVolumeSeqNum@{getTotalVolumeSeqNum}}
+\index{getTotalVolumeSeqNum@{getTotalVolumeSeqNum}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTotalVolumeSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Trade\-Recap::get\-Total\-Volume\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_8474365e849b98332d5d9762347e5aae}
+
+
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e51bb722030a31e634fb64cba119cbd1}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6587bdc84af742abd6cbb742737cc6db}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getCurrencyCode@{getCurrencyCode}}
+\index{getCurrencyCode@{getCurrencyCode}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getCurrencyCode]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Recap::get\-Currency\-Code () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6587bdc84af742abd6cbb742737cc6db}
+
+
+Currency of the trade (eg US\$). 
+
+\begin{Desc}
+\item[Returns:]Currency of the trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_cbbf27265245059efc55efa1d6db2c0b}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_859bb4a768932a59460651ade04e4b81}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getSettlePrice@{getSettlePrice}}
+\index{getSettlePrice@{getSettlePrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getSettlePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Settle\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_859bb4a768932a59460651ade04e4b81}
+
+
+Settle price of trade. 
+
+\begin{Desc}
+\item[Returns:]Settle price of trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f3eda46328eb6e9a02e76ff6f936ecc5}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_80a2aabb513c40dc4d7d22173077b5db}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getSettleDate@{getSettleDate}}
+\index{getSettleDate@{getSettleDate}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getSettleDate]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Trade\-Recap::get\-Settle\-Date () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_80a2aabb513c40dc4d7d22173077b5db}
+
+
+Settle date of trade. 
+
+\begin{Desc}
+\item[Returns:]Settle date of trade. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2f94098f4eefc746ec8447cf31a190a7}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6df7435306c01b0d0828d9a524fbe0bd}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeExecVenue@{getTradeExecVenue}}
+\index{getTradeExecVenue@{getTradeExecVenue}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeExecVenue]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_daf4c098665070a9e45bf835bad3548a}{Mamda\-Trade\-Exec\-Venue} Wombat::Mamda\-Trade\-Recap::get\-Trade\-Exec\-Venue () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6df7435306c01b0d0828d9a524fbe0bd}
+
+
+Trade execution venue. 
+
+See \hyperlink{MamdaTradeExecVenue_8h}{Mamda\-Trade\-Exec\-Venue.h} for details.
+
+\begin{Desc}
+\item[Returns:]The trade execution venue. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_12aa826e64effedd9e64fcdc95ce8217}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_4441eab85326326aa600c783a33a55bd}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExchangeTradePrice@{getOffExchangeTradePrice}}
+\index{getOffExchangeTradePrice@{getOffExchangeTradePrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExchangeTradePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-Off\-Exchange\-Trade\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_4441eab85326326aa600c783a33a55bd}
+
+
+Monetary value of an individual share of the security off exchange at the time of the trade. 
+
+\begin{Desc}
+\item[Returns:]The last off exchange trade price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_71f698fe02f28a03082e13bc1712520c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_9979bc1d67b53dca01261a34a06d0834}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExchangeTradePrice@{getOnExchangeTradePrice}}
+\index{getOnExchangeTradePrice@{getOnExchangeTradePrice}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExchangeTradePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Recap::get\-On\-Exchange\-Trade\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_9979bc1d67b53dca01261a34a06d0834}
+
+
+Monetary value of an individual share of the security on exchange at the time of the trade. 
+
+\begin{Desc}
+\item[Returns:]The last on exchange trade price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_aa798b030e645e17bda3911d1b5a9bf9}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_43b14f3da3e3df82401ac524cb33f6a5}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getSide@{getSide}}
+\index{getSide@{getSide}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getSide]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Trade\-Recap::get\-Side () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_43b14f3da3e3df82401ac524cb33f6a5}
+
+
+\begin{Desc}
+\item[Returns:]the Aggressor Side or Trade\-Side Trade\-Side \begin{itemize}
+\item 0 : No Trade\-Side is currently known/available. \item 1 or B : Buy \item 2 or S : Sell \begin{itemize}
+\end{itemize}
+\begin{itemize}
+\item 0 : No Aggressor\-Side is currently known/available. \item 1 or B : Buy \item 2 or S : Sell \begin{itemize}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_e3cca817a27a4e6b9e5b699f548cd22a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_8fffec973ff9978944e72d9438c6a1cd}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}}
+\index{getShortSaleCircuitBreaker@{getShortSaleCircuitBreaker}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getShortSaleCircuitBreaker]{\setlength{\rightskip}{0pt plus 5cm}virtual char Wombat::Mamda\-Trade\-Recap::get\-Short\-Sale\-Circuit\-Breaker () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_8fffec973ff9978944e72d9438c6a1cd}
+
+
+get the Short\-Sale\-Circuit\-Breaker 
+
+\begin{Desc}
+\item[Returns:]Short\-Sale\-Circuit\-Breaker \begin{itemize}
+\item return values: \item Blank: Short Sale Restriction Not in Effect. \item A: Short Sale Restriction Activiated. \item C: Short Sale Restriction Continued. \item D: Sale Restriction Deactivated. \item E: Sale Restriction in Effect. \end{itemize}
+\end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_8d5969ac94475afb4eeeb8b252106e6f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_f4508406463e09aab15652b4b30b0bbc}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastPriceFieldState@{getLastPriceFieldState}}
+\index{getLastPriceFieldState@{getLastPriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Last\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_f4508406463e09aab15652b4b30b0bbc}
+
+
+The last trade price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_1374642c578867d0b51dff83e5b2a99f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_71887b4616edf5af0fccc2bae90a607c}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastVolumeFieldState@{getLastVolumeFieldState}}
+\index{getLastVolumeFieldState@{getLastVolumeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Last\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_71887b4616edf5af0fccc2bae90a607c}
+
+
+The last volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_049bea66cd1715f50a3f894137810b30}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a2b712b3f95d4613d5a1c98c61b00902}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastPartIdFieldState@{getLastPartIdFieldState}}
+\index{getLastPartIdFieldState@{getLastPartIdFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Last\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a2b712b3f95d4613d5a1c98c61b00902}
+
+
+The last part Id Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7ecf8dab22bff20d0f5b909d81f67dcb}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_cb3823e27dc163ff09b61e8a41ff960f}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastTimeFieldState@{getLastTimeFieldState}}
+\index{getLastTimeFieldState@{getLastTimeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Last\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_cb3823e27dc163ff09b61e8a41ff960f}
+
+
+The last time Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3949dbc87861899ae66b1ee7173011b4}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_1d1057e7954bcab91c82c327944b622d}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregPriceFieldState@{getIrregPriceFieldState}}
+\index{getIrregPriceFieldState@{getIrregPriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_1d1057e7954bcab91c82c327944b622d}
+
+
+The irreg price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5c3e195cc4c8d41f3a56e9c9a39730dd}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_b6b5d24579ced7928a72bb76518e10fa}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregVolumeFieldState@{getIrregVolumeFieldState}}
+\index{getIrregVolumeFieldState@{getIrregVolumeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_b6b5d24579ced7928a72bb76518e10fa}
+
+
+The irreg volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_8e6b4c395a5dcebe1439553445f5f374}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_7279903433d1059bf0fa02ea3af73f2d}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregPartIdFieldState@{getIrregPartIdFieldState}}
+\index{getIrregPartIdFieldState@{getIrregPartIdFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_7279903433d1059bf0fa02ea3af73f2d}
+
+
+The irreg part Id Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_c0c46a4f597942f1256906de3aae3c4c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_edaa9f3db0011e8175309628b7d17f09}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getIrregTimeFieldState@{getIrregTimeFieldState}}
+\index{getIrregTimeFieldState@{getIrregTimeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getIrregTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Irreg\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_edaa9f3db0011e8175309628b7d17f09}
+
+
+The irregular time Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_c5bf736fa985c2ee23694b11235e5933}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_825b27f46b43bbe98dacb9377b32e0e3}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeDateFieldState@{getTradeDateFieldState}}
+\index{getTradeDateFieldState@{getTradeDateFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Trade\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_825b27f46b43bbe98dacb9377b32e0e3}
+
+
+The trade date Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_6ce7a7bba0ea6365f5e5fa3901ae7701}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6de11a97ec493b1e7fd9c843406127bc}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeCountFieldState@{getTradeCountFieldState}}
+\index{getTradeCountFieldState@{getTradeCountFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeCountFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Trade\-Count\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6de11a97ec493b1e7fd9c843406127bc}
+
+
+The trade count Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f79d9119125ef4907ba4227d1176bd04}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_ee7ddb433c0825515166da7226852b4b}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getAccVolumeFieldState@{getAccVolumeFieldState}}
+\index{getAccVolumeFieldState@{getAccVolumeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getAccVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Acc\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_ee7ddb433c0825515166da7226852b4b}
+
+
+The accumulated volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_48419d9b8e7c932ea3ee9750f2619d2d}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_84fad7757aecfad7c39e563709091c46}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExAccVolumeFieldState@{getOffExAccVolumeFieldState}}
+\index{getOffExAccVolumeFieldState@{getOffExAccVolumeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExAccVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Off\-Ex\-Acc\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_84fad7757aecfad7c39e563709091c46}
+
+
+The off exchange accumulated volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_ebdb316690769ff380d8e1950a878de3}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_da9986c1440a9f58b1c3c477b4367bbe}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExAccVolumeFieldState@{getOnExAccVolumeFieldState}}
+\index{getOnExAccVolumeFieldState@{getOnExAccVolumeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExAccVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-On\-Ex\-Acc\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_da9986c1440a9f58b1c3c477b4367bbe}
+
+
+The on exchange accumulated volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_ce848079dc4e2282b59ca502f891e436}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_d9ba46964e6719b4a53c2d9abcf30314}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getNetChangeFieldState@{getNetChangeFieldState}}
+\index{getNetChangeFieldState@{getNetChangeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getNetChangeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Net\-Change\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_d9ba46964e6719b4a53c2d9abcf30314}
+
+
+The net change Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_b147b82694481c48a976dce74b2b0241}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_83948885b739f36f7e593d8923cb542f}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getPctChangeFieldState@{getPctChangeFieldState}}
+\index{getPctChangeFieldState@{getPctChangeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getPctChangeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Pct\-Change\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_83948885b739f36f7e593d8923cb542f}
+
+
+The percentage change Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_43832d2f10f4757e6ed29c82f875c976}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_285abbfee630b27b7b20957f35250f19}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeDirectionFieldState@{getTradeDirectionFieldState}}
+\index{getTradeDirectionFieldState@{getTradeDirectionFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeDirectionFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Trade\-Direction\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_285abbfee630b27b7b20957f35250f19}
+
+
+The trade direction Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0662220b81bda7b4fe9532ff4c15f3c8}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_aa06d51b6f953dbef06a4d59a8438ec1}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOpenPriceFieldState@{getOpenPriceFieldState}}
+\index{getOpenPriceFieldState@{getOpenPriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOpenPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Open\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_aa06d51b6f953dbef06a4d59a8438ec1}
+
+
+The open price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_823d3caa4ea0c0c6efb7c6f0e7e2a59e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a96180881510aca5fb838905052fffa5}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getHighPriceFieldState@{getHighPriceFieldState}}
+\index{getHighPriceFieldState@{getHighPriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getHighPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-High\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a96180881510aca5fb838905052fffa5}
+
+
+The high price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2d9891182ae722a107f9b49dd5ecb559}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_db9836665c7f6b15c26f379ab680c374}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLowPriceFieldState@{getLowPriceFieldState}}
+\index{getLowPriceFieldState@{getLowPriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLowPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Low\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_db9836665c7f6b15c26f379ab680c374}
+
+
+The low price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_5830510164c197655c2b9848a06a3e0a}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a45cdea8950502d698ccdbd052b456c1}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getClosePriceFieldState@{getClosePriceFieldState}}
+\index{getClosePriceFieldState@{getClosePriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a45cdea8950502d698ccdbd052b456c1}
+
+
+The close price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_47222f2a6f39a3fcca3128317718cc79}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_59c935c0a3b018e48fd9b1bb476cd4b7}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getPrevClosePriceFieldState@{getPrevClosePriceFieldState}}
+\index{getPrevClosePriceFieldState@{getPrevClosePriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getPrevClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Prev\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_59c935c0a3b018e48fd9b1bb476cd4b7}
+
+
+The previous close price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_6b5ce55994a03c95c2a4b0732f75c664}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_c19498f35c75d790cbfa74fc249824eb}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getAdjPrevClosePriceFieldState@{getAdjPrevClosePriceFieldState}}
+\index{getAdjPrevClosePriceFieldState@{getAdjPrevClosePriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getAdjPrevClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Adj\-Prev\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_c19498f35c75d790cbfa74fc249824eb}
+
+
+The adjusted previous close date Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0df7a1c343774b3577b2e28867470ea9}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_33ca111d0e9e5b1bbe9e5c3ccd3d4c8c}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getPrevCloseDateFieldState@{getPrevCloseDateFieldState}}
+\index{getPrevCloseDateFieldState@{getPrevCloseDateFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getPrevCloseDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Prev\-Close\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_33ca111d0e9e5b1bbe9e5c3ccd3d4c8c}
+
+
+The previous close date Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_280ff9e5c40998c03f12a789fe90613f}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_9b4768cd8bfe696c5a217d32926426f1}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getBlockCountFieldState@{getBlockCountFieldState}}
+\index{getBlockCountFieldState@{getBlockCountFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getBlockCountFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Block\-Count\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_9b4768cd8bfe696c5a217d32926426f1}
+
+
+The block count Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_0fd74766b284afb545bd976dc7c84060}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_f39bf8db19885374b44a37a6b36311b1}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getBlockVolumeFieldState@{getBlockVolumeFieldState}}
+\index{getBlockVolumeFieldState@{getBlockVolumeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getBlockVolumeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Block\-Volume\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_f39bf8db19885374b44a37a6b36311b1}
+
+
+The block volume Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_4bff1adf74e14f18819160029796fa9d}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_4a05775b568f16662fdcf8f34f5cecde}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getVwapFieldState@{getVwapFieldState}}
+\index{getVwapFieldState@{getVwapFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getVwapFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Vwap\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_4a05775b568f16662fdcf8f34f5cecde}
+
+
+The Vwap Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_c21118c78e3c119f6009e90ff1dfa922}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_73079a6a76e523eb7693e9102743ba7c}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExVwapFieldState@{getOffExVwapFieldState}}
+\index{getOffExVwapFieldState@{getOffExVwapFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExVwapFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Off\-Ex\-Vwap\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_73079a6a76e523eb7693e9102743ba7c}
+
+
+The off exchange Vwap Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_218b607fb4f815873eea2fc4da9f4f8c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_28e307415c29dc4a04b1790fabd3ad4f}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExVwapFieldState@{getOnExVwapFieldState}}
+\index{getOnExVwapFieldState@{getOnExVwapFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExVwapFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-On\-Ex\-Vwap\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_28e307415c29dc4a04b1790fabd3ad4f}
+
+
+The on exchange Vwap Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_9b42325544667eb9015a42f1cbed4f72}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_26e3f460f499d5bfe7e2d47a77a881ce}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTotalValueFieldState@{getTotalValueFieldState}}
+\index{getTotalValueFieldState@{getTotalValueFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTotalValueFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Total\-Value\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_26e3f460f499d5bfe7e2d47a77a881ce}
+
+
+The total value Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_245a68b75564593c36b163aa87f5740b}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6db0ccb47fa8aac3e063a1833d9e0208}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExTotalValueFieldState@{getOffExTotalValueFieldState}}
+\index{getOffExTotalValueFieldState@{getOffExTotalValueFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExTotalValueFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Off\-Ex\-Total\-Value\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6db0ccb47fa8aac3e063a1833d9e0208}
+
+
+The Off Exchange Total Value Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_a47baf1358d91fa1b44bcf2f326f74ca}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_bd3a92c7aa26621a03cd80ef45f37f12}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExTotalValueFieldState@{getOnExTotalValueFieldState}}
+\index{getOnExTotalValueFieldState@{getOnExTotalValueFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExTotalValueFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-On\-Ex\-Total\-Value\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_bd3a92c7aa26621a03cd80ef45f37f12}
+
+
+The On Exchange Total Value Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_63ff116bb1922942926fedde13e4c2f4}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_0555b4b9265d2aecd14660dacd6e8bf3}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getStdDevFieldState@{getStdDevFieldState}}
+\index{getStdDevFieldState@{getStdDevFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getStdDevFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Std\-Dev\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_0555b4b9265d2aecd14660dacd6e8bf3}
+
+
+The std deviation Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_dccc4da383c8a20f86ce59d774e55778}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_301b9d3bf67f823437080caa7dbd0804}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getStdDevSumFieldState@{getStdDevSumFieldState}}
+\index{getStdDevSumFieldState@{getStdDevSumFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getStdDevSumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Std\-Dev\-Sum\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_301b9d3bf67f823437080caa7dbd0804}
+
+
+The std deviation sum Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2daad489d3cda802d7555b5f9edc0822}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_45483e8e818629de79c926ed89feaa9d}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getStdDevSumSquaresFieldState@{getStdDevSumSquaresFieldState}}
+\index{getStdDevSumSquaresFieldState@{getStdDevSumSquaresFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getStdDevSumSquaresFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Std\-Dev\-Sum\-Squares\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_45483e8e818629de79c926ed89feaa9d}
+
+
+The Std\-Dev\-Sum\-Squares Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_b14aa9b55ac04672085cd7135cb5868c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_76b2a0d55943b5bae38766f11bcc400e}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTradeUnitsFieldState@{getTradeUnitsFieldState}}
+\index{getTradeUnitsFieldState@{getTradeUnitsFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTradeUnitsFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Trade\-Units\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_76b2a0d55943b5bae38766f11bcc400e}
+
+
+The trade units Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_9c8d5e8e3f9aca07499877ea4b27c765}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_97b6fab4e918ee8397fe7586b9d710c2}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLastSeqNumFieldState@{getLastSeqNumFieldState}}
+\index{getLastSeqNumFieldState@{getLastSeqNumFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLastSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Last\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_97b6fab4e918ee8397fe7586b9d710c2}
+
+
+The last Seq\-Num Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_3bd3e58f99dcb1456e393d3c204a8ce9}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6553b87e01893b7740590f0b079ca87f}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getHighSeqNumFieldState@{getHighSeqNumFieldState}}
+\index{getHighSeqNumFieldState@{getHighSeqNumFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getHighSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-High\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6553b87e01893b7740590f0b079ca87f}
+
+
+The high seq\-Num Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_50fb169b697c0c3d26516b13f864db80}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_faa2d571451bc8a124a85a00e67f6fef}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getLowSeqNumFieldState@{getLowSeqNumFieldState}}
+\index{getLowSeqNumFieldState@{getLowSeqNumFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getLowSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Low\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_faa2d571451bc8a124a85a00e67f6fef}
+
+
+The low Seq\-Num Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_61a7251329f3b6425a917dc2f95a8759}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_13ffda2f1178cc9c6297b3624d0b9912}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_13ffda2f1178cc9c6297b3624d0b9912}
+
+
+The event Seq\-Num Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_22fb35889eb20ecd6e52d01d5227a74c}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6a0c576b7c4902e34d3b144cc7120ec4}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getTotalVolumeSeqNumFieldState@{getTotalVolumeSeqNumFieldState}}
+\index{getTotalVolumeSeqNumFieldState@{getTotalVolumeSeqNumFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getTotalVolumeSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Total\-Volume\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6a0c576b7c4902e34d3b144cc7120ec4}
+
+
+The total volume seq\-Num Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_399c33640428f8e7a5cd5e5eabc79ef8}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_f8812af3a07b9b5da681289918a38f73}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getCurrencyCodeFieldState@{getCurrencyCodeFieldState}}
+\index{getCurrencyCodeFieldState@{getCurrencyCodeFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getCurrencyCodeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Currency\-Code\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_f8812af3a07b9b5da681289918a38f73}
+
+
+The currency code Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_775a85fc8f9a1c5ecb10e7576ca0165e}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_a2424806f6356557b09ee35c4fc5c573}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getSettlePriceFieldState@{getSettlePriceFieldState}}
+\index{getSettlePriceFieldState@{getSettlePriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getSettlePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Settle\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_a2424806f6356557b09ee35c4fc5c573}
+
+
+The settle price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_f487197ee5cad3e13470e8363e667702}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_8f2dc16d498df59f741eb2eab59ca95a}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getSettleDateFieldState@{getSettleDateFieldState}}
+\index{getSettleDateFieldState@{getSettleDateFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getSettleDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Settle\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_8f2dc16d498df59f741eb2eab59ca95a}
+
+
+The last trade price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_75af0c0e81cb87dcf0029f79ecb13262}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_da82568c7dabc3507fe6a3a8b27324c0}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOffExchangeTradePriceFieldState@{getOffExchangeTradePriceFieldState}}
+\index{getOffExchangeTradePriceFieldState@{getOffExchangeTradePriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOffExchangeTradePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Off\-Exchange\-Trade\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_da82568c7dabc3507fe6a3a8b27324c0}
+
+
+The settle date Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_7939de727c94506247b065996e9ef1b5}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_f64ddeb0f184484bab7fcb380995b6a5}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getOnExchangeTradePriceFieldState@{getOnExchangeTradePriceFieldState}}
+\index{getOnExchangeTradePriceFieldState@{getOnExchangeTradePriceFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getOnExchangeTradePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-On\-Exchange\-Trade\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_f64ddeb0f184484bab7fcb380995b6a5}
+
+
+The on\-Exchange trade price Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_d197007dd685e6240a89ad4729c62352}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_69f58e9304fcfeedd22b8e9067c6b47a}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getSideFieldState@{getSideFieldState}}
+\index{getSideFieldState@{getSideFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getSideFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Side\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_69f58e9304fcfeedd22b8e9067c6b47a}
+
+
+The Trade\-Side or Aggressor\-Side Field State. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_9943001740bebfecd4801267dac6daca}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeRecap_6808f080463130d2426dad0cc2ba9c16}{
+\index{Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}!getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}}
+\index{getShortSaleCircuitBreakerFieldState@{getShortSaleCircuitBreakerFieldState}!Wombat::MamdaTradeRecap@{Wombat::Mamda\-Trade\-Recap}}
+\subsubsection[getShortSaleCircuitBreakerFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Recap::get\-Short\-Sale\-Circuit\-Breaker\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeRecap_6808f080463130d2426dad0cc2ba9c16}
+
+
+\begin{Desc}
+\item[Returns:]The Short\-Sale\-Circuit\-Breaker Field State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_2630b69a9a27a1772e3f4315c254a466}{Wombat::Mamda\-Trade\-Listener}.

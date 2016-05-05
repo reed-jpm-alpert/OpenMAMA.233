@@ -1,0 +1,58 @@
+\hypertarget{classWombat_1_1MamdaFundamentalHandler}{
+\section{Wombat::Mamda\-Fundamental\-Handler Class Reference}
+\label{classWombat_1_1MamdaFundamentalHandler}\index{Wombat::MamdaFundamentalHandler@{Wombat::MamdaFundamentalHandler}}
+}
+\hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} is an interface for applications that want to have an easy way to access fundamental equity pricing/analysis attributes, indicators and ratios.  
+
+
+{\tt \#include $<$Mamda\-Fundamental\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaFundamentalHandler_bfa96c33f4391803876657b78a1a2c82}{on\-Fundamentals} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} \&listener, const Mama\-Msg \&msg, const \hyperlink{classWombat_1_1MamdaFundamentals}{Mamda\-Fundamentals} \&fundas)=0
+\begin{CompactList}\small\item\em Method invoked when one or more of the Fundamental fields have been updated by one of the following market data events:\begin{itemize}
+\item Initial image. \end{itemize}
+\item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaFundamentalHandler_a22288a7d092f7455206df07d7a08724}{$\sim$Mamda\-Fundamental\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} is an interface for applications that want to have an easy way to access fundamental equity pricing/analysis attributes, indicators and ratios. 
+
+The interface defines a single callback methods for for receiving updates on fundamental data. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaFundamentalHandler_a22288a7d092f7455206df07d7a08724}{
+\index{Wombat::MamdaFundamentalHandler@{Wombat::Mamda\-Fundamental\-Handler}!~MamdaFundamentalHandler@{$\sim$MamdaFundamentalHandler}}
+\index{~MamdaFundamentalHandler@{$\sim$MamdaFundamentalHandler}!Wombat::MamdaFundamentalHandler@{Wombat::Mamda\-Fundamental\-Handler}}
+\subsubsection[$\sim$MamdaFundamentalHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Fundamental\-Handler::$\sim$Mamda\-Fundamental\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalHandler_a22288a7d092f7455206df07d7a08724}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaFundamentalHandler_bfa96c33f4391803876657b78a1a2c82}{
+\index{Wombat::MamdaFundamentalHandler@{Wombat::Mamda\-Fundamental\-Handler}!onFundamentals@{onFundamentals}}
+\index{onFundamentals@{onFundamentals}!Wombat::MamdaFundamentalHandler@{Wombat::Mamda\-Fundamental\-Handler}}
+\subsubsection[onFundamentals]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Fundamental\-Handler::on\-Fundamentals (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, const \hyperlink{classWombat_1_1MamdaFundamentals}{Mamda\-Fundamentals} \& {\em fundas})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalHandler_bfa96c33f4391803876657b78a1a2c82}
+
+
+Method invoked when one or more of the Fundamental fields have been updated by one of the following market data events:\begin{itemize}
+\item Initial image. \end{itemize}
+
+
+\begin{itemize}
+\item Recap update (e.g., after server fault tolerant event or data quality event.)\item Generic update..\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received the update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em fundas}]Access to the fundamental update details. \end{description}
+\end{Desc}

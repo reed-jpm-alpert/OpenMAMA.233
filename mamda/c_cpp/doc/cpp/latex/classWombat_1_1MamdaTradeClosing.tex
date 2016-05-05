@@ -1,0 +1,86 @@
+\hypertarget{classWombat_1_1MamdaTradeClosing}{
+\section{Wombat::Mamda\-Trade\-Closing Class Reference}
+\label{classWombat_1_1MamdaTradeClosing}\index{Wombat::MamdaTradeClosing@{Wombat::MamdaTradeClosing}}
+}
+\hyperlink{classWombat_1_1MamdaTradeClosing}{Mamda\-Trade\-Closing} is an interface that provides access to trade closing related fields.  
+
+
+{\tt \#include $<$Mamda\-Trade\-Closing.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Trade\-Closing::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaTradeClosing}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual const Mama\-Price \& \hyperlink{classWombat_1_1MamdaTradeClosing_74d8721012d6e43cc9066191355aaec6}{get\-Close\-Price} () const =0
+\begin{CompactList}\small\item\em Return the Close price Today's closing price. \item\end{CompactList}\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaTradeClosing_9038a566c4c213c24f304cbd884f2791}{get\-Close\-Price\-Field\-State} () const =0
+\begin{CompactList}\small\item\em Get the field state. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaTradeClosing_1cc09c62280886142698dcafaef84660}{get\-Is\-Indicative} () const =0
+\begin{CompactList}\small\item\em Return whether this closing price is indicative or official. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaTradeClosing_d0a208ac96899d1a94702514970df9d3}{$\sim$Mamda\-Trade\-Closing} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaTradeClosing}{Mamda\-Trade\-Closing} is an interface that provides access to trade closing related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaTradeClosing_d0a208ac96899d1a94702514970df9d3}{
+\index{Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}!~MamdaTradeClosing@{$\sim$MamdaTradeClosing}}
+\index{~MamdaTradeClosing@{$\sim$MamdaTradeClosing}!Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}}
+\subsubsection[$\sim$MamdaTradeClosing]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Trade\-Closing::$\sim$Mamda\-Trade\-Closing ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeClosing_d0a208ac96899d1a94702514970df9d3}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaTradeClosing_74d8721012d6e43cc9066191355aaec6}{
+\index{Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}!getClosePrice@{getClosePrice}}
+\index{getClosePrice@{getClosePrice}!Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}}
+\subsubsection[getClosePrice]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Price\& Wombat::Mamda\-Trade\-Closing::get\-Close\-Price () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeClosing_74d8721012d6e43cc9066191355aaec6}
+
+
+Return the Close price Today's closing price. 
+
+The close price is populated when official closing prices are sent by the feed after the session close.
+
+\begin{Desc}
+\item[Returns:]The trade closing price. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_cdd9837ec44cbdfb5bd15b563d99ba7b}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeClosing_9038a566c4c213c24f304cbd884f2791}{
+\index{Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}!getClosePriceFieldState@{getClosePriceFieldState}}
+\index{getClosePriceFieldState@{getClosePriceFieldState}!Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}}
+\subsubsection[getClosePriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Trade\-Closing::get\-Close\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeClosing_9038a566c4c213c24f304cbd884f2791}
+
+
+Get the field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_47222f2a6f39a3fcca3128317718cc79}{Wombat::Mamda\-Trade\-Listener}.\hypertarget{classWombat_1_1MamdaTradeClosing_1cc09c62280886142698dcafaef84660}{
+\index{Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}!getIsIndicative@{getIsIndicative}}
+\index{getIsIndicative@{getIsIndicative}!Wombat::MamdaTradeClosing@{Wombat::Mamda\-Trade\-Closing}}
+\subsubsection[getIsIndicative]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Trade\-Closing::get\-Is\-Indicative () const\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaTradeClosing_1cc09c62280886142698dcafaef84660}
+
+
+Return whether this closing price is indicative or official. 
+
+\begin{Desc}
+\item[Returns:]Whether the closing price is indicative or otherwise. \end{Desc}
+
+
+Implemented in \hyperlink{classWombat_1_1MamdaTradeListener_4fdf4fec41a6f66b7acd2be40a7c4e03}{Wombat::Mamda\-Trade\-Listener}.

@@ -1,0 +1,789 @@
+\hypertarget{classWombat_1_1MamdaFundamentalListener}{
+\section{Wombat::Mamda\-Fundamental\-Listener Class Reference}
+\label{classWombat_1_1MamdaFundamentalListener}\index{Wombat::MamdaFundamentalListener@{Wombat::MamdaFundamentalListener}}
+}
+\hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} is a class that specializes in handling fundamental equity pricing/analysis attributes, indicators and ratios.  
+
+
+{\tt \#include $<$Mamda\-Fundamental\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Fundamental\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaFundamentalListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaFundamentalListener_472613466103dc23a863c407f95256c6}{Mamda\-Fundamental\-Listener} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaFundamentalListener_a0255445090ed91d283ddb6d637abd42}{$\sim$Mamda\-Fundamental\-Listener} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaFundamentalListener_6b29c6f9655c0cfce28fe49e658db2a9}{add\-Handler} (\hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} $\ast$handler)
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_0d2fdebba24d7951873278facc446865}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Get the string symbol for the instrument. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_9902a2a7113039defa7114cbf2c88250}{get\-Part\-Id} () const 
+\begin{CompactList}\small\item\em Get the participant identifier. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaFundamentalListener_f28f624d9a523c9d0db2717f2b3b69e9}{get\-Src\-Time} () const 
+\begin{CompactList}\small\item\em Get the source time of the update. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaFundamentalListener_b8d6e8e722a1654997c23f23a1ca4455}{get\-Activity\-Time} () const 
+\begin{CompactList}\small\item\em Get the activity time of the update. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaFundamentalListener_d3e5f97ea0ada9b6db4a8b59e3711da8}{get\-Line\-Time} () const 
+\begin{CompactList}\small\item\em Get the line time of the update. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaFundamentalListener_336c86d3f8e9c79c8641e74b146497b3}{get\-Send\-Time} () const 
+\begin{CompactList}\small\item\em Get the send time of the update. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_ed5b159cacedf11c8beb00bf02c78561}{get\-Symbol\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the string symbol field state for the instrument. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_0262bf50c2afc8dc41440deeb8ba96cd}{get\-Part\-Id\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the participant identifier field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_b375ecf594f9fd285f046d698da763af}{get\-Src\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the source time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_d6594a4cff5a7bf08b8f4fcc171d68d9}{get\-Activity\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the activity time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_b5796fc4bfc42902dbe4c39b3f1640bb}{get\-Line\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the line time field state. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_e58cb36ab2dd46fc970fc2ddb3a91aaf}{get\-Send\-Time\-Field\-State} () const 
+\begin{CompactList}\small\item\em Get the send time field state. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_5413a673ec90c6b17a47309351d12c5b}{get\-Corporate\-Action\-Type} () const 
+\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_b0117a9604ee4b562794e2148c9d514e}{get\-Dividend\-Price} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_233a245991d21d70fb6972091bb56c84}{get\-Dividend\-Frequency} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_063a6648c273949792d6ebdf740ce956}{get\-Dividend\-Ex\-Date} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_4f4c19ac596754914a59a2389eeac5bc}{get\-Dividend\-Pay\-Date} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_da3a7f2c8e3800e187af0198f8a6ab1c}{get\-Dividend\-Record\-Date} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_6ef9676f4d187e8cdb6e2211260b4768}{get\-Dividend\-Currency} () const 
+\item 
+long \hyperlink{classWombat_1_1MamdaFundamentalListener_39395ed6d7896ff0d5ac8594199fbdc7}{get\-Shares\-Out} () const 
+\begin{CompactList}\small\item\em get\-Shares\-Out return the number of shares. \item\end{CompactList}\item 
+long \hyperlink{classWombat_1_1MamdaFundamentalListener_4a4693aa809d7affdaeda70f34f002d7}{get\-Shares\-Float} () const 
+\begin{CompactList}\small\item\em get\-Shares\-Float return the number of floating shares. \item\end{CompactList}\item 
+long \hyperlink{classWombat_1_1MamdaFundamentalListener_271ea50e95b80126e461612c0ab7ed09}{get\-Shares\-Authorized} () const 
+\begin{CompactList}\small\item\em get\-Shares\-Authorized return the number of authorized shares. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_e4219dceb76af963348acab9b9a27246}{get\-Earnings\-Per\-Share} () const 
+\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_641fd03980bd391579bb99ac1393594e}{get\-Volatility} () const 
+\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_c075de507dd9561ed9af165d56674410}{get\-Price\-Earnings\-Ratio} () const 
+\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_89cfb3cdee2c8597e1684e71c69fc50a}{get\-Yield} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_579d342071f318ca31a7fc55e11f9ea3}{get\-Market\-Segment\-Native} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_5451ffdbcd4d4833e7fce5e19d2a3282}{get\-Market\-Sector\-Native} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_7f2643689fe51a96a052eebcc6d50e9a}{get\-Market\-Segment} () const 
+\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaFundamentalListener_11041dcd12c8969eebdd41e6f96afed8}{get\-Market\-Sector} () const 
+\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_975c5df94470d5d3a50f04f9bf86a741}{get\-Historical\-Volatility} () const 
+\item 
+double \hyperlink{classWombat_1_1MamdaFundamentalListener_7ee4b7ae2fa8cf35ff7892a7bb2831ef}{get\-Risk\-Free\-Rate} () const 
+\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamdaFundamentalListener_2dff10a145ad0a1e0b8e3223720eead2}{get\-Shares\-Out\-Ex} () const 
+\begin{CompactList}\small\item\em get\-Shares\-Out\-Ex return the number of shares. \item\end{CompactList}\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamdaFundamentalListener_c37c3fa41884972b67e1abbabeddb9f5}{get\-Shares\-Float\-Ex} () const 
+\begin{CompactList}\small\item\em get\-Shares\-Float\-Ex return the number of floating shares. \item\end{CompactList}\item 
+mama\_\-u64\_\-t \hyperlink{classWombat_1_1MamdaFundamentalListener_338972a5c68467e1464b62b59ef19af7}{get\-Shares\-Authorized\-Ex} () const 
+\begin{CompactList}\small\item\em get\-Shares\-Authorized\-Ex return the number of authorized shares. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_990406da217bef790753e65c47d558df}{get\-Corporate\-Action\-Type\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_8b5f8895f97cf0e559325348e99bc1bb}{get\-Dividend\-Price\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_ef68fbedac7b4c18d2883a381faa3c70}{get\-Dividend\-Frequency\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_d36dbb75077ac135466024235858667d}{get\-Dividend\-Ex\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_5eecefe805188a8575e9fa0239145708}{get\-Dividend\-Pay\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_baaedf6fb1b2eae95df6617d0b893224}{get\-Dividend\-Record\-Date\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_e30b3e82e42b4477de977764592731ee}{get\-Dividend\-Currency\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_0115bc828235b93375c1c3a53d8bada9}{get\-Shares\-Out\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_936931460f7e4cb720e366b5a4eab60f}{get\-Shares\-Float\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_4c92c5309a8a142cc95541447c4c1403}{get\-Shares\-Authorized\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_fa468a5bdef49cfbd10ce80223058091}{get\-Earnings\-Per\-Share\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_941388a4d6f212cec924cebf8d49933a}{get\-Volatility\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_39858ced30ea763c49091af7ef682d73}{get\-Price\-Earnings\-Ratio\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_e2ef62938cccc0dfd0248b42f8666314}{get\-Yield\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_178e08697638bdf25d54e276ec416119}{get\-Market\-Segment\-Native\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_7c42cf22f6a4e6167f365df4cdad2c6c}{get\-Market\-Sector\-Native\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_5fafb7554fa5481acfb2898b8eec29ae}{get\-Market\-Segment\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_4cb742287269d90b2e1484c30d995a6f}{get\-Market\-Sector\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_54c2f1ccf72199c1bff116b9e4a43992}{get\-Historical\-Volatility\-Field\-State} () const 
+\item 
+\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaFundamentalListener_d93a5a6643c4f7c742aa588268ba646f}{get\-Risk\-Free\-Rate\-Field\-State} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaFundamentalListener_806eae8cea0dfe171fd85662eb1b2297}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} is a class that specializes in handling fundamental equity pricing/analysis attributes, indicators and ratios. 
+
+Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} interface and will be delivered notifications for updates in the fundamental data. An obvious application for this MAMDA class is any kind of pricing analysis application.
+
+Note: The \hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} class caches equity pricing/analysis attributes, indicators and ratios. Among other reasons, caching of these fields makes it possible to provide complete fundamental callbacks, even when the publisher (e.g., feed handler) is only publishing deltas containing modified fields.
+
+\hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} should initialize the \hyperlink{classWombat_1_1MamdaFundamentalFields}{Mamda\-Fundamental\-Fields} class prior to receiving the first message by calling \hyperlink{classWombat_1_1MamdaFundamentalFields_3d638ca8f449c896788024326b50efb9}{Mamda\-Fundamental\-Fields::set\-Dictionary()} with a valid dictionary object which contains Fundamental related fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaFundamentalListener_472613466103dc23a863c407f95256c6}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!MamdaFundamentalListener@{MamdaFundamentalListener}}
+\index{MamdaFundamentalListener@{MamdaFundamentalListener}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[MamdaFundamentalListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Fundamental\-Listener::Mamda\-Fundamental\-Listener ()}}
+\label{classWombat_1_1MamdaFundamentalListener_472613466103dc23a863c407f95256c6}
+
+
+\hypertarget{classWombat_1_1MamdaFundamentalListener_a0255445090ed91d283ddb6d637abd42}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!~MamdaFundamentalListener@{$\sim$MamdaFundamentalListener}}
+\index{~MamdaFundamentalListener@{$\sim$MamdaFundamentalListener}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[$\sim$MamdaFundamentalListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Fundamental\-Listener::$\sim$Mamda\-Fundamental\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_a0255445090ed91d283ddb6d637abd42}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaFundamentalListener_6b29c6f9655c0cfce28fe49e658db2a9}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Fundamental\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaFundamentalListener_6b29c6f9655c0cfce28fe49e658db2a9}
+
+
+\hypertarget{classWombat_1_1MamdaFundamentalListener_0d2fdebba24d7951873278facc446865}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_0d2fdebba24d7951873278facc446865}
+
+
+Get the string symbol for the instrument. 
+
+\begin{Desc}
+\item[Returns:]Symbol. This is the \char`\"{}well-known\char`\"{} symbol for the security, including any symbology mapping performed by the publisher. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_79784f420fdf399a3716a9919ab592e8}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_9902a2a7113039defa7114cbf2c88250}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_9902a2a7113039defa7114cbf2c88250}
+
+
+Get the participant identifier. 
+
+\begin{Desc}
+\item[Returns:]Participant ID. This may be an exchange identifier, a market maker ID, etc., or NULL (if this is not related to any specific participant). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_9aaa6f48d5e0bf04f98125378525241d}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_f28f624d9a523c9d0db2717f2b3b69e9}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Fundamental\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_f28f624d9a523c9d0db2717f2b3b69e9}
+
+
+Get the source time of the update. 
+
+\begin{Desc}
+\item[Returns:]Source time. Typically, the exchange generated feed time stamp. This is often the same as the \char`\"{}event time\char`\"{}, because many feeds do not distinguish between the actual event time and when the exchange sent the message. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_ad502f098385594aa2c3395e1603a93f}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_b8d6e8e722a1654997c23f23a1ca4455}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Fundamental\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_b8d6e8e722a1654997c23f23a1ca4455}
+
+
+Get the activity time of the update. 
+
+\begin{Desc}
+\item[Returns:]Activity time. A feed handler generated time stamp representing when the data item was last updated. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_9444ec99a8cfd96a08a7c34a489bd0df}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_d3e5f97ea0ada9b6db4a8b59e3711da8}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Fundamental\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_d3e5f97ea0ada9b6db4a8b59e3711da8}
+
+
+Get the line time of the update. 
+
+\begin{Desc}
+\item[Returns:]Line time. A feed handler (or similar publisher) time stamp representing the time that such publisher received the update message pertaining to the event. If clocks are properly synchronized and the source time (see above) is accurate enough, then the difference between the source time and line time is the latency between the data source and the feed handler. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_acebac8f3a0d9a82eef145aca53a6d77}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_336c86d3f8e9c79c8641e74b146497b3}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Fundamental\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_336c86d3f8e9c79c8641e74b146497b3}
+
+
+Get the send time of the update. 
+
+\begin{Desc}
+\item[Returns:]Send time. A feed handler (or similar publisher) time stamp representing the time that such publisher sent the current message. The difference between the line time and send time is the latency within the feed handler itself. Also, if clocks are properly synchronized then the difference between the send time and current time is the latency within the market data distribution framework (i.e. MAMA and the underlying middleware). See MAMA API: Mama\-Date\-Time::current\-Time()). \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_b9425853ac2dfb00d16d68381abae187}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_ed5b159cacedf11c8beb00bf02c78561}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_ed5b159cacedf11c8beb00bf02c78561}
+
+
+Get the string symbol field state for the instrument. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_95a917a831265cdc29aa0e28d366108a}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_0262bf50c2afc8dc41440deeb8ba96cd}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_0262bf50c2afc8dc41440deeb8ba96cd}
+
+
+Get the participant identifier field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_97e4612d57ce6387e6414b00b201e242}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_b375ecf594f9fd285f046d698da763af}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_b375ecf594f9fd285f046d698da763af}
+
+
+Get the source time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_ee5ca73a67ccc8d81b78cf02fa36ec37}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_d6594a4cff5a7bf08b8f4fcc171d68d9}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_d6594a4cff5a7bf08b8f4fcc171d68d9}
+
+
+Get the activity time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_04f4a3a041dfc66f733b6c7288b390ac}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_b5796fc4bfc42902dbe4c39b3f1640bb}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_b5796fc4bfc42902dbe4c39b3f1640bb}
+
+
+Get the line time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_6576c042f1d1db20beb9397873d197c7}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_e58cb36ab2dd46fc970fc2ddb3a91aaf}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_e58cb36ab2dd46fc970fc2ddb3a91aaf}
+
+
+Get the send time field state. 
+
+\begin{Desc}
+\item[Returns:]Mamda\-Field\-State. An enumeration representing field state. \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaBasicRecap_ff1be82223cb7fcfdbc80c4f1e43a849}{Wombat::Mamda\-Basic\-Recap}.\hypertarget{classWombat_1_1MamdaFundamentalListener_5413a673ec90c6b17a47309351d12c5b}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getCorporateActionType@{getCorporateActionType}}
+\index{getCorporateActionType@{getCorporateActionType}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getCorporateActionType]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Corporate\-Action\-Type () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_5413a673ec90c6b17a47309351d12c5b}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_c7ce1e97b6aa220000ceda1fb346d033}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_b0117a9604ee4b562794e2148c9d514e}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendPrice@{getDividendPrice}}
+\index{getDividendPrice@{getDividendPrice}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendPrice]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Price () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_b0117a9604ee4b562794e2148c9d514e}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_7f47ca21e75508a2e09d25686dd98b1a}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_233a245991d21d70fb6972091bb56c84}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendFrequency@{getDividendFrequency}}
+\index{getDividendFrequency@{getDividendFrequency}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendFrequency]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Frequency () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_233a245991d21d70fb6972091bb56c84}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_f66bec2553735a9615e2c8c9a42946ce}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_063a6648c273949792d6ebdf740ce956}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendExDate@{getDividendExDate}}
+\index{getDividendExDate@{getDividendExDate}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendExDate]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Ex\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_063a6648c273949792d6ebdf740ce956}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_236eb051f36fd73186ed6f19ffd6d4b9}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_4f4c19ac596754914a59a2389eeac5bc}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendPayDate@{getDividendPayDate}}
+\index{getDividendPayDate@{getDividendPayDate}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendPayDate]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Pay\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_4f4c19ac596754914a59a2389eeac5bc}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_897da92a45e76b87d54f6196a99b2c7e}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_da3a7f2c8e3800e187af0198f8a6ab1c}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendRecordDate@{getDividendRecordDate}}
+\index{getDividendRecordDate@{getDividendRecordDate}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendRecordDate]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Record\-Date () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_da3a7f2c8e3800e187af0198f8a6ab1c}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_4606684f0bdf3fa9a9a87e51eb0a7c99}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_6ef9676f4d187e8cdb6e2211260b4768}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendCurrency@{getDividendCurrency}}
+\index{getDividendCurrency@{getDividendCurrency}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendCurrency]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Currency () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_6ef9676f4d187e8cdb6e2211260b4768}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_fb9076a1d81b7f5c7480950521eff35a}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_39395ed6d7896ff0d5ac8594199fbdc7}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesOut@{getSharesOut}}
+\index{getSharesOut@{getSharesOut}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesOut]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Out () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_39395ed6d7896ff0d5ac8594199fbdc7}
+
+
+get\-Shares\-Out return the number of shares. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em None.}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_47890caba7011068a8e2dc9222e883f4}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_4a4693aa809d7affdaeda70f34f002d7}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesFloat@{getSharesFloat}}
+\index{getSharesFloat@{getSharesFloat}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesFloat]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Float () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_4a4693aa809d7affdaeda70f34f002d7}
+
+
+get\-Shares\-Float return the number of floating shares. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em None.}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_64a2fc82594149b801ae5723479df55d}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_271ea50e95b80126e461612c0ab7ed09}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesAuthorized@{getSharesAuthorized}}
+\index{getSharesAuthorized@{getSharesAuthorized}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesAuthorized]{\setlength{\rightskip}{0pt plus 5cm}long Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Authorized () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_271ea50e95b80126e461612c0ab7ed09}
+
+
+get\-Shares\-Authorized return the number of authorized shares. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em None.}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]long\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_69967f29f8189a0e9775aa475568a5a7}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_e4219dceb76af963348acab9b9a27246}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getEarningsPerShare@{getEarningsPerShare}}
+\index{getEarningsPerShare@{getEarningsPerShare}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getEarningsPerShare]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Earnings\-Per\-Share () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_e4219dceb76af963348acab9b9a27246}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_7e942012bd9711d3bde88b1da09be638}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_641fd03980bd391579bb99ac1393594e}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getVolatility@{getVolatility}}
+\index{getVolatility@{getVolatility}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getVolatility]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Volatility () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_641fd03980bd391579bb99ac1393594e}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_e5719741fcc970ea66688ed60f6541ad}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_c075de507dd9561ed9af165d56674410}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getPriceEarningsRatio@{getPriceEarningsRatio}}
+\index{getPriceEarningsRatio@{getPriceEarningsRatio}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getPriceEarningsRatio]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Price\-Earnings\-Ratio () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_c075de507dd9561ed9af165d56674410}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_1072c58f01ad734655f34332bc9e8055}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_89cfb3cdee2c8597e1684e71c69fc50a}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getYield@{getYield}}
+\index{getYield@{getYield}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getYield]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Yield () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_89cfb3cdee2c8597e1684e71c69fc50a}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_3d9a05c2c0adbb5acaf08d4bc1cce29c}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_579d342071f318ca31a7fc55e11f9ea3}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSegmentNative@{getMarketSegmentNative}}
+\index{getMarketSegmentNative@{getMarketSegmentNative}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSegmentNative]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Segment\-Native () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_579d342071f318ca31a7fc55e11f9ea3}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_e72366f03a1ddcaa3d0e75fafaaddf60}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_5451ffdbcd4d4833e7fce5e19d2a3282}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSectorNative@{getMarketSectorNative}}
+\index{getMarketSectorNative@{getMarketSectorNative}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSectorNative]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Sector\-Native () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_5451ffdbcd4d4833e7fce5e19d2a3282}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_185d4ae26f9a5f362b01dff364f9c9ee}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_7f2643689fe51a96a052eebcc6d50e9a}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSegment@{getMarketSegment}}
+\index{getMarketSegment@{getMarketSegment}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSegment]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Segment () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_7f2643689fe51a96a052eebcc6d50e9a}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_f96bd6fe7c76ce21ccebff0e1090ab4e}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_11041dcd12c8969eebdd41e6f96afed8}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSector@{getMarketSector}}
+\index{getMarketSector@{getMarketSector}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSector]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Sector () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_11041dcd12c8969eebdd41e6f96afed8}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_b49dbddda075e93738faebcc391ac223}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_975c5df94470d5d3a50f04f9bf86a741}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getHistoricalVolatility@{getHistoricalVolatility}}
+\index{getHistoricalVolatility@{getHistoricalVolatility}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getHistoricalVolatility]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Historical\-Volatility () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_975c5df94470d5d3a50f04f9bf86a741}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_be98df579caf8109ed31669009a0a4b1}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_7ee4b7ae2fa8cf35ff7892a7bb2831ef}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getRiskFreeRate@{getRiskFreeRate}}
+\index{getRiskFreeRate@{getRiskFreeRate}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getRiskFreeRate]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Fundamental\-Listener::get\-Risk\-Free\-Rate () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_7ee4b7ae2fa8cf35ff7892a7bb2831ef}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_b2e1924e7f3329a29376f6ac60c7972e}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_2dff10a145ad0a1e0b8e3223720eead2}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesOutEx@{getSharesOutEx}}
+\index{getSharesOutEx@{getSharesOutEx}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesOutEx]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Out\-Ex () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_2dff10a145ad0a1e0b8e3223720eead2}
+
+
+get\-Shares\-Out\-Ex return the number of shares. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em None.}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]mama\_\-u64\_\-t \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_f4229948e3f79b0cc686985243a14749}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_c37c3fa41884972b67e1abbabeddb9f5}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesFloatEx@{getSharesFloatEx}}
+\index{getSharesFloatEx@{getSharesFloatEx}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesFloatEx]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Float\-Ex () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_c37c3fa41884972b67e1abbabeddb9f5}
+
+
+get\-Shares\-Float\-Ex return the number of floating shares. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em None.}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]mama\_\-u64\_\-t \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_9fad5ad5bb06171cccd8e9b5a6633793}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_338972a5c68467e1464b62b59ef19af7}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesAuthorizedEx@{getSharesAuthorizedEx}}
+\index{getSharesAuthorizedEx@{getSharesAuthorizedEx}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesAuthorizedEx]{\setlength{\rightskip}{0pt plus 5cm}mama\_\-u64\_\-t Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Authorized\-Ex () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_338972a5c68467e1464b62b59ef19af7}
+
+
+get\-Shares\-Authorized\-Ex return the number of authorized shares. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em None.}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]mama\_\-u64\_\-t \end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_20aba7aa488e92f4ef85e763ca9264a7}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_990406da217bef790753e65c47d558df}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getCorporateActionTypeFieldState@{getCorporateActionTypeFieldState}}
+\index{getCorporateActionTypeFieldState@{getCorporateActionTypeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getCorporateActionTypeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Corporate\-Action\-Type\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_990406da217bef790753e65c47d558df}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_73d57275845df72b4c389c7081e7170d}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_8b5f8895f97cf0e559325348e99bc1bb}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendPriceFieldState@{getDividendPriceFieldState}}
+\index{getDividendPriceFieldState@{getDividendPriceFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendPriceFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Price\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_8b5f8895f97cf0e559325348e99bc1bb}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_adfde192656e67be8ce319914e87b29a}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_ef68fbedac7b4c18d2883a381faa3c70}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendFrequencyFieldState@{getDividendFrequencyFieldState}}
+\index{getDividendFrequencyFieldState@{getDividendFrequencyFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendFrequencyFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Frequency\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_ef68fbedac7b4c18d2883a381faa3c70}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_13fb32e1e1b2be497a45b01acee43935}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_d36dbb75077ac135466024235858667d}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendExDateFieldState@{getDividendExDateFieldState}}
+\index{getDividendExDateFieldState@{getDividendExDateFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendExDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Ex\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_d36dbb75077ac135466024235858667d}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_f5f8ae5bbc476f93bc9223d1ae80ca0b}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_5eecefe805188a8575e9fa0239145708}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendPayDateFieldState@{getDividendPayDateFieldState}}
+\index{getDividendPayDateFieldState@{getDividendPayDateFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendPayDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Pay\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_5eecefe805188a8575e9fa0239145708}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_29de98f5c24812d90fb5efb76f0293e0}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_baaedf6fb1b2eae95df6617d0b893224}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendRecordDateFieldState@{getDividendRecordDateFieldState}}
+\index{getDividendRecordDateFieldState@{getDividendRecordDateFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendRecordDateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Record\-Date\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_baaedf6fb1b2eae95df6617d0b893224}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_d08e80fd98352ba7eaa5beafaaad9d55}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_e30b3e82e42b4477de977764592731ee}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getDividendCurrencyFieldState@{getDividendCurrencyFieldState}}
+\index{getDividendCurrencyFieldState@{getDividendCurrencyFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getDividendCurrencyFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Dividend\-Currency\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_e30b3e82e42b4477de977764592731ee}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_a4d435932821fbb0f1e9eb9da90c47cc}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_0115bc828235b93375c1c3a53d8bada9}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesOutFieldState@{getSharesOutFieldState}}
+\index{getSharesOutFieldState@{getSharesOutFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesOutFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Out\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_0115bc828235b93375c1c3a53d8bada9}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_3e81462fdbe5d194b64656ad44d98711}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_936931460f7e4cb720e366b5a4eab60f}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesFloatFieldState@{getSharesFloatFieldState}}
+\index{getSharesFloatFieldState@{getSharesFloatFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesFloatFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Float\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_936931460f7e4cb720e366b5a4eab60f}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_bda054b607ae27172a2aea4b25224853}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_4c92c5309a8a142cc95541447c4c1403}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getSharesAuthorizedFieldState@{getSharesAuthorizedFieldState}}
+\index{getSharesAuthorizedFieldState@{getSharesAuthorizedFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getSharesAuthorizedFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Shares\-Authorized\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_4c92c5309a8a142cc95541447c4c1403}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_3b2e1c2ff2ec88902f4e9c7b127852cc}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_fa468a5bdef49cfbd10ce80223058091}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getEarningsPerShareFieldState@{getEarningsPerShareFieldState}}
+\index{getEarningsPerShareFieldState@{getEarningsPerShareFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getEarningsPerShareFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Earnings\-Per\-Share\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_fa468a5bdef49cfbd10ce80223058091}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_e7eef94f859304d1fee6183dcef41680}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_941388a4d6f212cec924cebf8d49933a}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getVolatilityFieldState@{getVolatilityFieldState}}
+\index{getVolatilityFieldState@{getVolatilityFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getVolatilityFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Volatility\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_941388a4d6f212cec924cebf8d49933a}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_e84cec28dfd0ea05f96bca760df88f8f}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_39858ced30ea763c49091af7ef682d73}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getPriceEarningsRatioFieldState@{getPriceEarningsRatioFieldState}}
+\index{getPriceEarningsRatioFieldState@{getPriceEarningsRatioFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getPriceEarningsRatioFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Price\-Earnings\-Ratio\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_39858ced30ea763c49091af7ef682d73}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_41e962b3c691f2a355f1b66ccdc3a6a5}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_e2ef62938cccc0dfd0248b42f8666314}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getYieldFieldState@{getYieldFieldState}}
+\index{getYieldFieldState@{getYieldFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getYieldFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Yield\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_e2ef62938cccc0dfd0248b42f8666314}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_6409ffd956002efafa3c8881891d0378}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_178e08697638bdf25d54e276ec416119}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSegmentNativeFieldState@{getMarketSegmentNativeFieldState}}
+\index{getMarketSegmentNativeFieldState@{getMarketSegmentNativeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSegmentNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Segment\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_178e08697638bdf25d54e276ec416119}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_051e9a92d80a41fadf421c094b996b4c}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_7c42cf22f6a4e6167f365df4cdad2c6c}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSectorNativeFieldState@{getMarketSectorNativeFieldState}}
+\index{getMarketSectorNativeFieldState@{getMarketSectorNativeFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSectorNativeFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Sector\-Native\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_7c42cf22f6a4e6167f365df4cdad2c6c}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_4baa69aa9248171d05776310b583db7e}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_5fafb7554fa5481acfb2898b8eec29ae}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSegmentFieldState@{getMarketSegmentFieldState}}
+\index{getMarketSegmentFieldState@{getMarketSegmentFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSegmentFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Segment\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_5fafb7554fa5481acfb2898b8eec29ae}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_d80a02902e1682818f3030af747e68ad}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_4cb742287269d90b2e1484c30d995a6f}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getMarketSectorFieldState@{getMarketSectorFieldState}}
+\index{getMarketSectorFieldState@{getMarketSectorFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getMarketSectorFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Market\-Sector\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_4cb742287269d90b2e1484c30d995a6f}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_86af2cf92e30784822ef88cd2d8d8718}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_54c2f1ccf72199c1bff116b9e4a43992}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getHistoricalVolatilityFieldState@{getHistoricalVolatilityFieldState}}
+\index{getHistoricalVolatilityFieldState@{getHistoricalVolatilityFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getHistoricalVolatilityFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Historical\-Volatility\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_54c2f1ccf72199c1bff116b9e4a43992}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_239218fdf3b49bf438ae252d6db488fb}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_d93a5a6643c4f7c742aa588268ba646f}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!getRiskFreeRateFieldState@{getRiskFreeRateFieldState}}
+\index{getRiskFreeRateFieldState@{getRiskFreeRateFieldState}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[getRiskFreeRateFieldState]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Fundamental\-Listener::get\-Risk\-Free\-Rate\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_d93a5a6643c4f7c742aa588268ba646f}
+
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaFundamentals_7551c3b1d9b0eba452270f4cf7627976}{Wombat::Mamda\-Fundamentals}.\hypertarget{classWombat_1_1MamdaFundamentalListener_806eae8cea0dfe171fd85662eb1b2297}{
+\index{Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaFundamentalListener@{Wombat::Mamda\-Fundamental\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Fundamental\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaFundamentalListener_806eae8cea0dfe171fd85662eb1b2297}
+
+
+Implementation of Mamda\-Listener interface. 
+
+\par
+ \begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em $<$Mama\-Status$>$}]\{NYSE Technologies default implementation.\} \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.

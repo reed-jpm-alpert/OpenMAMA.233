@@ -1,0 +1,240 @@
+\hypertarget{classWombat_1_1MamdaOrderBookTypes}{
+\section{Wombat::Mamda\-Order\-Book\-Types Class Reference}
+\label{classWombat_1_1MamdaOrderBookTypes}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookTypes}{Mamda\-Order\-Book\-Types} is a class that provides order book related typed.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Types.h$>$}
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11eea055995d49fd15e831c1e4fe2f4679e}{MAMDA\_\-BOOK\_\-ACTION\_\-ADD} = 'A'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11ecbd438722f7ccf88ebbe7e670fff1089}{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE} = 'U'
+\begin{CompactList}\small\item\em A new price level. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e4e17dea22867ea0daf0a6a3747c7240f}{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE} = 'D'
+\begin{CompactList}\small\item\em An updated price level. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e768e0d111850adb548026aee2c659d75}{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN} = 'Z'
+\begin{CompactList}\small\item\em A deleted price level. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b155101393437db44a272d8806d33943b7e6fad90ac2}{MAMDA\_\-BOOK\_\-SIDE\_\-BID} = 'B'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b1551013934341720355a266d11f5c17a44e90883e68}{MAMDA\_\-BOOK\_\-SIDE\_\-ASK} = 'A'
+\begin{CompactList}\small\item\em A bid (buy) order. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343ccb0ae3d2e7174ab40f253fa7a3c9896}{MAMDA\_\-BOOK\_\-SIDE\_\-UNKNOWN} = 'Z'
+\begin{CompactList}\small\item\em An ask (sell) order. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd58c66d9f8efe5d084165af5826a27f984}{MAMDA\_\-BOOK\_\-REASON\_\-MODIFY} = 'M'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd576efc0c5dd58e7ab7fef01730ff3b6eb}{MAMDA\_\-BOOK\_\-REASON\_\-CANCEL} = 'C'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd56237b4212d23a32dbfa1b9c7b8653922}{MAMDA\_\-BOOK\_\-REASON\_\-TRADE} = 'T'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd578d9edd5a28a475e2fc14646f942e952}{MAMDA\_\-BOOK\_\-REASON\_\-CLOSE} = 'c'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5fca7fc200b4c5d50bb891b6e75fd4a7d}{MAMDA\_\-BOOK\_\-REASON\_\-DROP} = 'N'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5912709034d0ce5e6f91da2544d775be6}{MAMDA\_\-BOOK\_\-REASON\_\-MISC} = 'm'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd514c83d7de2b7b3b34b8dbb71a62dc4d0}{MAMDA\_\-BOOK\_\-REASON\_\-UNKNOWN} = 'Z'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e42dd181d5edf1af964fdbb8bfb67a14b4}{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-UPDATE} = 'U'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4b659285b56938f7f69a4855712b172ae}{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-RECAP} = 'R'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729154ced231e34205e73455fc9c3fcd0874}{MAMDA\_\-BOOK\_\-LEVEL\_\-LIMIT} = 'L'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729111e98055b373d210242bd004151cf4e0}{MAMDA\_\-BOOK\_\-LEVEL\_\-MARKET} = 'M'
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291b7d57a8b905d6ea9a0c1b10747b54bdc}{MAMDA\_\-BOOK\_\-LEVEL\_\-UNKNOWN} = 'U'
+\item 
+enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e}{Action} \{ \hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11eea055995d49fd15e831c1e4fe2f4679e}{MAMDA\_\-BOOK\_\-ACTION\_\-ADD} =  'A', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11ecbd438722f7ccf88ebbe7e670fff1089}{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE} =  'U', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e4e17dea22867ea0daf0a6a3747c7240f}{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE} =  'D', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e768e0d111850adb548026aee2c659d75}{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN} =  'Z'
+ \}
+\begin{CompactList}\small\item\em An enumeration for actions on an order book. \item\end{CompactList}\item 
+enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343}{Side} \{ \hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b155101393437db44a272d8806d33943b7e6fad90ac2}{MAMDA\_\-BOOK\_\-SIDE\_\-BID} =  'B', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b1551013934341720355a266d11f5c17a44e90883e68}{MAMDA\_\-BOOK\_\-SIDE\_\-ASK} =  'A', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343ccb0ae3d2e7174ab40f253fa7a3c9896}{MAMDA\_\-BOOK\_\-SIDE\_\-UNKNOWN} =  'Z'
+ \}
+\begin{CompactList}\small\item\em An enumeration for the side order book side. \item\end{CompactList}\item 
+enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{Reason} \{ \par
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd58c66d9f8efe5d084165af5826a27f984}{MAMDA\_\-BOOK\_\-REASON\_\-MODIFY} =  'M', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd576efc0c5dd58e7ab7fef01730ff3b6eb}{MAMDA\_\-BOOK\_\-REASON\_\-CANCEL} =  'C', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd56237b4212d23a32dbfa1b9c7b8653922}{MAMDA\_\-BOOK\_\-REASON\_\-TRADE} =  'T', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd578d9edd5a28a475e2fc14646f942e952}{MAMDA\_\-BOOK\_\-REASON\_\-CLOSE} =  'c', 
+\par
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5fca7fc200b4c5d50bb891b6e75fd4a7d}{MAMDA\_\-BOOK\_\-REASON\_\-DROP} =  'N', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5912709034d0ce5e6f91da2544d775be6}{MAMDA\_\-BOOK\_\-REASON\_\-MISC} =  'm', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd514c83d7de2b7b3b34b8dbb71a62dc4d0}{MAMDA\_\-BOOK\_\-REASON\_\-UNKNOWN} =  'Z'
+ \}
+\begin{CompactList}\small\item\em An enumeration for a reason for a change. \item\end{CompactList}\item 
+enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4}{Prop\-Msg\-Type} \{ \hyperlink{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e42dd181d5edf1af964fdbb8bfb67a14b4}{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-UPDATE} =  'U', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4b659285b56938f7f69a4855712b172ae}{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-RECAP} =  'R'
+ \}
+\begin{CompactList}\small\item\em An enumertation for property msg types. \item\end{CompactList}\item 
+enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Order\-Type} \{ \hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729154ced231e34205e73455fc9c3fcd0874}{MAMDA\_\-BOOK\_\-LEVEL\_\-LIMIT} =  'L', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729111e98055b373d210242bd004151cf4e0}{MAMDA\_\-BOOK\_\-LEVEL\_\-MARKET} =  'M', 
+\hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291b7d57a8b905d6ea9a0c1b10747b54bdc}{MAMDA\_\-BOOK\_\-LEVEL\_\-UNKNOWN} =  'U'
+ \}
+\begin{CompactList}\small\item\em An enumeration for the type of level. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookTypes}{Mamda\-Order\-Book\-Types} is a class that provides order book related typed. 
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e}{
+\index{Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}!Action@{Action}}
+\index{Action@{Action}!Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}}
+\subsubsection[Action]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e}{Wombat::Mamda\-Order\-Book\-Types::Action}}}
+\label{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e}
+
+
+An enumeration for actions on an order book. 
+
+Note: price level actions differ from entry actions because, for example, a price level message with ACTION\_\-UPDATE may consist of entries with ACTION\_\-ADD, ACTION\_\-UPDATE or ACTION\_\-DELETE. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMDA_BOOK_ACTION_ADD@{MAMDA\_\-BOOK\_\-ACTION\_\-ADD}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_ACTION_ADD@{MAMDA\_\-BOOK\_\-ACTION\_\-ADD}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11eea055995d49fd15e831c1e4fe2f4679e}{
+MAMDA\_\-BOOK\_\-ACTION\_\-ADD}
+\label{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11eea055995d49fd15e831c1e4fe2f4679e}
+}]\index{MAMDA_BOOK_ACTION_UPDATE@{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_ACTION_UPDATE@{MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11ecbd438722f7ccf88ebbe7e670fff1089}{
+MAMDA\_\-BOOK\_\-ACTION\_\-UPDATE}
+\label{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11ecbd438722f7ccf88ebbe7e670fff1089}
+}]A new price level. \index{MAMDA_BOOK_ACTION_DELETE@{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_ACTION_DELETE@{MAMDA\_\-BOOK\_\-ACTION\_\-DELETE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e4e17dea22867ea0daf0a6a3747c7240f}{
+MAMDA\_\-BOOK\_\-ACTION\_\-DELETE}
+\label{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e4e17dea22867ea0daf0a6a3747c7240f}
+}]An updated price level. \index{MAMDA_BOOK_ACTION_UNKNOWN@{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_ACTION_UNKNOWN@{MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e768e0d111850adb548026aee2c659d75}{
+MAMDA\_\-BOOK\_\-ACTION\_\-UNKNOWN}
+\label{classWombat_1_1MamdaOrderBookTypes_674fcb8aae6f411d51060acc45b6c11e768e0d111850adb548026aee2c659d75}
+}]A deleted price level. \end{description}
+\end{Desc}
+
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343}{
+\index{Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}!Side@{Side}}
+\index{Side@{Side}!Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}}
+\subsubsection[Side]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343}{Wombat::Mamda\-Order\-Book\-Types::Side}}}
+\label{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343}
+
+
+An enumeration for the side order book side. 
+
+\char`\"{}Bid\char`\"{} (or \char`\"{}buy\char`\"{}) orders occur on one side and \char`\"{}ask\char`\"{} (or \char`\"{}sell\char`\"{}) orders occur on the other. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMDA_BOOK_SIDE_BID@{MAMDA\_\-BOOK\_\-SIDE\_\-BID}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_SIDE_BID@{MAMDA\_\-BOOK\_\-SIDE\_\-BID}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b155101393437db44a272d8806d33943b7e6fad90ac2}{
+MAMDA\_\-BOOK\_\-SIDE\_\-BID}
+\label{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b155101393437db44a272d8806d33943b7e6fad90ac2}
+}]\index{MAMDA_BOOK_SIDE_ASK@{MAMDA\_\-BOOK\_\-SIDE\_\-ASK}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_SIDE_ASK@{MAMDA\_\-BOOK\_\-SIDE\_\-ASK}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b1551013934341720355a266d11f5c17a44e90883e68}{
+MAMDA\_\-BOOK\_\-SIDE\_\-ASK}
+\label{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b1551013934341720355a266d11f5c17a44e90883e68}
+}]A bid (buy) order. \index{MAMDA_BOOK_SIDE_UNKNOWN@{MAMDA\_\-BOOK\_\-SIDE\_\-UNKNOWN}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_SIDE_UNKNOWN@{MAMDA\_\-BOOK\_\-SIDE\_\-UNKNOWN}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343ccb0ae3d2e7174ab40f253fa7a3c9896}{
+MAMDA\_\-BOOK\_\-SIDE\_\-UNKNOWN}
+\label{classWombat_1_1MamdaOrderBookTypes_87019addc1047d47d704b15510139343ccb0ae3d2e7174ab40f253fa7a3c9896}
+}]An ask (sell) order. \end{description}
+\end{Desc}
+
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{
+\index{Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}!Reason@{Reason}}
+\index{Reason@{Reason}!Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}}
+\subsubsection[Reason]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}{Wombat::Mamda\-Order\-Book\-Types::Reason}}}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5}
+
+
+An enumeration for a reason for a change. 
+
+Some of the values of Reason can mean the same thing, as far as their affect on the order book. If possible, a feed will send MODIFY, CANCEL or TRADE actions so that downstream applications that are interested in such data can handle it; other applications can treat such actions in the same way as an UPDATE action (or as a DELETE action if the size is zero). \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMDA_BOOK_REASON_MODIFY@{MAMDA\_\-BOOK\_\-REASON\_\-MODIFY}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_MODIFY@{MAMDA\_\-BOOK\_\-REASON\_\-MODIFY}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd58c66d9f8efe5d084165af5826a27f984}{
+MAMDA\_\-BOOK\_\-REASON\_\-MODIFY}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd58c66d9f8efe5d084165af5826a27f984}
+}]\index{MAMDA_BOOK_REASON_CANCEL@{MAMDA\_\-BOOK\_\-REASON\_\-CANCEL}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_CANCEL@{MAMDA\_\-BOOK\_\-REASON\_\-CANCEL}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd576efc0c5dd58e7ab7fef01730ff3b6eb}{
+MAMDA\_\-BOOK\_\-REASON\_\-CANCEL}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd576efc0c5dd58e7ab7fef01730ff3b6eb}
+}]\index{MAMDA_BOOK_REASON_TRADE@{MAMDA\_\-BOOK\_\-REASON\_\-TRADE}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_TRADE@{MAMDA\_\-BOOK\_\-REASON\_\-TRADE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd56237b4212d23a32dbfa1b9c7b8653922}{
+MAMDA\_\-BOOK\_\-REASON\_\-TRADE}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd56237b4212d23a32dbfa1b9c7b8653922}
+}]\index{MAMDA_BOOK_REASON_CLOSE@{MAMDA\_\-BOOK\_\-REASON\_\-CLOSE}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_CLOSE@{MAMDA\_\-BOOK\_\-REASON\_\-CLOSE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd578d9edd5a28a475e2fc14646f942e952}{
+MAMDA\_\-BOOK\_\-REASON\_\-CLOSE}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd578d9edd5a28a475e2fc14646f942e952}
+}]\index{MAMDA_BOOK_REASON_DROP@{MAMDA\_\-BOOK\_\-REASON\_\-DROP}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_DROP@{MAMDA\_\-BOOK\_\-REASON\_\-DROP}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5fca7fc200b4c5d50bb891b6e75fd4a7d}{
+MAMDA\_\-BOOK\_\-REASON\_\-DROP}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5fca7fc200b4c5d50bb891b6e75fd4a7d}
+}]\index{MAMDA_BOOK_REASON_MISC@{MAMDA\_\-BOOK\_\-REASON\_\-MISC}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_MISC@{MAMDA\_\-BOOK\_\-REASON\_\-MISC}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5912709034d0ce5e6f91da2544d775be6}{
+MAMDA\_\-BOOK\_\-REASON\_\-MISC}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd5912709034d0ce5e6f91da2544d775be6}
+}]\index{MAMDA_BOOK_REASON_UNKNOWN@{MAMDA\_\-BOOK\_\-REASON\_\-UNKNOWN}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_REASON_UNKNOWN@{MAMDA\_\-BOOK\_\-REASON\_\-UNKNOWN}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd514c83d7de2b7b3b34b8dbb71a62dc4d0}{
+MAMDA\_\-BOOK\_\-REASON\_\-UNKNOWN}
+\label{classWombat_1_1MamdaOrderBookTypes_a1147c14315f68b9371c92a6a259fbd514c83d7de2b7b3b34b8dbb71a62dc4d0}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4}{
+\index{Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}!PropMsgType@{PropMsgType}}
+\index{PropMsgType@{PropMsgType}!Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}}
+\subsubsection[PropMsgType]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4}{Wombat::Mamda\-Order\-Book\-Types::Prop\-Msg\-Type}}}
+\label{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4}
+
+
+An enumertation for property msg types. 
+
+They can either be an update or a recap. If the field is not present, uptdate is implied. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMDA_PROP_MSG_TYPE_UPDATE@{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-UPDATE}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_PROP_MSG_TYPE_UPDATE@{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-UPDATE}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e42dd181d5edf1af964fdbb8bfb67a14b4}{
+MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-UPDATE}
+\label{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e42dd181d5edf1af964fdbb8bfb67a14b4}
+}]\index{MAMDA_PROP_MSG_TYPE_RECAP@{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-RECAP}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_PROP_MSG_TYPE_RECAP@{MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-RECAP}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4b659285b56938f7f69a4855712b172ae}{
+MAMDA\_\-PROP\_\-MSG\_\-TYPE\_\-RECAP}
+\label{classWombat_1_1MamdaOrderBookTypes_26ecc0a14e1e6bce991aff91b987c5e4b659285b56938f7f69a4855712b172ae}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{
+\index{Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}!OrderType@{OrderType}}
+\index{OrderType@{OrderType}!Wombat::MamdaOrderBookTypes@{Wombat::Mamda\-Order\-Book\-Types}}
+\subsubsection[OrderType]{\setlength{\rightskip}{0pt plus 5cm}enum \hyperlink{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}{Wombat::Mamda\-Order\-Book\-Types::Order\-Type}}}
+\label{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291}
+
+
+An enumeration for the type of level. 
+
+\char`\"{}Limit\char`\"{} level orders are set at a specific price. \char`\"{}Market\char`\"{} level orders are set at the current market price. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMDA_BOOK_LEVEL_LIMIT@{MAMDA\_\-BOOK\_\-LEVEL\_\-LIMIT}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_LEVEL_LIMIT@{MAMDA\_\-BOOK\_\-LEVEL\_\-LIMIT}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729154ced231e34205e73455fc9c3fcd0874}{
+MAMDA\_\-BOOK\_\-LEVEL\_\-LIMIT}
+\label{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729154ced231e34205e73455fc9c3fcd0874}
+}]\index{MAMDA_BOOK_LEVEL_MARKET@{MAMDA\_\-BOOK\_\-LEVEL\_\-MARKET}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_LEVEL_MARKET@{MAMDA\_\-BOOK\_\-LEVEL\_\-MARKET}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729111e98055b373d210242bd004151cf4e0}{
+MAMDA\_\-BOOK\_\-LEVEL\_\-MARKET}
+\label{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a2729111e98055b373d210242bd004151cf4e0}
+}]\index{MAMDA_BOOK_LEVEL_UNKNOWN@{MAMDA\_\-BOOK\_\-LEVEL\_\-UNKNOWN}!Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}}\index{Wombat::MamdaOrderBookTypes@{Wombat::MamdaOrderBookTypes}!MAMDA_BOOK_LEVEL_UNKNOWN@{MAMDA\_\-BOOK\_\-LEVEL\_\-UNKNOWN}}\item[{\em 
+\hypertarget{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291b7d57a8b905d6ea9a0c1b10747b54bdc}{
+MAMDA\_\-BOOK\_\-LEVEL\_\-UNKNOWN}
+\label{classWombat_1_1MamdaOrderBookTypes_b1b75d93c83c5a1042c392ab46a27291b7d57a8b905d6ea9a0c1b10747b54bdc}
+}]\end{description}
+\end{Desc}
+

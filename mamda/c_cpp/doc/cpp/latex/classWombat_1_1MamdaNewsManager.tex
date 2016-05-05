@@ -1,0 +1,230 @@
+\hypertarget{classWombat_1_1MamdaNewsManager}{
+\section{Wombat::Mamda\-News\-Manager Class Reference}
+\label{classWombat_1_1MamdaNewsManager}\index{Wombat::MamdaNewsManager@{Wombat::MamdaNewsManager}}
+}
+\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} provides a class for managing access to streaming news headlines, headline queries, individual story queries, etc.  
+
+
+{\tt \#include $<$Mamda\-News\-Manager.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaNewsManager_5056810c9f824cebbd5a5a71aed04bc8}{Mamda\-News\-Manager} ()
+\item 
+virtual \hyperlink{classWombat_1_1MamdaNewsManager_072a71cbba7a316cf286a335f2b50c1f}{$\sim$Mamda\-News\-Manager} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_5f34ce74810c8d0099dea570818e2801}{add\-Broadcast\-Headline\-Source} (Mama\-Queue $\ast$queue, Mama\-Source $\ast$source, const char $\ast$symbol, void $\ast$closure)
+\begin{CompactList}\small\item\em Add a broadcast headline source to the news manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_d0099a7dfa218322f47bfc7228a1b221}{clear\-Broadcast\-Headline\-Sources} ()
+\begin{CompactList}\small\item\em Remove all broadcast headline sources from the news manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_0171e640fc993e3e8ed18a969b50cfce}{add\-Broadcast\-Story\-Source} (Mama\-Queue $\ast$queue, Mama\-Source $\ast$source, const char $\ast$symbol, void $\ast$closure)
+\begin{CompactList}\small\item\em Add a broadcast story source to the news manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_cd90050516edb35d2032bf4d3bed6865}{clear\-Broadcast\-Story\-Sources} ()
+\begin{CompactList}\small\item\em Remove all broadcast story sources from the news manager. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_9fc593b6b72946a4a62cfba27412417d}{add\-Broadcast\-Headline\-Handler} (\hyperlink{classWombat_1_1MamdaNewsHeadlineHandler}{Mamda\-News\-Headline\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a headline handler for broadcast headlines. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_2b8b967d8a889c793f74f0a8c852a1d7}{add\-Broadcast\-Story\-Handler} (\hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a story handler for broadcast stories. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_6146a9fc547ee5b7beaf22a03457ca34}{add\-Quality\-Handler} (\hyperlink{classWombat_1_1MamdaQualityListener}{Mamda\-Quality\-Listener} $\ast$handler)
+\begin{CompactList}\small\item\em Add a quality data handler. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_28c886b6b2eb8467f1972c9cfaed705f}{add\-Error\-Handler} (\hyperlink{classWombat_1_1MamdaErrorListener}{Mamda\-Error\-Listener} $\ast$handler)
+\begin{CompactList}\small\item\em Add an error handler. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_3c8ca28fed15f8c88a8d646348a65d38}{clear\-Query\-Sources} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_0ac9a7acd98ae805071fc174905fe5b5}{execute\-Query} (Mama\-Queue $\ast$queue, Mama\-Source $\ast$source, \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} $\ast$news\-Query, \hyperlink{namespaceWombat_8c12fe7ccc6f40bd1efe733bb0673ad5}{Mamda\-News\-Query\-Type} query\-Type, \hyperlink{classWombat_1_1MamdaNewsQueryHandler}{Mamda\-News\-Query\-Handler} $\ast$handler, void $\ast$closure)
+\begin{CompactList}\small\item\em Request a story (by headline), invoking the given story handler when the story arrives (or not). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_b30507a8bef38f19cb181b7727481fb4}{remove\-Query} (\hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} $\ast$news\-Query)
+\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_bcefa38c01848fdaf6e126fb999f271a}{request\-Story} (const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \&headline, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$handler, void $\ast$closure)
+\begin{CompactList}\small\item\em Request a story (by headline), invoking the given story handler when the story arrives (or not). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_7af48a00fc94e2ccbb6d9da13561e975}{request\-Story} (Mama\-Queue $\ast$queue, Mama\-Source $\ast$source, \hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} story\-Id, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$handler, void $\ast$closure)
+\begin{CompactList}\small\item\em Request a story (by explicit headline ID, source and queue), invoking the given story handler when the story arrives (or not). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_737d88d1fcb9731a9ba4aed3e6f1c901}{request\-Story\-Later} (const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \&headline, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$handler, double seconds\-Later, void $\ast$closure)
+\begin{CompactList}\small\item\em Request a story (by headline) after some delay, invoking the given story handler when the story arrives (or not). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_ee0f08106c9f680336cd65b197895d24}{request\-Story\-Later} (const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \&story, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$handler, double seconds\-Later, void $\ast$closure)
+\begin{CompactList}\small\item\em Request a story (by existing or partial story) after some delay, invoking the given story handler when the story arrives (or not). \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaNewsManager_c1db582ac31de14ac5a9984311331dd3}{request\-Story\-Later} (Mama\-Queue $\ast$queue, Mama\-Source $\ast$source, \hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} story\-Id, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$handler, double seconds\-Later, void $\ast$closure)
+\begin{CompactList}\small\item\em Request a story (by headline) after some delay, invoking the given story handler when the story arrives (or not). \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+Mamda\-News\-Manager\-Impl \& \hyperlink{classWombat_1_1MamdaNewsManager_571ea69d4f3d3c8372b601ae4299e580}{m\-Impl}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} provides a class for managing access to streaming news headlines, headline queries, individual story queries, etc. 
+
+Like the MAMDA \char`\"{}listener\char`\"{} classes, such as \hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} and \hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}, the \hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} cache certain information about the news service. Unlike those MAMDA \char`\"{}listener\char`\"{} classes, the \hyperlink{classWombat_1_1MamdaNewsManager}{Mamda\-News\-Manager} is also responsible for creating and managing its own subscriptions. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaNewsManager_5056810c9f824cebbd5a5a71aed04bc8}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!MamdaNewsManager@{MamdaNewsManager}}
+\index{MamdaNewsManager@{MamdaNewsManager}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[MamdaNewsManager]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-News\-Manager::Mamda\-News\-Manager ()}}
+\label{classWombat_1_1MamdaNewsManager_5056810c9f824cebbd5a5a71aed04bc8}
+
+
+\hypertarget{classWombat_1_1MamdaNewsManager_072a71cbba7a316cf286a335f2b50c1f}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!~MamdaNewsManager@{$\sim$MamdaNewsManager}}
+\index{~MamdaNewsManager@{$\sim$MamdaNewsManager}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[$\sim$MamdaNewsManager]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-News\-Manager::$\sim$Mamda\-News\-Manager ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaNewsManager_072a71cbba7a316cf286a335f2b50c1f}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaNewsManager_5f34ce74810c8d0099dea570818e2801}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!addBroadcastHeadlineSource@{addBroadcastHeadlineSource}}
+\index{addBroadcastHeadlineSource@{addBroadcastHeadlineSource}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[addBroadcastHeadlineSource]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::add\-Broadcast\-Headline\-Source (Mama\-Queue $\ast$ {\em queue}, Mama\-Source $\ast$ {\em source}, const char $\ast$ {\em symbol}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_5f34ce74810c8d0099dea570818e2801}
+
+
+Add a broadcast headline source to the news manager. 
+
+Headline updates will be passed to the handler(s) registered by \hyperlink{classWombat_1_1MamdaNewsManager_9fc593b6b72946a4a62cfba27412417d}{add\-Broadcast\-Headline\-Handler()}. \hypertarget{classWombat_1_1MamdaNewsManager_d0099a7dfa218322f47bfc7228a1b221}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!clearBroadcastHeadlineSources@{clearBroadcastHeadlineSources}}
+\index{clearBroadcastHeadlineSources@{clearBroadcastHeadlineSources}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[clearBroadcastHeadlineSources]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::clear\-Broadcast\-Headline\-Sources ()}}
+\label{classWombat_1_1MamdaNewsManager_d0099a7dfa218322f47bfc7228a1b221}
+
+
+Remove all broadcast headline sources from the news manager. 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_0171e640fc993e3e8ed18a969b50cfce}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!addBroadcastStorySource@{addBroadcastStorySource}}
+\index{addBroadcastStorySource@{addBroadcastStorySource}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[addBroadcastStorySource]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::add\-Broadcast\-Story\-Source (Mama\-Queue $\ast$ {\em queue}, Mama\-Source $\ast$ {\em source}, const char $\ast$ {\em symbol}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_0171e640fc993e3e8ed18a969b50cfce}
+
+
+Add a broadcast story source to the news manager. 
+
+Stories will be passed to the handler(s) registered by \hyperlink{classWombat_1_1MamdaNewsManager_2b8b967d8a889c793f74f0a8c852a1d7}{add\-Broadcast\-Story\-Handler()}. \hypertarget{classWombat_1_1MamdaNewsManager_cd90050516edb35d2032bf4d3bed6865}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!clearBroadcastStorySources@{clearBroadcastStorySources}}
+\index{clearBroadcastStorySources@{clearBroadcastStorySources}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[clearBroadcastStorySources]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::clear\-Broadcast\-Story\-Sources ()}}
+\label{classWombat_1_1MamdaNewsManager_cd90050516edb35d2032bf4d3bed6865}
+
+
+Remove all broadcast story sources from the news manager. 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_9fc593b6b72946a4a62cfba27412417d}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!addBroadcastHeadlineHandler@{addBroadcastHeadlineHandler}}
+\index{addBroadcastHeadlineHandler@{addBroadcastHeadlineHandler}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[addBroadcastHeadlineHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::add\-Broadcast\-Headline\-Handler (\hyperlink{classWombat_1_1MamdaNewsHeadlineHandler}{Mamda\-News\-Headline\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaNewsManager_9fc593b6b72946a4a62cfba27412417d}
+
+
+Add a headline handler for broadcast headlines. 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_2b8b967d8a889c793f74f0a8c852a1d7}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!addBroadcastStoryHandler@{addBroadcastStoryHandler}}
+\index{addBroadcastStoryHandler@{addBroadcastStoryHandler}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[addBroadcastStoryHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::add\-Broadcast\-Story\-Handler (\hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaNewsManager_2b8b967d8a889c793f74f0a8c852a1d7}
+
+
+Add a story handler for broadcast stories. 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_6146a9fc547ee5b7beaf22a03457ca34}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!addQualityHandler@{addQualityHandler}}
+\index{addQualityHandler@{addQualityHandler}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[addQualityHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::add\-Quality\-Handler (\hyperlink{classWombat_1_1MamdaQualityListener}{Mamda\-Quality\-Listener} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaNewsManager_6146a9fc547ee5b7beaf22a03457ca34}
+
+
+Add a quality data handler. 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_28c886b6b2eb8467f1972c9cfaed705f}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!addErrorHandler@{addErrorHandler}}
+\index{addErrorHandler@{addErrorHandler}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[addErrorHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::add\-Error\-Handler (\hyperlink{classWombat_1_1MamdaErrorListener}{Mamda\-Error\-Listener} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaNewsManager_28c886b6b2eb8467f1972c9cfaed705f}
+
+
+Add an error handler. 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_3c8ca28fed15f8c88a8d646348a65d38}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!clearQuerySources@{clearQuerySources}}
+\index{clearQuerySources@{clearQuerySources}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[clearQuerySources]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::clear\-Query\-Sources ()}}
+\label{classWombat_1_1MamdaNewsManager_3c8ca28fed15f8c88a8d646348a65d38}
+
+
+\hypertarget{classWombat_1_1MamdaNewsManager_0ac9a7acd98ae805071fc174905fe5b5}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!executeQuery@{executeQuery}}
+\index{executeQuery@{executeQuery}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[executeQuery]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::execute\-Query (Mama\-Queue $\ast$ {\em queue}, Mama\-Source $\ast$ {\em source}, \hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} $\ast$ {\em news\-Query}, \hyperlink{namespaceWombat_8c12fe7ccc6f40bd1efe733bb0673ad5}{Mamda\-News\-Query\-Type} {\em query\-Type}, \hyperlink{classWombat_1_1MamdaNewsQueryHandler}{Mamda\-News\-Query\-Handler} $\ast$ {\em handler}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_0ac9a7acd98ae805071fc174905fe5b5}
+
+
+Request a story (by headline), invoking the given story handler when the story arrives (or not). 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_b30507a8bef38f19cb181b7727481fb4}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!removeQuery@{removeQuery}}
+\index{removeQuery@{removeQuery}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[removeQuery]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::remove\-Query (\hyperlink{classWombat_1_1MamdaQuery}{Mamda\-Query} $\ast$ {\em news\-Query})}}
+\label{classWombat_1_1MamdaNewsManager_b30507a8bef38f19cb181b7727481fb4}
+
+
+\hypertarget{classWombat_1_1MamdaNewsManager_bcefa38c01848fdaf6e126fb999f271a}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!requestStory@{requestStory}}
+\index{requestStory@{requestStory}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[requestStory]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::request\-Story (const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \& {\em headline}, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$ {\em handler}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_bcefa38c01848fdaf6e126fb999f271a}
+
+
+Request a story (by headline), invoking the given story handler when the story arrives (or not). 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_7af48a00fc94e2ccbb6d9da13561e975}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!requestStory@{requestStory}}
+\index{requestStory@{requestStory}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[requestStory]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::request\-Story (Mama\-Queue $\ast$ {\em queue}, Mama\-Source $\ast$ {\em source}, \hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} {\em story\-Id}, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$ {\em handler}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_7af48a00fc94e2ccbb6d9da13561e975}
+
+
+Request a story (by explicit headline ID, source and queue), invoking the given story handler when the story arrives (or not). 
+
+The source and queue are the same parameters that correspond to the headline source (see add\-Headline\-Source()). \hypertarget{classWombat_1_1MamdaNewsManager_737d88d1fcb9731a9ba4aed3e6f1c901}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!requestStoryLater@{requestStoryLater}}
+\index{requestStoryLater@{requestStoryLater}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[requestStoryLater]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::request\-Story\-Later (const \hyperlink{classWombat_1_1MamdaNewsHeadline}{Mamda\-News\-Headline} \& {\em headline}, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$ {\em handler}, double {\em seconds\-Later}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_737d88d1fcb9731a9ba4aed3e6f1c901}
+
+
+Request a story (by headline) after some delay, invoking the given story handler when the story arrives (or not). 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_ee0f08106c9f680336cd65b197895d24}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!requestStoryLater@{requestStoryLater}}
+\index{requestStoryLater@{requestStoryLater}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[requestStoryLater]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::request\-Story\-Later (const \hyperlink{classWombat_1_1MamdaNewsStory}{Mamda\-News\-Story} \& {\em story}, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$ {\em handler}, double {\em seconds\-Later}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_ee0f08106c9f680336cd65b197895d24}
+
+
+Request a story (by existing or partial story) after some delay, invoking the given story handler when the story arrives (or not). 
+
+\hypertarget{classWombat_1_1MamdaNewsManager_c1db582ac31de14ac5a9984311331dd3}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!requestStoryLater@{requestStoryLater}}
+\index{requestStoryLater@{requestStoryLater}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[requestStoryLater]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-News\-Manager::request\-Story\-Later (Mama\-Queue $\ast$ {\em queue}, Mama\-Source $\ast$ {\em source}, \hyperlink{namespaceWombat_f7b94f4bb44eb78420c0d3ba0413424e}{Mamda\-News\-Story\-Id} {\em story\-Id}, \hyperlink{classWombat_1_1MamdaNewsStoryHandler}{Mamda\-News\-Story\-Handler} $\ast$ {\em handler}, double {\em seconds\-Later}, void $\ast$ {\em closure})}}
+\label{classWombat_1_1MamdaNewsManager_c1db582ac31de14ac5a9984311331dd3}
+
+
+Request a story (by headline) after some delay, invoking the given story handler when the story arrives (or not). 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaNewsManager_571ea69d4f3d3c8372b601ae4299e580}{
+\index{Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}!mImpl@{mImpl}}
+\index{mImpl@{mImpl}!Wombat::MamdaNewsManager@{Wombat::Mamda\-News\-Manager}}
+\subsubsection[mImpl]{\setlength{\rightskip}{0pt plus 5cm}Mamda\-News\-Manager\-Impl\& \hyperlink{classWombat_1_1MamdaNewsManager_571ea69d4f3d3c8372b601ae4299e580}{Wombat::Mamda\-News\-Manager::m\-Impl}}}
+\label{classWombat_1_1MamdaNewsManager_571ea69d4f3d3c8372b601ae4299e580}
+
+

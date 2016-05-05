@@ -1,0 +1,84 @@
+\hypertarget{classWombat_1_1MamdaOrderImbalanceHandler}{
+\section{Wombat::Mamda\-Order\-Imbalance\-Handler Class Reference}
+\label{classWombat_1_1MamdaOrderImbalanceHandler}\index{Wombat::MamdaOrderImbalanceHandler@{Wombat::MamdaOrderImbalanceHandler}}
+}
+\hyperlink{classWombat_1_1MamdaOrderImbalanceHandler}{Mamda\-Order\-Imbalance\-Handler} is an interface for applications that want to have an easy way to handle order imbalance updates.  
+
+
+{\tt \#include $<$Mamda\-Order\-Imbalance\-Handler.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderImbalanceHandler_9c64bc280a746560b36a2a891db8a68f}{on\-Order\-Imbalance} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap}{Mamda\-Order\-Imbalance\-Recap} \&imbalance, \hyperlink{classWombat_1_1MamdaOrderImbalanceUpdate}{Mamda\-Order\-Imbalance\-Update} \&update)=0
+\begin{CompactList}\small\item\em Method invoked when a order imbalance is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderImbalanceHandler_f1b804e726d1cb782ebb0e4cbf8461b2}{on\-No\-Order\-Imbalance} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap}{Mamda\-Order\-Imbalance\-Recap} \&imbalance, \hyperlink{classWombat_1_1MamdaOrderImbalanceUpdate}{Mamda\-Order\-Imbalance\-Update} \&update)=0
+\begin{CompactList}\small\item\em Method invoked when a no order imbalance is reported. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderImbalanceHandler_4723195ebde988b95b39f58b2ab0b77e}{on\-Order\-Imbalance\-Recap} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} \&listener, const Mama\-Msg \&msg, \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap}{Mamda\-Order\-Imbalance\-Recap} \&imbalance)=0
+\begin{CompactList}\small\item\em Method invoked when the current order imbalance information is available. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderImbalanceHandler_571cd007a222b2bebfe98b86623e9b12}{$\sim$Mamda\-Order\-Imbalance\-Handler} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderImbalanceHandler}{Mamda\-Order\-Imbalance\-Handler} is an interface for applications that want to have an easy way to handle order imbalance updates. 
+
+The interface defines callback methods for different types of order-imbalance events: 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderImbalanceHandler_571cd007a222b2bebfe98b86623e9b12}{
+\index{Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}!~MamdaOrderImbalanceHandler@{$\sim$MamdaOrderImbalanceHandler}}
+\index{~MamdaOrderImbalanceHandler@{$\sim$MamdaOrderImbalanceHandler}!Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}}
+\subsubsection[$\sim$MamdaOrderImbalanceHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Imbalance\-Handler::$\sim$Mamda\-Order\-Imbalance\-Handler ()\hspace{0.3cm}{\tt  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceHandler_571cd007a222b2bebfe98b86623e9b12}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderImbalanceHandler_9c64bc280a746560b36a2a891db8a68f}{
+\index{Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}!onOrderImbalance@{onOrderImbalance}}
+\index{onOrderImbalance@{onOrderImbalance}!Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}}
+\subsubsection[onOrderImbalance]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Imbalance\-Handler::on\-Order\-Imbalance (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap}{Mamda\-Order\-Imbalance\-Recap} \& {\em imbalance}, \hyperlink{classWombat_1_1MamdaOrderImbalanceUpdate}{Mamda\-Order\-Imbalance\-Update} \& {\em update})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceHandler_9c64bc280a746560b36a2a891db8a68f}
+
+
+Method invoked when a order imbalance is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received this update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em imbalance}]Provides access to imbalance details \item[{\em update}]Provides access to update details \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderImbalanceHandler_f1b804e726d1cb782ebb0e4cbf8461b2}{
+\index{Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}!onNoOrderImbalance@{onNoOrderImbalance}}
+\index{onNoOrderImbalance@{onNoOrderImbalance}!Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}}
+\subsubsection[onNoOrderImbalance]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Imbalance\-Handler::on\-No\-Order\-Imbalance (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap}{Mamda\-Order\-Imbalance\-Recap} \& {\em imbalance}, \hyperlink{classWombat_1_1MamdaOrderImbalanceUpdate}{Mamda\-Order\-Imbalance\-Update} \& {\em update})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceHandler_f1b804e726d1cb782ebb0e4cbf8461b2}
+
+
+Method invoked when a no order imbalance is reported. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received this update. \item[{\em listener}]The listener which invoked this callback. \item[{\em msg}]The Mama\-Msg that triggered this invocation. \item[{\em imbalance}]Provides access to imbalance details \item[{\em update}]Provides access to update details \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderImbalanceHandler_4723195ebde988b95b39f58b2ab0b77e}{
+\index{Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}!onOrderImbalanceRecap@{onOrderImbalanceRecap}}
+\index{onOrderImbalanceRecap@{onOrderImbalanceRecap}!Wombat::MamdaOrderImbalanceHandler@{Wombat::Mamda\-Order\-Imbalance\-Handler}}
+\subsubsection[onOrderImbalanceRecap]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Imbalance\-Handler::on\-Order\-Imbalance\-Recap (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, \hyperlink{classWombat_1_1MamdaOrderImbalanceListener}{Mamda\-Order\-Imbalance\-Listener} \& {\em listener}, const Mama\-Msg \& {\em msg}, \hyperlink{classWombat_1_1MamdaOrderImbalanceRecap}{Mamda\-Order\-Imbalance\-Recap} \& {\em imbalance})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderImbalanceHandler_4723195ebde988b95b39f58b2ab0b77e}
+
+
+Method invoked when the current order imbalance information is available. 
+
+The reason for the invocation may be any of the following:\begin{itemize}
+\item Initial image.\item Recap update (e.g., after server fault tolerant event or data quality event.)\item After stale status removed. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em subscription}]The subscription which received this update \item[{\em listener}]The listener which invoked this callback \item[{\em msg}]The Mama\-Msg that triggered this invocation \item[{\em imbalance}]Provides access to imbalance details \end{description}
+\end{Desc}
+\end{itemize}

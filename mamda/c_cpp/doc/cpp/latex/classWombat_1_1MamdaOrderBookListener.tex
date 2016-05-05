@@ -1,0 +1,778 @@
+\hypertarget{classWombat_1_1MamdaOrderBookListener}{
+\section{Wombat::Mamda\-Order\-Book\-Listener Class Reference}
+\label{classWombat_1_1MamdaOrderBookListener}\index{Wombat::MamdaOrderBookListener@{Wombat::MamdaOrderBookListener}}
+}
+\hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} is a class that specializes in handling order book updates.  
+
+
+{\tt \#include $<$Mamda\-Order\-Book\-Listener.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Order\-Book\-Listener::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaOrderBookListener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOrderBookListener_bd475cc814e39d0ddfcec003cd46d7f1}{Mamda\-Order\-Book\-Listener} (\hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$full\-Book=NULL)
+\begin{CompactList}\small\item\em Create an order book listener using an optional user-provided object for the full order book. \item\end{CompactList}\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBookListener_519de32ed3343a70f54d313a0a86056b}{$\sim$Mamda\-Order\-Book\-Listener} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_81c34135bae76175b72fed83c3a6325c}{add\-Handler} (\hyperlink{classWombat_1_1MamdaOrderBookHandler}{Mamda\-Order\-Book\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a specialized order book handler. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_318470f5c5cf4e2873f470610631145f}{set\-Process\-Entries} (bool process)
+\begin{CompactList}\small\item\em Set whether we are interested in \char`\"{}entry level\char`\"{} information at all. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaOrderBookListener_4e902b9efbce42035d6e7d455ff64e4e}{get\-Process\-Entries} () const 
+\begin{CompactList}\small\item\em Get whether we are interested in \char`\"{}entry level\char`\"{} information. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_c1c364bb8b843f30464ae5ca275bd3c7}{set\-Process\-Market\-Orders} (bool process)
+\begin{CompactList}\small\item\em Set whether we are interested in market order information, if available. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaOrderBookListener_6cbac2b8c695c54cc5cda3006f28fcab}{get\-Process\-Market\-Orders} () const 
+\begin{CompactList}\small\item\em Get whether we are interested in market order information. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_1d3802c30ebd8939435f74a634dc11fc}{add\-Ignore\-Entry\-Id} (const char $\ast$id)
+\begin{CompactList}\small\item\em Add an entry ID to ignore. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_9bd0ec676f02115594f5f29e0f28e3b9}{remove\-Ignore\-Entry\-Id} (const char $\ast$id)
+\begin{CompactList}\small\item\em Remove an entry ID to ignore. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_9dfecc38256b4bbe71ab35c58cc5ef1a}{clear} ()
+\begin{CompactList}\small\item\em Clear all cached data fields. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_ba3e661b148450a0865b07cf169a12b1}{remove\-Handlers} ()
+\begin{CompactList}\small\item\em Remove the reference of handlers from the internal list. \item\end{CompactList}\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookListener_11b3e826a2aba8faf699c16454051143}{get\-Symbol} () const 
+\item 
+virtual const char $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookListener_43689c10340beb6c62cc5b6e9680e44f}{get\-Part\-Id} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderBookListener_44f0107552d26551644736520b00b530}{get\-Src\-Time} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderBookListener_d696de0b8a7d04c239f813163c9f63b9}{get\-Activity\-Time} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderBookListener_5c765d829c1eca59880839fe360b4497}{get\-Line\-Time} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderBookListener_244f7440a5a3f0bb81419cae5718ddd8}{get\-Send\-Time} () const 
+\item 
+virtual const Mama\-Msg\-Qual \& \hyperlink{classWombat_1_1MamdaOrderBookListener_a1486090a37ac30c038d18a38ae89d72}{get\-Msg\-Qual} () const 
+\item 
+virtual const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOrderBookListener_c0272dc0cb65d7b3a55b8216b12acda6}{get\-Event\-Time} () const 
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderBookListener_be0061292ee9bd7ef1d890bd825b1a0d}{get\-Event\-Seq\-Num} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_ed48775d67d2806a1d78fbf5310f7a5b}{get\-Symbol\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_0ebeb44c9a22a8d459b075f0afcd0f69}{get\-Part\-Id\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_f48b72f5bed1a318a9487cffaf965d79}{get\-Event\-Seq\-Num\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_ff57a8efade5c642a3d871debb2cd056}{get\-Event\-Time\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_cd480d3e1ecf4c3f2d726b907f4b34c3}{get\-Src\-Time\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_d1aa4977550c9b83e091509faa735d76}{get\-Activity\-Time\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_967aa4033993bc70c16d95d26283da54}{get\-Line\-Time\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_881995554b016618dc16f9a9e15be90d}{get\-Send\-Time\-Field\-State} () const 
+\item 
+virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} \hyperlink{classWombat_1_1MamdaOrderBookListener_0516e60cecd086e30781592f16110196}{get\-Msg\-Qual\-Field\-State} () const 
+\item 
+virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookListener_882be50b668154aed7f170dbb2f47d34}{get\-Order\-Book} () const 
+\item 
+virtual \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ \hyperlink{classWombat_1_1MamdaOrderBookListener_06ed6e6af962b6bee11d49bdc0c451dd}{get\-Order\-Book} ()
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderBookListener_967ffb9c9c1cd0def13fefed413ad554}{get\-Begin\-Gap\-Seq\-Num} () const 
+\item 
+virtual mama\_\-seqnum\_\-t \hyperlink{classWombat_1_1MamdaOrderBookListener_c53f97e362bed788ac8daf00c2c8daf3}{get\-End\-Gap\-Seq\-Num} () const 
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_428fd0fee7ccd623c45333d7787b6f70}{set\-Use\-Entry\-Manager} (bool use\-Manager)
+\begin{CompactList}\small\item\em Set whether to use an \char`\"{}entry manager\char`\"{} for finding entries in a book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_4c08ce3aefa0cddb9980a7a8cf043545}{set\-Entry\-Ids\-Are\-Unique} (bool unique\-Ids)
+\begin{CompactList}\small\item\em Set whether the entry IDs are unique across the entire book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_393f4acf6e9f87dc8c1de480398d2c6e}{set\-Keep\-Basic\-Deltas} (bool keep)
+\begin{CompactList}\small\item\em Set whether to gather individual basic deltas when processing a complex delta. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_8d9563f0639d57630d786a614da5ad60}{set\-Update\-Inconsistent\-Book} (bool update)
+\begin{CompactList}\small\item\em Whether to handle or ignore updates sent for an inconsistent book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_a32964aa10c3d4f2021f55018585d4a7}{set\-Update\-Stale\-Book} (bool update)
+\begin{CompactList}\small\item\em Whether to handle or ignore updates sent for a stale order book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_6dd743bb5c20544a503004f6053a1fda}{set\-Clear\-Stale\-Book} (bool clear)
+\begin{CompactList}\small\item\em Whether to clear the order book upon detection of a stale book condition. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_224baaa3e2a4d9d5fe5b062cf9fe1082}{set\-Quality} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$sub, mama\-Quality quality)
+\begin{CompactList}\small\item\em Change the order book quality and invoke appropriate callbacks. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_0b19000efe1f7135813b810dbe2e78ff}{set\-Conflate\-Deltas} (bool conflate)
+\begin{CompactList}\small\item\em Whether to conflate the order book deltas. \item\end{CompactList}\item 
+virtual bool \hyperlink{classWombat_1_1MamdaOrderBookListener_2f72b21861b1f4a0462624eaa236a298}{get\-Conflate\-Deltas} ()
+\begin{CompactList}\small\item\em Whether or not order book deltas are conflated. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_408fe065eeefd1322fb3c2f78751e806}{set\-Conflation\-Interval} (double interval)
+\begin{CompactList}\small\item\em The conflation interval. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_c3349c645be9a131ab64fc81ed203730}{force\-Invoke\-Delta\-Handlers} ()
+\begin{CompactList}\small\item\em Invoke delta handlers immediately if there is a conflated delta pending. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_46cdfacfe189842f46e8592eceff6724}{clear\-Conflated\-Deltas} ()
+\begin{CompactList}\small\item\em Clear any pending conflated deltas. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_25b4001c57c2a140040baad9f84bbec4}{on\-Msg} (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$subscription, const Mama\-Msg \&msg, short msg\-Type)
+\begin{CompactList}\small\item\em Implementation of Mamda\-Listener interface. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_c049e9bab85f8db59adafeddee15e23e}{acquire\-Read\-Lock} ()
+\begin{CompactList}\small\item\em Acquire a read lock on the full book, so that an alternative running thread can view the book without it being changed from within the Mamda\-Book\-Listener. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_c227fabc3c91c6dbef8a6e338a023858}{release\-Read\-Lock} ()
+\begin{CompactList}\small\item\em Release the read lock on the full book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_601244fd9fd694d64dc54a568e8f5b06}{acquire\-Write\-Lock} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_184fb4af88e62c4d77fb54f52ac3bcb8}{release\-Write\-Lock} ()
+\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_da7f0348273e2877d9a27ae48406a59a}{get\-Book\-Snap\-Shot} (\hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \&result)
+\begin{CompactList}\small\item\em A thread safe function that can be called to populate a snapshot of the full book for the given symbol providing there already exists a Mamda\-Book\-Listener for the symbol within the process. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_a2ed42c47a443eb5f65189cfa498b9e3}{set\-Book\-Property\-Fids} (mama\_\-fid\_\-t $\ast$fids, mama\_\-size\_\-t num\-Fids)
+\begin{CompactList}\small\item\em Set the FIDs for any additional fields to cached in the book properties for the book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_906cf0d645735a81be277fa4db1d1aaa}{set\-Level\-Property\-Fids} (mama\_\-fid\_\-t $\ast$fids, mama\_\-size\_\-t num\-Fids)
+\begin{CompactList}\small\item\em Set the FIDs for any additional fields to cached in the price level properties for the book. \item\end{CompactList}\item 
+virtual void \hyperlink{classWombat_1_1MamdaOrderBookListener_33244f9f7e6a9d1afe530669ecc39ea0}{set\-Entry\-Property\-Fids} (mama\_\-fid\_\-t $\ast$fids, mama\_\-size\_\-t num\-Fids)
+\begin{CompactList}\small\item\em Set the FIDs for any additional fields to cached in the entry properties for the book. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+Mamda\-Order\-Book\-Listener\-Impl \& \hyperlink{classWombat_1_1MamdaOrderBookListener_ace34a93d0a027b656d45d68bbf9748d}{m\-Impl}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} is a class that specializes in handling order book updates. 
+
+Developers provide their own implementation of the \hyperlink{classWombat_1_1MamdaOrderBookHandler}{Mamda\-Order\-Book\-Handler} interface and will be delivered notifications for order book recaps and deltas. Notifications for order book deltas include the delta itself as well as the full order book with deltas applied. An obvious application for this MAMDA class is any kind of program trading application that looks at depth of book.
+
+Note: The \hyperlink{classWombat_1_1MamdaOrderBookListener}{Mamda\-Order\-Book\-Listener} class caches the order book. Among other reasons, caching of these fields makes it possible to provide full-book related callbacks, even when the publisher (e.g., feed handler) is only publishing deltas containing modified fields. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_bd475cc814e39d0ddfcec003cd46d7f1}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!MamdaOrderBookListener@{MamdaOrderBookListener}}
+\index{MamdaOrderBookListener@{MamdaOrderBookListener}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[MamdaOrderBookListener]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Order\-Book\-Listener::Mamda\-Order\-Book\-Listener (\hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} $\ast$ {\em full\-Book} = {\tt NULL})}}
+\label{classWombat_1_1MamdaOrderBookListener_bd475cc814e39d0ddfcec003cd46d7f1}
+
+
+Create an order book listener using an optional user-provided object for the full order book. 
+
+If \char`\"{}full\-Book\char`\"{} is NULL, an object will be allocated internally. If this listener is destroyed then the full order book object will only be destroyed if it was created by the listener (i.e., if full\-Book was passed as NULL in this constructor).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em full\-Book}]The \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} used to maintain the full book. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_519de32ed3343a70f54d313a0a86056b}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!~MamdaOrderBookListener@{$\sim$MamdaOrderBookListener}}
+\index{~MamdaOrderBookListener@{$\sim$MamdaOrderBookListener}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[$\sim$MamdaOrderBookListener]{\setlength{\rightskip}{0pt plus 5cm}virtual Wombat::Mamda\-Order\-Book\-Listener::$\sim$Mamda\-Order\-Book\-Listener ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_519de32ed3343a70f54d313a0a86056b}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_81c34135bae76175b72fed83c3a6325c}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[addHandler]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::add\-Handler (\hyperlink{classWombat_1_1MamdaOrderBookHandler}{Mamda\-Order\-Book\-Handler} $\ast$ {\em handler})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_81c34135bae76175b72fed83c3a6325c}
+
+
+Add a specialized order book handler. 
+
+Currently, only one handler can (and must) be registered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]The handler registered to receive order book update callbacks. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaOrderBookDepthFilter_60862fa9b9c5835445940630b5f982d6}{Mamda\-Order\-Book\-Depth\-Filter}, and \hyperlink{classMamdaQuoteToBookListener_f789fd04752b2c25b04daa6888c33388}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_318470f5c5cf4e2873f470610631145f}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setProcessEntries@{setProcessEntries}}
+\index{setProcessEntries@{setProcessEntries}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setProcessEntries]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Process\-Entries (bool {\em process})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_318470f5c5cf4e2873f470610631145f}
+
+
+Set whether we are interested in \char`\"{}entry level\char`\"{} information at all. 
+
+Many applications only care about price level information. (Default is to process entry level information.)
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em process}]Whether to process entries in books. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_21f81f9500c986f88ea910b97f086b39}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_4e902b9efbce42035d6e7d455ff64e4e}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getProcessEntries@{getProcessEntries}}
+\index{getProcessEntries@{getProcessEntries}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getProcessEntries]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Order\-Book\-Listener::get\-Process\-Entries () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_4e902b9efbce42035d6e7d455ff64e4e}
+
+
+Get whether we are interested in \char`\"{}entry level\char`\"{} information. 
+
+\begin{Desc}
+\item[Returns:]true if we are set to process entries \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_c1c364bb8b843f30464ae5ca275bd3c7}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setProcessMarketOrders@{setProcessMarketOrders}}
+\index{setProcessMarketOrders@{setProcessMarketOrders}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setProcessMarketOrders]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Process\-Market\-Orders (bool {\em process})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_c1c364bb8b843f30464ae5ca275bd3c7}
+
+
+Set whether we are interested in market order information, if available. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em process}]Whether to process market order data. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_6cbac2b8c695c54cc5cda3006f28fcab}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getProcessMarketOrders@{getProcessMarketOrders}}
+\index{getProcessMarketOrders@{getProcessMarketOrders}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getProcessMarketOrders]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Order\-Book\-Listener::get\-Process\-Market\-Orders () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_6cbac2b8c695c54cc5cda3006f28fcab}
+
+
+Get whether we are interested in market order information. 
+
+\begin{Desc}
+\item[Returns:]true if we are set to process market orders \end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_1d3802c30ebd8939435f74a634dc11fc}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!addIgnoreEntryId@{addIgnoreEntryId}}
+\index{addIgnoreEntryId@{addIgnoreEntryId}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[addIgnoreEntryId]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::add\-Ignore\-Entry\-Id (const char $\ast$ {\em id})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_1d3802c30ebd8939435f74a634dc11fc}
+
+
+Add an entry ID to ignore. 
+
+This only makes sense when the entry type is participant ID (as opposed to order ID). All order book updates for this entry ID will be ignored.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]The id of the participant to ignore when process book updates. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_fbd741a8aff801ccb953cf7e5056a359}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_9bd0ec676f02115594f5f29e0f28e3b9}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!removeIgnoreEntryId@{removeIgnoreEntryId}}
+\index{removeIgnoreEntryId@{removeIgnoreEntryId}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[removeIgnoreEntryId]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::remove\-Ignore\-Entry\-Id (const char $\ast$ {\em id})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_9bd0ec676f02115594f5f29e0f28e3b9}
+
+
+Remove an entry ID to ignore. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]The id of the participant whose update will be subsequently processed as part of the book.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaOrderBookListener_1d3802c30ebd8939435f74a634dc11fc}{add\-Ignore\-Entry\-Id(const char$\ast$)} \end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_e16ce5ea6ee98985543df7c93cea61f9}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_9dfecc38256b4bbe71ab35c58cc5ef1a}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!clear@{clear}}
+\index{clear@{clear}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[clear]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::clear ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_9dfecc38256b4bbe71ab35c58cc5ef1a}
+
+
+Clear all cached data fields. 
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_5d9ebf5190378ca7181473811c4d20c7}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_ba3e661b148450a0865b07cf169a12b1}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!removeHandlers@{removeHandlers}}
+\index{removeHandlers@{removeHandlers}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[removeHandlers]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::remove\-Handlers ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_ba3e661b148450a0865b07cf169a12b1}
+
+
+Remove the reference of handlers from the internal list. 
+
+Memory is not freed. 
+
+Reimplemented in \hyperlink{classMamdaOrderBookDepthFilter_699f621c1462b0787b6c1391bd48f32a}{Mamda\-Order\-Book\-Depth\-Filter}, and \hyperlink{classMamdaQuoteToBookListener_41f6149d1c5e0dd70d57998fcd81feb2}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_11b3e826a2aba8faf699c16454051143}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Order\-Book\-Listener::get\-Symbol () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_11b3e826a2aba8faf699c16454051143}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_c93b05e297f0b56ee750c931c0c332da}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_43689c10340beb6c62cc5b6e9680e44f}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getPartId@{getPartId}}
+\index{getPartId@{getPartId}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getPartId]{\setlength{\rightskip}{0pt plus 5cm}virtual const char$\ast$ Wombat::Mamda\-Order\-Book\-Listener::get\-Part\-Id () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_43689c10340beb6c62cc5b6e9680e44f}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_67a3d0c1e838d687724c0d20f15849cc}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_44f0107552d26551644736520b00b530}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getSrcTime@{getSrcTime}}
+\index{getSrcTime@{getSrcTime}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getSrcTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Order\-Book\-Listener::get\-Src\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_44f0107552d26551644736520b00b530}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_1c5157c6e1d241d1d78133731b44d01a}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_d696de0b8a7d04c239f813163c9f63b9}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getActivityTime@{getActivityTime}}
+\index{getActivityTime@{getActivityTime}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getActivityTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Order\-Book\-Listener::get\-Activity\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_d696de0b8a7d04c239f813163c9f63b9}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_d8627c07f82c0c7c88401cc096e16cd8}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_5c765d829c1eca59880839fe360b4497}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getLineTime@{getLineTime}}
+\index{getLineTime@{getLineTime}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getLineTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Order\-Book\-Listener::get\-Line\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_5c765d829c1eca59880839fe360b4497}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_e6897c75c5d12dc67f573946499506b3}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_244f7440a5a3f0bb81419cae5718ddd8}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getSendTime@{getSendTime}}
+\index{getSendTime@{getSendTime}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getSendTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Order\-Book\-Listener::get\-Send\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_244f7440a5a3f0bb81419cae5718ddd8}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_f36e8e40182ebe8d6e1c2d5445e0590e}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_a1486090a37ac30c038d18a38ae89d72}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getMsgQual@{getMsgQual}}
+\index{getMsgQual@{getMsgQual}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getMsgQual]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Msg\-Qual\& Wombat::Mamda\-Order\-Book\-Listener::get\-Msg\-Qual () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_a1486090a37ac30c038d18a38ae89d72}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_78bc7b821c48a99ecdff7f959763f7e2}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_c0272dc0cb65d7b3a55b8216b12acda6}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getEventTime@{getEventTime}}
+\index{getEventTime@{getEventTime}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getEventTime]{\setlength{\rightskip}{0pt plus 5cm}virtual const Mama\-Date\-Time\& Wombat::Mamda\-Order\-Book\-Listener::get\-Event\-Time () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_c0272dc0cb65d7b3a55b8216b12acda6}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_ff147fdfb64bad58dc439addc0eea46b}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_be0061292ee9bd7ef1d890bd825b1a0d}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getEventSeqNum@{getEventSeqNum}}
+\index{getEventSeqNum@{getEventSeqNum}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getEventSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Book\-Listener::get\-Event\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_be0061292ee9bd7ef1d890bd825b1a0d}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_ad266e6ce78c83599aa9b0c380f2b5e0}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_ed48775d67d2806a1d78fbf5310f7a5b}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getSymbolFieldState@{getSymbolFieldState}}
+\index{getSymbolFieldState@{getSymbolFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getSymbolFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Symbol\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_ed48775d67d2806a1d78fbf5310f7a5b}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_6be1e25a1f340cf0142816c7cdb3d593}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_0ebeb44c9a22a8d459b075f0afcd0f69}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getPartIdFieldState@{getPartIdFieldState}}
+\index{getPartIdFieldState@{getPartIdFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getPartIdFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Part\-Id\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_0ebeb44c9a22a8d459b075f0afcd0f69}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_7c760a83b876e17c52537cbd885697d5}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_f48b72f5bed1a318a9487cffaf965d79}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getEventSeqNumFieldState@{getEventSeqNumFieldState}}
+\index{getEventSeqNumFieldState@{getEventSeqNumFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getEventSeqNumFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Event\-Seq\-Num\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_f48b72f5bed1a318a9487cffaf965d79}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_fea891c59bf8468fd07df1730f95399b}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_ff57a8efade5c642a3d871debb2cd056}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getEventTimeFieldState@{getEventTimeFieldState}}
+\index{getEventTimeFieldState@{getEventTimeFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getEventTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Event\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_ff57a8efade5c642a3d871debb2cd056}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_25e9bef42468b7b169032cb6e2c330c8}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_cd480d3e1ecf4c3f2d726b907f4b34c3}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getSrcTimeFieldState@{getSrcTimeFieldState}}
+\index{getSrcTimeFieldState@{getSrcTimeFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getSrcTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Src\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_cd480d3e1ecf4c3f2d726b907f4b34c3}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_681cac13c95fbc304bc6a9432e3319fe}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_d1aa4977550c9b83e091509faa735d76}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getActivityTimeFieldState@{getActivityTimeFieldState}}
+\index{getActivityTimeFieldState@{getActivityTimeFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getActivityTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Activity\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_d1aa4977550c9b83e091509faa735d76}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_86342ed1f23500e6dbdbee055cb06886}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_967aa4033993bc70c16d95d26283da54}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getLineTimeFieldState@{getLineTimeFieldState}}
+\index{getLineTimeFieldState@{getLineTimeFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getLineTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Line\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_967aa4033993bc70c16d95d26283da54}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_72349a0b38fd3b0d53f80d29f09721c1}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_881995554b016618dc16f9a9e15be90d}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getSendTimeFieldState@{getSendTimeFieldState}}
+\index{getSendTimeFieldState@{getSendTimeFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getSendTimeFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Send\-Time\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_881995554b016618dc16f9a9e15be90d}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_3105e19fc56da0ddec1a79304a151a43}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_0516e60cecd086e30781592f16110196}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getMsgQualFieldState@{getMsgQualFieldState}}
+\index{getMsgQualFieldState@{getMsgQualFieldState}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getMsgQualFieldState]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{namespaceWombat_93aac974f2ab713554fd12a1fa3b7d2a}{Mamda\-Field\-State} Wombat::Mamda\-Order\-Book\-Listener::get\-Msg\-Qual\-Field\-State () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_0516e60cecd086e30781592f16110196}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_62ad9b9cfc10f553c2b39cd54610ff8c}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_882be50b668154aed7f170dbb2f47d34}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getOrderBook@{getOrderBook}}
+\index{getOrderBook@{getOrderBook}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getOrderBook]{\setlength{\rightskip}{0pt plus 5cm}virtual const \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}$\ast$ Wombat::Mamda\-Order\-Book\-Listener::get\-Order\-Book () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_882be50b668154aed7f170dbb2f47d34}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaOrderBookDepthFilter_8ea01fc66c28b7ac4dbb3939e340aad0}{Mamda\-Order\-Book\-Depth\-Filter}, and \hyperlink{classMamdaQuoteToBookListener_e63faf479027ccc1c72b156847832c9d}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_06ed6e6af962b6bee11d49bdc0c451dd}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getOrderBook@{getOrderBook}}
+\index{getOrderBook@{getOrderBook}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getOrderBook]{\setlength{\rightskip}{0pt plus 5cm}virtual \hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book}$\ast$ Wombat::Mamda\-Order\-Book\-Listener::get\-Order\-Book ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_06ed6e6af962b6bee11d49bdc0c451dd}
+
+
+\hypertarget{classWombat_1_1MamdaOrderBookListener_967ffb9c9c1cd0def13fefed413ad554}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getBeginGapSeqNum@{getBeginGapSeqNum}}
+\index{getBeginGapSeqNum@{getBeginGapSeqNum}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getBeginGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Book\-Listener::get\-Begin\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_967ffb9c9c1cd0def13fefed413ad554}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_92174a71081aee1456debac14ad05cf6}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_c53f97e362bed788ac8daf00c2c8daf3}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getEndGapSeqNum@{getEndGapSeqNum}}
+\index{getEndGapSeqNum@{getEndGapSeqNum}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getEndGapSeqNum]{\setlength{\rightskip}{0pt plus 5cm}virtual mama\_\-seqnum\_\-t Wombat::Mamda\-Order\-Book\-Listener::get\-End\-Gap\-Seq\-Num () const\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_c53f97e362bed788ac8daf00c2c8daf3}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_a40dd460d8463a312bba66e4b689d27e}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_428fd0fee7ccd623c45333d7787b6f70}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setUseEntryManager@{setUseEntryManager}}
+\index{setUseEntryManager@{setUseEntryManager}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setUseEntryManager]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Use\-Entry\-Manager (bool {\em use\-Manager})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_428fd0fee7ccd623c45333d7787b6f70}
+
+
+Set whether to use an \char`\"{}entry manager\char`\"{} for finding entries in a book. 
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_4daf6a6cca90d21bc7902ab6a7ea5008}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_4c08ce3aefa0cddb9980a7a8cf043545}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setEntryIdsAreUnique@{setEntryIdsAreUnique}}
+\index{setEntryIdsAreUnique@{setEntryIdsAreUnique}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setEntryIdsAreUnique]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Entry\-Ids\-Are\-Unique (bool {\em unique\-Ids})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_4c08ce3aefa0cddb9980a7a8cf043545}
+
+
+Set whether the entry IDs are unique across the entire book. 
+
+This is only relevant if using an \char`\"{}entry manager\char`\"{}. 
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_478d71d5ccdbc4d692d7b69df2ed5c91}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_393f4acf6e9f87dc8c1de480398d2c6e}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setKeepBasicDeltas@{setKeepBasicDeltas}}
+\index{setKeepBasicDeltas@{setKeepBasicDeltas}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setKeepBasicDeltas]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Keep\-Basic\-Deltas (bool {\em keep})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_393f4acf6e9f87dc8c1de480398d2c6e}
+
+
+Set whether to gather individual basic deltas when processing a complex delta. 
+
+Many applications don't need the basic deltas and will iterate over part or all of the full book (with the deltas already applied). 
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_23babb647b9432258f2e9b36d1813357}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_8d9563f0639d57630d786a614da5ad60}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setUpdateInconsistentBook@{setUpdateInconsistentBook}}
+\index{setUpdateInconsistentBook@{setUpdateInconsistentBook}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setUpdateInconsistentBook]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Update\-Inconsistent\-Book (bool {\em update})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_8d9563f0639d57630d786a614da5ad60}
+
+
+Whether to handle or ignore updates sent for an inconsistent book. 
+
+A book may be in an inconsistent state if there has been a gap on the sequence of update (delta) messages. Default is to not update (and wait for a recap).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em update}]Whether to apply updates to an inconsistent book. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_99053d73f15f7f0dfc971d341e1e75c6}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_a32964aa10c3d4f2021f55018585d4a7}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setUpdateStaleBook@{setUpdateStaleBook}}
+\index{setUpdateStaleBook@{setUpdateStaleBook}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setUpdateStaleBook]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Update\-Stale\-Book (bool {\em update})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_a32964aa10c3d4f2021f55018585d4a7}
+
+
+Whether to handle or ignore updates sent for a stale order book. 
+
+A book is in a stale state if its mama\-Quality is not MAMA\_\-QUALITY\_\-OK..
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em update}]Whether to apply updates to a stale book. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_008e8954749115fa7cedc257e61480c3}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_6dd743bb5c20544a503004f6053a1fda}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setClearStaleBook@{setClearStaleBook}}
+\index{setClearStaleBook@{setClearStaleBook}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setClearStaleBook]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Clear\-Stale\-Book (bool {\em clear})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_6dd743bb5c20544a503004f6053a1fda}
+
+
+Whether to clear the order book upon detection of a stale book condition. 
+
+If this is set to true, then \hyperlink{classWombat_1_1MamdaOrderBookListener_a32964aa10c3d4f2021f55018585d4a7}{set\-Update\-Stale\-Book()} should probably have been set to false. 
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_f82df90339d23957d41fc15831b6753f}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_224baaa3e2a4d9d5fe5b062cf9fe1082}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setQuality@{setQuality}}
+\index{setQuality@{setQuality}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setQuality]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Quality (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em sub}, mama\-Quality {\em quality})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_224baaa3e2a4d9d5fe5b062cf9fe1082}
+
+
+Change the order book quality and invoke appropriate callbacks. 
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_185182e79f1a315dd2667b44cb466159}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_0b19000efe1f7135813b810dbe2e78ff}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setConflateDeltas@{setConflateDeltas}}
+\index{setConflateDeltas@{setConflateDeltas}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setConflateDeltas]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Conflate\-Deltas (bool {\em conflate})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_0b19000efe1f7135813b810dbe2e78ff}
+
+
+Whether to conflate the order book deltas. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em conflate}]Whether to conflate the order book deltas \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_fc20509b396b145818c6804ad7a72d63}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_2f72b21861b1f4a0462624eaa236a298}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getConflateDeltas@{getConflateDeltas}}
+\index{getConflateDeltas@{getConflateDeltas}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getConflateDeltas]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wombat::Mamda\-Order\-Book\-Listener::get\-Conflate\-Deltas ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_2f72b21861b1f4a0462624eaa236a298}
+
+
+Whether or not order book deltas are conflated. 
+
+\begin{Desc}
+\item[Returns:]true if conflation is set to true \end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_424049fa1fff7fe0a6e7da84ea9b2da6}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_408fe065eeefd1322fb3c2f78751e806}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setConflationInterval@{setConflationInterval}}
+\index{setConflationInterval@{setConflationInterval}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setConflationInterval]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Conflation\-Interval (double {\em interval})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_408fe065eeefd1322fb3c2f78751e806}
+
+
+The conflation interval. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em interval}]The conflation interval in seconds. Default is 0.5 seconds. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_f821050ad069bc72b07f419c441e85cc}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_c3349c645be9a131ab64fc81ed203730}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!forceInvokeDeltaHandlers@{forceInvokeDeltaHandlers}}
+\index{forceInvokeDeltaHandlers@{forceInvokeDeltaHandlers}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[forceInvokeDeltaHandlers]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::force\-Invoke\-Delta\-Handlers ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_c3349c645be9a131ab64fc81ed203730}
+
+
+Invoke delta handlers immediately if there is a conflated delta pending. 
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_a87a519f30dd56c678cc0a847e090d26}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_46cdfacfe189842f46e8592eceff6724}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!clearConflatedDeltas@{clearConflatedDeltas}}
+\index{clearConflatedDeltas@{clearConflatedDeltas}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[clearConflatedDeltas]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::clear\-Conflated\-Deltas ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_46cdfacfe189842f46e8592eceff6724}
+
+
+Clear any pending conflated deltas. 
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_ea724b9d69c544572dcfab7c8c002d18}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_25b4001c57c2a140040baad9f84bbec4}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!onMsg@{onMsg}}
+\index{onMsg@{onMsg}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[onMsg]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::on\-Msg (\hyperlink{classWombat_1_1MamdaSubscription}{Mamda\-Subscription} $\ast$ {\em subscription}, const Mama\-Msg \& {\em msg}, short {\em msg\-Type})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_25b4001c57c2a140040baad9f84bbec4}
+
+
+Implementation of Mamda\-Listener interface. 
+
+
+
+Implements \hyperlink{classWombat_1_1MamdaMsgListener_c700829ebcce095b95b8b67b39a1c67d}{Wombat::Mamda\-Msg\-Listener}.
+
+Reimplemented in \hyperlink{classMamdaOrderBookDepthFilter_0d514d92284c0fefa84201aae411111d}{Mamda\-Order\-Book\-Depth\-Filter}, and \hyperlink{classMamdaQuoteToBookListener_2d57ca85affe2614497a207122ae6193}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_c049e9bab85f8db59adafeddee15e23e}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!acquireReadLock@{acquireReadLock}}
+\index{acquireReadLock@{acquireReadLock}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[acquireReadLock]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::acquire\-Read\-Lock ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_c049e9bab85f8db59adafeddee15e23e}
+
+
+Acquire a read lock on the full book, so that an alternative running thread can view the book without it being changed from within the Mamda\-Book\-Listener. 
+
+release\-Read\-Lock should be called to release the lock. 
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_b3aaeea876237a3869a4380c6d12c409}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_c227fabc3c91c6dbef8a6e338a023858}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!releaseReadLock@{releaseReadLock}}
+\index{releaseReadLock@{releaseReadLock}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[releaseReadLock]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::release\-Read\-Lock ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_c227fabc3c91c6dbef8a6e338a023858}
+
+
+Release the read lock on the full book. 
+
+A companion to the acquire\-Read\-Lock method. 
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_04933309e7df1a0afd2aa8d173e20c7c}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_601244fd9fd694d64dc54a568e8f5b06}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!acquireWriteLock@{acquireWriteLock}}
+\index{acquireWriteLock@{acquireWriteLock}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[acquireWriteLock]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::acquire\-Write\-Lock ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_601244fd9fd694d64dc54a568e8f5b06}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_e29f743ba0e51a46e8eccf33ac196bfc}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_184fb4af88e62c4d77fb54f52ac3bcb8}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!releaseWriteLock@{releaseWriteLock}}
+\index{releaseWriteLock@{releaseWriteLock}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[releaseWriteLock]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::release\-Write\-Lock ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_184fb4af88e62c4d77fb54f52ac3bcb8}
+
+
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_6c24b1f262c4d571b586fd0c9f5675ee}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_da7f0348273e2877d9a27ae48406a59a}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!getBookSnapShot@{getBookSnapShot}}
+\index{getBookSnapShot@{getBookSnapShot}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[getBookSnapShot]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::get\-Book\-Snap\-Shot (\hyperlink{classWombat_1_1MamdaOrderBook}{Mamda\-Order\-Book} \& {\em result})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_da7f0348273e2877d9a27ae48406a59a}
+
+
+A thread safe function that can be called to populate a snapshot of the full book for the given symbol providing there already exists a Mamda\-Book\-Listener for the symbol within the process. 
+
+This routine will throw a \hyperlink{classWombat_1_1MamdaOrderBookException}{Mamda\-Order\-Book\-Exception} in the following three circumstances:\begin{itemize}
+\item If the Mamda API hasn't been built with multi-threading enabled, or\item If there is no listener within the process for the given symbol, or\item The listener hasn't as yet received an initial image.\end{itemize}
+
+
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em $<$Mamda\-Order\-Book\-Exception$>$}]See above for details. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classMamdaQuoteToBookListener_161cca9523847d042a82af4924c91da6}{Mamda\-Quote\-To\-Book\-Listener}.\hypertarget{classWombat_1_1MamdaOrderBookListener_a2ed42c47a443eb5f65189cfa498b9e3}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setBookPropertyFids@{setBookPropertyFids}}
+\index{setBookPropertyFids@{setBookPropertyFids}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setBookPropertyFids]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Book\-Property\-Fids (mama\_\-fid\_\-t $\ast$ {\em fids}, mama\_\-size\_\-t {\em num\-Fids})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_a2ed42c47a443eb5f65189cfa498b9e3}
+
+
+Set the FIDs for any additional fields to cached in the book properties for the book. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fids}]the array of FIDs to cache \item[{\em num\-Fids}]the size of the array \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_906cf0d645735a81be277fa4db1d1aaa}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setLevelPropertyFids@{setLevelPropertyFids}}
+\index{setLevelPropertyFids@{setLevelPropertyFids}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setLevelPropertyFids]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Level\-Property\-Fids (mama\_\-fid\_\-t $\ast$ {\em fids}, mama\_\-size\_\-t {\em num\-Fids})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_906cf0d645735a81be277fa4db1d1aaa}
+
+
+Set the FIDs for any additional fields to cached in the price level properties for the book. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fids}]the array of FIDs to cache \item[{\em num\-Fids}]the size of the array \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_33244f9f7e6a9d1afe530669ecc39ea0}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!setEntryPropertyFids@{setEntryPropertyFids}}
+\index{setEntryPropertyFids@{setEntryPropertyFids}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[setEntryPropertyFids]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wombat::Mamda\-Order\-Book\-Listener::set\-Entry\-Property\-Fids (mama\_\-fid\_\-t $\ast$ {\em fids}, mama\_\-size\_\-t {\em num\-Fids})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classWombat_1_1MamdaOrderBookListener_33244f9f7e6a9d1afe530669ecc39ea0}
+
+
+Set the FIDs for any additional fields to cached in the entry properties for the book. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fids}]the array of FIDs to cache \item[{\em num\-Fids}]the size of the array \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaOrderBookListener_ace34a93d0a027b656d45d68bbf9748d}{
+\index{Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}!mImpl@{mImpl}}
+\index{mImpl@{mImpl}!Wombat::MamdaOrderBookListener@{Wombat::Mamda\-Order\-Book\-Listener}}
+\subsubsection[mImpl]{\setlength{\rightskip}{0pt plus 5cm}Mamda\-Order\-Book\-Listener\-Impl\& \hyperlink{classWombat_1_1MamdaOrderBookListener_ace34a93d0a027b656d45d68bbf9748d}{Wombat::Mamda\-Order\-Book\-Listener::m\-Impl}}}
+\label{classWombat_1_1MamdaOrderBookListener_ace34a93d0a027b656d45d68bbf9748d}
+
+

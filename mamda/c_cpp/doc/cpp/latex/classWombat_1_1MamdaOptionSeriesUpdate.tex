@@ -1,0 +1,89 @@
+\hypertarget{classWombat_1_1MamdaOptionSeriesUpdate}{
+\section{Wombat::Mamda\-Option\-Series\-Update Class Reference}
+\label{classWombat_1_1MamdaOptionSeriesUpdate}\index{Wombat::MamdaOptionSeriesUpdate@{Wombat::MamdaOptionSeriesUpdate}}
+}
+\hyperlink{classWombat_1_1MamdaOptionSeriesUpdate}{Mamda\-Option\-Series\-Update} is an interface that provides access to fields related to option series update events.  
+
+
+{\tt \#include $<$Mamda\-Option\-Series\-Update.h$>$}
+
+Inheritance diagram for Wombat::Mamda\-Option\-Series\-Update::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classWombat_1_1MamdaOptionSeriesUpdate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+const \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} $\ast$ \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_9aa226dbd2c289c60828ac1279d8777a}{get\-Option\-Contract} () const 
+\item 
+char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_ae453033ff713e3a48251f3f747946db}{get\-Option\-Action} () const 
+\begin{CompactList}\small\item\em Return the action related to the last series update message. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static const char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_1e7b167a255ee1be49a99264edc2649b}{ACTION\_\-UNKNOWN} = ' '
+\item 
+static const char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_7c20acc5ddfb0e866b99c7980897f4f0}{ACTION\_\-ADD} = 'A'
+\item 
+static const char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_6ce2cf0215db3449708108d79846698f}{ACTION\_\-DELETE} = 'D'
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classWombat_1_1MamdaOptionSeriesUpdate}{Mamda\-Option\-Series\-Update} is an interface that provides access to fields related to option series update events. 
+
+Update events include adds/removes of contracts to the chain. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionSeriesUpdate_9aa226dbd2c289c60828ac1279d8777a}{
+\index{Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}!getOptionContract@{getOptionContract}}
+\index{getOptionContract@{getOptionContract}!Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}}
+\subsubsection[getOptionContract]{\setlength{\rightskip}{0pt plus 5cm}const \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract}$\ast$ Wombat::Mamda\-Option\-Series\-Update::get\-Option\-Contract () const}}
+\label{classWombat_1_1MamdaOptionSeriesUpdate_9aa226dbd2c289c60828ac1279d8777a}
+
+
+\begin{Desc}
+\item[Returns:]The option contract to which the most recent event applies. If the contract is new, it will have already been added to the chain. If it is being removed, it will have already been removed from the chain. \end{Desc}
+
+
+Reimplemented in \hyperlink{classWombat_1_1MamdaOptionChainListener_af867698910e7291e62db6ecc8e47799}{Wombat::Mamda\-Option\-Chain\-Listener}.\hypertarget{classWombat_1_1MamdaOptionSeriesUpdate_ae453033ff713e3a48251f3f747946db}{
+\index{Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}!getOptionAction@{getOptionAction}}
+\index{getOptionAction@{getOptionAction}!Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}}
+\subsubsection[getOptionAction]{\setlength{\rightskip}{0pt plus 5cm}char Wombat::Mamda\-Option\-Series\-Update::get\-Option\-Action () const}}
+\label{classWombat_1_1MamdaOptionSeriesUpdate_ae453033ff713e3a48251f3f747946db}
+
+
+Return the action related to the last series update message. 
+
+\begin{Desc}
+\item[Returns:]The action related to the last series update message. \end{Desc}
+
+
+Reimplemented in \hyperlink{classWombat_1_1MamdaOptionChainListener_b1606745ac13faa4da7d9318705491a6}{Wombat::Mamda\-Option\-Chain\-Listener}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classWombat_1_1MamdaOptionSeriesUpdate_1e7b167a255ee1be49a99264edc2649b}{
+\index{Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}!ACTION_UNKNOWN@{ACTION\_\-UNKNOWN}}
+\index{ACTION_UNKNOWN@{ACTION\_\-UNKNOWN}!Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}}
+\subsubsection[ACTION\_\-UNKNOWN]{\setlength{\rightskip}{0pt plus 5cm}const char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_1e7b167a255ee1be49a99264edc2649b}{Wombat::Mamda\-Option\-Series\-Update::ACTION\_\-UNKNOWN} = ' '\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionSeriesUpdate_1e7b167a255ee1be49a99264edc2649b}
+
+
+\hypertarget{classWombat_1_1MamdaOptionSeriesUpdate_7c20acc5ddfb0e866b99c7980897f4f0}{
+\index{Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}!ACTION_ADD@{ACTION\_\-ADD}}
+\index{ACTION_ADD@{ACTION\_\-ADD}!Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}}
+\subsubsection[ACTION\_\-ADD]{\setlength{\rightskip}{0pt plus 5cm}const char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_7c20acc5ddfb0e866b99c7980897f4f0}{Wombat::Mamda\-Option\-Series\-Update::ACTION\_\-ADD} = 'A'\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionSeriesUpdate_7c20acc5ddfb0e866b99c7980897f4f0}
+
+
+\hypertarget{classWombat_1_1MamdaOptionSeriesUpdate_6ce2cf0215db3449708108d79846698f}{
+\index{Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}!ACTION_DELETE@{ACTION\_\-DELETE}}
+\index{ACTION_DELETE@{ACTION\_\-DELETE}!Wombat::MamdaOptionSeriesUpdate@{Wombat::Mamda\-Option\-Series\-Update}}
+\subsubsection[ACTION\_\-DELETE]{\setlength{\rightskip}{0pt plus 5cm}const char \hyperlink{classWombat_1_1MamdaOptionSeriesUpdate_6ce2cf0215db3449708108d79846698f}{Wombat::Mamda\-Option\-Series\-Update::ACTION\_\-DELETE} = 'D'\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classWombat_1_1MamdaOptionSeriesUpdate_6ce2cf0215db3449708108d79846698f}
+
+

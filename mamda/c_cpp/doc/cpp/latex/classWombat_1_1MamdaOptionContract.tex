@@ -1,0 +1,591 @@
+\hypertarget{classWombat_1_1MamdaOptionContract}{
+\section{Wombat::Mamda\-Option\-Contract Class Reference}
+\label{classWombat_1_1MamdaOptionContract}\index{Wombat::MamdaOptionContract@{Wombat::MamdaOptionContract}}
+}
+A class that represents a single option contract.  
+
+
+{\tt \#include $<$Mamda\-Option\-Contract.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWombat_1_1MamdaOptionContract_9cfb4ec903737947e308c029c7f7d081}{Mamda\-Option\-Contract} (const char $\ast$symbol, const char $\ast$exchange, const Mama\-Date\-Time \&expire\-Date, double strike\-Price, \hyperlink{namespaceWombat_ceb2ef77ec6c36b48ef57d2887d6ac49}{Mamda\-Option\-Put\-Call} put\-Call)
+\begin{CompactList}\small\item\em Constructor from expiration date, strike price, and put/call indicator. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionContract_ad227199b28a941463a0f25aeae70117}{Mamda\-Option\-Contract} (const char $\ast$symbol, const char $\ast$exchange)
+\begin{CompactList}\small\item\em Constructor without expiration date, strike price, and put/call indicator. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaOptionContract_e65375537ef11b3425443ded04c35613}{$\sim$Mamda\-Option\-Contract} ()
+\begin{CompactList}\small\item\em Destructor. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_7d67a88fb7eda7351dd80ae12ba63735}{set\-Expire\-Date} (const Mama\-Date\-Time \&expire\-Date)
+\begin{CompactList}\small\item\em Set the expiration date. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_57020e7c6f2c8d1bcd692b801714f966}{set\-Strike\-Price} (double strike\-Price)
+\begin{CompactList}\small\item\em Set the strike price. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_60c9a0c5d47ac681b3ed1f6bb8a77cb8}{set\-Put\-Call} (\hyperlink{namespaceWombat_ceb2ef77ec6c36b48ef57d2887d6ac49}{Mamda\-Option\-Put\-Call} put\-Call)
+\begin{CompactList}\small\item\em Set the put/call indicator. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_2a2c8b0bb79e3d20e1065559a763f6c2}{set\-Open\-Interest} (uint32\_\-t open\-Interest)
+\begin{CompactList}\small\item\em Set the open interest size. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_f6f42f64ca7004717761c6d4bc09932a}{set\-Exercise\-Style} (\hyperlink{namespaceWombat_e7be5722df9d72164d322f2b72cf8d1a}{Mamda\-Option\-Exercise\-Style} exercise\-Style)
+\begin{CompactList}\small\item\em Set the exercise style. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_d2685768085c33dd51dc71c65b4804fa}{set\-Recap\-Required} (bool recap\-Required)
+\begin{CompactList}\small\item\em Set the recap required field. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionContract_5e8339a42581c6ca70da3c7d1907a57b}{get\-Symbol} () const 
+\begin{CompactList}\small\item\em Return the OPRA contract symbol. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionContract_776da4aca200db2a474a491f4dae6edb}{get\-Exchange} () const 
+\begin{CompactList}\small\item\em Return the exchange. \item\end{CompactList}\item 
+const Mama\-Date\-Time \& \hyperlink{classWombat_1_1MamdaOptionContract_0ff115c7e94c4125a8a4bf11a417f072}{get\-Expire\-Date} () const 
+\begin{CompactList}\small\item\em Return the expiration date. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{classWombat_1_1MamdaOptionContract_cb83dd5c1f8ceced6744ba3a44fc0d65}{get\-Expire\-Date\-Str} () const 
+\begin{CompactList}\small\item\em Return the expiration date as a string. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_8657f2b6fa3ce16032522a460e657387}{got\-Expire\-Date} () const 
+\begin{CompactList}\small\item\em Return whether or not expiration date has been set. \item\end{CompactList}\item 
+double \hyperlink{classWombat_1_1MamdaOptionContract_d9d9e836fab85c7b7dc0401020dd6f46}{get\-Strike\-Price} () const 
+\begin{CompactList}\small\item\em Return the strike price. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_798b5f3f11b9578349a6503b22e3c171}{got\-Strike\-Price} () const 
+\begin{CompactList}\small\item\em Return whether or not strike price has been set. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_ceb2ef77ec6c36b48ef57d2887d6ac49}{Mamda\-Option\-Put\-Call} \hyperlink{classWombat_1_1MamdaOptionContract_2cc67d660671ab468738e118cc3640ce}{get\-Put\-Call} () const 
+\begin{CompactList}\small\item\em Return the put/call indicator. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_b4dc254911cac44a174f4a010dba3507}{got\-Put\-Call} () const 
+\begin{CompactList}\small\item\em Return whether or not put call has been set. \item\end{CompactList}\item 
+uint32\_\-t \hyperlink{classWombat_1_1MamdaOptionContract_e859d329f94a7eab79a34f1db4fe5731}{get\-Open\-Interest} () const 
+\begin{CompactList}\small\item\em Return the level of interest at opening. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_15dd69320c1c03982c44b339e806d0ad}{got\-Open\-Interest} () const 
+\begin{CompactList}\small\item\em Return whether or not open interest has been set. \item\end{CompactList}\item 
+\hyperlink{namespaceWombat_e7be5722df9d72164d322f2b72cf8d1a}{Mamda\-Option\-Exercise\-Style} \hyperlink{classWombat_1_1MamdaOptionContract_5273af6a0f17a001ce2ea6e80621ae39}{get\-Exercise\-Style} () const 
+\begin{CompactList}\small\item\em Return the style indicator - American(A)/European(E)/Capped(C). \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_1748619372a2553ccb58cc2f6bc1afd4}{got\-Exercise\-Style} () const 
+\begin{CompactList}\small\item\em Return whether or not exercise style has been set. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_9f56471e4fca1f924e2401ddaf257f3c}{get\-Recap\-Required} () const 
+\begin{CompactList}\small\item\em Get the recap required field. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_722a517c5fefa5847e3c4ea8a867d06a}{add\-Msg\-Listener} (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$listener)
+\begin{CompactList}\small\item\em Add a generic \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} to this option contract. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_0b3314cdac09a861df9f12bc8ef5e510}{add\-Trade\-Handler} (\hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a \hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} for handling trade updates to this option contract. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_c19937c97b686522612cd60faa52330b}{add\-Quote\-Handler} (\hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a \hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} for handling quote updates to this option contract. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_f19a17c9139d85a3caa31d2f595ff3c7}{add\-Fundamental\-Handler} (\hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} $\ast$handler)
+\begin{CompactList}\small\item\em Add a \hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} for handling fundamental data fields. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_302fbffec136a686aea50d41d31bbb33}{set\-Custom\-Object} (void $\ast$object)
+\begin{CompactList}\small\item\em Add a custom object to this option contract. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap} \& \hyperlink{classWombat_1_1MamdaOptionContract_e360b5e6125af8ad145f2b4a36026d83}{get\-Trade\-Info} () const 
+\begin{CompactList}\small\item\em Return the current trade fields. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap} \& \hyperlink{classWombat_1_1MamdaOptionContract_722ecf29d9ca868a8005ee3bf97530f9}{get\-Quote\-Info} () const 
+\begin{CompactList}\small\item\em Return the current quote fields. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaFundamentals}{Mamda\-Fundamentals} \& \hyperlink{classWombat_1_1MamdaOptionContract_88dec6f0eef0533a71228f2c0be807c0}{get\-Fundamentals\-Info} () const 
+\begin{CompactList}\small\item\em Return the current fundamentals fields. \item\end{CompactList}\item 
+void $\ast$ \hyperlink{classWombat_1_1MamdaOptionContract_b9989c238b0505570c490d69ada86630}{get\-Custom\-Object} () const 
+\begin{CompactList}\small\item\em Return the custom object. \item\end{CompactList}\item 
+std::vector$<$ \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$ $>$ \& \hyperlink{classWombat_1_1MamdaOptionContract_dda8149cad3a048b3ebf56f0f5fb0a1c}{get\-Msg\-Listeners} ()
+\begin{CompactList}\small\item\em Return the vector of message listeners. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener} \& \hyperlink{classWombat_1_1MamdaOptionContract_f6640ac35d15df14e4b044597f4bf7d0}{get\-Trade\-Listener} ()
+\begin{CompactList}\small\item\em Return the trade listener. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener} \& \hyperlink{classWombat_1_1MamdaOptionContract_956e06dfe57a24b8bfff64fbe6e8e111}{get\-Quote\-Listener} ()
+\begin{CompactList}\small\item\em Return the quote listener. \item\end{CompactList}\item 
+\hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener} \& \hyperlink{classWombat_1_1MamdaOptionContract_f5397ed9eaea7471258ccdbdd85fc000}{get\-Fundamental\-Listener} ()
+\begin{CompactList}\small\item\em Return the fundamental listener. \item\end{CompactList}\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_1ce396440ba8edcee5bdb72ba372ba85}{set\-In\-View} (bool in\-View)
+\begin{CompactList}\small\item\em Set whether this contract is in the \char`\"{}view\char`\"{} within the option chain. \item\end{CompactList}\item 
+bool \hyperlink{classWombat_1_1MamdaOptionContract_b78e238a6970d75cec187b236d693f16}{get\-In\-View} ()
+\begin{CompactList}\small\item\em Return whether this contract is in the \char`\"{}view\char`\"{} within the option chain. \item\end{CompactList}\item 
+int64\_\-t \hyperlink{classWombat_1_1MamdaOptionContract_dc8dfd209bc57a9b248180bcba1dccf3}{get\-Seq\-Num} ()
+\item 
+void \hyperlink{classWombat_1_1MamdaOptionContract_b3fb00be49aa058bd98b12d21a535f9e}{set\-Seq\-Num} (int64\_\-t num)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class that represents a single option contract. 
+
+Instances of this object are typically created by the \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener}. Applications may attach a custom object to each instance of \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract}.
+
+Note: User applications can be notified of creation of \hyperlink{classWombat_1_1MamdaOptionContract}{Mamda\-Option\-Contract} instances via the Mamda\-Option\-Chain\-Listener.on\-Option\-Contract\-Create() method.
+
+Note: It is possible to provide individual \hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} and \hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} handlers for trades and quotes, even though the \hyperlink{classWombat_1_1MamdaOptionChainHandler}{Mamda\-Option\-Chain\-Handler} also provides a general callback interface for updates to individual contracts. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWombat_1_1MamdaOptionContract_9cfb4ec903737947e308c029c7f7d081}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!MamdaOptionContract@{MamdaOptionContract}}
+\index{MamdaOptionContract@{MamdaOptionContract}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[MamdaOptionContract]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Contract::Mamda\-Option\-Contract (const char $\ast$ {\em symbol}, const char $\ast$ {\em exchange}, const Mama\-Date\-Time \& {\em expire\-Date}, double {\em strike\-Price}, \hyperlink{namespaceWombat_ceb2ef77ec6c36b48ef57d2887d6ac49}{Mamda\-Option\-Put\-Call} {\em put\-Call})}}
+\label{classWombat_1_1MamdaOptionContract_9cfb4ec903737947e308c029c7f7d081}
+
+
+Constructor from expiration date, strike price, and put/call indicator. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em symbol}]The option symbol. \item[{\em exchange}]The exchange identifier. \item[{\em expire\-Date}]The options expiration date. \item[{\em strike\-Price}]The options strike price. \item[{\em put\-Call}]Whether this is a put or call option. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_ad227199b28a941463a0f25aeae70117}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!MamdaOptionContract@{MamdaOptionContract}}
+\index{MamdaOptionContract@{MamdaOptionContract}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[MamdaOptionContract]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Contract::Mamda\-Option\-Contract (const char $\ast$ {\em symbol}, const char $\ast$ {\em exchange})}}
+\label{classWombat_1_1MamdaOptionContract_ad227199b28a941463a0f25aeae70117}
+
+
+Constructor without expiration date, strike price, and put/call indicator. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em symbol}]The option symbol. \item[{\em exchange}]The exchange identifier. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_e65375537ef11b3425443ded04c35613}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!~MamdaOptionContract@{$\sim$MamdaOptionContract}}
+\index{~MamdaOptionContract@{$\sim$MamdaOptionContract}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[$\sim$MamdaOptionContract]{\setlength{\rightskip}{0pt plus 5cm}Wombat::Mamda\-Option\-Contract::$\sim$Mamda\-Option\-Contract ()}}
+\label{classWombat_1_1MamdaOptionContract_e65375537ef11b3425443ded04c35613}
+
+
+Destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classWombat_1_1MamdaOptionContract_7d67a88fb7eda7351dd80ae12ba63735}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setExpireDate@{setExpireDate}}
+\index{setExpireDate@{setExpireDate}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setExpireDate]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Expire\-Date (const Mama\-Date\-Time \& {\em expire\-Date})}}
+\label{classWombat_1_1MamdaOptionContract_7d67a88fb7eda7351dd80ae12ba63735}
+
+
+Set the expiration date. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em expire\-Date}]The options expiration date. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_57020e7c6f2c8d1bcd692b801714f966}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setStrikePrice@{setStrikePrice}}
+\index{setStrikePrice@{setStrikePrice}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setStrikePrice]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Strike\-Price (double {\em strike\-Price})}}
+\label{classWombat_1_1MamdaOptionContract_57020e7c6f2c8d1bcd692b801714f966}
+
+
+Set the strike price. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em strike\-Price}]The options strike price. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_60c9a0c5d47ac681b3ed1f6bb8a77cb8}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setPutCall@{setPutCall}}
+\index{setPutCall@{setPutCall}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setPutCall]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Put\-Call (\hyperlink{namespaceWombat_ceb2ef77ec6c36b48ef57d2887d6ac49}{Mamda\-Option\-Put\-Call} {\em put\-Call})}}
+\label{classWombat_1_1MamdaOptionContract_60c9a0c5d47ac681b3ed1f6bb8a77cb8}
+
+
+Set the put/call indicator. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em put\-Call}]Whether this is a put or call option. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_2a2c8b0bb79e3d20e1065559a763f6c2}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setOpenInterest@{setOpenInterest}}
+\index{setOpenInterest@{setOpenInterest}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setOpenInterest]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Open\-Interest (uint32\_\-t {\em open\-Interest})}}
+\label{classWombat_1_1MamdaOptionContract_2a2c8b0bb79e3d20e1065559a763f6c2}
+
+
+Set the open interest size. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em open\-Interest}]The open interest for the option. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_f6f42f64ca7004717761c6d4bc09932a}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setExerciseStyle@{setExerciseStyle}}
+\index{setExerciseStyle@{setExerciseStyle}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setExerciseStyle]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Exercise\-Style (\hyperlink{namespaceWombat_e7be5722df9d72164d322f2b72cf8d1a}{Mamda\-Option\-Exercise\-Style} {\em exercise\-Style})}}
+\label{classWombat_1_1MamdaOptionContract_f6f42f64ca7004717761c6d4bc09932a}
+
+
+Set the exercise style. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em exercise\-Style}]The exercise style for the option. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_d2685768085c33dd51dc71c65b4804fa}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setRecapRequired@{setRecapRequired}}
+\index{setRecapRequired@{setRecapRequired}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setRecapRequired]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Recap\-Required (bool {\em recap\-Required})}}
+\label{classWombat_1_1MamdaOptionContract_d2685768085c33dd51dc71c65b4804fa}
+
+
+Set the recap required field. 
+
+Typically only used by the {\tt \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener}}
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em recap\-Required}]Whether a recap is required by the contract. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_5e8339a42581c6ca70da3c7d1907a57b}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getSymbol]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Contract::get\-Symbol () const}}
+\label{classWombat_1_1MamdaOptionContract_5e8339a42581c6ca70da3c7d1907a57b}
+
+
+Return the OPRA contract symbol. 
+
+\begin{Desc}
+\item[Returns:]The OPRA contract symbol. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_776da4aca200db2a474a491f4dae6edb}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getExchange@{getExchange}}
+\index{getExchange@{getExchange}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getExchange]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Contract::get\-Exchange () const}}
+\label{classWombat_1_1MamdaOptionContract_776da4aca200db2a474a491f4dae6edb}
+
+
+Return the exchange. 
+
+\begin{Desc}
+\item[Returns:]The exchange identifier. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_0ff115c7e94c4125a8a4bf11a417f072}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getExpireDate@{getExpireDate}}
+\index{getExpireDate@{getExpireDate}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getExpireDate]{\setlength{\rightskip}{0pt plus 5cm}const Mama\-Date\-Time\& Wombat::Mamda\-Option\-Contract::get\-Expire\-Date () const}}
+\label{classWombat_1_1MamdaOptionContract_0ff115c7e94c4125a8a4bf11a417f072}
+
+
+Return the expiration date. 
+
+\begin{Desc}
+\item[Returns:]The options expiration date. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_cb83dd5c1f8ceced6744ba3a44fc0d65}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getExpireDateStr@{getExpireDateStr}}
+\index{getExpireDateStr@{getExpireDateStr}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getExpireDateStr]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wombat::Mamda\-Option\-Contract::get\-Expire\-Date\-Str () const}}
+\label{classWombat_1_1MamdaOptionContract_cb83dd5c1f8ceced6744ba3a44fc0d65}
+
+
+Return the expiration date as a string. 
+
+\begin{Desc}
+\item[Returns:]The options expiration date as a string. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_8657f2b6fa3ce16032522a460e657387}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!gotExpireDate@{gotExpireDate}}
+\index{gotExpireDate@{gotExpireDate}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[gotExpireDate]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::got\-Expire\-Date () const}}
+\label{classWombat_1_1MamdaOptionContract_8657f2b6fa3ce16032522a460e657387}
+
+
+Return whether or not expiration date has been set. 
+
+\begin{Desc}
+\item[Returns:]Whether the contract has an expiration date set. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_d9d9e836fab85c7b7dc0401020dd6f46}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getStrikePrice@{getStrikePrice}}
+\index{getStrikePrice@{getStrikePrice}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getStrikePrice]{\setlength{\rightskip}{0pt plus 5cm}double Wombat::Mamda\-Option\-Contract::get\-Strike\-Price () const}}
+\label{classWombat_1_1MamdaOptionContract_d9d9e836fab85c7b7dc0401020dd6f46}
+
+
+Return the strike price. 
+
+\begin{Desc}
+\item[Returns:]The option contracts strike price. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_798b5f3f11b9578349a6503b22e3c171}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!gotStrikePrice@{gotStrikePrice}}
+\index{gotStrikePrice@{gotStrikePrice}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[gotStrikePrice]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::got\-Strike\-Price () const}}
+\label{classWombat_1_1MamdaOptionContract_798b5f3f11b9578349a6503b22e3c171}
+
+
+Return whether or not strike price has been set. 
+
+\begin{Desc}
+\item[Returns:]Whether the strike price has been set for the contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_2cc67d660671ab468738e118cc3640ce}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getPutCall@{getPutCall}}
+\index{getPutCall@{getPutCall}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getPutCall]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_ceb2ef77ec6c36b48ef57d2887d6ac49}{Mamda\-Option\-Put\-Call} Wombat::Mamda\-Option\-Contract::get\-Put\-Call () const}}
+\label{classWombat_1_1MamdaOptionContract_2cc67d660671ab468738e118cc3640ce}
+
+
+Return the put/call indicator. 
+
+\begin{Desc}
+\item[Returns:]Indicating whether this is a put or call option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_b4dc254911cac44a174f4a010dba3507}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!gotPutCall@{gotPutCall}}
+\index{gotPutCall@{gotPutCall}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[gotPutCall]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::got\-Put\-Call () const}}
+\label{classWombat_1_1MamdaOptionContract_b4dc254911cac44a174f4a010dba3507}
+
+
+Return whether or not put call has been set. 
+
+\begin{Desc}
+\item[Returns:]Whether the put/call indicator has been set for this contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_e859d329f94a7eab79a34f1db4fe5731}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getOpenInterest@{getOpenInterest}}
+\index{getOpenInterest@{getOpenInterest}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getOpenInterest]{\setlength{\rightskip}{0pt plus 5cm}uint32\_\-t Wombat::Mamda\-Option\-Contract::get\-Open\-Interest () const}}
+\label{classWombat_1_1MamdaOptionContract_e859d329f94a7eab79a34f1db4fe5731}
+
+
+Return the level of interest at opening. 
+
+\begin{Desc}
+\item[Returns:]The opening interest for the option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_15dd69320c1c03982c44b339e806d0ad}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!gotOpenInterest@{gotOpenInterest}}
+\index{gotOpenInterest@{gotOpenInterest}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[gotOpenInterest]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::got\-Open\-Interest () const}}
+\label{classWombat_1_1MamdaOptionContract_15dd69320c1c03982c44b339e806d0ad}
+
+
+Return whether or not open interest has been set. 
+
+\begin{Desc}
+\item[Returns:]Whether a value for opening interest has been set for the option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_5273af6a0f17a001ce2ea6e80621ae39}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getExerciseStyle@{getExerciseStyle}}
+\index{getExerciseStyle@{getExerciseStyle}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getExerciseStyle]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{namespaceWombat_e7be5722df9d72164d322f2b72cf8d1a}{Mamda\-Option\-Exercise\-Style} Wombat::Mamda\-Option\-Contract::get\-Exercise\-Style () const}}
+\label{classWombat_1_1MamdaOptionContract_5273af6a0f17a001ce2ea6e80621ae39}
+
+
+Return the style indicator - American(A)/European(E)/Capped(C). 
+
+\begin{Desc}
+\item[Returns:]The exercise style for the option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_1748619372a2553ccb58cc2f6bc1afd4}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!gotExerciseStyle@{gotExerciseStyle}}
+\index{gotExerciseStyle@{gotExerciseStyle}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[gotExerciseStyle]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::got\-Exercise\-Style () const}}
+\label{classWombat_1_1MamdaOptionContract_1748619372a2553ccb58cc2f6bc1afd4}
+
+
+Return whether or not exercise style has been set. 
+
+\begin{Desc}
+\item[Returns:]Whether the exercise style for the option contract has been set. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_9f56471e4fca1f924e2401ddaf257f3c}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getRecapRequired@{getRecapRequired}}
+\index{getRecapRequired@{getRecapRequired}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getRecapRequired]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::get\-Recap\-Required () const}}
+\label{classWombat_1_1MamdaOptionContract_9f56471e4fca1f924e2401ddaf257f3c}
+
+
+Get the recap required field. 
+
+Reserved for use by the {\tt \hyperlink{classWombat_1_1MamdaOptionChainListener}{Mamda\-Option\-Chain\-Listener}}.
+
+\begin{Desc}
+\item[Returns:]Whether a recap is required for this contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_722a517c5fefa5847e3c4ea8a867d06a}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!addMsgListener@{addMsgListener}}
+\index{addMsgListener@{addMsgListener}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[addMsgListener]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::add\-Msg\-Listener (\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} $\ast$ {\em listener})}}
+\label{classWombat_1_1MamdaOptionContract_722a517c5fefa5847e3c4ea8a867d06a}
+
+
+Add a generic \hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener} to this option contract. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em listener}]A instance of the listener interface. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_0b3314cdac09a861df9f12bc8ef5e510}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!addTradeHandler@{addTradeHandler}}
+\index{addTradeHandler@{addTradeHandler}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[addTradeHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::add\-Trade\-Handler (\hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaOptionContract_0b3314cdac09a861df9f12bc8ef5e510}
+
+
+Add a \hyperlink{classWombat_1_1MamdaTradeHandler}{Mamda\-Trade\-Handler} for handling trade updates to this option contract. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]A trade handler. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_c19937c97b686522612cd60faa52330b}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!addQuoteHandler@{addQuoteHandler}}
+\index{addQuoteHandler@{addQuoteHandler}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[addQuoteHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::add\-Quote\-Handler (\hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaOptionContract_c19937c97b686522612cd60faa52330b}
+
+
+Add a \hyperlink{classWombat_1_1MamdaQuoteHandler}{Mamda\-Quote\-Handler} for handling quote updates to this option contract. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]A quote handler. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_f19a17c9139d85a3caa31d2f595ff3c7}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!addFundamentalHandler@{addFundamentalHandler}}
+\index{addFundamentalHandler@{addFundamentalHandler}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[addFundamentalHandler]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::add\-Fundamental\-Handler (\hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} $\ast$ {\em handler})}}
+\label{classWombat_1_1MamdaOptionContract_f19a17c9139d85a3caa31d2f595ff3c7}
+
+
+Add a \hyperlink{classWombat_1_1MamdaFundamentalHandler}{Mamda\-Fundamental\-Handler} for handling fundamental data fields. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em handler}]A fundamental handler. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_302fbffec136a686aea50d41d31bbb33}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setCustomObject@{setCustomObject}}
+\index{setCustomObject@{setCustomObject}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setCustomObject]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Custom\-Object (void $\ast$ {\em object})}}
+\label{classWombat_1_1MamdaOptionContract_302fbffec136a686aea50d41d31bbb33}
+
+
+Add a custom object to this option contract. 
+
+Such an object might contain customer per-contract data.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em object}]Associate closure data with the option contract. \end{description}
+\end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_e360b5e6125af8ad145f2b4a36026d83}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getTradeInfo@{getTradeInfo}}
+\index{getTradeInfo@{getTradeInfo}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getTradeInfo]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaTradeRecap}{Mamda\-Trade\-Recap}\& Wombat::Mamda\-Option\-Contract::get\-Trade\-Info () const}}
+\label{classWombat_1_1MamdaOptionContract_e360b5e6125af8ad145f2b4a36026d83}
+
+
+Return the current trade fields. 
+
+\begin{Desc}
+\item[Returns:]The current trade related fields for the option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_722ecf29d9ca868a8005ee3bf97530f9}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getQuoteInfo@{getQuoteInfo}}
+\index{getQuoteInfo@{getQuoteInfo}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getQuoteInfo]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaQuoteRecap}{Mamda\-Quote\-Recap}\& Wombat::Mamda\-Option\-Contract::get\-Quote\-Info () const}}
+\label{classWombat_1_1MamdaOptionContract_722ecf29d9ca868a8005ee3bf97530f9}
+
+
+Return the current quote fields. 
+
+\begin{Desc}
+\item[Returns:]The current quote related fields for the option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_88dec6f0eef0533a71228f2c0be807c0}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getFundamentalsInfo@{getFundamentalsInfo}}
+\index{getFundamentalsInfo@{getFundamentalsInfo}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getFundamentalsInfo]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaFundamentals}{Mamda\-Fundamentals}\& Wombat::Mamda\-Option\-Contract::get\-Fundamentals\-Info () const}}
+\label{classWombat_1_1MamdaOptionContract_88dec6f0eef0533a71228f2c0be807c0}
+
+
+Return the current fundamentals fields. 
+
+\begin{Desc}
+\item[Returns:]The current fundamental fields for the option contract. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_b9989c238b0505570c490d69ada86630}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getCustomObject@{getCustomObject}}
+\index{getCustomObject@{getCustomObject}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getCustomObject]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Wombat::Mamda\-Option\-Contract::get\-Custom\-Object () const}}
+\label{classWombat_1_1MamdaOptionContract_b9989c238b0505570c490d69ada86630}
+
+
+Return the custom object. 
+
+\begin{Desc}
+\item[Returns:]The closure. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_dda8149cad3a048b3ebf56f0f5fb0a1c}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getMsgListeners@{getMsgListeners}}
+\index{getMsgListeners@{getMsgListeners}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getMsgListeners]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$\hyperlink{classWombat_1_1MamdaMsgListener}{Mamda\-Msg\-Listener}$\ast$$>$\& Wombat::Mamda\-Option\-Contract::get\-Msg\-Listeners ()}}
+\label{classWombat_1_1MamdaOptionContract_dda8149cad3a048b3ebf56f0f5fb0a1c}
+
+
+Return the vector of message listeners. 
+
+\begin{Desc}
+\item[Returns:]Vector of message listeners registered with the object. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_f6640ac35d15df14e4b044597f4bf7d0}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getTradeListener@{getTradeListener}}
+\index{getTradeListener@{getTradeListener}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getTradeListener]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaTradeListener}{Mamda\-Trade\-Listener}\& Wombat::Mamda\-Option\-Contract::get\-Trade\-Listener ()}}
+\label{classWombat_1_1MamdaOptionContract_f6640ac35d15df14e4b044597f4bf7d0}
+
+
+Return the trade listener. 
+
+\begin{Desc}
+\item[Returns:]The registered trade listener. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_956e06dfe57a24b8bfff64fbe6e8e111}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getQuoteListener@{getQuoteListener}}
+\index{getQuoteListener@{getQuoteListener}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getQuoteListener]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaQuoteListener}{Mamda\-Quote\-Listener}\& Wombat::Mamda\-Option\-Contract::get\-Quote\-Listener ()}}
+\label{classWombat_1_1MamdaOptionContract_956e06dfe57a24b8bfff64fbe6e8e111}
+
+
+Return the quote listener. 
+
+\begin{Desc}
+\item[Returns:]The registered quote listener. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_f5397ed9eaea7471258ccdbdd85fc000}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getFundamentalListener@{getFundamentalListener}}
+\index{getFundamentalListener@{getFundamentalListener}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getFundamentalListener]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classWombat_1_1MamdaFundamentalListener}{Mamda\-Fundamental\-Listener}\& Wombat::Mamda\-Option\-Contract::get\-Fundamental\-Listener ()}}
+\label{classWombat_1_1MamdaOptionContract_f5397ed9eaea7471258ccdbdd85fc000}
+
+
+Return the fundamental listener. 
+
+\begin{Desc}
+\item[Returns:]The registered fundamental listener. \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_1ce396440ba8edcee5bdb72ba372ba85}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setInView@{setInView}}
+\index{setInView@{setInView}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setInView]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-In\-View (bool {\em in\-View})}}
+\label{classWombat_1_1MamdaOptionContract_1ce396440ba8edcee5bdb72ba372ba85}
+
+
+Set whether this contract is in the \char`\"{}view\char`\"{} within the option chain. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in\-View}]Set whether this contract is in the \char`\"{}view\char`\"{} within the option chain.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_b78e238a6970d75cec187b236d693f16}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getInView@{getInView}}
+\index{getInView@{getInView}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getInView]{\setlength{\rightskip}{0pt plus 5cm}bool Wombat::Mamda\-Option\-Contract::get\-In\-View ()}}
+\label{classWombat_1_1MamdaOptionContract_b78e238a6970d75cec187b236d693f16}
+
+
+Return whether this contract is in the \char`\"{}view\char`\"{} within the option chain. 
+
+\begin{Desc}
+\item[Returns:]Whether this contract is in the \char`\"{}view\char`\"{} within the option chain.\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classWombat_1_1MamdaOptionChain}{Mamda\-Option\-Chain} \end{Desc}
+\hypertarget{classWombat_1_1MamdaOptionContract_dc8dfd209bc57a9b248180bcba1dccf3}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!getSeqNum@{getSeqNum}}
+\index{getSeqNum@{getSeqNum}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[getSeqNum]{\setlength{\rightskip}{0pt plus 5cm}int64\_\-t Wombat::Mamda\-Option\-Contract::get\-Seq\-Num ()}}
+\label{classWombat_1_1MamdaOptionContract_dc8dfd209bc57a9b248180bcba1dccf3}
+
+
+\hypertarget{classWombat_1_1MamdaOptionContract_b3fb00be49aa058bd98b12d21a535f9e}{
+\index{Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}!setSeqNum@{setSeqNum}}
+\index{setSeqNum@{setSeqNum}!Wombat::MamdaOptionContract@{Wombat::Mamda\-Option\-Contract}}
+\subsubsection[setSeqNum]{\setlength{\rightskip}{0pt plus 5cm}void Wombat::Mamda\-Option\-Contract::set\-Seq\-Num (int64\_\-t {\em num})}}
+\label{classWombat_1_1MamdaOptionContract_b3fb00be49aa058bd98b12d21a535f9e}
+
+
