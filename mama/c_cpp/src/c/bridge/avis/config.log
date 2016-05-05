@@ -1,0 +1,3 @@
+file /home/tradtech/u045594/openmama.git/openmama.git.233.current/mama/c_cpp/src/c/bridge/avis/SConscript,line 26:
+	Configure(confdir = .sconf_temp)
+
