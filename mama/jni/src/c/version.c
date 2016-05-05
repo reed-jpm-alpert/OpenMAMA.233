@@ -1,0 +1,1 @@
+const char mamajni_version[] = "@(#) openmamajni 2.3.3";
