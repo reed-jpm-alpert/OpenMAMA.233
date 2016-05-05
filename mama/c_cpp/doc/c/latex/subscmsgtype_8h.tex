@@ -1,0 +1,191 @@
+\hypertarget{subscmsgtype_8h}{
+\section{subscmsgtype.h File Reference}
+\label{subscmsgtype_8h}\index{subscmsgtype.h@{subscmsgtype.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a1dac798a83bd9bd225c7d46ccc3f16e6}{MAMA\_\-SUBSCROOT}~\char`\"{}\_\-MD\char`\"{}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a07adc4a3ce770e62cea115493fa4a641}{MAMA\_\-SUBSCMANROOT}~\char`\"{}\_\-MDSM\char`\"{}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a7105428fab0f54316112aa3b337e9674}{MAMA\_\-DATADICTROOT}~\char`\"{}\_\-MDDD\char`\"{}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a906d993741744f9dc3a07bba2722f8af}{MAMA\_\-WORLDVIEWROOT}~\char`\"{}\_\-MDWV\char`\"{}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a49e972b5ca1afab6b60c4c28452a3534}{MAMA\_\-WORLDVIEWREQUEST}~\char`\"{}\_\-MDWV.WORLDVIEW\_\-REQUEST\char`\"{}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a40b6a9294bd91bec0fc4e3f4312dc245}{MAMA\_\-WORLDVIEWUPDATE}~\char`\"{}\_\-MDWV.WORLDVIEW\_\-UPDATE\char`\"{}
+\item 
+\#define \hyperlink{subscmsgtype_8h_a03b4eda57677e61b63c7e321aba64fc4}{MAMA\_\-TIMEOUT}~(10.0)
+\item 
+\#define \hyperlink{subscmsgtype_8h_aecfaa8f1eae4305ba48d01347e00f7f9}{MAMA\_\-RETRIES}~(2)
+\item 
+\#define \hyperlink{subscmsgtype_8h_abed787cc6ee4bd42b1f7854609172ece}{MAMA\_\-REFRESHINTERVALMIN}~(5.0)
+\item 
+\#define \hyperlink{subscmsgtype_8h_ad990de2c03e2d3b221da5e6430b2aeea}{MAMA\_\-REFRESHINTERVALRAND}~(55.0)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1}{mamaSubscMsgType} \{ \par
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a7c39d7106225b7af2d4df0c4f7859177}{MAMA\_\-SUBSC\_\-SUBSCRIBE} =  0, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a9769a03a99d9a25f33dfa7f150a3cbd1}{MAMA\_\-SUBSC\_\-SNAPSHOT} =  1, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1ad57168e13567d096ed8bb73c7b59baf2}{MAMA\_\-SUBSC\_\-UNSUBSCRIBE} =  2, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a2bf00064b60bc86625da6472da05864b}{MAMA\_\-SUBSC\_\-RESUBSCRIBE} =  3, 
+\par
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1af1532b48b1383e0a66eb9e8b4a2bc5e6}{MAMA\_\-SUBSC\_\-REFRESH} =  4, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a63a461e6a2c0c70be5882314352380eb}{MAMA\_\-SUBSC\_\-DDICT\_\-SNAPSHOT} =  5, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a125672d4f895b8d72bc006a9d0cbd9e1}{MAMA\_\-SUBSC\_\-WORLDVIEW\_\-RQST} =  6, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1afa7654aec6a54aebcaf2b28d0a1469db}{MAMA\_\-SUBSC\_\-DQ\_\-SUBSCRIBER} =  7, 
+\par
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a6ffc81ebb9dc8b924232e406c4b6af19}{MAMA\_\-SUBSC\_\-DQ\_\-PUBLISHER} =  8, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a6a75e2af8239bd1c85e8770c8306f064}{MAMA\_\-SUBSC\_\-DQ\_\-NETWORK} =  9, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1ab7bd7ec9fab06c661198dab48fe827f6}{MAMA\_\-SUBSC\_\-DQ\_\-UNKNOWN} =  10, 
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a9dd0ccc4d11ec729c50fd98be2c76881}{MAMA\_\-SUBSC\_\-FEATURE\_\-SET\_\-RQST} =  11, 
+\par
+\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1aa338428501c3e357b18913d7bc30b9e4}{MAMA\_\-SUBSC\_\-DQ\_\-GROUP\_\-SUBSCRIBER} =  12
+ \}
+\begin{DoxyCompactList}\small\item\em This enumeration describes the type of subscription messsage. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL const char $\ast$ \hyperlink{subscmsgtype_8h_ad4ca11387b44c1986f664da74ac73105}{MamaSubscMsgTypeStr} (\hyperlink{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1}{mamaSubscMsgType} msgType)
+\begin{DoxyCompactList}\small\item\em Return a string representation for a subscribe message type. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{subscmsgtype_8h_a1dac798a83bd9bd225c7d46ccc3f16e6}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSCROOT@{MAMA\_\-SUBSCROOT}}
+\index{MAMA\_\-SUBSCROOT@{MAMA\_\-SUBSCROOT}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-SUBSCROOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SUBSCROOT~\char`\"{}\_\-MD\char`\"{}}}
+\label{subscmsgtype_8h_a1dac798a83bd9bd225c7d46ccc3f16e6}
+\hypertarget{subscmsgtype_8h_a07adc4a3ce770e62cea115493fa4a641}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSCMANROOT@{MAMA\_\-SUBSCMANROOT}}
+\index{MAMA\_\-SUBSCMANROOT@{MAMA\_\-SUBSCMANROOT}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-SUBSCMANROOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SUBSCMANROOT~\char`\"{}\_\-MDSM\char`\"{}}}
+\label{subscmsgtype_8h_a07adc4a3ce770e62cea115493fa4a641}
+\hypertarget{subscmsgtype_8h_a7105428fab0f54316112aa3b337e9674}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-DATADICTROOT@{MAMA\_\-DATADICTROOT}}
+\index{MAMA\_\-DATADICTROOT@{MAMA\_\-DATADICTROOT}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-DATADICTROOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DATADICTROOT~\char`\"{}\_\-MDDD\char`\"{}}}
+\label{subscmsgtype_8h_a7105428fab0f54316112aa3b337e9674}
+\hypertarget{subscmsgtype_8h_a906d993741744f9dc3a07bba2722f8af}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-WORLDVIEWROOT@{MAMA\_\-WORLDVIEWROOT}}
+\index{MAMA\_\-WORLDVIEWROOT@{MAMA\_\-WORLDVIEWROOT}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-WORLDVIEWROOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-WORLDVIEWROOT~\char`\"{}\_\-MDWV\char`\"{}}}
+\label{subscmsgtype_8h_a906d993741744f9dc3a07bba2722f8af}
+\hypertarget{subscmsgtype_8h_a49e972b5ca1afab6b60c4c28452a3534}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-WORLDVIEWREQUEST@{MAMA\_\-WORLDVIEWREQUEST}}
+\index{MAMA\_\-WORLDVIEWREQUEST@{MAMA\_\-WORLDVIEWREQUEST}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-WORLDVIEWREQUEST}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-WORLDVIEWREQUEST~\char`\"{}\_\-MDWV.WORLDVIEW\_\-REQUEST\char`\"{}}}
+\label{subscmsgtype_8h_a49e972b5ca1afab6b60c4c28452a3534}
+\hypertarget{subscmsgtype_8h_a40b6a9294bd91bec0fc4e3f4312dc245}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-WORLDVIEWUPDATE@{MAMA\_\-WORLDVIEWUPDATE}}
+\index{MAMA\_\-WORLDVIEWUPDATE@{MAMA\_\-WORLDVIEWUPDATE}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-WORLDVIEWUPDATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-WORLDVIEWUPDATE~\char`\"{}\_\-MDWV.WORLDVIEW\_\-UPDATE\char`\"{}}}
+\label{subscmsgtype_8h_a40b6a9294bd91bec0fc4e3f4312dc245}
+\hypertarget{subscmsgtype_8h_a03b4eda57677e61b63c7e321aba64fc4}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-TIMEOUT@{MAMA\_\-TIMEOUT}}
+\index{MAMA\_\-TIMEOUT@{MAMA\_\-TIMEOUT}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-TIMEOUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-TIMEOUT~(10.0)}}
+\label{subscmsgtype_8h_a03b4eda57677e61b63c7e321aba64fc4}
+\hypertarget{subscmsgtype_8h_aecfaa8f1eae4305ba48d01347e00f7f9}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-RETRIES@{MAMA\_\-RETRIES}}
+\index{MAMA\_\-RETRIES@{MAMA\_\-RETRIES}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-RETRIES}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-RETRIES~(2)}}
+\label{subscmsgtype_8h_aecfaa8f1eae4305ba48d01347e00f7f9}
+\hypertarget{subscmsgtype_8h_abed787cc6ee4bd42b1f7854609172ece}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-REFRESHINTERVALMIN@{MAMA\_\-REFRESHINTERVALMIN}}
+\index{MAMA\_\-REFRESHINTERVALMIN@{MAMA\_\-REFRESHINTERVALMIN}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-REFRESHINTERVALMIN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-REFRESHINTERVALMIN~(5.0)}}
+\label{subscmsgtype_8h_abed787cc6ee4bd42b1f7854609172ece}
+\hypertarget{subscmsgtype_8h_ad990de2c03e2d3b221da5e6430b2aeea}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-REFRESHINTERVALRAND@{MAMA\_\-REFRESHINTERVALRAND}}
+\index{MAMA\_\-REFRESHINTERVALRAND@{MAMA\_\-REFRESHINTERVALRAND}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MAMA\_\-REFRESHINTERVALRAND}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-REFRESHINTERVALRAND~(55.0)}}
+\label{subscmsgtype_8h_ad990de2c03e2d3b221da5e6430b2aeea}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1}{
+\index{subscmsgtype.h@{subscmsgtype.h}!mamaSubscMsgType@{mamaSubscMsgType}}
+\index{mamaSubscMsgType@{mamaSubscMsgType}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{mamaSubscMsgType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaSubscMsgType}}}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1}
+
+
+This enumeration describes the type of subscription messsage. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-SUBSC\_\-SUBSCRIBE@{MAMA\_\-SUBSC\_\-SUBSCRIBE}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-SUBSCRIBE@{MAMA\_\-SUBSC\_\-SUBSCRIBE}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a7c39d7106225b7af2d4df0c4f7859177}{
+MAMA\_\-SUBSC\_\-SUBSCRIBE}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a7c39d7106225b7af2d4df0c4f7859177}
+}]\index{MAMA\_\-SUBSC\_\-SNAPSHOT@{MAMA\_\-SUBSC\_\-SNAPSHOT}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-SNAPSHOT@{MAMA\_\-SUBSC\_\-SNAPSHOT}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a9769a03a99d9a25f33dfa7f150a3cbd1}{
+MAMA\_\-SUBSC\_\-SNAPSHOT}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a9769a03a99d9a25f33dfa7f150a3cbd1}
+}]\index{MAMA\_\-SUBSC\_\-UNSUBSCRIBE@{MAMA\_\-SUBSC\_\-UNSUBSCRIBE}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-UNSUBSCRIBE@{MAMA\_\-SUBSC\_\-UNSUBSCRIBE}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1ad57168e13567d096ed8bb73c7b59baf2}{
+MAMA\_\-SUBSC\_\-UNSUBSCRIBE}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1ad57168e13567d096ed8bb73c7b59baf2}
+}]\index{MAMA\_\-SUBSC\_\-RESUBSCRIBE@{MAMA\_\-SUBSC\_\-RESUBSCRIBE}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-RESUBSCRIBE@{MAMA\_\-SUBSC\_\-RESUBSCRIBE}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a2bf00064b60bc86625da6472da05864b}{
+MAMA\_\-SUBSC\_\-RESUBSCRIBE}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a2bf00064b60bc86625da6472da05864b}
+}]\index{MAMA\_\-SUBSC\_\-REFRESH@{MAMA\_\-SUBSC\_\-REFRESH}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-REFRESH@{MAMA\_\-SUBSC\_\-REFRESH}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1af1532b48b1383e0a66eb9e8b4a2bc5e6}{
+MAMA\_\-SUBSC\_\-REFRESH}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1af1532b48b1383e0a66eb9e8b4a2bc5e6}
+}]\index{MAMA\_\-SUBSC\_\-DDICT\_\-SNAPSHOT@{MAMA\_\-SUBSC\_\-DDICT\_\-SNAPSHOT}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-DDICT\_\-SNAPSHOT@{MAMA\_\-SUBSC\_\-DDICT\_\-SNAPSHOT}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a63a461e6a2c0c70be5882314352380eb}{
+MAMA\_\-SUBSC\_\-DDICT\_\-SNAPSHOT}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a63a461e6a2c0c70be5882314352380eb}
+}]\index{MAMA\_\-SUBSC\_\-WORLDVIEW\_\-RQST@{MAMA\_\-SUBSC\_\-WORLDVIEW\_\-RQST}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-WORLDVIEW\_\-RQST@{MAMA\_\-SUBSC\_\-WORLDVIEW\_\-RQST}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a125672d4f895b8d72bc006a9d0cbd9e1}{
+MAMA\_\-SUBSC\_\-WORLDVIEW\_\-RQST}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a125672d4f895b8d72bc006a9d0cbd9e1}
+}]\index{MAMA\_\-SUBSC\_\-DQ\_\-SUBSCRIBER@{MAMA\_\-SUBSC\_\-DQ\_\-SUBSCRIBER}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-DQ\_\-SUBSCRIBER@{MAMA\_\-SUBSC\_\-DQ\_\-SUBSCRIBER}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1afa7654aec6a54aebcaf2b28d0a1469db}{
+MAMA\_\-SUBSC\_\-DQ\_\-SUBSCRIBER}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1afa7654aec6a54aebcaf2b28d0a1469db}
+}]Subscriber knows it lost data itself. \index{MAMA\_\-SUBSC\_\-DQ\_\-PUBLISHER@{MAMA\_\-SUBSC\_\-DQ\_\-PUBLISHER}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-DQ\_\-PUBLISHER@{MAMA\_\-SUBSC\_\-DQ\_\-PUBLISHER}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a6ffc81ebb9dc8b924232e406c4b6af19}{
+MAMA\_\-SUBSC\_\-DQ\_\-PUBLISHER}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a6ffc81ebb9dc8b924232e406c4b6af19}
+}]Subscriber knows publisher lost data. \index{MAMA\_\-SUBSC\_\-DQ\_\-NETWORK@{MAMA\_\-SUBSC\_\-DQ\_\-NETWORK}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-DQ\_\-NETWORK@{MAMA\_\-SUBSC\_\-DQ\_\-NETWORK}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a6a75e2af8239bd1c85e8770c8306f064}{
+MAMA\_\-SUBSC\_\-DQ\_\-NETWORK}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a6a75e2af8239bd1c85e8770c8306f064}
+}]Subscriber knows network lost data. \index{MAMA\_\-SUBSC\_\-DQ\_\-UNKNOWN@{MAMA\_\-SUBSC\_\-DQ\_\-UNKNOWN}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-DQ\_\-UNKNOWN@{MAMA\_\-SUBSC\_\-DQ\_\-UNKNOWN}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1ab7bd7ec9fab06c661198dab48fe827f6}{
+MAMA\_\-SUBSC\_\-DQ\_\-UNKNOWN}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1ab7bd7ec9fab06c661198dab48fe827f6}
+}]Subscriber lost data but not know why. \index{MAMA\_\-SUBSC\_\-FEATURE\_\-SET\_\-RQST@{MAMA\_\-SUBSC\_\-FEATURE\_\-SET\_\-RQST}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-FEATURE\_\-SET\_\-RQST@{MAMA\_\-SUBSC\_\-FEATURE\_\-SET\_\-RQST}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a9dd0ccc4d11ec729c50fd98be2c76881}{
+MAMA\_\-SUBSC\_\-FEATURE\_\-SET\_\-RQST}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1a9dd0ccc4d11ec729c50fd98be2c76881}
+}]\index{MAMA\_\-SUBSC\_\-DQ\_\-GROUP\_\-SUBSCRIBER@{MAMA\_\-SUBSC\_\-DQ\_\-GROUP\_\-SUBSCRIBER}!subscmsgtype.h@{subscmsgtype.h}}\index{subscmsgtype.h@{subscmsgtype.h}!MAMA\_\-SUBSC\_\-DQ\_\-GROUP\_\-SUBSCRIBER@{MAMA\_\-SUBSC\_\-DQ\_\-GROUP\_\-SUBSCRIBER}}\item[{\em 
+\hypertarget{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1aa338428501c3e357b18913d7bc30b9e4}{
+MAMA\_\-SUBSC\_\-DQ\_\-GROUP\_\-SUBSCRIBER}
+\label{subscmsgtype_8h_a76794a93238cf7ff5786f5fbaa1065f1aa338428501c3e357b18913d7bc30b9e4}
+}]Subscriber knows it lost data itself. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{subscmsgtype_8h_ad4ca11387b44c1986f664da74ac73105}{
+\index{subscmsgtype.h@{subscmsgtype.h}!MamaSubscMsgTypeStr@{MamaSubscMsgTypeStr}}
+\index{MamaSubscMsgTypeStr@{MamaSubscMsgTypeStr}!subscmsgtype.h@{subscmsgtype.h}}
+\subsubsection[{MamaSubscMsgTypeStr}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ MamaSubscMsgTypeStr ({\bf mamaSubscMsgType} {\em msgType})}}
+\label{subscmsgtype_8h_ad4ca11387b44c1986f664da74ac73105}
+
+
+Return a string representation for a subscribe message type. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mamaSubscMsgType}]The MAMA subscribe message type\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The returned string showing the message type. 
+\end{DoxyReturn}

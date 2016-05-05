@@ -1,0 +1,651 @@
+\hypertarget{log_8h}{
+\section{log.h File Reference}
+\label{log_8h}\index{log.h@{log.h}}
+}
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$stdarg.h$>$}\par
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef const char $\ast$ \hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}
+\item 
+typedef const char va\_\-list \hyperlink{log_8h_a986333efad0b700b1263fee9227c46ea}{ap}
+\item 
+typedef const char $\ast$ \hyperlink{log_8h_af92895d60da36f417398fc072f2cab0b}{message}
+\item 
+typedef void($\ast$ \hyperlink{log_8h_a3d3e0156a2dd57bbe0467c9af8e829d3}{logSizeCbType} )(void)
+\begin{DoxyCompactList}\small\item\em Definition of a callback. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} \{ \par
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da8071a8cdf862bf38758d143bd4f74061}{MAMA\_\-LOG\_\-LEVEL\_\-OFF} =  0, 
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da8c84159954ee6c1a2cbbb25f62a21ebe}{MAMA\_\-LOG\_\-LEVEL\_\-SEVERE} =  1, 
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da9f3efe99029a1bb3efcdc1b3ccad2ed6}{MAMA\_\-LOG\_\-LEVEL\_\-ERROR} =  2, 
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da3b04362db608ae32b8ac9038bd28f95e}{MAMA\_\-LOG\_\-LEVEL\_\-WARN} =  3, 
+\par
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da4505d91fd2bd9eaba38ad8d62b3dfa01}{MAMA\_\-LOG\_\-LEVEL\_\-NORMAL} =  4, 
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da425192ad33b132e2873bfa93133022f8}{MAMA\_\-LOG\_\-LEVEL\_\-FINE} =  5, 
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84dabd3f2f7ca9fc449e44ae6d14679455b7}{MAMA\_\-LOG\_\-LEVEL\_\-FINER} =  6, 
+\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da28e93db6ec50a5826fcaa99bd073defa}{MAMA\_\-LOG\_\-LEVEL\_\-FINEST} =  7
+ \}
+\begin{DoxyCompactList}\small\item\em MAMA Log Level. \item\end{DoxyCompactList}\item 
+enum \hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864}{mamaLogFilePolicy} \{ \hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864abf351b73046867d635b2f7462feabced}{LOGFILE\_\-UNBOUNDED} =  1, 
+\hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864ab3ffa7c310118dd5c8caabbf8b127b42}{LOGFILE\_\-ROLL} =  2, 
+\hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864a4f826190a8af99765743e766ad79ec0a}{LOGFILE\_\-OVERWRITE} =  3, 
+\hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864a18ae673fca8111e8deca66f6d9e59e22}{LOGFILE\_\-USER} =  4
+ \}
+\begin{DoxyCompactList}\small\item\em MAMA Log Policy. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{log_8h_a2e52addc487edf1a6f716fff8a2d3bcf}{void} (MAMACALLTYPE $\ast$mamaLogCb)(\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level
+\begin{DoxyCompactList}\small\item\em Definition of a callback. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void MAMACALLTYPE \hyperlink{log_8h_a91b9df7dd02cf3932af9829101c09373}{mama\_\-logDefault} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}, va\_\-list \hyperlink{log_8h_a986333efad0b700b1263fee9227c46ea}{ap})
+\begin{DoxyCompactList}\small\item\em The default logging within the API unless otherwise specified. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void MAMACALLTYPE \hyperlink{log_8h_ae3964c61f193e8e7b9cf58d539ad1b7e}{mama\_\-logDefault2} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{mama_8h_af92895d60da36f417398fc072f2cab0b}{message})
+\begin{DoxyCompactList}\small\item\em Second Log Function. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_a0f09cd27d0d9a2bd6ecc69b813fb957f}{mama\_\-logStdout} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format},...)
+\begin{DoxyCompactList}\small\item\em Log to Standard Output. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void MAMACALLTYPE \hyperlink{log_8h_a8dfae35bf8e51952c0187ca0575bc9ce}{mama\_\-forceLogDefault} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}, va\_\-list \hyperlink{log_8h_a986333efad0b700b1263fee9227c46ea}{ap})
+\begin{DoxyCompactList}\small\item\em Forced Log Function. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_af94afd038e7b0f9e2ba982117f2eb97d}{mama\_\-enableLogging} (FILE $\ast$file, \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level)
+\begin{DoxyCompactList}\small\item\em Enable Logging. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a889af3d6729b2d1b273e0dc7f12f289b}{mama\_\-logToFile} (const char $\ast$file, \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level)
+\begin{DoxyCompactList}\small\item\em Behaves as \hyperlink{log_8h_af94afd038e7b0f9e2ba982117f2eb97d}{mama\_\-enableLogging()} but accepts a string representing the file location. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a0e56427e309235de84db18ab6a279434}{mama\_\-disableLogging} (void)
+\begin{DoxyCompactList}\small\item\em Disable logging. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_a8814d0ddcec3d720e973302851e9c504}{mama\_\-log} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format},...)
+\begin{DoxyCompactList}\small\item\em Used for the majority of logging within the API. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void MAMACALLTYPE \hyperlink{log_8h_aa4e193d3d3359ad8b26efb18c90597be}{mama\_\-log2} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{mama_8h_af92895d60da36f417398fc072f2cab0b}{message})
+\begin{DoxyCompactList}\small\item\em Second Log Function. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_a51bf5dcf3770587425e347a34804dbdc}{mama\_\-logVa} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}, va\_\-list args)
+\begin{DoxyCompactList}\small\item\em Used for of logging within the API. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_a9c8e11f7721c31ef47fb7e8e782104e5}{mama\_\-forceLogVa} (const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}, va\_\-list args)
+\begin{DoxyCompactList}\small\item\em Used the force logging using variable argument parameters. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_a5242ea8530a65bc554696409235e282e}{mama\_\-forceLogVaWithPrefix} (const char $\ast$prefix, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}, va\_\-list args)
+\begin{DoxyCompactList}\small\item\em Used to add a custom prefix to a log line with a variable arg list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_ab6afca3f02e7453def40d685970bd035}{mama\_\-forceLog} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format},...)
+\begin{DoxyCompactList}\small\item\em Used for of logging within the API. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{log_8h_ae06fc863cea25917fb5afbbf35786286}{mama\_\-forceLogWithPrefix} (const char $\ast$prefix, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format},...)
+\begin{DoxyCompactList}\small\item\em Used to add a custom prefix when logging a line. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a4c62fc7dfb6183fe9a225de0fd7f5662}{mama\_\-setLogCallback} (mamaLogCb callback)
+\begin{DoxyCompactList}\small\item\em Set the callback to be used for mama\_\-log calls. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a955bbe9d330a3ece3652b85c4b15b1c9}{mama\_\-setLogCallback2} (mamaLogCb2 callback)
+\begin{DoxyCompactList}\small\item\em Second set callback function. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a7c71fe2a8191f30ef93d3c759ebb1288}{mama\_\-setForceLogCallback} (mamaLogCb callback)
+\begin{DoxyCompactList}\small\item\em Set the callback to be used for mama logging. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a0f4ada8d244c17391af975e0eb863e3c}{mama\_\-setLogLevel} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level)
+\begin{DoxyCompactList}\small\item\em Sets the log level for Mama. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} \hyperlink{log_8h_a5ef2ed651e457e9df7586fbb10daf657}{mama\_\-getLogLevel} (void)
+\begin{DoxyCompactList}\small\item\em Returns the current log level for Mama. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_af0d058eaa4697d4d89598c05e24ec301}{mama\_\-setLogSize} (unsigned long \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Set the maxmum size of the log file (bytes). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_aebc16d129e9e914b8a28984732ca474c}{mama\_\-setNumLogFiles} (int numFiles)
+\begin{DoxyCompactList}\small\item\em Set the number of rolled logfiles to keep before overwriting. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_ad52de4786c3b2804b8ad604899bbd9ad}{mama\_\-setLogFilePolicy} (\hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864}{mamaLogFilePolicy} policy)
+\begin{DoxyCompactList}\small\item\em Set the policy regarding how to handle files when Max file size is reached. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a7230b092919ff2912a08adde31ff051f}{mama\_\-setAppendToLogFile} (int append)
+\begin{DoxyCompactList}\small\item\em Set append to existing log file. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{log_8h_a934f11ef6c7da5d2bb6b681714f1adfa}{mama\_\-loggingToFile} (void)
+\begin{DoxyCompactList}\small\item\em Return status of loggingToFile. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_aabc1f28ddd3c55c5a63f4f5427e871bb}{mama\_\-setLogSizeCb} (\hyperlink{log_8h_a3d3e0156a2dd57bbe0467c9af8e829d3}{logSizeCbType} logCallbacks)
+\begin{DoxyCompactList}\small\item\em Set a callback for when the max log size is reached. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{log_8h_a0bd2b2791af69d2a17e231b236f8f98e}{mama\_\-logLevelToString} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level)
+\begin{DoxyCompactList}\small\item\em Return string version of log level. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{log_8h_ac8ec79752273465f3a9cfc8b61d02dce}{mama\_\-tryStringToLogLevel} (const char $\ast$s, \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} $\ast$level)
+\begin{DoxyCompactList}\small\item\em Try to convert string to log level. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{log_8h_ac20e11a17e0913effa8405d217658219}{mama\_\-logPolicyToString} (\hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864}{mamaLogFilePolicy} level)
+\begin{DoxyCompactList}\small\item\em Return string version of log policy. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{log_8h_ab06208e67f2e16b50eecb2e34975331f}{mama\_\-tryStringToLogPolicy} (const char $\ast$s, \hyperlink{log_8h_af5fc068187b17a27a6047f52dedc6864}{mamaLogFilePolicy} $\ast$policy)
+\begin{DoxyCompactList}\small\item\em Try to convert string to log policy. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{log_8h_a2aff3e9a026a17cba0df8b25dbef4d01}{mama\_\-logIncrementVerbosity} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} $\ast$level)
+\begin{DoxyCompactList}\small\item\em Increase by one log level the verbosity of a MamaLogLevel variable. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{log_8h_a8c51d082032af48da56323f1ac5bb550}{mama\_\-logDecrementVerbosity} (\hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} $\ast$level)
+\begin{DoxyCompactList}\small\item\em Decrease by one log level the verbosity of a MamaLogLevel variable. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{log_8h_a3a865fe14a15e0dc351667a52d2924e0}{mama\_\-logForceRollLogFiles} (void)
+\begin{DoxyCompactList}\small\item\em Force rolling the log file. \item\end{DoxyCompactList}\item 
+void \hyperlink{log_8h_a8dc339595e7a1bb3cee7bbb8a7ea3812}{mama\_\-logDestroy} (void)
+\begin{DoxyCompactList}\small\item\em Destroy memory held by the logging. \item\end{DoxyCompactList}\item 
+void \hyperlink{log_8h_a0601f410806ed53c75b77fa774603e16}{mama\_\-loginit} (void)
+\begin{DoxyCompactList}\small\item\em Setup MAMA Logging. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} \hyperlink{log_8h_a4efbb877b2349dad6dc6b22e74938318}{gMamaLogLevel}
+\begin{DoxyCompactList}\small\item\em The current log level within the API deprecated -\/ The helper functions should be used instead of this. \item\end{DoxyCompactList}\item 
+MAMAExpDLL FILE $\ast$ \hyperlink{log_8h_a36f02c28bfa38023451796e7dffa1f15}{gMamaLogFile}
+\begin{DoxyCompactList}\small\item\em The file to which all logging will be written by default deprecated -\/ The helper functions should be used instead of this. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{
+\index{log.h@{log.h}!format@{format}}
+\index{format@{format}!log.h@{log.h}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$ {\bf format}}}
+\label{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}
+\hypertarget{log_8h_a986333efad0b700b1263fee9227c46ea}{
+\index{log.h@{log.h}!ap@{ap}}
+\index{ap@{ap}!log.h@{log.h}}
+\subsubsection[{ap}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char va\_\-list {\bf ap}}}
+\label{log_8h_a986333efad0b700b1263fee9227c46ea}
+\hypertarget{log_8h_af92895d60da36f417398fc072f2cab0b}{
+\index{log.h@{log.h}!message@{message}}
+\index{message@{message}!log.h@{log.h}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$ {\bf message}}}
+\label{log_8h_af92895d60da36f417398fc072f2cab0b}
+\hypertarget{log_8h_a3d3e0156a2dd57bbe0467c9af8e829d3}{
+\index{log.h@{log.h}!logSizeCbType@{logSizeCbType}}
+\index{logSizeCbType@{logSizeCbType}!log.h@{log.h}}
+\subsubsection[{logSizeCbType}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf logSizeCbType})(void)}}
+\label{log_8h_a3d3e0156a2dd57bbe0467c9af8e829d3}
+
+
+Definition of a callback. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{
+\index{log.h@{log.h}!MamaLogLevel@{MamaLogLevel}}
+\index{MamaLogLevel@{MamaLogLevel}!log.h@{log.h}}
+\subsubsection[{MamaLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MamaLogLevel}}}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}
+
+
+MAMA Log Level. The level of detail when logging is enabled within the API \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-LOG\_\-LEVEL\_\-OFF@{MAMA\_\-LOG\_\-LEVEL\_\-OFF}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-OFF@{MAMA\_\-LOG\_\-LEVEL\_\-OFF}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da8071a8cdf862bf38758d143bd4f74061}{
+MAMA\_\-LOG\_\-LEVEL\_\-OFF}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da8071a8cdf862bf38758d143bd4f74061}
+}]No logging. \index{MAMA\_\-LOG\_\-LEVEL\_\-SEVERE@{MAMA\_\-LOG\_\-LEVEL\_\-SEVERE}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-SEVERE@{MAMA\_\-LOG\_\-LEVEL\_\-SEVERE}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da8c84159954ee6c1a2cbbb25f62a21ebe}{
+MAMA\_\-LOG\_\-LEVEL\_\-SEVERE}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da8c84159954ee6c1a2cbbb25f62a21ebe}
+}]Severe logging level. \index{MAMA\_\-LOG\_\-LEVEL\_\-ERROR@{MAMA\_\-LOG\_\-LEVEL\_\-ERROR}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-ERROR@{MAMA\_\-LOG\_\-LEVEL\_\-ERROR}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da9f3efe99029a1bb3efcdc1b3ccad2ed6}{
+MAMA\_\-LOG\_\-LEVEL\_\-ERROR}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da9f3efe99029a1bb3efcdc1b3ccad2ed6}
+}]Error logging level. \index{MAMA\_\-LOG\_\-LEVEL\_\-WARN@{MAMA\_\-LOG\_\-LEVEL\_\-WARN}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-WARN@{MAMA\_\-LOG\_\-LEVEL\_\-WARN}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da3b04362db608ae32b8ac9038bd28f95e}{
+MAMA\_\-LOG\_\-LEVEL\_\-WARN}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da3b04362db608ae32b8ac9038bd28f95e}
+}]Warning logging level. \index{MAMA\_\-LOG\_\-LEVEL\_\-NORMAL@{MAMA\_\-LOG\_\-LEVEL\_\-NORMAL}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-NORMAL@{MAMA\_\-LOG\_\-LEVEL\_\-NORMAL}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da4505d91fd2bd9eaba38ad8d62b3dfa01}{
+MAMA\_\-LOG\_\-LEVEL\_\-NORMAL}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da4505d91fd2bd9eaba38ad8d62b3dfa01}
+}]Normal log level. \index{MAMA\_\-LOG\_\-LEVEL\_\-FINE@{MAMA\_\-LOG\_\-LEVEL\_\-FINE}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-FINE@{MAMA\_\-LOG\_\-LEVEL\_\-FINE}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da425192ad33b132e2873bfa93133022f8}{
+MAMA\_\-LOG\_\-LEVEL\_\-FINE}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da425192ad33b132e2873bfa93133022f8}
+}]Start/Shutdown logging level. \index{MAMA\_\-LOG\_\-LEVEL\_\-FINER@{MAMA\_\-LOG\_\-LEVEL\_\-FINER}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-FINER@{MAMA\_\-LOG\_\-LEVEL\_\-FINER}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84dabd3f2f7ca9fc449e44ae6d14679455b7}{
+MAMA\_\-LOG\_\-LEVEL\_\-FINER}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84dabd3f2f7ca9fc449e44ae6d14679455b7}
+}]Object creation logging level. \index{MAMA\_\-LOG\_\-LEVEL\_\-FINEST@{MAMA\_\-LOG\_\-LEVEL\_\-FINEST}!log.h@{log.h}}\index{log.h@{log.h}!MAMA\_\-LOG\_\-LEVEL\_\-FINEST@{MAMA\_\-LOG\_\-LEVEL\_\-FINEST}}\item[{\em 
+\hypertarget{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da28e93db6ec50a5826fcaa99bd073defa}{
+MAMA\_\-LOG\_\-LEVEL\_\-FINEST}
+\label{log_8h_a58a1d8653041cc183e2d5f2a8c11b84da28e93db6ec50a5826fcaa99bd073defa}
+}]Message logging level. \end{description}
+\end{Desc}
+
+\hypertarget{log_8h_af5fc068187b17a27a6047f52dedc6864}{
+\index{log.h@{log.h}!mamaLogFilePolicy@{mamaLogFilePolicy}}
+\index{mamaLogFilePolicy@{mamaLogFilePolicy}!log.h@{log.h}}
+\subsubsection[{mamaLogFilePolicy}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaLogFilePolicy}}}
+\label{log_8h_af5fc068187b17a27a6047f52dedc6864}
+
+
+MAMA Log Policy. The policy to control log file size \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{LOGFILE\_\-UNBOUNDED@{LOGFILE\_\-UNBOUNDED}!log.h@{log.h}}\index{log.h@{log.h}!LOGFILE\_\-UNBOUNDED@{LOGFILE\_\-UNBOUNDED}}\item[{\em 
+\hypertarget{log_8h_af5fc068187b17a27a6047f52dedc6864abf351b73046867d635b2f7462feabced}{
+LOGFILE\_\-UNBOUNDED}
+\label{log_8h_af5fc068187b17a27a6047f52dedc6864abf351b73046867d635b2f7462feabced}
+}]Default -\/ No restrictions. \index{LOGFILE\_\-ROLL@{LOGFILE\_\-ROLL}!log.h@{log.h}}\index{log.h@{log.h}!LOGFILE\_\-ROLL@{LOGFILE\_\-ROLL}}\item[{\em 
+\hypertarget{log_8h_af5fc068187b17a27a6047f52dedc6864ab3ffa7c310118dd5c8caabbf8b127b42}{
+LOGFILE\_\-ROLL}
+\label{log_8h_af5fc068187b17a27a6047f52dedc6864ab3ffa7c310118dd5c8caabbf8b127b42}
+}]Logfile will roll. \index{LOGFILE\_\-OVERWRITE@{LOGFILE\_\-OVERWRITE}!log.h@{log.h}}\index{log.h@{log.h}!LOGFILE\_\-OVERWRITE@{LOGFILE\_\-OVERWRITE}}\item[{\em 
+\hypertarget{log_8h_af5fc068187b17a27a6047f52dedc6864a4f826190a8af99765743e766ad79ec0a}{
+LOGFILE\_\-OVERWRITE}
+\label{log_8h_af5fc068187b17a27a6047f52dedc6864a4f826190a8af99765743e766ad79ec0a}
+}]Logfile will overwrite. \index{LOGFILE\_\-USER@{LOGFILE\_\-USER}!log.h@{log.h}}\index{log.h@{log.h}!LOGFILE\_\-USER@{LOGFILE\_\-USER}}\item[{\em 
+\hypertarget{log_8h_af5fc068187b17a27a6047f52dedc6864a18ae673fca8111e8deca66f6d9e59e22}{
+LOGFILE\_\-USER}
+\label{log_8h_af5fc068187b17a27a6047f52dedc6864a18ae673fca8111e8deca66f6d9e59e22}
+}]User defined callback. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{log_8h_a2e52addc487edf1a6f716fff8a2d3bcf}{
+\index{log.h@{log.h}!void@{void}}
+\index{void@{void}!log.h@{log.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em mamaLogCb})}}
+\label{log_8h_a2e52addc487edf1a6f716fff8a2d3bcf}
+
+
+Definition of a callback. \hypertarget{log_8h_a91b9df7dd02cf3932af9829101c09373}{
+\index{log.h@{log.h}!mama\_\-logDefault@{mama\_\-logDefault}}
+\index{mama\_\-logDefault@{mama\_\-logDefault}!log.h@{log.h}}
+\subsubsection[{mama\_\-logDefault}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void MAMACALLTYPE mama\_\-logDefault ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/  va\_\-list {\em ap})}}
+\label{log_8h_a91b9df7dd02cf3932af9829101c09373}
+
+
+The default logging within the API unless otherwise specified. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em ap}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_ae3964c61f193e8e7b9cf58d539ad1b7e}{
+\index{log.h@{log.h}!mama\_\-logDefault2@{mama\_\-logDefault2}}
+\index{mama\_\-logDefault2@{mama\_\-logDefault2}!log.h@{log.h}}
+\subsubsection[{mama\_\-logDefault2}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void MAMACALLTYPE mama\_\-logDefault2 ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em message})}}
+\label{log_8h_ae3964c61f193e8e7b9cf58d539ad1b7e}
+
+
+Second Log Function. This second logging function takes only a message and not a format string with a variable argument list. It is required for interoperability with all platforms that do not support C variable argument list, (e.g. .Net). Other than that it performs in exactly the same way as the first.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em message}]The message to log. \end{DoxyParams}
+\hypertarget{log_8h_a0f09cd27d0d9a2bd6ecc69b813fb957f}{
+\index{log.h@{log.h}!mama\_\-logStdout@{mama\_\-logStdout}}
+\index{mama\_\-logStdout@{mama\_\-logStdout}!log.h@{log.h}}
+\subsubsection[{mama\_\-logStdout}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-logStdout ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{log_8h_a0f09cd27d0d9a2bd6ecc69b813fb957f}
+
+
+Log to Standard Output. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em ...}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_a8dfae35bf8e51952c0187ca0575bc9ce}{
+\index{log.h@{log.h}!mama\_\-forceLogDefault@{mama\_\-forceLogDefault}}
+\index{mama\_\-forceLogDefault@{mama\_\-forceLogDefault}!log.h@{log.h}}
+\subsubsection[{mama\_\-forceLogDefault}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void MAMACALLTYPE mama\_\-forceLogDefault ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/  va\_\-list {\em ap})}}
+\label{log_8h_a8dfae35bf8e51952c0187ca0575bc9ce}
+
+
+Forced Log Function. The default function used within the API for the mama\_\-forceLog function pointer. If no logfile is available logging it to stderr.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em ap}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_af94afd038e7b0f9e2ba982117f2eb97d}{
+\index{log.h@{log.h}!mama\_\-enableLogging@{mama\_\-enableLogging}}
+\index{mama\_\-enableLogging@{mama\_\-enableLogging}!log.h@{log.h}}
+\subsubsection[{mama\_\-enableLogging}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-enableLogging (FILE $\ast$ {\em file}, \/  {\bf MamaLogLevel} {\em level})}}
+\label{log_8h_af94afd038e7b0f9e2ba982117f2eb97d}
+
+
+Enable Logging. No per-\/message or per-\/tick messages appear at {\ttfamily WOMBAT\_\-LOG\_\-LEVEL\_\-FINE}. {\ttfamily WOMBAT\_\-LOG\_\-LEVEL\_\-FINER} and {\ttfamily WOMBAT\_\-LOG\_\-LEVEL\_\-FINEST} provide successively more detailed logging.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em file}]File to write to. \item[\mbox{$\leftarrow$} {\em level}]Output level.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a889af3d6729b2d1b273e0dc7f12f289b}{
+\index{log.h@{log.h}!mama\_\-logToFile@{mama\_\-logToFile}}
+\index{mama\_\-logToFile@{mama\_\-logToFile}!log.h@{log.h}}
+\subsubsection[{mama\_\-logToFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-logToFile (const char $\ast$ {\em file}, \/  {\bf MamaLogLevel} {\em level})}}
+\label{log_8h_a889af3d6729b2d1b273e0dc7f12f289b}
+
+
+Behaves as \hyperlink{log_8h_af94afd038e7b0f9e2ba982117f2eb97d}{mama\_\-enableLogging()} but accepts a string representing the file location. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em file}]The path to the file. Can be relative, absolute or on \$WOMBAT\_\-PATH. \item[\mbox{$\leftarrow$} {\em level}]The level at which the API should log messages.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-IO\_\-ERROR MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a0e56427e309235de84db18ab6a279434}{
+\index{log.h@{log.h}!mama\_\-disableLogging@{mama\_\-disableLogging}}
+\index{mama\_\-disableLogging@{mama\_\-disableLogging}!log.h@{log.h}}
+\subsubsection[{mama\_\-disableLogging}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-disableLogging (void)}}
+\label{log_8h_a0e56427e309235de84db18ab6a279434}
+
+
+Disable logging. \begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a8814d0ddcec3d720e973302851e9c504}{
+\index{log.h@{log.h}!mama\_\-log@{mama\_\-log}}
+\index{mama\_\-log@{mama\_\-log}!log.h@{log.h}}
+\subsubsection[{mama\_\-log}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-log ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{log_8h_a8814d0ddcec3d720e973302851e9c504}
+
+
+Used for the majority of logging within the API. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em ...}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_aa4e193d3d3359ad8b26efb18c90597be}{
+\index{log.h@{log.h}!mama\_\-log2@{mama\_\-log2}}
+\index{mama\_\-log2@{mama\_\-log2}!log.h@{log.h}}
+\subsubsection[{mama\_\-log2}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void MAMACALLTYPE mama\_\-log2 ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em message})}}
+\label{log_8h_aa4e193d3d3359ad8b26efb18c90597be}
+
+
+Second Log Function. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em message}]The message it log. \end{DoxyParams}
+\hypertarget{log_8h_a51bf5dcf3770587425e347a34804dbdc}{
+\index{log.h@{log.h}!mama\_\-logVa@{mama\_\-logVa}}
+\index{mama\_\-logVa@{mama\_\-logVa}!log.h@{log.h}}
+\subsubsection[{mama\_\-logVa}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-logVa ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/  va\_\-list {\em args})}}
+\label{log_8h_a51bf5dcf3770587425e347a34804dbdc}
+
+
+Used for of logging within the API. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em args}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_a9c8e11f7721c31ef47fb7e8e782104e5}{
+\index{log.h@{log.h}!mama\_\-forceLogVa@{mama\_\-forceLogVa}}
+\index{mama\_\-forceLogVa@{mama\_\-forceLogVa}!log.h@{log.h}}
+\subsubsection[{mama\_\-forceLogVa}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-forceLogVa (const char $\ast$ {\em format}, \/  va\_\-list {\em args})}}
+\label{log_8h_a9c8e11f7721c31ef47fb7e8e782104e5}
+
+
+Used the force logging using variable argument parameters. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em args}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_a5242ea8530a65bc554696409235e282e}{
+\index{log.h@{log.h}!mama\_\-forceLogVaWithPrefix@{mama\_\-forceLogVaWithPrefix}}
+\index{mama\_\-forceLogVaWithPrefix@{mama\_\-forceLogVaWithPrefix}!log.h@{log.h}}
+\subsubsection[{mama\_\-forceLogVaWithPrefix}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-forceLogVaWithPrefix (const char $\ast$ {\em prefix}, \/  const char $\ast$ {\em format}, \/  va\_\-list {\em args})}}
+\label{log_8h_a5242ea8530a65bc554696409235e282e}
+
+
+Used to add a custom prefix to a log line with a variable arg list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prefix}]The prefix to prepend to the log line. \item[\mbox{$\leftarrow$} {\em format}]The format of the log message. \item[\mbox{$\leftarrow$} {\em args}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_ab6afca3f02e7453def40d685970bd035}{
+\index{log.h@{log.h}!mama\_\-forceLog@{mama\_\-forceLog}}
+\index{mama\_\-forceLog@{mama\_\-forceLog}!log.h@{log.h}}
+\subsubsection[{mama\_\-forceLog}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-forceLog ({\bf MamaLogLevel} {\em level}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{log_8h_ab6afca3f02e7453def40d685970bd035}
+
+
+Used for of logging within the API. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level. \item[\mbox{$\leftarrow$} {\em format}]The format of log message. \item[\mbox{$\leftarrow$} {\em ...}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_ae06fc863cea25917fb5afbbf35786286}{
+\index{log.h@{log.h}!mama\_\-forceLogWithPrefix@{mama\_\-forceLogWithPrefix}}
+\index{mama\_\-forceLogWithPrefix@{mama\_\-forceLogWithPrefix}!log.h@{log.h}}
+\subsubsection[{mama\_\-forceLogWithPrefix}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-forceLogWithPrefix (const char $\ast$ {\em prefix}, \/  const char $\ast$ {\em format}, \/   {\em ...})}}
+\label{log_8h_ae06fc863cea25917fb5afbbf35786286}
+
+
+Used to add a custom prefix when logging a line. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em prefix}]The prefix to prepend to the log line. \item[\mbox{$\leftarrow$} {\em format}]The format of the log message. \item[\mbox{$\leftarrow$} {\em ...}]Variable argument list. \end{DoxyParams}
+\hypertarget{log_8h_a4c62fc7dfb6183fe9a225de0fd7f5662}{
+\index{log.h@{log.h}!mama\_\-setLogCallback@{mama\_\-setLogCallback}}
+\index{mama\_\-setLogCallback@{mama\_\-setLogCallback}!log.h@{log.h}}
+\subsubsection[{mama\_\-setLogCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setLogCallback (mamaLogCb {\em callback})}}
+\label{log_8h_a4c62fc7dfb6183fe9a225de0fd7f5662}
+
+
+Set the callback to be used for mama\_\-log calls. If not set then mama\_\-logDefault will be used.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em callback}]The callback to be set\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a955bbe9d330a3ece3652b85c4b15b1c9}{
+\index{log.h@{log.h}!mama\_\-setLogCallback2@{mama\_\-setLogCallback2}}
+\index{mama\_\-setLogCallback2@{mama\_\-setLogCallback2}!log.h@{log.h}}
+\subsubsection[{mama\_\-setLogCallback2}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setLogCallback2 (mamaLogCb2 {\em callback})}}
+\label{log_8h_a955bbe9d330a3ece3652b85c4b15b1c9}
+
+
+Second set callback function. Set the callback to be used for mama\_\-log calls. This function will set a log callback that receives a formatted string and not a variable argument list. This function is used mainly to support managed clients.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em callback}]The callback to be used. Pass NULL to restore the mama\_\-logDefault function.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a7c71fe2a8191f30ef93d3c759ebb1288}{
+\index{log.h@{log.h}!mama\_\-setForceLogCallback@{mama\_\-setForceLogCallback}}
+\index{mama\_\-setForceLogCallback@{mama\_\-setForceLogCallback}!log.h@{log.h}}
+\subsubsection[{mama\_\-setForceLogCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setForceLogCallback (mamaLogCb {\em callback})}}
+\label{log_8h_a7c71fe2a8191f30ef93d3c759ebb1288}
+
+
+Set the callback to be used for mama logging. If not set then mama\_\-ForceLogDefault will be used.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em callback}]Callback to be set.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a0f4ada8d244c17391af975e0eb863e3c}{
+\index{log.h@{log.h}!mama\_\-setLogLevel@{mama\_\-setLogLevel}}
+\index{mama\_\-setLogLevel@{mama\_\-setLogLevel}!log.h@{log.h}}
+\subsubsection[{mama\_\-setLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setLogLevel ({\bf MamaLogLevel} {\em level})}}
+\label{log_8h_a0f4ada8d244c17391af975e0eb863e3c}
+
+
+Sets the log level for Mama. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The log level to be set.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a5ef2ed651e457e9df7586fbb10daf657}{
+\index{log.h@{log.h}!mama\_\-getLogLevel@{mama\_\-getLogLevel}}
+\index{mama\_\-getLogLevel@{mama\_\-getLogLevel}!log.h@{log.h}}
+\subsubsection[{mama\_\-getLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf MamaLogLevel} mama\_\-getLogLevel (void)}}
+\label{log_8h_a5ef2ed651e457e9df7586fbb10daf657}
+
+
+Returns the current log level for Mama. \begin{DoxyReturn}{Returns}
+MamaLogLevel. 
+\end{DoxyReturn}
+\hypertarget{log_8h_af0d058eaa4697d4d89598c05e24ec301}{
+\index{log.h@{log.h}!mama\_\-setLogSize@{mama\_\-setLogSize}}
+\index{mama\_\-setLogSize@{mama\_\-setLogSize}!log.h@{log.h}}
+\subsubsection[{mama\_\-setLogSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setLogSize (unsigned long {\em size})}}
+\label{log_8h_af0d058eaa4697d4d89598c05e24ec301}
+
+
+Set the maxmum size of the log file (bytes). When this size is reached the logsize callback is called, or if no callback is set then the default action is to overwrite file from the start. Default max size is 500 Mb
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em size}]The max size of a logfile\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_aebc16d129e9e914b8a28984732ca474c}{
+\index{log.h@{log.h}!mama\_\-setNumLogFiles@{mama\_\-setNumLogFiles}}
+\index{mama\_\-setNumLogFiles@{mama\_\-setNumLogFiles}!log.h@{log.h}}
+\subsubsection[{mama\_\-setNumLogFiles}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setNumLogFiles (int {\em numFiles})}}
+\label{log_8h_aebc16d129e9e914b8a28984732ca474c}
+
+
+Set the number of rolled logfiles to keep before overwriting. Default is 10.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em numFiles}]The number of files to keep\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_ad52de4786c3b2804b8ad604899bbd9ad}{
+\index{log.h@{log.h}!mama\_\-setLogFilePolicy@{mama\_\-setLogFilePolicy}}
+\index{mama\_\-setLogFilePolicy@{mama\_\-setLogFilePolicy}!log.h@{log.h}}
+\subsubsection[{mama\_\-setLogFilePolicy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setLogFilePolicy ({\bf mamaLogFilePolicy} {\em policy})}}
+\label{log_8h_ad52de4786c3b2804b8ad604899bbd9ad}
+
+
+Set the policy regarding how to handle files when Max file size is reached. Default is LOGFILE\_\-UNBOUNDED.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em policy}]The MAMA logfile policy to use.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a7230b092919ff2912a08adde31ff051f}{
+\index{log.h@{log.h}!mama\_\-setAppendToLogFile@{mama\_\-setAppendToLogFile}}
+\index{mama\_\-setAppendToLogFile@{mama\_\-setAppendToLogFile}!log.h@{log.h}}
+\subsubsection[{mama\_\-setAppendToLogFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setAppendToLogFile (int {\em append})}}
+\label{log_8h_a7230b092919ff2912a08adde31ff051f}
+
+
+Set append to existing log file. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em append}]Boolean value indicating whether to append to the logfile.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a934f11ef6c7da5d2bb6b681714f1adfa}{
+\index{log.h@{log.h}!mama\_\-loggingToFile@{mama\_\-loggingToFile}}
+\index{mama\_\-loggingToFile@{mama\_\-loggingToFile}!log.h@{log.h}}
+\subsubsection[{mama\_\-loggingToFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mama\_\-loggingToFile (void)}}
+\label{log_8h_a934f11ef6c7da5d2bb6b681714f1adfa}
+
+
+Return status of loggingToFile. \begin{DoxyReturn}{Returns}
+Boolean value indication whether logginToFile is set. 
+\end{DoxyReturn}
+\hypertarget{log_8h_aabc1f28ddd3c55c5a63f4f5427e871bb}{
+\index{log.h@{log.h}!mama\_\-setLogSizeCb@{mama\_\-setLogSizeCb}}
+\index{mama\_\-setLogSizeCb@{mama\_\-setLogSizeCb}!log.h@{log.h}}
+\subsubsection[{mama\_\-setLogSizeCb}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setLogSizeCb ({\bf logSizeCbType} {\em logCallbacks})}}
+\label{log_8h_aabc1f28ddd3c55c5a63f4f5427e871bb}
+
+
+Set a callback for when the max log size is reached. This can be used to override the default action which is to wrap the file and continue logging at the beginning
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em logCallbacks}]The log size calback to be set\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-PLATFORM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{log_8h_a0bd2b2791af69d2a17e231b236f8f98e}{
+\index{log.h@{log.h}!mama\_\-logLevelToString@{mama\_\-logLevelToString}}
+\index{mama\_\-logLevelToString@{mama\_\-logLevelToString}!log.h@{log.h}}
+\subsubsection[{mama\_\-logLevelToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mama\_\-logLevelToString ({\bf MamaLogLevel} {\em level})}}
+\label{log_8h_a0bd2b2791af69d2a17e231b236f8f98e}
+
+
+Return string version of log level. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The level to return as a string value. \end{DoxyParams}
+\hypertarget{log_8h_ac8ec79752273465f3a9cfc8b61d02dce}{
+\index{log.h@{log.h}!mama\_\-tryStringToLogLevel@{mama\_\-tryStringToLogLevel}}
+\index{mama\_\-tryStringToLogLevel@{mama\_\-tryStringToLogLevel}!log.h@{log.h}}
+\subsubsection[{mama\_\-tryStringToLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mama\_\-tryStringToLogLevel (const char $\ast$ {\em s}, \/  {\bf MamaLogLevel} $\ast$ {\em level})}}
+\label{log_8h_ac8ec79752273465f3a9cfc8b61d02dce}
+
+
+Try to convert string to log level. Return non-\/zero for success, zero for failure. The string comparison is case insensitive.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em s}]The string representation of a log level.\item[\mbox{$\rightarrow$} {\em level}]The MAMA log level equivalent. \end{DoxyParams}
+\hypertarget{log_8h_ac20e11a17e0913effa8405d217658219}{
+\index{log.h@{log.h}!mama\_\-logPolicyToString@{mama\_\-logPolicyToString}}
+\index{mama\_\-logPolicyToString@{mama\_\-logPolicyToString}!log.h@{log.h}}
+\subsubsection[{mama\_\-logPolicyToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mama\_\-logPolicyToString ({\bf mamaLogFilePolicy} {\em level})}}
+\label{log_8h_ac20e11a17e0913effa8405d217658219}
+
+
+Return string version of log policy. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The MAMA logfile policy to convert into its string equi valent. \end{DoxyParams}
+\hypertarget{log_8h_ab06208e67f2e16b50eecb2e34975331f}{
+\index{log.h@{log.h}!mama\_\-tryStringToLogPolicy@{mama\_\-tryStringToLogPolicy}}
+\index{mama\_\-tryStringToLogPolicy@{mama\_\-tryStringToLogPolicy}!log.h@{log.h}}
+\subsubsection[{mama\_\-tryStringToLogPolicy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mama\_\-tryStringToLogPolicy (const char $\ast$ {\em s}, \/  {\bf mamaLogFilePolicy} $\ast$ {\em policy})}}
+\label{log_8h_ab06208e67f2e16b50eecb2e34975331f}
+
+
+Try to convert string to log policy. Return non-\/zero for success, zero for failure. The string comparison is case insensitive.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em s}]The string representation of a MAMA logfile policy.\item[\mbox{$\rightarrow$} {\em policy}]The MAMA logfile policy string equivalent. \end{DoxyParams}
+\hypertarget{log_8h_a2aff3e9a026a17cba0df8b25dbef4d01}{
+\index{log.h@{log.h}!mama\_\-logIncrementVerbosity@{mama\_\-logIncrementVerbosity}}
+\index{mama\_\-logIncrementVerbosity@{mama\_\-logIncrementVerbosity}!log.h@{log.h}}
+\subsubsection[{mama\_\-logIncrementVerbosity}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mama\_\-logIncrementVerbosity ({\bf MamaLogLevel} $\ast$ {\em level})}}
+\label{log_8h_a2aff3e9a026a17cba0df8b25dbef4d01}
+
+
+Increase by one log level the verbosity of a MamaLogLevel variable. If the level is already at the maximum verbosity it will be unchanged after calling the function, otherwise the level will be incremented. Returns zero if level is not changed, or non-\/zero if it is changed If an unrecognized level is passed, the function will return non-\/zero and the variable will be set to the minimum verbosity
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The MAMA Log level to increment.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value, 1 it the log level was incremented successfully. 
+\end{DoxyReturn}
+\hypertarget{log_8h_a8c51d082032af48da56323f1ac5bb550}{
+\index{log.h@{log.h}!mama\_\-logDecrementVerbosity@{mama\_\-logDecrementVerbosity}}
+\index{mama\_\-logDecrementVerbosity@{mama\_\-logDecrementVerbosity}!log.h@{log.h}}
+\subsubsection[{mama\_\-logDecrementVerbosity}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mama\_\-logDecrementVerbosity ({\bf MamaLogLevel} $\ast$ {\em level})}}
+\label{log_8h_a8c51d082032af48da56323f1ac5bb550}
+
+
+Decrease by one log level the verbosity of a MamaLogLevel variable. If the level is already at the minimum verbosity it will be unchanged after calling the function, otherwise the level will be decremented. Returns zero if level is not changed, or non-\/zero if it is changed If an unrecognized level is passed, the function will return non-\/zero and the variable will be set to the maximum verbosity
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em level}]The MAMA Log level to increment.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean value, 1 it the log level was decremented successfully. 
+\end{DoxyReturn}
+\hypertarget{log_8h_a3a865fe14a15e0dc351667a52d2924e0}{
+\index{log.h@{log.h}!mama\_\-logForceRollLogFiles@{mama\_\-logForceRollLogFiles}}
+\index{mama\_\-logForceRollLogFiles@{mama\_\-logForceRollLogFiles}!log.h@{log.h}}
+\subsubsection[{mama\_\-logForceRollLogFiles}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-logForceRollLogFiles (void)}}
+\label{log_8h_a3a865fe14a15e0dc351667a52d2924e0}
+
+
+Force rolling the log file. \begin{DoxyReturn}{Returns}
+The status of the operation. 
+\end{DoxyReturn}
+\hypertarget{log_8h_a8dc339595e7a1bb3cee7bbb8a7ea3812}{
+\index{log.h@{log.h}!mama\_\-logDestroy@{mama\_\-logDestroy}}
+\index{mama\_\-logDestroy@{mama\_\-logDestroy}!log.h@{log.h}}
+\subsubsection[{mama\_\-logDestroy}]{\setlength{\rightskip}{0pt plus 5cm}void mama\_\-logDestroy (void)}}
+\label{log_8h_a8dc339595e7a1bb3cee7bbb8a7ea3812}
+
+
+Destroy memory held by the logging. \hypertarget{log_8h_a0601f410806ed53c75b77fa774603e16}{
+\index{log.h@{log.h}!mama\_\-loginit@{mama\_\-loginit}}
+\index{mama\_\-loginit@{mama\_\-loginit}!log.h@{log.h}}
+\subsubsection[{mama\_\-loginit}]{\setlength{\rightskip}{0pt plus 5cm}void mama\_\-loginit (void)}}
+\label{log_8h_a0601f410806ed53c75b77fa774603e16}
+
+
+Setup MAMA Logging. This will setup all the default values from the mama.properties file 
+
+\subsection{Variable Documentation}
+\hypertarget{log_8h_a4efbb877b2349dad6dc6b22e74938318}{
+\index{log.h@{log.h}!gMamaLogLevel@{gMamaLogLevel}}
+\index{gMamaLogLevel@{gMamaLogLevel}!log.h@{log.h}}
+\subsubsection[{gMamaLogLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf MamaLogLevel} {\bf gMamaLogLevel}}}
+\label{log_8h_a4efbb877b2349dad6dc6b22e74938318}
+
+
+The current log level within the API deprecated -\/ The helper functions should be used instead of this. \hypertarget{log_8h_a36f02c28bfa38023451796e7dffa1f15}{
+\index{log.h@{log.h}!gMamaLogFile@{gMamaLogFile}}
+\index{gMamaLogFile@{gMamaLogFile}!log.h@{log.h}}
+\subsubsection[{gMamaLogFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL FILE$\ast$ {\bf gMamaLogFile}}}
+\label{log_8h_a36f02c28bfa38023451796e7dffa1f15}
+
+
+The file to which all logging will be written by default deprecated -\/ The helper functions should be used instead of this. 

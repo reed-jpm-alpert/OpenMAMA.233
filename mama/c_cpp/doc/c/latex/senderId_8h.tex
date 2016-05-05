@@ -1,0 +1,55 @@
+\hypertarget{senderId_8h}{
+\section{senderId.h File Reference}
+\label{senderId_8h}\index{senderId.h@{senderId.h}}
+}
+{\ttfamily \#include \char`\"{}mama/mama.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL void \hyperlink{senderId_8h_a1d20d4dd8e252fd568eee03436c525da}{mamaSenderId\_\-getIpAddr} (uint64\_\-t senderId, char $\ast$buffer, size\_\-t maxLen)
+\begin{DoxyCompactList}\small\item\em Determine the IP address (as a string) of the sender ID in the buffer provided. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{senderId_8h_aa1cb2a5dc9080c0bdbe2fb2ea86264a0}{mamaSenderId\_\-getPid} (uint64\_\-t senderId, uint16\_\-t $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine the process id in the buffer provided. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{senderId_8h_a58d0be3c362f4b869011a759c17c030a}{mamaSenderId\_\-getPid64} (uint64\_\-t senderId, uint32\_\-t $\ast$result)
+\item 
+MAMAExpDLL uint64\_\-t \hyperlink{senderId_8h_a2256651881234a5cf22120b529373583}{mamaSenderId\_\-getSelf} (void)
+\begin{DoxyCompactList}\small\item\em Return a sender ID for possible use when publishing messages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{senderId_8h_a18a91c1590ab713eb7d9167692c13f67}{mamaSenderId\_\-setSelf} (uint64\_\-t self)
+\begin{DoxyCompactList}\small\item\em Manually set a sender ID for the process. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{senderId_8h_a1d20d4dd8e252fd568eee03436c525da}{
+\index{senderId.h@{senderId.h}!mamaSenderId\_\-getIpAddr@{mamaSenderId\_\-getIpAddr}}
+\index{mamaSenderId\_\-getIpAddr@{mamaSenderId\_\-getIpAddr}!senderId.h@{senderId.h}}
+\subsubsection[{mamaSenderId\_\-getIpAddr}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaSenderId\_\-getIpAddr (uint64\_\-t {\em senderId}, \/  char $\ast$ {\em buffer}, \/  size\_\-t {\em maxLen})}}
+\label{senderId_8h_a1d20d4dd8e252fd568eee03436c525da}
+
+
+Determine the IP address (as a string) of the sender ID in the buffer provided. The sender ID is a field sent in many MAMA messages (see the set of reserved fields). \hypertarget{senderId_8h_aa1cb2a5dc9080c0bdbe2fb2ea86264a0}{
+\index{senderId.h@{senderId.h}!mamaSenderId\_\-getPid@{mamaSenderId\_\-getPid}}
+\index{mamaSenderId\_\-getPid@{mamaSenderId\_\-getPid}!senderId.h@{senderId.h}}
+\subsubsection[{mamaSenderId\_\-getPid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaSenderId\_\-getPid (uint64\_\-t {\em senderId}, \/  uint16\_\-t $\ast$ {\em result})}}
+\label{senderId_8h_aa1cb2a5dc9080c0bdbe2fb2ea86264a0}
+
+
+Determine the process id in the buffer provided. The sender ID is a field sent in many MAMA messages (see the set of reserved fields). \hypertarget{senderId_8h_a58d0be3c362f4b869011a759c17c030a}{
+\index{senderId.h@{senderId.h}!mamaSenderId\_\-getPid64@{mamaSenderId\_\-getPid64}}
+\index{mamaSenderId\_\-getPid64@{mamaSenderId\_\-getPid64}!senderId.h@{senderId.h}}
+\subsubsection[{mamaSenderId\_\-getPid64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaSenderId\_\-getPid64 (uint64\_\-t {\em senderId}, \/  uint32\_\-t $\ast$ {\em result})}}
+\label{senderId_8h_a58d0be3c362f4b869011a759c17c030a}
+\hypertarget{senderId_8h_a2256651881234a5cf22120b529373583}{
+\index{senderId.h@{senderId.h}!mamaSenderId\_\-getSelf@{mamaSenderId\_\-getSelf}}
+\index{mamaSenderId\_\-getSelf@{mamaSenderId\_\-getSelf}!senderId.h@{senderId.h}}
+\subsubsection[{mamaSenderId\_\-getSelf}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL uint64\_\-t mamaSenderId\_\-getSelf (void)}}
+\label{senderId_8h_a2256651881234a5cf22120b529373583}
+
+
+Return a sender ID for possible use when publishing messages. The sender ID is a field sent in many MAMA messages (see the set of reserved fields). \hypertarget{senderId_8h_a18a91c1590ab713eb7d9167692c13f67}{
+\index{senderId.h@{senderId.h}!mamaSenderId\_\-setSelf@{mamaSenderId\_\-setSelf}}
+\index{mamaSenderId\_\-setSelf@{mamaSenderId\_\-setSelf}!senderId.h@{senderId.h}}
+\subsubsection[{mamaSenderId\_\-setSelf}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaSenderId\_\-setSelf (uint64\_\-t {\em self})}}
+\label{senderId_8h_a18a91c1590ab713eb7d9167692c13f67}
+
+
+Manually set a sender ID for the process. If a sender\_\-id is set this way, then as of that point, \hyperlink{senderId_8h_a2256651881234a5cf22120b529373583}{mamaSenderId\_\-getSelf()} will always return that value. 

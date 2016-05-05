@@ -1,0 +1,106 @@
+\hypertarget{quality_8h}{
+\section{quality.h File Reference}
+\label{quality_8h}\index{quality.h@{quality.h}}
+}
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10a}{mamaQuality\_\-} \hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10a}{mamaQuality\_\-} \{ \par
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa0482839b40ddf1e9f88320bcc39273f3}{MAMA\_\-QUALITY\_\-OK} =  0, 
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aae457bc687a5728d90ce74dd7af7547ac}{MAMA\_\-QUALITY\_\-MAYBE\_\-STALE} =  1, 
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa04d9b147eb57042cbaaea40c95d27184}{MAMA\_\-QUALITY\_\-STALE} =  2, 
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aacf65ee78637edd1dec7be9897ddecf9d}{MAMA\_\-QUALITY\_\-PARTIAL\_\-STALE} =  3, 
+\par
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa6b885b6bfbc922c100179a5c5d201bf2}{MAMA\_\-QUALITY\_\-FORCED\_\-STALE} =  4, 
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa5208d5445d1c65ba4abd64d9a3468a7e}{MAMA\_\-QUALITY\_\-DUPLICATE} =  5, 
+\hyperlink{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aacf7cb4ae23cf240b9ba27e260c2a82c9}{MAMA\_\-QUALITY\_\-UNKNOWN} =  99
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality} \hyperlink{quality_8h_a7359dbe6a7540af760b27ca3fc1aa214}{mamaQuality\_\-convertFromString} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Convert a string to a mamaQuality value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{quality_8h_a794450c2d01bafc381b368f50407f92e}{mamaQuality\_\-convertToString} (\hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality} quality)
+\begin{DoxyCompactList}\small\item\em Convert a mamaQuality value to a string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{
+\index{quality.h@{quality.h}!mamaQuality@{mamaQuality}}
+\index{mamaQuality@{mamaQuality}!quality.h@{quality.h}}
+\subsubsection[{mamaQuality}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaQuality\_\-}  {\bf mamaQuality}}}
+\label{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10a}{
+\index{quality.h@{quality.h}!mamaQuality\_\-@{mamaQuality\_\-}}
+\index{mamaQuality\_\-@{mamaQuality\_\-}!quality.h@{quality.h}}
+\subsubsection[{mamaQuality\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaQuality\_\-}}}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10a}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-QUALITY\_\-OK@{MAMA\_\-QUALITY\_\-OK}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-OK@{MAMA\_\-QUALITY\_\-OK}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa0482839b40ddf1e9f88320bcc39273f3}{
+MAMA\_\-QUALITY\_\-OK}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa0482839b40ddf1e9f88320bcc39273f3}
+}]\index{MAMA\_\-QUALITY\_\-MAYBE\_\-STALE@{MAMA\_\-QUALITY\_\-MAYBE\_\-STALE}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-MAYBE\_\-STALE@{MAMA\_\-QUALITY\_\-MAYBE\_\-STALE}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aae457bc687a5728d90ce74dd7af7547ac}{
+MAMA\_\-QUALITY\_\-MAYBE\_\-STALE}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aae457bc687a5728d90ce74dd7af7547ac}
+}]\index{MAMA\_\-QUALITY\_\-STALE@{MAMA\_\-QUALITY\_\-STALE}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-STALE@{MAMA\_\-QUALITY\_\-STALE}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa04d9b147eb57042cbaaea40c95d27184}{
+MAMA\_\-QUALITY\_\-STALE}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa04d9b147eb57042cbaaea40c95d27184}
+}]\index{MAMA\_\-QUALITY\_\-PARTIAL\_\-STALE@{MAMA\_\-QUALITY\_\-PARTIAL\_\-STALE}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-PARTIAL\_\-STALE@{MAMA\_\-QUALITY\_\-PARTIAL\_\-STALE}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aacf65ee78637edd1dec7be9897ddecf9d}{
+MAMA\_\-QUALITY\_\-PARTIAL\_\-STALE}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aacf65ee78637edd1dec7be9897ddecf9d}
+}]\index{MAMA\_\-QUALITY\_\-FORCED\_\-STALE@{MAMA\_\-QUALITY\_\-FORCED\_\-STALE}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-FORCED\_\-STALE@{MAMA\_\-QUALITY\_\-FORCED\_\-STALE}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa6b885b6bfbc922c100179a5c5d201bf2}{
+MAMA\_\-QUALITY\_\-FORCED\_\-STALE}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa6b885b6bfbc922c100179a5c5d201bf2}
+}]\index{MAMA\_\-QUALITY\_\-DUPLICATE@{MAMA\_\-QUALITY\_\-DUPLICATE}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-DUPLICATE@{MAMA\_\-QUALITY\_\-DUPLICATE}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa5208d5445d1c65ba4abd64d9a3468a7e}{
+MAMA\_\-QUALITY\_\-DUPLICATE}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aa5208d5445d1c65ba4abd64d9a3468a7e}
+}]\index{MAMA\_\-QUALITY\_\-UNKNOWN@{MAMA\_\-QUALITY\_\-UNKNOWN}!quality.h@{quality.h}}\index{quality.h@{quality.h}!MAMA\_\-QUALITY\_\-UNKNOWN@{MAMA\_\-QUALITY\_\-UNKNOWN}}\item[{\em 
+\hypertarget{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aacf7cb4ae23cf240b9ba27e260c2a82c9}{
+MAMA\_\-QUALITY\_\-UNKNOWN}
+\label{quality_8h_a5928e1bf0eceb347d15492ae0ec3d10aacf7cb4ae23cf240b9ba27e260c2a82c9}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{quality_8h_a7359dbe6a7540af760b27ca3fc1aa214}{
+\index{quality.h@{quality.h}!mamaQuality\_\-convertFromString@{mamaQuality\_\-convertFromString}}
+\index{mamaQuality\_\-convertFromString@{mamaQuality\_\-convertFromString}!quality.h@{quality.h}}
+\subsubsection[{mamaQuality\_\-convertFromString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaQuality} mamaQuality\_\-convertFromString (const char $\ast$ {\em str})}}
+\label{quality_8h_a7359dbe6a7540af760b27ca3fc1aa214}
+
+
+Convert a string to a mamaQuality value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em str}]The str to convert. \end{DoxyParams}
+\hypertarget{quality_8h_a794450c2d01bafc381b368f50407f92e}{
+\index{quality.h@{quality.h}!mamaQuality\_\-convertToString@{mamaQuality\_\-convertToString}}
+\index{mamaQuality\_\-convertToString@{mamaQuality\_\-convertToString}!quality.h@{quality.h}}
+\subsubsection[{mamaQuality\_\-convertToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaQuality\_\-convertToString ({\bf mamaQuality} {\em quality})}}
+\label{quality_8h_a794450c2d01bafc381b368f50407f92e}
+
+
+Convert a mamaQuality value to a string. Do no attempt to free the string result.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em quality}]The mamaQuality to convert. \end{DoxyParams}

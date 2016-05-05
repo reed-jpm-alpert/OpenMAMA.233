@@ -1,0 +1,95 @@
+\hypertarget{fieldcacheiterator_8h}{
+\section{fieldcacheiterator.h File Reference}
+\label{fieldcacheiterator_8h}\index{fieldcacheiterator.h@{fieldcacheiterator.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/fieldcache/fieldcachetypes.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacheiterator_8h_adc7c92561c91a0bcb5d1f65a1e2736d8}{mamaFieldCacheIterator\_\-create} (\hyperlink{fieldcachetypes_8h_a8bfa8a8844ef7b126e35804f752981f3}{mamaFieldCacheIterator} $\ast$iterator, \hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will create an iterator to the given field cache and allocate all associated memory. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacheiterator_8h_a623e4d779921339ffaa2851a15c59673}{mamaFieldCacheIterator\_\-destroy} (\hyperlink{fieldcachetypes_8h_a8bfa8a8844ef7b126e35804f752981f3}{mamaFieldCacheIterator} iterator)
+\begin{DoxyCompactList}\small\item\em This function will destroy a field cache iterator previously allocated by a call to mamaFieldCacheIterator\_\-create. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} \hyperlink{fieldcacheiterator_8h_a9f98cafdf86adde09ababefe0671dea7}{mamaFieldCacheIterator\_\-next} (\hyperlink{fieldcachetypes_8h_a8bfa8a8844ef7b126e35804f752981f3}{mamaFieldCacheIterator} iterator)
+\begin{DoxyCompactList}\small\item\em This function will return the next field in the cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} \hyperlink{fieldcacheiterator_8h_a9c8f4dc18a61f0b5f2ba623a9b7a61e3}{mamaFieldCacheIterator\_\-hasNext} (\hyperlink{fieldcachetypes_8h_a8bfa8a8844ef7b126e35804f752981f3}{mamaFieldCacheIterator} iterator)
+\begin{DoxyCompactList}\small\item\em This function will return a flag indicating if there are remaining fields to iterate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} \hyperlink{fieldcacheiterator_8h_add8723af427b4aefc5fb46416196fe93}{mamaFieldCacheIterator\_\-begin} (\hyperlink{fieldcachetypes_8h_a8bfa8a8844ef7b126e35804f752981f3}{mamaFieldCacheIterator} iterator)
+\begin{DoxyCompactList}\small\item\em This function will return the first field in the cache. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{fieldcacheiterator_8h_adc7c92561c91a0bcb5d1f65a1e2736d8}{
+\index{fieldcacheiterator.h@{fieldcacheiterator.h}!mamaFieldCacheIterator\_\-create@{mamaFieldCacheIterator\_\-create}}
+\index{mamaFieldCacheIterator\_\-create@{mamaFieldCacheIterator\_\-create}!fieldcacheiterator.h@{fieldcacheiterator.h}}
+\subsubsection[{mamaFieldCacheIterator\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheIterator\_\-create ({\bf mamaFieldCacheIterator} $\ast$ {\em iterator}, \/  {\bf mamaFieldCache} {\em fieldCache})}}
+\label{fieldcacheiterator_8h_adc7c92561c91a0bcb5d1f65a1e2736d8}
+
+
+This function will create an iterator to the given field cache and allocate all associated memory. If this function succeeds then the iterator should be destroyed by calling mamaFieldCacheIterator\_\-destroy.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iterator}](out) The iterator to create. \item[{\em fieldCache}](in) The cache to use to iterate. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacheiterator_8h_a623e4d779921339ffaa2851a15c59673}{
+\index{fieldcacheiterator.h@{fieldcacheiterator.h}!mamaFieldCacheIterator\_\-destroy@{mamaFieldCacheIterator\_\-destroy}}
+\index{mamaFieldCacheIterator\_\-destroy@{mamaFieldCacheIterator\_\-destroy}!fieldcacheiterator.h@{fieldcacheiterator.h}}
+\subsubsection[{mamaFieldCacheIterator\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheIterator\_\-destroy ({\bf mamaFieldCacheIterator} {\em iterator})}}
+\label{fieldcacheiterator_8h_a623e4d779921339ffaa2851a15c59673}
+
+
+This function will destroy a field cache iterator previously allocated by a call to mamaFieldCacheIterator\_\-create. 
+\begin{DoxyParams}{Parameters}
+\item[{\em iterator}](in) The iterator to destroy. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacheiterator_8h_a9f98cafdf86adde09ababefe0671dea7}{
+\index{fieldcacheiterator.h@{fieldcacheiterator.h}!mamaFieldCacheIterator\_\-next@{mamaFieldCacheIterator\_\-next}}
+\index{mamaFieldCacheIterator\_\-next@{mamaFieldCacheIterator\_\-next}!fieldcacheiterator.h@{fieldcacheiterator.h}}
+\subsubsection[{mamaFieldCacheIterator\_\-next}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaFieldCacheField} mamaFieldCacheIterator\_\-next ({\bf mamaFieldCacheIterator} {\em iterator})}}
+\label{fieldcacheiterator_8h_a9f98cafdf86adde09ababefe0671dea7}
+
+
+This function will return the next field in the cache. If no other fields are present it will return NULL.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iterator}](in) The iterator to get the field from. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A mamaFieldCacheField pointing to the next field. 
+\end{DoxyReturn}
+\hypertarget{fieldcacheiterator_8h_a9c8f4dc18a61f0b5f2ba623a9b7a61e3}{
+\index{fieldcacheiterator.h@{fieldcacheiterator.h}!mamaFieldCacheIterator\_\-hasNext@{mamaFieldCacheIterator\_\-hasNext}}
+\index{mamaFieldCacheIterator\_\-hasNext@{mamaFieldCacheIterator\_\-hasNext}!fieldcacheiterator.h@{fieldcacheiterator.h}}
+\subsubsection[{mamaFieldCacheIterator\_\-hasNext}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-bool\_\-t} mamaFieldCacheIterator\_\-hasNext ({\bf mamaFieldCacheIterator} {\em iterator})}}
+\label{fieldcacheiterator_8h_a9c8f4dc18a61f0b5f2ba623a9b7a61e3}
+
+
+This function will return a flag indicating if there are remaining fields to iterate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em iterator}](in) The iterator to check for other fields. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A flag indicating if there are other fields to iterate. 
+\end{DoxyReturn}
+\hypertarget{fieldcacheiterator_8h_add8723af427b4aefc5fb46416196fe93}{
+\index{fieldcacheiterator.h@{fieldcacheiterator.h}!mamaFieldCacheIterator\_\-begin@{mamaFieldCacheIterator\_\-begin}}
+\index{mamaFieldCacheIterator\_\-begin@{mamaFieldCacheIterator\_\-begin}!fieldcacheiterator.h@{fieldcacheiterator.h}}
+\subsubsection[{mamaFieldCacheIterator\_\-begin}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaFieldCacheField} mamaFieldCacheIterator\_\-begin ({\bf mamaFieldCacheIterator} {\em iterator})}}
+\label{fieldcacheiterator_8h_add8723af427b4aefc5fb46416196fe93}
+
+
+This function will return the first field in the cache. If the cache is empty, a NULL field is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em iterator}](in) The iterator to get the first field from. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first field in cache. 
+\end{DoxyReturn}

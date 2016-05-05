@@ -1,0 +1,37 @@
+\hypertarget{structmamaCommand}{
+\section{mamaCommand Struct Reference}
+\label{structmamaCommand}\index{mamaCommand@{mamaCommand}}
+}
+
+
+This structure allows for generic commands to be destroyed by the clientmanageresponder.  
+
+
+{\ttfamily \#include $<$clientmanage.h$>$}\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{structmamaCommand_ada646ff2c915fa9248817c6c9d08bdae}{mHandle}
+\item 
+\hyperlink{clientmanage_8h_a9ad663611a3dc03e48072379cbff7a95}{cmCommandDtor} \hyperlink{structmamaCommand_a4503f84ad5d6168a979553e19d8902bd}{mDtor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure allows for generic commands to be destroyed by the clientmanageresponder. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mHandle}]Command handler \item[\mbox{$\leftarrow$} {\em mDtor}]Callback destructor\end{DoxyParams}
+It is not correct for the commands to destroy themselves on completion since the responder creates them. Furthermore, there would be problems at shutdown.
+
+Every command needs to populate this structure accordingly. 
+
+\subsection{Field Documentation}
+\hypertarget{structmamaCommand_ada646ff2c915fa9248817c6c9d08bdae}{
+\index{mamaCommand@{mamaCommand}!mHandle@{mHandle}}
+\index{mHandle@{mHandle}!mamaCommand@{mamaCommand}}
+\subsubsection[{mHandle}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf mamaCommand::mHandle}}}
+\label{structmamaCommand_ada646ff2c915fa9248817c6c9d08bdae}
+\hypertarget{structmamaCommand_a4503f84ad5d6168a979553e19d8902bd}{
+\index{mamaCommand@{mamaCommand}!mDtor@{mDtor}}
+\index{mDtor@{mDtor}!mamaCommand@{mamaCommand}}
+\subsubsection[{mDtor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cmCommandDtor} {\bf mamaCommand::mDtor}}}
+\label{structmamaCommand_a4503f84ad5d6168a979553e19d8902bd}

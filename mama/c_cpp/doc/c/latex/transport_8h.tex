@@ -1,0 +1,666 @@
+\hypertarget{transport_8h}{
+\section{transport.h File Reference}
+\label{transport_8h}\index{transport.h@{transport.h}}
+}
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/subscription.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/msg.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/symbolmap.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/quality.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{transport_8h_a88447455c8d4768f75753eb8ac5ef786}{mamaTransportCB} )(\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} tport, \hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509}{mamaTransportEvent}, short cause, const void $\ast$platformInfo, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Invoked when transport disconnects, reconnects, or has a data quality event. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{transport_8h_a0794081bf16561008b85c34e0c82aff6}{mamaTransportTopicCB} )(\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} tport, \hyperlink{transport_8h_ae8a79b700502bdffc934fd9617af7a23}{mamaTransportTopicEvent} event, const char $\ast$topic, const void $\ast$platformInfo, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Invoked when topic is subscribed ot unsubcribed on that transport. \item\end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{transport_8h_aa76363dcb2b6ec698a2af11b14f7aa19}{mamaTransportLbInitialCB} )(int numTransports, int $\ast$transportIndex)
+\item 
+typedef void($\ast$ \hyperlink{transport_8h_a55670d3fb6fd91f4850976c585ae5ddd}{mamaTransportLbCB} )(int curTransportIndex, int numTransports, const char $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbol, int $\ast$nextTransportIndex)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509}{mamaTransportEvent} \{ \par
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a94ed719e1a71e6b3256fd846b583547a}{MAMA\_\-TRANSPORT\_\-CONNECT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509af9f7d335f0f55bed6733cd1dd9904b29}{MAMA\_\-TRANSPORT\_\-CONNECT\_\-FAILED}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a8164884bb171823bb316a221118d7132}{MAMA\_\-TRANSPORT\_\-RECONNECT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a83f2dc420e796c51c63f7afd19b11e55}{MAMA\_\-TRANSPORT\_\-DISCONNECT}, 
+\par
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a3d56386f13ee39f8c2a1bf1d907c22c2}{MAMA\_\-TRANSPORT\_\-ACCEPT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a31dff48dce97bbc89bf1ecde4ec810ea}{MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509ae6d12d5cd33da2436be52207e6bb9751}{MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a8271b62b34b7a95438a8a88dd0889b17}{MAMA\_\-TRANSPORT\_\-QUALITY}, 
+\par
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a11991c2ba740dc34ab8123c5ce964435}{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-CONNECT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509aa8bd2cb3e93c543be3f672a27c966f5e}{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-DISCONNECT}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a1584fd6da7c524f6c873a1e6907376b8}{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK}, 
+\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509a49f937f79b410f819522e286dfab91a2}{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-LOW\_\-WATER\_\-MARK}
+ \}
+\begin{DoxyCompactList}\small\item\em MAMA passes this enumeration as a parameter to the mamaTransportCB if a client installs one. \item\end{DoxyCompactList}\item 
+enum \hyperlink{transport_8h_ae8a79b700502bdffc934fd9617af7a23}{mamaTransportTopicEvent} \{ \hyperlink{transport_8h_ae8a79b700502bdffc934fd9617af7a23abf7d6524ce69744e2c27a5f8cba857b3}{MAMA\_\-TRANSPORT\_\-TOPIC\_\-SUBSCRIBED}, 
+\hyperlink{transport_8h_ae8a79b700502bdffc934fd9617af7a23ab9eb0d1158f4bdaac5c9f3bf8de03bf6}{MAMA\_\-TRANSPORT\_\-TOPIC\_\-UNSUBSCRIBED}
+ \}
+\begin{DoxyCompactList}\small\item\em MAMA passes this enumeration as a parameter to the mamaTransportTopicCB if a client installs one. \item\end{DoxyCompactList}\item 
+enum \hyperlink{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0}{tportLbScheme} \{ \hyperlink{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a85fd7542e74839cde421a22e95403724}{TPORT\_\-LB\_\-SCHEME\_\-STATIC}, 
+\hyperlink{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a3410d5e0ee881e9122a10916700b4fcb}{TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN}, 
+\hyperlink{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a7d754909da9e71abee04b72662d02371}{TPORT\_\-LB\_\-SCHEME\_\-API}, 
+\hyperlink{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0ac202279815de003bf96ff4f51be17cff}{TPORT\_\-LB\_\-SCHEME\_\-LIBRARY}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to represent the different load balancing schemes available. \item\end{DoxyCompactList}\item 
+enum \hyperlink{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72}{mamaThrottleInstance} \{ \hyperlink{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72ab73ec5470aec952a19ecbfe9647463bd}{MAMA\_\-THROTTLE\_\-DEFAULT} =  0, 
+\hyperlink{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72a0e970df40033adbd29997a5d68512fbc}{MAMA\_\-THROTTLE\_\-INITIAL} =  1, 
+\hyperlink{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72a88f9a69a81f1f34f0da4c34812c25dcf}{MAMA\_\-THROTTLE\_\-RECAP} =  2
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to determine to which throttle a call applies. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL const char $\ast$ \hyperlink{transport_8h_a3b5fe24f207dfd66032fab131dd38ca6}{mamaTransportEvent\_\-toString} (\hyperlink{transport_8h_aaa98789886ae70cd14f38507791ed509}{mamaTransportEvent} event)
+\begin{DoxyCompactList}\small\item\em Return a text description of the transport event. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a48ca1a52c08f8a54d5688b54896b61b9}{mamaTransport\_\-setTransportCallback} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{transport_8h_a88447455c8d4768f75753eb8ac5ef786}{mamaTransportCB} callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the transport callback. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a2eecf2099d134d1ac8be52bd61f11c3d}{mamaTransport\_\-setWriteQueueWatermarks} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, uint32\_\-t highWater, uint32\_\-t lowWater)
+\begin{DoxyCompactList}\small\item\em Set the transport write queue high and low water mark values. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_aa145d12f05893ab14e5b30ca107df6f4}{mamaTransport\_\-setTransportTopicCallback} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{transport_8h_a0794081bf16561008b85c34e0c82aff6}{mamaTransportTopicCB} callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the transport topic callback. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ac0543d68d46d05d812032cd3f0dab1b6}{mamaTransport\_\-allocate} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Allocate a transport structure. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a87c8526577d2de7dac01f16c7dfa5c62}{mamaTransport\_\-create} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$name, \hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Create a previously allocated transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a19454b48e280a09673b540c738016aae}{mamaTransport\_\-setName} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the transport name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a0d67eccc9212cee1769bb0c82b8d06ed}{mamaTransport\_\-getName} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the transport name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{transport_8h_a85425a4f518e48e8c5a8f21e2f5d07db}{mamaTransport\_\-getMiddleware} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a467304a80a1d6b1cfdf2ae145cd3ef8f}{mamaTransport\_\-getOutboundThrottle} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72}{mamaThrottleInstance} instance, double $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the outbound throttle rate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{transport_8h_a34e71f506c5b40162426ededc8be496d}{mamaTransport\_\-disableRefresh} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, uint8\_\-t disable)
+\begin{DoxyCompactList}\small\item\em Disable Refreshing. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ac83590731fce653c9c1f3c003008805c}{mamaTransport\_\-setOutboundThrottle} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72}{mamaThrottleInstance} instance, double outboundThrottle)
+\begin{DoxyCompactList}\small\item\em Set the throttle rate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{transport_8h_aea36062063efa82e6d43d2c1557c9801}{mamaTransport\_\-setSymbolMapFunc} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{symbolmap_8h_a3d357d3ec24c8bf6ed1dff2d45a1c769}{mamaSymbolMapFunc} mapFunc, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the symbol mapping function for a mamaTransport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{symbolmap_8h_a3d357d3ec24c8bf6ed1dff2d45a1c769}{mamaSymbolMapFunc} \hyperlink{transport_8h_a5bb46f3686fd95cc394e837fc698f29e}{mamaTransport\_\-getSymbolMapFunc} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Return the symbol mapping function for a mamaTransport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void $\ast$ \hyperlink{transport_8h_ac78afb949e436e5145a3a36213137507}{mamaTransport\_\-getSymbolMapFuncClosure} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Return the symbol mapping function closure for a mamaTransport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a3f8fd6c957cdcdec57e62c3e61521cb9}{mamaTransport\_\-setDescription} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$description)
+\begin{DoxyCompactList}\small\item\em Set the description for this transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_aee4ac6d49dba0866e6803660a2a00b3c}{mamaTransport\_\-getDescription} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$$\ast$description)
+\begin{DoxyCompactList}\small\item\em Get the description attribute for the specified transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a1c499d9b17b127442f577b82d7fe59de}{mamaTransport\_\-setInvokeQualityForAllSubscs} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, int invokeQualityForAllSubscs)
+\begin{DoxyCompactList}\small\item\em Set whether to invoke the quality callback for all subscriptions whenever a data quality event occurs (the default), or whether to invoke the quality callback only when data subsequently arrives for a subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_aff2b0f78a6d90e19dd190ff7f4c957bc}{mamaTransport\_\-getInvokeQualityForAllSubscs} (const \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, int $\ast$invokeQualityForAllSubscs)
+\begin{DoxyCompactList}\small\item\em Get whether the transport has been set to invoke the quality callback for all subscriptions whenever a data quality event occurs. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a311994efa26bd650eeac48f7715fcf3a}{mamaTransport\_\-getQuality} (const \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality} $\ast$quality)
+\begin{DoxyCompactList}\small\item\em Get the quality of data for the transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a5a66e765df927a31d97c4c232731b5c8}{mamaTransport\_\-destroy} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Destroy the transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a49a0ebdc5020400a7c672afb7530d2cf}{mamaTransport\_\-findConnection} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} $\ast$result, const char $\ast$ipAddress, uint16\_\-t port)
+\begin{DoxyCompactList}\small\item\em Find a connection with specified IP Address and Port. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ad47e75506583e6ddbfdef86e5ef617fb}{mamaTransport\_\-getAllConnections} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} $\ast$$\ast$result, uint32\_\-t $\ast$len)
+\begin{DoxyCompactList}\small\item\em Return a list of all clients connected to this transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ae895c78a7d6e7b05f73b0d4d64b7dd1f}{mamaTransport\_\-getAllConnectionsForTopic} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$topic, \hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} $\ast$$\ast$result, uint32\_\-t $\ast$len)
+\begin{DoxyCompactList}\small\item\em Return a list of all clients connected to this transport for a topic. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a7fd5ac85182df2184c279672583d3bd9}{mamaTransport\_\-freeAllConnections} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} $\ast$result, uint32\_\-t len)
+\begin{DoxyCompactList}\small\item\em Free resources allocated by \hyperlink{transport_8h_ad47e75506583e6ddbfdef86e5ef617fb}{mamaTransport\_\-getAllConnections()}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ac06e16081cc714f9031cc636a523f6fb}{mamaTransport\_\-getAllServerConnections} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection} $\ast$$\ast$result, uint32\_\-t $\ast$len)
+\begin{DoxyCompactList}\small\item\em Return a list of all servers connected to this transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ad301d4ca7c2d8ed6cd1bd83cf73eb3e1}{mamaTransport\_\-freeAllServerConnections} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection} $\ast$result, uint32\_\-t len)
+\begin{DoxyCompactList}\small\item\em Free resources allocated by \hyperlink{transport_8h_ac06e16081cc714f9031cc636a523f6fb}{mamaTransport\_\-getAllServerConnections()}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ab3d2e341f7c434eaf086236593a06378}{mamaTransport\_\-setLbInitialCallback} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{transport_8h_aa76363dcb2b6ec698a2af11b14f7aa19}{mamaTransportLbInitialCB} callback)
+\begin{DoxyCompactList}\small\item\em Set the callback which will decide which member of the load balancing group to use initially. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a4e1b5f144bdf28f36aca4212249bf71f}{mamaTransport\_\-setLbCallback} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{transport_8h_a55670d3fb6fd91f4850976c585ae5ddd}{mamaTransportLbCB} callback)
+\begin{DoxyCompactList}\small\item\em Set the callback which will allocate the next member of the load balancing group to use. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ac51bbeaa7fd4e843e1748dc3b9cef645}{mamaTransport\_\-requestConflation} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Request that publishers conflate incoming messages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a8b4b4433d27b333a610d4ed161dd8912}{mamaTransport\_\-requestEndConflation} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Request that publishers stop conflating incoming messages for this transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ac8d2dad6a9a3f98e28dceae80cefa7f7}{mamaTransport\_\-setDeactivateSubscriptionOnError} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, int deactivate)
+\item 
+MAMAExpDLL int \hyperlink{transport_8h_a4be43840f9159293a66dd0f78c314af5}{mamaTransport\_\-getDeactivateSubscriptionOnError} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_ab9f51b1cca11f944fbdbaf562c4847dc}{mamaTransport\_\-getNativeTransport} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, int index, void $\ast$$\ast$nativeTport)
+\begin{DoxyCompactList}\small\item\em Return a pointer tothe underlying native transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_a411c3b3eca2c39c5644f42cd71fe892a}{mamaTransport\_\-getNativeTransportNamingCtx} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, int index, void $\ast$$\ast$nativeTportNamingCtx)
+\begin{DoxyCompactList}\small\item\em Return a pointer to the underlying native naming context the transport is using. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} \hyperlink{transport_8h_a2454d0fd742a857be32e15c95c7190df}{mamaTransport\_\-getStatsCollector} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_aebdccd283bd5304bd54970c4d507ae73}{mamaTransport\_\-getClosure} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, void $\ast$$\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Return the closure. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{transport_8h_acf429622c87c73e7f464a5251e5c48f3}{mamaTransport\_\-setClosure} (\hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set a closure. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{transport_8h_a88447455c8d4768f75753eb8ac5ef786}{
+\index{transport.h@{transport.h}!mamaTransportCB@{mamaTransportCB}}
+\index{mamaTransportCB@{mamaTransportCB}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaTransportCB})({\bf mamaTransport} tport, {\bf mamaTransportEvent}, short cause, const void $\ast$platformInfo, void $\ast${\bf closure})}}
+\label{transport_8h_a88447455c8d4768f75753eb8ac5ef786}
+
+
+Invoked when transport disconnects, reconnects, or has a data quality event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em tport}]The transport associated with the transport event \item[{\em mamaTransportEvent}]The transport event \item[{\em cause}]The cause of the transport event \item[{\em platformInfo}]Info associated with the transport event \item[{\em closure}]The closure argument to pass to the callback whenever it is invoked.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+tibrv: provides the char$\ast$ version of the tibrv advisory message. wmw: provides a pointer to a mamaConnection struct for the event \hypertarget{transport_8h_a0794081bf16561008b85c34e0c82aff6}{
+\index{transport.h@{transport.h}!mamaTransportTopicCB@{mamaTransportTopicCB}}
+\index{mamaTransportTopicCB@{mamaTransportTopicCB}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportTopicCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaTransportTopicCB})({\bf mamaTransport} tport, {\bf mamaTransportTopicEvent} event, const char $\ast$topic, const void $\ast$platformInfo, void $\ast${\bf closure})}}
+\label{transport_8h_a0794081bf16561008b85c34e0c82aff6}
+
+
+Invoked when topic is subscribed ot unsubcribed on that transport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em tport}]The transport associated with the transport topic event \item[{\em mamaTransportTopicEvent}]The transport topic event \item[{\em topic}]The topic being subscribed or unsubscribed to \item[{\em platformInfo}]Info associated with the transport topicevent \item[{\em closure}]The closure argument to pass to the callback whenever it is invoked.\end{DoxyParams}
+The platformInfo is supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+wmw: provides a pointer to a mamaConnection struct for the event \hypertarget{transport_8h_aa76363dcb2b6ec698a2af11b14f7aa19}{
+\index{transport.h@{transport.h}!mamaTransportLbInitialCB@{mamaTransportLbInitialCB}}
+\index{mamaTransportLbInitialCB@{mamaTransportLbInitialCB}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportLbInitialCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf mamaTransportLbInitialCB})(int numTransports, int $\ast$transportIndex)}}
+\label{transport_8h_aa76363dcb2b6ec698a2af11b14f7aa19}
+\hypertarget{transport_8h_a55670d3fb6fd91f4850976c585ae5ddd}{
+\index{transport.h@{transport.h}!mamaTransportLbCB@{mamaTransportLbCB}}
+\index{mamaTransportLbCB@{mamaTransportLbCB}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportLbCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf mamaTransportLbCB})(int curTransportIndex, int numTransports, const char $\ast${\bf source}, const char $\ast$symbol, int $\ast$nextTransportIndex)}}
+\label{transport_8h_a55670d3fb6fd91f4850976c585ae5ddd}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509}{
+\index{transport.h@{transport.h}!mamaTransportEvent@{mamaTransportEvent}}
+\index{mamaTransportEvent@{mamaTransportEvent}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportEvent}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaTransportEvent}}}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509}
+
+
+MAMA passes this enumeration as a parameter to the mamaTransportCB if a client installs one. The values passed depend on the underlying middleware:
+
+All Middleware: MAMA\_\-TRANSPORT\_\-QUALITY is passed when an the underlying transport detects an event that may affect data quality. Depending on the event, MAMA may also mark subscriptions as STALE or MAYBE\_\-STALE.
+
+TIBRV: TIBRV invokes the callback with MAMA\_\-TRANSPORT\_\-DISCONNECT when the transport disconnects from the RV daemon and MAMA\_\-TRANSPORT\_\-RECONNECT when it reestablishes a connection to the daemon.
+
+Wombat Middleware: For Wombat Middleware MAMA distinguishes between connections established from a transport to another transport and connections established by the transport from another transport. In general MAMA applications establish connection from a MAMA transport to a feed handler (publisher); however, they may also accept connections from other MAMA clients. Applications subscribe to topics and publisher messages over all connections. When a transport successfully connects to another transport (i.e. a feed handler) the mamaTransportCallback receives MAMA\_\-TRANSPORT\_\-CONNECT if the connection succeeds immediately otherwise it receives a MAMA\_\-TRANSPORT\_\-RECONNECT if it subsequently succeeds. Wombat Middleware transports may be configured to retry failed connections. When a connection that a transport establishes to another transport (the publisher by convention) and the connection is lost the mamaTranpsortCallback receives the MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT event. When a transport accepts a connection from a remote transport (the subscriber by convention) it receives either a MAMA\_\-TRANSPORT\_\-ACCEPT or MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT event indicating that the remote client is connecting or reconnecting. When the client disconnects MAMA passes the MAMA\_\-TRANSPORT\_\-DISCONNECT value. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-TRANSPORT\_\-CONNECT@{MAMA\_\-TRANSPORT\_\-CONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-CONNECT@{MAMA\_\-TRANSPORT\_\-CONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a94ed719e1a71e6b3256fd846b583547a}{
+MAMA\_\-TRANSPORT\_\-CONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a94ed719e1a71e6b3256fd846b583547a}
+}]\index{MAMA\_\-TRANSPORT\_\-CONNECT\_\-FAILED@{MAMA\_\-TRANSPORT\_\-CONNECT\_\-FAILED}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-CONNECT\_\-FAILED@{MAMA\_\-TRANSPORT\_\-CONNECT\_\-FAILED}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509af9f7d335f0f55bed6733cd1dd9904b29}{
+MAMA\_\-TRANSPORT\_\-CONNECT\_\-FAILED}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509af9f7d335f0f55bed6733cd1dd9904b29}
+}]\index{MAMA\_\-TRANSPORT\_\-RECONNECT@{MAMA\_\-TRANSPORT\_\-RECONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-RECONNECT@{MAMA\_\-TRANSPORT\_\-RECONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a8164884bb171823bb316a221118d7132}{
+MAMA\_\-TRANSPORT\_\-RECONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a8164884bb171823bb316a221118d7132}
+}]\index{MAMA\_\-TRANSPORT\_\-DISCONNECT@{MAMA\_\-TRANSPORT\_\-DISCONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-DISCONNECT@{MAMA\_\-TRANSPORT\_\-DISCONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a83f2dc420e796c51c63f7afd19b11e55}{
+MAMA\_\-TRANSPORT\_\-DISCONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a83f2dc420e796c51c63f7afd19b11e55}
+}]\index{MAMA\_\-TRANSPORT\_\-ACCEPT@{MAMA\_\-TRANSPORT\_\-ACCEPT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-ACCEPT@{MAMA\_\-TRANSPORT\_\-ACCEPT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a3d56386f13ee39f8c2a1bf1d907c22c2}{
+MAMA\_\-TRANSPORT\_\-ACCEPT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a3d56386f13ee39f8c2a1bf1d907c22c2}
+}]\index{MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT@{MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT@{MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a31dff48dce97bbc89bf1ecde4ec810ea}{
+MAMA\_\-TRANSPORT\_\-ACCEPT\_\-RECONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a31dff48dce97bbc89bf1ecde4ec810ea}
+}]\index{MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT@{MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT@{MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509ae6d12d5cd33da2436be52207e6bb9751}{
+MAMA\_\-TRANSPORT\_\-PUBLISHER\_\-DISCONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509ae6d12d5cd33da2436be52207e6bb9751}
+}]\index{MAMA\_\-TRANSPORT\_\-QUALITY@{MAMA\_\-TRANSPORT\_\-QUALITY}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-QUALITY@{MAMA\_\-TRANSPORT\_\-QUALITY}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a8271b62b34b7a95438a8a88dd0889b17}{
+MAMA\_\-TRANSPORT\_\-QUALITY}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a8271b62b34b7a95438a8a88dd0889b17}
+}]\index{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-CONNECT@{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-CONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-CONNECT@{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-CONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a11991c2ba740dc34ab8123c5ce964435}{
+MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-CONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a11991c2ba740dc34ab8123c5ce964435}
+}]\index{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-DISCONNECT@{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-DISCONNECT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-DISCONNECT@{MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-DISCONNECT}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509aa8bd2cb3e93c543be3f672a27c966f5e}{
+MAMA\_\-TRANSPORT\_\-NAMING\_\-SERVICE\_\-DISCONNECT}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509aa8bd2cb3e93c543be3f672a27c966f5e}
+}]\index{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK@{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK@{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a1584fd6da7c524f6c873a1e6907376b8}{
+MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a1584fd6da7c524f6c873a1e6907376b8}
+}]\index{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-LOW\_\-WATER\_\-MARK@{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-LOW\_\-WATER\_\-MARK}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-LOW\_\-WATER\_\-MARK@{MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-LOW\_\-WATER\_\-MARK}}\item[{\em 
+\hypertarget{transport_8h_aaa98789886ae70cd14f38507791ed509a49f937f79b410f819522e286dfab91a2}{
+MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-LOW\_\-WATER\_\-MARK}
+\label{transport_8h_aaa98789886ae70cd14f38507791ed509a49f937f79b410f819522e286dfab91a2}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{transport_8h_ae8a79b700502bdffc934fd9617af7a23}{
+\index{transport.h@{transport.h}!mamaTransportTopicEvent@{mamaTransportTopicEvent}}
+\index{mamaTransportTopicEvent@{mamaTransportTopicEvent}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportTopicEvent}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaTransportTopicEvent}}}
+\label{transport_8h_ae8a79b700502bdffc934fd9617af7a23}
+
+
+MAMA passes this enumeration as a parameter to the mamaTransportTopicCB if a client installs one. Wombat Middleware: For connection based transports an event is invoked when a client makes a subscription to a topic on a transport or unsubscribes from a topic on a transport. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-TRANSPORT\_\-TOPIC\_\-SUBSCRIBED@{MAMA\_\-TRANSPORT\_\-TOPIC\_\-SUBSCRIBED}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-TOPIC\_\-SUBSCRIBED@{MAMA\_\-TRANSPORT\_\-TOPIC\_\-SUBSCRIBED}}\item[{\em 
+\hypertarget{transport_8h_ae8a79b700502bdffc934fd9617af7a23abf7d6524ce69744e2c27a5f8cba857b3}{
+MAMA\_\-TRANSPORT\_\-TOPIC\_\-SUBSCRIBED}
+\label{transport_8h_ae8a79b700502bdffc934fd9617af7a23abf7d6524ce69744e2c27a5f8cba857b3}
+}]\index{MAMA\_\-TRANSPORT\_\-TOPIC\_\-UNSUBSCRIBED@{MAMA\_\-TRANSPORT\_\-TOPIC\_\-UNSUBSCRIBED}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-TRANSPORT\_\-TOPIC\_\-UNSUBSCRIBED@{MAMA\_\-TRANSPORT\_\-TOPIC\_\-UNSUBSCRIBED}}\item[{\em 
+\hypertarget{transport_8h_ae8a79b700502bdffc934fd9617af7a23ab9eb0d1158f4bdaac5c9f3bf8de03bf6}{
+MAMA\_\-TRANSPORT\_\-TOPIC\_\-UNSUBSCRIBED}
+\label{transport_8h_ae8a79b700502bdffc934fd9617af7a23ab9eb0d1158f4bdaac5c9f3bf8de03bf6}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0}{
+\index{transport.h@{transport.h}!tportLbScheme@{tportLbScheme}}
+\index{tportLbScheme@{tportLbScheme}!transport.h@{transport.h}}
+\subsubsection[{tportLbScheme}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tportLbScheme}}}
+\label{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0}
+
+
+Enum to represent the different load balancing schemes available. TPORT\_\-LB\_\-SCHEME\_\-STATIC -\/ keep the same lb sub tport for each subscription. TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN -\/ round robin between the members of the lb group for each subscription TPORT\_\-LB\_\-SCHEME\_\-API -\/ let the user defined load balancing callback(s) decide. TPORT\_\-LB\_\-SCHEME\_\-LIBRARY -\/ use the load balancing in a external library \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{TPORT\_\-LB\_\-SCHEME\_\-STATIC@{TPORT\_\-LB\_\-SCHEME\_\-STATIC}!transport.h@{transport.h}}\index{transport.h@{transport.h}!TPORT\_\-LB\_\-SCHEME\_\-STATIC@{TPORT\_\-LB\_\-SCHEME\_\-STATIC}}\item[{\em 
+\hypertarget{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a85fd7542e74839cde421a22e95403724}{
+TPORT\_\-LB\_\-SCHEME\_\-STATIC}
+\label{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a85fd7542e74839cde421a22e95403724}
+}]\index{TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN@{TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN}!transport.h@{transport.h}}\index{transport.h@{transport.h}!TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN@{TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN}}\item[{\em 
+\hypertarget{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a3410d5e0ee881e9122a10916700b4fcb}{
+TPORT\_\-LB\_\-SCHEME\_\-ROUND\_\-ROBIN}
+\label{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a3410d5e0ee881e9122a10916700b4fcb}
+}]\index{TPORT\_\-LB\_\-SCHEME\_\-API@{TPORT\_\-LB\_\-SCHEME\_\-API}!transport.h@{transport.h}}\index{transport.h@{transport.h}!TPORT\_\-LB\_\-SCHEME\_\-API@{TPORT\_\-LB\_\-SCHEME\_\-API}}\item[{\em 
+\hypertarget{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a7d754909da9e71abee04b72662d02371}{
+TPORT\_\-LB\_\-SCHEME\_\-API}
+\label{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0a7d754909da9e71abee04b72662d02371}
+}]\index{TPORT\_\-LB\_\-SCHEME\_\-LIBRARY@{TPORT\_\-LB\_\-SCHEME\_\-LIBRARY}!transport.h@{transport.h}}\index{transport.h@{transport.h}!TPORT\_\-LB\_\-SCHEME\_\-LIBRARY@{TPORT\_\-LB\_\-SCHEME\_\-LIBRARY}}\item[{\em 
+\hypertarget{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0ac202279815de003bf96ff4f51be17cff}{
+TPORT\_\-LB\_\-SCHEME\_\-LIBRARY}
+\label{transport_8h_aa0ebb4c3e6a04fb9bad7ecabefcee2c0ac202279815de003bf96ff4f51be17cff}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72}{
+\index{transport.h@{transport.h}!mamaThrottleInstance@{mamaThrottleInstance}}
+\index{mamaThrottleInstance@{mamaThrottleInstance}!transport.h@{transport.h}}
+\subsubsection[{mamaThrottleInstance}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaThrottleInstance}}}
+\label{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72}
+
+
+Enum to determine to which throttle a call applies. Currently, the the default throttle, used by the publisher, and the initial value request throttle are the same. Mama sends recap requests on a separate throttle. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-THROTTLE\_\-DEFAULT@{MAMA\_\-THROTTLE\_\-DEFAULT}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-THROTTLE\_\-DEFAULT@{MAMA\_\-THROTTLE\_\-DEFAULT}}\item[{\em 
+\hypertarget{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72ab73ec5470aec952a19ecbfe9647463bd}{
+MAMA\_\-THROTTLE\_\-DEFAULT}
+\label{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72ab73ec5470aec952a19ecbfe9647463bd}
+}]\index{MAMA\_\-THROTTLE\_\-INITIAL@{MAMA\_\-THROTTLE\_\-INITIAL}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-THROTTLE\_\-INITIAL@{MAMA\_\-THROTTLE\_\-INITIAL}}\item[{\em 
+\hypertarget{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72a0e970df40033adbd29997a5d68512fbc}{
+MAMA\_\-THROTTLE\_\-INITIAL}
+\label{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72a0e970df40033adbd29997a5d68512fbc}
+}]\index{MAMA\_\-THROTTLE\_\-RECAP@{MAMA\_\-THROTTLE\_\-RECAP}!transport.h@{transport.h}}\index{transport.h@{transport.h}!MAMA\_\-THROTTLE\_\-RECAP@{MAMA\_\-THROTTLE\_\-RECAP}}\item[{\em 
+\hypertarget{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72a88f9a69a81f1f34f0da4c34812c25dcf}{
+MAMA\_\-THROTTLE\_\-RECAP}
+\label{transport_8h_ac0296fc92c8bfd8e60bbf27be65cae72a88f9a69a81f1f34f0da4c34812c25dcf}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{transport_8h_a3b5fe24f207dfd66032fab131dd38ca6}{
+\index{transport.h@{transport.h}!mamaTransportEvent\_\-toString@{mamaTransportEvent\_\-toString}}
+\index{mamaTransportEvent\_\-toString@{mamaTransportEvent\_\-toString}!transport.h@{transport.h}}
+\subsubsection[{mamaTransportEvent\_\-toString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaTransportEvent\_\-toString ({\bf mamaTransportEvent} {\em event})}}
+\label{transport_8h_a3b5fe24f207dfd66032fab131dd38ca6}
+
+
+Return a text description of the transport event. \hypertarget{transport_8h_a48ca1a52c08f8a54d5688b54896b61b9}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setTransportCallback@{mamaTransport\_\-setTransportCallback}}
+\index{mamaTransport\_\-setTransportCallback@{mamaTransport\_\-setTransportCallback}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setTransportCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setTransportCallback ({\bf mamaTransport} {\em transport}, \/  {\bf mamaTransportCB} {\em callback}, \/  void $\ast$ {\em closure})}}
+\label{transport_8h_a48ca1a52c08f8a54d5688b54896b61b9}
+
+
+Set the transport callback. It receives advisories when a transport disconnects or reconnects. Passing NULL removes the callback. \hypertarget{transport_8h_a2eecf2099d134d1ac8be52bd61f11c3d}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setWriteQueueWatermarks@{mamaTransport\_\-setWriteQueueWatermarks}}
+\index{mamaTransport\_\-setWriteQueueWatermarks@{mamaTransport\_\-setWriteQueueWatermarks}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setWriteQueueWatermarks}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setWriteQueueWatermarks ({\bf mamaTransport} {\em transport}, \/  uint32\_\-t {\em highWater}, \/  uint32\_\-t {\em lowWater})}}
+\label{transport_8h_a2eecf2099d134d1ac8be52bd61f11c3d}
+
+
+Set the transport write queue high and low water mark values. The MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK and MAMA\_\-TRANSPORT\_\-WRITE\_\-QUEUE\_\-HIGH\_\-WATER\_\-MARK events will be delivered though the transport callback when the respective number of items are outstanding on a clients write queue. \hypertarget{transport_8h_aa145d12f05893ab14e5b30ca107df6f4}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setTransportTopicCallback@{mamaTransport\_\-setTransportTopicCallback}}
+\index{mamaTransport\_\-setTransportTopicCallback@{mamaTransport\_\-setTransportTopicCallback}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setTransportTopicCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setTransportTopicCallback ({\bf mamaTransport} {\em transport}, \/  {\bf mamaTransportTopicCB} {\em callback}, \/  void $\ast$ {\em closure})}}
+\label{transport_8h_aa145d12f05893ab14e5b30ca107df6f4}
+
+
+Set the transport topic callback. It receives advisories when a client subscribes or unsubscribes to a topic on the transport \hypertarget{transport_8h_ac0543d68d46d05d812032cd3f0dab1b6}{
+\index{transport.h@{transport.h}!mamaTransport\_\-allocate@{mamaTransport\_\-allocate}}
+\index{mamaTransport\_\-allocate@{mamaTransport\_\-allocate}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-allocate ({\bf mamaTransport} $\ast$ {\em result})}}
+\label{transport_8h_ac0543d68d46d05d812032cd3f0dab1b6}
+
+
+Allocate a transport structure. Do not free this memory, use \hyperlink{transport_8h_a5a66e765df927a31d97c4c232731b5c8}{mamaTransport\_\-destroy()} instead. The transport is not created until \hyperlink{transport_8h_a87c8526577d2de7dac01f16c7dfa5c62}{mamaTransport\_\-create()} is called. Any transport properties should be set after calling allocate() and prior to calling create()
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]The address to where the transport will be written. \end{DoxyParams}
+\hypertarget{transport_8h_a87c8526577d2de7dac01f16c7dfa5c62}{
+\index{transport.h@{transport.h}!mamaTransport\_\-create@{mamaTransport\_\-create}}
+\index{mamaTransport\_\-create@{mamaTransport\_\-create}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-create ({\bf mamaTransport} {\em transport}, \/  const char $\ast$ {\em name}, \/  {\bf mamaBridge} {\em bridgeImpl})}}
+\label{transport_8h_a87c8526577d2de7dac01f16c7dfa5c62}
+
+
+Create a previously allocated transport. Platform specific parameters are read from the properties file {\itshape mama.properties\/}. The properties file is located in the WOMBAT\_\-PATH directory. The parameters are dependent on the underlying messaging transport. 
+
+TIBRV: transports support the following: mama.tibrv.transport.name.service, mama.tibrv.transport.name.network, and mama.tibrv.transport.name.daemon. These correspond to the parameters for tibrvTransport\_\-Create(). 
+
+LBM: See the example mama.properties supplied with the release.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The previously allocated transport. \item[{\em name}]The name of the transport in the mama.properties file. \item[{\em bridgeImpl}]The middleware for which the transport is being created. \end{DoxyParams}
+\hypertarget{transport_8h_a19454b48e280a09673b540c738016aae}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setName@{mamaTransport\_\-setName}}
+\index{mamaTransport\_\-setName@{mamaTransport\_\-setName}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setName ({\bf mamaTransport} {\em transport}, \/  const char $\ast$ {\em name})}}
+\label{transport_8h_a19454b48e280a09673b540c738016aae}
+
+
+Set the transport name. This can be used to set the name without calling \hyperlink{transport_8h_a87c8526577d2de7dac01f16c7dfa5c62}{mamaTransport\_\-create()}
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport from which the name is being obtained. \item[{\em name}]The name of the transport in the mama.properties file. \end{DoxyParams}
+\hypertarget{transport_8h_a0d67eccc9212cee1769bb0c82b8d06ed}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getName@{mamaTransport\_\-getName}}
+\index{mamaTransport\_\-getName@{mamaTransport\_\-getName}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getName ({\bf mamaTransport} {\em transport}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{transport_8h_a0d67eccc9212cee1769bb0c82b8d06ed}
+
+
+Get the transport name. This the name that was passed to the \hyperlink{transport_8h_a87c8526577d2de7dac01f16c7dfa5c62}{mamaTransport\_\-create()} or \hyperlink{transport_8h_a19454b48e280a09673b540c738016aae}{mamaTransport\_\-setName()} function.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport from which the name is being obtained. \item[{\em result}]Pointer to the transport name string. \end{DoxyParams}
+\hypertarget{transport_8h_a85425a4f518e48e8c5a8f21e2f5d07db}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getMiddleware@{mamaTransport\_\-getMiddleware}}
+\index{mamaTransport\_\-getMiddleware@{mamaTransport\_\-getMiddleware}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getMiddleware}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaTransport\_\-getMiddleware ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_a85425a4f518e48e8c5a8f21e2f5d07db}
+\hypertarget{transport_8h_a467304a80a1d6b1cfdf2ae145cd3ef8f}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getOutboundThrottle@{mamaTransport\_\-getOutboundThrottle}}
+\index{mamaTransport\_\-getOutboundThrottle@{mamaTransport\_\-getOutboundThrottle}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getOutboundThrottle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getOutboundThrottle ({\bf mamaTransport} {\em transport}, \/  {\bf mamaThrottleInstance} {\em instance}, \/  double $\ast$ {\em result})}}
+\label{transport_8h_a467304a80a1d6b1cfdf2ae145cd3ef8f}
+
+
+Get the outbound throttle rate. This the rate at which the transport sends outbound messages to the feed handlers. It is also the rate at which new subscriptions are created. Its purpose is to avoid flooding the network with requests.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]the transport. \item[{\em instance}]the instance \item[{\em result}]Pointer to the resulting value in messages/second. \end{DoxyParams}
+\hypertarget{transport_8h_a34e71f506c5b40162426ededc8be496d}{
+\index{transport.h@{transport.h}!mamaTransport\_\-disableRefresh@{mamaTransport\_\-disableRefresh}}
+\index{mamaTransport\_\-disableRefresh@{mamaTransport\_\-disableRefresh}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-disableRefresh}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaTransport\_\-disableRefresh ({\bf mamaTransport} {\em transport}, \/  uint8\_\-t {\em disable})}}
+\label{transport_8h_a34e71f506c5b40162426ededc8be496d}
+
+
+Disable Refreshing. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]the transport instance \item[{\em disable}]t/f. \end{DoxyParams}
+\hypertarget{transport_8h_ac83590731fce653c9c1f3c003008805c}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setOutboundThrottle@{mamaTransport\_\-setOutboundThrottle}}
+\index{mamaTransport\_\-setOutboundThrottle@{mamaTransport\_\-setOutboundThrottle}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setOutboundThrottle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setOutboundThrottle ({\bf mamaTransport} {\em transport}, \/  {\bf mamaThrottleInstance} {\em instance}, \/  double {\em outboundThrottle})}}
+\label{transport_8h_ac83590731fce653c9c1f3c003008805c}
+
+
+Set the throttle rate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]the transport. \item[{\em instance}]the instance \item[{\em outboundThrottle}]the rate in messages/second. \end{DoxyParams}
+\hypertarget{transport_8h_aea36062063efa82e6d43d2c1557c9801}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setSymbolMapFunc@{mamaTransport\_\-setSymbolMapFunc}}
+\index{mamaTransport\_\-setSymbolMapFunc@{mamaTransport\_\-setSymbolMapFunc}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setSymbolMapFunc}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaTransport\_\-setSymbolMapFunc ({\bf mamaTransport} {\em transport}, \/  {\bf mamaSymbolMapFunc} {\em mapFunc}, \/  void $\ast$ {\em closure})}}
+\label{transport_8h_aea36062063efa82e6d43d2c1557c9801}
+
+
+Set the symbol mapping function for a mamaTransport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \item[{\em mapFunc}]The symbol mapping function. \item[{\em closure}]The closure argument to pass to mappingFunc whenever it is invoked. \end{DoxyParams}
+\hypertarget{transport_8h_a5bb46f3686fd95cc394e837fc698f29e}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getSymbolMapFunc@{mamaTransport\_\-getSymbolMapFunc}}
+\index{mamaTransport\_\-getSymbolMapFunc@{mamaTransport\_\-getSymbolMapFunc}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getSymbolMapFunc}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaSymbolMapFunc} mamaTransport\_\-getSymbolMapFunc ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_a5bb46f3686fd95cc394e837fc698f29e}
+
+
+Return the symbol mapping function for a mamaTransport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The symbol mapping function (could be NULL). 
+\end{DoxyReturn}
+\hypertarget{transport_8h_ac78afb949e436e5145a3a36213137507}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getSymbolMapFuncClosure@{mamaTransport\_\-getSymbolMapFuncClosure}}
+\index{mamaTransport\_\-getSymbolMapFuncClosure@{mamaTransport\_\-getSymbolMapFuncClosure}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getSymbolMapFuncClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void$\ast$ mamaTransport\_\-getSymbolMapFuncClosure ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_ac78afb949e436e5145a3a36213137507}
+
+
+Return the symbol mapping function closure for a mamaTransport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The symbol mapping function closure (could be NULL). 
+\end{DoxyReturn}
+\hypertarget{transport_8h_a3f8fd6c957cdcdec57e62c3e61521cb9}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setDescription@{mamaTransport\_\-setDescription}}
+\index{mamaTransport\_\-setDescription@{mamaTransport\_\-setDescription}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setDescription}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setDescription ({\bf mamaTransport} {\em transport}, \/  const char $\ast$ {\em description})}}
+\label{transport_8h_a3f8fd6c957cdcdec57e62c3e61521cb9}
+
+
+Set the description for this transport. If the underlying middleware supports the concept of a description the values will be passed on. Otherwise MAMA will maintain the description internally.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \item[{\em description}]The description for the transport. This will be copied. \end{DoxyParams}
+\hypertarget{transport_8h_aee4ac6d49dba0866e6803660a2a00b3c}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getDescription@{mamaTransport\_\-getDescription}}
+\index{mamaTransport\_\-getDescription@{mamaTransport\_\-getDescription}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getDescription}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getDescription ({\bf mamaTransport} {\em transport}, \/  const char $\ast$$\ast$ {\em description})}}
+\label{transport_8h_aee4ac6d49dba0866e6803660a2a00b3c}
+
+
+Get the description attribute for the specified transport. Note that a copy of the description is not returned. Do not change or free this memory.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport \item[{\em description}]The address to where the description will be written. \end{DoxyParams}
+\hypertarget{transport_8h_a1c499d9b17b127442f577b82d7fe59de}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setInvokeQualityForAllSubscs@{mamaTransport\_\-setInvokeQualityForAllSubscs}}
+\index{mamaTransport\_\-setInvokeQualityForAllSubscs@{mamaTransport\_\-setInvokeQualityForAllSubscs}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setInvokeQualityForAllSubscs}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setInvokeQualityForAllSubscs ({\bf mamaTransport} {\em transport}, \/  int {\em invokeQualityForAllSubscs})}}
+\label{transport_8h_a1c499d9b17b127442f577b82d7fe59de}
+
+
+Set whether to invoke the quality callback for all subscriptions whenever a data quality event occurs (the default), or whether to invoke the quality callback only when data subsequently arrives for a subscription. If set to true, an onQuality callback will be invoked for a subscription whenever a data quality event occurs on the transport, even in between updates for that description. If set to false, the onQuality callback will not be called when the data quality event occurs on the transport. However, it will still be invoked when an update arrives for the subscription.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport \item[{\em invokeQualityForAllSubscs}]Whether to invoke quality callback for all subscriptions \end{DoxyParams}
+\hypertarget{transport_8h_aff2b0f78a6d90e19dd190ff7f4c957bc}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getInvokeQualityForAllSubscs@{mamaTransport\_\-getInvokeQualityForAllSubscs}}
+\index{mamaTransport\_\-getInvokeQualityForAllSubscs@{mamaTransport\_\-getInvokeQualityForAllSubscs}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getInvokeQualityForAllSubscs}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getInvokeQualityForAllSubscs (const {\bf mamaTransport} {\em transport}, \/  int $\ast$ {\em invokeQualityForAllSubscs})}}
+\label{transport_8h_aff2b0f78a6d90e19dd190ff7f4c957bc}
+
+
+Get whether the transport has been set to invoke the quality callback for all subscriptions whenever a data quality event occurs. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport \item[{\em invokeQualityForAllSubscs}]Whether transport has been set to invoke quality callback for all subscriptions \end{DoxyParams}
+\hypertarget{transport_8h_a311994efa26bd650eeac48f7715fcf3a}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getQuality@{mamaTransport\_\-getQuality}}
+\index{mamaTransport\_\-getQuality@{mamaTransport\_\-getQuality}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getQuality}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getQuality (const {\bf mamaTransport} {\em transport}, \/  {\bf mamaQuality} $\ast$ {\em quality})}}
+\label{transport_8h_a311994efa26bd650eeac48f7715fcf3a}
+
+
+Get the quality of data for the transport. Currently only implemented for the Tibco RV middleware. Other middlewares always return STATUS\_\-OK
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport \item[{\em quality}]The quality of data for the transport \end{DoxyParams}
+\hypertarget{transport_8h_a5a66e765df927a31d97c4c232731b5c8}{
+\index{transport.h@{transport.h}!mamaTransport\_\-destroy@{mamaTransport\_\-destroy}}
+\index{mamaTransport\_\-destroy@{mamaTransport\_\-destroy}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-destroy ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_a5a66e765df927a31d97c4c232731b5c8}
+
+
+Destroy the transport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]the transport. \end{DoxyParams}
+\hypertarget{transport_8h_a49a0ebdc5020400a7c672afb7530d2cf}{
+\index{transport.h@{transport.h}!mamaTransport\_\-findConnection@{mamaTransport\_\-findConnection}}
+\index{mamaTransport\_\-findConnection@{mamaTransport\_\-findConnection}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-findConnection}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-findConnection ({\bf mamaTransport} {\em transport}, \/  {\bf mamaConnection} $\ast$ {\em result}, \/  const char $\ast$ {\em ipAddress}, \/  uint16\_\-t {\em port})}}
+\label{transport_8h_a49a0ebdc5020400a7c672afb7530d2cf}
+
+
+Find a connection with specified IP Address and Port. If the port is 0, the call returns the first connection with the specified IP Address. If a connection is not found the method returns MAMA\_\-STATUS\_\-NOT\_\-FOUND and $\ast$result == NULL. The caller is responsible for calling \hyperlink{connection_8h_a58aeea260801a727eaf341d4572b77ad}{mamaConnection\_\-free()}.
+
+For middleware that does not provide access to per-\/connection information (non WMW middleware), the method returns MAMA\_\-STATUS\_\-NOT\_\-IMPL. \hypertarget{transport_8h_ad47e75506583e6ddbfdef86e5ef617fb}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getAllConnections@{mamaTransport\_\-getAllConnections}}
+\index{mamaTransport\_\-getAllConnections@{mamaTransport\_\-getAllConnections}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getAllConnections}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getAllConnections ({\bf mamaTransport} {\em transport}, \/  {\bf mamaConnection} $\ast$$\ast$ {\em result}, \/  uint32\_\-t $\ast$ {\em len})}}
+\label{transport_8h_ad47e75506583e6ddbfdef86e5ef617fb}
+
+
+Return a list of all clients connected to this transport. The result and len must be passed to \hyperlink{transport_8h_a7fd5ac85182df2184c279672583d3bd9}{mamaTransport\_\-freeAllConnections()} to free resources allocated by this function. \hypertarget{transport_8h_ae895c78a7d6e7b05f73b0d4d64b7dd1f}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getAllConnectionsForTopic@{mamaTransport\_\-getAllConnectionsForTopic}}
+\index{mamaTransport\_\-getAllConnectionsForTopic@{mamaTransport\_\-getAllConnectionsForTopic}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getAllConnectionsForTopic}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getAllConnectionsForTopic ({\bf mamaTransport} {\em transport}, \/  const char $\ast$ {\em topic}, \/  {\bf mamaConnection} $\ast$$\ast$ {\em result}, \/  uint32\_\-t $\ast$ {\em len})}}
+\label{transport_8h_ae895c78a7d6e7b05f73b0d4d64b7dd1f}
+
+
+Return a list of all clients connected to this transport for a topic. The result and len must be passed to \hyperlink{transport_8h_a7fd5ac85182df2184c279672583d3bd9}{mamaTransport\_\-freeAllConnections()} to free resources allocated by this function. \hypertarget{transport_8h_a7fd5ac85182df2184c279672583d3bd9}{
+\index{transport.h@{transport.h}!mamaTransport\_\-freeAllConnections@{mamaTransport\_\-freeAllConnections}}
+\index{mamaTransport\_\-freeAllConnections@{mamaTransport\_\-freeAllConnections}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-freeAllConnections}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-freeAllConnections ({\bf mamaTransport} {\em transport}, \/  {\bf mamaConnection} $\ast$ {\em result}, \/  uint32\_\-t {\em len})}}
+\label{transport_8h_a7fd5ac85182df2184c279672583d3bd9}
+
+
+Free resources allocated by \hyperlink{transport_8h_ad47e75506583e6ddbfdef86e5ef617fb}{mamaTransport\_\-getAllConnections()}. \hypertarget{transport_8h_ac06e16081cc714f9031cc636a523f6fb}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getAllServerConnections@{mamaTransport\_\-getAllServerConnections}}
+\index{mamaTransport\_\-getAllServerConnections@{mamaTransport\_\-getAllServerConnections}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getAllServerConnections}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getAllServerConnections ({\bf mamaTransport} {\em transport}, \/  {\bf mamaServerConnection} $\ast$$\ast$ {\em result}, \/  uint32\_\-t $\ast$ {\em len})}}
+\label{transport_8h_ac06e16081cc714f9031cc636a523f6fb}
+
+
+Return a list of all servers connected to this transport. The result and len must be passed to \hyperlink{transport_8h_ad301d4ca7c2d8ed6cd1bd83cf73eb3e1}{mamaTransport\_\-freeAllServerConnections()} to free resources allocated by this function. \hypertarget{transport_8h_ad301d4ca7c2d8ed6cd1bd83cf73eb3e1}{
+\index{transport.h@{transport.h}!mamaTransport\_\-freeAllServerConnections@{mamaTransport\_\-freeAllServerConnections}}
+\index{mamaTransport\_\-freeAllServerConnections@{mamaTransport\_\-freeAllServerConnections}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-freeAllServerConnections}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-freeAllServerConnections ({\bf mamaTransport} {\em transport}, \/  {\bf mamaServerConnection} $\ast$ {\em result}, \/  uint32\_\-t {\em len})}}
+\label{transport_8h_ad301d4ca7c2d8ed6cd1bd83cf73eb3e1}
+
+
+Free resources allocated by \hyperlink{transport_8h_ac06e16081cc714f9031cc636a523f6fb}{mamaTransport\_\-getAllServerConnections()}. \hypertarget{transport_8h_ab3d2e341f7c434eaf086236593a06378}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setLbInitialCallback@{mamaTransport\_\-setLbInitialCallback}}
+\index{mamaTransport\_\-setLbInitialCallback@{mamaTransport\_\-setLbInitialCallback}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setLbInitialCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setLbInitialCallback ({\bf mamaTransport} {\em transport}, \/  {\bf mamaTransportLbInitialCB} {\em callback})}}
+\label{transport_8h_ab3d2e341f7c434eaf086236593a06378}
+
+
+Set the callback which will decide which member of the load balancing group to use initially. If no callback is set then one will be chosen at random. \hypertarget{transport_8h_a4e1b5f144bdf28f36aca4212249bf71f}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setLbCallback@{mamaTransport\_\-setLbCallback}}
+\index{mamaTransport\_\-setLbCallback@{mamaTransport\_\-setLbCallback}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setLbCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setLbCallback ({\bf mamaTransport} {\em transport}, \/  {\bf mamaTransportLbCB} {\em callback})}}
+\label{transport_8h_a4e1b5f144bdf28f36aca4212249bf71f}
+
+
+Set the callback which will allocate the next member of the load balancing group to use. The callback, if set, will be invoked for each new subscription. If no callback is set then the currently selected member the same one will be used for all subscriptions \hypertarget{transport_8h_ac51bbeaa7fd4e843e1748dc3b9cef645}{
+\index{transport.h@{transport.h}!mamaTransport\_\-requestConflation@{mamaTransport\_\-requestConflation}}
+\index{mamaTransport\_\-requestConflation@{mamaTransport\_\-requestConflation}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-requestConflation}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-requestConflation ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_ac51bbeaa7fd4e843e1748dc3b9cef645}
+
+
+Request that publishers conflate incoming messages. Publishers that support conflation (currently only Wombat TCP middleware) will enable conflation for this transport if possible. \hypertarget{transport_8h_a8b4b4433d27b333a610d4ed161dd8912}{
+\index{transport.h@{transport.h}!mamaTransport\_\-requestEndConflation@{mamaTransport\_\-requestEndConflation}}
+\index{mamaTransport\_\-requestEndConflation@{mamaTransport\_\-requestEndConflation}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-requestEndConflation}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-requestEndConflation ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_a8b4b4433d27b333a610d4ed161dd8912}
+
+
+Request that publishers stop conflating incoming messages for this transport. Publishers that support conflation (currently only Wombat TCP middleware) will stop conflating messages if possible. Note that the publisher may continue to send conflated messages at its discretion. \hypertarget{transport_8h_ac8d2dad6a9a3f98e28dceae80cefa7f7}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setDeactivateSubscriptionOnError@{mamaTransport\_\-setDeactivateSubscriptionOnError}}
+\index{mamaTransport\_\-setDeactivateSubscriptionOnError@{mamaTransport\_\-setDeactivateSubscriptionOnError}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setDeactivateSubscriptionOnError}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setDeactivateSubscriptionOnError ({\bf mamaTransport} {\em transport}, \/  int {\em deactivate})}}
+\label{transport_8h_ac8d2dad6a9a3f98e28dceae80cefa7f7}
+\hypertarget{transport_8h_a4be43840f9159293a66dd0f78c314af5}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getDeactivateSubscriptionOnError@{mamaTransport\_\-getDeactivateSubscriptionOnError}}
+\index{mamaTransport\_\-getDeactivateSubscriptionOnError@{mamaTransport\_\-getDeactivateSubscriptionOnError}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getDeactivateSubscriptionOnError}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaTransport\_\-getDeactivateSubscriptionOnError ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_a4be43840f9159293a66dd0f78c314af5}
+\hypertarget{transport_8h_ab9f51b1cca11f944fbdbaf562c4847dc}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getNativeTransport@{mamaTransport\_\-getNativeTransport}}
+\index{mamaTransport\_\-getNativeTransport@{mamaTransport\_\-getNativeTransport}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getNativeTransport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getNativeTransport ({\bf mamaTransport} {\em transport}, \/  int {\em index}, \/  void $\ast$$\ast$ {\em nativeTport})}}
+\label{transport_8h_ab9f51b1cca11f944fbdbaf562c4847dc}
+
+
+Return a pointer tothe underlying native transport. Applications should avoid this method if possible as it may result in non-\/portable, middleware specific code. Callers must cast the nativeTport to the appropriate type (ie. tibrvTransport$\ast$).
+
+Only implemented for TIBRV. \hypertarget{transport_8h_a411c3b3eca2c39c5644f42cd71fe892a}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getNativeTransportNamingCtx@{mamaTransport\_\-getNativeTransportNamingCtx}}
+\index{mamaTransport\_\-getNativeTransportNamingCtx@{mamaTransport\_\-getNativeTransportNamingCtx}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getNativeTransportNamingCtx}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getNativeTransportNamingCtx ({\bf mamaTransport} {\em transport}, \/  int {\em index}, \/  void $\ast$$\ast$ {\em nativeTportNamingCtx})}}
+\label{transport_8h_a411c3b3eca2c39c5644f42cd71fe892a}
+
+
+Return a pointer to the underlying native naming context the transport is using. Applications should avoid this method if possible as it may result in non-\/portable, middleware specific code. Callers must cast the native naming context to the appropriate type (ie. wmwns$\ast$).
+
+Only implemented for WMW version 5 and above. \hypertarget{transport_8h_a2454d0fd742a857be32e15c95c7190df}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getStatsCollector@{mamaTransport\_\-getStatsCollector}}
+\index{mamaTransport\_\-getStatsCollector@{mamaTransport\_\-getStatsCollector}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getStatsCollector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaStatsCollector} mamaTransport\_\-getStatsCollector ({\bf mamaTransport} {\em transport})}}
+\label{transport_8h_a2454d0fd742a857be32e15c95c7190df}
+\hypertarget{transport_8h_aebdccd283bd5304bd54970c4d507ae73}{
+\index{transport.h@{transport.h}!mamaTransport\_\-getClosure@{mamaTransport\_\-getClosure}}
+\index{mamaTransport\_\-getClosure@{mamaTransport\_\-getClosure}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-getClosure ({\bf mamaTransport} {\em transport}, \/  void $\ast$$\ast$ {\em closure})}}
+\label{transport_8h_aebdccd283bd5304bd54970c4d507ae73}
+
+
+Return the closure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \item[{\em closure}]holds the result. \end{DoxyParams}
+\hypertarget{transport_8h_acf429622c87c73e7f464a5251e5c48f3}{
+\index{transport.h@{transport.h}!mamaTransport\_\-setClosure@{mamaTransport\_\-setClosure}}
+\index{mamaTransport\_\-setClosure@{mamaTransport\_\-setClosure}!transport.h@{transport.h}}
+\subsubsection[{mamaTransport\_\-setClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTransport\_\-setClosure ({\bf mamaTransport} {\em transport}, \/  void $\ast$ {\em closure})}}
+\label{transport_8h_acf429622c87c73e7f464a5251e5c48f3}
+
+
+Set a closure. 
+\begin{DoxyParams}{Parameters}
+\item[{\em transport}]The transport. \item[{\em closure}]holds the closure to be added. \end{DoxyParams}

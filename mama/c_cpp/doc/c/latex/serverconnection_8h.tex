@@ -1,0 +1,74 @@
+\hypertarget{serverconnection_8h}{
+\section{serverconnection.h File Reference}
+\label{serverconnection_8h}\index{serverconnection.h@{serverconnection.h}}
+}
+{\ttfamily \#include \char`\"{}mama/mama.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{serverconnection_8h_a0b260ece28a81cef6ea9d191c804ad49}{mamaServerConnection\_\-free} (\hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection} connection)
+\begin{DoxyCompactList}\small\item\em This module contains information regarding inbound connections. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{serverconnection_8h_ad3f5597e8a7db9f8528cd89f750e9ddf}{mamaServerConnection\_\-getIpAddress} (\hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection} connection, const char $\ast$$\ast$address)
+\begin{DoxyCompactList}\small\item\em Get the IP address of the connected server. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{serverconnection_8h_aae4a8fd753523db5a04aa198ea3997b1}{mamaServerConnection\_\-getPort} (\hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection} connection, uint16\_\-t $\ast$port)
+\begin{DoxyCompactList}\small\item\em Get the port of the connected server. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{serverconnection_8h_ac61c966c51847f5fec1c78ea610a5cb6}{mamaServerConnection\_\-getConnectionStatus} (\hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection} connection, int $\ast$connectionStatus)
+\begin{DoxyCompactList}\small\item\em Get the status of the server connection. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{serverconnection_8h_a0b260ece28a81cef6ea9d191c804ad49}{
+\index{serverconnection.h@{serverconnection.h}!mamaServerConnection\_\-free@{mamaServerConnection\_\-free}}
+\index{mamaServerConnection\_\-free@{mamaServerConnection\_\-free}!serverconnection.h@{serverconnection.h}}
+\subsubsection[{mamaServerConnection\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaServerConnection\_\-free ({\bf mamaServerConnection} {\em connection})}}
+\label{serverconnection_8h_a0b260ece28a81cef6ea9d191c804ad49}
+
+
+This module contains information regarding inbound connections. Free the server connection.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama server connection\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{serverconnection_8h_ad3f5597e8a7db9f8528cd89f750e9ddf}{
+\index{serverconnection.h@{serverconnection.h}!mamaServerConnection\_\-getIpAddress@{mamaServerConnection\_\-getIpAddress}}
+\index{mamaServerConnection\_\-getIpAddress@{mamaServerConnection\_\-getIpAddress}!serverconnection.h@{serverconnection.h}}
+\subsubsection[{mamaServerConnection\_\-getIpAddress}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaServerConnection\_\-getIpAddress ({\bf mamaServerConnection} {\em connection}, \/  const char $\ast$$\ast$ {\em address})}}
+\label{serverconnection_8h_ad3f5597e8a7db9f8528cd89f750e9ddf}
+
+
+Get the IP address of the connected server. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama server connection \item[\mbox{$\rightarrow$} {\em address}]Returning the associated IP address\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{serverconnection_8h_aae4a8fd753523db5a04aa198ea3997b1}{
+\index{serverconnection.h@{serverconnection.h}!mamaServerConnection\_\-getPort@{mamaServerConnection\_\-getPort}}
+\index{mamaServerConnection\_\-getPort@{mamaServerConnection\_\-getPort}!serverconnection.h@{serverconnection.h}}
+\subsubsection[{mamaServerConnection\_\-getPort}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaServerConnection\_\-getPort ({\bf mamaServerConnection} {\em connection}, \/  uint16\_\-t $\ast$ {\em port})}}
+\label{serverconnection_8h_aae4a8fd753523db5a04aa198ea3997b1}
+
+
+Get the port of the connected server. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama server connection \item[\mbox{$\rightarrow$} {\em port}]Returning the associated port\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{serverconnection_8h_ac61c966c51847f5fec1c78ea610a5cb6}{
+\index{serverconnection.h@{serverconnection.h}!mamaServerConnection\_\-getConnectionStatus@{mamaServerConnection\_\-getConnectionStatus}}
+\index{mamaServerConnection\_\-getConnectionStatus@{mamaServerConnection\_\-getConnectionStatus}!serverconnection.h@{serverconnection.h}}
+\subsubsection[{mamaServerConnection\_\-getConnectionStatus}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaServerConnection\_\-getConnectionStatus ({\bf mamaServerConnection} {\em connection}, \/  int $\ast$ {\em connectionStatus})}}
+\label{serverconnection_8h_ac61c966c51847f5fec1c78ea610a5cb6}
+
+
+Get the status of the server connection. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama server connection \item[\mbox{$\rightarrow$} {\em connectionStatus}]Returning the connection status\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

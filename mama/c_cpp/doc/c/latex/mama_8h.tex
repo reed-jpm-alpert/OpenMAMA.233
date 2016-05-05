@@ -1,0 +1,590 @@
+\hypertarget{mama_8h}{
+\section{mama.h File Reference}
+\label{mama_8h}\index{mama.h@{mama.h}}
+}
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+{\ttfamily \#include $<$mama/log.h$>$}\par
+{\ttfamily \#include $<$mama/error.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/datetime.h$>$}\par
+{\ttfamily \#include $<$mama/servicelevel.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/msgstatus.h$>$}\par
+{\ttfamily \#include $<$mama/msgtype.h$>$}\par
+{\ttfamily \#include $<$mama/msgfield.h$>$}\par
+{\ttfamily \#include $<$mama/dictionary.h$>$}\par
+{\ttfamily \#include $<$mama/transport.h$>$}\par
+{\ttfamily \#include $<$mama/msg.h$>$}\par
+{\ttfamily \#include $<$mama/middleware.h$>$}\par
+{\ttfamily \#include $<$mama/price.h$>$}\par
+{\ttfamily \#include $<$mama/publisher.h$>$}\par
+{\ttfamily \#include $<$mama/reservedfields.h$>$}\par
+{\ttfamily \#include $<$mama/inbox.h$>$}\par
+{\ttfamily \#include $<$mama/timer.h$>$}\par
+{\ttfamily \#include $<$mama/queue.h$>$}\par
+{\ttfamily \#include $<$mama/senderId.h$>$}\par
+{\ttfamily \#include $<$mama/symbolmap.h$>$}\par
+{\ttfamily \#include $<$mama/symbolmapfile.h$>$}\par
+{\ttfamily \#include $<$mama/timezone.h$>$}\par
+{\ttfamily \#include $<$mama/source.h$>$}\par
+{\ttfamily \#include $<$mama/subscriptiontype.h$>$}\par
+{\ttfamily \#include $<$mama/quality.h$>$}\par
+{\ttfamily \#include $<$mama/ft.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mama_8h_ab16b2a90a8538f691a248e324a330faa}{MAMA\_\-OPEN\_\-MD}~((uint32\_\-t)(0x00000001))
+\item 
+\#define \hyperlink{mama_8h_a66882f8756209989a9a126b1633af937}{MAMA\_\-OPEN\_\-PUB\_\-SUB}~((uint32\_\-t)(0x00000002))
+\item 
+\#define \hyperlink{mama_8h_a9a6c53197ec539d55a589e596a7e6ad5}{MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE}~500
+\item 
+\#define \hyperlink{mama_8h_af2421690d563acb3516cccccbb67bbc0}{MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE}~250
+\item 
+\#define \hyperlink{mama_8h_af65319edf2fb214c911af4e42ea46b94}{MAMA\_\-DEFAULT\_\-RETRIES}~2
+\item 
+\#define \hyperlink{mama_8h_ac23205da18cc92dd1060a94de94f1a61}{MAMA\_\-DEFAULT\_\-TIMEOUT}~30.0f
+\item 
+\#define \hyperlink{mama_8h_a5c89d4a5e51a07ad27700f6378c35832}{MAMA\_\-MAX\_\-SYMBOL\_\-LEN}~128
+\item 
+\#define \hyperlink{mama_8h_a3b503802e2f639099b4e9b8c3d3678db}{MAMA\_\-MAX\_\-SOURCE\_\-LEN}~64
+\item 
+\#define \hyperlink{mama_8h_abff5745ee672067eac6f7262de87143c}{MAMA\_\-MAX\_\-TRANSPORT\_\-LEN}~64
+\item 
+\#define \hyperlink{mama_8h_a1b9ec8de36846fa26e9843b69789fd0f}{MAMA\_\-LINK\_\-BRIDGE}(implIdentifier, impl)
+\item 
+\#define \hyperlink{mama_8h_a6c6fbc7293c1a6d71cdc30ba3a8f5d0f}{MAMA\_\-CREATE\_\-BRIDGE}(implIdentifier, impl)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_af4307d5c0f3f48fe12ac4a040b82829d}{mama\_\-startBackgroundEx} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl, mamaStopCBEx callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Start Mama in the background, with extended parameters. \item\end{DoxyCompactList}\item 
+typedef const char $\ast$ \hyperlink{mama_8h_af92895d60da36f417398fc072f2cab0b}{message}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_aef9016de1fb14e2324b0e1fd0879bc92}{mama\_\-setDefaultPayload} (char id)
+\begin{DoxyCompactList}\small\item\em The {\ttfamily Mama} data type provides methods global initialization and manipulating global options. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_aa76e5affd5b8eded3a72d9ee76c8341f}{mama\_\-loadBridge} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} $\ast$impl, const char $\ast$middleware)
+\begin{DoxyCompactList}\small\item\em Load the bridge specified by middleware string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a0ac3b5ec70043a262a0708df3a7993fa}{mama\_\-loadPayloadBridge} (\hyperlink{types_8h_aa8780a24981ed7f83137aafc3de1dada}{mamaPayloadBridge} $\ast$bridge, const char $\ast$payloadName)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_ab85e0daf4b973879d5fec6a2589bdf09}{mama\_\-loadBridgeWithPath} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} $\ast$impl, const char $\ast$middleware, const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em Load the bridge specified by middleware string using the path specified by the user. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_adbef829a1f50010061d60f6cc25a6378}{mama\_\-open} (void)
+\begin{DoxyCompactList}\small\item\em mama\_\-status mama\_\-open (void) \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a8e4d1d1f2724d2953e21ef41de288a52}{mama\_\-openWithProperties} (const char $\ast$path, const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Initialize MAMA. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_aa6d49599e160743427da63c3f91fc54e}{mama\_\-setProperty} (const char $\ast$name, const char $\ast$value)
+\begin{DoxyCompactList}\small\item\em Set a specific property for the API. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a285bf04d828542473c726e4c3bf3ba1c}{mama\_\-setPropertiesFromFile} (const char $\ast$path, const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Load a set of properties through the API. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{mama_8h_ac8fba189dd558667ecb4934207f900fa}{mama\_\-getProperty} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Retrieve a specific property from the API. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a572001f2a87d180602bc33146c9d6b05}{mama\_\-close} (void)
+\begin{DoxyCompactList}\small\item\em Close MAMA and free all associated resource. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{mama_8h_ae2eb9d51032b87f081aa001140403bb8}{mama\_\-getVersion} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Return the version information for the library. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a288e5ae6ce491b037d8a011b04e176e0}{mama\_\-start} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Start processing messages on the internal queue. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{mama_8h_a397a2955defa49587cd5b23fafe4c887}{void} (MAMACALLTYPE $\ast$mamaStartCB)(\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}{status})
+\begin{DoxyCompactList}\small\item\em The callback invoked if an error occurs calling \hyperlink{mama_8h_a7e03349aad3fd03989d1853d97512477}{mama\_\-startBackground()} or when \hyperlink{mama_8h_a7e03349aad3fd03989d1853d97512477}{mama\_\-startBackground()} exits normally in which case status will be MAMA\_\-STATUS\_\-OK. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a7e03349aad3fd03989d1853d97512477}{mama\_\-startBackground} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl, mamaStartCB callback)
+\begin{DoxyCompactList}\small\item\em Start Mama in the background. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a699c741875cdbc4464679ba31d56852a}{mama\_\-stop} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Stop dispatching on the default event queue for the specified bridge. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_aa484e422a5a57b6504bc45212b6df46f}{mama\_\-stopAll} (void)
+\begin{DoxyCompactList}\small\item\em Stop dispatching on the default event queue for all bridges. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_afb5b0661a3c96665182eec863745e5ba}{mama\_\-setApplicationName} (const char $\ast$applicationName)
+\begin{DoxyCompactList}\small\item\em mama\_\-setApplicationName -\/ sets the mama application name This should be called before mama\_\-open \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a2e36caeb7f7ea8d7d00f74abffe9b0c2}{mama\_\-setApplicationClassName} (const char $\ast$className)
+\begin{DoxyCompactList}\small\item\em mama\_\-setApplicationClass -\/ sets the mama class name This should be called before mama\_\-open \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a54c1684a66fda21f0f7c409ebcbc0703}{mama\_\-getApplicationName} (const char $\ast$$\ast$applicationName)
+\begin{DoxyCompactList}\small\item\em mama\_\-getApplicationName -\/ gets the mama application name \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a052dabc3f11551d293ddcb334f5f32b0}{mama\_\-getApplicationClassName} (const char $\ast$$\ast$className)
+\begin{DoxyCompactList}\small\item\em mama\_\-getApplicationClass -\/ sets the mama class name \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a48b5bc34787ff2e48af16e8322209fee}{mama\_\-getUserName} (const char $\ast$$\ast$userName)
+\begin{DoxyCompactList}\small\item\em mama\_\-getUserName -\/ gets the user name \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a53e7750c16a379c088e3ef831363e64d}{mama\_\-getHostName} (const char $\ast$$\ast$hostName)
+\begin{DoxyCompactList}\small\item\em mama\_\-getHostName -\/ gets the host name \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_aec518445fc70e91458b05b7434b06b2f}{mama\_\-getIpAddress} (const char $\ast$$\ast$ipAddress)
+\begin{DoxyCompactList}\small\item\em mama\_\-getIpAddressName -\/ gets the IP Address \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a107719708a8a50121b851bb60f311f5b}{mama\_\-getDefaultEventQueue} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} $\ast$defaultQueue)
+\begin{DoxyCompactList}\small\item\em Get a reference to the internal default event queue in use for the specified middleware. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{mama_8h_a27a015c7b913b049d5d196efc6f79294}{mama\_\-setLastError} (\hyperlink{error_8h_a8c835133453f13c31c29e2fec21c422b}{mamaError} error)
+\begin{DoxyCompactList}\small\item\em Set the last error to occur in Mama. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{error_8h_a8c835133453f13c31c29e2fec21c422b}{mamaError} \hyperlink{mama_8h_a99baea88bd9d05f4bd0027fb7d6be94e}{mama\_\-getLastErrorCode} (void)
+\begin{DoxyCompactList}\small\item\em Get the code of the last error to have occurred in Mama. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{mama_8h_ab29616b76a9e243704230d4a096db975}{mama\_\-getLastErrorText} (void)
+\begin{DoxyCompactList}\small\item\em Get the text of the last error to have occurred in Mama. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a0dc5efc0d09e27ec8ba354f304f866ae}{mama\_\-setBridgeInfoCallback} (\hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl, bridgeInfoCallback callback)
+\begin{DoxyCompactList}\small\item\em Sets a callback to be invoked whenever an information message is logged at the bridge level. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_aa4a17a87840e8dc5c7052f491912f227}{mama\_\-addStatsCollector} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector)
+\begin{DoxyCompactList}\small\item\em Add a user stats collector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{mama_8h_a4532590abc1805c73187244d072f62a2}{mama\_\-removeStatsCollector} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector)
+\begin{DoxyCompactList}\small\item\em Remove a user stats collector. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{mama_8h_ab16b2a90a8538f691a248e324a330faa}{
+\index{mama.h@{mama.h}!MAMA\_\-OPEN\_\-MD@{MAMA\_\-OPEN\_\-MD}}
+\index{MAMA\_\-OPEN\_\-MD@{MAMA\_\-OPEN\_\-MD}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-OPEN\_\-MD}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-OPEN\_\-MD~((uint32\_\-t)(0x00000001))}}
+\label{mama_8h_ab16b2a90a8538f691a248e324a330faa}
+\hypertarget{mama_8h_a66882f8756209989a9a126b1633af937}{
+\index{mama.h@{mama.h}!MAMA\_\-OPEN\_\-PUB\_\-SUB@{MAMA\_\-OPEN\_\-PUB\_\-SUB}}
+\index{MAMA\_\-OPEN\_\-PUB\_\-SUB@{MAMA\_\-OPEN\_\-PUB\_\-SUB}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-OPEN\_\-PUB\_\-SUB}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-OPEN\_\-PUB\_\-SUB~((uint32\_\-t)(0x00000002))}}
+\label{mama_8h_a66882f8756209989a9a126b1633af937}
+\hypertarget{mama_8h_a9a6c53197ec539d55a589e596a7e6ad5}{
+\index{mama.h@{mama.h}!MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE@{MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE}}
+\index{MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE@{MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DEFAULT\_\-THROTTLE\_\-RATE~500}}
+\label{mama_8h_a9a6c53197ec539d55a589e596a7e6ad5}
+\hypertarget{mama_8h_af2421690d563acb3516cccccbb67bbc0}{
+\index{mama.h@{mama.h}!MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE@{MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE}}
+\index{MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE@{MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DEFAULT\_\-RECAP\_\-THROTTLE\_\-RATE~250}}
+\label{mama_8h_af2421690d563acb3516cccccbb67bbc0}
+\hypertarget{mama_8h_af65319edf2fb214c911af4e42ea46b94}{
+\index{mama.h@{mama.h}!MAMA\_\-DEFAULT\_\-RETRIES@{MAMA\_\-DEFAULT\_\-RETRIES}}
+\index{MAMA\_\-DEFAULT\_\-RETRIES@{MAMA\_\-DEFAULT\_\-RETRIES}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-DEFAULT\_\-RETRIES}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DEFAULT\_\-RETRIES~2}}
+\label{mama_8h_af65319edf2fb214c911af4e42ea46b94}
+\hypertarget{mama_8h_ac23205da18cc92dd1060a94de94f1a61}{
+\index{mama.h@{mama.h}!MAMA\_\-DEFAULT\_\-TIMEOUT@{MAMA\_\-DEFAULT\_\-TIMEOUT}}
+\index{MAMA\_\-DEFAULT\_\-TIMEOUT@{MAMA\_\-DEFAULT\_\-TIMEOUT}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-DEFAULT\_\-TIMEOUT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DEFAULT\_\-TIMEOUT~30.0f}}
+\label{mama_8h_ac23205da18cc92dd1060a94de94f1a61}
+\hypertarget{mama_8h_a5c89d4a5e51a07ad27700f6378c35832}{
+\index{mama.h@{mama.h}!MAMA\_\-MAX\_\-SYMBOL\_\-LEN@{MAMA\_\-MAX\_\-SYMBOL\_\-LEN}}
+\index{MAMA\_\-MAX\_\-SYMBOL\_\-LEN@{MAMA\_\-MAX\_\-SYMBOL\_\-LEN}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-MAX\_\-SYMBOL\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MAX\_\-SYMBOL\_\-LEN~128}}
+\label{mama_8h_a5c89d4a5e51a07ad27700f6378c35832}
+\hypertarget{mama_8h_a3b503802e2f639099b4e9b8c3d3678db}{
+\index{mama.h@{mama.h}!MAMA\_\-MAX\_\-SOURCE\_\-LEN@{MAMA\_\-MAX\_\-SOURCE\_\-LEN}}
+\index{MAMA\_\-MAX\_\-SOURCE\_\-LEN@{MAMA\_\-MAX\_\-SOURCE\_\-LEN}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-MAX\_\-SOURCE\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MAX\_\-SOURCE\_\-LEN~64}}
+\label{mama_8h_a3b503802e2f639099b4e9b8c3d3678db}
+\hypertarget{mama_8h_abff5745ee672067eac6f7262de87143c}{
+\index{mama.h@{mama.h}!MAMA\_\-MAX\_\-TRANSPORT\_\-LEN@{MAMA\_\-MAX\_\-TRANSPORT\_\-LEN}}
+\index{MAMA\_\-MAX\_\-TRANSPORT\_\-LEN@{MAMA\_\-MAX\_\-TRANSPORT\_\-LEN}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-MAX\_\-TRANSPORT\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MAX\_\-TRANSPORT\_\-LEN~64}}
+\label{mama_8h_abff5745ee672067eac6f7262de87143c}
+\hypertarget{mama_8h_a1b9ec8de36846fa26e9843b69789fd0f}{
+\index{mama.h@{mama.h}!MAMA\_\-LINK\_\-BRIDGE@{MAMA\_\-LINK\_\-BRIDGE}}
+\index{MAMA\_\-LINK\_\-BRIDGE@{MAMA\_\-LINK\_\-BRIDGE}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-LINK\_\-BRIDGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-LINK\_\-BRIDGE(implIdentifier, \/  impl)}}
+\label{mama_8h_a1b9ec8de36846fa26e9843b69789fd0f}
+{\bfseries Value:}
+\begin{DoxyCode}
+do                                                              \
+    {                                                               \
+        implIdentifier ## Bridge_createImpl (impl);                 \
+    }                                                               \
+    while(0)                                                        \
+\end{DoxyCode}
+\hypertarget{mama_8h_a6c6fbc7293c1a6d71cdc30ba3a8f5d0f}{
+\index{mama.h@{mama.h}!MAMA\_\-CREATE\_\-BRIDGE@{MAMA\_\-CREATE\_\-BRIDGE}}
+\index{MAMA\_\-CREATE\_\-BRIDGE@{MAMA\_\-CREATE\_\-BRIDGE}!mama.h@{mama.h}}
+\subsubsection[{MAMA\_\-CREATE\_\-BRIDGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-CREATE\_\-BRIDGE(implIdentifier, \/  impl)}}
+\label{mama_8h_a6c6fbc7293c1a6d71cdc30ba3a8f5d0f}
+{\bfseries Value:}
+\begin{DoxyCode}
+do                                                              \
+    {                                                               \
+        if (MAMA_LINK_##implIdentifier)                             \
+        {                                                           \
+            implIdentifier##Bridge_createImpl (impl);               \
+        }                                                           \
+        else                                                        \
+        {                                                           \
+            mama_loadBridge (impl, "##implIdentifier##");           \
+        }                                                           \
+    }                                                               \
+    while(0)                                                        \
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{mama_8h_af4307d5c0f3f48fe12ac4a040b82829d}{
+\index{mama.h@{mama.h}!mama\_\-startBackgroundEx@{mama\_\-startBackgroundEx}}
+\index{mama\_\-startBackgroundEx@{mama\_\-startBackgroundEx}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-startBackgroundEx}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ MAMAExpDLL {\bf mama\_\-status} {\bf mama\_\-startBackgroundEx}({\bf mamaBridge} bridgeImpl, mamaStopCBEx callback, void $\ast${\bf closure})}}
+\label{mama_8h_af4307d5c0f3f48fe12ac4a040b82829d}
+
+
+Start Mama in the background, with extended parameters. This method performs the same functionality as mama\_\-startBackground accept it provides the facility to pass in a closure. The C++ wrapper layer uses this version of the function, and stores the MamaStartCallback object in the closure.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em bridgeImpl}]The bridge specific structure. \item[\mbox{$\leftarrow$} {\em callback}]The extended callback for asynchronous status. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if successful. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_af92895d60da36f417398fc072f2cab0b}{
+\index{mama.h@{mama.h}!message@{message}}
+\index{message@{message}!mama.h@{mama.h}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$ {\bf message}}}
+\label{mama_8h_af92895d60da36f417398fc072f2cab0b}
+
+
+\subsection{Function Documentation}
+\hypertarget{mama_8h_aef9016de1fb14e2324b0e1fd0879bc92}{
+\index{mama.h@{mama.h}!mama\_\-setDefaultPayload@{mama\_\-setDefaultPayload}}
+\index{mama\_\-setDefaultPayload@{mama\_\-setDefaultPayload}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setDefaultPayload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mama\_\-setDefaultPayload (char {\em id})}}
+\label{mama_8h_aef9016de1fb14e2324b0e1fd0879bc92}
+
+
+The {\ttfamily Mama} data type provides methods global initialization and manipulating global options. Related {\ttfamily Mama} functions also provide means for creating transports, dictionaries, and subscriptions. \hypertarget{mama_8h_aa76e5affd5b8eded3a72d9ee76c8341f}{
+\index{mama.h@{mama.h}!mama\_\-loadBridge@{mama\_\-loadBridge}}
+\index{mama\_\-loadBridge@{mama\_\-loadBridge}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-loadBridge}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-loadBridge ({\bf mamaBridge} $\ast$ {\em impl}, \/  const char $\ast$ {\em middleware})}}
+\label{mama_8h_aa76e5affd5b8eded3a72d9ee76c8341f}
+
+
+Load the bridge specified by middleware string. If the bridge has already been loaded then the existing bridge instance will be returned. 
+\begin{DoxyParams}{Parameters}
+\item[{\em impl}]The bridge object \item[{\em middleware}]The middleware string. Can be \char`\"{}wmw\char`\"{}, \char`\"{}lbm\char`\"{} or \char`\"{}tibrv\char`\"{}. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status Whether the call was successful or not. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_a0ac3b5ec70043a262a0708df3a7993fa}{
+\index{mama.h@{mama.h}!mama\_\-loadPayloadBridge@{mama\_\-loadPayloadBridge}}
+\index{mama\_\-loadPayloadBridge@{mama\_\-loadPayloadBridge}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-loadPayloadBridge}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-loadPayloadBridge ({\bf mamaPayloadBridge} $\ast$ {\em bridge}, \/  const char $\ast$ {\em payloadName})}}
+\label{mama_8h_a0ac3b5ec70043a262a0708df3a7993fa}
+\hypertarget{mama_8h_ab85e0daf4b973879d5fec6a2589bdf09}{
+\index{mama.h@{mama.h}!mama\_\-loadBridgeWithPath@{mama\_\-loadBridgeWithPath}}
+\index{mama\_\-loadBridgeWithPath@{mama\_\-loadBridgeWithPath}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-loadBridgeWithPath}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-loadBridgeWithPath ({\bf mamaBridge} $\ast$ {\em impl}, \/  const char $\ast$ {\em middleware}, \/  const char $\ast$ {\em path})}}
+\label{mama_8h_ab85e0daf4b973879d5fec6a2589bdf09}
+
+
+Load the bridge specified by middleware string using the path specified by the user. If the bridge has already been loaded then the existing bridge instance will be returned. 
+\begin{DoxyParams}{Parameters}
+\item[{\em impl}]The bridge object \item[{\em middleware}]The middleware string. Can be \char`\"{}wmw\char`\"{}, \char`\"{}lbm\char`\"{} or \char`\"{}tibrv\char`\"{}. \item[{\em path}]The path to the bridge library \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status Whether the call was successful or not. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_adbef829a1f50010061d60f6cc25a6378}{
+\index{mama.h@{mama.h}!mama\_\-open@{mama\_\-open}}
+\index{mama\_\-open@{mama\_\-open}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-open}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-open (void)}}
+\label{mama_8h_adbef829a1f50010061d60f6cc25a6378}
+
+
+mama\_\-status mama\_\-open (void) Initialize MAMA.
+
+MAMA employs a reference count to track multiple calls to \hyperlink{mama_8h_adbef829a1f50010061d60f6cc25a6378}{mama\_\-open()} and \hyperlink{mama_8h_a572001f2a87d180602bc33146c9d6b05}{mama\_\-close()}. The count is incremented every time \hyperlink{mama_8h_adbef829a1f50010061d60f6cc25a6378}{mama\_\-open()} is called and decremented when \hyperlink{mama_8h_a572001f2a87d180602bc33146c9d6b05}{mama\_\-close()} is called. The resources are not actually released until the count reaches zero. \hypertarget{mama_8h_a8e4d1d1f2724d2953e21ef41de288a52}{
+\index{mama.h@{mama.h}!mama\_\-openWithProperties@{mama\_\-openWithProperties}}
+\index{mama\_\-openWithProperties@{mama\_\-openWithProperties}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-openWithProperties}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-openWithProperties (const char $\ast$ {\em path}, \/  const char $\ast$ {\em filename})}}
+\label{mama_8h_a8e4d1d1f2724d2953e21ef41de288a52}
+
+
+Initialize MAMA. Allows users of the API to override the default behavior of \hyperlink{mama_8h_adbef829a1f50010061d60f6cc25a6378}{mama\_\-open()} where a file mama.properties is required to be located in the directory specified by \$WOMBAT\_\-PATH.
+
+The properties file must have the same structure as a standard mama.properties file.
+
+If null is passed as the path the API will look for the properties file on the \$WOMBAT\_\-PATH.
+
+If null is passed as the filename the API will look for the default filename of mama.properties.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em path}]Fully qualified path to the directory containing the properties file \item[{\em filename}]The name of the file containing MAMA properties.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status Whether the call was successful or not. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_aa6d49599e160743427da63c3f91fc54e}{
+\index{mama.h@{mama.h}!mama\_\-setProperty@{mama\_\-setProperty}}
+\index{mama\_\-setProperty@{mama\_\-setProperty}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setProperty}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setProperty (const char $\ast$ {\em name}, \/  const char $\ast$ {\em value})}}
+\label{mama_8h_aa6d49599e160743427da63c3f91fc54e}
+
+
+Set a specific property for the API. If the property being set has already been given a value from a properties file that value will be replaced.
+
+See the example mama.properties provided with the distribution for examples of property formatting. The properties set via this function should be formatted in the same manner as those specified in mama.properties.
+
+The strings passed to the function are copied.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the property being set. \item[{\em value}]The value of the property being set.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-NULL\_\-ARG is either name or value is null. MAMA\_\-STATUS\_\-OK if the function completed successfully. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_a285bf04d828542473c726e4c3bf3ba1c}{
+\index{mama.h@{mama.h}!mama\_\-setPropertiesFromFile@{mama\_\-setPropertiesFromFile}}
+\index{mama\_\-setPropertiesFromFile@{mama\_\-setPropertiesFromFile}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setPropertiesFromFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setPropertiesFromFile (const char $\ast$ {\em path}, \/  const char $\ast$ {\em filename})}}
+\label{mama_8h_a285bf04d828542473c726e4c3bf3ba1c}
+
+
+Load a set of properties through the API. If the property being set has already been given a value from a properties file that value will be replaced.
+
+The properties file must have the same structure as a standard mama.properties file.
+
+If null is passed as the path the API will look for the properties file on the \$WOMBAT\_\-PATH.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em path}]Fully qualified path to the directory containing the properties file \item[{\em filename}]The name of the file containing properties.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-NULL\_\-ARG is either name or value is null. MAMA\_\-STATUS\_\-OK if the function completed successfully. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_ac8fba189dd558667ecb4934207f900fa}{
+\index{mama.h@{mama.h}!mama\_\-getProperty@{mama\_\-getProperty}}
+\index{mama\_\-getProperty@{mama\_\-getProperty}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getProperty}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mama\_\-getProperty (const char $\ast$ {\em name})}}
+\label{mama_8h_ac8fba189dd558667ecb4934207f900fa}
+
+
+Retrieve a specific property from the API. If the property has not been set, a NULL value will be returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em name}]The name of the property to retrieve.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the property or NULL if unset. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_a572001f2a87d180602bc33146c9d6b05}{
+\index{mama.h@{mama.h}!mama\_\-close@{mama\_\-close}}
+\index{mama\_\-close@{mama\_\-close}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-close}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-close (void)}}
+\label{mama_8h_a572001f2a87d180602bc33146c9d6b05}
+
+
+Close MAMA and free all associated resource. \hypertarget{mama_8h_ae2eb9d51032b87f081aa001140403bb8}{
+\index{mama.h@{mama.h}!mama\_\-getVersion@{mama\_\-getVersion}}
+\index{mama\_\-getVersion@{mama\_\-getVersion}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getVersion}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mama\_\-getVersion ({\bf mamaBridge} {\em bridgeImpl})}}
+\label{mama_8h_ae2eb9d51032b87f081aa001140403bb8}
+
+
+Return the version information for the library. The version of the underlying transport follows in parens.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bridgeImpl}]The bridge specific structure. \end{DoxyParams}
+\hypertarget{mama_8h_a288e5ae6ce491b037d8a011b04e176e0}{
+\index{mama.h@{mama.h}!mama\_\-start@{mama\_\-start}}
+\index{mama\_\-start@{mama\_\-start}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-start ({\bf mamaBridge} {\em bridgeImpl})}}
+\label{mama_8h_a288e5ae6ce491b037d8a011b04e176e0}
+
+
+Start processing messages on the internal queue. This starts Mama's internal throttle, refresh logic, and other internal Mama processes as well as dispatching messages from the internal queue. 
+
+\hyperlink{mama_8h_a288e5ae6ce491b037d8a011b04e176e0}{mama\_\-start( )} blocks until an invocation of \hyperlink{mama_8h_a699c741875cdbc4464679ba31d56852a}{mama\_\-stop()} occurs.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bridgeImpl}]The bridge specific structure. \end{DoxyParams}
+\hypertarget{mama_8h_a397a2955defa49587cd5b23fafe4c887}{
+\index{mama.h@{mama.h}!void@{void}}
+\index{void@{void}!mama.h@{mama.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em bridgeInfoCallback})}}
+\label{mama_8h_a397a2955defa49587cd5b23fafe4c887}
+
+
+The callback invoked if an error occurs calling \hyperlink{mama_8h_a7e03349aad3fd03989d1853d97512477}{mama\_\-startBackground()} or when \hyperlink{mama_8h_a7e03349aad3fd03989d1853d97512477}{mama\_\-startBackground()} exits normally in which case status will be MAMA\_\-STATUS\_\-OK. Callback passed to mama\_\-setBridgeInfoCallback ().
+
+Extended stop callback that improves on mamaStopCB by including a bridge impl pointer and closure in the signature.
+
+Callback invoked when default thread for middleware has finished processing.
+
+This will be invoked when info messages are logged at the bridge level. Currently only invoked for LBM log messages. \hypertarget{mama_8h_a7e03349aad3fd03989d1853d97512477}{
+\index{mama.h@{mama.h}!mama\_\-startBackground@{mama\_\-startBackground}}
+\index{mama\_\-startBackground@{mama\_\-startBackground}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-startBackground}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-startBackground ({\bf mamaBridge} {\em bridgeImpl}, \/  mamaStartCB {\em callback})}}
+\label{mama_8h_a7e03349aad3fd03989d1853d97512477}
+
+
+Start Mama in the background. This method invokes \hyperlink{mama_8h_a288e5ae6ce491b037d8a011b04e176e0}{mama\_\-start()} in a separate thread.
+
+This API uses the deprecated mamaStartCB callback type. mama\_\-startBackgroundEx uses the replacement type mamaStopCBEx. To retain backward compatability mama\_\-startBackground casts callback to mamaStopCB for further processing.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bridgeImpl}]The bridge specific structure. \item[{\em callback}]The callback for asynchronous status. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if successful. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_a699c741875cdbc4464679ba31d56852a}{
+\index{mama.h@{mama.h}!mama\_\-stop@{mama\_\-stop}}
+\index{mama\_\-stop@{mama\_\-stop}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-stop ({\bf mamaBridge} {\em bridgeImpl})}}
+\label{mama_8h_a699c741875cdbc4464679ba31d56852a}
+
+
+Stop dispatching on the default event queue for the specified bridge. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bridgeImpl}]The bridge specific structure. \end{DoxyParams}
+\hypertarget{mama_8h_aa484e422a5a57b6504bc45212b6df46f}{
+\index{mama.h@{mama.h}!mama\_\-stopAll@{mama\_\-stopAll}}
+\index{mama\_\-stopAll@{mama\_\-stopAll}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-stopAll}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-stopAll (void)}}
+\label{mama_8h_aa484e422a5a57b6504bc45212b6df46f}
+
+
+Stop dispatching on the default event queue for all bridges. \hypertarget{mama_8h_afb5b0661a3c96665182eec863745e5ba}{
+\index{mama.h@{mama.h}!mama\_\-setApplicationName@{mama\_\-setApplicationName}}
+\index{mama\_\-setApplicationName@{mama\_\-setApplicationName}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setApplicationName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setApplicationName (const char $\ast$ {\em applicationName})}}
+\label{mama_8h_afb5b0661a3c96665182eec863745e5ba}
+
+
+mama\_\-setApplicationName -\/ sets the mama application name This should be called before mama\_\-open 
+\begin{DoxyParams}{Parameters}
+\item[{\em applicationName}]\end{DoxyParams}
+\hypertarget{mama_8h_a2e36caeb7f7ea8d7d00f74abffe9b0c2}{
+\index{mama.h@{mama.h}!mama\_\-setApplicationClassName@{mama\_\-setApplicationClassName}}
+\index{mama\_\-setApplicationClassName@{mama\_\-setApplicationClassName}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setApplicationClassName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setApplicationClassName (const char $\ast$ {\em className})}}
+\label{mama_8h_a2e36caeb7f7ea8d7d00f74abffe9b0c2}
+
+
+mama\_\-setApplicationClass -\/ sets the mama class name This should be called before mama\_\-open 
+\begin{DoxyParams}{Parameters}
+\item[{\em className}]\end{DoxyParams}
+\hypertarget{mama_8h_a54c1684a66fda21f0f7c409ebcbc0703}{
+\index{mama.h@{mama.h}!mama\_\-getApplicationName@{mama\_\-getApplicationName}}
+\index{mama\_\-getApplicationName@{mama\_\-getApplicationName}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getApplicationName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-getApplicationName (const char $\ast$$\ast$ {\em applicationName})}}
+\label{mama_8h_a54c1684a66fda21f0f7c409ebcbc0703}
+
+
+mama\_\-getApplicationName -\/ gets the mama application name 
+\begin{DoxyParams}{Parameters}
+\item[{\em applicationName}]address of where to put applicationName \end{DoxyParams}
+\hypertarget{mama_8h_a052dabc3f11551d293ddcb334f5f32b0}{
+\index{mama.h@{mama.h}!mama\_\-getApplicationClassName@{mama\_\-getApplicationClassName}}
+\index{mama\_\-getApplicationClassName@{mama\_\-getApplicationClassName}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getApplicationClassName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-getApplicationClassName (const char $\ast$$\ast$ {\em className})}}
+\label{mama_8h_a052dabc3f11551d293ddcb334f5f32b0}
+
+
+mama\_\-getApplicationClass -\/ sets the mama class name 
+\begin{DoxyParams}{Parameters}
+\item[{\em className}]address of where to put className \end{DoxyParams}
+\hypertarget{mama_8h_a48b5bc34787ff2e48af16e8322209fee}{
+\index{mama.h@{mama.h}!mama\_\-getUserName@{mama\_\-getUserName}}
+\index{mama\_\-getUserName@{mama\_\-getUserName}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getUserName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-getUserName (const char $\ast$$\ast$ {\em userName})}}
+\label{mama_8h_a48b5bc34787ff2e48af16e8322209fee}
+
+
+mama\_\-getUserName -\/ gets the user name 
+\begin{DoxyParams}{Parameters}
+\item[{\em userName}]address of where to put user name \end{DoxyParams}
+\hypertarget{mama_8h_a53e7750c16a379c088e3ef831363e64d}{
+\index{mama.h@{mama.h}!mama\_\-getHostName@{mama\_\-getHostName}}
+\index{mama\_\-getHostName@{mama\_\-getHostName}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getHostName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-getHostName (const char $\ast$$\ast$ {\em hostName})}}
+\label{mama_8h_a53e7750c16a379c088e3ef831363e64d}
+
+
+mama\_\-getHostName -\/ gets the host name 
+\begin{DoxyParams}{Parameters}
+\item[{\em hostName}]address of where to put host name \end{DoxyParams}
+\hypertarget{mama_8h_aec518445fc70e91458b05b7434b06b2f}{
+\index{mama.h@{mama.h}!mama\_\-getIpAddress@{mama\_\-getIpAddress}}
+\index{mama\_\-getIpAddress@{mama\_\-getIpAddress}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getIpAddress}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-getIpAddress (const char $\ast$$\ast$ {\em ipAddress})}}
+\label{mama_8h_aec518445fc70e91458b05b7434b06b2f}
+
+
+mama\_\-getIpAddressName -\/ gets the IP Address 
+\begin{DoxyParams}{Parameters}
+\item[{\em ipAddress}]address of where to put IP address \end{DoxyParams}
+\hypertarget{mama_8h_a107719708a8a50121b851bb60f311f5b}{
+\index{mama.h@{mama.h}!mama\_\-getDefaultEventQueue@{mama\_\-getDefaultEventQueue}}
+\index{mama\_\-getDefaultEventQueue@{mama\_\-getDefaultEventQueue}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getDefaultEventQueue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-getDefaultEventQueue ({\bf mamaBridge} {\em bridgeImpl}, \/  {\bf mamaQueue} $\ast$ {\em defaultQueue})}}
+\label{mama_8h_a107719708a8a50121b851bb60f311f5b}
+
+
+Get a reference to the internal default event queue in use for the specified middleware. 
+\begin{DoxyParams}{Parameters}
+\item[{\em bridgeImpl}]The middleware for which the default event queue is being obtained. \item[{\em defaultQueue}]Address to which the defaultQueue is to be written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the function returns successfully. 
+\end{DoxyReturn}
+\hypertarget{mama_8h_a27a015c7b913b049d5d196efc6f79294}{
+\index{mama.h@{mama.h}!mama\_\-setLastError@{mama\_\-setLastError}}
+\index{mama\_\-setLastError@{mama\_\-setLastError}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setLastError}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mama\_\-setLastError ({\bf mamaError} {\em error})}}
+\label{mama_8h_a27a015c7b913b049d5d196efc6f79294}
+
+
+Set the last error to occur in Mama. Each thread will have its own last error.
+
+This function is for internal usage only.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]The code of the last error to have occured in this thread. \end{DoxyParams}
+\hypertarget{mama_8h_a99baea88bd9d05f4bd0027fb7d6be94e}{
+\index{mama.h@{mama.h}!mama\_\-getLastErrorCode@{mama\_\-getLastErrorCode}}
+\index{mama\_\-getLastErrorCode@{mama\_\-getLastErrorCode}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getLastErrorCode}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaError} mama\_\-getLastErrorCode (void)}}
+\label{mama_8h_a99baea88bd9d05f4bd0027fb7d6be94e}
+
+
+Get the code of the last error to have occurred in Mama. Each thread will have its own last error.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]The code of the last error to have occured in this thread. \end{DoxyParams}
+\hypertarget{mama_8h_ab29616b76a9e243704230d4a096db975}{
+\index{mama.h@{mama.h}!mama\_\-getLastErrorText@{mama\_\-getLastErrorText}}
+\index{mama\_\-getLastErrorText@{mama\_\-getLastErrorText}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-getLastErrorText}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mama\_\-getLastErrorText (void)}}
+\label{mama_8h_ab29616b76a9e243704230d4a096db975}
+
+
+Get the text of the last error to have occurred in Mama. Each thread will have its own last error.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]The text of the last error to have occured in this thread. \end{DoxyParams}
+\hypertarget{mama_8h_a0dc5efc0d09e27ec8ba354f304f866ae}{
+\index{mama.h@{mama.h}!mama\_\-setBridgeInfoCallback@{mama\_\-setBridgeInfoCallback}}
+\index{mama\_\-setBridgeInfoCallback@{mama\_\-setBridgeInfoCallback}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-setBridgeInfoCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-setBridgeInfoCallback ({\bf mamaBridge} {\em bridgeImpl}, \/  bridgeInfoCallback {\em callback})}}
+\label{mama_8h_a0dc5efc0d09e27ec8ba354f304f866ae}
+
+
+Sets a callback to be invoked whenever an information message is logged at the bridge level. Messages returned vary depending on the underlying middleware. Currently only implemented for LBM bridges. \hypertarget{mama_8h_aa4a17a87840e8dc5c7052f491912f227}{
+\index{mama.h@{mama.h}!mama\_\-addStatsCollector@{mama\_\-addStatsCollector}}
+\index{mama\_\-addStatsCollector@{mama\_\-addStatsCollector}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-addStatsCollector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-addStatsCollector ({\bf mamaStatsCollector} {\em statsCollector})}}
+\label{mama_8h_aa4a17a87840e8dc5c7052f491912f227}
+
+
+Add a user stats collector. \hypertarget{mama_8h_a4532590abc1805c73187244d072f62a2}{
+\index{mama.h@{mama.h}!mama\_\-removeStatsCollector@{mama\_\-removeStatsCollector}}
+\index{mama\_\-removeStatsCollector@{mama\_\-removeStatsCollector}!mama.h@{mama.h}}
+\subsubsection[{mama\_\-removeStatsCollector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-removeStatsCollector ({\bf mamaStatsCollector} {\em statsCollector})}}
+\label{mama_8h_a4532590abc1805c73187244d072f62a2}
+
+
+Remove a user stats collector. 
+
+\subsection{Variable Documentation}
+\hypertarget{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{
+\index{mama.h@{mama.h}!mamaBridge@{mamaBridge}}
+\index{mamaBridge@{mamaBridge}!mama.h@{mama.h}}
+\subsubsection[{mamaBridge}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaBridge}}}
+\label{mama_8h_a6a44b3b3884dcc99127baed2fe630240}

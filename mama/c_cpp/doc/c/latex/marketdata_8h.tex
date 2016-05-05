@@ -1,0 +1,248 @@
+\hypertarget{marketdata_8h}{
+\section{marketdata.h File Reference}
+\label{marketdata_8h}\index{marketdata.h@{marketdata.h}}
+}
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/msgtype.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909}{mamaMdDataType} \hyperlink{marketdata_8h_a5cb314e3b1e130b1a4e561595e5580c2}{mamaDataType}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909}{mamaMdDataType} \{ \par
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909af5386a5b2ec0cbc7421babc204a8aad3}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-STANDARD} =  0, 
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a2fe39e6825cdd4c2f3d45b9b92bded17}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-ORDER\_\-BOOK} =  1, 
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a2484d7808dabfa20153d9d48a2fea608}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-STORY} =  2, 
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a5dbf0328c0d498ca1cbb802abd6e8d6e}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-WORLDVIEW} =  3, 
+\par
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a318ee2cbacc5bcaea324ef3b9f266d5b}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-PROPERTY} =  4, 
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a73ca4235a002ac35edf8bde9e2066207}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-USAGE\_\-LOG} =  5, 
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909af68893df34b5c30c1747e67ec73621a5}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-QUERY} =  6, 
+\hyperlink{marketdata_8h_a7caba7573e19a972db38bb9589d8d909acf8a22988074eba7edeec062c208a695}{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-TEMPLATE} =  7
+ \}
+\item 
+enum \hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10}{mamaMdMsgType} \{ \par
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aa76feb654ef4c4779abd1d7cb6ec8086}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-GENERAL} =  0, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10ac1e5e5f176c4165f995c0713f65e0fa7}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CANCEL} =  2, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a10f9e4509199801915ba6c52130d6653}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-ERROR} =  3, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a5e2b5bd5b05f6fb7aae8ed11e42a5116}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CORRECTION} =  4, 
+\par
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a2de37d3bf4b7519539e244213d9ad628}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CLOSING} =  5, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10abc38d1c42d5d0c1d858bbf2f3f54f40d}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-DELETE} =  7, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a82c3d69d23e8cee7f4a97520cb782507}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-ACTION} =  8, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a2b51f35e0cb671a18bb5ab86ff49f3bb}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-PREOPENING} =  12, 
+\par
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a91df89378d95eaa3b928d35e18a42536}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-QUOTE} =  13, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aafdaeb3b6e33f1e643086ed210d97b0d}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-TRADE} =  14, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a35cbf3d3ecf423ece9e297d8c9751488}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-UPDATE} =  15, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aa5a0aece0ace6ae8500945630776b70a}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-INITIAL} =  16, 
+\par
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10ab8fb95f1b1fc7708dda77bf987fa443b}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-CLEAR} =  18, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a322b7983b4d581a1d3895118c3a70b4c}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-IMBALANCE} =  22, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a1603c902fb3309f049ff9946c88f08c6}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SECURITY\_\-STATUS} =  23, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10abd5b9f94dd54ae3d7e34563867d395ed}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-HEADLINE} =  24, 
+\par
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a94e173b60788b82598c751c3ee40df6a}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-STORY} =  25, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a70fc43e16013aca7e539ce0503e03ce4}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-QUERY} =  26, 
+\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a19719ec344171cab4ac0c5246fd53803}{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-MISC} =  100
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10}{mamaMdMsgType} \hyperlink{marketdata_8h_a97e4b4356ca20b91657c505b9fe0cb55}{mamaMdMsgType\_\-typeForMsg} (const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Extract the market data message type from the message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{marketdata_8h_a0f17aacd5e26e2dfc84d60154239aead}{mamaMdMsgType\_\-stringForMsg} (const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Extract the market data message type as a string from a message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{marketdata_8h_a154c49a77f9e23062e22c6eb189c01ba}{mamaMdMsgType\_\-stringForType} (\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10}{mamaMdMsgType} type)
+\begin{DoxyCompactList}\small\item\em Convert a mamaMdMsgType to a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{msgtype_8h_ac7f440127bbd9f1f18d4b5d10d8decb2}{mamaMsgType} \hyperlink{marketdata_8h_a631d0c61df2e69c85ad628525ba35490}{mamaMdMsgType\_\-compatMsgType} (\hyperlink{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10}{mamaMdMsgType} type)
+\begin{DoxyCompactList}\small\item\em Convert a mamaMdMsgType to a reasonable backward-\/compatible mamaMsgType. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{marketdata_8h_a5cb314e3b1e130b1a4e561595e5580c2}{
+\index{marketdata.h@{marketdata.h}!mamaDataType@{mamaDataType}}
+\index{mamaDataType@{mamaDataType}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaDataType}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaMdDataType}  {\bf mamaDataType}}}
+\label{marketdata_8h_a5cb314e3b1e130b1a4e561595e5580c2}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909}{
+\index{marketdata.h@{marketdata.h}!mamaMdDataType@{mamaMdDataType}}
+\index{mamaMdDataType@{mamaMdDataType}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaMdDataType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaMdDataType}}}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-STANDARD@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-STANDARD}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-STANDARD@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-STANDARD}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909af5386a5b2ec0cbc7421babc204a8aad3}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-STANDARD}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909af5386a5b2ec0cbc7421babc204a8aad3}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-ORDER\_\-BOOK@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-ORDER\_\-BOOK}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-ORDER\_\-BOOK@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-ORDER\_\-BOOK}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a2fe39e6825cdd4c2f3d45b9b92bded17}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-ORDER\_\-BOOK}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a2fe39e6825cdd4c2f3d45b9b92bded17}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-STORY@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-STORY}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-STORY@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-STORY}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a2484d7808dabfa20153d9d48a2fea608}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-STORY}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a2484d7808dabfa20153d9d48a2fea608}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-WORLDVIEW@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-WORLDVIEW}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-WORLDVIEW@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-WORLDVIEW}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a5dbf0328c0d498ca1cbb802abd6e8d6e}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-WORLDVIEW}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a5dbf0328c0d498ca1cbb802abd6e8d6e}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-PROPERTY@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-PROPERTY}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-PROPERTY@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-PROPERTY}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a318ee2cbacc5bcaea324ef3b9f266d5b}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-PROPERTY}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a318ee2cbacc5bcaea324ef3b9f266d5b}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-USAGE\_\-LOG@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-USAGE\_\-LOG}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-USAGE\_\-LOG@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-USAGE\_\-LOG}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a73ca4235a002ac35edf8bde9e2066207}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-USAGE\_\-LOG}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909a73ca4235a002ac35edf8bde9e2066207}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-QUERY@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-QUERY}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-QUERY@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-QUERY}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909af68893df34b5c30c1747e67ec73621a5}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-NEWS\_\-QUERY}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909af68893df34b5c30c1747e67ec73621a5}
+}]\index{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-TEMPLATE@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-TEMPLATE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-DATA\_\-TYPE\_\-TEMPLATE@{MAMA\_\-MD\_\-DATA\_\-TYPE\_\-TEMPLATE}}\item[{\em 
+\hypertarget{marketdata_8h_a7caba7573e19a972db38bb9589d8d909acf8a22988074eba7edeec062c208a695}{
+MAMA\_\-MD\_\-DATA\_\-TYPE\_\-TEMPLATE}
+\label{marketdata_8h_a7caba7573e19a972db38bb9589d8d909acf8a22988074eba7edeec062c208a695}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10}{
+\index{marketdata.h@{marketdata.h}!mamaMdMsgType@{mamaMdMsgType}}
+\index{mamaMdMsgType@{mamaMdMsgType}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaMdMsgType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaMdMsgType}}}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-GENERAL@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-GENERAL}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-GENERAL@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-GENERAL}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aa76feb654ef4c4779abd1d7cb6ec8086}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-GENERAL}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aa76feb654ef4c4779abd1d7cb6ec8086}
+}]General update (indices, funds). \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CANCEL@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CANCEL}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CANCEL@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CANCEL}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10ac1e5e5f176c4165f995c0713f65e0fa7}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CANCEL}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10ac1e5e5f176c4165f995c0713f65e0fa7}
+}]Trade cancellation. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-ERROR@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-ERROR}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-ERROR@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-ERROR}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a10f9e4509199801915ba6c52130d6653}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-ERROR}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a10f9e4509199801915ba6c52130d6653}
+}]Trade error. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CORRECTION@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CORRECTION}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CORRECTION@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CORRECTION}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a5e2b5bd5b05f6fb7aae8ed11e42a5116}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CORRECTION}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a5e2b5bd5b05f6fb7aae8ed11e42a5116}
+}]Trade correction. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CLOSING@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CLOSING}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CLOSING@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CLOSING}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a2de37d3bf4b7519539e244213d9ad628}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-CLOSING}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a2de37d3bf4b7519539e244213d9ad628}
+}]Closing summary. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-DELETE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-DELETE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-DELETE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-DELETE}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10abc38d1c42d5d0c1d858bbf2f3f54f40d}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-DELETE}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10abc38d1c42d5d0c1d858bbf2f3f54f40d}
+}]Symbol deleted. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-ACTION@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-ACTION}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-ACTION@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-ACTION}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a82c3d69d23e8cee7f4a97520cb782507}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SYMBOL\_\-ACTION}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a82c3d69d23e8cee7f4a97520cb782507}
+}]Action related to this symbol, such as a name change or symbol deletion due to option/future expiration, etc. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-PREOPENING@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-PREOPENING}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-PREOPENING@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-PREOPENING}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a2b51f35e0cb671a18bb5ab86ff49f3bb}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-PREOPENING}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a2b51f35e0cb671a18bb5ab86ff49f3bb}
+}]Pre-\/opening summary (e.g. morning \char`\"{}roll\char`\"{}) \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-QUOTE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-QUOTE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-QUOTE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-QUOTE}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a91df89378d95eaa3b928d35e18a42536}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-QUOTE}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a91df89378d95eaa3b928d35e18a42536}
+}]Quote update. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-TRADE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-TRADE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-TRADE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-TRADE}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aafdaeb3b6e33f1e643086ed210d97b0d}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-TRADE}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aafdaeb3b6e33f1e643086ed210d97b0d}
+}]Trade update. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-UPDATE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-UPDATE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-UPDATE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-UPDATE}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a35cbf3d3ecf423ece9e297d8c9751488}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-UPDATE}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a35cbf3d3ecf423ece9e297d8c9751488}
+}]Orderbook update. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-INITIAL@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-INITIAL}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-INITIAL@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-INITIAL}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aa5a0aece0ace6ae8500945630776b70a}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-INITIAL}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10aa5a0aece0ace6ae8500945630776b70a}
+}]Order book initial value. This message is sent rather than MAMA\_\-MD\_\-MSG\_\-TYPE\_\-INITIAL for order books. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-CLEAR@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-CLEAR}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-CLEAR@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-CLEAR}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10ab8fb95f1b1fc7708dda77bf987fa443b}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-BOOK\_\-CLEAR}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10ab8fb95f1b1fc7708dda77bf987fa443b}
+}]Orderbook clear. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-IMBALANCE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-IMBALANCE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-IMBALANCE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-IMBALANCE}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a322b7983b4d581a1d3895118c3a70b4c}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-IMBALANCE}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a322b7983b4d581a1d3895118c3a70b4c}
+}]Order imbalance or noimbalance update. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SECURITY\_\-STATUS@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SECURITY\_\-STATUS}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SECURITY\_\-STATUS@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SECURITY\_\-STATUS}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a1603c902fb3309f049ff9946c88f08c6}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-SECURITY\_\-STATUS}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a1603c902fb3309f049ff9946c88f08c6}
+}]Security status update. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-HEADLINE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-HEADLINE}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-HEADLINE@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-HEADLINE}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10abd5b9f94dd54ae3d7e34563867d395ed}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-HEADLINE}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10abd5b9f94dd54ae3d7e34563867d395ed}
+}]News headline. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-STORY@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-STORY}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-STORY@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-STORY}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a94e173b60788b82598c751c3ee40df6a}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-STORY}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a94e173b60788b82598c751c3ee40df6a}
+}]News Story. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-QUERY@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-QUERY}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-QUERY@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-QUERY}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a70fc43e16013aca7e539ce0503e03ce4}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-NEWS\_\-QUERY}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a70fc43e16013aca7e539ce0503e03ce4}
+}]News query. \index{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-MISC@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-MISC}!marketdata.h@{marketdata.h}}\index{marketdata.h@{marketdata.h}!MAMA\_\-MD\_\-MSG\_\-TYPE\_\-MISC@{MAMA\_\-MD\_\-MSG\_\-TYPE\_\-MISC}}\item[{\em 
+\hypertarget{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a19719ec344171cab4ac0c5246fd53803}{
+MAMA\_\-MD\_\-MSG\_\-TYPE\_\-MISC}
+\label{marketdata_8h_a8f53db59d1c6ca7c5fdfd3edc469ce10a19719ec344171cab4ac0c5246fd53803}
+}]Miscellaneous. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{marketdata_8h_a97e4b4356ca20b91657c505b9fe0cb55}{
+\index{marketdata.h@{marketdata.h}!mamaMdMsgType\_\-typeForMsg@{mamaMdMsgType\_\-typeForMsg}}
+\index{mamaMdMsgType\_\-typeForMsg@{mamaMdMsgType\_\-typeForMsg}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaMdMsgType\_\-typeForMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaMdMsgType} mamaMdMsgType\_\-typeForMsg (const {\bf mamaMsg} {\em msg})}}
+\label{marketdata_8h_a97e4b4356ca20b91657c505b9fe0cb55}
+
+
+Extract the market data message type from the message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]The message. \end{DoxyParams}
+\hypertarget{marketdata_8h_a0f17aacd5e26e2dfc84d60154239aead}{
+\index{marketdata.h@{marketdata.h}!mamaMdMsgType\_\-stringForMsg@{mamaMdMsgType\_\-stringForMsg}}
+\index{mamaMdMsgType\_\-stringForMsg@{mamaMdMsgType\_\-stringForMsg}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaMdMsgType\_\-stringForMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaMdMsgType\_\-stringForMsg (const {\bf mamaMsg} {\em msg})}}
+\label{marketdata_8h_a0f17aacd5e26e2dfc84d60154239aead}
+
+
+Extract the market data message type as a string from a message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]The message. \end{DoxyParams}
+\hypertarget{marketdata_8h_a154c49a77f9e23062e22c6eb189c01ba}{
+\index{marketdata.h@{marketdata.h}!mamaMdMsgType\_\-stringForType@{mamaMdMsgType\_\-stringForType}}
+\index{mamaMdMsgType\_\-stringForType@{mamaMdMsgType\_\-stringForType}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaMdMsgType\_\-stringForType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaMdMsgType\_\-stringForType ({\bf mamaMdMsgType} {\em type})}}
+\label{marketdata_8h_a154c49a77f9e23062e22c6eb189c01ba}
+
+
+Convert a mamaMdMsgType to a string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The mamaMdMsgType. \end{DoxyParams}
+\hypertarget{marketdata_8h_a631d0c61df2e69c85ad628525ba35490}{
+\index{marketdata.h@{marketdata.h}!mamaMdMsgType\_\-compatMsgType@{mamaMdMsgType\_\-compatMsgType}}
+\index{mamaMdMsgType\_\-compatMsgType@{mamaMdMsgType\_\-compatMsgType}!marketdata.h@{marketdata.h}}
+\subsubsection[{mamaMdMsgType\_\-compatMsgType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaMsgType} mamaMdMsgType\_\-compatMsgType ({\bf mamaMdMsgType} {\em type})}}
+\label{marketdata_8h_a631d0c61df2e69c85ad628525ba35490}
+
+
+Convert a mamaMdMsgType to a reasonable backward-\/compatible mamaMsgType. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The mamaMdMsgType. \end{DoxyParams}

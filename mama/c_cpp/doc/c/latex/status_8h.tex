@@ -1,0 +1,304 @@
+\hypertarget{status_8h}{
+\section{status.h File Reference}
+\label{status_8h}\index{status.h@{status.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{status_8h_afa885f8e966d41281922b7a62b3aa96a}{MAMA\_\-STATUS\_\-BASE}~9000
+\item 
+\#define \hyperlink{status_8h_acf590febb160b38e5f1393127ff7759f}{MAMA\_\-STATUS\_\-MAX}~1000
+\item 
+\#define \hyperlink{status_8h_a02069a206024ac89e242d28d2c6a1a02}{NULLARG\_\-STATUS\_\-CHECK}(x)
+\item 
+\#define \hyperlink{status_8h_a4bb79157da2af156dfc9870d23d95ae5}{NULLARG\_\-STATUS\_\-CHECK\_\-STR}(x)
+\item 
+\#define \hyperlink{status_8h_ad8540bccb1730bcdd2ee0518414331b9}{NOMEM\_\-STATUS\_\-CHECK}(x)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \{ \par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa4deb8e5e5db60726878d1ad1f7cdf51}{MAMA\_\-STATUS\_\-OK} =  0, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea47e1d3e08f58d720c32b0cc1590bdb7a}{MAMA\_\-STATUS\_\-NOMEM} =  1, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa0ef50aa52176ef1064ca6d92bfde681}{MAMA\_\-STATUS\_\-PLATFORM} =  2, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5fb1f513e75e866c509b2fc8e0d00143}{MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR} =  3, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea531813ba17d31190f4eceae06e2aad5a}{MAMA\_\-STATUS\_\-INVALID\_\-ARG} =  4, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea409a9f1b59ca8bcdb488b19dc042d893}{MAMA\_\-STATUS\_\-NULL\_\-ARG} =  5, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5ac886f7ba3a8a55be6005e9848a9679}{MAMA\_\-STATUS\_\-NOT\_\-FOUND} =  6, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea3e6eedd716130c2ab59a2679d2bebc7c}{MAMA\_\-STATUS\_\-TIMER\_\-FAILURE} =  7, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea0b60c71962ceae64f471ea447d097b16}{MAMA\_\-STATUS\_\-IP\_\-NOT\_\-FOUND} =  8, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea0ca155571292428dba78bb5c19c722e9}{MAMA\_\-STATUS\_\-TIMEOUT} =  9, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa5dafe8d5211af3a953d79dd77b3f522}{MAMA\_\-STATUS\_\-NOT\_\-ENTITLED} =  10, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea9404828d2ac99ce5171311ac350be2b4}{MAMA\_\-STATUS\_\-PROPERTY\_\-TOO\_\-LONG} =  11, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaff2f99d48da56f920e232afee9ff35dc}{MAMA\_\-STATUS\_\-MD\_\-NOT\_\-OPENED} =  12, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea6d471d1e8991eb082615955773bb240d}{MAMA\_\-STATUS\_\-PUB\_\-SUB\_\-NOT\_\-OPENED} =  13, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea75bdac34d0bf78135e15574082d10def}{MAMA\_\-STATUS\_\-ENTITLEMENTS\_\-NOT\_\-ENABLED} =  14, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea1af18cbc38d46a6d24e9a33f71ec4013}{MAMA\_\-STATUS\_\-BAD\_\-TRANSPORT\_\-TYPE} =  15, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa91d050a90ecec17abf17555d93148af}{MAMA\_\-STATUS\_\-UNSUPPORTED\_\-IO\_\-TYPE} =  16, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea82929430ed695f0f3f30948fbf1c19ee}{MAMA\_\-STATUS\_\-TOO\_\-MANY\_\-DISPATCHERS} =  17, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea03adbfeb769c91fde7d4926a8a5a42d9}{MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED} =  18, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaff424097a5c137d40a018a35e0b06887}{MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE} =  19, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaaa2ee455f670919c5fb09316ec5bfb07}{MAMA\_\-STATUS\_\-BAD\_\-SYMBOL} =  20, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea59969ce35b82a5729fce9242f139bbae}{MAMA\_\-STATUS\_\-IO\_\-ERROR} =  21, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea1cb41dfd425a9bea66d8a360917c242e}{MAMA\_\-STATUS\_\-NOT\_\-INSTALLED} =  22, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea885c1cbd32fdf5789f2f0024ba0192a1}{MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR} =  23, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea05cf0786f4382953cd608886c77341f9}{MAMA\_\-STATUS\_\-QUEUE\_\-FULL} =  24, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea98a6b994aec65761b31e43d153840096}{MAMA\_\-STATUS\_\-QUEUE\_\-END} =  25, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5794e8849ba0c49438cd59f0ba96195e}{MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL} =  26, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaebf3b594da2a6cfa465cdecb1f153e9b}{MAMA\_\-STATUS\_\-INVALID\_\-QUEUE} =  27, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea21fe555cd6f679290455f3ef69e48d8e}{MAMA\_\-STATUS\_\-NOT\_\-MODIFIABLE} =  28, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf7d7e2c1edb16d47f9cdc7a8a88008c6}{MAMA\_\-STATUS\_\-DELETE} =  29, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea4bf5f4923a0d7e752f96f89a260aca56}{MAMA\_\-STATUS\_\-NOT\_\-PERMISSIONED} =  4001, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea8404a2634399b99b9a8682e12e882ec0}{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE} =  5001, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ead5095163aae1a4d6f01f16e2c25cf8c9}{MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS} =  5002, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf74a0de077e555812488af76f221a9a7}{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE} =  5003, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf2e599668ccf49bec21c117ff55e79a8}{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-GAP} =  5004, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601ea57c1727d363c1da359dd0caf2bc1fbb4}{MAMA\_\-STATUS\_\-NOT\_\-INITIALISED} =  5005, 
+\par
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eae904ce776bc73bc56d36a91d2fbd4f88}{MAMA\_\-STATUS\_\-NO\_\-SUBSCRIBERS} =  5006, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eab41737c64f1bc2d062533a92ba6dd26a}{MAMA\_\-STATUS\_\-EXPIRED} =  5007, 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa1dfbc10c11c443a79ff17bafa42b890}{MAMA\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED} =  5008
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL const char $\ast$ \hyperlink{status_8h_ae265784eb6d143cfde26a04f8862271b}{mamaStatus\_\-stringForStatus} (\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}{status})
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{status_8h_afa885f8e966d41281922b7a62b3aa96a}{
+\index{status.h@{status.h}!MAMA\_\-STATUS\_\-BASE@{MAMA\_\-STATUS\_\-BASE}}
+\index{MAMA\_\-STATUS\_\-BASE@{MAMA\_\-STATUS\_\-BASE}!status.h@{status.h}}
+\subsubsection[{MAMA\_\-STATUS\_\-BASE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-STATUS\_\-BASE~9000}}
+\label{status_8h_afa885f8e966d41281922b7a62b3aa96a}
+\hypertarget{status_8h_acf590febb160b38e5f1393127ff7759f}{
+\index{status.h@{status.h}!MAMA\_\-STATUS\_\-MAX@{MAMA\_\-STATUS\_\-MAX}}
+\index{MAMA\_\-STATUS\_\-MAX@{MAMA\_\-STATUS\_\-MAX}!status.h@{status.h}}
+\subsubsection[{MAMA\_\-STATUS\_\-MAX}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-STATUS\_\-MAX~1000}}
+\label{status_8h_acf590febb160b38e5f1393127ff7759f}
+\hypertarget{status_8h_a02069a206024ac89e242d28d2c6a1a02}{
+\index{status.h@{status.h}!NULLARG\_\-STATUS\_\-CHECK@{NULLARG\_\-STATUS\_\-CHECK}}
+\index{NULLARG\_\-STATUS\_\-CHECK@{NULLARG\_\-STATUS\_\-CHECK}!status.h@{status.h}}
+\subsubsection[{NULLARG\_\-STATUS\_\-CHECK}]{\setlength{\rightskip}{0pt plus 5cm}\#define NULLARG\_\-STATUS\_\-CHECK(x)}}
+\label{status_8h_a02069a206024ac89e242d28d2c6a1a02}
+{\bfseries Value:}
+\begin{DoxyCode}
+do { \
+        if (!(x)) return MAMA_STATUS_NULL_ARG; \
+    } while(0);
+\end{DoxyCode}
+\hypertarget{status_8h_a4bb79157da2af156dfc9870d23d95ae5}{
+\index{status.h@{status.h}!NULLARG\_\-STATUS\_\-CHECK\_\-STR@{NULLARG\_\-STATUS\_\-CHECK\_\-STR}}
+\index{NULLARG\_\-STATUS\_\-CHECK\_\-STR@{NULLARG\_\-STATUS\_\-CHECK\_\-STR}!status.h@{status.h}}
+\subsubsection[{NULLARG\_\-STATUS\_\-CHECK\_\-STR}]{\setlength{\rightskip}{0pt plus 5cm}\#define NULLARG\_\-STATUS\_\-CHECK\_\-STR(x)}}
+\label{status_8h_a4bb79157da2af156dfc9870d23d95ae5}
+{\bfseries Value:}
+\begin{DoxyCode}
+do { \
+        if (!(x) || (strlen((x))==0) ) return MAMA_STATUS_NULL_ARG; \
+    } while(0);
+\end{DoxyCode}
+\hypertarget{status_8h_ad8540bccb1730bcdd2ee0518414331b9}{
+\index{status.h@{status.h}!NOMEM\_\-STATUS\_\-CHECK@{NOMEM\_\-STATUS\_\-CHECK}}
+\index{NOMEM\_\-STATUS\_\-CHECK@{NOMEM\_\-STATUS\_\-CHECK}!status.h@{status.h}}
+\subsubsection[{NOMEM\_\-STATUS\_\-CHECK}]{\setlength{\rightskip}{0pt plus 5cm}\#define NOMEM\_\-STATUS\_\-CHECK(x)}}
+\label{status_8h_ad8540bccb1730bcdd2ee0518414331b9}
+{\bfseries Value:}
+\begin{DoxyCode}
+do { \
+        if ((x==NULL))  \
+        {    \
+            mama_log (MAMA_LOG_LEVEL_SEVERE, "Could not allocate memory");   \
+            return MAMA_STATUS_NOMEM;      \
+         } \
+    } while(0);
+\end{DoxyCode}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{
+\index{status.h@{status.h}!mama\_\-status@{mama\_\-status}}
+\index{mama\_\-status@{mama\_\-status}!status.h@{status.h}}
+\subsubsection[{mama\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mama\_\-status}}}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601e}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-STATUS\_\-OK@{MAMA\_\-STATUS\_\-OK}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-OK@{MAMA\_\-STATUS\_\-OK}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa4deb8e5e5db60726878d1ad1f7cdf51}{
+MAMA\_\-STATUS\_\-OK}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa4deb8e5e5db60726878d1ad1f7cdf51}
+}]\index{MAMA\_\-STATUS\_\-NOMEM@{MAMA\_\-STATUS\_\-NOMEM}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOMEM@{MAMA\_\-STATUS\_\-NOMEM}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea47e1d3e08f58d720c32b0cc1590bdb7a}{
+MAMA\_\-STATUS\_\-NOMEM}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea47e1d3e08f58d720c32b0cc1590bdb7a}
+}]\index{MAMA\_\-STATUS\_\-PLATFORM@{MAMA\_\-STATUS\_\-PLATFORM}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-PLATFORM@{MAMA\_\-STATUS\_\-PLATFORM}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa0ef50aa52176ef1064ca6d92bfde681}{
+MAMA\_\-STATUS\_\-PLATFORM}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa0ef50aa52176ef1064ca6d92bfde681}
+}]\index{MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR@{MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR@{MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5fb1f513e75e866c509b2fc8e0d00143}{
+MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5fb1f513e75e866c509b2fc8e0d00143}
+}]\index{MAMA\_\-STATUS\_\-INVALID\_\-ARG@{MAMA\_\-STATUS\_\-INVALID\_\-ARG}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-INVALID\_\-ARG@{MAMA\_\-STATUS\_\-INVALID\_\-ARG}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea531813ba17d31190f4eceae06e2aad5a}{
+MAMA\_\-STATUS\_\-INVALID\_\-ARG}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea531813ba17d31190f4eceae06e2aad5a}
+}]\index{MAMA\_\-STATUS\_\-NULL\_\-ARG@{MAMA\_\-STATUS\_\-NULL\_\-ARG}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NULL\_\-ARG@{MAMA\_\-STATUS\_\-NULL\_\-ARG}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea409a9f1b59ca8bcdb488b19dc042d893}{
+MAMA\_\-STATUS\_\-NULL\_\-ARG}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea409a9f1b59ca8bcdb488b19dc042d893}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-FOUND@{MAMA\_\-STATUS\_\-NOT\_\-FOUND}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-FOUND@{MAMA\_\-STATUS\_\-NOT\_\-FOUND}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5ac886f7ba3a8a55be6005e9848a9679}{
+MAMA\_\-STATUS\_\-NOT\_\-FOUND}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5ac886f7ba3a8a55be6005e9848a9679}
+}]\index{MAMA\_\-STATUS\_\-TIMER\_\-FAILURE@{MAMA\_\-STATUS\_\-TIMER\_\-FAILURE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-TIMER\_\-FAILURE@{MAMA\_\-STATUS\_\-TIMER\_\-FAILURE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea3e6eedd716130c2ab59a2679d2bebc7c}{
+MAMA\_\-STATUS\_\-TIMER\_\-FAILURE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea3e6eedd716130c2ab59a2679d2bebc7c}
+}]\index{MAMA\_\-STATUS\_\-IP\_\-NOT\_\-FOUND@{MAMA\_\-STATUS\_\-IP\_\-NOT\_\-FOUND}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-IP\_\-NOT\_\-FOUND@{MAMA\_\-STATUS\_\-IP\_\-NOT\_\-FOUND}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea0b60c71962ceae64f471ea447d097b16}{
+MAMA\_\-STATUS\_\-IP\_\-NOT\_\-FOUND}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea0b60c71962ceae64f471ea447d097b16}
+}]\index{MAMA\_\-STATUS\_\-TIMEOUT@{MAMA\_\-STATUS\_\-TIMEOUT}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-TIMEOUT@{MAMA\_\-STATUS\_\-TIMEOUT}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea0ca155571292428dba78bb5c19c722e9}{
+MAMA\_\-STATUS\_\-TIMEOUT}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea0ca155571292428dba78bb5c19c722e9}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-ENTITLED@{MAMA\_\-STATUS\_\-NOT\_\-ENTITLED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-ENTITLED@{MAMA\_\-STATUS\_\-NOT\_\-ENTITLED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa5dafe8d5211af3a953d79dd77b3f522}{
+MAMA\_\-STATUS\_\-NOT\_\-ENTITLED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa5dafe8d5211af3a953d79dd77b3f522}
+}]\index{MAMA\_\-STATUS\_\-PROPERTY\_\-TOO\_\-LONG@{MAMA\_\-STATUS\_\-PROPERTY\_\-TOO\_\-LONG}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-PROPERTY\_\-TOO\_\-LONG@{MAMA\_\-STATUS\_\-PROPERTY\_\-TOO\_\-LONG}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea9404828d2ac99ce5171311ac350be2b4}{
+MAMA\_\-STATUS\_\-PROPERTY\_\-TOO\_\-LONG}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea9404828d2ac99ce5171311ac350be2b4}
+}]\index{MAMA\_\-STATUS\_\-MD\_\-NOT\_\-OPENED@{MAMA\_\-STATUS\_\-MD\_\-NOT\_\-OPENED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-MD\_\-NOT\_\-OPENED@{MAMA\_\-STATUS\_\-MD\_\-NOT\_\-OPENED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaff2f99d48da56f920e232afee9ff35dc}{
+MAMA\_\-STATUS\_\-MD\_\-NOT\_\-OPENED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaff2f99d48da56f920e232afee9ff35dc}
+}]\index{MAMA\_\-STATUS\_\-PUB\_\-SUB\_\-NOT\_\-OPENED@{MAMA\_\-STATUS\_\-PUB\_\-SUB\_\-NOT\_\-OPENED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-PUB\_\-SUB\_\-NOT\_\-OPENED@{MAMA\_\-STATUS\_\-PUB\_\-SUB\_\-NOT\_\-OPENED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea6d471d1e8991eb082615955773bb240d}{
+MAMA\_\-STATUS\_\-PUB\_\-SUB\_\-NOT\_\-OPENED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea6d471d1e8991eb082615955773bb240d}
+}]\index{MAMA\_\-STATUS\_\-ENTITLEMENTS\_\-NOT\_\-ENABLED@{MAMA\_\-STATUS\_\-ENTITLEMENTS\_\-NOT\_\-ENABLED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-ENTITLEMENTS\_\-NOT\_\-ENABLED@{MAMA\_\-STATUS\_\-ENTITLEMENTS\_\-NOT\_\-ENABLED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea75bdac34d0bf78135e15574082d10def}{
+MAMA\_\-STATUS\_\-ENTITLEMENTS\_\-NOT\_\-ENABLED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea75bdac34d0bf78135e15574082d10def}
+}]\index{MAMA\_\-STATUS\_\-BAD\_\-TRANSPORT\_\-TYPE@{MAMA\_\-STATUS\_\-BAD\_\-TRANSPORT\_\-TYPE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-BAD\_\-TRANSPORT\_\-TYPE@{MAMA\_\-STATUS\_\-BAD\_\-TRANSPORT\_\-TYPE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea1af18cbc38d46a6d24e9a33f71ec4013}{
+MAMA\_\-STATUS\_\-BAD\_\-TRANSPORT\_\-TYPE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea1af18cbc38d46a6d24e9a33f71ec4013}
+}]\index{MAMA\_\-STATUS\_\-UNSUPPORTED\_\-IO\_\-TYPE@{MAMA\_\-STATUS\_\-UNSUPPORTED\_\-IO\_\-TYPE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-UNSUPPORTED\_\-IO\_\-TYPE@{MAMA\_\-STATUS\_\-UNSUPPORTED\_\-IO\_\-TYPE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa91d050a90ecec17abf17555d93148af}{
+MAMA\_\-STATUS\_\-UNSUPPORTED\_\-IO\_\-TYPE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa91d050a90ecec17abf17555d93148af}
+}]\index{MAMA\_\-STATUS\_\-TOO\_\-MANY\_\-DISPATCHERS@{MAMA\_\-STATUS\_\-TOO\_\-MANY\_\-DISPATCHERS}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-TOO\_\-MANY\_\-DISPATCHERS@{MAMA\_\-STATUS\_\-TOO\_\-MANY\_\-DISPATCHERS}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea82929430ed695f0f3f30948fbf1c19ee}{
+MAMA\_\-STATUS\_\-TOO\_\-MANY\_\-DISPATCHERS}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea82929430ed695f0f3f30948fbf1c19ee}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED@{MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED@{MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea03adbfeb769c91fde7d4926a8a5a42d9}{
+MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea03adbfeb769c91fde7d4926a8a5a42d9}
+}]\index{MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE@{MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE@{MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaff424097a5c137d40a018a35e0b06887}{
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaff424097a5c137d40a018a35e0b06887}
+}]\index{MAMA\_\-STATUS\_\-BAD\_\-SYMBOL@{MAMA\_\-STATUS\_\-BAD\_\-SYMBOL}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-BAD\_\-SYMBOL@{MAMA\_\-STATUS\_\-BAD\_\-SYMBOL}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaaa2ee455f670919c5fb09316ec5bfb07}{
+MAMA\_\-STATUS\_\-BAD\_\-SYMBOL}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaaa2ee455f670919c5fb09316ec5bfb07}
+}]\index{MAMA\_\-STATUS\_\-IO\_\-ERROR@{MAMA\_\-STATUS\_\-IO\_\-ERROR}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-IO\_\-ERROR@{MAMA\_\-STATUS\_\-IO\_\-ERROR}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea59969ce35b82a5729fce9242f139bbae}{
+MAMA\_\-STATUS\_\-IO\_\-ERROR}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea59969ce35b82a5729fce9242f139bbae}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-INSTALLED@{MAMA\_\-STATUS\_\-NOT\_\-INSTALLED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-INSTALLED@{MAMA\_\-STATUS\_\-NOT\_\-INSTALLED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea1cb41dfd425a9bea66d8a360917c242e}{
+MAMA\_\-STATUS\_\-NOT\_\-INSTALLED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea1cb41dfd425a9bea66d8a360917c242e}
+}]\index{MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR@{MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR@{MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea885c1cbd32fdf5789f2f0024ba0192a1}{
+MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea885c1cbd32fdf5789f2f0024ba0192a1}
+}]\index{MAMA\_\-STATUS\_\-QUEUE\_\-FULL@{MAMA\_\-STATUS\_\-QUEUE\_\-FULL}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-QUEUE\_\-FULL@{MAMA\_\-STATUS\_\-QUEUE\_\-FULL}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea05cf0786f4382953cd608886c77341f9}{
+MAMA\_\-STATUS\_\-QUEUE\_\-FULL}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea05cf0786f4382953cd608886c77341f9}
+}]\index{MAMA\_\-STATUS\_\-QUEUE\_\-END@{MAMA\_\-STATUS\_\-QUEUE\_\-END}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-QUEUE\_\-END@{MAMA\_\-STATUS\_\-QUEUE\_\-END}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea98a6b994aec65761b31e43d153840096}{
+MAMA\_\-STATUS\_\-QUEUE\_\-END}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea98a6b994aec65761b31e43d153840096}
+}]\index{MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL@{MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL@{MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5794e8849ba0c49438cd59f0ba96195e}{
+MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea5794e8849ba0c49438cd59f0ba96195e}
+}]\index{MAMA\_\-STATUS\_\-INVALID\_\-QUEUE@{MAMA\_\-STATUS\_\-INVALID\_\-QUEUE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-INVALID\_\-QUEUE@{MAMA\_\-STATUS\_\-INVALID\_\-QUEUE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaebf3b594da2a6cfa465cdecb1f153e9b}{
+MAMA\_\-STATUS\_\-INVALID\_\-QUEUE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaebf3b594da2a6cfa465cdecb1f153e9b}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-MODIFIABLE@{MAMA\_\-STATUS\_\-NOT\_\-MODIFIABLE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-MODIFIABLE@{MAMA\_\-STATUS\_\-NOT\_\-MODIFIABLE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea21fe555cd6f679290455f3ef69e48d8e}{
+MAMA\_\-STATUS\_\-NOT\_\-MODIFIABLE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea21fe555cd6f679290455f3ef69e48d8e}
+}]\index{MAMA\_\-STATUS\_\-DELETE@{MAMA\_\-STATUS\_\-DELETE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-DELETE@{MAMA\_\-STATUS\_\-DELETE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf7d7e2c1edb16d47f9cdc7a8a88008c6}{
+MAMA\_\-STATUS\_\-DELETE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf7d7e2c1edb16d47f9cdc7a8a88008c6}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-PERMISSIONED@{MAMA\_\-STATUS\_\-NOT\_\-PERMISSIONED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-PERMISSIONED@{MAMA\_\-STATUS\_\-NOT\_\-PERMISSIONED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea4bf5f4923a0d7e752f96f89a260aca56}{
+MAMA\_\-STATUS\_\-NOT\_\-PERMISSIONED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea4bf5f4923a0d7e752f96f89a260aca56}
+}]\index{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE@{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE@{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea8404a2634399b99b9a8682e12e882ec0}{
+MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea8404a2634399b99b9a8682e12e882ec0}
+}]\index{MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS@{MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS@{MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ead5095163aae1a4d6f01f16e2c25cf8c9}{
+MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ead5095163aae1a4d6f01f16e2c25cf8c9}
+}]\index{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE@{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE@{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf74a0de077e555812488af76f221a9a7}{
+MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf74a0de077e555812488af76f221a9a7}
+}]\index{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-GAP@{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-GAP}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-GAP@{MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-GAP}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf2e599668ccf49bec21c117ff55e79a8}{
+MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-GAP}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaf2e599668ccf49bec21c117ff55e79a8}
+}]\index{MAMA\_\-STATUS\_\-NOT\_\-INITIALISED@{MAMA\_\-STATUS\_\-NOT\_\-INITIALISED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NOT\_\-INITIALISED@{MAMA\_\-STATUS\_\-NOT\_\-INITIALISED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601ea57c1727d363c1da359dd0caf2bc1fbb4}{
+MAMA\_\-STATUS\_\-NOT\_\-INITIALISED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601ea57c1727d363c1da359dd0caf2bc1fbb4}
+}]\index{MAMA\_\-STATUS\_\-NO\_\-SUBSCRIBERS@{MAMA\_\-STATUS\_\-NO\_\-SUBSCRIBERS}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-NO\_\-SUBSCRIBERS@{MAMA\_\-STATUS\_\-NO\_\-SUBSCRIBERS}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eae904ce776bc73bc56d36a91d2fbd4f88}{
+MAMA\_\-STATUS\_\-NO\_\-SUBSCRIBERS}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eae904ce776bc73bc56d36a91d2fbd4f88}
+}]\index{MAMA\_\-STATUS\_\-EXPIRED@{MAMA\_\-STATUS\_\-EXPIRED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-EXPIRED@{MAMA\_\-STATUS\_\-EXPIRED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eab41737c64f1bc2d062533a92ba6dd26a}{
+MAMA\_\-STATUS\_\-EXPIRED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eab41737c64f1bc2d062533a92ba6dd26a}
+}]\index{MAMA\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED@{MAMA\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED}!status.h@{status.h}}\index{status.h@{status.h}!MAMA\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED@{MAMA\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED}}\item[{\em 
+\hypertarget{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa1dfbc10c11c443a79ff17bafa42b890}{
+MAMA\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED}
+\label{status_8h_a5d6ed00e44491618b9c9f39771f7601eaa1dfbc10c11c443a79ff17bafa42b890}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{status_8h_ae265784eb6d143cfde26a04f8862271b}{
+\index{status.h@{status.h}!mamaStatus\_\-stringForStatus@{mamaStatus\_\-stringForStatus}}
+\index{mamaStatus\_\-stringForStatus@{mamaStatus\_\-stringForStatus}!status.h@{status.h}}
+\subsubsection[{mamaStatus\_\-stringForStatus}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaStatus\_\-stringForStatus ({\bf mama\_\-status} {\em status})}}
+\label{status_8h_ae265784eb6d143cfde26a04f8862271b}

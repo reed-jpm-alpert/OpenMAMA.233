@@ -1,0 +1,110 @@
+\hypertarget{symbolmapfile_8h}{
+\section{symbolmapfile.h File Reference}
+\label{symbolmapfile_8h}\index{symbolmapfile.h@{symbolmapfile.h}}
+}
+{\ttfamily \#include \char`\"{}mama/mama.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL void \hyperlink{symbolmapfile_8h_ae4d69f9ebd5d49c690b8afc8d8a17576}{mamaSymbolMapFile\_\-addMap} (\hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile} fileMap, const char $\ast$fromSymbol, const char $\ast$toSymbol)
+\begin{DoxyCompactList}\small\item\em Add additional individual symbology mapping. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbolmapfile_8h_abe827f43cd4fa4bac26da768d36a79b1}{mamaSymbolMapFile\_\-create} (\hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile} $\ast$fileMap)
+\begin{DoxyCompactList}\small\item\em Create a file-\/based symbol mapper. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbolmapfile_8h_a8468ac1f98a008bbf76a2d23aec7b108}{mamaSymbolMapFile\_\-destroy} (\hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile} fileMap)
+\begin{DoxyCompactList}\small\item\em Destroy the file-\/based symbol mapper. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbolmapfile_8h_a8cc5fda99d5bfb16091e4099f8ac97bb}{mamaSymbolMapFile\_\-load} (\hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile} fileMap, const char $\ast$fileName)
+\begin{DoxyCompactList}\small\item\em (Re)Load the map for the file-\/based symbol mapper. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{symbolmapfile_8h_a594bddebbc59074a40adf5d576511179}{mamaSymbolMapFile\_\-map} (\hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile} fileMap, char $\ast$result, const char $\ast$symbol, size\_\-t maxLen)
+\begin{DoxyCompactList}\small\item\em Perform a mapping from the file-\/based symbol mapper. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{symbolmapfile_8h_a369196d8c37473e85e2d2052ae1bcea1}{mamaSymbolMapFile\_\-revMap} (\hyperlink{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{mamaSymbolMapFile} fileMap, char $\ast$result, const char $\ast$symbol, size\_\-t maxLen)
+\begin{DoxyCompactList}\small\item\em Perform a reverse mapping from the file-\/based symbol mapper. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile@{mamaSymbolMapFile}}
+\index{mamaSymbolMapFile@{mamaSymbolMapFile}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf mamaSymbolMapFile}}}
+\label{symbolmapfile_8h_a2f47eb38a9afb7d513b72fd0fa405e46}
+
+
+\subsection{Function Documentation}
+\hypertarget{symbolmapfile_8h_ae4d69f9ebd5d49c690b8afc8d8a17576}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile\_\-addMap@{mamaSymbolMapFile\_\-addMap}}
+\index{mamaSymbolMapFile\_\-addMap@{mamaSymbolMapFile\_\-addMap}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile\_\-addMap}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaSymbolMapFile\_\-addMap ({\bf mamaSymbolMapFile} {\em fileMap}, \/  const char $\ast$ {\em fromSymbol}, \/  const char $\ast$ {\em toSymbol})}}
+\label{symbolmapfile_8h_ae4d69f9ebd5d49c690b8afc8d8a17576}
+
+
+Add additional individual symbology mapping. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileMap}]Handle to the file-\/map to destroy. \item[{\em fromSymbol}]The from symbol. \item[{\em toSymbol}]The to symbol. \end{DoxyParams}
+\hypertarget{symbolmapfile_8h_abe827f43cd4fa4bac26da768d36a79b1}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile\_\-create@{mamaSymbolMapFile\_\-create}}
+\index{mamaSymbolMapFile\_\-create@{mamaSymbolMapFile\_\-create}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolMapFile\_\-create ({\bf mamaSymbolMapFile} $\ast$ {\em fileMap})}}
+\label{symbolmapfile_8h_abe827f43cd4fa4bac26da768d36a79b1}
+
+
+Create a file-\/based symbol mapper. Use \hyperlink{symbolmapfile_8h_a8cc5fda99d5bfb16091e4099f8ac97bb}{mamaSymbolMapFile\_\-load()} to open the file. If the file exists, its contents should be a two columns of data, with the columns separated by white space. A matching symbol of the left column is mapped to the symbol in the right column. when performing the mapping, if the symbol does not match anything in the file (or the file cannot be found), then the original symbol is used (i.e., no mapping).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fileMap}]The initialized file-\/map handle.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return value can be one of MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbolmapfile_8h_a8468ac1f98a008bbf76a2d23aec7b108}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile\_\-destroy@{mamaSymbolMapFile\_\-destroy}}
+\index{mamaSymbolMapFile\_\-destroy@{mamaSymbolMapFile\_\-destroy}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolMapFile\_\-destroy ({\bf mamaSymbolMapFile} {\em fileMap})}}
+\label{symbolmapfile_8h_a8468ac1f98a008bbf76a2d23aec7b108}
+
+
+Destroy the file-\/based symbol mapper. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileMap}]Handle to the file-\/map to destroy.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return value can be one of MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbolmapfile_8h_a8cc5fda99d5bfb16091e4099f8ac97bb}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile\_\-load@{mamaSymbolMapFile\_\-load}}
+\index{mamaSymbolMapFile\_\-load@{mamaSymbolMapFile\_\-load}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile\_\-load}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolMapFile\_\-load ({\bf mamaSymbolMapFile} {\em fileMap}, \/  const char $\ast$ {\em fileName})}}
+\label{symbolmapfile_8h_a8cc5fda99d5bfb16091e4099f8ac97bb}
+
+
+(Re)Load the map for the file-\/based symbol mapper. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileMap}]Handle to the file-\/map to destroy. \item[{\em fileName}]The name of the file containing symbols to map.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return value can be one of MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbolmapfile_8h_a594bddebbc59074a40adf5d576511179}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile\_\-map@{mamaSymbolMapFile\_\-map}}
+\index{mamaSymbolMapFile\_\-map@{mamaSymbolMapFile\_\-map}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaSymbolMapFile\_\-map ({\bf mamaSymbolMapFile} {\em fileMap}, \/  char $\ast$ {\em result}, \/  const char $\ast$ {\em symbol}, \/  size\_\-t {\em maxLen})}}
+\label{symbolmapfile_8h_a594bddebbc59074a40adf5d576511179}
+
+
+Perform a mapping from the file-\/based symbol mapper. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileMap}]Handle to the file-\/map. \item[{\em result}]Returned \char`\"{}toSymbol\char`\"{} (feed side). \item[{\em symbol}]\char`\"{}fromSymbol\char`\"{} (client side). \item[{\em maxLen}]Max buffer length of result.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if a symbol could be mapped else 0. 
+\end{DoxyReturn}
+\hypertarget{symbolmapfile_8h_a369196d8c37473e85e2d2052ae1bcea1}{
+\index{symbolmapfile.h@{symbolmapfile.h}!mamaSymbolMapFile\_\-revMap@{mamaSymbolMapFile\_\-revMap}}
+\index{mamaSymbolMapFile\_\-revMap@{mamaSymbolMapFile\_\-revMap}!symbolmapfile.h@{symbolmapfile.h}}
+\subsubsection[{mamaSymbolMapFile\_\-revMap}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaSymbolMapFile\_\-revMap ({\bf mamaSymbolMapFile} {\em fileMap}, \/  char $\ast$ {\em result}, \/  const char $\ast$ {\em symbol}, \/  size\_\-t {\em maxLen})}}
+\label{symbolmapfile_8h_a369196d8c37473e85e2d2052ae1bcea1}
+
+
+Perform a reverse mapping from the file-\/based symbol mapper. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fileMap}]Handle to the file-\/map. \item[{\em result}]Returned \char`\"{}fromSymbol\char`\"{} (client side). \item[{\em symbol}]\char`\"{}toSymbol\char`\"{} (feed side). \item[{\em maxLen}]Max buffer length of result. \end{DoxyParams}

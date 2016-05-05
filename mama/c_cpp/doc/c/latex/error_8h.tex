@@ -1,0 +1,101 @@
+\hypertarget{error_8h}{
+\section{error.h File Reference}
+\label{error_8h}\index{error.h@{error.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6}{mamaError\_\-} \hyperlink{error_8h_a8c835133453f13c31c29e2fec21c422b}{mamaError}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6}{mamaError\_\-} \{ \par
+\hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6a6137743ad5f2da06e45e2658d98555de}{MAMA\_\-ERROR\_\-DEFAULT} =  0, 
+\hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6a41fd8c5daa3425669600a8a80e4af2bb}{MAMA\_\-ERROR\_\-INITIAL\_\-TIMEOUT} =  1, 
+\hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6ac7b01cdd82b39cb0577bafa65ed7d9bb}{MAMA\_\-ERROR\_\-RECAP\_\-TIMEOUT} =  2, 
+\hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6af14d520843fb9253452b71816b841128}{MAMA\_\-ERROR\_\-NOT\_\-ENTITLED} =  3, 
+\par
+\hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6af74e8c57d8fe65659fa33f657417a5db}{MAMA\_\-ERROR\_\-NO\_\-RESOLVER} =  4, 
+\hyperlink{error_8h_aab26250302d779c32a04216d3382f0e6a5695251e433a635843fcde60a41338c6}{MAMA\_\-ERROR\_\-UNKNOWN} =  999
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{error_8h_a8c835133453f13c31c29e2fec21c422b}{mamaError} \hyperlink{error_8h_a8eb60b23f7aac263fb369b4ed6ab8533}{mamaError\_\-convertFromString} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Convert a string to a mamaError value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{error_8h_af2bd89181440754337d21241e37d37cd}{mamaError\_\-convertToString} (\hyperlink{error_8h_a8c835133453f13c31c29e2fec21c422b}{mamaError} error)
+\begin{DoxyCompactList}\small\item\em Convert a mamaError value to a string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{error_8h_a8c835133453f13c31c29e2fec21c422b}{
+\index{error.h@{error.h}!mamaError@{mamaError}}
+\index{mamaError@{mamaError}!error.h@{error.h}}
+\subsubsection[{mamaError}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaError\_\-}  {\bf mamaError}}}
+\label{error_8h_a8c835133453f13c31c29e2fec21c422b}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6}{
+\index{error.h@{error.h}!mamaError\_\-@{mamaError\_\-}}
+\index{mamaError\_\-@{mamaError\_\-}!error.h@{error.h}}
+\subsubsection[{mamaError\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaError\_\-}}}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-ERROR\_\-DEFAULT@{MAMA\_\-ERROR\_\-DEFAULT}!error.h@{error.h}}\index{error.h@{error.h}!MAMA\_\-ERROR\_\-DEFAULT@{MAMA\_\-ERROR\_\-DEFAULT}}\item[{\em 
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6a6137743ad5f2da06e45e2658d98555de}{
+MAMA\_\-ERROR\_\-DEFAULT}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6a6137743ad5f2da06e45e2658d98555de}
+}]\index{MAMA\_\-ERROR\_\-INITIAL\_\-TIMEOUT@{MAMA\_\-ERROR\_\-INITIAL\_\-TIMEOUT}!error.h@{error.h}}\index{error.h@{error.h}!MAMA\_\-ERROR\_\-INITIAL\_\-TIMEOUT@{MAMA\_\-ERROR\_\-INITIAL\_\-TIMEOUT}}\item[{\em 
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6a41fd8c5daa3425669600a8a80e4af2bb}{
+MAMA\_\-ERROR\_\-INITIAL\_\-TIMEOUT}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6a41fd8c5daa3425669600a8a80e4af2bb}
+}]\index{MAMA\_\-ERROR\_\-RECAP\_\-TIMEOUT@{MAMA\_\-ERROR\_\-RECAP\_\-TIMEOUT}!error.h@{error.h}}\index{error.h@{error.h}!MAMA\_\-ERROR\_\-RECAP\_\-TIMEOUT@{MAMA\_\-ERROR\_\-RECAP\_\-TIMEOUT}}\item[{\em 
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6ac7b01cdd82b39cb0577bafa65ed7d9bb}{
+MAMA\_\-ERROR\_\-RECAP\_\-TIMEOUT}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6ac7b01cdd82b39cb0577bafa65ed7d9bb}
+}]\index{MAMA\_\-ERROR\_\-NOT\_\-ENTITLED@{MAMA\_\-ERROR\_\-NOT\_\-ENTITLED}!error.h@{error.h}}\index{error.h@{error.h}!MAMA\_\-ERROR\_\-NOT\_\-ENTITLED@{MAMA\_\-ERROR\_\-NOT\_\-ENTITLED}}\item[{\em 
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6af14d520843fb9253452b71816b841128}{
+MAMA\_\-ERROR\_\-NOT\_\-ENTITLED}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6af14d520843fb9253452b71816b841128}
+}]\index{MAMA\_\-ERROR\_\-NO\_\-RESOLVER@{MAMA\_\-ERROR\_\-NO\_\-RESOLVER}!error.h@{error.h}}\index{error.h@{error.h}!MAMA\_\-ERROR\_\-NO\_\-RESOLVER@{MAMA\_\-ERROR\_\-NO\_\-RESOLVER}}\item[{\em 
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6af74e8c57d8fe65659fa33f657417a5db}{
+MAMA\_\-ERROR\_\-NO\_\-RESOLVER}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6af74e8c57d8fe65659fa33f657417a5db}
+}]\index{MAMA\_\-ERROR\_\-UNKNOWN@{MAMA\_\-ERROR\_\-UNKNOWN}!error.h@{error.h}}\index{error.h@{error.h}!MAMA\_\-ERROR\_\-UNKNOWN@{MAMA\_\-ERROR\_\-UNKNOWN}}\item[{\em 
+\hypertarget{error_8h_aab26250302d779c32a04216d3382f0e6a5695251e433a635843fcde60a41338c6}{
+MAMA\_\-ERROR\_\-UNKNOWN}
+\label{error_8h_aab26250302d779c32a04216d3382f0e6a5695251e433a635843fcde60a41338c6}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{error_8h_a8eb60b23f7aac263fb369b4ed6ab8533}{
+\index{error.h@{error.h}!mamaError\_\-convertFromString@{mamaError\_\-convertFromString}}
+\index{mamaError\_\-convertFromString@{mamaError\_\-convertFromString}!error.h@{error.h}}
+\subsubsection[{mamaError\_\-convertFromString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaError} mamaError\_\-convertFromString (const char $\ast$ {\em str})}}
+\label{error_8h_a8eb60b23f7aac263fb369b4ed6ab8533}
+
+
+Convert a string to a mamaError value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em str}]The str to convert. \end{DoxyParams}
+\hypertarget{error_8h_af2bd89181440754337d21241e37d37cd}{
+\index{error.h@{error.h}!mamaError\_\-convertToString@{mamaError\_\-convertToString}}
+\index{mamaError\_\-convertToString@{mamaError\_\-convertToString}!error.h@{error.h}}
+\subsubsection[{mamaError\_\-convertToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaError\_\-convertToString ({\bf mamaError} {\em error})}}
+\label{error_8h_af2bd89181440754337d21241e37d37cd}
+
+
+Convert a mamaError value to a string. Do no attempt to free the string result.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em error}]The mamaError to convert. \end{DoxyParams}

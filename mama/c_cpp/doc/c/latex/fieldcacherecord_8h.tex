@@ -1,0 +1,129 @@
+\hypertarget{fieldcacherecord_8h}{
+\section{fieldcacherecord.h File Reference}
+\label{fieldcacherecord_8h}\index{fieldcacherecord.h@{fieldcacherecord.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/fielddesc.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/fieldcache/fieldcachetypes.h$>$}\par
+{\ttfamily \#include $<$mama/fieldcache/fieldcachefield.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_a64ed3add85615bfac46654773a1cbc65}{mamaFieldCacheRecord\_\-create} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} $\ast$record)
+\begin{DoxyCompactList}\small\item\em This function will create a mamaFieldCacheRecord. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_a91ecbb15bb25ab9e79f94c5af1abc055}{mamaFieldCacheRecord\_\-destroy} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record)
+\begin{DoxyCompactList}\small\item\em This function will destroy a {\ttfamily mamaFieldCacheRecord} previously allocated by a call to {\ttfamily mamaFieldCacheRecord\_\-create}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_a00f87fab94d70ca71f4ba96afcdacb4c}{mamaFieldCacheRecord\_\-clear} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record)
+\begin{DoxyCompactList}\small\item\em This function will clear a {\ttfamily mamaFieldCacheRecord}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_aa55881efd840bf2c652111f5632aaede}{mamaFieldCacheRecord\_\-getSize} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will return the number of fields stored in a record. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_a42cdb582593281d4f43e065495ecd718}{mamaFieldCacheRecord\_\-add} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type, const char $\ast$name, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} $\ast$field)
+\begin{DoxyCompactList}\small\item\em This function will create and add a field to the record; the new field is returned. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_af75ccd0aacd2b3a89f115aa0ee13683f}{mamaFieldCacheRecord\_\-getField} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} index, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} $\ast$field)
+\begin{DoxyCompactList}\small\item\em This function will retrieve a field from the record using a position in the Record as in a normal C array. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcacherecord_8h_a73f557ff8c5762bcca5d5001417e7c33}{mamaFieldCacheRecord\_\-find} (\hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, const char $\ast$name, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} $\ast$field)
+\begin{DoxyCompactList}\small\item\em This function will retrieve a field from the record using the field id of the field to get. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{fieldcacherecord_8h_a64ed3add85615bfac46654773a1cbc65}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-create@{mamaFieldCacheRecord\_\-create}}
+\index{mamaFieldCacheRecord\_\-create@{mamaFieldCacheRecord\_\-create}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-create ({\bf mamaFieldCacheRecord} $\ast$ {\em record})}}
+\label{fieldcacherecord_8h_a64ed3add85615bfac46654773a1cbc65}
+
+
+This function will create a mamaFieldCacheRecord. 
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The record to create. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacherecord_8h_a91ecbb15bb25ab9e79f94c5af1abc055}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-destroy@{mamaFieldCacheRecord\_\-destroy}}
+\index{mamaFieldCacheRecord\_\-destroy@{mamaFieldCacheRecord\_\-destroy}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-destroy ({\bf mamaFieldCacheRecord} {\em record})}}
+\label{fieldcacherecord_8h_a91ecbb15bb25ab9e79f94c5af1abc055}
+
+
+This function will destroy a {\ttfamily mamaFieldCacheRecord} previously allocated by a call to {\ttfamily mamaFieldCacheRecord\_\-create}. Note that all the fields contained in the record will be destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The record to destroy. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacherecord_8h_a00f87fab94d70ca71f4ba96afcdacb4c}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-clear@{mamaFieldCacheRecord\_\-clear}}
+\index{mamaFieldCacheRecord\_\-clear@{mamaFieldCacheRecord\_\-clear}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-clear ({\bf mamaFieldCacheRecord} {\em record})}}
+\label{fieldcacherecord_8h_a00f87fab94d70ca71f4ba96afcdacb4c}
+
+
+This function will clear a {\ttfamily mamaFieldCacheRecord}. Note that all the fields contained in the record will be destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The record to destroy. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacherecord_8h_aa55881efd840bf2c652111f5632aaede}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-getSize@{mamaFieldCacheRecord\_\-getSize}}
+\index{mamaFieldCacheRecord\_\-getSize@{mamaFieldCacheRecord\_\-getSize}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-getSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-getSize ({\bf mamaFieldCacheRecord} {\em record}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcacherecord_8h_aa55881efd840bf2c652111f5632aaede}
+
+
+This function will return the number of fields stored in a record. 
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The field to destroy. \item[{\em size}](out) The size of the record. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacherecord_8h_a42cdb582593281d4f43e065495ecd718}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-add@{mamaFieldCacheRecord\_\-add}}
+\index{mamaFieldCacheRecord\_\-add@{mamaFieldCacheRecord\_\-add}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-add ({\bf mamaFieldCacheRecord} {\em record}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  {\bf mamaFieldType} {\em type}, \/  const char $\ast$ {\em name}, \/  {\bf mamaFieldCacheField} $\ast$ {\em field})}}
+\label{fieldcacherecord_8h_a42cdb582593281d4f43e065495ecd718}
+
+
+This function will create and add a field to the record; the new field is returned. The field will be destroyed when the record is destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The record to add the field to. \item[{\em fid}](in) The field id of the field to create and add to the record. \item[{\em type}](in) The type of the field to create and add to the record. \item[{\em name}](in) The name of the field to create and add to the record. \item[{\em field}](out) The new field added to the record. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacherecord_8h_af75ccd0aacd2b3a89f115aa0ee13683f}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-getField@{mamaFieldCacheRecord\_\-getField}}
+\index{mamaFieldCacheRecord\_\-getField@{mamaFieldCacheRecord\_\-getField}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-getField}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-getField ({\bf mamaFieldCacheRecord} {\em record}, \/  {\bf mama\_\-size\_\-t} {\em index}, \/  {\bf mamaFieldCacheField} $\ast$ {\em field})}}
+\label{fieldcacherecord_8h_af75ccd0aacd2b3a89f115aa0ee13683f}
+
+
+This function will retrieve a field from the record using a position in the Record as in a normal C array. This can be useful when iterating the fields of the record in a loop. Note that position is not significative in a {\ttfamily mamaFieldCacheRecord}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The record to get the field from. \item[{\em index}](in) The index of the field to get from the record. \item[{\em field}](out) The field, if found. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcacherecord_8h_a73f557ff8c5762bcca5d5001417e7c33}{
+\index{fieldcacherecord.h@{fieldcacherecord.h}!mamaFieldCacheRecord\_\-find@{mamaFieldCacheRecord\_\-find}}
+\index{mamaFieldCacheRecord\_\-find@{mamaFieldCacheRecord\_\-find}!fieldcacherecord.h@{fieldcacherecord.h}}
+\subsubsection[{mamaFieldCacheRecord\_\-find}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheRecord\_\-find ({\bf mamaFieldCacheRecord} {\em record}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  const char $\ast$ {\em name}, \/  {\bf mamaFieldCacheField} $\ast$ {\em field})}}
+\label{fieldcacherecord_8h_a73f557ff8c5762bcca5d5001417e7c33}
+
+
+This function will retrieve a field from the record using the field id of the field to get. 
+\begin{DoxyParams}{Parameters}
+\item[{\em record}](in) The record to get the field from. \item[{\em fid}](in) The field id of the field. \item[{\em field}](out) The field, if found. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-NOT\_\-FOUND MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

@@ -1,0 +1,188 @@
+\hypertarget{connection_8h}{
+\section{connection.h File Reference}
+\label{connection_8h}\index{connection.h@{connection.h}}
+}
+{\ttfamily \#include \char`\"{}mama/mama.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a58aeea260801a727eaf341d4572b77ad}{mamaConnection\_\-free} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection)
+\begin{DoxyCompactList}\small\item\em This class contains information regarding outbound connections for per/connection conflation. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_aba50a6b2edea775a09a9608dbab97969}{mamaConnection\_\-getTransport} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Convenience method for returnining the transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a6e708f039811cbe68fa0d2fb635f76b8}{mamaConnection\_\-getIpAddress} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, const char $\ast$$\ast$address)
+\begin{DoxyCompactList}\small\item\em Return the IP address of the connected client. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_ab6d74bfc07d1afe7ec3572da6e374ca8}{mamaConnection\_\-getPort} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, uint16\_\-t $\ast$port)
+\begin{DoxyCompactList}\small\item\em Return the port of the connected client. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_aadb78e07b941c10e78b109d5bbcfc492}{mamaConnection\_\-getUserName} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, const char $\ast$$\ast$userName)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a9a01d14a53618d68388df336fe565cfa}{mamaConnection\_\-getAppName} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, const char $\ast$$\ast$appName)
+\begin{DoxyCompactList}\small\item\em Return the application name of the connected client. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a847c908bac4afcf54cacc9c06d5e0f7e}{mamaConnection\_\-getMaxQueueSize} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, uint32\_\-t $\ast$queueSize)
+\begin{DoxyCompactList}\small\item\em Return the maximum allowable outbound queue size for the client. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_ad87227c14a1ba8454e8ad8c30ca8d1f6}{mamaConnection\_\-getQueueSize} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, uint32\_\-t $\ast$numItems)
+\begin{DoxyCompactList}\small\item\em Get the number of items in the queue when structure was created. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a731acafe38c338627d6c37b88e399e38}{mamaConnection\_\-getMsgCount} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, uint32\_\-t $\ast$msgCount)
+\begin{DoxyCompactList}\small\item\em Get the number of messages sent on the connection. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a7f65ac4521ce0b55ae6d26517b9467dc}{mamaConnection\_\-getBytesSent} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, uint32\_\-t $\ast$bytesSent)
+\begin{DoxyCompactList}\small\item\em Get the number of bytes sent on the connection. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{connection_8h_a1f6f667a80b8f7c3ea94d7a7f3752a98}{mamaConnection\_\-toString} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection)
+\begin{DoxyCompactList}\small\item\em Convert a connection to a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{connection_8h_a91ce71ce4ac591acbd9e9d2448a07baa}{mamaConnection\_\-isIntercepted} (\hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection, uint8\_\-t $\ast$result)
+\begin{DoxyCompactList}\small\item\em Check if the conneciton is intercepted. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{connection_8h_a58aeea260801a727eaf341d4572b77ad}{
+\index{connection.h@{connection.h}!mamaConnection\_\-free@{mamaConnection\_\-free}}
+\index{mamaConnection\_\-free@{mamaConnection\_\-free}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-free ({\bf mamaConnection} {\em connection})}}
+\label{connection_8h_a58aeea260801a727eaf341d4572b77ad}
+
+
+This class contains information regarding outbound connections for per/connection conflation. Free the connection.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_aba50a6b2edea775a09a9608dbab97969}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getTransport@{mamaConnection\_\-getTransport}}
+\index{mamaConnection\_\-getTransport@{mamaConnection\_\-getTransport}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getTransport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getTransport ({\bf mamaConnection} {\em connection}, \/  {\bf mamaTransport} $\ast$ {\em result})}}
+\label{connection_8h_aba50a6b2edea775a09a9608dbab97969}
+
+
+Convenience method for returnining the transport. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em result}]Returning the associated transport.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_a6e708f039811cbe68fa0d2fb635f76b8}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getIpAddress@{mamaConnection\_\-getIpAddress}}
+\index{mamaConnection\_\-getIpAddress@{mamaConnection\_\-getIpAddress}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getIpAddress}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getIpAddress ({\bf mamaConnection} {\em connection}, \/  const char $\ast$$\ast$ {\em address})}}
+\label{connection_8h_a6e708f039811cbe68fa0d2fb635f76b8}
+
+
+Return the IP address of the connected client. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em address}]Returning the associated IP address\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_ab6d74bfc07d1afe7ec3572da6e374ca8}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getPort@{mamaConnection\_\-getPort}}
+\index{mamaConnection\_\-getPort@{mamaConnection\_\-getPort}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getPort}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getPort ({\bf mamaConnection} {\em connection}, \/  uint16\_\-t $\ast$ {\em port})}}
+\label{connection_8h_ab6d74bfc07d1afe7ec3572da6e374ca8}
+
+
+Return the port of the connected client. This will usually be an ephemeral port selected by the client's ip stack.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em port}]Returning the associated port\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_aadb78e07b941c10e78b109d5bbcfc492}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getUserName@{mamaConnection\_\-getUserName}}
+\index{mamaConnection\_\-getUserName@{mamaConnection\_\-getUserName}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getUserName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getUserName ({\bf mamaConnection} {\em connection}, \/  const char $\ast$$\ast$ {\em userName})}}
+\label{connection_8h_aadb78e07b941c10e78b109d5bbcfc492}
+\hypertarget{connection_8h_a9a01d14a53618d68388df336fe565cfa}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getAppName@{mamaConnection\_\-getAppName}}
+\index{mamaConnection\_\-getAppName@{mamaConnection\_\-getAppName}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getAppName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getAppName ({\bf mamaConnection} {\em connection}, \/  const char $\ast$$\ast$ {\em appName})}}
+\label{connection_8h_a9a01d14a53618d68388df336fe565cfa}
+
+
+Return the application name of the connected client. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em appName}]Returning the associated application name\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_a847c908bac4afcf54cacc9c06d5e0f7e}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getMaxQueueSize@{mamaConnection\_\-getMaxQueueSize}}
+\index{mamaConnection\_\-getMaxQueueSize@{mamaConnection\_\-getMaxQueueSize}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getMaxQueueSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getMaxQueueSize ({\bf mamaConnection} {\em connection}, \/  uint32\_\-t $\ast$ {\em queueSize})}}
+\label{connection_8h_a847c908bac4afcf54cacc9c06d5e0f7e}
+
+
+Return the maximum allowable outbound queue size for the client. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em queueSize}]Returning the associated maximum queue size\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_ad87227c14a1ba8454e8ad8c30ca8d1f6}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getQueueSize@{mamaConnection\_\-getQueueSize}}
+\index{mamaConnection\_\-getQueueSize@{mamaConnection\_\-getQueueSize}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getQueueSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getQueueSize ({\bf mamaConnection} {\em connection}, \/  uint32\_\-t $\ast$ {\em numItems})}}
+\label{connection_8h_ad87227c14a1ba8454e8ad8c30ca8d1f6}
+
+
+Get the number of items in the queue when structure was created. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em numItems}]Returning the associated number of items in the queue\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_a731acafe38c338627d6c37b88e399e38}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getMsgCount@{mamaConnection\_\-getMsgCount}}
+\index{mamaConnection\_\-getMsgCount@{mamaConnection\_\-getMsgCount}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getMsgCount}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getMsgCount ({\bf mamaConnection} {\em connection}, \/  uint32\_\-t $\ast$ {\em msgCount})}}
+\label{connection_8h_a731acafe38c338627d6c37b88e399e38}
+
+
+Get the number of messages sent on the connection. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em msgCount}]Returning the number of messages per connection\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_a7f65ac4521ce0b55ae6d26517b9467dc}{
+\index{connection.h@{connection.h}!mamaConnection\_\-getBytesSent@{mamaConnection\_\-getBytesSent}}
+\index{mamaConnection\_\-getBytesSent@{mamaConnection\_\-getBytesSent}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-getBytesSent}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-getBytesSent ({\bf mamaConnection} {\em connection}, \/  uint32\_\-t $\ast$ {\em bytesSent})}}
+\label{connection_8h_a7f65ac4521ce0b55ae6d26517b9467dc}
+
+
+Get the number of bytes sent on the connection. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em bytesSent}]Returning the number of bytes sent per connection\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{connection_8h_a1f6f667a80b8f7c3ea94d7a7f3752a98}{
+\index{connection.h@{connection.h}!mamaConnection\_\-toString@{mamaConnection\_\-toString}}
+\index{mamaConnection\_\-toString@{mamaConnection\_\-toString}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-toString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaConnection\_\-toString ({\bf mamaConnection} {\em connection})}}
+\label{connection_8h_a1f6f667a80b8f7c3ea94d7a7f3752a98}
+
+
+Convert a connection to a string. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String representation of the mama connection object 
+\end{DoxyReturn}
+\hypertarget{connection_8h_a91ce71ce4ac591acbd9e9d2448a07baa}{
+\index{connection.h@{connection.h}!mamaConnection\_\-isIntercepted@{mamaConnection\_\-isIntercepted}}
+\index{mamaConnection\_\-isIntercepted@{mamaConnection\_\-isIntercepted}!connection.h@{connection.h}}
+\subsubsection[{mamaConnection\_\-isIntercepted}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaConnection\_\-isIntercepted ({\bf mamaConnection} {\em connection}, \/  uint8\_\-t $\ast$ {\em result})}}
+\label{connection_8h_a91ce71ce4ac591acbd9e9d2448a07baa}
+
+
+Check if the conneciton is intercepted. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em connection}]The mama connection \item[\mbox{$\rightarrow$} {\em result}]Returns 0 if connection is not intercepted.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-NOT\_\-INSTALLED 
+\end{DoxyReturn}

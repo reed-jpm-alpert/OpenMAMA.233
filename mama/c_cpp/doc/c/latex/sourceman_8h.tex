@@ -1,0 +1,163 @@
+\hypertarget{sourceman_8h}{
+\section{sourceman.h File Reference}
+\label{sourceman_8h}\index{sourceman.h@{sourceman.h}}
+}
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/quality.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/log.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/source.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}
+\item 
+typedef \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} void $\ast$ \hyperlink{sourceman_8h_acc564604dd62708de80c856d1cc135a0}{closure}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{sourceman_8h_ac544df34ef6b3e47e1991e16a5aa7a70}{void} (MAMACALLTYPE $\ast$mamaSourceManager\_\-sourcesIteratorCb)(\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a68751e1bcd1dcd95f75b14ea3f926930}{mamaSourceManager\_\-create} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} $\ast$sourceManager)
+\begin{DoxyCompactList}\small\item\em Create a mamaSourceManager object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a109aae1f7a6119897020a17ac3a4fc78}{mamaSourceManager\_\-destroy} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaSourceManager object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a5048e31ffb2a511155b633f6413ce06e}{mamaSourceManager\_\-createSource} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager, const char $\ast$name, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Create a new mamaSource and add it to the manager. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a80b9c8e7d48c89248cd2fea7a4e0dcce}{mamaSourceManager\_\-findOrCreateSource} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager, const char $\ast$name, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Locates an existing mamaSource for the given name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_ab97b0b2eba04173191ee053d2180c4aa}{mamaSourceManager\_\-findSource} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager, const char $\ast$name, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Locates an existing mamaSource in the specified sourceManager with the specified string 'name' identifier. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a89d35b0a03cdf0e88918421e430d8ae9}{mamaSourceManager\_\-addSource} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Add an existing mamaSource to the specified mamaSourceManager. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a70402847a302a6f30915ebb0521a44b5}{mamaSourceManager\_\-addSourceWithName} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceManager, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Add an existing mamaSource to the specified mamaSourceManager using the specified name as a unique identifier. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{sourceman_8h_a6243dbee64c0a7f94d6b4cbeea9f76a0}{mamaSourceManager\_\-iterateSources} (\hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} sourceGroup, mamaSourceManager\_\-sourcesIteratorCb callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Iterate over all the sources in this mamaSourceManager. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{sourceman_8h_ae77b82667320c944b503f29065ea8304}{
+\index{sourceman.h@{sourceman.h}!source@{source}}
+\index{source@{source}!sourceman.h@{sourceman.h}}
+\subsubsection[{source}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaSource} {\bf source}}}
+\label{sourceman_8h_ae77b82667320c944b503f29065ea8304}
+\hypertarget{sourceman_8h_acc564604dd62708de80c856d1cc135a0}{
+\index{sourceman.h@{sourceman.h}!closure@{closure}}
+\index{closure@{closure}!sourceman.h@{sourceman.h}}
+\subsubsection[{closure}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaSource} void$\ast$ {\bf closure}}}
+\label{sourceman_8h_acc564604dd62708de80c856d1cc135a0}
+
+
+\subsection{Function Documentation}
+\hypertarget{sourceman_8h_ac544df34ef6b3e47e1991e16a5aa7a70}{
+\index{sourceman.h@{sourceman.h}!void@{void}}
+\index{void@{void}!sourceman.h@{sourceman.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em mamaSourceManager\_\-sourcesIteratorCb})}}
+\label{sourceman_8h_ac544df34ef6b3e47e1991e16a5aa7a70}
+\hypertarget{sourceman_8h_a68751e1bcd1dcd95f75b14ea3f926930}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-create@{mamaSourceManager\_\-create}}
+\index{mamaSourceManager\_\-create@{mamaSourceManager\_\-create}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-create ({\bf mamaSourceManager} $\ast$ {\em sourceManager})}}
+\label{sourceman_8h_a68751e1bcd1dcd95f75b14ea3f926930}
+
+
+Create a mamaSourceManager object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The location of a mamaSourceManager to store the result. \end{DoxyParams}
+\hypertarget{sourceman_8h_a109aae1f7a6119897020a17ac3a4fc78}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-destroy@{mamaSourceManager\_\-destroy}}
+\index{mamaSourceManager\_\-destroy@{mamaSourceManager\_\-destroy}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-destroy ({\bf mamaSourceManager} {\em sourceManager})}}
+\label{sourceman_8h_a109aae1f7a6119897020a17ac3a4fc78}
+
+
+Destroy a mamaSourceManager object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The sourceManager object to destroy. \end{DoxyParams}
+\hypertarget{sourceman_8h_a5048e31ffb2a511155b633f6413ce06e}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-createSource@{mamaSourceManager\_\-createSource}}
+\index{mamaSourceManager\_\-createSource@{mamaSourceManager\_\-createSource}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-createSource}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-createSource ({\bf mamaSourceManager} {\em sourceManager}, \/  const char $\ast$ {\em name}, \/  {\bf mamaSource} $\ast$ {\em source})}}
+\label{sourceman_8h_a5048e31ffb2a511155b633f6413ce06e}
+
+
+Create a new mamaSource and add it to the manager. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The sourceManager to use for creating the mamaSource. \item[{\em name}]The string identifier for the mamaSource. \item[{\em source}]The address to which the new source will be $\ast$ written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if execution is successful. 
+\end{DoxyReturn}
+\hypertarget{sourceman_8h_a80b9c8e7d48c89248cd2fea7a4e0dcce}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-findOrCreateSource@{mamaSourceManager\_\-findOrCreateSource}}
+\index{mamaSourceManager\_\-findOrCreateSource@{mamaSourceManager\_\-findOrCreateSource}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-findOrCreateSource}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-findOrCreateSource ({\bf mamaSourceManager} {\em sourceManager}, \/  const char $\ast$ {\em name}, \/  {\bf mamaSource} $\ast$ {\em source})}}
+\label{sourceman_8h_a80b9c8e7d48c89248cd2fea7a4e0dcce}
+
+
+Locates an existing mamaSource for the given name. If none exists creates a new mamaSource and adds to the sourceManager.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The sourceManager to use for locating the mamaSource. \item[{\em name}]The string identifier for the mamaSource \item[{\em source}]The location to which the address for the source will be written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if execution is successful. 
+\end{DoxyReturn}
+\hypertarget{sourceman_8h_ab97b0b2eba04173191ee053d2180c4aa}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-findSource@{mamaSourceManager\_\-findSource}}
+\index{mamaSourceManager\_\-findSource@{mamaSourceManager\_\-findSource}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-findSource}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-findSource ({\bf mamaSourceManager} {\em sourceManager}, \/  const char $\ast$ {\em name}, \/  {\bf mamaSource} $\ast$ {\em source})}}
+\label{sourceman_8h_ab97b0b2eba04173191ee053d2180c4aa}
+
+
+Locates an existing mamaSource in the specified sourceManager with the specified string 'name' identifier. The value of the source argument will be set to NULL if no source was located in the sourceManager provided.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The mamaSourceManager to use to locate the specified mamaSource. \item[{\em name}]The string identifier for the required mamaSource. \item[{\em source}]The location to which the address for the source will be written. NULL if none is found.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if creation is successful. 
+\end{DoxyReturn}
+\hypertarget{sourceman_8h_a89d35b0a03cdf0e88918421e430d8ae9}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-addSource@{mamaSourceManager\_\-addSource}}
+\index{mamaSourceManager\_\-addSource@{mamaSourceManager\_\-addSource}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-addSource}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-addSource ({\bf mamaSourceManager} {\em sourceManager}, \/  {\bf mamaSource} {\em source})}}
+\label{sourceman_8h_a89d35b0a03cdf0e88918421e430d8ae9}
+
+
+Add an existing mamaSource to the specified mamaSourceManager. The id of the source will be used instead of the name to uniquely identify the source within the manager.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The mamaSourceManager to which an existing mamaSource is being added. \item[{\em source}]The mamaSource being added to the specified mamaSourceManager.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if execution is successful. 
+\end{DoxyReturn}
+\hypertarget{sourceman_8h_a70402847a302a6f30915ebb0521a44b5}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-addSourceWithName@{mamaSourceManager\_\-addSourceWithName}}
+\index{mamaSourceManager\_\-addSourceWithName@{mamaSourceManager\_\-addSourceWithName}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-addSourceWithName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-addSourceWithName ({\bf mamaSourceManager} {\em sourceManager}, \/  {\bf mamaSource} {\em source}, \/  const char $\ast$ {\em name})}}
+\label{sourceman_8h_a70402847a302a6f30915ebb0521a44b5}
+
+
+Add an existing mamaSource to the specified mamaSourceManager using the specified name as a unique identifier. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The mamaSourceManager to which an existing mamaSource is being added. \item[{\em name}]The string identifier for the mamaSource \item[{\em source}]The mamaSource being added to the specified mamaSourceManager.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if execution is successful. 
+\end{DoxyReturn}
+\hypertarget{sourceman_8h_a6243dbee64c0a7f94d6b4cbeea9f76a0}{
+\index{sourceman.h@{sourceman.h}!mamaSourceManager\_\-iterateSources@{mamaSourceManager\_\-iterateSources}}
+\index{mamaSourceManager\_\-iterateSources@{mamaSourceManager\_\-iterateSources}!sourceman.h@{sourceman.h}}
+\subsubsection[{mamaSourceManager\_\-iterateSources}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSourceManager\_\-iterateSources ({\bf mamaSourceManager} {\em sourceGroup}, \/  mamaSourceManager\_\-sourcesIteratorCb {\em callback}, \/  void $\ast$ {\em closure})}}
+\label{sourceman_8h_a6243dbee64c0a7f94d6b4cbeea9f76a0}
+
+
+Iterate over all the sources in this mamaSourceManager. 
+\begin{DoxyParams}{Parameters}
+\item[{\em sourceManager}]The mamaSourceManager to iterate over. \item[{\em callback}]The callback function pointer to invoke for each source in the group. \item[{\em closure}]User supplied arbitrary data. Passed back on each invocation of the callback function.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the function executes successfully. 
+\end{DoxyReturn}

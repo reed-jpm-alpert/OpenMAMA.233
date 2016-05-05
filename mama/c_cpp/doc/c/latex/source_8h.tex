@@ -1,0 +1,368 @@
+\hypertarget{source_8h}{
+\section{source.h File Reference}
+\label{source_8h}\index{source.h@{source.h}}
+}
+{\ttfamily \#include \char`\"{}mama/config.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/sourceman.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/quality.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{source_8h_a6a34bff33ce03175a491debbbc7e5fd1}{mamaSourceState\_\-} \hyperlink{source_8h_ac49accdf66c7ee45eaca819e4294c2c2}{mamaSourceState}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{source_8h_a6a34bff33ce03175a491debbbc7e5fd1}{mamaSourceState\_\-} \{ \hyperlink{source_8h_a6a34bff33ce03175a491debbbc7e5fd1ae4bd06f8703a9bb3d8b041a2bf89b2b9}{MAMA\_\-SOURCE\_\-STATE\_\-OFF} =  0, 
+\hyperlink{source_8h_a6a34bff33ce03175a491debbbc7e5fd1a3c2b9667bdff7020db4fa1141e834e24}{MAMA\_\-SOURCE\_\-STATE\_\-OK} =  1, 
+\hyperlink{source_8h_a6a34bff33ce03175a491debbbc7e5fd1ae3c1614c834e486c7c27441e06456ac3}{MAMA\_\-SOURCE\_\-STATE\_\-UNKNOWN} =  99
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a1067642d44be05fcc58e20c2e1487372}{mamaSource\_\-create} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Create a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a898a1989d7b63c6835198ae0fe315d0d}{mamaSource\_\-destroy} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Destroy a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_aa89bbb25b3b8465b8dd9d2b8be59da08}{mamaSource\_\-clear} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Clear a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_ad3ed37ebda0f33519a18a6d2178f53b6}{mamaSource\_\-setId} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$id)
+\begin{DoxyCompactList}\small\item\em Set the ID of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a18a09c5778d16ab84a55a422910b8b4a}{mamaSource\_\-setMappedId} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$id)
+\begin{DoxyCompactList}\small\item\em Set the mapped ID of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a22bd00ba44c53e09e31fa5eac6aa2e22}{mamaSource\_\-setDisplayId} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$id)
+\begin{DoxyCompactList}\small\item\em Set the display ID of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a747e5b241b104b631a43f6dcd8be7c56}{mamaSource\_\-setQuality} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality} quality)
+\begin{DoxyCompactList}\small\item\em Set the quality of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_abfbc67d17b161883303d3b4e1b4400e3}{mamaSource\_\-setState} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{source_8h_ac49accdf66c7ee45eaca819e4294c2c2}{mamaSourceState} quality)
+\begin{DoxyCompactList}\small\item\em Set the state of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a06df27c47ecb0a587149eb446961fac6}{mamaSource\_\-setParent} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} parent)
+\begin{DoxyCompactList}\small\item\em Set the parent for a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a3e47e83f89244acdb5a4b3b40bcd14ae}{mamaSource\_\-setSymbolNamespace} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbolNamespace)
+\begin{DoxyCompactList}\small\item\em Set the publisher specific source name for this source. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a1a8cdb4483ac779677fa68b82f89a674}{mamaSource\_\-setTransportName} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$transportName)
+\begin{DoxyCompactList}\small\item\em Set the name of the mamaTransport on which this describes a valid source of data. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_af09582d2a6eafb1c7ef006ce2b62ba36}{mamaSource\_\-setTransport} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Associate a mamaTransport object with the source. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a9489f013396a5310a9ce8155644a6e79}{mamaSource\_\-setSymbology} (\hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_a8c869a9f6c6e3f3c30a16926c598fa7b}{mamaSymbology} symbology)
+\begin{DoxyCompactList}\small\item\em Associate a mamaSymbology object with the source. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a58a914791c2cf28e7f05a3a9c4b614e8}{mamaSource\_\-getId} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$$\ast$id)
+\begin{DoxyCompactList}\small\item\em Get the ID of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_ac02df0ed69b93c5d6cc614784efb0ddc}{mamaSource\_\-getMappedId} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$$\ast$id)
+\begin{DoxyCompactList}\small\item\em Get the mapped ID of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a477cba39480c4814f9573f040ae7f3eb}{mamaSource\_\-getDisplayId} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$$\ast$id)
+\begin{DoxyCompactList}\small\item\em Get the display ID of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_ab1bd9f82ecfed4e68a7b90265b659892}{mamaSource\_\-getQuality} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality} $\ast$quality)
+\begin{DoxyCompactList}\small\item\em Get the quality of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a23d105e3f93d8ba83ce03a1472d3b10f}{mamaSource\_\-getState} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{source_8h_ac49accdf66c7ee45eaca819e4294c2c2}{mamaSourceState} $\ast$\hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Get the state of a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{source_8h_aea62ebc1abeff27bcdf88c42bc4e51e2}{mamaSource\_\-getStateAsString} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a50f27938c3e6b1d4db8bd2805bcf3ffc}{mamaSource\_\-getParent} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Get the parent source for a mamaSource object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a50317c241030b76c86a796bd963b6d25}{mamaSource\_\-getSymbolNamespace} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$$\ast$symbolNamespace)
+\begin{DoxyCompactList}\small\item\em Get the source name for the publisher which this mamaSource represents. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_af1337ead875a4ceaf146b7a577f9c273}{mamaSource\_\-getTransportName} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$$\ast$transportName)
+\begin{DoxyCompactList}\small\item\em Get the name of the mamaTransport on which this source is valid. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a29908d7b73fb7a9fa1214b064bacf8cd}{mamaSource\_\-getTransport} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} $\ast$transport)
+\begin{DoxyCompactList}\small\item\em Get the mamaTransport associated with this source. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_a463a2337c2bba77fb9e2a4bb9f2220dc}{mamaSource\_\-getSymbology} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_a8c869a9f6c6e3f3c30a16926c598fa7b}{mamaSymbology} $\ast$symbology)
+\begin{DoxyCompactList}\small\item\em Get the mamaSymbology associated with this source. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{source_8h_aced7fa14e9d0d4cf316eeba6fd361ff9}{mamaSource\_\-getSubSourceManager} (const \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager} $\ast$subSourceManager)
+\begin{DoxyCompactList}\small\item\em A mamaSource can have sub-\/sources. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{source_8h_ac49accdf66c7ee45eaca819e4294c2c2}{
+\index{source.h@{source.h}!mamaSourceState@{mamaSourceState}}
+\index{mamaSourceState@{mamaSourceState}!source.h@{source.h}}
+\subsubsection[{mamaSourceState}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaSourceState\_\-}  {\bf mamaSourceState}}}
+\label{source_8h_ac49accdf66c7ee45eaca819e4294c2c2}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{source_8h_a6a34bff33ce03175a491debbbc7e5fd1}{
+\index{source.h@{source.h}!mamaSourceState\_\-@{mamaSourceState\_\-}}
+\index{mamaSourceState\_\-@{mamaSourceState\_\-}!source.h@{source.h}}
+\subsubsection[{mamaSourceState\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaSourceState\_\-}}}
+\label{source_8h_a6a34bff33ce03175a491debbbc7e5fd1}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-SOURCE\_\-STATE\_\-OFF@{MAMA\_\-SOURCE\_\-STATE\_\-OFF}!source.h@{source.h}}\index{source.h@{source.h}!MAMA\_\-SOURCE\_\-STATE\_\-OFF@{MAMA\_\-SOURCE\_\-STATE\_\-OFF}}\item[{\em 
+\hypertarget{source_8h_a6a34bff33ce03175a491debbbc7e5fd1ae4bd06f8703a9bb3d8b041a2bf89b2b9}{
+MAMA\_\-SOURCE\_\-STATE\_\-OFF}
+\label{source_8h_a6a34bff33ce03175a491debbbc7e5fd1ae4bd06f8703a9bb3d8b041a2bf89b2b9}
+}]\index{MAMA\_\-SOURCE\_\-STATE\_\-OK@{MAMA\_\-SOURCE\_\-STATE\_\-OK}!source.h@{source.h}}\index{source.h@{source.h}!MAMA\_\-SOURCE\_\-STATE\_\-OK@{MAMA\_\-SOURCE\_\-STATE\_\-OK}}\item[{\em 
+\hypertarget{source_8h_a6a34bff33ce03175a491debbbc7e5fd1a3c2b9667bdff7020db4fa1141e834e24}{
+MAMA\_\-SOURCE\_\-STATE\_\-OK}
+\label{source_8h_a6a34bff33ce03175a491debbbc7e5fd1a3c2b9667bdff7020db4fa1141e834e24}
+}]\index{MAMA\_\-SOURCE\_\-STATE\_\-UNKNOWN@{MAMA\_\-SOURCE\_\-STATE\_\-UNKNOWN}!source.h@{source.h}}\index{source.h@{source.h}!MAMA\_\-SOURCE\_\-STATE\_\-UNKNOWN@{MAMA\_\-SOURCE\_\-STATE\_\-UNKNOWN}}\item[{\em 
+\hypertarget{source_8h_a6a34bff33ce03175a491debbbc7e5fd1ae3c1614c834e486c7c27441e06456ac3}{
+MAMA\_\-SOURCE\_\-STATE\_\-UNKNOWN}
+\label{source_8h_a6a34bff33ce03175a491debbbc7e5fd1ae3c1614c834e486c7c27441e06456ac3}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{source_8h_a1067642d44be05fcc58e20c2e1487372}{
+\index{source.h@{source.h}!mamaSource\_\-create@{mamaSource\_\-create}}
+\index{mamaSource\_\-create@{mamaSource\_\-create}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-create ({\bf mamaSource} $\ast$ {\em source})}}
+\label{source_8h_a1067642d44be05fcc58e20c2e1487372}
+
+
+Create a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The location of a mamaSource to store the result. \end{DoxyParams}
+\hypertarget{source_8h_a898a1989d7b63c6835198ae0fe315d0d}{
+\index{source.h@{source.h}!mamaSource\_\-destroy@{mamaSource\_\-destroy}}
+\index{mamaSource\_\-destroy@{mamaSource\_\-destroy}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-destroy ({\bf mamaSource} {\em source})}}
+\label{source_8h_a898a1989d7b63c6835198ae0fe315d0d}
+
+
+Destroy a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to destroy. \end{DoxyParams}
+\hypertarget{source_8h_aa89bbb25b3b8465b8dd9d2b8be59da08}{
+\index{source.h@{source.h}!mamaSource\_\-clear@{mamaSource\_\-clear}}
+\index{mamaSource\_\-clear@{mamaSource\_\-clear}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-clear ({\bf mamaSource} {\em source})}}
+\label{source_8h_aa89bbb25b3b8465b8dd9d2b8be59da08}
+
+
+Clear a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to clear. \end{DoxyParams}
+\hypertarget{source_8h_ad3ed37ebda0f33519a18a6d2178f53b6}{
+\index{source.h@{source.h}!mamaSource\_\-setId@{mamaSource\_\-setId}}
+\index{mamaSource\_\-setId@{mamaSource\_\-setId}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setId ({\bf mamaSource} {\em source}, \/  const char $\ast$ {\em id})}}
+\label{source_8h_ad3ed37ebda0f33519a18a6d2178f53b6}
+
+
+Set the ID of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em id}]The new ID for the source object. \end{DoxyParams}
+\hypertarget{source_8h_a18a09c5778d16ab84a55a422910b8b4a}{
+\index{source.h@{source.h}!mamaSource\_\-setMappedId@{mamaSource\_\-setMappedId}}
+\index{mamaSource\_\-setMappedId@{mamaSource\_\-setMappedId}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setMappedId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setMappedId ({\bf mamaSource} {\em source}, \/  const char $\ast$ {\em id})}}
+\label{source_8h_a18a09c5778d16ab84a55a422910b8b4a}
+
+
+Set the mapped ID of a mamaSource object. The mapped ID is the ID that the parent source manager has mapped this source as.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em id}]The new mapped ID for the source object. \end{DoxyParams}
+\hypertarget{source_8h_a22bd00ba44c53e09e31fa5eac6aa2e22}{
+\index{source.h@{source.h}!mamaSource\_\-setDisplayId@{mamaSource\_\-setDisplayId}}
+\index{mamaSource\_\-setDisplayId@{mamaSource\_\-setDisplayId}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setDisplayId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setDisplayId ({\bf mamaSource} {\em source}, \/  const char $\ast$ {\em id})}}
+\label{source_8h_a22bd00ba44c53e09e31fa5eac6aa2e22}
+
+
+Set the display ID of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em id}]The new display ID for the source object. \end{DoxyParams}
+\hypertarget{source_8h_a747e5b241b104b631a43f6dcd8be7c56}{
+\index{source.h@{source.h}!mamaSource\_\-setQuality@{mamaSource\_\-setQuality}}
+\index{mamaSource\_\-setQuality@{mamaSource\_\-setQuality}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setQuality}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setQuality ({\bf mamaSource} {\em source}, \/  {\bf mamaQuality} {\em quality})}}
+\label{source_8h_a747e5b241b104b631a43f6dcd8be7c56}
+
+
+Set the quality of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em quality}]The new quality for the source object. \end{DoxyParams}
+\hypertarget{source_8h_abfbc67d17b161883303d3b4e1b4400e3}{
+\index{source.h@{source.h}!mamaSource\_\-setState@{mamaSource\_\-setState}}
+\index{mamaSource\_\-setState@{mamaSource\_\-setState}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setState}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setState ({\bf mamaSource} {\em source}, \/  {\bf mamaSourceState} {\em quality})}}
+\label{source_8h_abfbc67d17b161883303d3b4e1b4400e3}
+
+
+Set the state of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em quality}]The new state for the source object. \end{DoxyParams}
+\hypertarget{source_8h_a06df27c47ecb0a587149eb446961fac6}{
+\index{source.h@{source.h}!mamaSource\_\-setParent@{mamaSource\_\-setParent}}
+\index{mamaSource\_\-setParent@{mamaSource\_\-setParent}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setParent}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setParent ({\bf mamaSource} {\em source}, \/  {\bf mamaSource} {\em parent})}}
+\label{source_8h_a06df27c47ecb0a587149eb446961fac6}
+
+
+Set the parent for a mamaSource object. The current mamaSource is added to the parents sub source manager.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{source_8h_aced7fa14e9d0d4cf316eeba6fd361ff9}{mamaSource\_\-getSubSourceManager()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em parent}]The parent source for this source object. \end{DoxyParams}
+\hypertarget{source_8h_a3e47e83f89244acdb5a4b3b40bcd14ae}{
+\index{source.h@{source.h}!mamaSource\_\-setSymbolNamespace@{mamaSource\_\-setSymbolNamespace}}
+\index{mamaSource\_\-setSymbolNamespace@{mamaSource\_\-setSymbolNamespace}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setSymbolNamespace}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setSymbolNamespace ({\bf mamaSource} {\em source}, \/  const char $\ast$ {\em symbolNamespace})}}
+\label{source_8h_a3e47e83f89244acdb5a4b3b40bcd14ae}
+
+
+Set the publisher specific source name for this source. e.g. This could be \char`\"{}NASDAQ\char`\"{} for a UTP PAPA publisher.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em symbolNamespace}]The namespace for the publisher this mamaSource object describes. \end{DoxyParams}
+\hypertarget{source_8h_a1a8cdb4483ac779677fa68b82f89a674}{
+\index{source.h@{source.h}!mamaSource\_\-setTransportName@{mamaSource\_\-setTransportName}}
+\index{mamaSource\_\-setTransportName@{mamaSource\_\-setTransportName}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setTransportName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setTransportName ({\bf mamaSource} {\em source}, \/  const char $\ast$ {\em transportName})}}
+\label{source_8h_a1a8cdb4483ac779677fa68b82f89a674}
+
+
+Set the name of the mamaTransport on which this describes a valid source of data. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to update. \item[{\em transportName}]The name of the mamaTransport for which this source is valid. \end{DoxyParams}
+\hypertarget{source_8h_af09582d2a6eafb1c7ef006ce2b62ba36}{
+\index{source.h@{source.h}!mamaSource\_\-setTransport@{mamaSource\_\-setTransport}}
+\index{mamaSource\_\-setTransport@{mamaSource\_\-setTransport}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setTransport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setTransport ({\bf mamaSource} {\em source}, \/  {\bf mamaTransport} {\em transport})}}
+\label{source_8h_af09582d2a6eafb1c7ef006ce2b62ba36}
+
+
+Associate a mamaTransport object with the source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source to update. \item[{\em transport}]The mamaTransport to associate with the source. \end{DoxyParams}
+\hypertarget{source_8h_a9489f013396a5310a9ce8155644a6e79}{
+\index{source.h@{source.h}!mamaSource\_\-setSymbology@{mamaSource\_\-setSymbology}}
+\index{mamaSource\_\-setSymbology@{mamaSource\_\-setSymbology}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-setSymbology}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-setSymbology ({\bf mamaSource} {\em source}, \/  {\bf mamaSymbology} {\em symbology})}}
+\label{source_8h_a9489f013396a5310a9ce8155644a6e79}
+
+
+Associate a mamaSymbology object with the source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source to update. \item[{\em symbology}]The mamaSymbology to associate with the source. \end{DoxyParams}
+\hypertarget{source_8h_a58a914791c2cf28e7f05a3a9c4b614e8}{
+\index{source.h@{source.h}!mamaSource\_\-getId@{mamaSource\_\-getId}}
+\index{mamaSource\_\-getId@{mamaSource\_\-getId}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getId (const {\bf mamaSource} {\em source}, \/  const char $\ast$$\ast$ {\em id})}}
+\label{source_8h_a58a914791c2cf28e7f05a3a9c4b614e8}
+
+
+Get the ID of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em id}]Location of the result for the ID of the source. \end{DoxyParams}
+\hypertarget{source_8h_ac02df0ed69b93c5d6cc614784efb0ddc}{
+\index{source.h@{source.h}!mamaSource\_\-getMappedId@{mamaSource\_\-getMappedId}}
+\index{mamaSource\_\-getMappedId@{mamaSource\_\-getMappedId}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getMappedId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getMappedId (const {\bf mamaSource} {\em source}, \/  const char $\ast$$\ast$ {\em id})}}
+\label{source_8h_ac02df0ed69b93c5d6cc614784efb0ddc}
+
+
+Get the mapped ID of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em id}]Location of the result for the mapped ID of the source. \end{DoxyParams}
+\hypertarget{source_8h_a477cba39480c4814f9573f040ae7f3eb}{
+\index{source.h@{source.h}!mamaSource\_\-getDisplayId@{mamaSource\_\-getDisplayId}}
+\index{mamaSource\_\-getDisplayId@{mamaSource\_\-getDisplayId}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getDisplayId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getDisplayId (const {\bf mamaSource} {\em source}, \/  const char $\ast$$\ast$ {\em id})}}
+\label{source_8h_a477cba39480c4814f9573f040ae7f3eb}
+
+
+Get the display ID of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em id}]Location of the result for the display ID of the source. \end{DoxyParams}
+\hypertarget{source_8h_ab1bd9f82ecfed4e68a7b90265b659892}{
+\index{source.h@{source.h}!mamaSource\_\-getQuality@{mamaSource\_\-getQuality}}
+\index{mamaSource\_\-getQuality@{mamaSource\_\-getQuality}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getQuality}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getQuality (const {\bf mamaSource} {\em source}, \/  {\bf mamaQuality} $\ast$ {\em quality})}}
+\label{source_8h_ab1bd9f82ecfed4e68a7b90265b659892}
+
+
+Get the quality of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em quality}]Location of the result for the quality of the source. \end{DoxyParams}
+\hypertarget{source_8h_a23d105e3f93d8ba83ce03a1472d3b10f}{
+\index{source.h@{source.h}!mamaSource\_\-getState@{mamaSource\_\-getState}}
+\index{mamaSource\_\-getState@{mamaSource\_\-getState}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getState}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getState (const {\bf mamaSource} {\em source}, \/  {\bf mamaSourceState} $\ast$ {\em state})}}
+\label{source_8h_a23d105e3f93d8ba83ce03a1472d3b10f}
+
+
+Get the state of a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em state}]Location of the result for the state of the source. \end{DoxyParams}
+\hypertarget{source_8h_aea62ebc1abeff27bcdf88c42bc4e51e2}{
+\index{source.h@{source.h}!mamaSource\_\-getStateAsString@{mamaSource\_\-getStateAsString}}
+\index{mamaSource\_\-getStateAsString@{mamaSource\_\-getStateAsString}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getStateAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaSource\_\-getStateAsString (const {\bf mamaSource} {\em source})}}
+\label{source_8h_aea62ebc1abeff27bcdf88c42bc4e51e2}
+\hypertarget{source_8h_a50f27938c3e6b1d4db8bd2805bcf3ffc}{
+\index{source.h@{source.h}!mamaSource\_\-getParent@{mamaSource\_\-getParent}}
+\index{mamaSource\_\-getParent@{mamaSource\_\-getParent}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getParent}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getParent (const {\bf mamaSource} {\em source}, \/  {\bf mamaSource} $\ast$ {\em parent})}}
+\label{source_8h_a50f27938c3e6b1d4db8bd2805bcf3ffc}
+
+
+Get the parent source for a mamaSource object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em parent}]Location to store the address of the parent for this source. \end{DoxyParams}
+\hypertarget{source_8h_a50317c241030b76c86a796bd963b6d25}{
+\index{source.h@{source.h}!mamaSource\_\-getSymbolNamespace@{mamaSource\_\-getSymbolNamespace}}
+\index{mamaSource\_\-getSymbolNamespace@{mamaSource\_\-getSymbolNamespace}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getSymbolNamespace}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getSymbolNamespace (const {\bf mamaSource} {\em source}, \/  const char $\ast$$\ast$ {\em symbolNamespace})}}
+\label{source_8h_a50317c241030b76c86a796bd963b6d25}
+
+
+Get the source name for the publisher which this mamaSource represents. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em symbolNamespace}]The source name for the publisher. \end{DoxyParams}
+\hypertarget{source_8h_af1337ead875a4ceaf146b7a577f9c273}{
+\index{source.h@{source.h}!mamaSource\_\-getTransportName@{mamaSource\_\-getTransportName}}
+\index{mamaSource\_\-getTransportName@{mamaSource\_\-getTransportName}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getTransportName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getTransportName (const {\bf mamaSource} {\em source}, \/  const char $\ast$$\ast$ {\em transportName})}}
+\label{source_8h_af1337ead875a4ceaf146b7a577f9c273}
+
+
+Get the name of the mamaTransport on which this source is valid. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em transportName}]The location to store the pointer to the transportName. \end{DoxyParams}
+\hypertarget{source_8h_a29908d7b73fb7a9fa1214b064bacf8cd}{
+\index{source.h@{source.h}!mamaSource\_\-getTransport@{mamaSource\_\-getTransport}}
+\index{mamaSource\_\-getTransport@{mamaSource\_\-getTransport}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getTransport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getTransport (const {\bf mamaSource} {\em source}, \/  {\bf mamaTransport} $\ast$ {\em transport})}}
+\label{source_8h_a29908d7b73fb7a9fa1214b064bacf8cd}
+
+
+Get the mamaTransport associated with this source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em transport}]The mamaTransport associated with this source. \end{DoxyParams}
+\hypertarget{source_8h_a463a2337c2bba77fb9e2a4bb9f2220dc}{
+\index{source.h@{source.h}!mamaSource\_\-getSymbology@{mamaSource\_\-getSymbology}}
+\index{mamaSource\_\-getSymbology@{mamaSource\_\-getSymbology}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getSymbology}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getSymbology (const {\bf mamaSource} {\em source}, \/  {\bf mamaSymbology} $\ast$ {\em symbology})}}
+\label{source_8h_a463a2337c2bba77fb9e2a4bb9f2220dc}
+
+
+Get the mamaSymbology associated with this source. 
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The source object to check. \item[{\em symbology}]The mamaSymbology associated with this source. \end{DoxyParams}
+\hypertarget{source_8h_aced7fa14e9d0d4cf316eeba6fd361ff9}{
+\index{source.h@{source.h}!mamaSource\_\-getSubSourceManager@{mamaSource\_\-getSubSourceManager}}
+\index{mamaSource\_\-getSubSourceManager@{mamaSource\_\-getSubSourceManager}!source.h@{source.h}}
+\subsubsection[{mamaSource\_\-getSubSourceManager}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSource\_\-getSubSourceManager (const {\bf mamaSource} {\em source}, \/  {\bf mamaSourceManager} $\ast$ {\em subSourceManager})}}
+\label{source_8h_aced7fa14e9d0d4cf316eeba6fd361ff9}
+
+
+A mamaSource can have sub-\/sources. These sub sources are maintained by a mamaSourceManager within the mamaSource.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em source}]The mamaSource for which the sub source manager is being obtained. \item[{\em subSourceManager}]The location top store the address of the sub source manager object pointer. \end{DoxyParams}

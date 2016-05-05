@@ -1,0 +1,112 @@
+\hypertarget{servicelevel_8h}{
+\section{servicelevel.h File Reference}
+\label{servicelevel_8h}\index{servicelevel.h@{servicelevel.h}}
+}
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95f}{mamaServiceLevel\_\-} \hyperlink{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}{mamaServiceLevel}
+\begin{DoxyCompactList}\small\item\em mamaServiceLevel is an enumeration that represents the service level (a) requested by a subscribing application, or (b) provided by the publisher. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95f}{mamaServiceLevel\_\-} \{ \par
+\hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa2b74f9a180b618a9fb7563d0d76f09c8}{MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME} =  0, 
+\hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa8467a11a081fc340ee73f76f46640c7f}{MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT} =  1, 
+\hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fac02e744bb1b6d291ea89129f4f14b398}{MAMA\_\-SERVICE\_\-LEVEL\_\-REPEATING\_\-SNAPSHOT} =  2, 
+\hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa2838bd6167cc8cfcfaf8b2af5cc1ec74}{MAMA\_\-SERVICE\_\-LEVEL\_\-CONFLATED} =  5, 
+\par
+\hyperlink{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa563c21c6e90a894196f0716f0833635a}{MAMA\_\-SERVICE\_\-LEVEL\_\-UNKNOWN} =  99
+ \}
+\begin{DoxyCompactList}\small\item\em mamaServiceLevel is an enumeration that represents the service level (a) requested by a subscribing application, or (b) provided by the publisher. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}{mamaServiceLevel} \hyperlink{servicelevel_8h_ab5583540f1d8f9e255ef5720cbcb0c7a}{mamaServiceLevel\_\-getFromMsg} (const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Extract the subscription service level from a message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{servicelevel_8h_aa774282164b89ac67f328e86ea5b4093}{mamaServiceLevel\_\-getFromMsgAsString} (const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Extract the subscription service level as a string from a message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{servicelevel_8h_a1029a3e1b26ba5c690c6546e23297009}{mamaServiceLevel\_\-toString} (\hyperlink{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}{mamaServiceLevel} type)
+\begin{DoxyCompactList}\small\item\em Convert a mamaServiceLevel to a string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}{
+\index{servicelevel.h@{servicelevel.h}!mamaServiceLevel@{mamaServiceLevel}}
+\index{mamaServiceLevel@{mamaServiceLevel}!servicelevel.h@{servicelevel.h}}
+\subsubsection[{mamaServiceLevel}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaServiceLevel\_\-}  {\bf mamaServiceLevel}}}
+\label{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}
+
+
+mamaServiceLevel is an enumeration that represents the service level (a) requested by a subscribing application, or (b) provided by the publisher. In the future, the service level provided to the application might change dynamically, depending upon infrastructure capacity. So, even though the requested service level is \char`\"{}real
+ time\char`\"{}, if service deteriorates for any reason, the subscription may automatically switch to a conflated level (after notifying the application of the switch). 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95f}{
+\index{servicelevel.h@{servicelevel.h}!mamaServiceLevel\_\-@{mamaServiceLevel\_\-}}
+\index{mamaServiceLevel\_\-@{mamaServiceLevel\_\-}!servicelevel.h@{servicelevel.h}}
+\subsubsection[{mamaServiceLevel\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaServiceLevel\_\-}}}
+\label{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95f}
+
+
+mamaServiceLevel is an enumeration that represents the service level (a) requested by a subscribing application, or (b) provided by the publisher. In the future, the service level provided to the application might change dynamically, depending upon infrastructure capacity. So, even though the requested service level is \char`\"{}real
+ time\char`\"{}, if service deteriorates for any reason, the subscription may automatically switch to a conflated level (after notifying the application of the switch). \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME@{MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME}!servicelevel.h@{servicelevel.h}}\index{servicelevel.h@{servicelevel.h}!MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME@{MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME}}\item[{\em 
+\hypertarget{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa2b74f9a180b618a9fb7563d0d76f09c8}{
+MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME}
+\label{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa2b74f9a180b618a9fb7563d0d76f09c8}
+}]Real time updates. \index{MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT@{MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT}!servicelevel.h@{servicelevel.h}}\index{servicelevel.h@{servicelevel.h}!MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT@{MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT}}\item[{\em 
+\hypertarget{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa8467a11a081fc340ee73f76f46640c7f}{
+MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT}
+\label{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa8467a11a081fc340ee73f76f46640c7f}
+}]Single snapshot image only. \index{MAMA\_\-SERVICE\_\-LEVEL\_\-REPEATING\_\-SNAPSHOT@{MAMA\_\-SERVICE\_\-LEVEL\_\-REPEATING\_\-SNAPSHOT}!servicelevel.h@{servicelevel.h}}\index{servicelevel.h@{servicelevel.h}!MAMA\_\-SERVICE\_\-LEVEL\_\-REPEATING\_\-SNAPSHOT@{MAMA\_\-SERVICE\_\-LEVEL\_\-REPEATING\_\-SNAPSHOT}}\item[{\em 
+\hypertarget{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fac02e744bb1b6d291ea89129f4f14b398}{
+MAMA\_\-SERVICE\_\-LEVEL\_\-REPEATING\_\-SNAPSHOT}
+\label{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fac02e744bb1b6d291ea89129f4f14b398}
+}]Repeating snapshot image. When creating subscriptions, the serviceLevelOpt parameter should be set to the number of milliseconds representing the interval between snapshots. The first snapshot will be obtained within some random period between zero and the interval. Only one snapshot request will be allowed to be outstanding at a time. \index{MAMA\_\-SERVICE\_\-LEVEL\_\-CONFLATED@{MAMA\_\-SERVICE\_\-LEVEL\_\-CONFLATED}!servicelevel.h@{servicelevel.h}}\index{servicelevel.h@{servicelevel.h}!MAMA\_\-SERVICE\_\-LEVEL\_\-CONFLATED@{MAMA\_\-SERVICE\_\-LEVEL\_\-CONFLATED}}\item[{\em 
+\hypertarget{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa2838bd6167cc8cfcfaf8b2af5cc1ec74}{
+MAMA\_\-SERVICE\_\-LEVEL\_\-CONFLATED}
+\label{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa2838bd6167cc8cfcfaf8b2af5cc1ec74}
+}]Conflated updates (future). \index{MAMA\_\-SERVICE\_\-LEVEL\_\-UNKNOWN@{MAMA\_\-SERVICE\_\-LEVEL\_\-UNKNOWN}!servicelevel.h@{servicelevel.h}}\index{servicelevel.h@{servicelevel.h}!MAMA\_\-SERVICE\_\-LEVEL\_\-UNKNOWN@{MAMA\_\-SERVICE\_\-LEVEL\_\-UNKNOWN}}\item[{\em 
+\hypertarget{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa563c21c6e90a894196f0716f0833635a}{
+MAMA\_\-SERVICE\_\-LEVEL\_\-UNKNOWN}
+\label{servicelevel_8h_a22ac6ff640dee833ca198b3558b5e95fa563c21c6e90a894196f0716f0833635a}
+}]Unknown level. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{servicelevel_8h_ab5583540f1d8f9e255ef5720cbcb0c7a}{
+\index{servicelevel.h@{servicelevel.h}!mamaServiceLevel\_\-getFromMsg@{mamaServiceLevel\_\-getFromMsg}}
+\index{mamaServiceLevel\_\-getFromMsg@{mamaServiceLevel\_\-getFromMsg}!servicelevel.h@{servicelevel.h}}
+\subsubsection[{mamaServiceLevel\_\-getFromMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaServiceLevel} mamaServiceLevel\_\-getFromMsg (const {\bf mamaMsg} {\em msg})}}
+\label{servicelevel_8h_ab5583540f1d8f9e255ef5720cbcb0c7a}
+
+
+Extract the subscription service level from a message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]The message. \end{DoxyParams}
+\hypertarget{servicelevel_8h_aa774282164b89ac67f328e86ea5b4093}{
+\index{servicelevel.h@{servicelevel.h}!mamaServiceLevel\_\-getFromMsgAsString@{mamaServiceLevel\_\-getFromMsgAsString}}
+\index{mamaServiceLevel\_\-getFromMsgAsString@{mamaServiceLevel\_\-getFromMsgAsString}!servicelevel.h@{servicelevel.h}}
+\subsubsection[{mamaServiceLevel\_\-getFromMsgAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaServiceLevel\_\-getFromMsgAsString (const {\bf mamaMsg} {\em msg})}}
+\label{servicelevel_8h_aa774282164b89ac67f328e86ea5b4093}
+
+
+Extract the subscription service level as a string from a message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]The message. \end{DoxyParams}
+\hypertarget{servicelevel_8h_a1029a3e1b26ba5c690c6546e23297009}{
+\index{servicelevel.h@{servicelevel.h}!mamaServiceLevel\_\-toString@{mamaServiceLevel\_\-toString}}
+\index{mamaServiceLevel\_\-toString@{mamaServiceLevel\_\-toString}!servicelevel.h@{servicelevel.h}}
+\subsubsection[{mamaServiceLevel\_\-toString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaServiceLevel\_\-toString ({\bf mamaServiceLevel} {\em type})}}
+\label{servicelevel_8h_a1029a3e1b26ba5c690c6546e23297009}
+
+
+Convert a mamaServiceLevel to a string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The mamaServiceLevel. \end{DoxyParams}

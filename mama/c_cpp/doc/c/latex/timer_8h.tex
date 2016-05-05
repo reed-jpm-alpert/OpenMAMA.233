@@ -1,0 +1,161 @@
+\hypertarget{timer_8h}{
+\section{timer.h File Reference}
+\label{timer_8h}\index{timer.h@{timer.h}}
+}
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/queue.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{mamaTimerCb} )(\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} timer, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Prototype for callback invoked by timer. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_a9b312675818f5e4b2e658e84f9cdd7f4}{mamaTimer\_\-create} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} $\ast$result, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{mamaTimerCb} action, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} interval, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create a repeating timer. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_a3d243654b3e50ab6605868aa728c1403}{mamaTimer\_\-create2} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} $\ast$result, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{mamaTimerCb} action, \hyperlink{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{mamaTimerCb} onTimerDestroyed, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} interval, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create a repeating timer. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_aa7dccc68d7f25fe6a4aa7f581ac3a704}{mamaTimer\_\-allocate} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} $\ast$result, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Allocate a repeating timer. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_af5a65e762691cb51dea5569249f64130}{mamaTimer\_\-allocate2} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} $\ast$result, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{mamaTimerCb} onTimerDestroyed)
+\begin{DoxyCompactList}\small\item\em Allocate a repeating timer. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_a89bb63d6eea14a699352d865d9f6b5aa}{mamaTimer\_\-start} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} result, \hyperlink{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{mamaTimerCb} action, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} interval, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Start a repeating timer created using allocate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_ae0c62745834e33d1e61a86eaf32a3c11}{mamaTimer\_\-destroy} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} timer)
+\begin{DoxyCompactList}\small\item\em Destroy the timer. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_a007d6c3ca768dfb978fc92be6252de14}{mamaTimer\_\-reset} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} timer)
+\begin{DoxyCompactList}\small\item\em Reset the timer to the beginning of the interval. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_a8f6b8363c321d3bca95480459ef5a16a}{mamaTimer\_\-setInterval} (\hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} timer, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} interval)
+\begin{DoxyCompactList}\small\item\em Set the timer to use a different interval (and reset to the beginning of that interval). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_a392f90a6c41a2c55370bed0202c3dba8}{mamaTimer\_\-getInterval} (const \hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} timer, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$interval)
+\begin{DoxyCompactList}\small\item\em Get the current timer interval. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timer_8h_ad2cad05974619de95c681ae628deda81}{mamaTimer\_\-getQueue} (const \hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer} timer, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily mamaQueue} for this timer. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{timer_8h_aace4dc21a09e10cfc1e957996b736f06}{
+\index{timer.h@{timer.h}!mamaTimerCb@{mamaTimerCb}}
+\index{mamaTimerCb@{mamaTimerCb}!timer.h@{timer.h}}
+\subsubsection[{mamaTimerCb}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaTimerCb})({\bf mamaTimer} timer, void $\ast${\bf closure})}}
+\label{timer_8h_aace4dc21a09e10cfc1e957996b736f06}
+
+
+Prototype for callback invoked by timer. 
+\begin{DoxyParams}{Parameters}
+\item[{\em timer}]The timer handle. \item[{\em closure}]Caller supplied closure. \end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\hypertarget{timer_8h_a9b312675818f5e4b2e658e84f9cdd7f4}{
+\index{timer.h@{timer.h}!mamaTimer\_\-create@{mamaTimer\_\-create}}
+\index{mamaTimer\_\-create@{mamaTimer\_\-create}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-create ({\bf mamaTimer} $\ast$ {\em result}, \/  {\bf mamaQueue} {\em queue}, \/  {\bf mamaTimerCb} {\em action}, \/  {\bf mama\_\-f64\_\-t} {\em interval}, \/  void $\ast$ {\em closure})}}
+\label{timer_8h_a9b312675818f5e4b2e658e84f9cdd7f4}
+
+
+Create a repeating timer. Since the mamaTimer relies on the timer mechanism of the underlying middleware, the resolution of the timer is also dependent on the middleware. Consult your middleware documentation for details.
+
+The callback is invoked repeatedly at the specified interval until the timer is destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to the timer handle. \item[{\em queue}]The queue from which the timer event will be dispatched. \item[{\em action}]The callback to be invoked after the interval. \item[{\em closure}]The closure that is passed to the callback. \item[{\em interval,:}]The interval in seconds. \end{DoxyParams}
+\hypertarget{timer_8h_a3d243654b3e50ab6605868aa728c1403}{
+\index{timer.h@{timer.h}!mamaTimer\_\-create2@{mamaTimer\_\-create2}}
+\index{mamaTimer\_\-create2@{mamaTimer\_\-create2}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-create2}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-create2 ({\bf mamaTimer} $\ast$ {\em result}, \/  {\bf mamaQueue} {\em queue}, \/  {\bf mamaTimerCb} {\em action}, \/  {\bf mamaTimerCb} {\em onTimerDestroyed}, \/  {\bf mama\_\-f64\_\-t} {\em interval}, \/  void $\ast$ {\em closure})}}
+\label{timer_8h_a3d243654b3e50ab6605868aa728c1403}
+
+
+Create a repeating timer. Since the mamaTimer relies on the timer mechanism of the underlying middleware, the resolution of the timer is also dependent on the middleware. Consult your middleware documentation for details.
+
+The callback is invoked repeatedly at the specified interval until the timer is destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to the timer handle. \item[{\em queue}]The queue from which the timer event will be dispatched. \item[{\em action}]The callback to be invoked after the interval. \item[{\em onTimerDestroyed}]This callback will be invoked whenever the timer is destroyed, can be NULL. \item[{\em closure}]The closure that is passed to the callback. \item[{\em interval,:}]The interval in seconds. \end{DoxyParams}
+\hypertarget{timer_8h_aa7dccc68d7f25fe6a4aa7f581ac3a704}{
+\index{timer.h@{timer.h}!mamaTimer\_\-allocate@{mamaTimer\_\-allocate}}
+\index{mamaTimer\_\-allocate@{mamaTimer\_\-allocate}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-allocate ({\bf mamaTimer} $\ast$ {\em result}, \/  {\bf mamaQueue} {\em queue})}}
+\label{timer_8h_aa7dccc68d7f25fe6a4aa7f581ac3a704}
+
+
+Allocate a repeating timer. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to the timer handle. \item[{\em queue}]The queue from which the timer event will be dispatched. \end{DoxyParams}
+\hypertarget{timer_8h_af5a65e762691cb51dea5569249f64130}{
+\index{timer.h@{timer.h}!mamaTimer\_\-allocate2@{mamaTimer\_\-allocate2}}
+\index{mamaTimer\_\-allocate2@{mamaTimer\_\-allocate2}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-allocate2}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-allocate2 ({\bf mamaTimer} $\ast$ {\em result}, \/  {\bf mamaQueue} {\em queue}, \/  {\bf mamaTimerCb} {\em onTimerDestroyed})}}
+\label{timer_8h_af5a65e762691cb51dea5569249f64130}
+
+
+Allocate a repeating timer. 
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to the timer handle. \item[{\em queue}]The queue from which the timer event will be dispatched. \item[{\em onTimerDestroyed}]Callback will be invoked whenever the timer has been completely destroyed. \end{DoxyParams}
+\hypertarget{timer_8h_a89bb63d6eea14a699352d865d9f6b5aa}{
+\index{timer.h@{timer.h}!mamaTimer\_\-start@{mamaTimer\_\-start}}
+\index{mamaTimer\_\-start@{mamaTimer\_\-start}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-start ({\bf mamaTimer} {\em result}, \/  {\bf mamaTimerCb} {\em action}, \/  {\bf mama\_\-f64\_\-t} {\em interval}, \/  void $\ast$ {\em closure})}}
+\label{timer_8h_a89bb63d6eea14a699352d865d9f6b5aa}
+
+
+Start a repeating timer created using allocate. The callback is invoked repeatedly at the specified interval until the timer is destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]The timer handle returned from allocate. \item[{\em queue}]The queue from which the timer event will be dispatched. \item[{\em action}]The callback to be invoked after the interval. \item[{\em closure}]The closure that is passed to the callback. \item[{\em interval,:}]The interval in seconds. \end{DoxyParams}
+\hypertarget{timer_8h_ae0c62745834e33d1e61a86eaf32a3c11}{
+\index{timer.h@{timer.h}!mamaTimer\_\-destroy@{mamaTimer\_\-destroy}}
+\index{mamaTimer\_\-destroy@{mamaTimer\_\-destroy}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-destroy ({\bf mamaTimer} {\em timer})}}
+\label{timer_8h_ae0c62745834e33d1e61a86eaf32a3c11}
+
+
+Destroy the timer. This function must be called from the same thread dispatching on the associated event queue unless both the default queue and dispatch queue are not actively dispatching. Note that this function is asynchronous and is only guaranteed to have finished whenever the onTimerDestroyed function passed to the mamaTimer\_\-create2 has been called. 
+\begin{DoxyParams}{Parameters}
+\item[{\em timer}]The mamaTimer to be destroyed. \end{DoxyParams}
+\hypertarget{timer_8h_a007d6c3ca768dfb978fc92be6252de14}{
+\index{timer.h@{timer.h}!mamaTimer\_\-reset@{mamaTimer\_\-reset}}
+\index{mamaTimer\_\-reset@{mamaTimer\_\-reset}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-reset ({\bf mamaTimer} {\em timer})}}
+\label{timer_8h_a007d6c3ca768dfb978fc92be6252de14}
+
+
+Reset the timer to the beginning of the interval. 
+\begin{DoxyParams}{Parameters}
+\item[{\em timer}]The mamaTimer to be reset. \end{DoxyParams}
+\hypertarget{timer_8h_a8f6b8363c321d3bca95480459ef5a16a}{
+\index{timer.h@{timer.h}!mamaTimer\_\-setInterval@{mamaTimer\_\-setInterval}}
+\index{mamaTimer\_\-setInterval@{mamaTimer\_\-setInterval}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-setInterval}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-setInterval ({\bf mamaTimer} {\em timer}, \/  {\bf mama\_\-f64\_\-t} {\em interval})}}
+\label{timer_8h_a8f6b8363c321d3bca95480459ef5a16a}
+
+
+Set the timer to use a different interval (and reset to the beginning of that interval). 
+\begin{DoxyParams}{Parameters}
+\item[{\em timer}]The mamaTimer to change the interval. \item[{\em interval}]The new interval for the timer. \end{DoxyParams}
+\hypertarget{timer_8h_a392f90a6c41a2c55370bed0202c3dba8}{
+\index{timer.h@{timer.h}!mamaTimer\_\-getInterval@{mamaTimer\_\-getInterval}}
+\index{mamaTimer\_\-getInterval@{mamaTimer\_\-getInterval}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-getInterval}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-getInterval (const {\bf mamaTimer} {\em timer}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em interval})}}
+\label{timer_8h_a392f90a6c41a2c55370bed0202c3dba8}
+
+
+Get the current timer interval. 
+\begin{DoxyParams}{Parameters}
+\item[{\em timer}]The mamaTimer. \item[{\em interval}]Address of the location where the interval will be written. \end{DoxyParams}
+\hypertarget{timer_8h_ad2cad05974619de95c681ae628deda81}{
+\index{timer.h@{timer.h}!mamaTimer\_\-getQueue@{mamaTimer\_\-getQueue}}
+\index{mamaTimer\_\-getQueue@{mamaTimer\_\-getQueue}!timer.h@{timer.h}}
+\subsubsection[{mamaTimer\_\-getQueue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimer\_\-getQueue (const {\bf mamaTimer} {\em timer}, \/  {\bf mamaQueue} $\ast$ {\em queue})}}
+\label{timer_8h_ad2cad05974619de95c681ae628deda81}
+
+
+Return the {\ttfamily mamaQueue} for this timer. 
+\begin{DoxyParams}{Parameters}
+\item[{\em timer}]The timer. \item[{\em queue}]A pointer to hold the queue. \end{DoxyParams}

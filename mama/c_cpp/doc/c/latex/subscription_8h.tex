@@ -1,0 +1,1182 @@
+\hypertarget{subscription_8h}{
+\section{subscription.h File Reference}
+\label{subscription_8h}\index{subscription.h@{subscription.h}}
+}
+{\ttfamily \#include \char`\"{}mama/log.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/marketdata.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/msg.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/quality.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/servicelevel.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/subscriptiontype.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/transport.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks\_\-}
+\begin{DoxyCompactList}\small\item\em A convenience structure for passing the callbacks to the subscription factory methods. \item\end{DoxyCompactList}\item 
+struct \hyperlink{structmamaWildCardMsgCallbacks__}{mamaWildCardMsgCallbacks\_\-}
+\begin{DoxyCompactList}\small\item\em A convenience structure for passing the callbacks to wild card subscription factory methods. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_a715ec03b0314ebe01a1f70b6d61c8a3d}{wombat\_\-subscriptionCreateCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Function invoked when subscription creation is complete, and before any calls to {\ttfamily wombat\_\-subscriptionOnMsgCB}. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_a9a5da58e7f8781dabdf067beeeac2521}{wombat\_\-subscriptionDestroyCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Function invoked when a subscription has been completely destroyed, the client can have confidence that no further messages will be placed on the queue for this subscription. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_af39bb2725f441fddc140d361d6e2a2b2}{wombat\_\-subscriptionErrorCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}{status}, void $\ast$platformError, const char $\ast$subject, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an unentitled subject. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_af47047b96f723f4cb9ccb51bc614dba0}{wombat\_\-subscriptionGapCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Function invoked when a sequence number gap is detected. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_a3b2741f3f37684f44fec315aec0d5017}{wombat\_\-subscriptionOnMsgCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure}, void $\ast$itemClosure)
+\begin{DoxyCompactList}\small\item\em Invoked when a message arrives. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_ababce27e80aacc6efad3cf52b31813c9}{wombat\_\-subscriptionQualityCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{quality_8h_aa16a17a6b7295c2aaf4ac7df8e5b04c1}{mamaQuality} quality, const char $\ast$symbol, short cause, const void $\ast$platformInfo, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Invoked to indicate a data quality event. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_aa164122aefdee679a4ddd9f2ed886e01}{wombat\_\-subscriptionRecapCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Function invoked when a recap is requested upon detecting a sequence number gap. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{subscription_8h_ae8a0a6cbb425ca815fa53028c42f53f7}{wombat\_\-subscriptionWildCardOnMsgCB} )(\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$topic, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure}, void $\ast$itemClosure)
+\begin{DoxyCompactList}\small\item\em Invoked when a message arrives for a wild card subscrption. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks\_\-} \hyperlink{subscription_8h_a1c94a66e840eaae86690f5b53dc9b168}{mamaMsgCallbacks}
+\begin{DoxyCompactList}\small\item\em A convenience structure for passing the callbacks to the subscription factory methods. \item\end{DoxyCompactList}\item 
+typedef struct \hyperlink{structmamaWildCardMsgCallbacks__}{mamaWildCardMsgCallbacks\_\-} \hyperlink{subscription_8h_aaa7438a6f4fc9cc9e7a0521196160b26}{mamaWildCardMsgCallbacks}
+\begin{DoxyCompactList}\small\item\em A convenience structure for passing the callbacks to wild card subscription factory methods. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{subscription_8h_ae23230d833933977bc1c1fd47386f1cd}{preInitialScheme} \{ \hyperlink{subscription_8h_ae23230d833933977bc1c1fd47386f1cdaf177ef75e8a51c7785b054b14e21cb5d}{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP}, 
+\hyperlink{subscription_8h_ae23230d833933977bc1c1fd47386f1cda68d34dcf27bb45e130d22ec1c88e2ece}{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL}
+ \}
+\begin{DoxyCompactList}\small\item\em MAMA can cache messages which arrive prior to an initial value. \item\end{DoxyCompactList}\item 
+enum \hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2}{mamaSubscriptionState} \{ \par
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2af6379f723db3c255322dc10974206edb}{MAMA\_\-SUBSCRIPTION\_\-UNKNOWN} =  0, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a550c50c9304c68f58bac239f1445ea72}{MAMA\_\-SUBSCRIPTION\_\-ALLOCATED} =  1, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a1ac299d822f6d85e5da00a4af7161e87}{MAMA\_\-SUBSCRIPTION\_\-SETUP} =  2, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2aad8a62cd9992a3945f39452f0fd76100}{MAMA\_\-SUBSCRIPTION\_\-ACTIVATING} =  3, 
+\par
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a9bcc9a31bba3c26299c5d5c555e908ef}{MAMA\_\-SUBSCRIPTION\_\-ACTIVATED} =  4, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2af6c1db64f957d1c53b642511801de5f0}{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATING} =  5, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2ada32531eae4ec41a22884e78e1042224}{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATED} =  6, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2aabd048f3cdc4f232fa675e55c6cad219}{MAMA\_\-SUBSCRIPTION\_\-DESTROYING} =  7, 
+\par
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a4798d9dd662b8b7f2b0e8fb8118df70d}{MAMA\_\-SUBSCRIPTION\_\-DESTROYED} =  8, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a1445eb57558cd18d1a6674ee2d71751d}{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATING} =  9, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a5d9991f1fe1086d3f604b94ceb6895e5}{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATED} =  10, 
+\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2a4b499a74031a3f55301970df5fd56ff4}{MAMA\_\-SUBSCRIPTION\_\-REACTIVATING} =  11
+ \}
+\begin{DoxyCompactList}\small\item\em The enumeration describes the state of the subsubscription at any time. \item\end{DoxyCompactList}\item 
+enum \hyperlink{subscription_8h_a566ba4870c5c6bde0d34fcedad57943a}{dqStartegyScheme} \{ \hyperlink{subscription_8h_a566ba4870c5c6bde0d34fcedad57943aa23f7ab484774994f18124513649b39b9}{DQ\_\-SCHEME\_\-DELIVER\_\-ALL}, 
+\hyperlink{subscription_8h_a566ba4870c5c6bde0d34fcedad57943aaad89c314e6808109a8ca9e46a4b0a35f}{DQ\_\-SCHEME\_\-INGORE\_\-DUPS}
+ \}
+\item 
+enum \hyperlink{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487}{dqftStrategyScheme} \{ \hyperlink{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487a74ca1d10f954a055747489e9258b2d84}{DQ\_\-FT\_\-DO\_\-NOT\_\-WAIT\_\-FOR\_\-RECAP}, 
+\hyperlink{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487a03f6219d51bf25183e7a216644a3e830}{DQ\_\-FT\_\-WAIT\_\-FOR\_\-RECAP}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Activate a subscription that has been set up by \hyperlink{subscription_8h_af041d697f640e1ab5bca0a38666a2db7}{mamaSubscription\_\-setup()}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_aa58753d69cbc436e2fd513c77c235c9c}{mamaSubscription\_\-allocate} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Allocate memory for a new subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{subscription_8h_a4d26b7bcadd8f5665f695c2690c8f532}{mamaSubscription\_\-checkDebugLevel} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level)
+\begin{DoxyCompactList}\small\item\em Return whether the debug level for this subscription equals or exceeds some level. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a9ac86d9cdfa62388cdcda2516552559d}{mamaSubscription\_\-create} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks} $\ast$callbacks, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create and activate subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a1301455a5a20fd89507c4a7d241fb5bf}{mamaSubscription\_\-createBasic} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks} $\ast$callbacks, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create a basic subscription without marketdata semantics. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ae4a650c3abd61134cca7d440f9fb92ff}{mamaSubscription\_\-createBasicWildCard} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaWildCardMsgCallbacks__}{mamaWildCardMsgCallbacks} $\ast$callbacks, const char $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create and activate a wildcard subscription that may be actually activated later. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ab72b70fb3dcbb739d1ed6b0cdbd7c785}{mamaSubscription\_\-createSnapshot} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks} $\ast$callbacks, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create a snapshot subscription for initial value only (no updates). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ad932a559dad3acae6247daa42b80cb87}{mamaSubscription\_\-deactivate} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Deactivate a subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a0bee38b78281a8653fc93517f9dbbefd}{mamaSubscription\_\-deallocate} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Free the memory for a mamaSubscription which was allocated via a call to {\ttfamily \hyperlink{subscription_8h_aa58753d69cbc436e2fd513c77c235c9c}{mamaSubscription\_\-allocate()}}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a93d77987c1c97d0dd6cadd34320b501d}{mamaSubscription\_\-destroy} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Destroy the subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ad40c51d2f15e9440581d6bb23cfa5b4f}{mamaSubscription\_\-destroyEx} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em This function will destroy the subscription and can be called from any thread. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_aa1d7b49d7bbf9a6a94709f50c06ad53b}{mamaSubscription\_\-getAppDataType} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, uint8\_\-t $\ast$appDataType)
+\begin{DoxyCompactList}\small\item\em Retrieve the application-\/specific data type. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ae2dd2cdd2417863139353ede8b0f6ce7}{mamaSubscription\_\-getClosure} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$$\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Return the closure. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} \hyperlink{subscription_8h_a4bd6bd977e1afab50c7788c4ef400a04}{mamaSubscription\_\-getDebugLevel} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Return the debug level for this subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a8b15666adf856ae20bfafe69ca96a6fd}{mamaSubscription\_\-getItemClosure} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$$\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Return the item closure for the current message for the subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_af800bc0dd6adb2b0186fcb11539cb4ad}{mamaSubscription\_\-getMsgQualifierFilter} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int $\ast$ignoreDefinitelyDuplicate, int $\ast$ignorePossiblyDuplicate, int $\ast$ignoreDefinitelyDelayed, int $\ast$ignorePossiblyDelayed, int $\ast$ignoreOutOfSequence)
+\begin{DoxyCompactList}\small\item\em Get the filters that discard message according to the message qualifier. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a8e914e8ec1f9ad9442e8c4e31df105b6}{mamaSubscription\_\-getPlatformError} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subsc, void $\ast$$\ast$error)
+\begin{DoxyCompactList}\small\item\em Return the middleware-\/specific platform error. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ac652338665186c01325378ed76cf5595}{mamaSubscription\_\-getPreIntitialCacheSize} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the initial value cache size. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a7dd7b752b9ddcb235aa49dee2f69dd98}{mamaSubscription\_\-getQueue} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} $\ast$queue)
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily mamaQueue} for this subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ab95f84d88523e17fac284fbf1683e44a}{mamaSubscription\_\-getReceivedInitial} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int $\ast$receivedInitial)
+\begin{DoxyCompactList}\small\item\em Returns a value of 1 or 0 indicating whether the subscription has received an initial. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a9676477bdb5400b1491149e2359f9ec5}{mamaSubscription\_\-getRecoverGaps} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int $\ast$doesRecover)
+\begin{DoxyCompactList}\small\item\em Whether the specified subscription will attempt to recover from sequence number gaps. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a3ff90a32f7f94009c3323f1a094c64f5}{mamaSubscription\_\-getRequiresInitial} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int $\ast$requiresInitial)
+\begin{DoxyCompactList}\small\item\em Returns a value of 1 or 0 indicating whether this subscription is interested in initial values. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_adba6df25a2ccd1af558a78d69eb5c573}{mamaSubscription\_\-getRetries} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int $\ast$retries)
+\begin{DoxyCompactList}\small\item\em Retrieve the retries. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a33ab99ac139968828f9a816190715307}{mamaSubscription\_\-getServiceLevel} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}{mamaServiceLevel} $\ast$serviceLevel)
+\begin{DoxyCompactList}\small\item\em Get the service level for the specified subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a8938956a0ac9e5cd6e4291028e1d9166}{mamaSubscription\_\-getServiceLevelOpt} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, long $\ast$serviceLevel)
+\begin{DoxyCompactList}\small\item\em Get the service level options for the specified subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a65f861a0ec9548c11fac36034c779064}{mamaSubscription\_\-getSource} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, const char $\ast$$\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source})
+\begin{DoxyCompactList}\small\item\em Return the source for the specified subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a6c8c39484e9db4d08cf69da9338308a9}{mamaSubscription\_\-getState} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2}{mamaSubscriptionState} $\ast$\hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em This function will return the current state of the subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a454732807dc15ff942562322d8720c89}{mamaSubscription\_\-getSubscriptionType} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{subscriptiontype_8h_a05f7743b111631f10be37e40281371fd}{mamaSubscriptionType} $\ast$type)
+\begin{DoxyCompactList}\small\item\em Returns the underlying {\ttfamily mamaSubscriptionType} for the specified subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a4747695e5c7c498054b33730daf0df2e}{mamaSubscription\_\-getSubscSymbol} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, const char $\ast$$\ast$symbol)
+\begin{DoxyCompactList}\small\item\em Return the symbol as subscribed to (i.e., as mapped by the mapping function, if any, for the mamaTransport). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a90091162abbaf6da7b7eb312773d7712}{mamaSubscription\_\-getSymbol} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, const char $\ast$$\ast$symbol)
+\begin{DoxyCompactList}\small\item\em Return the symbol as provided by the user (before any symbol mapping). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a4e8cfa95e8374b60ff84303338273363}{mamaSubscription\_\-getTimeout} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, double $\ast$timeout)
+\begin{DoxyCompactList}\small\item\em Retrieve the timeout. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_aa6cfeae4fd4691da0240f0601708895c}{mamaSubscription\_\-getTransport} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} $\ast$transport)
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily mamaTransport} for this subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks} $\ast$ \hyperlink{subscription_8h_a891b9d8ca9add660bf91d9b0ad7c4172}{mamaSubscription\_\-getUserCallbacks} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the {\ttfamily mamaMsgCallbacks} structure. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{subscription_8h_a8bcb6302766e53640f2a56f190fd57f2}{mamaSubscription\_\-isActive} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Returns whether the subscription is active, note that this function has been deprecated, use mamaSubscription\_\-getState instead. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{subscription_8h_a90432c22ff9ddffafba0bb7860f1a369}{mamaSubscription\_\-isValid} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Return whether the subscription is valid, note that this function has been deprecated, use mamaSubscription\_\-getState instead. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a8e54b91748116d82c277d99ee2fe1ca5}{mamaSubscription\_\-muteCurrentTopic} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Mute the current topic for wildcard subscriptions. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a0b713f3e821546d1ea3657a1fe6f4f54}{mamaSubscription\_\-setAppDataType} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, uint8\_\-t appDataType)
+\begin{DoxyCompactList}\small\item\em Set the application-\/specific data type. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a07e19a97121525aaa25e6cb53ea471a3}{mamaSubscription\_\-setDebugLevel} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{log_8h_a58a1d8653041cc183e2d5f2a8c11b84d}{MamaLogLevel} level)
+\begin{DoxyCompactList}\small\item\em Set the debug level for this subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a1da1183afc8bc5b79127356addc9debc}{mamaSubscription\_\-setGroupSizeHint} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int groupSizeHint)
+\begin{DoxyCompactList}\small\item\em A hint as to the expected size of size of groups when making group subscriptions. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a4cb8fd940beb5511a194c02249c709a0}{mamaSubscription\_\-setItemClosure} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the item closure for group subscriptions. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_adccea8aadfa3978b3a48e16f56097248}{mamaSubscription\_\-setMsgQualifierFilter} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int ignoreDefinitelyDuplicate, int ignorePossiblyDuplicate, int ignoreDefinitelyDelayed, int ignorePossiblyDelayed, int ignoreOutOfSequence)
+\begin{DoxyCompactList}\small\item\em Set a filter to discard messages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_abbb4f9e68d2e81687113a1f3bee125f5}{mamaSubscription\_\-setPreIntitialCacheSize} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int cacheSize)
+\begin{DoxyCompactList}\small\item\em Set the number of messages to cache for each symbol before the initial value arrives. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_ae841e39e6e2ff181a22bad205f654109}{mamaSubscription\_\-setRecoverGaps} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int doesRecover)
+\begin{DoxyCompactList}\small\item\em Whether a subscription should attempt to recover from sequence number gaps. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a7f692e26683e76295ee7e28a5a2edf50}{mamaSubscription\_\-setRequiresInitial} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int requiresInitial)
+\begin{DoxyCompactList}\small\item\em Whether an initial value is required for the specified subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a6313aa7c5c558f027c5ac7815fd5815d}{mamaSubscription\_\-setServiceLevel} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{servicelevel_8h_a2ab6c8446c258be03d89e537fe57f47e}{mamaServiceLevel} serviceLevel, long serviceLevelOpt)
+\begin{DoxyCompactList}\small\item\em Set the service level. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a5c7e56fe6c6810eabf510256da66ee74}{mamaSubscription\_\-setRetries} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int retries)
+\begin{DoxyCompactList}\small\item\em Set the number of retries when requesting recaps. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a49ed8683906d72277bf8fe7eb5c56983}{mamaSubscription\_\-setSubscriptionType} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{subscriptiontype_8h_a05f7743b111631f10be37e40281371fd}{mamaSubscriptionType} type)
+\begin{DoxyCompactList}\small\item\em Set the subscription type for the subscription being created. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_aa3cfa81795f1096eed6194e8d7d49300}{mamaSubscription\_\-setSymbol} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, const char $\ast$symbol)
+\begin{DoxyCompactList}\small\item\em Set the symbol (e.g. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a79838997067d314667c9e81e9c3d322d}{mamaSubscription\_\-setTimeout} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, double timeout)
+\begin{DoxyCompactList}\small\item\em Set the timeout for this subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_af041d697f640e1ab5bca0a38666a2db7}{mamaSubscription\_\-setup} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks} $\ast$callbacks, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the parameters for a subscription that may be actually activated later. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_af6485dd4bfe096593c87a26bc722bca1}{mamaSubscription\_\-setup2} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaMsgCallbacks__}{mamaMsgCallbacks} $\ast$callbacks, const char $\ast$sourceName, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the parameters for a subscription that may be actually activated later. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{subscription_8h_a2ad73853946f82e7085d00ebc34930eb}{mamaSubscription\_\-setupBasicWildCard} (\hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const \hyperlink{structmamaWildCardMsgCallbacks__}{mamaWildCardMsgCallbacks} $\ast$callbacks, const char $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$symbol, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the parameters for a wildcard subscription that may be actually activated later. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{subscription_8h_a706a1dedacbc4d2d4dac6044e55f1252}{mamaSubscription\_\-stringForState} (\hyperlink{subscription_8h_a06a556e931730336a5ca65fc6508cef2}{mamaSubscriptionState} \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em This function will return the string representation of the subscription state. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{subscription_8h_a715ec03b0314ebe01a1f70b6d61c8a3d}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionCreateCB@{wombat\_\-subscriptionCreateCB}}
+\index{wombat\_\-subscriptionCreateCB@{wombat\_\-subscriptionCreateCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionCreateCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionCreateCB})({\bf mamaSubscription} subscription, void $\ast${\bf closure})}}
+\label{subscription_8h_a715ec03b0314ebe01a1f70b6d61c8a3d}
+
+
+Function invoked when subscription creation is complete, and before any calls to {\ttfamily wombat\_\-subscriptionOnMsgCB}. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \end{DoxyParams}
+\hypertarget{subscription_8h_a9a5da58e7f8781dabdf067beeeac2521}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionDestroyCB@{wombat\_\-subscriptionDestroyCB}}
+\index{wombat\_\-subscriptionDestroyCB@{wombat\_\-subscriptionDestroyCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionDestroyCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionDestroyCB})({\bf mamaSubscription} subscription, void $\ast${\bf closure})}}
+\label{subscription_8h_a9a5da58e7f8781dabdf067beeeac2521}
+
+
+Function invoked when a subscription has been completely destroyed, the client can have confidence that no further messages will be placed on the queue for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]the {\ttfamily MamaSubscription}. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \end{DoxyParams}
+\hypertarget{subscription_8h_af39bb2725f441fddc140d361d6e2a2b2}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionErrorCB@{wombat\_\-subscriptionErrorCB}}
+\index{wombat\_\-subscriptionErrorCB@{wombat\_\-subscriptionErrorCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionErrorCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionErrorCB})({\bf mamaSubscription} subscription, {\bf mama\_\-status} {\bf status}, void $\ast$platformError, const char $\ast$subject, void $\ast${\bf closure})}}
+\label{subscription_8h_af39bb2725f441fddc140d361d6e2a2b2}
+
+
+Invoked if an error occurs during prior to subscription creation or if the subscription receives a message for an unentitled subject. If the status is {\ttfamily MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITTLED} the subject parameter is the specific unentitled subject. If the subscription subject contains wildcards, the subscription may still receive messages for other entitled subjects. Note wildcard subscriptions are not supported on all platforms.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em status}]The error code. \item[\mbox{$\leftarrow$} {\em platformError}]Third party, platform specific messaging error. \item[\mbox{$\leftarrow$} {\em subject}]The subject for NOT\_\-ENTITLED \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \end{DoxyParams}
+\hypertarget{subscription_8h_af47047b96f723f4cb9ccb51bc614dba0}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionGapCB@{wombat\_\-subscriptionGapCB}}
+\index{wombat\_\-subscriptionGapCB@{wombat\_\-subscriptionGapCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionGapCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionGapCB})({\bf mamaSubscription} subscription, void $\ast${\bf closure})}}
+\label{subscription_8h_af47047b96f723f4cb9ccb51bc614dba0}
+
+
+Function invoked when a sequence number gap is detected. At this point the topic is considered stale and the subscription will not receive further messages until the feed handler satisfies a recap request.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]the {\ttfamily MamaSubscription}. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \end{DoxyParams}
+\hypertarget{subscription_8h_a3b2741f3f37684f44fec315aec0d5017}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionOnMsgCB@{wombat\_\-subscriptionOnMsgCB}}
+\index{wombat\_\-subscriptionOnMsgCB@{wombat\_\-subscriptionOnMsgCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionOnMsgCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionOnMsgCB})({\bf mamaSubscription} subscription, {\bf mamaMsg} {\bf msg}, void $\ast${\bf closure}, void $\ast$itemClosure)}}
+\label{subscription_8h_a3b2741f3f37684f44fec315aec0d5017}
+
+
+Invoked when a message arrives. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]the {\ttfamily MamaSubscription}. \item[\mbox{$\leftarrow$} {\em msg}]The mamaMsg. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \item[\mbox{$\leftarrow$} {\em itemClosure}]The item closure for the subscription can be set with mamaSubscription\_\-setItemClosure. \end{DoxyParams}
+\hypertarget{subscription_8h_ababce27e80aacc6efad3cf52b31813c9}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionQualityCB@{wombat\_\-subscriptionQualityCB}}
+\index{wombat\_\-subscriptionQualityCB@{wombat\_\-subscriptionQualityCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionQualityCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionQualityCB})({\bf mamaSubscription} subscription, {\bf mamaQuality} quality, const char $\ast$symbol, short cause, const void $\ast$platformInfo, void $\ast${\bf closure})}}
+\label{subscription_8h_ababce27e80aacc6efad3cf52b31813c9}
+
+
+Invoked to indicate a data quality event. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]the {\ttfamily MamaSubscription}. \item[\mbox{$\leftarrow$} {\em quality}]The new quality. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol. \item[\mbox{$\leftarrow$} {\em cause}]The cause of the data quality event. \item[\mbox{$\leftarrow$} {\em platformInfo}]Info associated with the data quality event. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function.\end{DoxyParams}
+The cause and platformInfo are supplied only by some middlewares. The information provided by platformInfo is middleware specific. The following middlewares are supported:
+
+tibrv: provides the char$\ast$ version of the tibrv advisory message. \hypertarget{subscription_8h_aa164122aefdee679a4ddd9f2ed886e01}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionRecapCB@{wombat\_\-subscriptionRecapCB}}
+\index{wombat\_\-subscriptionRecapCB@{wombat\_\-subscriptionRecapCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionRecapCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionRecapCB})({\bf mamaSubscription} subscription, void $\ast${\bf closure})}}
+\label{subscription_8h_aa164122aefdee679a4ddd9f2ed886e01}
+
+
+Function invoked when a recap is requested upon detecting a sequence number gap. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]the {\ttfamily MamaSubscription}. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \end{DoxyParams}
+\hypertarget{subscription_8h_ae8a0a6cbb425ca815fa53028c42f53f7}{
+\index{subscription.h@{subscription.h}!wombat\_\-subscriptionWildCardOnMsgCB@{wombat\_\-subscriptionWildCardOnMsgCB}}
+\index{wombat\_\-subscriptionWildCardOnMsgCB@{wombat\_\-subscriptionWildCardOnMsgCB}!subscription.h@{subscription.h}}
+\subsubsection[{wombat\_\-subscriptionWildCardOnMsgCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf wombat\_\-subscriptionWildCardOnMsgCB})({\bf mamaSubscription} subscription, {\bf mamaMsg} {\bf msg}, const char $\ast$topic, void $\ast${\bf closure}, void $\ast$itemClosure)}}
+\label{subscription_8h_ae8a0a6cbb425ca815fa53028c42f53f7}
+
+
+Invoked when a message arrives for a wild card subscrption. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]the {\ttfamily MamaSubscription}. \item[\mbox{$\leftarrow$} {\em msg}]The mamaMsg. \item[\mbox{$\leftarrow$} {\em topic}]The symbol. \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaSubscription\_\-create function. \item[\mbox{$\leftarrow$} {\em itemClosure}]Symbol specific closure. \end{DoxyParams}
+\hypertarget{subscription_8h_a1c94a66e840eaae86690f5b53dc9b168}{
+\index{subscription.h@{subscription.h}!mamaMsgCallbacks@{mamaMsgCallbacks}}
+\index{mamaMsgCallbacks@{mamaMsgCallbacks}!subscription.h@{subscription.h}}
+\subsubsection[{mamaMsgCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf mamaMsgCallbacks\_\-}  {\bf mamaMsgCallbacks}}}
+\label{subscription_8h_a1c94a66e840eaae86690f5b53dc9b168}
+
+
+A convenience structure for passing the callbacks to the subscription factory methods. \hypertarget{subscription_8h_aaa7438a6f4fc9cc9e7a0521196160b26}{
+\index{subscription.h@{subscription.h}!mamaWildCardMsgCallbacks@{mamaWildCardMsgCallbacks}}
+\index{mamaWildCardMsgCallbacks@{mamaWildCardMsgCallbacks}!subscription.h@{subscription.h}}
+\subsubsection[{mamaWildCardMsgCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf mamaWildCardMsgCallbacks\_\-}  {\bf mamaWildCardMsgCallbacks}}}
+\label{subscription_8h_aaa7438a6f4fc9cc9e7a0521196160b26}
+
+
+A convenience structure for passing the callbacks to wild card subscription factory methods. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{subscription_8h_ae23230d833933977bc1c1fd47386f1cd}{
+\index{subscription.h@{subscription.h}!preInitialScheme@{preInitialScheme}}
+\index{preInitialScheme@{preInitialScheme}!subscription.h@{subscription.h}}
+\subsubsection[{preInitialScheme}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf preInitialScheme}}}
+\label{subscription_8h_ae23230d833933977bc1c1fd47386f1cd}
+
+
+MAMA can cache messages which arrive prior to an initial value. There are two options in how and when these message are used.
+
+PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP (default) MAMA waits until the message after the initialvalue and only tries to use the cache if a gap is detected. This reduces the need to recap the subscription.
+
+PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL MAMA checks the pre-\/initial cache to see if there are any messages which sequentially follow the initial value and pass them to the application. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP@{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP@{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP}}\item[{\em 
+\hypertarget{subscription_8h_ae23230d833933977bc1c1fd47386f1cdaf177ef75e8a51c7785b054b14e21cb5d}{
+PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-GAP}
+\label{subscription_8h_ae23230d833933977bc1c1fd47386f1cdaf177ef75e8a51c7785b054b14e21cb5d}
+}]\index{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL@{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL@{PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL}}\item[{\em 
+\hypertarget{subscription_8h_ae23230d833933977bc1c1fd47386f1cda68d34dcf27bb45e130d22ec1c88e2ece}{
+PRE\_\-INITIAL\_\-SCHEME\_\-ON\_\-INITIAL}
+\label{subscription_8h_ae23230d833933977bc1c1fd47386f1cda68d34dcf27bb45e130d22ec1c88e2ece}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2}{
+\index{subscription.h@{subscription.h}!mamaSubscriptionState@{mamaSubscriptionState}}
+\index{mamaSubscriptionState@{mamaSubscriptionState}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscriptionState}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaSubscriptionState}}}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2}
+
+
+The enumeration describes the state of the subsubscription at any time. The state can be obtained by calling the mamaSubscription\_\-getState function. A string representation of this state can be obtained by calling the mamaSubscription\_\-stringForState function. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-SUBSCRIPTION\_\-UNKNOWN@{MAMA\_\-SUBSCRIPTION\_\-UNKNOWN}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-UNKNOWN@{MAMA\_\-SUBSCRIPTION\_\-UNKNOWN}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2af6379f723db3c255322dc10974206edb}{
+MAMA\_\-SUBSCRIPTION\_\-UNKNOWN}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2af6379f723db3c255322dc10974206edb}
+}]The state of the subscription is unknown. The subscription has been allocated in memory. \index{MAMA\_\-SUBSCRIPTION\_\-ALLOCATED@{MAMA\_\-SUBSCRIPTION\_\-ALLOCATED}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-ALLOCATED@{MAMA\_\-SUBSCRIPTION\_\-ALLOCATED}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a550c50c9304c68f58bac239f1445ea72}{
+MAMA\_\-SUBSCRIPTION\_\-ALLOCATED}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a550c50c9304c68f58bac239f1445ea72}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-SETUP@{MAMA\_\-SUBSCRIPTION\_\-SETUP}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-SETUP@{MAMA\_\-SUBSCRIPTION\_\-SETUP}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a1ac299d822f6d85e5da00a4af7161e87}{
+MAMA\_\-SUBSCRIPTION\_\-SETUP}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a1ac299d822f6d85e5da00a4af7161e87}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-ACTIVATING@{MAMA\_\-SUBSCRIPTION\_\-ACTIVATING}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-ACTIVATING@{MAMA\_\-SUBSCRIPTION\_\-ACTIVATING}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2aad8a62cd9992a3945f39452f0fd76100}{
+MAMA\_\-SUBSCRIPTION\_\-ACTIVATING}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2aad8a62cd9992a3945f39452f0fd76100}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-ACTIVATED@{MAMA\_\-SUBSCRIPTION\_\-ACTIVATED}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-ACTIVATED@{MAMA\_\-SUBSCRIPTION\_\-ACTIVATED}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a9bcc9a31bba3c26299c5d5c555e908ef}{
+MAMA\_\-SUBSCRIPTION\_\-ACTIVATED}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a9bcc9a31bba3c26299c5d5c555e908ef}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATING@{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATING}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-DEACTIVATING@{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATING}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2af6c1db64f957d1c53b642511801de5f0}{
+MAMA\_\-SUBSCRIPTION\_\-DEACTIVATING}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2af6c1db64f957d1c53b642511801de5f0}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATED@{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATED}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-DEACTIVATED@{MAMA\_\-SUBSCRIPTION\_\-DEACTIVATED}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2ada32531eae4ec41a22884e78e1042224}{
+MAMA\_\-SUBSCRIPTION\_\-DEACTIVATED}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2ada32531eae4ec41a22884e78e1042224}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-DESTROYING@{MAMA\_\-SUBSCRIPTION\_\-DESTROYING}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-DESTROYING@{MAMA\_\-SUBSCRIPTION\_\-DESTROYING}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2aabd048f3cdc4f232fa675e55c6cad219}{
+MAMA\_\-SUBSCRIPTION\_\-DESTROYING}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2aabd048f3cdc4f232fa675e55c6cad219}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-DESTROYED@{MAMA\_\-SUBSCRIPTION\_\-DESTROYED}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-DESTROYED@{MAMA\_\-SUBSCRIPTION\_\-DESTROYED}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a4798d9dd662b8b7f2b0e8fb8118df70d}{
+MAMA\_\-SUBSCRIPTION\_\-DESTROYED}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a4798d9dd662b8b7f2b0e8fb8118df70d}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATING@{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATING}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-DEALLOCATING@{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATING}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a1445eb57558cd18d1a6674ee2d71751d}{
+MAMA\_\-SUBSCRIPTION\_\-DEALLOCATING}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a1445eb57558cd18d1a6674ee2d71751d}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATED@{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATED}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-DEALLOCATED@{MAMA\_\-SUBSCRIPTION\_\-DEALLOCATED}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a5d9991f1fe1086d3f604b94ceb6895e5}{
+MAMA\_\-SUBSCRIPTION\_\-DEALLOCATED}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a5d9991f1fe1086d3f604b94ceb6895e5}
+}]\index{MAMA\_\-SUBSCRIPTION\_\-REACTIVATING@{MAMA\_\-SUBSCRIPTION\_\-REACTIVATING}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!MAMA\_\-SUBSCRIPTION\_\-REACTIVATING@{MAMA\_\-SUBSCRIPTION\_\-REACTIVATING}}\item[{\em 
+\hypertarget{subscription_8h_a06a556e931730336a5ca65fc6508cef2a4b499a74031a3f55301970df5fd56ff4}{
+MAMA\_\-SUBSCRIPTION\_\-REACTIVATING}
+\label{subscription_8h_a06a556e931730336a5ca65fc6508cef2a4b499a74031a3f55301970df5fd56ff4}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{subscription_8h_a566ba4870c5c6bde0d34fcedad57943a}{
+\index{subscription.h@{subscription.h}!dqStartegyScheme@{dqStartegyScheme}}
+\index{dqStartegyScheme@{dqStartegyScheme}!subscription.h@{subscription.h}}
+\subsubsection[{dqStartegyScheme}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf dqStartegyScheme}}}
+\label{subscription_8h_a566ba4870c5c6bde0d34fcedad57943a}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DQ\_\-SCHEME\_\-DELIVER\_\-ALL@{DQ\_\-SCHEME\_\-DELIVER\_\-ALL}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!DQ\_\-SCHEME\_\-DELIVER\_\-ALL@{DQ\_\-SCHEME\_\-DELIVER\_\-ALL}}\item[{\em 
+\hypertarget{subscription_8h_a566ba4870c5c6bde0d34fcedad57943aa23f7ab484774994f18124513649b39b9}{
+DQ\_\-SCHEME\_\-DELIVER\_\-ALL}
+\label{subscription_8h_a566ba4870c5c6bde0d34fcedad57943aa23f7ab484774994f18124513649b39b9}
+}]\index{DQ\_\-SCHEME\_\-INGORE\_\-DUPS@{DQ\_\-SCHEME\_\-INGORE\_\-DUPS}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!DQ\_\-SCHEME\_\-INGORE\_\-DUPS@{DQ\_\-SCHEME\_\-INGORE\_\-DUPS}}\item[{\em 
+\hypertarget{subscription_8h_a566ba4870c5c6bde0d34fcedad57943aaad89c314e6808109a8ca9e46a4b0a35f}{
+DQ\_\-SCHEME\_\-INGORE\_\-DUPS}
+\label{subscription_8h_a566ba4870c5c6bde0d34fcedad57943aaad89c314e6808109a8ca9e46a4b0a35f}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487}{
+\index{subscription.h@{subscription.h}!dqftStrategyScheme@{dqftStrategyScheme}}
+\index{dqftStrategyScheme@{dqftStrategyScheme}!subscription.h@{subscription.h}}
+\subsubsection[{dqftStrategyScheme}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf dqftStrategyScheme}}}
+\label{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{DQ\_\-FT\_\-DO\_\-NOT\_\-WAIT\_\-FOR\_\-RECAP@{DQ\_\-FT\_\-DO\_\-NOT\_\-WAIT\_\-FOR\_\-RECAP}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!DQ\_\-FT\_\-DO\_\-NOT\_\-WAIT\_\-FOR\_\-RECAP@{DQ\_\-FT\_\-DO\_\-NOT\_\-WAIT\_\-FOR\_\-RECAP}}\item[{\em 
+\hypertarget{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487a74ca1d10f954a055747489e9258b2d84}{
+DQ\_\-FT\_\-DO\_\-NOT\_\-WAIT\_\-FOR\_\-RECAP}
+\label{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487a74ca1d10f954a055747489e9258b2d84}
+}]\index{DQ\_\-FT\_\-WAIT\_\-FOR\_\-RECAP@{DQ\_\-FT\_\-WAIT\_\-FOR\_\-RECAP}!subscription.h@{subscription.h}}\index{subscription.h@{subscription.h}!DQ\_\-FT\_\-WAIT\_\-FOR\_\-RECAP@{DQ\_\-FT\_\-WAIT\_\-FOR\_\-RECAP}}\item[{\em 
+\hypertarget{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487a03f6219d51bf25183e7a216644a3e830}{
+DQ\_\-FT\_\-WAIT\_\-FOR\_\-RECAP}
+\label{subscription_8h_a7a5da9a69bad96f67d8cdbbd95ea6487a03f6219d51bf25183e7a216644a3e830}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-activate@{mamaSubscription\_\-activate}}
+\index{mamaSubscription\_\-activate@{mamaSubscription\_\-activate}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-activate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-activate ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}
+
+
+Activate a subscription that has been set up by \hyperlink{subscription_8h_af041d697f640e1ab5bca0a38666a2db7}{mamaSubscription\_\-setup()}. Subscription creation actually occurs on the throttle queue. An individual subscription cannot be assumed to be fully created until its onCreate() callback has been successfully invoked. The subscription rate can be governed via the {\ttfamily mamaTransport\_\-setOutboundThrottle ()} function. Any subscription properties should be set prior to calling this function.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mama status code can be one of: MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE -\/ the type of subscription does not support activation. This will be returned if activate is called for a basic subscription. MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE -\/ the subscription cannot be activated as it is in the wrong state. MAMA\_\-STATUS\_\-OK. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_aa58753d69cbc436e2fd513c77c235c9c}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-allocate@{mamaSubscription\_\-allocate}}
+\index{mamaSubscription\_\-allocate@{mamaSubscription\_\-allocate}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-allocate ({\bf mamaSubscription} $\ast$ {\em result})}}
+\label{subscription_8h_aa58753d69cbc436e2fd513c77c235c9c}
+
+
+Allocate memory for a new subscription. The subscription is not actually created until a call to one of the create() functions is made. Memory must be freed using the {\ttfamily \hyperlink{subscription_8h_a0bee38b78281a8653fc93517f9dbbefd}{mamaSubscription\_\-deallocate()}} function.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em result}]Where the address of the new subscription will be written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status value can be one of MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a4d26b7bcadd8f5665f695c2690c8f532}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-checkDebugLevel@{mamaSubscription\_\-checkDebugLevel}}
+\index{mamaSubscription\_\-checkDebugLevel@{mamaSubscription\_\-checkDebugLevel}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-checkDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaSubscription\_\-checkDebugLevel ({\bf mamaSubscription} {\em subscription}, \/  {\bf MamaLogLevel} {\em level})}}
+\label{subscription_8h_a4d26b7bcadd8f5665f695c2690c8f532}
+
+
+Return whether the debug level for this subscription equals or exceeds some level. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em level}]The debug level to check.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A mama\_\-status value to reflect whether the level equals or exceeds the set level for this subscription. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a9ac86d9cdfa62388cdcda2516552559d}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-create@{mamaSubscription\_\-create}}
+\index{mamaSubscription\_\-create@{mamaSubscription\_\-create}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-create ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaMsgCallbacks} $\ast$ {\em callbacks}, \/  {\bf mamaSource} {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_a9ac86d9cdfa62388cdcda2516552559d}
+
+
+Create and activate subscription. This is effectively a pair of calls to \hyperlink{subscription_8h_af041d697f640e1ab5bca0a38666a2db7}{mamaSubscription\_\-setup()} and \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em source}]The mamaSource identifying the publisher for this symbol. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol name. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a1301455a5a20fd89507c4a7d241fb5bf}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-createBasic@{mamaSubscription\_\-createBasic}}
+\index{mamaSubscription\_\-createBasic@{mamaSubscription\_\-createBasic}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-createBasic}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-createBasic ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaMsgCallbacks} $\ast$ {\em callbacks}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_a1301455a5a20fd89507c4a7d241fb5bf}
+
+
+Create a basic subscription without marketdata semantics. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em transport}]The transport to use. Must be a basic transport. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol on which message are being published. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ae4a650c3abd61134cca7d440f9fb92ff}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-createBasicWildCard@{mamaSubscription\_\-createBasicWildCard}}
+\index{mamaSubscription\_\-createBasicWildCard@{mamaSubscription\_\-createBasicWildCard}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-createBasicWildCard}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-createBasicWildCard ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaWildCardMsgCallbacks} $\ast$ {\em callbacks}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_ae4a650c3abd61134cca7d440f9fb92ff}
+
+
+Create and activate a wildcard subscription that may be actually activated later. Activate the subscription using \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate()}.
+
+The topic must be a valid wildcard topic for the underlying middleware.
+
+Applications may set and retireve per-\/topic closures using \hyperlink{subscription_8h_a4cb8fd940beb5511a194c02249c709a0}{mamaSubscription\_\-setItemClosure()} however this method is only guaranteed to set the correct closure if called while in the msg callback. It will be the topicClosure argument for subsequent callback invocations for the current topic. The topicClosure argument to the callback is NULL prior to an application setting the closure for the topic.
+
+NOTE: For WMW a source with a NULL symbol parameter creates a \char`\"{}transport\char`\"{} subscription that receives all messages on the transport and bypasses the naming service. A publishing transport can be assigned a name with the publish\_\-name property.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em transport}]The transport to use. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em source}]The source name of the feed handler to provide the subscription. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol name. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ab72b70fb3dcbb739d1ed6b0cdbd7c785}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-createSnapshot@{mamaSubscription\_\-createSnapshot}}
+\index{mamaSubscription\_\-createSnapshot@{mamaSubscription\_\-createSnapshot}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-createSnapshot}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-createSnapshot ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaMsgCallbacks} $\ast$ {\em callbacks}, \/  {\bf mamaSource} {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_ab72b70fb3dcbb739d1ed6b0cdbd7c785}
+
+
+Create a snapshot subscription for initial value only (no updates). This function is equivalent to mamaSubscription\_\-create () with svcLevel set to MAMA\_\-SERVICE\_\-LEVEL\_\-SNAPSHOT and default arguments for type, svcLevelOpt, requiresInitial, retries, timeout.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em source}]The mamaSource identifying the publisher of data for the specified symbol. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol name. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ad932a559dad3acae6247daa42b80cb87}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-deactivate@{mamaSubscription\_\-deactivate}}
+\index{mamaSubscription\_\-deactivate@{mamaSubscription\_\-deactivate}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-deactivate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-deactivate ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_ad932a559dad3acae6247daa42b80cb87}
+
+
+Deactivate a subscription. The subscription can be reactivated if desired using \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate()}.
+
+Note that the subscription will not be fully deactivated until the onDestroy callback is received.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama status code can be one of: MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-TYPE -\/ the type of subscription does not support deactivation. This will be returned if deactivate is called for a basic subscription. MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE -\/ the subscription cannot be deactivated as it is in the wrong state. MAMA\_\-STATUS\_\-OK. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a0bee38b78281a8653fc93517f9dbbefd}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-deallocate@{mamaSubscription\_\-deallocate}}
+\index{mamaSubscription\_\-deallocate@{mamaSubscription\_\-deallocate}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-deallocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-deallocate ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a0bee38b78281a8653fc93517f9dbbefd}
+
+
+Free the memory for a mamaSubscription which was allocated via a call to {\ttfamily \hyperlink{subscription_8h_aa58753d69cbc436e2fd513c77c235c9c}{mamaSubscription\_\-allocate()}}. This function will call {\ttfamily \hyperlink{subscription_8h_a93d77987c1c97d0dd6cadd34320b501d}{mamaSubscription\_\-destroy()}} if the subscription has not already been destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription to be deallocated.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama status code can be one of: MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a93d77987c1c97d0dd6cadd34320b501d}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-destroy@{mamaSubscription\_\-destroy}}
+\index{mamaSubscription\_\-destroy@{mamaSubscription\_\-destroy}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-destroy ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a93d77987c1c97d0dd6cadd34320b501d}
+
+
+Destroy the subscription. This function must be called to destroy resources associated with the subscription. It sends an unsubscribe to the feed handler for subscription management. This function does not free the memory associated with the subscription. \hyperlink{subscription_8h_a9ac86d9cdfa62388cdcda2516552559d}{mamaSubscription\_\-create()} can be called again after this function has been called. This function must be called from the same thread dispatching on the associated event queue unless both the default queue and dispatch queue are not actively dispatching.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status value can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ad40c51d2f15e9440581d6bb23cfa5b4f}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-destroyEx@{mamaSubscription\_\-destroyEx}}
+\index{mamaSubscription\_\-destroyEx@{mamaSubscription\_\-destroyEx}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-destroyEx}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-destroyEx ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_ad40c51d2f15e9440581d6bb23cfa5b4f}
+
+
+This function will destroy the subscription and can be called from any thread. Note that the subscription will not be fully destroyed until the onDestroy callback is received. To destroy from the dispatching thread the mamaSubscription\_\-destroy function should be used in preference.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status value can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_aa1d7b49d7bbf9a6a94709f50c06ad53b}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getAppDataType@{mamaSubscription\_\-getAppDataType}}
+\index{mamaSubscription\_\-getAppDataType@{mamaSubscription\_\-getAppDataType}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getAppDataType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getAppDataType ({\bf mamaSubscription} {\em subscription}, \/  uint8\_\-t $\ast$ {\em appDataType})}}
+\label{subscription_8h_aa1d7b49d7bbf9a6a94709f50c06ad53b}
+
+
+Retrieve the application-\/specific data type. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em appDataType}]A pointer to a uint8\_\-t to hold the value.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ae2dd2cdd2417863139353ede8b0f6ce7}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getClosure@{mamaSubscription\_\-getClosure}}
+\index{mamaSubscription\_\-getClosure@{mamaSubscription\_\-getClosure}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getClosure ({\bf mamaSubscription} {\em subscription}, \/  void $\ast$$\ast$ {\em closure})}}
+\label{subscription_8h_ae2dd2cdd2417863139353ede8b0f6ce7}
+
+
+Return the closure. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em closure}]holds the result.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a4bd6bd977e1afab50c7788c4ef400a04}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getDebugLevel@{mamaSubscription\_\-getDebugLevel}}
+\index{mamaSubscription\_\-getDebugLevel@{mamaSubscription\_\-getDebugLevel}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf MamaLogLevel} mamaSubscription\_\-getDebugLevel ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a4bd6bd977e1afab50c7788c4ef400a04}
+
+
+Return the debug level for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the debug level for this subscription. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a8b15666adf856ae20bfafe69ca96a6fd}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getItemClosure@{mamaSubscription\_\-getItemClosure}}
+\index{mamaSubscription\_\-getItemClosure@{mamaSubscription\_\-getItemClosure}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getItemClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getItemClosure ({\bf mamaSubscription} {\em subscription}, \/  void $\ast$$\ast$ {\em closure})}}
+\label{subscription_8h_a8b15666adf856ae20bfafe69ca96a6fd}
+
+
+Return the item closure for the current message for the subscription. See {\ttfamily setItemClosure} for more detail.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em closure}]The address to where the closure should be written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_af800bc0dd6adb2b0186fcb11539cb4ad}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getMsgQualifierFilter@{mamaSubscription\_\-getMsgQualifierFilter}}
+\index{mamaSubscription\_\-getMsgQualifierFilter@{mamaSubscription\_\-getMsgQualifierFilter}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getMsgQualifierFilter}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getMsgQualifierFilter ({\bf mamaSubscription} {\em subscription}, \/  int $\ast$ {\em ignoreDefinitelyDuplicate}, \/  int $\ast$ {\em ignorePossiblyDuplicate}, \/  int $\ast$ {\em ignoreDefinitelyDelayed}, \/  int $\ast$ {\em ignorePossiblyDelayed}, \/  int $\ast$ {\em ignoreOutOfSequence})}}
+\label{subscription_8h_af800bc0dd6adb2b0186fcb11539cb4ad}
+
+
+Get the filters that discard message according to the message qualifier. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription from which the filer is being obtained.\item[\mbox{$\rightarrow$} {\em ignoreDefinitelyDuplicate}]If true callbacks will not be invoked for messages where MamaMsg::getIsDefinitelyDuplicate returns true.\item[\mbox{$\rightarrow$} {\em ignorePossiblyDuplicate}]If true callbacks will not be invoked for messages where MamaMsg::getIsPossiblyDuplicate returns true.\item[\mbox{$\rightarrow$} {\em ignoreDefinitelyDelayed}]If true callbacks will not be invoked for messages where MamaMsg::getIsDefinitelyDelayed returns true.\item[\mbox{$\rightarrow$} {\em ignorePossiblyDelayed}]If true callbacks will not be invoked for messages where MamaMsg::getIsPossiblyDelayed returns true.\item[\mbox{$\rightarrow$} {\em ignoreOutOfSequence}]If true callbacks will not be invoked for messages where MamaMsg::getIsOutOfSequence returns true.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a8e914e8ec1f9ad9442e8c4e31df105b6}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getPlatformError@{mamaSubscription\_\-getPlatformError}}
+\index{mamaSubscription\_\-getPlatformError@{mamaSubscription\_\-getPlatformError}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getPlatformError}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getPlatformError ({\bf mamaSubscription} {\em subsc}, \/  void $\ast$$\ast$ {\em error})}}
+\label{subscription_8h_a8e914e8ec1f9ad9442e8c4e31df105b6}
+
+
+Return the middleware-\/specific platform error. When a mamaSubscription\_\-method return MAMA\_\-STATUS\_\-PLATFORM the error will be the result from the underlying platform.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subsc}]The subscription. \item[\mbox{$\rightarrow$} {\em error}]a pointer to a void pointer to hold the result.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ac652338665186c01325378ed76cf5595}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getPreIntitialCacheSize@{mamaSubscription\_\-getPreIntitialCacheSize}}
+\index{mamaSubscription\_\-getPreIntitialCacheSize@{mamaSubscription\_\-getPreIntitialCacheSize}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getPreIntitialCacheSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getPreIntitialCacheSize ({\bf mamaSubscription} {\em subscription}, \/  int $\ast$ {\em result})}}
+\label{subscription_8h_ac652338665186c01325378ed76cf5595}
+
+
+Return the initial value cache size. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em result}]A pointer to an int for the result.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status value can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a7dd7b752b9ddcb235aa49dee2f69dd98}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getQueue@{mamaSubscription\_\-getQueue}}
+\index{mamaSubscription\_\-getQueue@{mamaSubscription\_\-getQueue}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getQueue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getQueue ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaQueue} $\ast$ {\em queue})}}
+\label{subscription_8h_a7dd7b752b9ddcb235aa49dee2f69dd98}
+
+
+Return the {\ttfamily mamaQueue} for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em queue}]A pointer to hold the queue.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ab95f84d88523e17fac284fbf1683e44a}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getReceivedInitial@{mamaSubscription\_\-getReceivedInitial}}
+\index{mamaSubscription\_\-getReceivedInitial@{mamaSubscription\_\-getReceivedInitial}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getReceivedInitial}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getReceivedInitial ({\bf mamaSubscription} {\em subscription}, \/  int $\ast$ {\em receivedInitial})}}
+\label{subscription_8h_ab95f84d88523e17fac284fbf1683e44a}
+
+
+Returns a value of 1 or 0 indicating whether the subscription has received an initial. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription \item[\mbox{$\rightarrow$} {\em receivedInitial}]Will be 1 if an initial has been recieved else 0.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a9676477bdb5400b1491149e2359f9ec5}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getRecoverGaps@{mamaSubscription\_\-getRecoverGaps}}
+\index{mamaSubscription\_\-getRecoverGaps@{mamaSubscription\_\-getRecoverGaps}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getRecoverGaps}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getRecoverGaps ({\bf mamaSubscription} {\em subscription}, \/  int $\ast$ {\em doesRecover})}}
+\label{subscription_8h_a9676477bdb5400b1491149e2359f9ec5}
+
+
+Whether the specified subscription will attempt to recover from sequence number gaps. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription \item[\mbox{$\rightarrow$} {\em doesRecover}]0 -\/ does not recover, 1 -\/ does attempt to recover\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a3ff90a32f7f94009c3323f1a094c64f5}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getRequiresInitial@{mamaSubscription\_\-getRequiresInitial}}
+\index{mamaSubscription\_\-getRequiresInitial@{mamaSubscription\_\-getRequiresInitial}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getRequiresInitial}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getRequiresInitial ({\bf mamaSubscription} {\em subscription}, \/  int $\ast$ {\em requiresInitial})}}
+\label{subscription_8h_a3ff90a32f7f94009c3323f1a094c64f5}
+
+
+Returns a value of 1 or 0 indicating whether this subscription is interested in initial values. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription \item[\mbox{$\rightarrow$} {\em requiresInitial}]1 if an initial is required else 0.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_adba6df25a2ccd1af558a78d69eb5c573}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getRetries@{mamaSubscription\_\-getRetries}}
+\index{mamaSubscription\_\-getRetries@{mamaSubscription\_\-getRetries}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getRetries}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getRetries ({\bf mamaSubscription} {\em subscription}, \/  int $\ast$ {\em retries})}}
+\label{subscription_8h_adba6df25a2ccd1af558a78d69eb5c573}
+
+
+Retrieve the retries. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em retries}]A pointer to a int to hold the value.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a33ab99ac139968828f9a816190715307}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getServiceLevel@{mamaSubscription\_\-getServiceLevel}}
+\index{mamaSubscription\_\-getServiceLevel@{mamaSubscription\_\-getServiceLevel}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getServiceLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getServiceLevel ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaServiceLevel} $\ast$ {\em serviceLevel})}}
+\label{subscription_8h_a33ab99ac139968828f9a816190715307}
+
+
+Get the service level for the specified subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription for which the service level is being obtained. \item[\mbox{$\rightarrow$} {\em serviceLevel}]Address to where the service level will be written\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a8938956a0ac9e5cd6e4291028e1d9166}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getServiceLevelOpt@{mamaSubscription\_\-getServiceLevelOpt}}
+\index{mamaSubscription\_\-getServiceLevelOpt@{mamaSubscription\_\-getServiceLevelOpt}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getServiceLevelOpt}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getServiceLevelOpt ({\bf mamaSubscription} {\em subscription}, \/  long $\ast$ {\em serviceLevel})}}
+\label{subscription_8h_a8938956a0ac9e5cd6e4291028e1d9166}
+
+
+Get the service level options for the specified subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription for which the service level is being obtained. \item[\mbox{$\rightarrow$} {\em serviceLevel}]Address to where the service level options will be written\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a65f861a0ec9548c11fac36034c779064}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getSource@{mamaSubscription\_\-getSource}}
+\index{mamaSubscription\_\-getSource@{mamaSubscription\_\-getSource}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getSource}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getSource ({\bf mamaSubscription} {\em subscription}, \/  const char $\ast$$\ast$ {\em source})}}
+\label{subscription_8h_a65f861a0ec9548c11fac36034c779064}
+
+
+Return the source for the specified subscription. Note that this function just returns a pointer to the source inside the subscription and does not allocate any memory.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em source}]holds the result, (do not free).\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a6c8c39484e9db4d08cf69da9338308a9}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getState@{mamaSubscription\_\-getState}}
+\index{mamaSubscription\_\-getState@{mamaSubscription\_\-getState}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getState}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getState ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaSubscriptionState} $\ast$ {\em state})}}
+\label{subscription_8h_a6c8c39484e9db4d08cf69da9338308a9}
+
+
+This function will return the current state of the subscription. This function should be used in preference to the mamaSubscription\_\-isActive or mamaSubscription\_\-isValid functions. This function is thread-\/safe.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription to return the state for. \item[\mbox{$\rightarrow$} {\em state}]To return the state, this can be one of the mamaSubscriptionState enumeration values.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-OK MAMA\_\-STATUS\_\-NULL\_\-ARG 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a454732807dc15ff942562322d8720c89}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getSubscriptionType@{mamaSubscription\_\-getSubscriptionType}}
+\index{mamaSubscription\_\-getSubscriptionType@{mamaSubscription\_\-getSubscriptionType}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getSubscriptionType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getSubscriptionType ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaSubscriptionType} $\ast$ {\em type})}}
+\label{subscription_8h_a454732807dc15ff942562322d8720c89}
+
+
+Returns the underlying {\ttfamily mamaSubscriptionType} for the specified subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription for which the type will be returned. \item[\mbox{$\rightarrow$} {\em type}]Address to which the type will be written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a4747695e5c7c498054b33730daf0df2e}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getSubscSymbol@{mamaSubscription\_\-getSubscSymbol}}
+\index{mamaSubscription\_\-getSubscSymbol@{mamaSubscription\_\-getSubscSymbol}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getSubscSymbol}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getSubscSymbol ({\bf mamaSubscription} {\em subscription}, \/  const char $\ast$$\ast$ {\em symbol})}}
+\label{subscription_8h_a4747695e5c7c498054b33730daf0df2e}
+
+
+Return the symbol as subscribed to (i.e., as mapped by the mapping function, if any, for the mamaTransport). Note that this function just returns a pointer to the symbol inside the subscription and does not allocate any memory.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em symbol}]holds the result, do not free.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a90091162abbaf6da7b7eb312773d7712}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getSymbol@{mamaSubscription\_\-getSymbol}}
+\index{mamaSubscription\_\-getSymbol@{mamaSubscription\_\-getSymbol}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getSymbol}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getSymbol ({\bf mamaSubscription} {\em subscription}, \/  const char $\ast$$\ast$ {\em symbol})}}
+\label{subscription_8h_a90091162abbaf6da7b7eb312773d7712}
+
+
+Return the symbol as provided by the user (before any symbol mapping). Note that this function just returns a pointer to the symbol inside the subscription and does not allocate any memory.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em symbol}]holds the result, (do not free).\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a4e8cfa95e8374b60ff84303338273363}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getTimeout@{mamaSubscription\_\-getTimeout}}
+\index{mamaSubscription\_\-getTimeout@{mamaSubscription\_\-getTimeout}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getTimeout}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getTimeout ({\bf mamaSubscription} {\em subscription}, \/  double $\ast$ {\em timeout})}}
+\label{subscription_8h_a4e8cfa95e8374b60ff84303338273363}
+
+
+Retrieve the timeout. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em timeout}]A pointer to a double to hold the value.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_aa6cfeae4fd4691da0240f0601708895c}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getTransport@{mamaSubscription\_\-getTransport}}
+\index{mamaSubscription\_\-getTransport@{mamaSubscription\_\-getTransport}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getTransport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-getTransport ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaTransport} $\ast$ {\em transport})}}
+\label{subscription_8h_aa6cfeae4fd4691da0240f0601708895c}
+
+
+Return the {\ttfamily mamaTransport} for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\rightarrow$} {\em transport}]A pointer to hold the transport.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a891b9d8ca9add660bf91d9b0ad7c4172}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-getUserCallbacks@{mamaSubscription\_\-getUserCallbacks}}
+\index{mamaSubscription\_\-getUserCallbacks@{mamaSubscription\_\-getUserCallbacks}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-getUserCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaMsgCallbacks}$\ast$ mamaSubscription\_\-getUserCallbacks ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a891b9d8ca9add660bf91d9b0ad7c4172}
+
+
+Returns a pointer to the {\ttfamily mamaMsgCallbacks} structure. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The {\ttfamily mamaSubscription}\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the callbacks container structure MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a8bcb6302766e53640f2a56f190fd57f2}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-isActive@{mamaSubscription\_\-isActive}}
+\index{mamaSubscription\_\-isActive@{mamaSubscription\_\-isActive}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-isActive}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaSubscription\_\-isActive ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a8bcb6302766e53640f2a56f190fd57f2}
+
+
+Returns whether the subscription is active, note that this function has been deprecated, use mamaSubscription\_\-getState instead. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the subscription is active. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a90432c22ff9ddffafba0bb7860f1a369}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-isValid@{mamaSubscription\_\-isValid}}
+\index{mamaSubscription\_\-isValid@{mamaSubscription\_\-isValid}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-isValid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaSubscription\_\-isValid ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a90432c22ff9ddffafba0bb7860f1a369}
+
+
+Return whether the subscription is valid, note that this function has been deprecated, use mamaSubscription\_\-getState instead. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the subscription is valid. 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a8e54b91748116d82c277d99ee2fe1ca5}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-muteCurrentTopic@{mamaSubscription\_\-muteCurrentTopic}}
+\index{mamaSubscription\_\-muteCurrentTopic@{mamaSubscription\_\-muteCurrentTopic}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-muteCurrentTopic}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-muteCurrentTopic ({\bf mamaSubscription} {\em subscription})}}
+\label{subscription_8h_a8e54b91748116d82c277d99ee2fe1ca5}
+
+
+Mute the current topic for wildcard subscriptions. Applications should only invoke this method from the message callback. When invoked for a WMW transport subsription, the subscription will cease receiving calbacks on the current topic.
+
+This method only works for WMW \char`\"{}transport\char`\"{} subscriptions which are Wild card subscriptions created with a source of a named publisher, and a NULL topic.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a0b713f3e821546d1ea3657a1fe6f4f54}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setAppDataType@{mamaSubscription\_\-setAppDataType}}
+\index{mamaSubscription\_\-setAppDataType@{mamaSubscription\_\-setAppDataType}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setAppDataType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setAppDataType ({\bf mamaSubscription} {\em subscription}, \/  uint8\_\-t {\em appDataType})}}
+\label{subscription_8h_a0b713f3e821546d1ea3657a1fe6f4f54}
+
+
+Set the application-\/specific data type. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em appDataType}]The application-\/specific data type.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of:
+\end{DoxyReturn}
+MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK \hypertarget{subscription_8h_a07e19a97121525aaa25e6cb53ea471a3}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setDebugLevel@{mamaSubscription\_\-setDebugLevel}}
+\index{mamaSubscription\_\-setDebugLevel@{mamaSubscription\_\-setDebugLevel}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setDebugLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setDebugLevel ({\bf mamaSubscription} {\em subscription}, \/  {\bf MamaLogLevel} {\em level})}}
+\label{subscription_8h_a07e19a97121525aaa25e6cb53ea471a3}
+
+
+Set the debug level for this subscription. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em level}]The new debug level.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a1da1183afc8bc5b79127356addc9debc}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setGroupSizeHint@{mamaSubscription\_\-setGroupSizeHint}}
+\index{mamaSubscription\_\-setGroupSizeHint@{mamaSubscription\_\-setGroupSizeHint}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setGroupSizeHint}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setGroupSizeHint ({\bf mamaSubscription} {\em subscription}, \/  int {\em groupSizeHint})}}
+\label{subscription_8h_a1da1183afc8bc5b79127356addc9debc}
+
+
+A hint as to the expected size of size of groups when making group subscriptions. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription \item[\mbox{$\leftarrow$} {\em groupSizeHint}]The size of the groups\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a4cb8fd940beb5511a194c02249c709a0}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setItemClosure@{mamaSubscription\_\-setItemClosure}}
+\index{mamaSubscription\_\-setItemClosure@{mamaSubscription\_\-setItemClosure}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setItemClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setItemClosure ({\bf mamaSubscription} {\em subscription}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_a4cb8fd940beb5511a194c02249c709a0}
+
+
+Set the item closure for group subscriptions. Group subscriptions receive updates for multiple symbols. This method allows calls to set a per-\/symbol closure which will be passed as the fourth argument to subsequent calls to the onMsg callback. This method may only be called during the onMsg callback.
+
+This method also sets per-\/topic closures for wildcard subscriptions.
+
+Setting the item closure for a non-\/group subscription provides a second closure.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em closure}]The new item closure.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_adccea8aadfa3978b3a48e16f56097248}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setMsgQualifierFilter@{mamaSubscription\_\-setMsgQualifierFilter}}
+\index{mamaSubscription\_\-setMsgQualifierFilter@{mamaSubscription\_\-setMsgQualifierFilter}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setMsgQualifierFilter}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setMsgQualifierFilter ({\bf mamaSubscription} {\em subscription}, \/  int {\em ignoreDefinitelyDuplicate}, \/  int {\em ignorePossiblyDuplicate}, \/  int {\em ignoreDefinitelyDelayed}, \/  int {\em ignorePossiblyDelayed}, \/  int {\em ignoreOutOfSequence})}}
+\label{subscription_8h_adccea8aadfa3978b3a48e16f56097248}
+
+
+Set a filter to discard messages. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription on which the filter is being set.\item[\mbox{$\leftarrow$} {\em ignoreDefinitelyDuplicate}]If true callbacks will not be invoked for messages where MamaMsg::getIsDefinitelyDuplicate returns true.\item[\mbox{$\leftarrow$} {\em ignorePossiblyDuplicate}]If true callbacks will not be invoked for messages where MamaMsg::getIsPossiblyDuplicate returns true.\item[\mbox{$\leftarrow$} {\em ignoreDefinitelyDelayed}]If true callbacks will not be invoked for messages where MamaMsg::getIsDefinitelyDelayed returns true.\item[\mbox{$\leftarrow$} {\em ignorePossiblyDelayed}]If true callbacks will not be invoked for messages where MamaMsg::getIsPossiblyDelayed returns true.\item[\mbox{$\leftarrow$} {\em ignoreOutOfSequence}]If true callbacks will not be invoked for messages where MamaMsg::getIsOutOfSequence returns true.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_abbb4f9e68d2e81687113a1f3bee125f5}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setPreIntitialCacheSize@{mamaSubscription\_\-setPreIntitialCacheSize}}
+\index{mamaSubscription\_\-setPreIntitialCacheSize@{mamaSubscription\_\-setPreIntitialCacheSize}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setPreIntitialCacheSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setPreIntitialCacheSize ({\bf mamaSubscription} {\em subscription}, \/  int {\em cacheSize})}}
+\label{subscription_8h_abbb4f9e68d2e81687113a1f3bee125f5}
+
+
+Set the number of messages to cache for each symbol before the initial value arrives. This allows the subscription to recover when the initial value arrives late (after a subsequent trade or quote already arrived).
+
+For group subscription, a separate cache is used for each group member.
+
+The default is 10.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em cacheSize}]The size of the cache.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status value can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_ae841e39e6e2ff181a22bad205f654109}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setRecoverGaps@{mamaSubscription\_\-setRecoverGaps}}
+\index{mamaSubscription\_\-setRecoverGaps@{mamaSubscription\_\-setRecoverGaps}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setRecoverGaps}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setRecoverGaps ({\bf mamaSubscription} {\em subscription}, \/  int {\em doesRecover})}}
+\label{subscription_8h_ae841e39e6e2ff181a22bad205f654109}
+
+
+Whether a subscription should attempt to recover from sequence number gaps. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription \item[\mbox{$\rightarrow$} {\em doesRecover}]0 indicates not to recover. 1 The subscription will attempt to recover via a recap request.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a7f692e26683e76295ee7e28a5a2edf50}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setRequiresInitial@{mamaSubscription\_\-setRequiresInitial}}
+\index{mamaSubscription\_\-setRequiresInitial@{mamaSubscription\_\-setRequiresInitial}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setRequiresInitial}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setRequiresInitial ({\bf mamaSubscription} {\em subscription}, \/  int {\em requiresInitial})}}
+\label{subscription_8h_a7f692e26683e76295ee7e28a5a2edf50}
+
+
+Whether an initial value is required for the specified subscription. This only applies to market data subscriptions and not to basic subscriptions. Default value of 1 indicating that initial values are required.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription \item[\mbox{$\leftarrow$} {\em requiresInitial}]\mbox{[}1$|$0\mbox{]} Whether to request an initial value or not.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a6313aa7c5c558f027c5ac7815fd5815d}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setServiceLevel@{mamaSubscription\_\-setServiceLevel}}
+\index{mamaSubscription\_\-setServiceLevel@{mamaSubscription\_\-setServiceLevel}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setServiceLevel}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setServiceLevel ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaServiceLevel} {\em serviceLevel}, \/  long {\em serviceLevelOpt})}}
+\label{subscription_8h_a6313aa7c5c558f027c5ac7815fd5815d}
+
+
+Set the service level. This method must be invoked before createXXX ().
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription for which the service level is being set. \item[\mbox{$\leftarrow$} {\em serviceLevel}]The service level of the subscription (real time, snapshot, etc.). The default is MAMA\_\-SERVICE\_\-LEVEL\_\-REAL\_\-TIME. \item[\mbox{$\leftarrow$} {\em serviceLevelOpt}]An optional argument for certain service levels. (Defaults to 0 -\/ for future use)\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a5c7e56fe6c6810eabf510256da66ee74}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setRetries@{mamaSubscription\_\-setRetries}}
+\index{mamaSubscription\_\-setRetries@{mamaSubscription\_\-setRetries}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setRetries}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setRetries ({\bf mamaSubscription} {\em subscription}, \/  int {\em retries})}}
+\label{subscription_8h_a5c7e56fe6c6810eabf510256da66ee74}
+
+
+Set the number of retries when requesting recaps. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em retries}]The number of retries.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a49ed8683906d72277bf8fe7eb5c56983}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setSubscriptionType@{mamaSubscription\_\-setSubscriptionType}}
+\index{mamaSubscription\_\-setSubscriptionType@{mamaSubscription\_\-setSubscriptionType}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setSubscriptionType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setSubscriptionType ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaSubscriptionType} {\em type})}}
+\label{subscription_8h_a49ed8683906d72277bf8fe7eb5c56983}
+
+
+Set the subscription type for the subscription being created. If not called the subscription type defaults to MAMA\_\-SUBSC\_\-TYPE\_\-NORMAL. See {\ttfamily mamaSubscriptionType} enum for valid values.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription for which the type is being set. \item[\mbox{$\leftarrow$} {\em type}]The type of the subscription being created.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_aa3cfa81795f1096eed6194e8d7d49300}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setSymbol@{mamaSubscription\_\-setSymbol}}
+\index{mamaSubscription\_\-setSymbol@{mamaSubscription\_\-setSymbol}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setSymbol}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setSymbol ({\bf mamaSubscription} {\em subscription}, \/  const char $\ast$ {\em symbol})}}
+\label{subscription_8h_aa3cfa81795f1096eed6194e8d7d49300}
+
+
+Set the symbol (e.g. to change symbol mapping).
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em symbol.}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a79838997067d314667c9e81e9c3d322d}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setTimeout@{mamaSubscription\_\-setTimeout}}
+\index{mamaSubscription\_\-setTimeout@{mamaSubscription\_\-setTimeout}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setTimeout}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setTimeout ({\bf mamaSubscription} {\em subscription}, \/  double {\em timeout})}}
+\label{subscription_8h_a79838997067d314667c9e81e9c3d322d}
+
+
+Set the timeout for this subscription. The timeout is used for requesting recaps.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em timeout}]The timeout in seconds.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_af041d697f640e1ab5bca0a38666a2db7}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setup@{mamaSubscription\_\-setup}}
+\index{mamaSubscription\_\-setup@{mamaSubscription\_\-setup}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setup}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setup ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaMsgCallbacks} $\ast$ {\em callbacks}, \/  {\bf mamaSource} {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_af041d697f640e1ab5bca0a38666a2db7}
+
+
+Set the parameters for a subscription that may be actually activated later. Activate the subscription using \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em source}]The MAMA source to use. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol name. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_af6485dd4bfe096593c87a26bc722bca1}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setup2@{mamaSubscription\_\-setup2}}
+\index{mamaSubscription\_\-setup2@{mamaSubscription\_\-setup2}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setup2}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setup2 ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaMsgCallbacks} $\ast$ {\em callbacks}, \/  const char $\ast$ {\em sourceName}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_af6485dd4bfe096593c87a26bc722bca1}
+
+
+Set the parameters for a subscription that may be actually activated later. Activate the subscription using \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em transport}]The MAMA transport. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em sourceName}]The source name.. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol name. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a2ad73853946f82e7085d00ebc34930eb}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-setupBasicWildCard@{mamaSubscription\_\-setupBasicWildCard}}
+\index{mamaSubscription\_\-setupBasicWildCard@{mamaSubscription\_\-setupBasicWildCard}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-setupBasicWildCard}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSubscription\_\-setupBasicWildCard ({\bf mamaSubscription} {\em subscription}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaQueue} {\em queue}, \/  const {\bf mamaWildCardMsgCallbacks} $\ast$ {\em callbacks}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em symbol}, \/  void $\ast$ {\em closure})}}
+\label{subscription_8h_a2ad73853946f82e7085d00ebc34930eb}
+
+
+Set the parameters for a wildcard subscription that may be actually activated later. Activate the subscription using \hyperlink{subscription_8h_a8caf4e04148dde9115ac80bbf9a37726}{mamaSubscription\_\-activate()}.
+
+The topic must be a valid wildcard topic for the underlying middleware.
+
+Applications may set and retireve per-\/topic closures using \hyperlink{subscription_8h_a4cb8fd940beb5511a194c02249c709a0}{mamaSubscription\_\-setItemClosure()} however this method is only guaranteed to set the correct closure if called while in the msg callback. It will be the topicClosure argument for subsequent callback invocations for the current topic. The topicClosure argument to the callback is NULL prior to an application setting the closure for the topic.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em subscription}]The subscription. \item[\mbox{$\leftarrow$} {\em transport}]The transport to use. \item[\mbox{$\leftarrow$} {\em queue}]The mama queue. \item[\mbox{$\leftarrow$} {\em callbacks}]The mamaMsgCallbacks structure containing the callback functions. \item[\mbox{$\leftarrow$} {\em source}]The source name of the feed handler to provide the subscription. \item[\mbox{$\leftarrow$} {\em symbol}]The symbol name. \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for this subscription.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-QUEUE MAMA\_\-STATUS\_\-SUBSCRIPTION\_\-INVALID\_\-STATE MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{subscription_8h_a706a1dedacbc4d2d4dac6044e55f1252}{
+\index{subscription.h@{subscription.h}!mamaSubscription\_\-stringForState@{mamaSubscription\_\-stringForState}}
+\index{mamaSubscription\_\-stringForState@{mamaSubscription\_\-stringForState}!subscription.h@{subscription.h}}
+\subsubsection[{mamaSubscription\_\-stringForState}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaSubscription\_\-stringForState ({\bf mamaSubscriptionState} {\em state})}}
+\label{subscription_8h_a706a1dedacbc4d2d4dac6044e55f1252}
+
+
+This function will return the string representation of the subscription state. The subscription state can be obtained by calling the mamaSubscription\_\-getState function.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em state}]The state to obtain the string representation for.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the state code or \char`\"{}State not recognised\char`\"{} if it is not recognised. 
+\end{DoxyReturn}

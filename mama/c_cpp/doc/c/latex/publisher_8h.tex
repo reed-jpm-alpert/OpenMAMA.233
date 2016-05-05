@@ -1,0 +1,158 @@
+\hypertarget{publisher_8h}{
+\section{publisher.h File Reference}
+\label{publisher_8h}\index{publisher.h@{publisher.h}}
+}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}
+\item 
+typedef \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}{status}
+\item 
+typedef \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} void $\ast$ \hyperlink{publisher_8h_abf1f57ed799d657040cfd6afc8ceb898}{closure}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{publisher_8h_aa3f69bd868408c3133d6cda13fa3ac56}{void} (MAMACALLTYPE $\ast$mamaThrottledSendCompleteCb)(\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher
+\begin{DoxyCompactList}\small\item\em Responsible for publishing mama messages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_accb6bbb6d964ab5785db4faf51fb0d3c}{mamaPublisher\_\-create} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} $\ast$result, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} tport, const char $\ast$symbol, const char $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, const char $\ast$root)
+\begin{DoxyCompactList}\small\item\em Create a mama publisher for the corresponding transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_afb5068b19dfdca1dfab277b727168cac}{mamaPublisher\_\-send} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Send a message from the specified publisher. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_a04d389414b998df0518cfd46b53a45d7}{mamaPublisher\_\-sendWithThrottle} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, mamaThrottledSendCompleteCb sendCompleteCb, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Send a message with the throttle. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_a8ffbe52cb9e0c386950184f53cdbc755}{mamaPublisher\_\-sendFromInboxWithThrottle} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a52dbc80fd93ec3654f8220afe7ee6e2f}{mamaInbox} inbox, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, mamaThrottledSendCompleteCb sendCompleteCb, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_af5b25f9061b250f9e09fde018e29642e}{mamaPublisher\_\-sendFromInbox} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a52dbc80fd93ec3654f8220afe7ee6e2f}{mamaInbox} inbox, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_a953c168b721cda03dccc125139475a49}{mamaPublisher\_\-sendReplyToInboxHandle} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a8305bfdb18d1eaa5fff3e7c785613d91}{mamaMsgReply} replyAddress, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} reply)
+\begin{DoxyCompactList}\small\item\em Send a reply in response to a request to an inbox. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_ad792f1cd1cad052ba38b7d7e1d5f6171}{mamaPublisher\_\-sendReplyToInbox} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} request, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} reply)
+\begin{DoxyCompactList}\small\item\em Send a reply in response to a request to an inbox. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_a5f14201d78093d4f54e51b1b501ef6fd}{mamaPublisher\_\-destroy} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher)
+\begin{DoxyCompactList}\small\item\em Destroy the publisher. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{publisher_8h_a2de93786f77d7cdc33d216c506f28e93}{mamaPublisher\_\-getTransport} (\hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher} publisher, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} $\ast$transport)
+\begin{DoxyCompactList}\small\item\em Return the {\ttfamily mamaTransport} for this publisher. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{
+\index{publisher.h@{publisher.h}!msg@{msg}}
+\index{msg@{msg}!publisher.h@{publisher.h}}
+\subsubsection[{msg}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaMsg} {\bf msg}}}
+\label{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}
+\hypertarget{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}{
+\index{publisher.h@{publisher.h}!status@{status}}
+\index{status@{status}!publisher.h@{publisher.h}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaMsg} {\bf mama\_\-status} {\bf status}}}
+\label{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}
+\hypertarget{publisher_8h_abf1f57ed799d657040cfd6afc8ceb898}{
+\index{publisher.h@{publisher.h}!closure@{closure}}
+\index{closure@{closure}!publisher.h@{publisher.h}}
+\subsubsection[{closure}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaMsg} {\bf mama\_\-status} void$\ast$ {\bf closure}}}
+\label{publisher_8h_abf1f57ed799d657040cfd6afc8ceb898}
+
+
+\subsection{Function Documentation}
+\hypertarget{publisher_8h_aa3f69bd868408c3133d6cda13fa3ac56}{
+\index{publisher.h@{publisher.h}!void@{void}}
+\index{void@{void}!publisher.h@{publisher.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em mamaThrottledSendCompleteCb})}}
+\label{publisher_8h_aa3f69bd868408c3133d6cda13fa3ac56}
+
+
+Responsible for publishing mama messages. Prototype for callback invoked when a message sent with either \hyperlink{publisher_8h_a04d389414b998df0518cfd46b53a45d7}{mamaPublisher\_\-sendWithThrottle()} or \hyperlink{publisher_8h_a8ffbe52cb9e0c386950184f53cdbc755}{mamaPublisher\_\-sendFromInboxWithThrottle()} has been sent from the throttle queue.
+
+Messages sent on the throttle queue are no longer destroyed by the API. It is the responsibility of the application developer to manage the lifecycle of any messages sent on the throttle.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The publisher object used to send the message. \item[{\em msg}]The mamaMsg which has been sent from the throttle queue. \item[{\em status}]Whether the message was successfully sent from the throttle. A value of MAMA\_\-STATUS\_\-OK indicates that the send was successful. \item[{\em closure}]User supplied context data. \end{DoxyParams}
+\hypertarget{publisher_8h_accb6bbb6d964ab5785db4faf51fb0d3c}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-create@{mamaPublisher\_\-create}}
+\index{mamaPublisher\_\-create@{mamaPublisher\_\-create}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-create ({\bf mamaPublisher} $\ast$ {\em result}, \/  {\bf mamaTransport} {\em tport}, \/  const char $\ast$ {\em symbol}, \/  const char $\ast$ {\em source}, \/  const char $\ast$ {\em root})}}
+\label{publisher_8h_accb6bbb6d964ab5785db4faf51fb0d3c}
+
+
+Create a mama publisher for the corresponding transport. If the transport is a marketdata transport, as opposed to a \char`\"{}basic\char`\"{} transport, the topic corresponds to the symbol. For a basic transport, the source and root get ignored.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to hold the resulting mamaPublisher. \item[{\em tport}]The transport. \item[{\em symbol}]Symbol on which to publish. \item[{\em source}]The source for market data publishers. (e.g. source.symbol) \item[{\em root}]The root for market data publishers. Used internally. \end{DoxyParams}
+\hypertarget{publisher_8h_afb5068b19dfdca1dfab277b727168cac}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-send@{mamaPublisher\_\-send}}
+\index{mamaPublisher\_\-send@{mamaPublisher\_\-send}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-send ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaMsg} {\em msg})}}
+\label{publisher_8h_afb5068b19dfdca1dfab277b727168cac}
+
+
+Send a message from the specified publisher. 
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The publisher from which to send a message. \item[{\em msg}]The mamaMsg to send. \end{DoxyParams}
+\hypertarget{publisher_8h_a04d389414b998df0518cfd46b53a45d7}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-sendWithThrottle@{mamaPublisher\_\-sendWithThrottle}}
+\index{mamaPublisher\_\-sendWithThrottle@{mamaPublisher\_\-sendWithThrottle}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-sendWithThrottle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-sendWithThrottle ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaMsg} {\em msg}, \/  mamaThrottledSendCompleteCb {\em sendCompleteCb}, \/  void $\ast$ {\em closure})}}
+\label{publisher_8h_a04d389414b998df0518cfd46b53a45d7}
+
+
+Send a message with the throttle. The lifecycle of the message sent is controlled by the user of the API. The callback indicates when the API is no longer using the message and can be destroyed/reused by the application.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The publish from which to send the throttled message. \item[{\em msg}]The mamaMsg to send. \item[{\em sendCompleteCb}]Callback invoked once the message has been send on the throttle. \item[{\em closure}]User supplied data returned in the send complete callback. \end{DoxyParams}
+\hypertarget{publisher_8h_a8ffbe52cb9e0c386950184f53cdbc755}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-sendFromInboxWithThrottle@{mamaPublisher\_\-sendFromInboxWithThrottle}}
+\index{mamaPublisher\_\-sendFromInboxWithThrottle@{mamaPublisher\_\-sendFromInboxWithThrottle}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-sendFromInboxWithThrottle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-sendFromInboxWithThrottle ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaInbox} {\em inbox}, \/  {\bf mamaMsg} {\em msg}, \/  mamaThrottledSendCompleteCb {\em sendCompleteCb}, \/  void $\ast$ {\em closure})}}
+\label{publisher_8h_a8ffbe52cb9e0c386950184f53cdbc755}
+\hypertarget{publisher_8h_af5b25f9061b250f9e09fde018e29642e}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-sendFromInbox@{mamaPublisher\_\-sendFromInbox}}
+\index{mamaPublisher\_\-sendFromInbox@{mamaPublisher\_\-sendFromInbox}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-sendFromInbox}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-sendFromInbox ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaInbox} {\em inbox}, \/  {\bf mamaMsg} {\em msg})}}
+\label{publisher_8h_af5b25f9061b250f9e09fde018e29642e}
+\hypertarget{publisher_8h_a953c168b721cda03dccc125139475a49}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-sendReplyToInboxHandle@{mamaPublisher\_\-sendReplyToInboxHandle}}
+\index{mamaPublisher\_\-sendReplyToInboxHandle@{mamaPublisher\_\-sendReplyToInboxHandle}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-sendReplyToInboxHandle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-sendReplyToInboxHandle ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaMsgReply} {\em replyAddress}, \/  {\bf mamaMsg} {\em reply})}}
+\label{publisher_8h_a953c168b721cda03dccc125139475a49}
+
+
+Send a reply in response to a request to an inbox. 
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The mamaPublisher from which to send the response. \item[{\em request}]The reply address to which you are responding. \item[{\em reply}]The mamaMsg to be sent as the reply. \end{DoxyParams}
+\hypertarget{publisher_8h_ad792f1cd1cad052ba38b7d7e1d5f6171}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-sendReplyToInbox@{mamaPublisher\_\-sendReplyToInbox}}
+\index{mamaPublisher\_\-sendReplyToInbox@{mamaPublisher\_\-sendReplyToInbox}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-sendReplyToInbox}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-sendReplyToInbox ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaMsg} {\em request}, \/  {\bf mamaMsg} {\em reply})}}
+\label{publisher_8h_ad792f1cd1cad052ba38b7d7e1d5f6171}
+
+
+Send a reply in response to a request to an inbox. 
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The mamaPublisher from which to send the response. \item[{\em request}]The mamaMsg to which you are responding. \item[{\em reply}]The mamaMsg to be sent as the reply. \end{DoxyParams}
+\hypertarget{publisher_8h_a5f14201d78093d4f54e51b1b501ef6fd}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-destroy@{mamaPublisher\_\-destroy}}
+\index{mamaPublisher\_\-destroy@{mamaPublisher\_\-destroy}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-destroy ({\bf mamaPublisher} {\em publisher})}}
+\label{publisher_8h_a5f14201d78093d4f54e51b1b501ef6fd}
+
+
+Destroy the publisher. 
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The mamaPublisher to destroy. \end{DoxyParams}
+\hypertarget{publisher_8h_a2de93786f77d7cdc33d216c506f28e93}{
+\index{publisher.h@{publisher.h}!mamaPublisher\_\-getTransport@{mamaPublisher\_\-getTransport}}
+\index{mamaPublisher\_\-getTransport@{mamaPublisher\_\-getTransport}!publisher.h@{publisher.h}}
+\subsubsection[{mamaPublisher\_\-getTransport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPublisher\_\-getTransport ({\bf mamaPublisher} {\em publisher}, \/  {\bf mamaTransport} $\ast$ {\em transport})}}
+\label{publisher_8h_a2de93786f77d7cdc33d216c506f28e93}
+
+
+Return the {\ttfamily mamaTransport} for this publisher. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em publisher}]The mamaPublisher from which to retrieve the transport for. \item[\mbox{$\rightarrow$} {\em transport}]A pointer to hold the transport.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

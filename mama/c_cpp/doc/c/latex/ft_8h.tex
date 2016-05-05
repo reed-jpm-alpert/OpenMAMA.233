@@ -1,0 +1,399 @@
+\hypertarget{ft_8h}{
+\section{ft.h File Reference}
+\label{ft_8h}\index{ft.h@{ft.h}}
+}
+{\ttfamily \#include $<$mama/mama.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{ft_8h_a3d6cfa5032b0f5d7da86685083089400}{mamaFtState\_\-} \hyperlink{ft_8h_a64fea0f33d331b62bbae5acf113513f9}{mamaFtState}
+\begin{DoxyCompactList}\small\item\em The enumeration of fault tolerant states. \item\end{DoxyCompactList}\item 
+typedef enum \hyperlink{ft_8h_adba15645b426b265eec00df3d31ff25b}{mamaFtType\_\-} \hyperlink{ft_8h_a059281606cac61573a23ecd2ce66020d}{mamaFtType}
+\begin{DoxyCompactList}\small\item\em The enumeration of fault tolerant types. \item\end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember}
+\item 
+typedef const char $\ast$ \hyperlink{ft_8h_aac4f4544a0e78ad8ade2dc0e19ffc993}{groupName}
+\item 
+typedef const char \hyperlink{ft_8h_a64fea0f33d331b62bbae5acf113513f9}{mamaFtState} \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state}
+\item 
+typedef const char \hyperlink{ft_8h_a64fea0f33d331b62bbae5acf113513f9}{mamaFtState} void $\ast$ \hyperlink{ft_8h_a148d2287aeeaff82cbcbc835458706f0}{closure}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{ft_8h_a3d6cfa5032b0f5d7da86685083089400}{mamaFtState\_\-} \{ \hyperlink{ft_8h_a3d6cfa5032b0f5d7da86685083089400afbf314e903193d5c5679e48b62b41d04}{MAMA\_\-FT\_\-STATE\_\-STANDBY} =  0, 
+\hyperlink{ft_8h_a3d6cfa5032b0f5d7da86685083089400a76b4971e27b661ec36fc9d5810c52e02}{MAMA\_\-FT\_\-STATE\_\-ACTIVE} =  1, 
+\hyperlink{ft_8h_a3d6cfa5032b0f5d7da86685083089400a77125db0cec60d92aec803a26e6ff6c9}{MAMA\_\-FT\_\-STATE\_\-UNKNOWN} =  99
+ \}
+\begin{DoxyCompactList}\small\item\em The enumeration of fault tolerant states. \item\end{DoxyCompactList}\item 
+enum \hyperlink{ft_8h_adba15645b426b265eec00df3d31ff25b}{mamaFtType\_\-} \{ \hyperlink{ft_8h_adba15645b426b265eec00df3d31ff25ba0f32023efd1caa399d4e54a0413fc071}{MAMA\_\-FT\_\-TYPE\_\-MULTICAST} =  1, 
+\hyperlink{ft_8h_adba15645b426b265eec00df3d31ff25baf637dd1daa6e6edbd6a5f3a38e5692e5}{MAMA\_\-FT\_\-TYPE\_\-BRIDGE} =  2, 
+\hyperlink{ft_8h_adba15645b426b265eec00df3d31ff25ba735e231c8931c2a1ef306ed169e92442}{MAMA\_\-FT\_\-TYPE\_\-MAX} =  3
+ \}
+\begin{DoxyCompactList}\small\item\em The enumeration of fault tolerant types. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{ft_8h_a5e400e7743e64aa4bbe12667e61cbd10}{void} (MAMACALLTYPE $\ast$mamaFtMemberOnFtStateChangeCb)(\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} ftMember
+\begin{DoxyCompactList}\small\item\em Callback function type for MAMA fault tolerant state change events. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a95c287c89db0ea6919eddf95ef0cd048}{mamaFtMember\_\-create} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} $\ast$\hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Allocate a MAMA fault tolerance group member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}{mamaFtMember\_\-setup} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, \hyperlink{ft_8h_a059281606cac61573a23ecd2ce66020d}{mamaFtType} fttype, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} eventQueue, mamaFtMemberOnFtStateChangeCb callback, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$\hyperlink{ft_8h_aac4f4544a0e78ad8ade2dc0e19ffc993}{groupName}, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} weight, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} heartbeatInterval, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} timeoutInterval, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set up a MAMA fault tolerance group member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_ac2f37e7a321f01fdebd0ce3f5b5f4a99}{mamaFtMember\_\-destroy} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Destroy a MAMA fault tolerance group member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a758d43430f4288e72e52da8363ec38c1}{mamaFtMember\_\-activate} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Activate the MAMA fault tolerance group member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_ad4d438d58796c8819700ee8737397818}{mamaFtMember\_\-deactivate} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Deactivate the MAMA fault tolerance group member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a7b48f830433aea396f1b3c354aa55e38}{mamaFtMember\_\-isActive} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get whether the MAMA fault tolerance member is actively running (not related to its state). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a7a25c1439f05a3ce54e6fdce46773233}{mamaFtMember\_\-getGroupName} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the name of the group to which this MAMA FT member belongs. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_af44f697e38a64ab1c434c846a003a382}{mamaFtMember\_\-getWeight} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the fault tolerance weight of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_adbbf8da38ba266e95a3b39a5d2f912b4}{mamaFtMember\_\-getHeartbeatInterval} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the fault tolerance heartbeat interval of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a69e824deaa27008e7e8b76b1c18f0ed7}{mamaFtMember\_\-getTimeoutInterval} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the fault tolerance timeout interval of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a4dab4bad1fd5c248a60f40bcda934ae7}{mamaFtMember\_\-getHeartbeatTick} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the current heartbeat tick of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_ad478e3993f10f9520b116d28efaf52b2}{mamaFtMember\_\-getClosure} (const \hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, void $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the closure argument (provided in the \hyperlink{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}{mamaFtMember\_\-setup()} function) of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_ad9a1f82582287a4ff2610e42ce0503fd}{mamaFtMember\_\-setWeight} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Set the fault tolerance weight of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{ft_8h_a5058700e88719ac4eacfa44169dd8858}{mamaFtMember\_\-setInstanceId} (\hyperlink{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{mamaFtMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}, const char $\ast$id)
+\begin{DoxyCompactList}\small\item\em Set the instance ID of the MAMA FT member. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{ft_8h_a43caaf4c073500b97d432b504dac9d6c}{mamaFtStateToString} (\hyperlink{ft_8h_a64fea0f33d331b62bbae5acf113513f9}{mamaFtState} \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Convert a fault tolerant state to a string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ft_8h_a64fea0f33d331b62bbae5acf113513f9}{
+\index{ft.h@{ft.h}!mamaFtState@{mamaFtState}}
+\index{mamaFtState@{mamaFtState}!ft.h@{ft.h}}
+\subsubsection[{mamaFtState}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaFtState\_\-}  {\bf mamaFtState}}}
+\label{ft_8h_a64fea0f33d331b62bbae5acf113513f9}
+
+
+The enumeration of fault tolerant states. \hypertarget{ft_8h_a059281606cac61573a23ecd2ce66020d}{
+\index{ft.h@{ft.h}!mamaFtType@{mamaFtType}}
+\index{mamaFtType@{mamaFtType}!ft.h@{ft.h}}
+\subsubsection[{mamaFtType}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaFtType\_\-}  {\bf mamaFtType}}}
+\label{ft_8h_a059281606cac61573a23ecd2ce66020d}
+
+
+The enumeration of fault tolerant types. \hypertarget{ft_8h_a0c2262c886637c5f104d3fa3da66014a}{
+\index{ft.h@{ft.h}!mamaFtMember@{mamaFtMember}}
+\index{mamaFtMember@{mamaFtMember}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf mamaFtMember}}}
+\label{ft_8h_a0c2262c886637c5f104d3fa3da66014a}
+\hypertarget{ft_8h_aac4f4544a0e78ad8ade2dc0e19ffc993}{
+\index{ft.h@{ft.h}!groupName@{groupName}}
+\index{groupName@{groupName}!ft.h@{ft.h}}
+\subsubsection[{groupName}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char$\ast$ {\bf groupName}}}
+\label{ft_8h_aac4f4544a0e78ad8ade2dc0e19ffc993}
+\hypertarget{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{
+\index{ft.h@{ft.h}!state@{state}}
+\index{state@{state}!ft.h@{ft.h}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}typedef const char {\bf mamaFtState} {\bf state}}}
+\label{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}
+\hypertarget{ft_8h_a148d2287aeeaff82cbcbc835458706f0}{
+\index{ft.h@{ft.h}!closure@{closure}}
+\index{closure@{closure}!ft.h@{ft.h}}
+\subsubsection[{closure}]{\setlength{\rightskip}{0pt plus 5cm}typedef void $\ast$ {\bf closure}}}
+\label{ft_8h_a148d2287aeeaff82cbcbc835458706f0}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{ft_8h_a3d6cfa5032b0f5d7da86685083089400}{
+\index{ft.h@{ft.h}!mamaFtState\_\-@{mamaFtState\_\-}}
+\index{mamaFtState\_\-@{mamaFtState\_\-}!ft.h@{ft.h}}
+\subsubsection[{mamaFtState\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaFtState\_\-}}}
+\label{ft_8h_a3d6cfa5032b0f5d7da86685083089400}
+
+
+The enumeration of fault tolerant states. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-FT\_\-STATE\_\-STANDBY@{MAMA\_\-FT\_\-STATE\_\-STANDBY}!ft.h@{ft.h}}\index{ft.h@{ft.h}!MAMA\_\-FT\_\-STATE\_\-STANDBY@{MAMA\_\-FT\_\-STATE\_\-STANDBY}}\item[{\em 
+\hypertarget{ft_8h_a3d6cfa5032b0f5d7da86685083089400afbf314e903193d5c5679e48b62b41d04}{
+MAMA\_\-FT\_\-STATE\_\-STANDBY}
+\label{ft_8h_a3d6cfa5032b0f5d7da86685083089400afbf314e903193d5c5679e48b62b41d04}
+}]The mamaFtMember is currently not the highest weighted member in the group. \index{MAMA\_\-FT\_\-STATE\_\-ACTIVE@{MAMA\_\-FT\_\-STATE\_\-ACTIVE}!ft.h@{ft.h}}\index{ft.h@{ft.h}!MAMA\_\-FT\_\-STATE\_\-ACTIVE@{MAMA\_\-FT\_\-STATE\_\-ACTIVE}}\item[{\em 
+\hypertarget{ft_8h_a3d6cfa5032b0f5d7da86685083089400a76b4971e27b661ec36fc9d5810c52e02}{
+MAMA\_\-FT\_\-STATE\_\-ACTIVE}
+\label{ft_8h_a3d6cfa5032b0f5d7da86685083089400a76b4971e27b661ec36fc9d5810c52e02}
+}]The mamaFtMember is currently the highest weighted member in the group. \index{MAMA\_\-FT\_\-STATE\_\-UNKNOWN@{MAMA\_\-FT\_\-STATE\_\-UNKNOWN}!ft.h@{ft.h}}\index{ft.h@{ft.h}!MAMA\_\-FT\_\-STATE\_\-UNKNOWN@{MAMA\_\-FT\_\-STATE\_\-UNKNOWN}}\item[{\em 
+\hypertarget{ft_8h_a3d6cfa5032b0f5d7da86685083089400a77125db0cec60d92aec803a26e6ff6c9}{
+MAMA\_\-FT\_\-STATE\_\-UNKNOWN}
+\label{ft_8h_a3d6cfa5032b0f5d7da86685083089400a77125db0cec60d92aec803a26e6ff6c9}
+}]The mamaFtMember has yet to establish its state. \end{description}
+\end{Desc}
+
+\hypertarget{ft_8h_adba15645b426b265eec00df3d31ff25b}{
+\index{ft.h@{ft.h}!mamaFtType\_\-@{mamaFtType\_\-}}
+\index{mamaFtType\_\-@{mamaFtType\_\-}!ft.h@{ft.h}}
+\subsubsection[{mamaFtType\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaFtType\_\-}}}
+\label{ft_8h_adba15645b426b265eec00df3d31ff25b}
+
+
+The enumeration of fault tolerant types. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-FT\_\-TYPE\_\-MULTICAST@{MAMA\_\-FT\_\-TYPE\_\-MULTICAST}!ft.h@{ft.h}}\index{ft.h@{ft.h}!MAMA\_\-FT\_\-TYPE\_\-MULTICAST@{MAMA\_\-FT\_\-TYPE\_\-MULTICAST}}\item[{\em 
+\hypertarget{ft_8h_adba15645b426b265eec00df3d31ff25ba0f32023efd1caa399d4e54a0413fc071}{
+MAMA\_\-FT\_\-TYPE\_\-MULTICAST}
+\label{ft_8h_adba15645b426b265eec00df3d31ff25ba0f32023efd1caa399d4e54a0413fc071}
+}]MAMA creates sockets directly for sending and receiving heartbeats. The middleware is not used \index{MAMA\_\-FT\_\-TYPE\_\-BRIDGE@{MAMA\_\-FT\_\-TYPE\_\-BRIDGE}!ft.h@{ft.h}}\index{ft.h@{ft.h}!MAMA\_\-FT\_\-TYPE\_\-BRIDGE@{MAMA\_\-FT\_\-TYPE\_\-BRIDGE}}\item[{\em 
+\hypertarget{ft_8h_adba15645b426b265eec00df3d31ff25baf637dd1daa6e6edbd6a5f3a38e5692e5}{
+MAMA\_\-FT\_\-TYPE\_\-BRIDGE}
+\label{ft_8h_adba15645b426b265eec00df3d31ff25baf637dd1daa6e6edbd6a5f3a38e5692e5}
+}]Use the middleware and MAMA subscriptions for sending and receiving heartbeats. \index{MAMA\_\-FT\_\-TYPE\_\-MAX@{MAMA\_\-FT\_\-TYPE\_\-MAX}!ft.h@{ft.h}}\index{ft.h@{ft.h}!MAMA\_\-FT\_\-TYPE\_\-MAX@{MAMA\_\-FT\_\-TYPE\_\-MAX}}\item[{\em 
+\hypertarget{ft_8h_adba15645b426b265eec00df3d31ff25ba735e231c8931c2a1ef306ed169e92442}{
+MAMA\_\-FT\_\-TYPE\_\-MAX}
+\label{ft_8h_adba15645b426b265eec00df3d31ff25ba735e231c8931c2a1ef306ed169e92442}
+}]Used internally. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ft_8h_a5e400e7743e64aa4bbe12667e61cbd10}{
+\index{ft.h@{ft.h}!void@{void}}
+\index{void@{void}!ft.h@{ft.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em mamaQueueLowWatermarkCb})}}
+\label{ft_8h_a5e400e7743e64aa4bbe12667e61cbd10}
+
+
+Callback function type for MAMA fault tolerant state change events. Function prototype for \hyperlink{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}{mamaSymbolList\_\-iterate()} which iterates over each member of the symbol list.
+
+Callback invoked when the queue size returns to the lower limit specified.
+
+Callback passed to mama\_\-setBridgeInfoCallback ().
+
+Extended stop callback that improves on mamaStopCB by including a bridge impl pointer and closure in the signature.
+
+Callback invoked when default thread for middleware has finished processing.
+
+Definition of a callback.
+
+Invoked whenever the inbox has been destroyed.
+
+NB.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ftMember}]The mamaFtMember to which the callback event applies \item[\mbox{$\leftarrow$} {\em groupName}]The group name of the mamaFtMember for which the fault tolerant event applies \item[\mbox{$\leftarrow$} {\em mamaFtState}]The new fault tolerant state for the group member \item[\mbox{$\leftarrow$} {\em closure}]The closure passed to the mamaFtMember when \hyperlink{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}{mamaFtMember\_\-setup()} is called\end{DoxyParams}
+Not currently used. Invoked when an error is encountered during p2p messaging.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em status}]The mama\_\-status describing the error condition. \item[{\em closure}]The user supplied data passed to \hyperlink{inbox_8h_a41afd2bd8dfda06955958f929893f106}{mamaInbox\_\-create()}\item[{\em inbox}]The mama inbox. \item[{\em closure}]The user supplied data passed to \hyperlink{inbox_8h_a41afd2bd8dfda06955958f929893f106}{mamaInbox\_\-create()}\end{DoxyParams}
+This will be invoked when info messages are logged at the bridge level. Currently only invoked for LBM log messages.
+
+Only Wombat TCP middleware supports low water mark callbacks. \hypertarget{ft_8h_a95c287c89db0ea6919eddf95ef0cd048}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-create@{mamaFtMember\_\-create}}
+\index{mamaFtMember\_\-create@{mamaFtMember\_\-create}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-create ({\bf mamaFtMember} $\ast$ {\em member})}}
+\label{ft_8h_a95c287c89db0ea6919eddf95ef0cd048}
+
+
+Allocate a MAMA fault tolerance group member. This function is typically followed by \hyperlink{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}{mamaFtMember\_\-setup()} and \hyperlink{ft_8h_a758d43430f4288e72e52da8363ec38c1}{mamaFtMember\_\-activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em member}]A pointer to a mamaFtMember. When the function is called successfully the ftMember will be a pointer to a block of allocated memory.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-setup@{mamaFtMember\_\-setup}}
+\index{mamaFtMember\_\-setup@{mamaFtMember\_\-setup}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-setup}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-setup ({\bf mamaFtMember} {\em member}, \/  {\bf mamaFtType} {\em fttype}, \/  {\bf mamaQueue} {\em eventQueue}, \/  mamaFtMemberOnFtStateChangeCb {\em callback}, \/  {\bf mamaTransport} {\em transport}, \/  const char $\ast$ {\em groupName}, \/  {\bf mama\_\-u32\_\-t} {\em weight}, \/  {\bf mama\_\-f64\_\-t} {\em heartbeatInterval}, \/  {\bf mama\_\-f64\_\-t} {\em timeoutInterval}, \/  void $\ast$ {\em closure})}}
+\label{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}
+
+
+Set up a MAMA fault tolerance group member. This is only an initialization function. In order to actually start the fault tolerance monitoring, use \hyperlink{ft_8h_a758d43430f4288e72e52da8363ec38c1}{mamaFtMember\_\-activate()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember to be initialized \item[\mbox{$\leftarrow$} {\em fttype}]The type of fault tolerance to be used for the member \item[\mbox{$\leftarrow$} {\em eventQueue}]The queue on which the mamaFtMember sends and receives heartbeats \item[\mbox{$\leftarrow$} {\em transport}]The mamaTransport used for sending and receiving heartbeats \item[\mbox{$\leftarrow$} {\em groupName}]The group name for the mamaFtMember \item[\mbox{$\leftarrow$} {\em weight}]The initial weight of the mamaFtMember \item[\mbox{$\leftarrow$} {\em heartbeatInterval}]The time in seconds between sending heartbeats \item[\mbox{$\leftarrow$} {\em timeoutInterval}]The time in seconds that a mamaFtMember in state MAMA\_\-FT\_\-STATE\_\-STANBY or MAMA\_\-FT\_\-STATE\_\-UNKNOWN will wait to receive a heartbeat before changing state to MAMA\_\-FT\_\-STATE\_\-ACTIVE \item[\mbox{$\leftarrow$} {\em closure}]The closure will be passed to subsequent callback invocations for thie mamaFtMember\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status MAMA\_\-STATUS\_\-OK will be returned on success, otherwise a mama\_\-status code indicating failure will be returned 
+\end{DoxyReturn}
+\hypertarget{ft_8h_ac2f37e7a321f01fdebd0ce3f5b5f4a99}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-destroy@{mamaFtMember\_\-destroy}}
+\index{mamaFtMember\_\-destroy@{mamaFtMember\_\-destroy}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-destroy ({\bf mamaFtMember} {\em member})}}
+\label{ft_8h_ac2f37e7a321f01fdebd0ce3f5b5f4a99}
+
+
+Destroy a MAMA fault tolerance group member. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember. When the function returns, memory previously allocated for the member will have been freed\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a758d43430f4288e72e52da8363ec38c1}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-activate@{mamaFtMember\_\-activate}}
+\index{mamaFtMember\_\-activate@{mamaFtMember\_\-activate}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-activate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-activate ({\bf mamaFtMember} {\em member})}}
+\label{ft_8h_a758d43430f4288e72e52da8363ec38c1}
+
+
+Activate the MAMA fault tolerance group member. The member will begin to send and receive heartbeats. If the member is already active, this function call will deactivate it
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status MAMA\_\-STATUS\_\-OK will be returned on success, otherwuse a mama\_\-status code indicating failure will be returned 
+\end{DoxyReturn}
+\hypertarget{ft_8h_ad4d438d58796c8819700ee8737397818}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-deactivate@{mamaFtMember\_\-deactivate}}
+\index{mamaFtMember\_\-deactivate@{mamaFtMember\_\-deactivate}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-deactivate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-deactivate ({\bf mamaFtMember} {\em member})}}
+\label{ft_8h_ad4d438d58796c8819700ee8737397818}
+
+
+Deactivate the MAMA fault tolerance group member. The member will stop sending and listening for heartbeats.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]the mamaFtMember\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAAM\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a7b48f830433aea396f1b3c354aa55e38}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-isActive@{mamaFtMember\_\-isActive}}
+\index{mamaFtMember\_\-isActive@{mamaFtMember\_\-isActive}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-isActive}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-isActive (const {\bf mamaFtMember} {\em member}, \/  int $\ast$ {\em result})}}
+\label{ft_8h_a7b48f830433aea396f1b3c354aa55e38}
+
+
+Get whether the MAMA fault tolerance member is actively running (not related to its state). Use mamaFtMember\_\-getState() to determine the actual state of the member.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\rightarrow$} {\em result}]This will be set to 1 if the member is currently active, 0 if it is not\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a7a25c1439f05a3ce54e6fdce46773233}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-getGroupName@{mamaFtMember\_\-getGroupName}}
+\index{mamaFtMember\_\-getGroupName@{mamaFtMember\_\-getGroupName}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-getGroupName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-getGroupName (const {\bf mamaFtMember} {\em member}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{ft_8h_a7a25c1439f05a3ce54e6fdce46773233}
+
+
+Get the name of the group to which this MAMA FT member belongs. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\rightarrow$} {\em result}]When the function is called successfully, this will point to the member's group name\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be on of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_af44f697e38a64ab1c434c846a003a382}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-getWeight@{mamaFtMember\_\-getWeight}}
+\index{mamaFtMember\_\-getWeight@{mamaFtMember\_\-getWeight}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-getWeight}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-getWeight (const {\bf mamaFtMember} {\em member}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{ft_8h_af44f697e38a64ab1c434c846a003a382}
+
+
+Get the fault tolerance weight of the MAMA FT member. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\rightarrow$} {\em result}]When the function is called successfully, this will store the value of the member's weight\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_adbbf8da38ba266e95a3b39a5d2f912b4}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-getHeartbeatInterval@{mamaFtMember\_\-getHeartbeatInterval}}
+\index{mamaFtMember\_\-getHeartbeatInterval@{mamaFtMember\_\-getHeartbeatInterval}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-getHeartbeatInterval}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-getHeartbeatInterval (const {\bf mamaFtMember} {\em member}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em result})}}
+\label{ft_8h_adbbf8da38ba266e95a3b39a5d2f912b4}
+
+
+Get the fault tolerance heartbeat interval of the MAMA FT member. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\rightarrow$} {\em result}]When the function is called successfully, this will store the value of the member's heartbeat interval\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a69e824deaa27008e7e8b76b1c18f0ed7}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-getTimeoutInterval@{mamaFtMember\_\-getTimeoutInterval}}
+\index{mamaFtMember\_\-getTimeoutInterval@{mamaFtMember\_\-getTimeoutInterval}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-getTimeoutInterval}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-getTimeoutInterval (const {\bf mamaFtMember} {\em member}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em result})}}
+\label{ft_8h_a69e824deaa27008e7e8b76b1c18f0ed7}
+
+
+Get the fault tolerance timeout interval of the MAMA FT member. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\rightarrow$} {\em result}]When the function is called successfully, this will store the value of the member's timeout interval\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a4dab4bad1fd5c248a60f40bcda934ae7}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-getHeartbeatTick@{mamaFtMember\_\-getHeartbeatTick}}
+\index{mamaFtMember\_\-getHeartbeatTick@{mamaFtMember\_\-getHeartbeatTick}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-getHeartbeatTick}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-getHeartbeatTick (const {\bf mamaFtMember} {\em member}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{ft_8h_a4dab4bad1fd5c248a60f40bcda934ae7}
+
+
+Get the current heartbeat tick of the MAMA FT member. \hypertarget{ft_8h_ad478e3993f10f9520b116d28efaf52b2}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-getClosure@{mamaFtMember\_\-getClosure}}
+\index{mamaFtMember\_\-getClosure@{mamaFtMember\_\-getClosure}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-getClosure (const {\bf mamaFtMember} {\em member}, \/  void $\ast$$\ast$ {\em result})}}
+\label{ft_8h_ad478e3993f10f9520b116d28efaf52b2}
+
+
+Get the closure argument (provided in the \hyperlink{ft_8h_ab20d0e20f879c45cb25dfe1cdd583ba4}{mamaFtMember\_\-setup()} function) of the MAMA FT member. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\rightarrow$} {\em result}]When the function is called successfully, this will point to member's closure\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_ad9a1f82582287a4ff2610e42ce0503fd}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-setWeight@{mamaFtMember\_\-setWeight}}
+\index{mamaFtMember\_\-setWeight@{mamaFtMember\_\-setWeight}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-setWeight}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-setWeight ({\bf mamaFtMember} {\em member}, \/  {\bf mama\_\-u32\_\-t} {\em value})}}
+\label{ft_8h_ad9a1f82582287a4ff2610e42ce0503fd}
+
+
+Set the fault tolerance weight of the MAMA FT member. The FT weight can be changed dynamically, if desired. The member with the highest weight will become the active member.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\leftarrow$} {\em value}]The new fault tolerance weight\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a5058700e88719ac4eacfa44169dd8858}{
+\index{ft.h@{ft.h}!mamaFtMember\_\-setInstanceId@{mamaFtMember\_\-setInstanceId}}
+\index{mamaFtMember\_\-setInstanceId@{mamaFtMember\_\-setInstanceId}!ft.h@{ft.h}}
+\subsubsection[{mamaFtMember\_\-setInstanceId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFtMember\_\-setInstanceId ({\bf mamaFtMember} {\em member}, \/  const char $\ast$ {\em id})}}
+\label{ft_8h_a5058700e88719ac4eacfa44169dd8858}
+
+
+Set the instance ID of the MAMA FT member. The instance ID is used to uniquely identify members of a fault tolerant group.
+
+Most applications should allow the MAMA API to automatically set the instance ID and this function would not be called. If not set explicitly before activation, then the instance ID is automatically set according to the following format: \{group-\/name\}.\{hex-\/ip-\/addr\}.\{hex-\/pid\}. For example, if the group name is \char`\"{}FOO\char`\"{}, the IP address is 192.168.187.9, and the PId is 10777, the default instance ID would be: FOO.c0a8bb9.2a19
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em member}]The mamaFtMember \item[\mbox{$\leftarrow$} {\em The}]new instance ID. This string is copied by the function\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{ft_8h_a43caaf4c073500b97d432b504dac9d6c}{
+\index{ft.h@{ft.h}!mamaFtStateToString@{mamaFtStateToString}}
+\index{mamaFtStateToString@{mamaFtStateToString}!ft.h@{ft.h}}
+\subsubsection[{mamaFtStateToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaFtStateToString ({\bf mamaFtState} {\em state})}}
+\label{ft_8h_a43caaf4c073500b97d432b504dac9d6c}
+
+
+Convert a fault tolerant state to a string. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em state}]The state to convert.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const char$\ast$ A string representation of the state. This will be either \char`\"{}standby\char`\"{}, \char`\"{}active\char`\"{}, \char`\"{}unknown\char`\"{}, or \char`\"{}error\char`\"{} in the case where the current state is unrecognised 
+\end{DoxyReturn}

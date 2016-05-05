@@ -1,0 +1,308 @@
+\hypertarget{symbollist_8h}{
+\section{symbollist.h File Reference}
+\label{symbollist_8h}\index{symbollist.h@{symbollist.h}}
+}
+{\ttfamily \#include \char`\"{}mama/mama.h\char`\"{}}\par
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include \char`\"{}mama/symbollisttypes.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure}
+\item 
+typedef \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{symbollist_8h_ad640ad3c140e7c0ea302d78b85a223fe}{mama\_\-status} (MAMACALLTYPE $\ast$addSymbolCbType)(\hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} symbol
+\begin{DoxyCompactList}\small\item\em The registered add symbol callback is executed for each symbol added to the symbol list. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{symbollist_8h_a4113a3d4a075b2ab22ec382bd717d8ff}{void} (MAMACALLTYPE $\ast$mamaSymbolListIterateCompleteFunc)(\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList
+\begin{DoxyCompactList}\small\item\em Function invoked when completing the iteration over the symbol list using \hyperlink{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}{mamaSymbolList\_\-iterate()}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_ab9da7b7fb8ea07f84a625bc3424c6fcd}{mamaSymbolList\_\-addMember} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Add a symbol member to the symbol list, this will cause the add callback to be invoked if it has been installed. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_aee69e9ab3cc99e4b537a52a9d1823631}{mamaSymbolList\_\-allocate} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} $\ast$symbolList)
+\begin{DoxyCompactList}\small\item\em Allocate and initialize memory for a new symbolList, mamaSymbolList\_\-deallocate should be called on the returned symbol list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} \hyperlink{symbollist_8h_ad99e907854429575ee4e17a2230276f9}{mamaSymbolList\_\-allocateMember} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList)
+\begin{DoxyCompactList}\small\item\em Allocate a symbolListMember. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a7d2d62921d08943df0bf6fc17b995203}{mamaSymbolList\_\-clear} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, int membersToo)
+\begin{DoxyCompactList}\small\item\em Clear the symbol list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a81cc35d15a8391a3534d84fa552516f3}{mamaSymbolList\_\-deallocate} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList)
+\begin{DoxyCompactList}\small\item\em Free a symbol list created by mamaSymbolList\_\-allocate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_add4d4e4352db211fdb170a61f71bd0dc}{mamaSymbolList\_\-deallocateMember} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Deallocate a symbolListMember. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_acbc91003958db586c837fd8153358deb}{mamaSymbolList\_\-deallocateWithMembers} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList)
+\begin{DoxyCompactList}\small\item\em Free the memory for the symbolList and all members. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_aab4998d5b48f784a33b0434422683a60}{mamaSymbolList\_\-findMember} (const \hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, const char $\ast$symbol, const char $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} $\ast$\hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Find a symbol member in the symbol list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a2b06d0c47ef380a8e3ba20e63e27f080}{mamaSymbolList\_\-getClosure} (const \hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, void $\ast$$\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Get the closure associated with the this symbolList. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a326d98d3b4e6e924f7e22b3d922ac80e}{mamaSymbolList\_\-getSize} (const \hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, unsigned long $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get the size of the symbolList. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}{mamaSymbolList\_\-iterate} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, mamaSymbolListIterateMemberFunc memberFunc, mamaSymbolListIterateCompleteFunc completeFunc, void $\ast$iterateClosure)
+\begin{DoxyCompactList}\small\item\em Iterate over the symbol list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_ad44174d05203ecc3b5020da6e4f9d678}{mamaSymbolList\_\-removeMember} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, const char $\ast$symbol, const char $\ast$\hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} $\ast$\hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Remove a symbol member from the symbol list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_ab0bdfbe9df624f46e8991b9638a3d315}{mamaSymbolList\_\-removeMemberByRef} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, \hyperlink{symbollisttypes_8h_a518f773e0ca78cc75dccfd5a90010a41}{mamaSymbolListMember} \hyperlink{symbollist_8h_acfaad47fde20420a848322331be6d771}{member})
+\begin{DoxyCompactList}\small\item\em Remove a symbol member from the symbol list. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a3994249274bb8ba7494d773576e28bec}{mamaSymbolList\_\-setAddSymbolHandler} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, addSymbolCbType addCb)
+\begin{DoxyCompactList}\small\item\em Registers the user defined add symbol callback with the symbolList. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a4edf04f18d0bcb215dee81d9be1be3bb}{mamaSymbolList\_\-setClosure} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Set the closure associated with the this symbolList. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{symbollist_8h_a1a2153f40006255dc143dacbb0383d3f}{mamaSymbolList\_\-setRemoveSymbolHandler} (\hyperlink{symbollisttypes_8h_a442feed9091f17459da5d9ebfa65e0a1}{mamaSymbolList} symbolList, removeSymbolCbType removeCb)
+\begin{DoxyCompactList}\small\item\em Registers the user defined remove symbol callback with the symbolList. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{symbollist_8h_a70fd461795e10b081f5828521a66c949}{
+\index{symbollist.h@{symbollist.h}!closure@{closure}}
+\index{closure@{closure}!symbollist.h@{symbollist.h}}
+\subsubsection[{closure}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf closure}}}
+\label{symbollist_8h_a70fd461795e10b081f5828521a66c949}
+\hypertarget{symbollist_8h_acfaad47fde20420a848322331be6d771}{
+\index{symbollist.h@{symbollist.h}!member@{member}}
+\index{member@{member}!symbollist.h@{symbollist.h}}
+\subsubsection[{member}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mamaSymbolListMember} {\bf member}}}
+\label{symbollist_8h_acfaad47fde20420a848322331be6d771}
+
+
+\subsection{Function Documentation}
+\hypertarget{symbollist_8h_ad640ad3c140e7c0ea302d78b85a223fe}{
+\index{symbollist.h@{symbollist.h}!mama\_\-status@{mama\_\-status}}
+\index{mama\_\-status@{mama\_\-status}!symbollist.h@{symbollist.h}}
+\subsubsection[{mama\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mama\_\-status} (MAMACALLTYPE $\ast$ {\em removeSymbolCbType})}}
+\label{symbollist_8h_ad640ad3c140e7c0ea302d78b85a223fe}
+
+
+The registered add symbol callback is executed for each symbol added to the symbol list. Prototype for remove symbol callback.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbol}]The symbol to be added to the list \item[\mbox{$\leftarrow$} {\em userData}]User-\/data to be associated with symbol\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK
+\end{DoxyReturn}
+The registered remove symbol callback is executed just prior to a symbol being removed from the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbol}]The symbol to be removed from the list \item[{\em userData}]User-\/data previously associated with symbol \end{DoxyParams}
+\hypertarget{symbollist_8h_a4113a3d4a075b2ab22ec382bd717d8ff}{
+\index{symbollist.h@{symbollist.h}!void@{void}}
+\index{void@{void}!symbollist.h@{symbollist.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em mamaSymbolListIterateCompleteFunc})}}
+\label{symbollist_8h_a4113a3d4a075b2ab22ec382bd717d8ff}
+
+
+Function invoked when completing the iteration over the symbol list using \hyperlink{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}{mamaSymbolList\_\-iterate()}. Function prototype for \hyperlink{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}{mamaSymbolList\_\-iterate()} which iterates over each member of the symbol list. \hypertarget{symbollist_8h_ab9da7b7fb8ea07f84a625bc3424c6fcd}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-addMember@{mamaSymbolList\_\-addMember}}
+\index{mamaSymbolList\_\-addMember@{mamaSymbolList\_\-addMember}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-addMember}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-addMember ({\bf mamaSymbolList} {\em symbolList}, \/  {\bf mamaSymbolListMember} {\em member})}}
+\label{symbollist_8h_ab9da7b7fb8ea07f84a625bc3424c6fcd}
+
+
+Add a symbol member to the symbol list, this will cause the add callback to be invoked if it has been installed. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\rightarrow$} {\em member}]The symbol member.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_aee69e9ab3cc99e4b537a52a9d1823631}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-allocate@{mamaSymbolList\_\-allocate}}
+\index{mamaSymbolList\_\-allocate@{mamaSymbolList\_\-allocate}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-allocate ({\bf mamaSymbolList} $\ast$ {\em symbolList})}}
+\label{symbollist_8h_aee69e9ab3cc99e4b537a52a9d1823631}
+
+
+Allocate and initialize memory for a new symbolList, mamaSymbolList\_\-deallocate should be called on the returned symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em symbolList}]The address of the allocated symbolList.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_ad99e907854429575ee4e17a2230276f9}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-allocateMember@{mamaSymbolList\_\-allocateMember}}
+\index{mamaSymbolList\_\-allocateMember@{mamaSymbolList\_\-allocateMember}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-allocateMember}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaSymbolListMember} mamaSymbolList\_\-allocateMember ({\bf mamaSymbolList} {\em symbolList})}}
+\label{symbollist_8h_ad99e907854429575ee4e17a2230276f9}
+
+
+Allocate a symbolListMember. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList the member to be allocated in.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the new member. 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a7d2d62921d08943df0bf6fc17b995203}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-clear@{mamaSymbolList\_\-clear}}
+\index{mamaSymbolList\_\-clear@{mamaSymbolList\_\-clear}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-clear ({\bf mamaSymbolList} {\em symbolList}, \/  int {\em membersToo})}}
+\label{symbollist_8h_a7d2d62921d08943df0bf6fc17b995203}
+
+
+Clear the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em membersToo}]Whether to also clear all members of the list.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a81cc35d15a8391a3534d84fa552516f3}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-deallocate@{mamaSymbolList\_\-deallocate}}
+\index{mamaSymbolList\_\-deallocate@{mamaSymbolList\_\-deallocate}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-deallocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-deallocate ({\bf mamaSymbolList} {\em symbolList})}}
+\label{symbollist_8h_a81cc35d15a8391a3534d84fa552516f3}
+
+
+Free a symbol list created by mamaSymbolList\_\-allocate. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em symbolList}]The symbolList to be deallocated.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_add4d4e4352db211fdb170a61f71bd0dc}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-deallocateMember@{mamaSymbolList\_\-deallocateMember}}
+\index{mamaSymbolList\_\-deallocateMember@{mamaSymbolList\_\-deallocateMember}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-deallocateMember}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-deallocateMember ({\bf mamaSymbolList} {\em symbolList}, \/  {\bf mamaSymbolListMember} {\em member})}}
+\label{symbollist_8h_add4d4e4352db211fdb170a61f71bd0dc}
+
+
+Deallocate a symbolListMember. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList the member belongs to. \item[\mbox{$\leftarrow$} {\em member}]The member of the list to deallocate.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_acbc91003958db586c837fd8153358deb}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-deallocateWithMembers@{mamaSymbolList\_\-deallocateWithMembers}}
+\index{mamaSymbolList\_\-deallocateWithMembers@{mamaSymbolList\_\-deallocateWithMembers}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-deallocateWithMembers}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-deallocateWithMembers ({\bf mamaSymbolList} {\em symbolList})}}
+\label{symbollist_8h_acbc91003958db586c837fd8153358deb}
+
+
+Free the memory for the symbolList and all members. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList to be deallocated.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_aab4998d5b48f784a33b0434422683a60}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-findMember@{mamaSymbolList\_\-findMember}}
+\index{mamaSymbolList\_\-findMember@{mamaSymbolList\_\-findMember}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-findMember}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-findMember (const {\bf mamaSymbolList} {\em symbolList}, \/  const char $\ast$ {\em symbol}, \/  const char $\ast$ {\em source}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaSymbolListMember} $\ast$ {\em member})}}
+\label{symbollist_8h_aab4998d5b48f784a33b0434422683a60}
+
+
+Find a symbol member in the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em symbol}]The name of the symbol to find. \item[\mbox{$\leftarrow$} {\em source}]The source of the symbol to find. \item[\mbox{$\leftarrow$} {\em transport}]The tport of the symbol to find. \item[\mbox{$\rightarrow$} {\em member}]The return symbol member (set to NULL if not found).\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-INVALID\_\-ARG -\/ the member can't be found. MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a2b06d0c47ef380a8e3ba20e63e27f080}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-getClosure@{mamaSymbolList\_\-getClosure}}
+\index{mamaSymbolList\_\-getClosure@{mamaSymbolList\_\-getClosure}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-getClosure (const {\bf mamaSymbolList} {\em symbolList}, \/  void $\ast$$\ast$ {\em closure})}}
+\label{symbollist_8h_a2b06d0c47ef380a8e3ba20e63e27f080}
+
+
+Get the closure associated with the this symbolList. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\rightarrow$} {\em closure}]The closure\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a326d98d3b4e6e924f7e22b3d922ac80e}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-getSize@{mamaSymbolList\_\-getSize}}
+\index{mamaSymbolList\_\-getSize@{mamaSymbolList\_\-getSize}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-getSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-getSize (const {\bf mamaSymbolList} {\em symbolList}, \/  unsigned long $\ast$ {\em size})}}
+\label{symbollist_8h_a326d98d3b4e6e924f7e22b3d922ac80e}
+
+
+Get the size of the symbolList. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em size}]The size\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status value can be one of: MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-iterate@{mamaSymbolList\_\-iterate}}
+\index{mamaSymbolList\_\-iterate@{mamaSymbolList\_\-iterate}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-iterate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-iterate ({\bf mamaSymbolList} {\em symbolList}, \/  mamaSymbolListIterateMemberFunc {\em memberFunc}, \/  mamaSymbolListIterateCompleteFunc {\em completeFunc}, \/  void $\ast$ {\em iterateClosure})}}
+\label{symbollist_8h_a7ef47e18eddd0159015a0bc41155bd74}
+
+
+Iterate over the symbol list. The \char`\"{}handler\char`\"{} function will be invoked for each
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em memberFunc}]The function invoked for each symbol list member. \item[\mbox{$\leftarrow$} {\em completeFunc}]The function invoked upon completion. \item[\mbox{$\leftarrow$} {\em iterateClosure}]The closure passed to each callback\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_ad44174d05203ecc3b5020da6e4f9d678}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-removeMember@{mamaSymbolList\_\-removeMember}}
+\index{mamaSymbolList\_\-removeMember@{mamaSymbolList\_\-removeMember}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-removeMember}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-removeMember ({\bf mamaSymbolList} {\em symbolList}, \/  const char $\ast$ {\em symbol}, \/  const char $\ast$ {\em source}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaSymbolListMember} $\ast$ {\em member})}}
+\label{symbollist_8h_ad44174d05203ecc3b5020da6e4f9d678}
+
+
+Remove a symbol member from the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em symbol}]The name of the symbol to be removed. \item[\mbox{$\leftarrow$} {\em source}]The source of the symbol to be removed. \item[\mbox{$\leftarrow$} {\em transport}]The tport of the symbol to be removed. \item[\mbox{$\rightarrow$} {\em member}]The return symbol member (set to NULL if not found). Note that this will be freed by the symbol list and should be used for reference only.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-INVALID\_\-ARG -\/ the member can't be found. MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_ab0bdfbe9df624f46e8991b9638a3d315}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-removeMemberByRef@{mamaSymbolList\_\-removeMemberByRef}}
+\index{mamaSymbolList\_\-removeMemberByRef@{mamaSymbolList\_\-removeMemberByRef}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-removeMemberByRef}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-removeMemberByRef ({\bf mamaSymbolList} {\em symbolList}, \/  {\bf mamaSymbolListMember} {\em member})}}
+\label{symbollist_8h_ab0bdfbe9df624f46e8991b9638a3d315}
+
+
+Remove a symbol member from the symbol list. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\rightarrow$} {\em member}]The symbol to be removed.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a3994249274bb8ba7494d773576e28bec}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-setAddSymbolHandler@{mamaSymbolList\_\-setAddSymbolHandler}}
+\index{mamaSymbolList\_\-setAddSymbolHandler@{mamaSymbolList\_\-setAddSymbolHandler}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-setAddSymbolHandler}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-setAddSymbolHandler ({\bf mamaSymbolList} {\em symbolList}, \/  addSymbolCbType {\em addCb})}}
+\label{symbollist_8h_a3994249274bb8ba7494d773576e28bec}
+
+
+Registers the user defined add symbol callback with the symbolList. The registered callback will get called each time a symbol is added to the symbol list.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em addCb}]Pointer to the user defined callback. Must conform to function prototype {\ttfamily addSymbolCbType}.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a4edf04f18d0bcb215dee81d9be1be3bb}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-setClosure@{mamaSymbolList\_\-setClosure}}
+\index{mamaSymbolList\_\-setClosure@{mamaSymbolList\_\-setClosure}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-setClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-setClosure ({\bf mamaSymbolList} {\em symbolList}, \/  void $\ast$ {\em closure})}}
+\label{symbollist_8h_a4edf04f18d0bcb215dee81d9be1be3bb}
+
+
+Set the closure associated with the this symbolList. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em closure}]The closure\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{symbollist_8h_a1a2153f40006255dc143dacbb0383d3f}{
+\index{symbollist.h@{symbollist.h}!mamaSymbolList\_\-setRemoveSymbolHandler@{mamaSymbolList\_\-setRemoveSymbolHandler}}
+\index{mamaSymbolList\_\-setRemoveSymbolHandler@{mamaSymbolList\_\-setRemoveSymbolHandler}!symbollist.h@{symbollist.h}}
+\subsubsection[{mamaSymbolList\_\-setRemoveSymbolHandler}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaSymbolList\_\-setRemoveSymbolHandler ({\bf mamaSymbolList} {\em symbolList}, \/  removeSymbolCbType {\em removeCb})}}
+\label{symbollist_8h_a1a2153f40006255dc143dacbb0383d3f}
+
+
+Registers the user defined remove symbol callback with the symbolList. The registered callback will get called each time a symbol is deleted from the symbol list.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em symbolList}]The symbolList. \item[\mbox{$\leftarrow$} {\em removeCb}]Pointer to the user defined callback. Must conform to function prototype {\ttfamily removeSymbolCbType}.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

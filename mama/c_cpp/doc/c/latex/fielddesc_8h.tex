@@ -1,0 +1,387 @@
+\hypertarget{fielddesc_8h}{
+\section{fielddesc.h File Reference}
+\label{fielddesc_8h}\index{fielddesc.h@{fielddesc.h}}
+}
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include \char`\"{}wombat/port.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5}{mamaFieldType\_\-} \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType}
+\begin{DoxyCompactList}\small\item\em The mamaFieldDescriptor class represents a field in a mamaMsg. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5}{mamaFieldType\_\-} \{ \par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9644996dfc54104f8f228d613a2fa7aa}{MAMA\_\-FIELD\_\-TYPE\_\-MSG} =  1, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5d2ba88ee7b21c0b6db17814c4e583eb}{MAMA\_\-FIELD\_\-TYPE\_\-OPAQUE} =  7, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a67ae423e84e4e80081829af3bb61428f}{MAMA\_\-FIELD\_\-TYPE\_\-STRING} =  8, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4c99f774b629cd8d11c1261e380afad6}{MAMA\_\-FIELD\_\-TYPE\_\-BOOL} =  9, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a7a6e669169ac3b790d2e76fdf177d9c6}{MAMA\_\-FIELD\_\-TYPE\_\-CHAR} =  10, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a601553f266ae0620037cb277663b819a}{MAMA\_\-FIELD\_\-TYPE\_\-I8} =  14, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a1fbfc7f5aceba36e80ab7c954a2a0cf8}{MAMA\_\-FIELD\_\-TYPE\_\-U8} =  15, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afda85b77f231edbd7326b94ba2199ea5}{MAMA\_\-FIELD\_\-TYPE\_\-I16} =  16, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a00ffd8e6e608c3fe34856ef0aa547f10}{MAMA\_\-FIELD\_\-TYPE\_\-U16} =  17, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a3f7c5901944c9b4cbd187cdbb0439cdb}{MAMA\_\-FIELD\_\-TYPE\_\-I32} =  18, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af97f7354eeac2fe2f1af448efa9215fb}{MAMA\_\-FIELD\_\-TYPE\_\-U32} =  19, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5df910d1f03cebe215b5f432624a2661}{MAMA\_\-FIELD\_\-TYPE\_\-I64} =  20, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5ac4fdec3a95d4912ac0cc3014ac52ca28}{MAMA\_\-FIELD\_\-TYPE\_\-U64} =  21, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a39dd841749539dcd48f01072333deb8e}{MAMA\_\-FIELD\_\-TYPE\_\-F32} =  24, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a0f80e0d9fbccc0e95dec52a282d1db18}{MAMA\_\-FIELD\_\-TYPE\_\-F64} =  25, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a7c84b4afc2863c7081373e757517a058}{MAMA\_\-FIELD\_\-TYPE\_\-TIME} =  26, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5abbba232debb893ea68270cc09e0597a8}{MAMA\_\-FIELD\_\-TYPE\_\-PRICE} =  27, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5aab298e407bf4bc583c58808eaf745363}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-BOOL} =  29, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4d08e1350ec8a70991e9557a0d6d432d}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-CHAR} =  30, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af6cec5e75bfc928031cd66b043be0d99}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I8} =  34, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a2277b1e0952c8ace9f9b01bbba78a630}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U8} =  35, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a6aaa185dcd744ad3b7c071c07192784d}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I16} =  36, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5aa3f9b9c650fc63f535976bdae7f90c01}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U16} =  37, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a1edac98cfb4827805d68ba58fda4b917}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I32} =  38, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9c1ce37112baf2d616075fbf8b2eb7c1}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U32} =  39, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a3f2f7e45e6e7b3a296a222a2c2949e9d}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I64} =  40, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9387713f0e6193019ac0384a05fef07f}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U64} =  41, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af2d2686e6e31144b7e7732dfc724da21}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F32} =  44, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4f4e1d30e02898dad0e32355edd06eac}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F64} =  45, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afa25e2ce9cdaee157b12e9f5bd18b7c4}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-STRING} =  46, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5275369305134825d2748ba930e55588}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-MSG} =  47, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5970594d13694d2c61203602b3d1c702}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-TIME} =  48, 
+\par
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af1f617696b450ec89207bcd59a0ba554}{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-PRICE} =  49, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a533d46c84f3f3185a29667f986c11175}{MAMA\_\-FIELD\_\-TYPE\_\-QUANTITY} =  50, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9cbe3394ed0dfcd847dcf4077f5157da}{MAMA\_\-FIELD\_\-TYPE\_\-COLLECTION} =  99, 
+\hyperlink{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afd22550bd462e9d67207d0cfa0eefb36}{MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN} =  100
+ \}
+\begin{DoxyCompactList}\small\item\em The mamaFieldDescriptor class represents a field in a mamaMsg. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL const char $\ast$ \hyperlink{fielddesc_8h_a7b3a0a43637da97a50750739fbdca922}{mamaFieldTypeToString} (\hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type)
+\begin{DoxyCompactList}\small\item\em Return the field type as a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} \hyperlink{fielddesc_8h_a6d7e6599baf754f6d690f58b0cea9602}{stringToMamaFieldType} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Return the string as a field type. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fielddesc_8h_a8449cdd27f98cfb0e9b89b0b58e0d5b7}{mamaFieldDescriptor\_\-create} (\hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$descriptor, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Create a mamaFieldDescriptor. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fielddesc_8h_a4edc32a2fb0be03d9c1621f09dc9af53}{mamaFieldDescriptor\_\-destroy} (\hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaFieldDescriptor. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} \hyperlink{fielddesc_8h_a5465704466de67c0913e30fe45502692}{mamaFieldDescriptor\_\-getFid} (const \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor)
+\begin{DoxyCompactList}\small\item\em Return the field identifier. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} \hyperlink{fielddesc_8h_a943909efc6c971110f9ca04de0c9ddbf}{mamaFieldDescriptor\_\-getType} (const \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor)
+\begin{DoxyCompactList}\small\item\em Return the data type. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{fielddesc_8h_a0ac51f82e82ed3e729bdd31016e05d28}{mamaFieldDescriptor\_\-getName} (const \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor)
+\begin{DoxyCompactList}\small\item\em Return the human readable name of the field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{fielddesc_8h_a6e71780b808453b861415764a63e2dcf}{mamaFieldDescriptor\_\-getTypeName} (const \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor)
+\begin{DoxyCompactList}\small\item\em return a human readable representation of the type name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fielddesc_8h_a5170b62061f4a9dd85925b1a97d1832e}{mamaFieldDescriptor\_\-setClosure} (\hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Associate some user supplied data with this field descriptor. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fielddesc_8h_a682071ddb284b7f8e883391b5e299b5b}{mamaFieldDescriptor\_\-getClosure} (\hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} descriptor, void $\ast$$\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Return the user supplied data with this field descriptor. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldType@{mamaFieldType}}
+\index{mamaFieldType@{mamaFieldType}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldType}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaFieldType\_\-}  {\bf mamaFieldType}}}
+\label{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}
+
+
+The mamaFieldDescriptor class represents a field in a mamaMsg. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldType\_\-@{mamaFieldType\_\-}}
+\index{mamaFieldType\_\-@{mamaFieldType\_\-}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldType\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaFieldType\_\-}}}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5}
+
+
+The mamaFieldDescriptor class represents a field in a mamaMsg. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-FIELD\_\-TYPE\_\-MSG@{MAMA\_\-FIELD\_\-TYPE\_\-MSG}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-MSG@{MAMA\_\-FIELD\_\-TYPE\_\-MSG}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9644996dfc54104f8f228d613a2fa7aa}{
+MAMA\_\-FIELD\_\-TYPE\_\-MSG}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9644996dfc54104f8f228d613a2fa7aa}
+}]Sub message. \index{MAMA\_\-FIELD\_\-TYPE\_\-OPAQUE@{MAMA\_\-FIELD\_\-TYPE\_\-OPAQUE}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-OPAQUE@{MAMA\_\-FIELD\_\-TYPE\_\-OPAQUE}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5d2ba88ee7b21c0b6db17814c4e583eb}{
+MAMA\_\-FIELD\_\-TYPE\_\-OPAQUE}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5d2ba88ee7b21c0b6db17814c4e583eb}
+}]Opaque binary. \index{MAMA\_\-FIELD\_\-TYPE\_\-STRING@{MAMA\_\-FIELD\_\-TYPE\_\-STRING}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-STRING@{MAMA\_\-FIELD\_\-TYPE\_\-STRING}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a67ae423e84e4e80081829af3bb61428f}{
+MAMA\_\-FIELD\_\-TYPE\_\-STRING}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a67ae423e84e4e80081829af3bb61428f}
+}]String. \index{MAMA\_\-FIELD\_\-TYPE\_\-BOOL@{MAMA\_\-FIELD\_\-TYPE\_\-BOOL}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-BOOL@{MAMA\_\-FIELD\_\-TYPE\_\-BOOL}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4c99f774b629cd8d11c1261e380afad6}{
+MAMA\_\-FIELD\_\-TYPE\_\-BOOL}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4c99f774b629cd8d11c1261e380afad6}
+}]Boolean. \index{MAMA\_\-FIELD\_\-TYPE\_\-CHAR@{MAMA\_\-FIELD\_\-TYPE\_\-CHAR}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-CHAR@{MAMA\_\-FIELD\_\-TYPE\_\-CHAR}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a7a6e669169ac3b790d2e76fdf177d9c6}{
+MAMA\_\-FIELD\_\-TYPE\_\-CHAR}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a7a6e669169ac3b790d2e76fdf177d9c6}
+}]Character. \index{MAMA\_\-FIELD\_\-TYPE\_\-I8@{MAMA\_\-FIELD\_\-TYPE\_\-I8}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-I8@{MAMA\_\-FIELD\_\-TYPE\_\-I8}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a601553f266ae0620037cb277663b819a}{
+MAMA\_\-FIELD\_\-TYPE\_\-I8}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a601553f266ae0620037cb277663b819a}
+}]Signed 8 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-U8@{MAMA\_\-FIELD\_\-TYPE\_\-U8}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-U8@{MAMA\_\-FIELD\_\-TYPE\_\-U8}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a1fbfc7f5aceba36e80ab7c954a2a0cf8}{
+MAMA\_\-FIELD\_\-TYPE\_\-U8}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a1fbfc7f5aceba36e80ab7c954a2a0cf8}
+}]Unsigned byte. \index{MAMA\_\-FIELD\_\-TYPE\_\-I16@{MAMA\_\-FIELD\_\-TYPE\_\-I16}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-I16@{MAMA\_\-FIELD\_\-TYPE\_\-I16}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afda85b77f231edbd7326b94ba2199ea5}{
+MAMA\_\-FIELD\_\-TYPE\_\-I16}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afda85b77f231edbd7326b94ba2199ea5}
+}]Signed 16 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-U16@{MAMA\_\-FIELD\_\-TYPE\_\-U16}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-U16@{MAMA\_\-FIELD\_\-TYPE\_\-U16}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a00ffd8e6e608c3fe34856ef0aa547f10}{
+MAMA\_\-FIELD\_\-TYPE\_\-U16}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a00ffd8e6e608c3fe34856ef0aa547f10}
+}]Unsigned 16 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-I32@{MAMA\_\-FIELD\_\-TYPE\_\-I32}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-I32@{MAMA\_\-FIELD\_\-TYPE\_\-I32}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a3f7c5901944c9b4cbd187cdbb0439cdb}{
+MAMA\_\-FIELD\_\-TYPE\_\-I32}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a3f7c5901944c9b4cbd187cdbb0439cdb}
+}]Signed 32 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-U32@{MAMA\_\-FIELD\_\-TYPE\_\-U32}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-U32@{MAMA\_\-FIELD\_\-TYPE\_\-U32}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af97f7354eeac2fe2f1af448efa9215fb}{
+MAMA\_\-FIELD\_\-TYPE\_\-U32}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af97f7354eeac2fe2f1af448efa9215fb}
+}]Unsigned 32 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-I64@{MAMA\_\-FIELD\_\-TYPE\_\-I64}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-I64@{MAMA\_\-FIELD\_\-TYPE\_\-I64}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5df910d1f03cebe215b5f432624a2661}{
+MAMA\_\-FIELD\_\-TYPE\_\-I64}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5df910d1f03cebe215b5f432624a2661}
+}]Signed 64 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-U64@{MAMA\_\-FIELD\_\-TYPE\_\-U64}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-U64@{MAMA\_\-FIELD\_\-TYPE\_\-U64}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5ac4fdec3a95d4912ac0cc3014ac52ca28}{
+MAMA\_\-FIELD\_\-TYPE\_\-U64}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5ac4fdec3a95d4912ac0cc3014ac52ca28}
+}]Unsigned 64 bit integer. \index{MAMA\_\-FIELD\_\-TYPE\_\-F32@{MAMA\_\-FIELD\_\-TYPE\_\-F32}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-F32@{MAMA\_\-FIELD\_\-TYPE\_\-F32}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a39dd841749539dcd48f01072333deb8e}{
+MAMA\_\-FIELD\_\-TYPE\_\-F32}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a39dd841749539dcd48f01072333deb8e}
+}]32 bit float \index{MAMA\_\-FIELD\_\-TYPE\_\-F64@{MAMA\_\-FIELD\_\-TYPE\_\-F64}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-F64@{MAMA\_\-FIELD\_\-TYPE\_\-F64}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a0f80e0d9fbccc0e95dec52a282d1db18}{
+MAMA\_\-FIELD\_\-TYPE\_\-F64}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a0f80e0d9fbccc0e95dec52a282d1db18}
+}]64 bit float \index{MAMA\_\-FIELD\_\-TYPE\_\-TIME@{MAMA\_\-FIELD\_\-TYPE\_\-TIME}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-TIME@{MAMA\_\-FIELD\_\-TYPE\_\-TIME}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a7c84b4afc2863c7081373e757517a058}{
+MAMA\_\-FIELD\_\-TYPE\_\-TIME}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a7c84b4afc2863c7081373e757517a058}
+}]64 bit MAMA time \index{MAMA\_\-FIELD\_\-TYPE\_\-PRICE@{MAMA\_\-FIELD\_\-TYPE\_\-PRICE}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-PRICE@{MAMA\_\-FIELD\_\-TYPE\_\-PRICE}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5abbba232debb893ea68270cc09e0597a8}{
+MAMA\_\-FIELD\_\-TYPE\_\-PRICE}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5abbba232debb893ea68270cc09e0597a8}
+}]MAMA price. \index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-BOOL@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-BOOL}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-BOOL@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-BOOL}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5aab298e407bf4bc583c58808eaf745363}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-BOOL}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5aab298e407bf4bc583c58808eaf745363}
+}]Array type support. \index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-CHAR@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-CHAR}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-CHAR@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-CHAR}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4d08e1350ec8a70991e9557a0d6d432d}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-CHAR}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4d08e1350ec8a70991e9557a0d6d432d}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I8@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I8}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I8@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I8}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af6cec5e75bfc928031cd66b043be0d99}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I8}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af6cec5e75bfc928031cd66b043be0d99}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U8@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U8}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U8@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U8}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a2277b1e0952c8ace9f9b01bbba78a630}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U8}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a2277b1e0952c8ace9f9b01bbba78a630}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I16@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I16}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I16@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I16}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a6aaa185dcd744ad3b7c071c07192784d}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I16}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a6aaa185dcd744ad3b7c071c07192784d}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U16@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U16}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U16@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U16}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5aa3f9b9c650fc63f535976bdae7f90c01}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U16}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5aa3f9b9c650fc63f535976bdae7f90c01}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I32@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I32}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I32@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I32}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a1edac98cfb4827805d68ba58fda4b917}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I32}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a1edac98cfb4827805d68ba58fda4b917}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U32@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U32}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U32@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U32}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9c1ce37112baf2d616075fbf8b2eb7c1}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U32}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9c1ce37112baf2d616075fbf8b2eb7c1}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I64@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I64}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I64@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I64}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a3f2f7e45e6e7b3a296a222a2c2949e9d}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-I64}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a3f2f7e45e6e7b3a296a222a2c2949e9d}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U64@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U64}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U64@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U64}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9387713f0e6193019ac0384a05fef07f}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-U64}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9387713f0e6193019ac0384a05fef07f}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F32@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F32}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F32@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F32}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af2d2686e6e31144b7e7732dfc724da21}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F32}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af2d2686e6e31144b7e7732dfc724da21}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F64@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F64}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F64@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F64}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4f4e1d30e02898dad0e32355edd06eac}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-F64}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a4f4e1d30e02898dad0e32355edd06eac}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-STRING@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-STRING}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-STRING@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-STRING}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afa25e2ce9cdaee157b12e9f5bd18b7c4}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-STRING}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afa25e2ce9cdaee157b12e9f5bd18b7c4}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-MSG@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-MSG}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-MSG@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-MSG}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5275369305134825d2748ba930e55588}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-MSG}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5275369305134825d2748ba930e55588}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-TIME@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-TIME}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-TIME@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-TIME}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5970594d13694d2c61203602b3d1c702}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-TIME}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a5970594d13694d2c61203602b3d1c702}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-PRICE@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-PRICE}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-PRICE@{MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-PRICE}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af1f617696b450ec89207bcd59a0ba554}{
+MAMA\_\-FIELD\_\-TYPE\_\-VECTOR\_\-PRICE}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5af1f617696b450ec89207bcd59a0ba554}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-QUANTITY@{MAMA\_\-FIELD\_\-TYPE\_\-QUANTITY}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-QUANTITY@{MAMA\_\-FIELD\_\-TYPE\_\-QUANTITY}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a533d46c84f3f3185a29667f986c11175}{
+MAMA\_\-FIELD\_\-TYPE\_\-QUANTITY}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a533d46c84f3f3185a29667f986c11175}
+}]\index{MAMA\_\-FIELD\_\-TYPE\_\-COLLECTION@{MAMA\_\-FIELD\_\-TYPE\_\-COLLECTION}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-COLLECTION@{MAMA\_\-FIELD\_\-TYPE\_\-COLLECTION}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9cbe3394ed0dfcd847dcf4077f5157da}{
+MAMA\_\-FIELD\_\-TYPE\_\-COLLECTION}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5a9cbe3394ed0dfcd847dcf4077f5157da}
+}]Collection. \index{MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN@{MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN}!fielddesc.h@{fielddesc.h}}\index{fielddesc.h@{fielddesc.h}!MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN@{MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN}}\item[{\em 
+\hypertarget{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afd22550bd462e9d67207d0cfa0eefb36}{
+MAMA\_\-FIELD\_\-TYPE\_\-UNKNOWN}
+\label{fielddesc_8h_afed1190a66a5093d9ee35448e52650a5afd22550bd462e9d67207d0cfa0eefb36}
+}]Unknown. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{fielddesc_8h_a7b3a0a43637da97a50750739fbdca922}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldTypeToString@{mamaFieldTypeToString}}
+\index{mamaFieldTypeToString@{mamaFieldTypeToString}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldTypeToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaFieldTypeToString ({\bf mamaFieldType} {\em type})}}
+\label{fielddesc_8h_a7b3a0a43637da97a50750739fbdca922}
+
+
+Return the field type as a string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The type.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The type as a string. 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a6d7e6599baf754f6d690f58b0cea9602}{
+\index{fielddesc.h@{fielddesc.h}!stringToMamaFieldType@{stringToMamaFieldType}}
+\index{stringToMamaFieldType@{stringToMamaFieldType}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{stringToMamaFieldType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaFieldType} stringToMamaFieldType (const char $\ast$ {\em str})}}
+\label{fielddesc_8h_a6d7e6599baf754f6d690f58b0cea9602}
+
+
+Return the string as a field type. 
+\begin{DoxyParams}{Parameters}
+\item[{\em str}]The string to transform.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The field type. 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a8449cdd27f98cfb0e9b89b0b58e0d5b7}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-create@{mamaFieldDescriptor\_\-create}}
+\index{mamaFieldDescriptor\_\-create@{mamaFieldDescriptor\_\-create}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldDescriptor\_\-create ({\bf mamaFieldDescriptor} $\ast$ {\em descriptor}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  {\bf mamaFieldType} {\em type}, \/  const char $\ast$ {\em name})}}
+\label{fielddesc_8h_a8449cdd27f98cfb0e9b89b0b58e0d5b7}
+
+
+Create a mamaFieldDescriptor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor. \item[{\em fid}]The field identifier. \item[{\em type}]The type. \item[{\em name}]The field name.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status code 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a4edc32a2fb0be03d9c1621f09dc9af53}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-destroy@{mamaFieldDescriptor\_\-destroy}}
+\index{mamaFieldDescriptor\_\-destroy@{mamaFieldDescriptor\_\-destroy}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldDescriptor\_\-destroy ({\bf mamaFieldDescriptor} {\em descriptor})}}
+\label{fielddesc_8h_a4edc32a2fb0be03d9c1621f09dc9af53}
+
+
+Destroy a mamaFieldDescriptor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status code 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a5465704466de67c0913e30fe45502692}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-getFid@{mamaFieldDescriptor\_\-getFid}}
+\index{mamaFieldDescriptor\_\-getFid@{mamaFieldDescriptor\_\-getFid}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-getFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-fid\_\-t} mamaFieldDescriptor\_\-getFid (const {\bf mamaFieldDescriptor} {\em descriptor})}}
+\label{fielddesc_8h_a5465704466de67c0913e30fe45502692}
+
+
+Return the field identifier. 0 indicates no fid.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fid. 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a943909efc6c971110f9ca04de0c9ddbf}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-getType@{mamaFieldDescriptor\_\-getType}}
+\index{mamaFieldDescriptor\_\-getType@{mamaFieldDescriptor\_\-getType}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-getType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaFieldType} mamaFieldDescriptor\_\-getType (const {\bf mamaFieldDescriptor} {\em descriptor})}}
+\label{fielddesc_8h_a943909efc6c971110f9ca04de0c9ddbf}
+
+
+Return the data type. \begin{DoxyReturn}{Returns}
+The type. 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a0ac51f82e82ed3e729bdd31016e05d28}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-getName@{mamaFieldDescriptor\_\-getName}}
+\index{mamaFieldDescriptor\_\-getName@{mamaFieldDescriptor\_\-getName}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaFieldDescriptor\_\-getName (const {\bf mamaFieldDescriptor} {\em descriptor})}}
+\label{fielddesc_8h_a0ac51f82e82ed3e729bdd31016e05d28}
+
+
+Return the human readable name of the field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name. 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a6e71780b808453b861415764a63e2dcf}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-getTypeName@{mamaFieldDescriptor\_\-getTypeName}}
+\index{mamaFieldDescriptor\_\-getTypeName@{mamaFieldDescriptor\_\-getTypeName}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-getTypeName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaFieldDescriptor\_\-getTypeName (const {\bf mamaFieldDescriptor} {\em descriptor})}}
+\label{fielddesc_8h_a6e71780b808453b861415764a63e2dcf}
+
+
+return a human readable representation of the type name. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor. \end{DoxyParams}
+\hypertarget{fielddesc_8h_a5170b62061f4a9dd85925b1a97d1832e}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-setClosure@{mamaFieldDescriptor\_\-setClosure}}
+\index{mamaFieldDescriptor\_\-setClosure@{mamaFieldDescriptor\_\-setClosure}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-setClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldDescriptor\_\-setClosure ({\bf mamaFieldDescriptor} {\em descriptor}, \/  void $\ast$ {\em closure})}}
+\label{fielddesc_8h_a5170b62061f4a9dd85925b1a97d1832e}
+
+
+Associate some user supplied data with this field descriptor. 
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The field descriptor on which the closure is being set. \item[{\em closure}]The arbitrary user supplied data.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status MAMA\_\-STATUS\_\-OK if the call was successful. 
+\end{DoxyReturn}
+\hypertarget{fielddesc_8h_a682071ddb284b7f8e883391b5e299b5b}{
+\index{fielddesc.h@{fielddesc.h}!mamaFieldDescriptor\_\-getClosure@{mamaFieldDescriptor\_\-getClosure}}
+\index{mamaFieldDescriptor\_\-getClosure@{mamaFieldDescriptor\_\-getClosure}!fielddesc.h@{fielddesc.h}}
+\subsubsection[{mamaFieldDescriptor\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldDescriptor\_\-getClosure ({\bf mamaFieldDescriptor} {\em descriptor}, \/  void $\ast$$\ast$ {\em closure})}}
+\label{fielddesc_8h_a682071ddb284b7f8e883391b5e299b5b}
+
+
+Return the user supplied data with this field descriptor. Returns NULL if no data was associated with this field descriptor.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The field descriptor from which the closure is being obtained. \item[{\em closure}]The location to where the user supplied data will be written.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status MAMA\_\-STATUS\_\-OK if the call was successful. 
+\end{DoxyReturn}

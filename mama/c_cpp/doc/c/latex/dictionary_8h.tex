@@ -1,0 +1,305 @@
+\hypertarget{dictionary_8h}{
+\section{dictionary.h File Reference}
+\label{dictionary_8h}\index{dictionary.h@{dictionary.h}}
+}
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/fielddesc.h\char`\"{}}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmamaDictionaryCallbackSet}{mamaDictionaryCallbackSet}
+\begin{DoxyCompactList}\small\item\em A structure containing the callbacks for dictionary creation. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{dictionary_8h_a8d14df7d621248fc3601fc47abf818f4}{mamaDictionary\_\-completeCallback} )(\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary}, void $\ast$)
+\begin{DoxyCompactList}\small\item\em The mamaDictionary class maps field identifiers (FIDs) to human readable strings. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{dictionary_8h_a1eba76a140a63bc91b5d7d4d6267d617}{mamaDictionary\_\-timeoutCallback} )(\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary}, void $\ast$)
+\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{dictionary_8h_aed64328afb7bffa7288bf67e7575f9b2}{mamaDictionary\_\-errorCallback} )(\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary}, const char $\ast$, void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a3bff6a01d92d0677eca6ff9cc22c7254}{mama\_\-createDictionary} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} $\ast$dictionary, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{structmamaDictionaryCallbackSet}{mamaDictionaryCallbackSet} dictionaryCallbacks, \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource} \hyperlink{sourceman_8h_ae77b82667320c944b503f29065ea8304}{source}, double timeout, int retries, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Create a data dictionary from a subscription. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a0e1bf12599fd6054c6d9f9b4e3692bd0}{mamaDictionary\_\-create} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} $\ast$dictionary)
+\begin{DoxyCompactList}\small\item\em Create an empty mamaDictionary so that can be populated at a later stage via a call to buildDictionaryFromMessage () or populated manually via calls to addFieldDescriptor (). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a01a176ffdff5b6e26851cca179d1fb97}{mamaDictionary\_\-destroy} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary)
+\begin{DoxyCompactList}\small\item\em Destroy this mamaDictionary object and free all its resources. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_abfa0b6f6f8a276521dc3319575695e5f}{mamaDictionary\_\-getFeedName} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the dictionary source feed name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_aea2b78a28cbc6c209790c5d526d3fb22}{mamaDictionary\_\-getFeedHost} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the dictionary source feed host. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_aca15ff033494a485417e5d0c990095a4}{mamaDictionary\_\-getFieldDescriptorByFid} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$result, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid)
+\begin{DoxyCompactList}\small\item\em Return the mamaFieldDescriptor with the specified field FID. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a1b91806004eabc587e873cb015599d61}{mamaDictionary\_\-getFieldDescriptorByIndex} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$result, unsigned short index)
+\begin{DoxyCompactList}\small\item\em Return the field with the corresponding zero based index. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_aa7d932fb5342fad7adf63d50fc627549}{mamaDictionary\_\-getFieldDescriptorByName} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$result, const char $\ast$fname)
+\begin{DoxyCompactList}\small\item\em Return the descriptor of the field with the specified name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a4a6c3d8cba45985270661e5ee212d03f}{mamaDictionary\_\-getFieldDescriptorByNameAll} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, const char $\ast$fname, \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$descList, size\_\-t $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Return an array of mamaFieldDescriptor which includes every field in the dictionary with the specified name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a44fa77fd60013f6e8d6126cdc3e5ff61}{mamaDictionary\_\-getMaxFid} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Return the highest field identifier. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a45227d4e52fdb4b66900ef0f6bcc3bf4}{mamaDictionary\_\-getSize} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, size\_\-t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Return the number of fields in the dictionary. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_af41dd1d0ba935c84b763f500ce063ccb}{mamaDictionary\_\-hasDuplicates} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, int $\ast$value)
+\begin{DoxyCompactList}\small\item\em Return true if there are multiple fields with the same name. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_ab7269a3e1a0a4f0b2345f0ec73295512}{mamaDictionary\_\-buildDictionaryFromMessage} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Build a data dictionary from the specified message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a5ed75804d555e3c818ad3b61689d56ad}{mamaDictionary\_\-getDictionaryMessage} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Get the underlying message for the data dictionary. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_af2e050ec50ef2e984e56646a0e55d4ea}{mamaDictionary\_\-fillDictionaryMessage} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Fill a message with the data dictionary. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a884a17341d0f69ea22579c41e9a78f73}{mamaDictionary\_\-createFieldDescriptor} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, const char $\ast$name, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type, \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$descriptor)
+\begin{DoxyCompactList}\small\item\em Create a new field descriptor and add it to the dictionary. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_aff5330fb7c2ce71a3bf86a7916251028}{mamaDictionary\_\-setMaxFid} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxFid)
+\begin{DoxyCompactList}\small\item\em Tell the dictionary what the probable maximum fid in the data dictionary may be. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_aae5ca69832454f56172afce50405593c}{mamaDictionary\_\-writeToFile} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, const char $\ast$fileName)
+\begin{DoxyCompactList}\small\item\em Write the data dictionary to a file. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dictionary_8h_a853e68b921948bc40a6d974e5e39fb3a}{mamaDictionary\_\-populateFromFile} (\hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary, const char $\ast$fileName)
+\begin{DoxyCompactList}\small\item\em Populate a dictionary from the contents of a file. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{dictionary_8h_a8d14df7d621248fc3601fc47abf818f4}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-completeCallback@{mamaDictionary\_\-completeCallback}}
+\index{mamaDictionary\_\-completeCallback@{mamaDictionary\_\-completeCallback}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-completeCallback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaDictionary\_\-completeCallback})({\bf mamaDictionary}, void $\ast$)}}
+\label{dictionary_8h_a8d14df7d621248fc3601fc47abf818f4}
+
+
+The mamaDictionary class maps field identifiers (FIDs) to human readable strings. Any incoming mamaMsg might contain FIDs but no field names. The dictionary allows applications to determine the name associated with a given FID. Typedefs for the dictionary callbacks.
+
+
+\begin{DoxyItemize}
+\item mamaDictionary\_\-setErrorCallback ()
+\item mamaDictionary\_\-setCompleteCallback ()
+\item mamaDictionary\_\-setTimeoutCallback () 
+\end{DoxyItemize}\hypertarget{dictionary_8h_a1eba76a140a63bc91b5d7d4d6267d617}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-timeoutCallback@{mamaDictionary\_\-timeoutCallback}}
+\index{mamaDictionary\_\-timeoutCallback@{mamaDictionary\_\-timeoutCallback}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-timeoutCallback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaDictionary\_\-timeoutCallback})({\bf mamaDictionary}, void $\ast$)}}
+\label{dictionary_8h_a1eba76a140a63bc91b5d7d4d6267d617}
+\hypertarget{dictionary_8h_aed64328afb7bffa7288bf67e7575f9b2}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-errorCallback@{mamaDictionary\_\-errorCallback}}
+\index{mamaDictionary\_\-errorCallback@{mamaDictionary\_\-errorCallback}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-errorCallback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaDictionary\_\-errorCallback})({\bf mamaDictionary}, const char $\ast$, void $\ast$)}}
+\label{dictionary_8h_aed64328afb7bffa7288bf67e7575f9b2}
+
+
+\subsection{Function Documentation}
+\hypertarget{dictionary_8h_a3bff6a01d92d0677eca6ff9cc22c7254}{
+\index{dictionary.h@{dictionary.h}!mama\_\-createDictionary@{mama\_\-createDictionary}}
+\index{mama\_\-createDictionary@{mama\_\-createDictionary}!dictionary.h@{dictionary.h}}
+\subsubsection[{mama\_\-createDictionary}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mama\_\-createDictionary ({\bf mamaDictionary} $\ast$ {\em dictionary}, \/  {\bf mamaQueue} {\em queue}, \/  {\bf mamaDictionaryCallbackSet} {\em dictionaryCallbacks}, \/  {\bf mamaSource} {\em source}, \/  double {\em timeout}, \/  int {\em retries}, \/  void $\ast$ {\em closure})}}
+\label{dictionary_8h_a3bff6a01d92d0677eca6ff9cc22c7254}
+
+
+Create a data dictionary from a subscription. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]A pointer for the dictionary being created. \item[{\em queue}]The mama queue. \item[{\em dictionaryCallbacks}]A \hyperlink{structmamaDictionaryCallbackSet}{mamaDictionaryCallbackSet} with the callbacks for completion, errors and timeouts. \item[{\em source}]The mamaSource identifying the source of the dictionary. \item[{\em timeout}]the timeout \item[{\em retries}]number of retries \item[{\em closure}]A user supplied value passed to the callbacks. \end{DoxyParams}
+\hypertarget{dictionary_8h_a0e1bf12599fd6054c6d9f9b4e3692bd0}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-create@{mamaDictionary\_\-create}}
+\index{mamaDictionary\_\-create@{mamaDictionary\_\-create}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-create ({\bf mamaDictionary} $\ast$ {\em dictionary})}}
+\label{dictionary_8h_a0e1bf12599fd6054c6d9f9b4e3692bd0}
+
+
+Create an empty mamaDictionary so that can be populated at a later stage via a call to buildDictionaryFromMessage () or populated manually via calls to addFieldDescriptor (). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The address to where the dictionary will be written \end{DoxyParams}
+\hypertarget{dictionary_8h_a01a176ffdff5b6e26851cca179d1fb97}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-destroy@{mamaDictionary\_\-destroy}}
+\index{mamaDictionary\_\-destroy@{mamaDictionary\_\-destroy}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-destroy ({\bf mamaDictionary} {\em dictionary})}}
+\label{dictionary_8h_a01a176ffdff5b6e26851cca179d1fb97}
+
+
+Destroy this mamaDictionary object and free all its resources. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \end{DoxyParams}
+\hypertarget{dictionary_8h_abfa0b6f6f8a276521dc3319575695e5f}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getFeedName@{mamaDictionary\_\-getFeedName}}
+\index{mamaDictionary\_\-getFeedName@{mamaDictionary\_\-getFeedName}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getFeedName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getFeedName ({\bf mamaDictionary} {\em dictionary}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{dictionary_8h_abfa0b6f6f8a276521dc3319575695e5f}
+
+
+Return the dictionary source feed name. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em result}](out) points to the feed name \end{DoxyParams}
+\hypertarget{dictionary_8h_aea2b78a28cbc6c209790c5d526d3fb22}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getFeedHost@{mamaDictionary\_\-getFeedHost}}
+\index{mamaDictionary\_\-getFeedHost@{mamaDictionary\_\-getFeedHost}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getFeedHost}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getFeedHost ({\bf mamaDictionary} {\em dictionary}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{dictionary_8h_aea2b78a28cbc6c209790c5d526d3fb22}
+
+
+Return the dictionary source feed host. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em result}](out) points to the feed host \end{DoxyParams}
+\hypertarget{dictionary_8h_aca15ff033494a485417e5d0c990095a4}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getFieldDescriptorByFid@{mamaDictionary\_\-getFieldDescriptorByFid}}
+\index{mamaDictionary\_\-getFieldDescriptorByFid@{mamaDictionary\_\-getFieldDescriptorByFid}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getFieldDescriptorByFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getFieldDescriptorByFid ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mamaFieldDescriptor} $\ast$ {\em result}, \/  {\bf mama\_\-fid\_\-t} {\em fid})}}
+\label{dictionary_8h_aca15ff033494a485417e5d0c990095a4}
+
+
+Return the mamaFieldDescriptor with the specified field FID. This method is very efficient (constant time).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em fid}]The field id. \item[{\em result}](out) points to the mamaFieldDescriptor (not a copy) \end{DoxyParams}
+\hypertarget{dictionary_8h_a1b91806004eabc587e873cb015599d61}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getFieldDescriptorByIndex@{mamaDictionary\_\-getFieldDescriptorByIndex}}
+\index{mamaDictionary\_\-getFieldDescriptorByIndex@{mamaDictionary\_\-getFieldDescriptorByIndex}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getFieldDescriptorByIndex}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getFieldDescriptorByIndex ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mamaFieldDescriptor} $\ast$ {\em result}, \/  unsigned short {\em index})}}
+\label{dictionary_8h_a1b91806004eabc587e873cb015599d61}
+
+
+Return the field with the corresponding zero based index. This method is O (N) with respect to the size of the dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em index}]The zero-\/based index. \item[{\em result}]The result. \end{DoxyParams}
+\hypertarget{dictionary_8h_aa7d932fb5342fad7adf63d50fc627549}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getFieldDescriptorByName@{mamaDictionary\_\-getFieldDescriptorByName}}
+\index{mamaDictionary\_\-getFieldDescriptorByName@{mamaDictionary\_\-getFieldDescriptorByName}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getFieldDescriptorByName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getFieldDescriptorByName ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mamaFieldDescriptor} $\ast$ {\em result}, \/  const char $\ast$ {\em fname})}}
+\label{dictionary_8h_aa7d932fb5342fad7adf63d50fc627549}
+
+
+Return the descriptor of the field with the specified name. If there is more than one field with the same name, the one with the lowest field id is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em result}]the result $\ast$ or NULL if no such field \item[{\em fname}]The name of the field to search for. \end{DoxyParams}
+\hypertarget{dictionary_8h_a4a6c3d8cba45985270661e5ee212d03f}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getFieldDescriptorByNameAll@{mamaDictionary\_\-getFieldDescriptorByNameAll}}
+\index{mamaDictionary\_\-getFieldDescriptorByNameAll@{mamaDictionary\_\-getFieldDescriptorByNameAll}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getFieldDescriptorByNameAll}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getFieldDescriptorByNameAll ({\bf mamaDictionary} {\em dictionary}, \/  const char $\ast$ {\em fname}, \/  {\bf mamaFieldDescriptor} $\ast$ {\em descList}, \/  size\_\-t $\ast$ {\em size})}}
+\label{dictionary_8h_a4a6c3d8cba45985270661e5ee212d03f}
+
+
+Return an array of mamaFieldDescriptor which includes every field in the dictionary with the specified name. The caller is responsible for allocating descList with room enough for all possible duplicate fields (use mamaDictionary\_\-getSize () to be safe).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em fname}](in) The name to search dictionary for. \item[{\em descList}](out) An array of mamaFieldDescriptor objects, which are not copies and should not be destroyed by the caller. \item[{\em size}](out) The final number of entries in descList. The value should be intialised to the size allocated to decList. This will be modified to the actual number found on return, or will return once this value has been found. \end{DoxyParams}
+\hypertarget{dictionary_8h_a44fa77fd60013f6e8d6126cdc3e5ff61}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getMaxFid@{mamaDictionary\_\-getMaxFid}}
+\index{mamaDictionary\_\-getMaxFid@{mamaDictionary\_\-getMaxFid}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getMaxFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getMaxFid ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mama\_\-fid\_\-t} $\ast$ {\em value})}}
+\label{dictionary_8h_a44fa77fd60013f6e8d6126cdc3e5ff61}
+
+
+Return the highest field identifier. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em value}]A pointer that will contain highest FID. \end{DoxyParams}
+\hypertarget{dictionary_8h_a45227d4e52fdb4b66900ef0f6bcc3bf4}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getSize@{mamaDictionary\_\-getSize}}
+\index{mamaDictionary\_\-getSize@{mamaDictionary\_\-getSize}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getSize ({\bf mamaDictionary} {\em dictionary}, \/  size\_\-t $\ast$ {\em value})}}
+\label{dictionary_8h_a45227d4e52fdb4b66900ef0f6bcc3bf4}
+
+
+Return the number of fields in the dictionary. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em value}]The number of entries in the dictionary. \end{DoxyParams}
+\hypertarget{dictionary_8h_af41dd1d0ba935c84b763f500ce063ccb}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-hasDuplicates@{mamaDictionary\_\-hasDuplicates}}
+\index{mamaDictionary\_\-hasDuplicates@{mamaDictionary\_\-hasDuplicates}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-hasDuplicates}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-hasDuplicates ({\bf mamaDictionary} {\em dictionary}, \/  int $\ast$ {\em value})}}
+\label{dictionary_8h_af41dd1d0ba935c84b763f500ce063ccb}
+
+
+Return true if there are multiple fields with the same name. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary. \item[{\em value}]1 if there are duplicates, 0 otherwise. \end{DoxyParams}
+\hypertarget{dictionary_8h_ab7269a3e1a0a4f0b2345f0ec73295512}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-buildDictionaryFromMessage@{mamaDictionary\_\-buildDictionaryFromMessage}}
+\index{mamaDictionary\_\-buildDictionaryFromMessage@{mamaDictionary\_\-buildDictionaryFromMessage}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-buildDictionaryFromMessage}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-buildDictionaryFromMessage ({\bf mamaDictionary} {\em dictionary}, \/  const {\bf mamaMsg} {\em msg})}}
+\label{dictionary_8h_ab7269a3e1a0a4f0b2345f0ec73295512}
+
+
+Build a data dictionary from the specified message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary \item[{\em msg}]A mamaMsg representing the contents of a data dictionary. \end{DoxyParams}
+\hypertarget{dictionary_8h_a5ed75804d555e3c818ad3b61689d56ad}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-getDictionaryMessage@{mamaDictionary\_\-getDictionaryMessage}}
+\index{mamaDictionary\_\-getDictionaryMessage@{mamaDictionary\_\-getDictionaryMessage}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-getDictionaryMessage}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-getDictionaryMessage ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mamaMsg} $\ast$ {\em msg})}}
+\label{dictionary_8h_a5ed75804d555e3c818ad3b61689d56ad}
+
+
+Get the underlying message for the data dictionary. A new message instance is created each time this function is called. It is the responsibility for the caller to destroy the message when no longer required.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The Dictionary \item[{\em msg}]The address of the mamaMsg where the result is to be written \end{DoxyParams}
+\hypertarget{dictionary_8h_af2e050ec50ef2e984e56646a0e55d4ea}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-fillDictionaryMessage@{mamaDictionary\_\-fillDictionaryMessage}}
+\index{mamaDictionary\_\-fillDictionaryMessage@{mamaDictionary\_\-fillDictionaryMessage}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-fillDictionaryMessage}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-fillDictionaryMessage ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mamaMsg} $\ast$ {\em msg})}}
+\label{dictionary_8h_af2e050ec50ef2e984e56646a0e55d4ea}
+
+
+Fill a message with the data dictionary. An existing mama message is populated fromt he data dictionary This allows the caller to create the message on a specifc payload
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The Dictionary \item[{\em msg}]The address of the mamaMsg where the result is to be written \end{DoxyParams}
+\hypertarget{dictionary_8h_a884a17341d0f69ea22579c41e9a78f73}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-createFieldDescriptor@{mamaDictionary\_\-createFieldDescriptor}}
+\index{mamaDictionary\_\-createFieldDescriptor@{mamaDictionary\_\-createFieldDescriptor}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-createFieldDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-createFieldDescriptor ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  const char $\ast$ {\em name}, \/  {\bf mamaFieldType} {\em type}, \/  {\bf mamaFieldDescriptor} $\ast$ {\em descriptor})}}
+\label{dictionary_8h_a884a17341d0f69ea22579c41e9a78f73}
+
+
+Create a new field descriptor and add it to the dictionary. New fields can be added to an existing dictionary obtained from the MAMA infrastructure. This function can also be used to manually populate a new data dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary to which the field is to be added. \item[{\em fid}]The fid for the new field descriptor. \item[{\em name}]The name for the new field descriptor. \item[{\em type}]The type for the new field descriptor. \item[{\em descriptor}]The newly created fieldDescriptor. NULL can be specified. \end{DoxyParams}
+\hypertarget{dictionary_8h_aff5330fb7c2ce71a3bf86a7916251028}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-setMaxFid@{mamaDictionary\_\-setMaxFid}}
+\index{mamaDictionary\_\-setMaxFid@{mamaDictionary\_\-setMaxFid}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-setMaxFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-setMaxFid ({\bf mamaDictionary} {\em dictionary}, \/  {\bf mama\_\-size\_\-t} {\em maxFid})}}
+\label{dictionary_8h_aff5330fb7c2ce71a3bf86a7916251028}
+
+
+Tell the dictionary what the probable maximum fid in the data dictionary may be. This is not necessary but will aid performance for manually creating a new dictionary or adding new fields to an existing dictionary.
+
+Calling this function ensures that there is capacity in the dictionary for field descriptors with fids up to the max specified.
+
+Fields with fids greater than specified can be added to the dictionary but this will incur the overhead of allocating more memory and copying dictionary elements.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The mamaDictionary. \item[{\em maxFid}]The probable maximum fid being added to the dictionary. \end{DoxyParams}
+\hypertarget{dictionary_8h_aae5ca69832454f56172afce50405593c}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-writeToFile@{mamaDictionary\_\-writeToFile}}
+\index{mamaDictionary\_\-writeToFile@{mamaDictionary\_\-writeToFile}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-writeToFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-writeToFile ({\bf mamaDictionary} {\em dictionary}, \/  const char $\ast$ {\em fileName})}}
+\label{dictionary_8h_aae5ca69832454f56172afce50405593c}
+
+
+Write the data dictionary to a file. The dictionary will be written in the form: fid$|$fieldName$|$fieldType
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary to serialize. \item[{\em fileName}]The name of the file to serialize the dictionary to. This can be a fully qualified name, relative or a file on the \$WOMBAT\_\-PATH \end{DoxyParams}
+\hypertarget{dictionary_8h_a853e68b921948bc40a6d974e5e39fb3a}{
+\index{dictionary.h@{dictionary.h}!mamaDictionary\_\-populateFromFile@{mamaDictionary\_\-populateFromFile}}
+\index{mamaDictionary\_\-populateFromFile@{mamaDictionary\_\-populateFromFile}!dictionary.h@{dictionary.h}}
+\subsubsection[{mamaDictionary\_\-populateFromFile}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDictionary\_\-populateFromFile ({\bf mamaDictionary} {\em dictionary}, \/  const char $\ast$ {\em fileName})}}
+\label{dictionary_8h_a853e68b921948bc40a6d974e5e39fb3a}
+
+
+Populate a dictionary from the contents of a file. Can be used to add additional fields to an existing dictionary or to populate a new dictionary.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dictionary}]The dictionary to populate. \item[{\em fileName}]The file from which to populate the dictionary. This can be a fully qualified name, relative or a file on the \$WOMBAT\_\-PATH \end{DoxyParams}

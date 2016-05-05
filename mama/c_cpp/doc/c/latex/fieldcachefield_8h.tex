@@ -1,0 +1,1131 @@
+\hypertarget{fieldcachefield_8h}{
+\section{fieldcachefield.h File Reference}
+\label{fieldcachefield_8h}\index{fieldcachefield.h@{fieldcachefield.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/fielddesc.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/fieldcache/fieldcachetypes.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} \hyperlink{fieldcachefield_8h_aba45221724e93f4fe7029bce702800eb}{mamaFieldCacheField\_\-isSupported} (\hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type)
+\begin{DoxyCompactList}\small\item\em This function will check if a specific mama field type can be used to create a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a73b1a0f5a7f2d9ecbe0ed766e374fc57}{mamaFieldCacheField\_\-create} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} $\ast$field, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em This function will create a mamaFieldCacheField that can be stored in a mamaFieldCache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a336220e8856ef807e2060027132f57e9}{mamaFieldCacheField\_\-destroy} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field)
+\begin{DoxyCompactList}\small\item\em This function will destroy a {\ttfamily mamaFieldCacheField} previously allocated by a call to {\ttfamily mamaFieldCacheField\_\-create}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a04d5f7b5debfc45dd5f466277d17e45d}{mamaFieldCacheField\_\-copy} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} copy)
+\begin{DoxyCompactList}\small\item\em This function will copy a {\ttfamily mamaFieldCacheField} into another one. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a78eb25a4aa0fad8c7f501182678be80d}{mamaFieldCacheField\_\-getFid} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} $\ast$fid)
+\begin{DoxyCompactList}\small\item\em This function will get the field id of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a0fc92b792b356211d582854d3e5bac4c}{mamaFieldCacheField\_\-getType} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} $\ast$type)
+\begin{DoxyCompactList}\small\item\em This function will get the field type of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a2192afd9ca45b6962afbc7a0d166d361}{mamaFieldCacheField\_\-getName} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$$\ast$name)
+\begin{DoxyCompactList}\small\item\em This function will get the descriptor of a {\ttfamily mamaFieldCacheField}, if present. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a834e87bade706741514cffddf8063bb7}{mamaFieldCacheField\_\-setDescriptor} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} desc)
+\begin{DoxyCompactList}\small\item\em This function will set the descriptor of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a78f462c879c69dad152192a4e943cc4c}{mamaFieldCacheField\_\-getDescriptor} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$desc)
+\begin{DoxyCompactList}\small\item\em This function will get the descriptor of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a54bb7e08e0af75c2b1ef28fa150964f6}{mamaFieldCacheField\_\-isModified} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$modified)
+\begin{DoxyCompactList}\small\item\em This function will return whether the field has been modified. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a69c1b99715531027e4cc870ad7ba97b5}{mamaFieldCacheField\_\-setPublish} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} publish)
+\begin{DoxyCompactList}\small\item\em This function will set the publish flag of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aeac7adade50818ffcebcb9adf3760a96}{mamaFieldCacheField\_\-getPublish} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$publish)
+\begin{DoxyCompactList}\small\item\em This function will get the publish flag of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a76aa7b7f015a1012f2f67198a5b68be6}{mamaFieldCacheField\_\-setCheckModified} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} check)
+\begin{DoxyCompactList}\small\item\em This function will set the checkModifed flag of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a85030b642a6a09f6e4da010ab3888b2a}{mamaFieldCacheField\_\-getCheckModified} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$check)
+\begin{DoxyCompactList}\small\item\em The function will get the checkModified flag of a {\ttfamily mamaFieldCacheField}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_abdadba6fd3fe65f94c4981aecc236308}{mamaFieldCacheField\_\-getBool} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type BOOL. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a9bba6a432786c0fe6e646010f8c0d496}{mamaFieldCacheField\_\-getChar} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, char $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type CHAR. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a9528909c23669d0cc329c9b145fde7c4}{mamaFieldCacheField\_\-getI8} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type I8. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a6864360e6a667f5c39fa12da93a5ab38}{mamaFieldCacheField\_\-getU8} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type U8. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aadefa0a5b3757ca3da297054a5b496b9}{mamaFieldCacheField\_\-getI16} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type I16. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a026953f0ba668b94e9a54e72cca2b475}{mamaFieldCacheField\_\-getU16} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type U16. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a540c01a83b0f8cbd2fa49be4dc668208}{mamaFieldCacheField\_\-getI32} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type I32. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a5ba67047eb3db947e24d8bcf22babed0}{mamaFieldCacheField\_\-getU32} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type U32. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a725aef8fd8728089b1bfe418af33f670}{mamaFieldCacheField\_\-getI64} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type I64. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a867c30ff5e3ae7a65f3b9a0faa20f2a8}{mamaFieldCacheField\_\-getU64} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type U64. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a7acdf23ce504bc16ef611d478b90672f}{mamaFieldCacheField\_\-getF32} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type F32. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a7c89c7ce3dd5ae39f759fbfb304fad6d}{mamaFieldCacheField\_\-getF64} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type F64. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ab63bee7fa33bc94b57a90e3457c45e3c}{mamaFieldCacheField\_\-getString} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$len)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type STRING. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_af9545a580cee7108a702c60991fe62bf}{mamaFieldCacheField\_\-getPrice} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type PRICE. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a0fd4315e26b6bcdd16c743fc42ad0375}{mamaFieldCacheField\_\-getDateTime} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} $\ast$result)
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type TIME. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_af89782d0bcac05bcd7fadd2ee94c6fc4}{mamaFieldCacheField\_\-getBoolVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type Bool vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a998898dc4fcfd4d9a00d1b10a63e0d26}{mamaFieldCacheField\_\-getCharVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type Char vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aa81162045ac890f781daca516abbf47a}{mamaFieldCacheField\_\-getI8Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type I8 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a284ba76bfd3aaf28b1e1559cd01bac76}{mamaFieldCacheField\_\-getU8Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type U8 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aaa0352e6ac71fd0972d873856a81ebda}{mamaFieldCacheField\_\-getI16Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type I16 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a8c275f7f50dabb80c321e4732152f22b}{mamaFieldCacheField\_\-getU16Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type U16 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a544eecac05eb31a20d6d9afc449d2b78}{mamaFieldCacheField\_\-getI32Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type I32 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a018ff67d142dfb8d4e675f5ed82c5323}{mamaFieldCacheField\_\-getU32Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type U32 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ad80300efc0b425cd04888800948b175c}{mamaFieldCacheField\_\-getI64Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type I64 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a44357b7ba74c6548d7759b4dee2ef611}{mamaFieldCacheField\_\-getU64Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the values a {\ttfamily mamaFieldCacheField} of type U64 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a8a8cd9c1c07efd04f15ab1d1830d033d}{mamaFieldCacheField\_\-getF32Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type F32 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a7607b7cf9f3fc2b7169870d8faf50f71}{mamaFieldCacheField\_\-getF64Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type F64 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aa1c5729b6d7070b433847fcdad80479d}{mamaFieldCacheField\_\-getStringVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$$\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type STRING vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a749df17108342e8f4a78d6c0e892da9b}{mamaFieldCacheField\_\-getPriceVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type PRICE vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a6db54af46f42c9f03f529489505a45b0}{mamaFieldCacheField\_\-getDateTimeVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will get the value a {\ttfamily mamaFieldCacheField} of type TIME vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a6c8c9f52339e81fdecdb84a89a4766a7}{mamaFieldCacheField\_\-setBool} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type BOOL. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a0b981f408c20104cbf65385e1bff1844}{mamaFieldCacheField\_\-setChar} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, char value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type CHAR. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a756fbad7360050831e1d922177d7b4eb}{mamaFieldCacheField\_\-setI8} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type I8. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a97d13b07a1c97c9ceaddbc98bed69d35}{mamaFieldCacheField\_\-setU8} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type U8. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a73dbc27e1ea3730998ebf01afcf16be6}{mamaFieldCacheField\_\-setI16} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type I16. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a21bbd2052e7c3796d02e140eab4caa2a}{mamaFieldCacheField\_\-setU16} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type U16. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a3cf9ab059abe5c6d2035ce22ca566511}{mamaFieldCacheField\_\-setI32} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type I32. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a651869870b70f4bd03716df636fe7577}{mamaFieldCacheField\_\-setU32} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type U32. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aa37fbad56cceb49a7bc7e4080f97de8e}{mamaFieldCacheField\_\-setI64} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type I64. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ad39816b922cd388185993c7bfa425433}{mamaFieldCacheField\_\-setU64} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type U64. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a7a2aea194e894cdf88a5814509cbc8d6}{mamaFieldCacheField\_\-setF32} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type F32. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a99d3631f51074c86042245df28a5e4cb}{mamaFieldCacheField\_\-setF64} (\hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type F64. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ae8403ddcd15df7eb58cc28be397f5e30}{mamaFieldCacheField\_\-setString} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$value, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} len)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type STRING. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a761c1cb7bc0c7b69a2fdc0b19e3ac772}{mamaFieldCacheField\_\-setPrice} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type PRICE. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a4974adc83d74be2e50c1226add20f7eb}{mamaFieldCacheField\_\-setDateTime} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} value)
+\begin{DoxyCompactList}\small\item\em This function will set the value of a {\ttfamily mamaFieldCacheField} of type TIME. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_afb7e519f30591618e30a0bbc65d3f187}{mamaFieldCacheField\_\-setBoolVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type Bool vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a80725c80f439c7ae001aac070e16c337}{mamaFieldCacheField\_\-setCharVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type Char vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a590c6cc85610d404f8de1853b8f2f8f1}{mamaFieldCacheField\_\-setI8Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type I8 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_af2ccf64bdefb15d9af3740f576450841}{mamaFieldCacheField\_\-setU8Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type U8 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ae6f425cf09a25f7de43ff0d6e47c3266}{mamaFieldCacheField\_\-setI16Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type I16 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a17fbe479e3627ef0cf91ec7241adc1c2}{mamaFieldCacheField\_\-setU16Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type U16 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a2668ee96cffa7120737c10e62341babd}{mamaFieldCacheField\_\-setI32Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type I32 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a28aab619a819e2cac58d0398e4c177e6}{mamaFieldCacheField\_\-setU32Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type U32 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a866c090fdf3cb0a6abcd2e238b729a7b}{mamaFieldCacheField\_\-setI64Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type I64 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a3ee50bcddda0aee401b221ec64bee375}{mamaFieldCacheField\_\-setU64Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type U64 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ac3cf64576bd453e4f96a5d9e971fa94e}{mamaFieldCacheField\_\-setF32Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type F32 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_ad1fd1b6c9987dd1050d2eeda1c999fe4}{mamaFieldCacheField\_\-setF64Vector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type F64 vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_a362789d6707250d29cd8c6841338cdd1}{mamaFieldCacheField\_\-setStringVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const char $\ast$$\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type STRING vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_aaf57fa848f68054842abbca49c81e960}{mamaFieldCacheField\_\-setPriceVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type PRICE vector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcachefield_8h_afc22d83c23bc036e5e03142543698d51}{mamaFieldCacheField\_\-setDateTimeVector} (const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} $\ast$values, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will set the values of a {\ttfamily mamaFieldCacheField} of type TIME vector. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{fieldcachefield_8h_aba45221724e93f4fe7029bce702800eb}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-isSupported@{mamaFieldCacheField\_\-isSupported}}
+\index{mamaFieldCacheField\_\-isSupported@{mamaFieldCacheField\_\-isSupported}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-isSupported}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-bool\_\-t} mamaFieldCacheField\_\-isSupported ({\bf mamaFieldType} {\em type})}}
+\label{fieldcachefield_8h_aba45221724e93f4fe7029bce702800eb}
+
+
+This function will check if a specific mama field type can be used to create a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}](in) The mamaFieldType to check. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the type can be used to create a mamaFieldCache field. 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a73b1a0f5a7f2d9ecbe0ed766e374fc57}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-create@{mamaFieldCacheField\_\-create}}
+\index{mamaFieldCacheField\_\-create@{mamaFieldCacheField\_\-create}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-create ({\bf mamaFieldCacheField} $\ast$ {\em field}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  {\bf mamaFieldType} {\em type}, \/  const char $\ast$ {\em name})}}
+\label{fieldcachefield_8h_a73b1a0f5a7f2d9ecbe0ed766e374fc57}
+
+
+This function will create a mamaFieldCacheField that can be stored in a mamaFieldCache. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](out) The mamaFieldCacheField to create. \item[{\em fid}](in) The field id of the new field. \item[{\em type}](in) The type of the new field. \item[{\em type}](in) The name of the new field (optional: can be NULL). \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a336220e8856ef807e2060027132f57e9}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-destroy@{mamaFieldCacheField\_\-destroy}}
+\index{mamaFieldCacheField\_\-destroy@{mamaFieldCacheField\_\-destroy}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-destroy ({\bf mamaFieldCacheField} {\em field})}}
+\label{fieldcachefield_8h_a336220e8856ef807e2060027132f57e9}
+
+
+This function will destroy a {\ttfamily mamaFieldCacheField} previously allocated by a call to {\ttfamily mamaFieldCacheField\_\-create}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to destroy. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a04d5f7b5debfc45dd5f466277d17e45d}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-copy@{mamaFieldCacheField\_\-copy}}
+\index{mamaFieldCacheField\_\-copy@{mamaFieldCacheField\_\-copy}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-copy (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mamaFieldCacheField} {\em copy})}}
+\label{fieldcachefield_8h_a04d5f7b5debfc45dd5f466277d17e45d}
+
+
+This function will copy a {\ttfamily mamaFieldCacheField} into another one. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The source field to copy from. \item[{\em copy}](out) The destination field to copy to. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a78eb25a4aa0fad8c7f501182678be80d}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getFid@{mamaFieldCacheField\_\-getFid}}
+\index{mamaFieldCacheField\_\-getFid@{mamaFieldCacheField\_\-getFid}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getFid ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-fid\_\-t} $\ast$ {\em fid})}}
+\label{fieldcachefield_8h_a78eb25a4aa0fad8c7f501182678be80d}
+
+
+This function will get the field id of a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em fid}](out) The field id of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a0fc92b792b356211d582854d3e5bac4c}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getType@{mamaFieldCacheField\_\-getType}}
+\index{mamaFieldCacheField\_\-getType@{mamaFieldCacheField\_\-getType}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getType ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mamaFieldType} $\ast$ {\em type})}}
+\label{fieldcachefield_8h_a0fc92b792b356211d582854d3e5bac4c}
+
+
+This function will get the field type of a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em type}](out) The type of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a2192afd9ca45b6962afbc7a0d166d361}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getName@{mamaFieldCacheField\_\-getName}}
+\index{mamaFieldCacheField\_\-getName@{mamaFieldCacheField\_\-getName}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getName ({\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$$\ast$ {\em name})}}
+\label{fieldcachefield_8h_a2192afd9ca45b6962afbc7a0d166d361}
+
+
+This function will get the descriptor of a {\ttfamily mamaFieldCacheField}, if present. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em name}](out) The descriptor of the field (can be NULL). \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a834e87bade706741514cffddf8063bb7}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setDescriptor@{mamaFieldCacheField\_\-setDescriptor}}
+\index{mamaFieldCacheField\_\-setDescriptor@{mamaFieldCacheField\_\-setDescriptor}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setDescriptor ({\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaFieldDescriptor} {\em desc})}}
+\label{fieldcachefield_8h_a834e87bade706741514cffddf8063bb7}
+
+
+This function will set the descriptor of a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em desc}](in) The {\ttfamily mamaFieldDescriptor} of the field (can be NULL). \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a78f462c879c69dad152192a4e943cc4c}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getDescriptor@{mamaFieldCacheField\_\-getDescriptor}}
+\index{mamaFieldCacheField\_\-getDescriptor@{mamaFieldCacheField\_\-getDescriptor}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getDescriptor ({\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaFieldDescriptor} $\ast$ {\em desc})}}
+\label{fieldcachefield_8h_a78f462c879c69dad152192a4e943cc4c}
+
+
+This function will get the descriptor of a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em desc}](out) The {\ttfamily mamaFieldDescriptor} of the field (can be NULL). \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a54bb7e08e0af75c2b1ef28fa150964f6}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-isModified@{mamaFieldCacheField\_\-isModified}}
+\index{mamaFieldCacheField\_\-isModified@{mamaFieldCacheField\_\-isModified}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-isModified}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-isModified ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em modified})}}
+\label{fieldcachefield_8h_a54bb7e08e0af75c2b1ef28fa150964f6}
+
+
+This function will return whether the field has been modified. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em modified}](out) The modified state of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a69c1b99715531027e4cc870ad7ba97b5}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setPublish@{mamaFieldCacheField\_\-setPublish}}
+\index{mamaFieldCacheField\_\-setPublish@{mamaFieldCacheField\_\-setPublish}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setPublish}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setPublish ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} {\em publish})}}
+\label{fieldcachefield_8h_a69c1b99715531027e4cc870ad7ba97b5}
+
+
+This function will set the publish flag of a {\ttfamily mamaFieldCacheField}. If set to false, the field will never be published.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em publish}](in) The publish flag of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aeac7adade50818ffcebcb9adf3760a96}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getPublish@{mamaFieldCacheField\_\-getPublish}}
+\index{mamaFieldCacheField\_\-getPublish@{mamaFieldCacheField\_\-getPublish}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getPublish}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getPublish ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em publish})}}
+\label{fieldcachefield_8h_aeac7adade50818ffcebcb9adf3760a96}
+
+
+This function will get the publish flag of a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em publish}](out) The publish flag of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a76aa7b7f015a1012f2f67198a5b68be6}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setCheckModified@{mamaFieldCacheField\_\-setCheckModified}}
+\index{mamaFieldCacheField\_\-setCheckModified@{mamaFieldCacheField\_\-setCheckModified}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setCheckModified}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setCheckModified ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} {\em check})}}
+\label{fieldcachefield_8h_a76aa7b7f015a1012f2f67198a5b68be6}
+
+
+This function will set the checkModifed flag of a {\ttfamily mamaFieldCacheField}. If set to true, the field will be published only if modified.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em check}](in) The checkModified flag. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a85030b642a6a09f6e4da010ab3888b2a}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getCheckModified@{mamaFieldCacheField\_\-getCheckModified}}
+\index{mamaFieldCacheField\_\-getCheckModified@{mamaFieldCacheField\_\-getCheckModified}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getCheckModified}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getCheckModified ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em check})}}
+\label{fieldcachefield_8h_a85030b642a6a09f6e4da010ab3888b2a}
+
+
+The function will get the checkModified flag of a {\ttfamily mamaFieldCacheField}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em check}](out) The checkModified flag of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_abdadba6fd3fe65f94c4981aecc236308}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getBool@{mamaFieldCacheField\_\-getBool}}
+\index{mamaFieldCacheField\_\-getBool@{mamaFieldCacheField\_\-getBool}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getBool}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getBool (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_abdadba6fd3fe65f94c4981aecc236308}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type BOOL. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a9bba6a432786c0fe6e646010f8c0d496}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getChar@{mamaFieldCacheField\_\-getChar}}
+\index{mamaFieldCacheField\_\-getChar@{mamaFieldCacheField\_\-getChar}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getChar}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getChar (const {\bf mamaFieldCacheField} {\em field}, \/  char $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a9bba6a432786c0fe6e646010f8c0d496}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type CHAR. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a9528909c23669d0cc329c9b145fde7c4}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI8@{mamaFieldCacheField\_\-getI8}}
+\index{mamaFieldCacheField\_\-getI8@{mamaFieldCacheField\_\-getI8}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI8 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i8\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a9528909c23669d0cc329c9b145fde7c4}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type I8. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a6864360e6a667f5c39fa12da93a5ab38}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU8@{mamaFieldCacheField\_\-getU8}}
+\index{mamaFieldCacheField\_\-getU8@{mamaFieldCacheField\_\-getU8}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU8 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u8\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a6864360e6a667f5c39fa12da93a5ab38}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type U8. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aadefa0a5b3757ca3da297054a5b496b9}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI16@{mamaFieldCacheField\_\-getI16}}
+\index{mamaFieldCacheField\_\-getI16@{mamaFieldCacheField\_\-getI16}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI16 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i16\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_aadefa0a5b3757ca3da297054a5b496b9}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type I16. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a026953f0ba668b94e9a54e72cca2b475}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU16@{mamaFieldCacheField\_\-getU16}}
+\index{mamaFieldCacheField\_\-getU16@{mamaFieldCacheField\_\-getU16}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU16 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u16\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a026953f0ba668b94e9a54e72cca2b475}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type U16. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a540c01a83b0f8cbd2fa49be4dc668208}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI32@{mamaFieldCacheField\_\-getI32}}
+\index{mamaFieldCacheField\_\-getI32@{mamaFieldCacheField\_\-getI32}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI32 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i32\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a540c01a83b0f8cbd2fa49be4dc668208}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type I32. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a5ba67047eb3db947e24d8bcf22babed0}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU32@{mamaFieldCacheField\_\-getU32}}
+\index{mamaFieldCacheField\_\-getU32@{mamaFieldCacheField\_\-getU32}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU32 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a5ba67047eb3db947e24d8bcf22babed0}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type U32. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a725aef8fd8728089b1bfe418af33f670}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI64@{mamaFieldCacheField\_\-getI64}}
+\index{mamaFieldCacheField\_\-getI64@{mamaFieldCacheField\_\-getI64}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI64 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i64\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a725aef8fd8728089b1bfe418af33f670}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type I64. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a867c30ff5e3ae7a65f3b9a0faa20f2a8}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU64@{mamaFieldCacheField\_\-getU64}}
+\index{mamaFieldCacheField\_\-getU64@{mamaFieldCacheField\_\-getU64}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU64 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u64\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a867c30ff5e3ae7a65f3b9a0faa20f2a8}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type U64. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a7acdf23ce504bc16ef611d478b90672f}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getF32@{mamaFieldCacheField\_\-getF32}}
+\index{mamaFieldCacheField\_\-getF32@{mamaFieldCacheField\_\-getF32}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getF32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getF32 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-f32\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a7acdf23ce504bc16ef611d478b90672f}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type F32. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a7c89c7ce3dd5ae39f759fbfb304fad6d}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getF64@{mamaFieldCacheField\_\-getF64}}
+\index{mamaFieldCacheField\_\-getF64@{mamaFieldCacheField\_\-getF64}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getF64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getF64 (const {\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a7c89c7ce3dd5ae39f759fbfb304fad6d}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type F64. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ab63bee7fa33bc94b57a90e3457c45e3c}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getString@{mamaFieldCacheField\_\-getString}}
+\index{mamaFieldCacheField\_\-getString@{mamaFieldCacheField\_\-getString}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getString (const {\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em len})}}
+\label{fieldcachefield_8h_ab63bee7fa33bc94b57a90e3457c45e3c}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type STRING. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \item[{\em len}](out) The length of the string. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_af9545a580cee7108a702c60991fe62bf}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getPrice@{mamaFieldCacheField\_\-getPrice}}
+\index{mamaFieldCacheField\_\-getPrice@{mamaFieldCacheField\_\-getPrice}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getPrice}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getPrice (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaPrice} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_af9545a580cee7108a702c60991fe62bf}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type PRICE. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a0fd4315e26b6bcdd16c743fc42ad0375}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getDateTime@{mamaFieldCacheField\_\-getDateTime}}
+\index{mamaFieldCacheField\_\-getDateTime@{mamaFieldCacheField\_\-getDateTime}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getDateTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getDateTime (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaDateTime} $\ast$ {\em result})}}
+\label{fieldcachefield_8h_a0fd4315e26b6bcdd16c743fc42ad0375}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type TIME. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em result}](out) The value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_af89782d0bcac05bcd7fadd2ee94c6fc4}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getBoolVector@{mamaFieldCacheField\_\-getBoolVector}}
+\index{mamaFieldCacheField\_\-getBoolVector@{mamaFieldCacheField\_\-getBoolVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getBoolVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getBoolVector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-bool\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_af89782d0bcac05bcd7fadd2ee94c6fc4}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type Bool vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a998898dc4fcfd4d9a00d1b10a63e0d26}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getCharVector@{mamaFieldCacheField\_\-getCharVector}}
+\index{mamaFieldCacheField\_\-getCharVector@{mamaFieldCacheField\_\-getCharVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getCharVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getCharVector (const {\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a998898dc4fcfd4d9a00d1b10a63e0d26}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type Char vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aa81162045ac890f781daca516abbf47a}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI8Vector@{mamaFieldCacheField\_\-getI8Vector}}
+\index{mamaFieldCacheField\_\-getI8Vector@{mamaFieldCacheField\_\-getI8Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI8Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI8Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i8\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_aa81162045ac890f781daca516abbf47a}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type I8 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a284ba76bfd3aaf28b1e1559cd01bac76}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU8Vector@{mamaFieldCacheField\_\-getU8Vector}}
+\index{mamaFieldCacheField\_\-getU8Vector@{mamaFieldCacheField\_\-getU8Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU8Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU8Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u8\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a284ba76bfd3aaf28b1e1559cd01bac76}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type U8 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aaa0352e6ac71fd0972d873856a81ebda}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI16Vector@{mamaFieldCacheField\_\-getI16Vector}}
+\index{mamaFieldCacheField\_\-getI16Vector@{mamaFieldCacheField\_\-getI16Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI16Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI16Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i16\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_aaa0352e6ac71fd0972d873856a81ebda}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type I16 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a8c275f7f50dabb80c321e4732152f22b}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU16Vector@{mamaFieldCacheField\_\-getU16Vector}}
+\index{mamaFieldCacheField\_\-getU16Vector@{mamaFieldCacheField\_\-getU16Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU16Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU16Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u16\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a8c275f7f50dabb80c321e4732152f22b}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type U16 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a544eecac05eb31a20d6d9afc449d2b78}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI32Vector@{mamaFieldCacheField\_\-getI32Vector}}
+\index{mamaFieldCacheField\_\-getI32Vector@{mamaFieldCacheField\_\-getI32Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI32Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI32Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i32\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a544eecac05eb31a20d6d9afc449d2b78}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type I32 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a018ff67d142dfb8d4e675f5ed82c5323}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU32Vector@{mamaFieldCacheField\_\-getU32Vector}}
+\index{mamaFieldCacheField\_\-getU32Vector@{mamaFieldCacheField\_\-getU32Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU32Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU32Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u32\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a018ff67d142dfb8d4e675f5ed82c5323}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type U32 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ad80300efc0b425cd04888800948b175c}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getI64Vector@{mamaFieldCacheField\_\-getI64Vector}}
+\index{mamaFieldCacheField\_\-getI64Vector@{mamaFieldCacheField\_\-getI64Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getI64Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getI64Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i64\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_ad80300efc0b425cd04888800948b175c}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type I64 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a44357b7ba74c6548d7759b4dee2ef611}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getU64Vector@{mamaFieldCacheField\_\-getU64Vector}}
+\index{mamaFieldCacheField\_\-getU64Vector@{mamaFieldCacheField\_\-getU64Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getU64Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getU64Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u64\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a44357b7ba74c6548d7759b4dee2ef611}
+
+
+This function will get the values a {\ttfamily mamaFieldCacheField} of type U64 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a8a8cd9c1c07efd04f15ab1d1830d033d}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getF32Vector@{mamaFieldCacheField\_\-getF32Vector}}
+\index{mamaFieldCacheField\_\-getF32Vector@{mamaFieldCacheField\_\-getF32Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getF32Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getF32Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-f32\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a8a8cd9c1c07efd04f15ab1d1830d033d}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type F32 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a7607b7cf9f3fc2b7169870d8faf50f71}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getF64Vector@{mamaFieldCacheField\_\-getF64Vector}}
+\index{mamaFieldCacheField\_\-getF64Vector@{mamaFieldCacheField\_\-getF64Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getF64Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getF64Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-f64\_\-t} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a7607b7cf9f3fc2b7169870d8faf50f71}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type F64 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aa1c5729b6d7070b433847fcdad80479d}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getStringVector@{mamaFieldCacheField\_\-getStringVector}}
+\index{mamaFieldCacheField\_\-getStringVector@{mamaFieldCacheField\_\-getStringVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getStringVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getStringVector (const {\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$$\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_aa1c5729b6d7070b433847fcdad80479d}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type STRING vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a749df17108342e8f4a78d6c0e892da9b}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getPriceVector@{mamaFieldCacheField\_\-getPriceVector}}
+\index{mamaFieldCacheField\_\-getPriceVector@{mamaFieldCacheField\_\-getPriceVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getPriceVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getPriceVector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaPrice} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a749df17108342e8f4a78d6c0e892da9b}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type PRICE vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a6db54af46f42c9f03f529489505a45b0}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-getDateTimeVector@{mamaFieldCacheField\_\-getDateTimeVector}}
+\index{mamaFieldCacheField\_\-getDateTimeVector@{mamaFieldCacheField\_\-getDateTimeVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-getDateTimeVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-getDateTimeVector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaDateTime} $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcachefield_8h_a6db54af46f42c9f03f529489505a45b0}
+
+
+This function will get the value a {\ttfamily mamaFieldCacheField} of type TIME vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field. \item[{\em values}](out) The array of values of the field. \item[{\em size}](out) The number of values. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a6c8c9f52339e81fdecdb84a89a4766a7}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setBool@{mamaFieldCacheField\_\-setBool}}
+\index{mamaFieldCacheField\_\-setBool@{mamaFieldCacheField\_\-setBool}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setBool}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setBool ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-bool\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a6c8c9f52339e81fdecdb84a89a4766a7}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type BOOL. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a0b981f408c20104cbf65385e1bff1844}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setChar@{mamaFieldCacheField\_\-setChar}}
+\index{mamaFieldCacheField\_\-setChar@{mamaFieldCacheField\_\-setChar}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setChar}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setChar ({\bf mamaFieldCacheField} {\em field}, \/  char {\em value})}}
+\label{fieldcachefield_8h_a0b981f408c20104cbf65385e1bff1844}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type CHAR. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a756fbad7360050831e1d922177d7b4eb}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI8@{mamaFieldCacheField\_\-setI8}}
+\index{mamaFieldCacheField\_\-setI8@{mamaFieldCacheField\_\-setI8}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI8 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i8\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a756fbad7360050831e1d922177d7b4eb}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type I8. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a97d13b07a1c97c9ceaddbc98bed69d35}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU8@{mamaFieldCacheField\_\-setU8}}
+\index{mamaFieldCacheField\_\-setU8@{mamaFieldCacheField\_\-setU8}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU8 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u8\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a97d13b07a1c97c9ceaddbc98bed69d35}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type U8. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a73dbc27e1ea3730998ebf01afcf16be6}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI16@{mamaFieldCacheField\_\-setI16}}
+\index{mamaFieldCacheField\_\-setI16@{mamaFieldCacheField\_\-setI16}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI16 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i16\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a73dbc27e1ea3730998ebf01afcf16be6}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type I16. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a21bbd2052e7c3796d02e140eab4caa2a}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU16@{mamaFieldCacheField\_\-setU16}}
+\index{mamaFieldCacheField\_\-setU16@{mamaFieldCacheField\_\-setU16}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU16 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u16\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a21bbd2052e7c3796d02e140eab4caa2a}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type U16. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a3cf9ab059abe5c6d2035ce22ca566511}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI32@{mamaFieldCacheField\_\-setI32}}
+\index{mamaFieldCacheField\_\-setI32@{mamaFieldCacheField\_\-setI32}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI32 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i32\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a3cf9ab059abe5c6d2035ce22ca566511}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type I32. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a651869870b70f4bd03716df636fe7577}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU32@{mamaFieldCacheField\_\-setU32}}
+\index{mamaFieldCacheField\_\-setU32@{mamaFieldCacheField\_\-setU32}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU32 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u32\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a651869870b70f4bd03716df636fe7577}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type U32. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aa37fbad56cceb49a7bc7e4080f97de8e}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI64@{mamaFieldCacheField\_\-setI64}}
+\index{mamaFieldCacheField\_\-setI64@{mamaFieldCacheField\_\-setI64}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI64 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-i64\_\-t} {\em value})}}
+\label{fieldcachefield_8h_aa37fbad56cceb49a7bc7e4080f97de8e}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type I64. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ad39816b922cd388185993c7bfa425433}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU64@{mamaFieldCacheField\_\-setU64}}
+\index{mamaFieldCacheField\_\-setU64@{mamaFieldCacheField\_\-setU64}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU64 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-u64\_\-t} {\em value})}}
+\label{fieldcachefield_8h_ad39816b922cd388185993c7bfa425433}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type U64. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a7a2aea194e894cdf88a5814509cbc8d6}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setF32@{mamaFieldCacheField\_\-setF32}}
+\index{mamaFieldCacheField\_\-setF32@{mamaFieldCacheField\_\-setF32}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setF32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setF32 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-f32\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a7a2aea194e894cdf88a5814509cbc8d6}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type F32. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a99d3631f51074c86042245df28a5e4cb}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setF64@{mamaFieldCacheField\_\-setF64}}
+\index{mamaFieldCacheField\_\-setF64@{mamaFieldCacheField\_\-setF64}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setF64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setF64 ({\bf mamaFieldCacheField} {\em field}, \/  {\bf mama\_\-f64\_\-t} {\em value})}}
+\label{fieldcachefield_8h_a99d3631f51074c86042245df28a5e4cb}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type F64. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ae8403ddcd15df7eb58cc28be397f5e30}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setString@{mamaFieldCacheField\_\-setString}}
+\index{mamaFieldCacheField\_\-setString@{mamaFieldCacheField\_\-setString}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setString (const {\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$ {\em value}, \/  {\bf mama\_\-size\_\-t} {\em len})}}
+\label{fieldcachefield_8h_ae8403ddcd15df7eb58cc28be397f5e30}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type STRING. If parameter len is 0 then the length of the string is automatically computed using {\ttfamily strlen}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \item[{\em len}](in) The length of the string. Can be 0. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a761c1cb7bc0c7b69a2fdc0b19e3ac772}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setPrice@{mamaFieldCacheField\_\-setPrice}}
+\index{mamaFieldCacheField\_\-setPrice@{mamaFieldCacheField\_\-setPrice}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setPrice}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setPrice (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaPrice} {\em value})}}
+\label{fieldcachefield_8h_a761c1cb7bc0c7b69a2fdc0b19e3ac772}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type PRICE. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a4974adc83d74be2e50c1226add20f7eb}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setDateTime@{mamaFieldCacheField\_\-setDateTime}}
+\index{mamaFieldCacheField\_\-setDateTime@{mamaFieldCacheField\_\-setDateTime}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setDateTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setDateTime (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaDateTime} {\em value})}}
+\label{fieldcachefield_8h_a4974adc83d74be2e50c1226add20f7eb}
+
+
+This function will set the value of a {\ttfamily mamaFieldCacheField} of type TIME. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_afb7e519f30591618e30a0bbc65d3f187}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setBoolVector@{mamaFieldCacheField\_\-setBoolVector}}
+\index{mamaFieldCacheField\_\-setBoolVector@{mamaFieldCacheField\_\-setBoolVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setBoolVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setBoolVector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-bool\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_afb7e519f30591618e30a0bbc65d3f187}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type Bool vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a80725c80f439c7ae001aac070e16c337}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setCharVector@{mamaFieldCacheField\_\-setCharVector}}
+\index{mamaFieldCacheField\_\-setCharVector@{mamaFieldCacheField\_\-setCharVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setCharVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setCharVector (const {\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a80725c80f439c7ae001aac070e16c337}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type Char vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a590c6cc85610d404f8de1853b8f2f8f1}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI8Vector@{mamaFieldCacheField\_\-setI8Vector}}
+\index{mamaFieldCacheField\_\-setI8Vector@{mamaFieldCacheField\_\-setI8Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI8Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI8Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i8\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a590c6cc85610d404f8de1853b8f2f8f1}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type I8 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_af2ccf64bdefb15d9af3740f576450841}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU8Vector@{mamaFieldCacheField\_\-setU8Vector}}
+\index{mamaFieldCacheField\_\-setU8Vector@{mamaFieldCacheField\_\-setU8Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU8Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU8Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u8\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_af2ccf64bdefb15d9af3740f576450841}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type U8 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ae6f425cf09a25f7de43ff0d6e47c3266}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI16Vector@{mamaFieldCacheField\_\-setI16Vector}}
+\index{mamaFieldCacheField\_\-setI16Vector@{mamaFieldCacheField\_\-setI16Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI16Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI16Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i16\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_ae6f425cf09a25f7de43ff0d6e47c3266}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type I16 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a17fbe479e3627ef0cf91ec7241adc1c2}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU16Vector@{mamaFieldCacheField\_\-setU16Vector}}
+\index{mamaFieldCacheField\_\-setU16Vector@{mamaFieldCacheField\_\-setU16Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU16Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU16Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u16\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a17fbe479e3627ef0cf91ec7241adc1c2}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type U16 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a2668ee96cffa7120737c10e62341babd}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI32Vector@{mamaFieldCacheField\_\-setI32Vector}}
+\index{mamaFieldCacheField\_\-setI32Vector@{mamaFieldCacheField\_\-setI32Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI32Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI32Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i32\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a2668ee96cffa7120737c10e62341babd}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type I32 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a28aab619a819e2cac58d0398e4c177e6}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU32Vector@{mamaFieldCacheField\_\-setU32Vector}}
+\index{mamaFieldCacheField\_\-setU32Vector@{mamaFieldCacheField\_\-setU32Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU32Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU32Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u32\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a28aab619a819e2cac58d0398e4c177e6}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type U32 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a866c090fdf3cb0a6abcd2e238b729a7b}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setI64Vector@{mamaFieldCacheField\_\-setI64Vector}}
+\index{mamaFieldCacheField\_\-setI64Vector@{mamaFieldCacheField\_\-setI64Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setI64Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setI64Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-i64\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a866c090fdf3cb0a6abcd2e238b729a7b}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type I64 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a3ee50bcddda0aee401b221ec64bee375}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setU64Vector@{mamaFieldCacheField\_\-setU64Vector}}
+\index{mamaFieldCacheField\_\-setU64Vector@{mamaFieldCacheField\_\-setU64Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setU64Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setU64Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-u64\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a3ee50bcddda0aee401b221ec64bee375}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type U64 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ac3cf64576bd453e4f96a5d9e971fa94e}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setF32Vector@{mamaFieldCacheField\_\-setF32Vector}}
+\index{mamaFieldCacheField\_\-setF32Vector@{mamaFieldCacheField\_\-setF32Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setF32Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setF32Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-f32\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_ac3cf64576bd453e4f96a5d9e971fa94e}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type F32 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_ad1fd1b6c9987dd1050d2eeda1c999fe4}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setF64Vector@{mamaFieldCacheField\_\-setF64Vector}}
+\index{mamaFieldCacheField\_\-setF64Vector@{mamaFieldCacheField\_\-setF64Vector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setF64Vector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setF64Vector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mama\_\-f64\_\-t} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_ad1fd1b6c9987dd1050d2eeda1c999fe4}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type F64 vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_a362789d6707250d29cd8c6841338cdd1}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setStringVector@{mamaFieldCacheField\_\-setStringVector}}
+\index{mamaFieldCacheField\_\-setStringVector@{mamaFieldCacheField\_\-setStringVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setStringVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setStringVector (const {\bf mamaFieldCacheField} {\em field}, \/  const char $\ast$$\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_a362789d6707250d29cd8c6841338cdd1}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type STRING vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_aaf57fa848f68054842abbca49c81e960}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setPriceVector@{mamaFieldCacheField\_\-setPriceVector}}
+\index{mamaFieldCacheField\_\-setPriceVector@{mamaFieldCacheField\_\-setPriceVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setPriceVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setPriceVector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaPrice} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_aaf57fa848f68054842abbca49c81e960}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type PRICE vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcachefield_8h_afc22d83c23bc036e5e03142543698d51}{
+\index{fieldcachefield.h@{fieldcachefield.h}!mamaFieldCacheField\_\-setDateTimeVector@{mamaFieldCacheField\_\-setDateTimeVector}}
+\index{mamaFieldCacheField\_\-setDateTimeVector@{mamaFieldCacheField\_\-setDateTimeVector}!fieldcachefield.h@{fieldcachefield.h}}
+\subsubsection[{mamaFieldCacheField\_\-setDateTimeVector}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCacheField\_\-setDateTimeVector (const {\bf mamaFieldCacheField} {\em field}, \/  const {\bf mamaDateTime} $\ast$ {\em values}, \/  {\bf mama\_\-size\_\-t} {\em size})}}
+\label{fieldcachefield_8h_afc22d83c23bc036e5e03142543698d51}
+
+
+This function will set the values of a {\ttfamily mamaFieldCacheField} of type TIME vector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em field}](in) The field to set the value to. \item[{\em value}](in) The new value of the field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

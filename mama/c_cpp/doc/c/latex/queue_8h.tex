@@ -1,0 +1,545 @@
+\hypertarget{queue_8h}{
+\section{queue.h File Reference}
+\label{queue_8h}\index{queue.h@{queue.h}}
+}
+{\ttfamily \#include $<$mama/mama.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmamaQueueMonitorCallbacks__}{mamaQueueMonitorCallbacks\_\-}
+\begin{DoxyCompactList}\small\item\em callbacks which may be invoked in response to certain conditions on the specified queue being met. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef size\_\-t \hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size}
+\item 
+typedef size\_\-t void $\ast$ \hyperlink{queue_8h_aa2002dcda800c995f77202f6fcfc72c7}{closure}
+\item 
+typedef struct \hyperlink{structmamaQueueMonitorCallbacks__}{mamaQueueMonitorCallbacks\_\-} \hyperlink{queue_8h_a3d3bc8d5479ef67678a15bb46da6d65f}{mamaQueueMonitorCallbacks}
+\begin{DoxyCompactList}\small\item\em callbacks which may be invoked in response to certain conditions on the specified queue being met. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{queue_8h_a05c6b5efff3988599bd03da179f7fd18}{mamaQueueEnqueueCB} )(\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Function invoked when an event is enqueued on the queue for which this function was registered. \item\end{DoxyCompactList}\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{queue_8h_a5273cacbe42f933d9a34c51bb7846343}{mamaQueueEventCB} )(\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Function invoked when a user added event fires. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{queue_8h_a1fc43e495e6be27658d91a2741e5e849}{void} (MAMACALLTYPE $\ast$mamaQueueHighWatermarkExceededCb)(\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue
+\begin{DoxyCompactList}\small\item\em Callback invoked if an upper size limit has been specified for a queue and that limit has been exceeded. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_ac7103c38755a1161c91918f408783b0e}{mamaQueue\_\-create} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} $\ast$queue, \hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl)
+\begin{DoxyCompactList}\small\item\em Create a queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_aad463073a07ea1a8383c67f74ce55076}{mamaQueue\_\-create\_\-usingNative} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} $\ast$queue, \hyperlink{mama_8h_a6a44b3b3884dcc99127baed2fe630240}{mamaBridge} bridgeImpl, void $\ast$nativeQueue)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a68f913f7ad24c0a87e14082c2eeb0057}{mamaQueue\_\-canDestroy} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Check to see if a queue can be destroyed. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a182c8aafc4520aec9f6f5579cd212777}{mamaQueue\_\-destroy} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Destroy a queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_afdfa075f2c704110cb4e6ffc9da870b5}{mamaQueue\_\-destroyWait} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Destroy a queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_af3a07ae88db42358f84c66203c9449c7}{mamaQueue\_\-destroyTimedWait} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, long timeout)
+\begin{DoxyCompactList}\small\item\em Destroy a queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_aee3eb1c5b883c0c2303c941a37274ae8}{mamaQueue\_\-setHighWatermark} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, size\_\-t highWatermark)
+\begin{DoxyCompactList}\small\item\em Specify a high watermark for events on the queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_ae04180b914655173955a03fad2976690}{mamaQueue\_\-getHighWatermark} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, size\_\-t $\ast$highWatermark)
+\begin{DoxyCompactList}\small\item\em Get the value of the high water mark for the specified queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a57d8a008a6a7295d498ae321794bcc17}{mamaQueue\_\-setLowWatermark} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, size\_\-t lowWatermark)
+\begin{DoxyCompactList}\small\item\em Set the low water mark for the queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_afb9ff807bd43e712d7d293f81dd4b17b}{mamaQueue\_\-getLowWatermark} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, size\_\-t $\ast$lowWatermark)
+\begin{DoxyCompactList}\small\item\em Get the value of the low water mark for the specified queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_ac2b2be4b4b7f3b24b79cb49502128b28}{mamaQueue\_\-setQueueMonitorCallbacks} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{structmamaQueueMonitorCallbacks__}{mamaQueueMonitorCallbacks} $\ast$queueMonitorCallbacks, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Specify a set of callbacks which may be invoked in response to certain conditions arising on the queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_afef74be2aa292b526584cb0810ab2e1d}{mamaQueue\_\-getEventCount} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, size\_\-t $\ast$count)
+\begin{DoxyCompactList}\small\item\em Writes the number of events currently on the specified queue to the address specified by count. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a2f344d1afcf88ee9e34f4d6e6f6545f1}{mamaQueue\_\-setQueueName} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Associate a name identifier with the event queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a43a16378f949a844dd5c22cabef2f3d8}{mamaQueue\_\-getQueueName} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const char $\ast$$\ast$name)
+\begin{DoxyCompactList}\small\item\em Get the string name identifier for the specified event queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_afd9f895fdc7316a32bc6ea1d30a4fb8b}{mamaQueue\_\-getQueueBridgeName} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, const char $\ast$$\ast$name)
+\begin{DoxyCompactList}\small\item\em Get the string name identifier of the bridge for the specified event queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a8807f3368e4428dcaaa6a3fd1a1d305f}{mamaQueue\_\-dispatch} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Dispatch messages from the queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a1224762d08b89b874d2b404a7fde785e}{mamaQueue\_\-timedDispatch} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, uint64\_\-t timeout)
+\begin{DoxyCompactList}\small\item\em Dispatch messages from the queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_ac84b94bb7396286c1940662841e8db69}{mamaQueue\_\-dispatchEvent} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Dispatch a single event from the specified queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a3db257eaf44ff6723242c53b624b7c0a}{mamaQueue\_\-enqueueEvent} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{queue_8h_a5273cacbe42f933d9a34c51bb7846343}{mamaQueueEventCB} callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Add an user event to a queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a9e986963b1e3f51374caacd3d1b1f76a}{mamaQueue\_\-stopDispatch} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Unblock the queue as soon as possible. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_ab55a6ac29d34e53b937de7b4b3f83e29}{mamaQueue\_\-setEnqueueCallback} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{queue_8h_a05c6b5efff3988599bd03da179f7fd18}{mamaQueueEnqueueCB} callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Register the specified callback function to receive a callback each time an event is enqueued on the specified mamaQueue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a6df6ee7d3f8bfea4eac61e88cb362746}{mamaQueue\_\-removeEnqueueCallback} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em If the specified queue has a registered enqueue callback it is unregistered and the previously supplied callback function will no longer receive callbacks for enqueue events. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a9e2dc9ec5949bdea729c3879f910812f}{mamaQueue\_\-getNativeHandle} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, void $\ast$$\ast$nativeHandle)
+\begin{DoxyCompactList}\small\item\em Get the native middleware implementation queue handle (if applicable for the implementation). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a5bd48fdd408c7cc0ef53fbafeb6f01ba}{mamaDispatcher\_\-create} (\hyperlink{types_8h_a9e549166f734c5ab8bf7cda85caa7925}{mamaDispatcher} $\ast$result, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Create a mamaDispatcher. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_ade70cbc753105909e9011b646628b634}{mamaDispatcher\_\-getQueue} (\hyperlink{types_8h_a9e549166f734c5ab8bf7cda85caa7925}{mamaDispatcher} dispatcher, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the queue associated with the dispatcher. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a4c62ee5dfe58b6ffe9fd1306f61b068c}{mamaQueue\_\-enableStats} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue)
+\begin{DoxyCompactList}\small\item\em Enable stats logging on queue. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a8bec7cf63812376421ccdea3c6a5e2a8}{mamaDispatcher\_\-destroy} (\hyperlink{types_8h_a9e549166f734c5ab8bf7cda85caa7925}{mamaDispatcher} dispatcher)
+\begin{DoxyCompactList}\small\item\em Destroy the dispatcher and stop dispatching events. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a459065bba91b2a15e2f607640c27ed82}{mamaQueue\_\-getClosure} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, void $\ast$$\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{queue_8h_a5b005b55334d491d70bdb03c3490a6e4}{mamaQueue\_\-setClosure} (\hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{
+\index{queue.h@{queue.h}!size@{size}}
+\index{size@{size}!queue.h@{queue.h}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\_\-t {\bf size}}}
+\label{queue_8h_ace203185bbe624f77c40b4d12f8257c0}
+\hypertarget{queue_8h_aa2002dcda800c995f77202f6fcfc72c7}{
+\index{queue.h@{queue.h}!closure@{closure}}
+\index{closure@{closure}!queue.h@{queue.h}}
+\subsubsection[{closure}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\_\-t void$\ast$ {\bf closure}}}
+\label{queue_8h_aa2002dcda800c995f77202f6fcfc72c7}
+\hypertarget{queue_8h_a3d3bc8d5479ef67678a15bb46da6d65f}{
+\index{queue.h@{queue.h}!mamaQueueMonitorCallbacks@{mamaQueueMonitorCallbacks}}
+\index{mamaQueueMonitorCallbacks@{mamaQueueMonitorCallbacks}!queue.h@{queue.h}}
+\subsubsection[{mamaQueueMonitorCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf mamaQueueMonitorCallbacks\_\-}  {\bf mamaQueueMonitorCallbacks}}}
+\label{queue_8h_a3d3bc8d5479ef67678a15bb46da6d65f}
+
+
+callbacks which may be invoked in response to certain conditions on the specified queue being met. \hypertarget{queue_8h_a05c6b5efff3988599bd03da179f7fd18}{
+\index{queue.h@{queue.h}!mamaQueueEnqueueCB@{mamaQueueEnqueueCB}}
+\index{mamaQueueEnqueueCB@{mamaQueueEnqueueCB}!queue.h@{queue.h}}
+\subsubsection[{mamaQueueEnqueueCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaQueueEnqueueCB})({\bf mamaQueue} queue, void $\ast${\bf closure})}}
+\label{queue_8h_a05c6b5efff3988599bd03da179f7fd18}
+
+
+Function invoked when an event is enqueued on the queue for which this function was registered. LBM Bridge: NB! Users may not dispatch events from this function when using with \hyperlink{queue_8h_ab55a6ac29d34e53b937de7b4b3f83e29}{mamaQueue\_\-setEnqueueCallback()} The function is invoked from an LBM internal thread. Attempts to dispatch from here will result in a deadlock.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue on which the function was registered. \item[{\em closure}]The user data supplied in the call to setEnqueueCallback. \end{DoxyParams}
+\hypertarget{queue_8h_a5273cacbe42f933d9a34c51bb7846343}{
+\index{queue.h@{queue.h}!mamaQueueEventCB@{mamaQueueEventCB}}
+\index{mamaQueueEventCB@{mamaQueueEventCB}!queue.h@{queue.h}}
+\subsubsection[{mamaQueueEventCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaQueueEventCB})({\bf mamaQueue} queue, void $\ast${\bf closure})}}
+\label{queue_8h_a5273cacbe42f933d9a34c51bb7846343}
+
+
+Function invoked when a user added event fires. Events are added to a queue using the {\ttfamily mamaQuque\_\-enqueueEvent()}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The MamaQueue on which the event was enqueued. \item[{\em closure}]The user specified data associated with this event. \end{DoxyParams}
+
+
+\subsection{Function Documentation}
+\hypertarget{queue_8h_a1fc43e495e6be27658d91a2741e5e849}{
+\index{queue.h@{queue.h}!void@{void}}
+\index{void@{void}!queue.h@{queue.h}}
+\subsubsection[{void}]{\setlength{\rightskip}{0pt plus 5cm}typedef void (MAMACALLTYPE $\ast$ {\em mamaQueueLowWatermarkCb})}}
+\label{queue_8h_a1fc43e495e6be27658d91a2741e5e849}
+
+
+Callback invoked if an upper size limit has been specified for a queue and that limit has been exceeded. Callback invoked when the queue size returns to the lower limit specified.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue for which the size limit has been exceeded. NULL if the queue is the default internal MAMA queue. \item[{\em size}]The current number of events outstanding on the queue (if supported on the underlying middleware) \item[{\em closure}]User supplied data set when the callback was registered. NULL in the case of the default MAMA queue as no closure can be specified when registering the data quality callbacks.\end{DoxyParams}
+Only Wombat TCP middleware supports low water mark callbacks. \hypertarget{queue_8h_ac7103c38755a1161c91918f408783b0e}{
+\index{queue.h@{queue.h}!mamaQueue\_\-create@{mamaQueue\_\-create}}
+\index{mamaQueue\_\-create@{mamaQueue\_\-create}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-create ({\bf mamaQueue} $\ast$ {\em queue}, \/  {\bf mamaBridge} {\em bridgeImpl})}}
+\label{queue_8h_ac7103c38755a1161c91918f408783b0e}
+
+
+Create a queue. Queues allow applications to dispatch events in order with multiple threads using a single mamaDispatcher for each queue. A queue must be associated with a particular middleware.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]A pointer to the resulting queue. \item[{\em bridgeImpl}]A valid bridge implementation for which this queue is being created. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call succeeds. 
+
+MAMA\_\-STATUS\_\-NO\_\-BRIDGE\_\-IMPL if the bridgeImpl parameter is not valid. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_aad463073a07ea1a8383c67f74ce55076}{
+\index{queue.h@{queue.h}!mamaQueue\_\-create\_\-usingNative@{mamaQueue\_\-create\_\-usingNative}}
+\index{mamaQueue\_\-create\_\-usingNative@{mamaQueue\_\-create\_\-usingNative}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-create\_\-usingNative}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-create\_\-usingNative ({\bf mamaQueue} $\ast$ {\em queue}, \/  {\bf mamaBridge} {\em bridgeImpl}, \/  void $\ast$ {\em nativeQueue})}}
+\label{queue_8h_aad463073a07ea1a8383c67f74ce55076}
+\hypertarget{queue_8h_a68f913f7ad24c0a87e14082c2eeb0057}{
+\index{queue.h@{queue.h}!mamaQueue\_\-canDestroy@{mamaQueue\_\-canDestroy}}
+\index{mamaQueue\_\-canDestroy@{mamaQueue\_\-canDestroy}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-canDestroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-canDestroy ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a68f913f7ad24c0a87e14082c2eeb0057}
+
+
+Check to see if a queue can be destroyed. The queue cannot be destroyed if there are currently open event objects on it.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the queue can be destroyed. MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS if there are still objects open against the queue. MAMA\_\-STATUS\_\-NULL\_\-ARG 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a182c8aafc4520aec9f6f5579cd212777}{
+\index{queue.h@{queue.h}!mamaQueue\_\-destroy@{mamaQueue\_\-destroy}}
+\index{mamaQueue\_\-destroy@{mamaQueue\_\-destroy}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-destroy ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a182c8aafc4520aec9f6f5579cd212777}
+
+
+Destroy a queue. Note that the queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. MAMA\_\-STATUS\_\-QUEUE\_\-OPEN\_\-OBJECTS if there are still objects open against the queue. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_afdfa075f2c704110cb4e6ffc9da870b5}{
+\index{queue.h@{queue.h}!mamaQueue\_\-destroyWait@{mamaQueue\_\-destroyWait}}
+\index{mamaQueue\_\-destroyWait@{mamaQueue\_\-destroyWait}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-destroyWait}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-destroyWait ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_afdfa075f2c704110cb4e6ffc9da870b5}
+
+
+Destroy a queue. Note that the queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed. This function will block until all of the objects have been destroyed and will then destroy the queue.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_af3a07ae88db42358f84c66203c9449c7}{
+\index{queue.h@{queue.h}!mamaQueue\_\-destroyTimedWait@{mamaQueue\_\-destroyTimedWait}}
+\index{mamaQueue\_\-destroyTimedWait@{mamaQueue\_\-destroyTimedWait}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-destroyTimedWait}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-destroyTimedWait ({\bf mamaQueue} {\em queue}, \/  long {\em timeout})}}
+\label{queue_8h_af3a07ae88db42358f84c66203c9449c7}
+
+
+Destroy a queue. Note that the queue can only be destroyed if all of the objects created on it, (timers, subscriptions etc), have been destroyed. This function will block for the specified time or until all of the objects have been destroyed and will then destroy the queue.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \item[{\em timeout}]The time to block for in ms. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. MAMA\_\-STATUS\_\-TIMEOUT if the time elapsed. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_aee3eb1c5b883c0c2303c941a37274ae8}{
+\index{queue.h@{queue.h}!mamaQueue\_\-setHighWatermark@{mamaQueue\_\-setHighWatermark}}
+\index{mamaQueue\_\-setHighWatermark@{mamaQueue\_\-setHighWatermark}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-setHighWatermark}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-setHighWatermark ({\bf mamaQueue} {\em queue}, \/  size\_\-t {\em highWatermark})}}
+\label{queue_8h_aee3eb1c5b883c0c2303c941a37274ae8}
+
+
+Specify a high watermark for events on the queue. The behaviour for setting this value varies depending on the underlying middleware.
+
+LBM: LBM uses an unbounded event queue. Setting this values allows users of the API to receive a callback if the value is exceeded. (See mamaQueue\_\-setQueueMonitorCallback() for setting queue related callbacks) The default behaviour is for the queue to grow unbounded without notifications. The high watermark for LBM can be set for all queues at once by setting the mama.lbm.eventqueuemonitor.queue\_\-size\_\-warning property for the API. Calls to this function will override the value specified in mama.properties at runtime. Callbacks can be disabled by setting this value to 0, effectively disabling high watermark checking.
+
+RV: This will set a queue limit policy of TIBRVQUEUE\_\-DISCARD\_\-FIRST whereby the oldest events in the queue are discarded first. The discard amount will be set with a value of 1, i.e. events will be dropped from the queue one at a time. The default behaviour is an unlimited queue which does not discard events.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue for which the high watermark is being set. \item[{\em highWatermark}]The size of the queue, beyond which, results in notification of activity. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the function returns successfully. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_ae04180b914655173955a03fad2976690}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getHighWatermark@{mamaQueue\_\-getHighWatermark}}
+\index{mamaQueue\_\-getHighWatermark@{mamaQueue\_\-getHighWatermark}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getHighWatermark}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getHighWatermark ({\bf mamaQueue} {\em queue}, \/  size\_\-t $\ast$ {\em highWatermark})}}
+\label{queue_8h_ae04180b914655173955a03fad2976690}
+
+
+Get the value of the high water mark for the specified queue. A value of 0 will be returned if no high water mark was previously specified.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue for which the high water mark is being retrieved \item[{\em highWatermark}]Address to which the high water mark will be written. \end{DoxyParams}
+\hypertarget{queue_8h_a57d8a008a6a7295d498ae321794bcc17}{
+\index{queue.h@{queue.h}!mamaQueue\_\-setLowWatermark@{mamaQueue\_\-setLowWatermark}}
+\index{mamaQueue\_\-setLowWatermark@{mamaQueue\_\-setLowWatermark}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-setLowWatermark}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-setLowWatermark ({\bf mamaQueue} {\em queue}, \/  size\_\-t {\em lowWatermark})}}
+\label{queue_8h_a57d8a008a6a7295d498ae321794bcc17}
+
+
+Set the low water mark for the queue. Only supported by Wombat TCP middleware.
+
+The low watermark must be $>$1 and $<$ highWaterMark otherwise this method returns MAMA\_\-STATUS\_\-INVALID\_\-ARG. For this reason the high water mark must be set before invoking this method.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \item[{\em lowWatermark}]the low watermark. \end{DoxyParams}
+\hypertarget{queue_8h_afb9ff807bd43e712d7d293f81dd4b17b}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getLowWatermark@{mamaQueue\_\-getLowWatermark}}
+\index{mamaQueue\_\-getLowWatermark@{mamaQueue\_\-getLowWatermark}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getLowWatermark}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getLowWatermark ({\bf mamaQueue} {\em queue}, \/  size\_\-t $\ast$ {\em lowWatermark})}}
+\label{queue_8h_afb9ff807bd43e712d7d293f81dd4b17b}
+
+
+Get the value of the low water mark for the specified queue. A value of 1 will be returned if no low water mark was previously specified.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue for which the low water mark is being retrieved. \item[{\em lowWatermark}]Address to which the low water mark will be written. \end{DoxyParams}
+\hypertarget{queue_8h_ac2b2be4b4b7f3b24b79cb49502128b28}{
+\index{queue.h@{queue.h}!mamaQueue\_\-setQueueMonitorCallbacks@{mamaQueue\_\-setQueueMonitorCallbacks}}
+\index{mamaQueue\_\-setQueueMonitorCallbacks@{mamaQueue\_\-setQueueMonitorCallbacks}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-setQueueMonitorCallbacks}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-setQueueMonitorCallbacks ({\bf mamaQueue} {\em queue}, \/  {\bf mamaQueueMonitorCallbacks} $\ast$ {\em queueMonitorCallbacks}, \/  void $\ast$ {\em closure})}}
+\label{queue_8h_ac2b2be4b4b7f3b24b79cb49502128b28}
+
+
+Specify a set of callbacks which may be invoked in response to certain conditions arising on the queue. The behaviour here is middleware specific as not all will support all callbacks.
+
+LBM: When the high watermark is exceeded the mamaQueueHighWatermarkExceededCb callback will invoked each time an event on the queue is dispatched until such time as the number of events on the queue falls below the high watermark. \hypertarget{queue_8h_afef74be2aa292b526584cb0810ab2e1d}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getEventCount@{mamaQueue\_\-getEventCount}}
+\index{mamaQueue\_\-getEventCount@{mamaQueue\_\-getEventCount}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getEventCount}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getEventCount ({\bf mamaQueue} {\em queue}, \/  size\_\-t $\ast$ {\em count})}}
+\label{queue_8h_afef74be2aa292b526584cb0810ab2e1d}
+
+
+Writes the number of events currently on the specified queue to the address specified by count. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \item[{\em count}]Address to where the number of events on the queue will be written \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a2f344d1afcf88ee9e34f4d6e6f6545f1}{
+\index{queue.h@{queue.h}!mamaQueue\_\-setQueueName@{mamaQueue\_\-setQueueName}}
+\index{mamaQueue\_\-setQueueName@{mamaQueue\_\-setQueueName}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-setQueueName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-setQueueName ({\bf mamaQueue} {\em queue}, \/  const char $\ast$ {\em name})}}
+\label{queue_8h_a2f344d1afcf88ee9e34f4d6e6f6545f1}
+
+
+Associate a name identifier with the event queue. This will be used in queue related logging statements. The string is copied by the API.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The event queue for which the name is being specified. \item[{\em name}]The string identifier for the queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function call succeeded. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The queue parameter is NULL 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The name parameter is NULL 
+
+MAMA\_\-STATUS\_\-NO\_\-MEM The name could not be copied. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a43a16378f949a844dd5c22cabef2f3d8}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getQueueName@{mamaQueue\_\-getQueueName}}
+\index{mamaQueue\_\-getQueueName@{mamaQueue\_\-getQueueName}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getQueueName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getQueueName ({\bf mamaQueue} {\em queue}, \/  const char $\ast$$\ast$ {\em name})}}
+\label{queue_8h_a43a16378f949a844dd5c22cabef2f3d8}
+
+
+Get the string name identifier for the specified event queue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The event queue for which the name is being sought. \item[{\em name}]Address to which the name will be written. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function call succeeded. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The queue parameter was NULL 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The name parameter was NULL 
+\end{DoxyReturn}
+\hypertarget{queue_8h_afd9f895fdc7316a32bc6ea1d30a4fb8b}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getQueueBridgeName@{mamaQueue\_\-getQueueBridgeName}}
+\index{mamaQueue\_\-getQueueBridgeName@{mamaQueue\_\-getQueueBridgeName}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getQueueBridgeName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getQueueBridgeName ({\bf mamaQueue} {\em queue}, \/  const char $\ast$$\ast$ {\em name})}}
+\label{queue_8h_afd9f895fdc7316a32bc6ea1d30a4fb8b}
+
+
+Get the string name identifier of the bridge for the specified event queue. Name will be either \char`\"{}wmw\char`\"{}, \char`\"{}tibrv\char`\"{}, or \char`\"{}lbm\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The event queue for which the bridge name is being sought. \item[{\em name}]Address to which the name will be written. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function call succeeded. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The queue parameter was NULL 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a8807f3368e4428dcaaa6a3fd1a1d305f}{
+\index{queue.h@{queue.h}!mamaQueue\_\-dispatch@{mamaQueue\_\-dispatch}}
+\index{mamaQueue\_\-dispatch@{mamaQueue\_\-dispatch}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-dispatch}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-dispatch ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a8807f3368e4428dcaaa6a3fd1a1d305f}
+
+
+Dispatch messages from the queue. This call blocks and dispatches until \hyperlink{queue_8h_a9e986963b1e3f51374caacd3d1b1f76a}{mamaQueue\_\-stopDispatch()} is called.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a1224762d08b89b874d2b404a7fde785e}{
+\index{queue.h@{queue.h}!mamaQueue\_\-timedDispatch@{mamaQueue\_\-timedDispatch}}
+\index{mamaQueue\_\-timedDispatch@{mamaQueue\_\-timedDispatch}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-timedDispatch}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-timedDispatch ({\bf mamaQueue} {\em queue}, \/  uint64\_\-t {\em timeout})}}
+\label{queue_8h_a1224762d08b89b874d2b404a7fde785e}
+
+
+Dispatch messages from the queue. This call blocks and dispatches until timeout has elapsed.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \item[{\em timeout}]The number of milliseconds to block for before the function returns. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_ac84b94bb7396286c1940662841e8db69}{
+\index{queue.h@{queue.h}!mamaQueue\_\-dispatchEvent@{mamaQueue\_\-dispatchEvent}}
+\index{mamaQueue\_\-dispatchEvent@{mamaQueue\_\-dispatchEvent}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-dispatchEvent}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-dispatchEvent ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_ac84b94bb7396286c1940662841e8db69}
+
+
+Dispatch a single event from the specified queue. If there is no event on the queue simply return and do nothing.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue from which to dispatch the event. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the function succeeds. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a3db257eaf44ff6723242c53b624b7c0a}{
+\index{queue.h@{queue.h}!mamaQueue\_\-enqueueEvent@{mamaQueue\_\-enqueueEvent}}
+\index{mamaQueue\_\-enqueueEvent@{mamaQueue\_\-enqueueEvent}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-enqueueEvent}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-enqueueEvent ({\bf mamaQueue} {\em queue}, \/  {\bf mamaQueueEventCB} {\em callback}, \/  void $\ast$ {\em closure})}}
+\label{queue_8h_a3db257eaf44ff6723242c53b624b7c0a}
+
+
+Add an user event to a queue. Currently only supported using Wombat Middleware.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue to which the event is to be added \item[{\em callback}]The function to be invoked when the event fires. \item[{\em closure}]Optional arbitrary user supplied data. Passed back to callback function. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the function succeeds. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a9e986963b1e3f51374caacd3d1b1f76a}{
+\index{queue.h@{queue.h}!mamaQueue\_\-stopDispatch@{mamaQueue\_\-stopDispatch}}
+\index{mamaQueue\_\-stopDispatch@{mamaQueue\_\-stopDispatch}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-stopDispatch}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-stopDispatch ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a9e986963b1e3f51374caacd3d1b1f76a}
+
+
+Unblock the queue as soon as possible. This will cause mamaDispatchers to exit. Creating a new dispatcher will resume dispatching events.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_ab55a6ac29d34e53b937de7b4b3f83e29}{
+\index{queue.h@{queue.h}!mamaQueue\_\-setEnqueueCallback@{mamaQueue\_\-setEnqueueCallback}}
+\index{mamaQueue\_\-setEnqueueCallback@{mamaQueue\_\-setEnqueueCallback}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-setEnqueueCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-setEnqueueCallback ({\bf mamaQueue} {\em queue}, \/  {\bf mamaQueueEnqueueCB} {\em callback}, \/  void $\ast$ {\em closure})}}
+\label{queue_8h_ab55a6ac29d34e53b937de7b4b3f83e29}
+
+
+Register the specified callback function to receive a callback each time an event is enqueued on the specified mamaQueue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue on which the callback should be registered. \item[{\em callback}]The function which should be invoked for each enqueue operation \item[{\em closure}]Optional arbitrary user supplied data. Passed back to callback function.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a6df6ee7d3f8bfea4eac61e88cb362746}{
+\index{queue.h@{queue.h}!mamaQueue\_\-removeEnqueueCallback@{mamaQueue\_\-removeEnqueueCallback}}
+\index{mamaQueue\_\-removeEnqueueCallback@{mamaQueue\_\-removeEnqueueCallback}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-removeEnqueueCallback}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-removeEnqueueCallback ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a6df6ee7d3f8bfea4eac61e88cb362746}
+
+
+If the specified queue has a registered enqueue callback it is unregistered and the previously supplied callback function will no longer receive callbacks for enqueue events. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue for which the callback function should be removed. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a9e2dc9ec5949bdea729c3879f910812f}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getNativeHandle@{mamaQueue\_\-getNativeHandle}}
+\index{mamaQueue\_\-getNativeHandle@{mamaQueue\_\-getNativeHandle}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getNativeHandle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getNativeHandle ({\bf mamaQueue} {\em queue}, \/  void $\ast$$\ast$ {\em nativeHandle})}}
+\label{queue_8h_a9e2dc9ec5949bdea729c3879f910812f}
+
+
+Get the native middleware implementation queue handle (if applicable for the implementation). This function is for internal use only.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The mamaQueue for which the native handle is requested. \item[{\em nativeHandle}]The resulting native handle. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a5bd48fdd408c7cc0ef53fbafeb6f01ba}{
+\index{queue.h@{queue.h}!mamaDispatcher\_\-create@{mamaDispatcher\_\-create}}
+\index{mamaDispatcher\_\-create@{mamaDispatcher\_\-create}!queue.h@{queue.h}}
+\subsubsection[{mamaDispatcher\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDispatcher\_\-create ({\bf mamaDispatcher} $\ast$ {\em result}, \/  {\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a5bd48fdd408c7cc0ef53fbafeb6f01ba}
+
+
+Create a mamaDispatcher. The dispatcher spawns a thread to dispatch events from a queue. It will continue to dispatch events until it is destroyed or mamaQueue\_\-stopDispatch is called.
+
+Only a single dispatcher can be created for a given queue. Attempting to create multiple dispatchers for a queue will result in and error. Dispatching message from a single queue with multiple threads results in messages arriving out of order and sequence number gaps for market data subscriptions.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to the resulting mamaDispatcher. \item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_ade70cbc753105909e9011b646628b634}{
+\index{queue.h@{queue.h}!mamaDispatcher\_\-getQueue@{mamaDispatcher\_\-getQueue}}
+\index{mamaDispatcher\_\-getQueue@{mamaDispatcher\_\-getQueue}!queue.h@{queue.h}}
+\subsubsection[{mamaDispatcher\_\-getQueue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDispatcher\_\-getQueue ({\bf mamaDispatcher} {\em dispatcher}, \/  {\bf mamaQueue} $\ast$ {\em result})}}
+\label{queue_8h_ade70cbc753105909e9011b646628b634}
+
+
+Return the queue associated with the dispatcher. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dispatcher}]The dispatcher. \item[{\em result}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a4c62ee5dfe58b6ffe9fd1306f61b068c}{
+\index{queue.h@{queue.h}!mamaQueue\_\-enableStats@{mamaQueue\_\-enableStats}}
+\index{mamaQueue\_\-enableStats@{mamaQueue\_\-enableStats}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-enableStats}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-enableStats ({\bf mamaQueue} {\em queue})}}
+\label{queue_8h_a4c62ee5dfe58b6ffe9fd1306f61b068c}
+
+
+Enable stats logging on queue. 
+\begin{DoxyParams}{Parameters}
+\item[{\em queue}]The queue. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a8bec7cf63812376421ccdea3c6a5e2a8}{
+\index{queue.h@{queue.h}!mamaDispatcher\_\-destroy@{mamaDispatcher\_\-destroy}}
+\index{mamaDispatcher\_\-destroy@{mamaDispatcher\_\-destroy}!queue.h@{queue.h}}
+\subsubsection[{mamaDispatcher\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDispatcher\_\-destroy ({\bf mamaDispatcher} {\em dispatcher})}}
+\label{queue_8h_a8bec7cf63812376421ccdea3c6a5e2a8}
+
+
+Destroy the dispatcher and stop dispatching events. If mamaDispatcher\_\-createQueue() was used then the underlying queue will be destroyed as well.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dispatcher}]The dispatcher. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK if the call is successful. 
+\end{DoxyReturn}
+\hypertarget{queue_8h_a459065bba91b2a15e2f607640c27ed82}{
+\index{queue.h@{queue.h}!mamaQueue\_\-getClosure@{mamaQueue\_\-getClosure}}
+\index{mamaQueue\_\-getClosure@{mamaQueue\_\-getClosure}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-getClosure ({\bf mamaQueue} {\em queue}, \/  void $\ast$$\ast$ {\em closure})}}
+\label{queue_8h_a459065bba91b2a15e2f607640c27ed82}
+\hypertarget{queue_8h_a5b005b55334d491d70bdb03c3490a6e4}{
+\index{queue.h@{queue.h}!mamaQueue\_\-setClosure@{mamaQueue\_\-setClosure}}
+\index{mamaQueue\_\-setClosure@{mamaQueue\_\-setClosure}!queue.h@{queue.h}}
+\subsubsection[{mamaQueue\_\-setClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaQueue\_\-setClosure ({\bf mamaQueue} {\em queue}, \/  void $\ast$ {\em closure})}}
+\label{queue_8h_a5b005b55334d491d70bdb03c3490a6e4}

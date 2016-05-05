@@ -1,0 +1,446 @@
+\hypertarget{types_8h}{
+\section{types.h File Reference}
+\label{types_8h}\index{types.h@{types.h}}
+}
+{\ttfamily \#include \char`\"{}wombat/port.h\char`\"{}}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{types_8h_a8707ace31c8cc87fc90f1d6df21ee419}{MAMA\_\-QUANTITY\_\-EPSILON}~((\hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t})0.00000000001)
+\item 
+\#define \hyperlink{types_8h_a84b8e3020108b15864530634ea92708d}{mama\_\-isQuantityNone}(q)~((q) $<$ MAMA\_\-QUANTITY\_\-EPSILON)
+\begin{DoxyCompactList}\small\item\em Macro to determine if a quantity is zero. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{types_8h_affdee568429f62e4c117f4e0df2fa1d2}{mama\_\-isQuantityEqual}(lhs, rhs)
+\begin{DoxyCompactList}\small\item\em Macro to determine if a quantity equality. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int8\_\-t \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t}
+\item 
+typedef uint8\_\-t \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t}
+\item 
+typedef int16\_\-t \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t}
+\item 
+typedef uint16\_\-t \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t}
+\item 
+typedef int32\_\-t \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t}
+\item 
+typedef uint32\_\-t \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t}
+\item 
+typedef int64\_\-t \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t}
+\item 
+typedef uint64\_\-t \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t}
+\item 
+typedef int8\_\-t \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t}
+\item 
+typedef float \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t}
+\item 
+typedef double \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t}
+\item 
+typedef double \hyperlink{types_8h_aaeccc690059cfe45715b7a3e535cda4e}{mama\_\-quantity\_\-t}
+\item 
+typedef uint16\_\-t \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t}
+\item 
+typedef size\_\-t \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t}
+\item 
+typedef uint32\_\-t \hyperlink{types_8h_ac7ed6449628b864d1a9575c5de98fd33}{mama\_\-seqnum\_\-t}
+\item 
+typedef struct mamaBridgeImpl\_\- $\ast$ \hyperlink{types_8h_aa3b0d534773b2c032ff4f02619859eb9}{mamaBridge}
+\item 
+typedef struct mamaPayloadBridgeImpl\_\- $\ast$ \hyperlink{types_8h_aa8780a24981ed7f83137aafc3de1dada}{mamaPayloadBridge}
+\item 
+typedef struct mamaPluginImpl\_\- $\ast$ \hyperlink{types_8h_a8a9c67eac0e70fffd244212e4240a37f}{mamaPlugin}
+\begin{DoxyCompactList}\small\item\em Container for holding a mama plugin object. \item\end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{types_8h_a7dc5af12ed01673c6cffb193d6f18946}{mamaPluginInfo}
+\begin{DoxyCompactList}\small\item\em Container for holding a mama plugin info. \item\end{DoxyCompactList}\item 
+typedef \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$ \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime}
+\begin{DoxyCompactList}\small\item\em Flexible date/time format. \item\end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone}
+\begin{DoxyCompactList}\small\item\em Time zone utility type. \item\end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice}
+\begin{DoxyCompactList}\small\item\em Flexible price format (contains display hints as well as value). \item\end{DoxyCompactList}\item 
+typedef struct mamaMsgImpl\_\- $\ast$ \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg}
+\begin{DoxyCompactList}\small\item\em Opaque definitions for all major MAMA data types. \item\end{DoxyCompactList}\item 
+typedef struct mamaMsgFieldImpl\_\- $\ast$ \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField}
+\item 
+typedef struct mamaMsgIteratorImpl\_\- $\ast$ \hyperlink{types_8h_a5d1d07f6aa39157e773779d453c1ef43}{mamaMsgIterator}
+\item 
+typedef struct mamaTransportImpl\_\- $\ast$ \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport}
+\item 
+typedef struct mamaSubscriptionImpl\_\- $\ast$ \hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription}
+\item 
+typedef struct mamaManagedSubscriptionImpl\_\- $\ast$ \hyperlink{types_8h_a7491e3ed1d886002a9653a41faca0df3}{mamaManagedSubscription}
+\item 
+typedef struct mamaSubscriptionManagerImpl\_\- $\ast$ \hyperlink{types_8h_a04e9f741fd1aba11050c1503abf3ffd5}{mamaSubscriptionManager}
+\item 
+typedef struct mamaDictionaryImpl\_\- $\ast$ \hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary}
+\item 
+typedef struct mamaPublisherImpl\_\- $\ast$ \hyperlink{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{mamaPublisher}
+\item 
+typedef struct mamaDQPublisherImpl\_\- $\ast$ \hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher}
+\item 
+typedef struct mamaDQPublisherManagerImpl\_\- $\ast$ \hyperlink{types_8h_ad675a06ef0e8f41eb8ce487775c11e7f}{mamaDQPublisherManager}
+\item 
+typedef struct mamaInboxImpl\_\- $\ast$ \hyperlink{types_8h_a52dbc80fd93ec3654f8220afe7ee6e2f}{mamaInbox}
+\item 
+typedef struct mamaQueueImpl\_\- $\ast$ \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue}
+\item 
+typedef struct mamaDispatcherImpl\_\- $\ast$ \hyperlink{types_8h_a9e549166f734c5ab8bf7cda85caa7925}{mamaDispatcher}
+\item 
+typedef struct mamaTimerImpl $\ast$ \hyperlink{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{mamaTimer}
+\item 
+typedef struct mamaFieldDescriptorImpl\_\- $\ast$ \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor}
+\item 
+typedef struct mamaIoImpl $\ast$ \hyperlink{types_8h_a008880c66eec92cbd1ba865523a847ab}{mamaIo}
+\item 
+typedef struct mamaSymbolSourceFileImpl\_\- $\ast$ \hyperlink{types_8h_a7cb94a3090ba3e711dbbce331d498781}{mamaSymbolSourceFile}
+\item 
+typedef struct mamaSymbolStoreImpl\_\- $\ast$ \hyperlink{types_8h_aa0f04b3acf29a09c71b0ac2ab8e70acc}{mamaSymbolStore}
+\item 
+typedef struct mamaMsgQualImpl\_\- $\ast$ \hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual}
+\item 
+typedef struct mamaSourceManagerImpl\_\- $\ast$ \hyperlink{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{mamaSourceManager}
+\item 
+typedef struct mamaSourceImpl\_\- $\ast$ \hyperlink{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{mamaSource}
+\item 
+typedef struct mamaSymbologyImpl\_\- $\ast$ \hyperlink{types_8h_a8c869a9f6c6e3f3c30a16926c598fa7b}{mamaSymbology}
+\item 
+typedef struct mamaSymbologyManagerImpl\_\- $\ast$ \hyperlink{types_8h_af525c04c61da45425c3882777a7f1247}{mamaSymbologyManager}
+\item 
+typedef struct mamaSourceGroupCbHandleImpl\_\- $\ast$ \hyperlink{types_8h_a0c05c1041959d0c4aa3b38312bb4867c}{mamaSourceGroupCbHandle}
+\item 
+typedef struct mamaConnectionImpl\_\- $\ast$ \hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection}
+\item 
+typedef struct mamaServerConnectionImpl\_\- $\ast$ \hyperlink{types_8h_a7783916ce9f2a4e97001295434e4bab6}{mamaServerConnection}
+\item 
+typedef struct mamaConflationManager\_\- $\ast$ \hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager}
+\item 
+typedef struct mamaStatsLoggerImpl\_\- $\ast$ \hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger}
+\item 
+typedef struct mamaStatImpl\_\- $\ast$ \hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat}
+\item 
+typedef struct mamaStatsCollectorImpl\_\- $\ast$ \hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector}
+\item 
+typedef struct mamaStatsGeneratorImpl\_\- $\ast$ \hyperlink{types_8h_a302ba4f023de4217fb8017b7d5bfd11a}{mamaStatsGenerator}
+\item 
+typedef struct mamaMsgReplyImpl\_\- $\ast$ \hyperlink{types_8h_a8305bfdb18d1eaa5fff3e7c785613d91}{mamaMsgReply}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{types_8h_a8707ace31c8cc87fc90f1d6df21ee419}{
+\index{types.h@{types.h}!MAMA\_\-QUANTITY\_\-EPSILON@{MAMA\_\-QUANTITY\_\-EPSILON}}
+\index{MAMA\_\-QUANTITY\_\-EPSILON@{MAMA\_\-QUANTITY\_\-EPSILON}!types.h@{types.h}}
+\subsubsection[{MAMA\_\-QUANTITY\_\-EPSILON}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-QUANTITY\_\-EPSILON~(({\bf mama\_\-f64\_\-t})0.00000000001)}}
+\label{types_8h_a8707ace31c8cc87fc90f1d6df21ee419}
+\hypertarget{types_8h_a84b8e3020108b15864530634ea92708d}{
+\index{types.h@{types.h}!mama\_\-isQuantityNone@{mama\_\-isQuantityNone}}
+\index{mama\_\-isQuantityNone@{mama\_\-isQuantityNone}!types.h@{types.h}}
+\subsubsection[{mama\_\-isQuantityNone}]{\setlength{\rightskip}{0pt plus 5cm}\#define mama\_\-isQuantityNone(q)~((q) $<$ MAMA\_\-QUANTITY\_\-EPSILON)}}
+\label{types_8h_a84b8e3020108b15864530634ea92708d}
+
+
+Macro to determine if a quantity is zero. \hypertarget{types_8h_affdee568429f62e4c117f4e0df2fa1d2}{
+\index{types.h@{types.h}!mama\_\-isQuantityEqual@{mama\_\-isQuantityEqual}}
+\index{mama\_\-isQuantityEqual@{mama\_\-isQuantityEqual}!types.h@{types.h}}
+\subsubsection[{mama\_\-isQuantityEqual}]{\setlength{\rightskip}{0pt plus 5cm}\#define mama\_\-isQuantityEqual(lhs, \/  rhs)}}
+\label{types_8h_affdee568429f62e4c117f4e0df2fa1d2}
+{\bfseries Value:}
+\begin{DoxyCode}
+((lhs) < (rhs) ? (rhs) - (lhs) < MAMA_QUANTITY_EPSILON : \
+                         (lhs) - (rhs) < MAMA_QUANTITY_EPSILON)
+\end{DoxyCode}
+
+
+Macro to determine if a quantity equality. 
+
+\subsection{Typedef Documentation}
+\hypertarget{types_8h_af46387ce033c2973d6377dd445a912be}{
+\index{types.h@{types.h}!mama\_\-i8\_\-t@{mama\_\-i8\_\-t}}
+\index{mama\_\-i8\_\-t@{mama\_\-i8\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-i8\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int8\_\-t {\bf mama\_\-i8\_\-t}}}
+\label{types_8h_af46387ce033c2973d6377dd445a912be}
+\hypertarget{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{
+\index{types.h@{types.h}!mama\_\-u8\_\-t@{mama\_\-u8\_\-t}}
+\index{mama\_\-u8\_\-t@{mama\_\-u8\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-u8\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint8\_\-t {\bf mama\_\-u8\_\-t}}}
+\label{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}
+\hypertarget{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{
+\index{types.h@{types.h}!mama\_\-i16\_\-t@{mama\_\-i16\_\-t}}
+\index{mama\_\-i16\_\-t@{mama\_\-i16\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-i16\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int16\_\-t {\bf mama\_\-i16\_\-t}}}
+\label{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}
+\hypertarget{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{
+\index{types.h@{types.h}!mama\_\-u16\_\-t@{mama\_\-u16\_\-t}}
+\index{mama\_\-u16\_\-t@{mama\_\-u16\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-u16\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint16\_\-t {\bf mama\_\-u16\_\-t}}}
+\label{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}
+\hypertarget{types_8h_a709dbeb3324210730aef6318042e5182}{
+\index{types.h@{types.h}!mama\_\-i32\_\-t@{mama\_\-i32\_\-t}}
+\index{mama\_\-i32\_\-t@{mama\_\-i32\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-i32\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int32\_\-t {\bf mama\_\-i32\_\-t}}}
+\label{types_8h_a709dbeb3324210730aef6318042e5182}
+\hypertarget{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{
+\index{types.h@{types.h}!mama\_\-u32\_\-t@{mama\_\-u32\_\-t}}
+\index{mama\_\-u32\_\-t@{mama\_\-u32\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-u32\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\_\-t {\bf mama\_\-u32\_\-t}}}
+\label{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}
+\hypertarget{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{
+\index{types.h@{types.h}!mama\_\-i64\_\-t@{mama\_\-i64\_\-t}}
+\index{mama\_\-i64\_\-t@{mama\_\-i64\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-i64\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int64\_\-t {\bf mama\_\-i64\_\-t}}}
+\label{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}
+\hypertarget{types_8h_a40cc9045e954491913e5b430ff6f43fb}{
+\index{types.h@{types.h}!mama\_\-u64\_\-t@{mama\_\-u64\_\-t}}
+\index{mama\_\-u64\_\-t@{mama\_\-u64\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-u64\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint64\_\-t {\bf mama\_\-u64\_\-t}}}
+\label{types_8h_a40cc9045e954491913e5b430ff6f43fb}
+\hypertarget{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{
+\index{types.h@{types.h}!mama\_\-bool\_\-t@{mama\_\-bool\_\-t}}
+\index{mama\_\-bool\_\-t@{mama\_\-bool\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-bool\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int8\_\-t {\bf mama\_\-bool\_\-t}}}
+\label{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}
+\hypertarget{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{
+\index{types.h@{types.h}!mama\_\-f32\_\-t@{mama\_\-f32\_\-t}}
+\index{mama\_\-f32\_\-t@{mama\_\-f32\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-f32\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf mama\_\-f32\_\-t}}}
+\label{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}
+\hypertarget{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{
+\index{types.h@{types.h}!mama\_\-f64\_\-t@{mama\_\-f64\_\-t}}
+\index{mama\_\-f64\_\-t@{mama\_\-f64\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-f64\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf mama\_\-f64\_\-t}}}
+\label{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}
+\hypertarget{types_8h_aaeccc690059cfe45715b7a3e535cda4e}{
+\index{types.h@{types.h}!mama\_\-quantity\_\-t@{mama\_\-quantity\_\-t}}
+\index{mama\_\-quantity\_\-t@{mama\_\-quantity\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-quantity\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf mama\_\-quantity\_\-t}}}
+\label{types_8h_aaeccc690059cfe45715b7a3e535cda4e}
+\hypertarget{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{
+\index{types.h@{types.h}!mama\_\-fid\_\-t@{mama\_\-fid\_\-t}}
+\index{mama\_\-fid\_\-t@{mama\_\-fid\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-fid\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint16\_\-t {\bf mama\_\-fid\_\-t}}}
+\label{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}
+\hypertarget{types_8h_ad474773b7c6adab4a26a9b358c96665e}{
+\index{types.h@{types.h}!mama\_\-size\_\-t@{mama\_\-size\_\-t}}
+\index{mama\_\-size\_\-t@{mama\_\-size\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-size\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef size\_\-t {\bf mama\_\-size\_\-t}}}
+\label{types_8h_ad474773b7c6adab4a26a9b358c96665e}
+\hypertarget{types_8h_ac7ed6449628b864d1a9575c5de98fd33}{
+\index{types.h@{types.h}!mama\_\-seqnum\_\-t@{mama\_\-seqnum\_\-t}}
+\index{mama\_\-seqnum\_\-t@{mama\_\-seqnum\_\-t}!types.h@{types.h}}
+\subsubsection[{mama\_\-seqnum\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint32\_\-t {\bf mama\_\-seqnum\_\-t}}}
+\label{types_8h_ac7ed6449628b864d1a9575c5de98fd33}
+\hypertarget{types_8h_aa3b0d534773b2c032ff4f02619859eb9}{
+\index{types.h@{types.h}!mamaBridge@{mamaBridge}}
+\index{mamaBridge@{mamaBridge}!types.h@{types.h}}
+\subsubsection[{mamaBridge}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaBridgeImpl\_\-$\ast$ {\bf mamaBridge}}}
+\label{types_8h_aa3b0d534773b2c032ff4f02619859eb9}
+\hypertarget{types_8h_aa8780a24981ed7f83137aafc3de1dada}{
+\index{types.h@{types.h}!mamaPayloadBridge@{mamaPayloadBridge}}
+\index{mamaPayloadBridge@{mamaPayloadBridge}!types.h@{types.h}}
+\subsubsection[{mamaPayloadBridge}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaPayloadBridgeImpl\_\-$\ast$ {\bf mamaPayloadBridge}}}
+\label{types_8h_aa8780a24981ed7f83137aafc3de1dada}
+\hypertarget{types_8h_a8a9c67eac0e70fffd244212e4240a37f}{
+\index{types.h@{types.h}!mamaPlugin@{mamaPlugin}}
+\index{mamaPlugin@{mamaPlugin}!types.h@{types.h}}
+\subsubsection[{mamaPlugin}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaPluginImpl\_\-$\ast$ {\bf mamaPlugin}}}
+\label{types_8h_a8a9c67eac0e70fffd244212e4240a37f}
+
+
+Container for holding a mama plugin object. \hypertarget{types_8h_a7dc5af12ed01673c6cffb193d6f18946}{
+\index{types.h@{types.h}!mamaPluginInfo@{mamaPluginInfo}}
+\index{mamaPluginInfo@{mamaPluginInfo}!types.h@{types.h}}
+\subsubsection[{mamaPluginInfo}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf mamaPluginInfo}}}
+\label{types_8h_a7dc5af12ed01673c6cffb193d6f18946}
+
+
+Container for holding a mama plugin info. \hypertarget{types_8h_aabfe2643b7368f28adb648fbdf46b110}{
+\index{types.h@{types.h}!mamaDateTime@{mamaDateTime}}
+\index{mamaDateTime@{mamaDateTime}!types.h@{types.h}}
+\subsubsection[{mamaDateTime}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mama\_\-u64\_\-t}$\ast$ {\bf mamaDateTime}}}
+\label{types_8h_aabfe2643b7368f28adb648fbdf46b110}
+
+
+Flexible date/time format. \hypertarget{types_8h_af32716437329f2fde79985e160f2156e}{
+\index{types.h@{types.h}!mamaTimeZone@{mamaTimeZone}}
+\index{mamaTimeZone@{mamaTimeZone}!types.h@{types.h}}
+\subsubsection[{mamaTimeZone}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf mamaTimeZone}}}
+\label{types_8h_af32716437329f2fde79985e160f2156e}
+
+
+Time zone utility type. \hypertarget{types_8h_a894e5abfca837f6a764f286f36255e50}{
+\index{types.h@{types.h}!mamaPrice@{mamaPrice}}
+\index{mamaPrice@{mamaPrice}!types.h@{types.h}}
+\subsubsection[{mamaPrice}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf mamaPrice}}}
+\label{types_8h_a894e5abfca837f6a764f286f36255e50}
+
+
+Flexible price format (contains display hints as well as value). \hypertarget{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{
+\index{types.h@{types.h}!mamaMsg@{mamaMsg}}
+\index{mamaMsg@{mamaMsg}!types.h@{types.h}}
+\subsubsection[{mamaMsg}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaMsgImpl\_\-$\ast$ {\bf mamaMsg}}}
+\label{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}
+
+
+Opaque definitions for all major MAMA data types. Must be allocated through corresponding functions from the API. \hypertarget{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{
+\index{types.h@{types.h}!mamaMsgField@{mamaMsgField}}
+\index{mamaMsgField@{mamaMsgField}!types.h@{types.h}}
+\subsubsection[{mamaMsgField}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaMsgFieldImpl\_\-$\ast$ {\bf mamaMsgField}}}
+\label{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}
+\hypertarget{types_8h_a5d1d07f6aa39157e773779d453c1ef43}{
+\index{types.h@{types.h}!mamaMsgIterator@{mamaMsgIterator}}
+\index{mamaMsgIterator@{mamaMsgIterator}!types.h@{types.h}}
+\subsubsection[{mamaMsgIterator}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaMsgIteratorImpl\_\-$\ast$ {\bf mamaMsgIterator}}}
+\label{types_8h_a5d1d07f6aa39157e773779d453c1ef43}
+\hypertarget{types_8h_a9db3afd972e50af768f475480d2dd5ec}{
+\index{types.h@{types.h}!mamaTransport@{mamaTransport}}
+\index{mamaTransport@{mamaTransport}!types.h@{types.h}}
+\subsubsection[{mamaTransport}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaTransportImpl\_\-$\ast$ {\bf mamaTransport}}}
+\label{types_8h_a9db3afd972e50af768f475480d2dd5ec}
+\hypertarget{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{
+\index{types.h@{types.h}!mamaSubscription@{mamaSubscription}}
+\index{mamaSubscription@{mamaSubscription}!types.h@{types.h}}
+\subsubsection[{mamaSubscription}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSubscriptionImpl\_\-$\ast$ {\bf mamaSubscription}}}
+\label{types_8h_a873fb03719e8d38ef01b1e583fc212f3}
+\hypertarget{types_8h_a7491e3ed1d886002a9653a41faca0df3}{
+\index{types.h@{types.h}!mamaManagedSubscription@{mamaManagedSubscription}}
+\index{mamaManagedSubscription@{mamaManagedSubscription}!types.h@{types.h}}
+\subsubsection[{mamaManagedSubscription}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaManagedSubscriptionImpl\_\-$\ast$ {\bf mamaManagedSubscription}}}
+\label{types_8h_a7491e3ed1d886002a9653a41faca0df3}
+\hypertarget{types_8h_a04e9f741fd1aba11050c1503abf3ffd5}{
+\index{types.h@{types.h}!mamaSubscriptionManager@{mamaSubscriptionManager}}
+\index{mamaSubscriptionManager@{mamaSubscriptionManager}!types.h@{types.h}}
+\subsubsection[{mamaSubscriptionManager}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSubscriptionManagerImpl\_\-$\ast$ {\bf mamaSubscriptionManager}}}
+\label{types_8h_a04e9f741fd1aba11050c1503abf3ffd5}
+\hypertarget{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{
+\index{types.h@{types.h}!mamaDictionary@{mamaDictionary}}
+\index{mamaDictionary@{mamaDictionary}!types.h@{types.h}}
+\subsubsection[{mamaDictionary}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaDictionaryImpl\_\-$\ast$ {\bf mamaDictionary}}}
+\label{types_8h_a7290421b6a1b84fed13c06f880fcc33c}
+\hypertarget{types_8h_a65dad4d4997d58586cd6b9d3259651b4}{
+\index{types.h@{types.h}!mamaPublisher@{mamaPublisher}}
+\index{mamaPublisher@{mamaPublisher}!types.h@{types.h}}
+\subsubsection[{mamaPublisher}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaPublisherImpl\_\-$\ast$ {\bf mamaPublisher}}}
+\label{types_8h_a65dad4d4997d58586cd6b9d3259651b4}
+\hypertarget{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{
+\index{types.h@{types.h}!mamaDQPublisher@{mamaDQPublisher}}
+\index{mamaDQPublisher@{mamaDQPublisher}!types.h@{types.h}}
+\subsubsection[{mamaDQPublisher}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaDQPublisherImpl\_\-$\ast$ {\bf mamaDQPublisher}}}
+\label{types_8h_a4f55f117db650ba4b823e1176b6cfc59}
+\hypertarget{types_8h_ad675a06ef0e8f41eb8ce487775c11e7f}{
+\index{types.h@{types.h}!mamaDQPublisherManager@{mamaDQPublisherManager}}
+\index{mamaDQPublisherManager@{mamaDQPublisherManager}!types.h@{types.h}}
+\subsubsection[{mamaDQPublisherManager}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaDQPublisherManagerImpl\_\-$\ast$ {\bf mamaDQPublisherManager}}}
+\label{types_8h_ad675a06ef0e8f41eb8ce487775c11e7f}
+\hypertarget{types_8h_a52dbc80fd93ec3654f8220afe7ee6e2f}{
+\index{types.h@{types.h}!mamaInbox@{mamaInbox}}
+\index{mamaInbox@{mamaInbox}!types.h@{types.h}}
+\subsubsection[{mamaInbox}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaInboxImpl\_\-$\ast$ {\bf mamaInbox}}}
+\label{types_8h_a52dbc80fd93ec3654f8220afe7ee6e2f}
+\hypertarget{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{
+\index{types.h@{types.h}!mamaQueue@{mamaQueue}}
+\index{mamaQueue@{mamaQueue}!types.h@{types.h}}
+\subsubsection[{mamaQueue}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaQueueImpl\_\-$\ast$ {\bf mamaQueue}}}
+\label{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}
+\hypertarget{types_8h_a9e549166f734c5ab8bf7cda85caa7925}{
+\index{types.h@{types.h}!mamaDispatcher@{mamaDispatcher}}
+\index{mamaDispatcher@{mamaDispatcher}!types.h@{types.h}}
+\subsubsection[{mamaDispatcher}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaDispatcherImpl\_\-$\ast$ {\bf mamaDispatcher}}}
+\label{types_8h_a9e549166f734c5ab8bf7cda85caa7925}
+\hypertarget{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}{
+\index{types.h@{types.h}!mamaTimer@{mamaTimer}}
+\index{mamaTimer@{mamaTimer}!types.h@{types.h}}
+\subsubsection[{mamaTimer}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaTimerImpl$\ast$ {\bf mamaTimer}}}
+\label{types_8h_a0d092f0dcd5a0035a821a709a4402fa1}
+\hypertarget{types_8h_a6876ec416a44aee78b1fe6254b947526}{
+\index{types.h@{types.h}!mamaFieldDescriptor@{mamaFieldDescriptor}}
+\index{mamaFieldDescriptor@{mamaFieldDescriptor}!types.h@{types.h}}
+\subsubsection[{mamaFieldDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaFieldDescriptorImpl\_\-$\ast$ {\bf mamaFieldDescriptor}}}
+\label{types_8h_a6876ec416a44aee78b1fe6254b947526}
+\hypertarget{types_8h_a008880c66eec92cbd1ba865523a847ab}{
+\index{types.h@{types.h}!mamaIo@{mamaIo}}
+\index{mamaIo@{mamaIo}!types.h@{types.h}}
+\subsubsection[{mamaIo}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaIoImpl$\ast$ {\bf mamaIo}}}
+\label{types_8h_a008880c66eec92cbd1ba865523a847ab}
+\hypertarget{types_8h_a7cb94a3090ba3e711dbbce331d498781}{
+\index{types.h@{types.h}!mamaSymbolSourceFile@{mamaSymbolSourceFile}}
+\index{mamaSymbolSourceFile@{mamaSymbolSourceFile}!types.h@{types.h}}
+\subsubsection[{mamaSymbolSourceFile}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSymbolSourceFileImpl\_\-$\ast$ {\bf mamaSymbolSourceFile}}}
+\label{types_8h_a7cb94a3090ba3e711dbbce331d498781}
+\hypertarget{types_8h_aa0f04b3acf29a09c71b0ac2ab8e70acc}{
+\index{types.h@{types.h}!mamaSymbolStore@{mamaSymbolStore}}
+\index{mamaSymbolStore@{mamaSymbolStore}!types.h@{types.h}}
+\subsubsection[{mamaSymbolStore}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSymbolStoreImpl\_\-$\ast$ {\bf mamaSymbolStore}}}
+\label{types_8h_aa0f04b3acf29a09c71b0ac2ab8e70acc}
+\hypertarget{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{
+\index{types.h@{types.h}!mamaMsgQual@{mamaMsgQual}}
+\index{mamaMsgQual@{mamaMsgQual}!types.h@{types.h}}
+\subsubsection[{mamaMsgQual}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaMsgQualImpl\_\-$\ast$ {\bf mamaMsgQual}}}
+\label{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}
+\hypertarget{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}{
+\index{types.h@{types.h}!mamaSourceManager@{mamaSourceManager}}
+\index{mamaSourceManager@{mamaSourceManager}!types.h@{types.h}}
+\subsubsection[{mamaSourceManager}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSourceManagerImpl\_\-$\ast$ {\bf mamaSourceManager}}}
+\label{types_8h_aabe29aa1120cba8e8881c4cc450ee20a}
+\hypertarget{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}{
+\index{types.h@{types.h}!mamaSource@{mamaSource}}
+\index{mamaSource@{mamaSource}!types.h@{types.h}}
+\subsubsection[{mamaSource}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSourceImpl\_\-$\ast$ {\bf mamaSource}}}
+\label{types_8h_ae6bafb2de2fa3a28d6a0eba4c9b6555b}
+\hypertarget{types_8h_a8c869a9f6c6e3f3c30a16926c598fa7b}{
+\index{types.h@{types.h}!mamaSymbology@{mamaSymbology}}
+\index{mamaSymbology@{mamaSymbology}!types.h@{types.h}}
+\subsubsection[{mamaSymbology}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSymbologyImpl\_\-$\ast$ {\bf mamaSymbology}}}
+\label{types_8h_a8c869a9f6c6e3f3c30a16926c598fa7b}
+\hypertarget{types_8h_af525c04c61da45425c3882777a7f1247}{
+\index{types.h@{types.h}!mamaSymbologyManager@{mamaSymbologyManager}}
+\index{mamaSymbologyManager@{mamaSymbologyManager}!types.h@{types.h}}
+\subsubsection[{mamaSymbologyManager}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSymbologyManagerImpl\_\-$\ast$ {\bf mamaSymbologyManager}}}
+\label{types_8h_af525c04c61da45425c3882777a7f1247}
+\hypertarget{types_8h_a0c05c1041959d0c4aa3b38312bb4867c}{
+\index{types.h@{types.h}!mamaSourceGroupCbHandle@{mamaSourceGroupCbHandle}}
+\index{mamaSourceGroupCbHandle@{mamaSourceGroupCbHandle}!types.h@{types.h}}
+\subsubsection[{mamaSourceGroupCbHandle}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaSourceGroupCbHandleImpl\_\-$\ast$ {\bf mamaSourceGroupCbHandle}}}
+\label{types_8h_a0c05c1041959d0c4aa3b38312bb4867c}
+\hypertarget{types_8h_a511cd1294335a8d0b004d62213dbfb42}{
+\index{types.h@{types.h}!mamaConnection@{mamaConnection}}
+\index{mamaConnection@{mamaConnection}!types.h@{types.h}}
+\subsubsection[{mamaConnection}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaConnectionImpl\_\-$\ast$ {\bf mamaConnection}}}
+\label{types_8h_a511cd1294335a8d0b004d62213dbfb42}
+\hypertarget{types_8h_a7783916ce9f2a4e97001295434e4bab6}{
+\index{types.h@{types.h}!mamaServerConnection@{mamaServerConnection}}
+\index{mamaServerConnection@{mamaServerConnection}!types.h@{types.h}}
+\subsubsection[{mamaServerConnection}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaServerConnectionImpl\_\-$\ast$ {\bf mamaServerConnection}}}
+\label{types_8h_a7783916ce9f2a4e97001295434e4bab6}
+\hypertarget{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{
+\index{types.h@{types.h}!mamaConflationManager@{mamaConflationManager}}
+\index{mamaConflationManager@{mamaConflationManager}!types.h@{types.h}}
+\subsubsection[{mamaConflationManager}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaConflationManager\_\-$\ast$ {\bf mamaConflationManager}}}
+\label{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}
+\hypertarget{types_8h_a455292ae01dab637af87c55ceedfb422}{
+\index{types.h@{types.h}!mamaStatsLogger@{mamaStatsLogger}}
+\index{mamaStatsLogger@{mamaStatsLogger}!types.h@{types.h}}
+\subsubsection[{mamaStatsLogger}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaStatsLoggerImpl\_\-$\ast$ {\bf mamaStatsLogger}}}
+\label{types_8h_a455292ae01dab637af87c55ceedfb422}
+\hypertarget{types_8h_a9234ed307dbc305145a755a4a3aa9580}{
+\index{types.h@{types.h}!mamaStat@{mamaStat}}
+\index{mamaStat@{mamaStat}!types.h@{types.h}}
+\subsubsection[{mamaStat}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaStatImpl\_\-$\ast$ {\bf mamaStat}}}
+\label{types_8h_a9234ed307dbc305145a755a4a3aa9580}
+\hypertarget{types_8h_a9962a3daa032c7fa43640317337dfc2d}{
+\index{types.h@{types.h}!mamaStatsCollector@{mamaStatsCollector}}
+\index{mamaStatsCollector@{mamaStatsCollector}!types.h@{types.h}}
+\subsubsection[{mamaStatsCollector}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaStatsCollectorImpl\_\-$\ast$ {\bf mamaStatsCollector}}}
+\label{types_8h_a9962a3daa032c7fa43640317337dfc2d}
+\hypertarget{types_8h_a302ba4f023de4217fb8017b7d5bfd11a}{
+\index{types.h@{types.h}!mamaStatsGenerator@{mamaStatsGenerator}}
+\index{mamaStatsGenerator@{mamaStatsGenerator}!types.h@{types.h}}
+\subsubsection[{mamaStatsGenerator}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaStatsGeneratorImpl\_\-$\ast$ {\bf mamaStatsGenerator}}}
+\label{types_8h_a302ba4f023de4217fb8017b7d5bfd11a}
+\hypertarget{types_8h_a8305bfdb18d1eaa5fff3e7c785613d91}{
+\index{types.h@{types.h}!mamaMsgReply@{mamaMsgReply}}
+\index{mamaMsgReply@{mamaMsgReply}!types.h@{types.h}}
+\subsubsection[{mamaMsgReply}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct mamaMsgReplyImpl\_\-$\ast$ {\bf mamaMsgReply}}}
+\label{types_8h_a8305bfdb18d1eaa5fff3e7c785613d91}

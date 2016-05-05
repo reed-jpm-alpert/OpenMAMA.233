@@ -1,0 +1,147 @@
+\hypertarget{clientmanage_8h}{
+\section{clientmanage.h File Reference}
+\label{clientmanage_8h}\index{clientmanage.h@{clientmanage.h}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmamaCommand}{mamaCommand}
+\begin{DoxyCompactList}\small\item\em This structure allows for generic commands to be destroyed by the clientmanageresponder. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{clientmanage_8h_ad327baf41cc215c3d382f08ff9a57073}{MAMA\_\-CM\_\-TOPIC}~\char`\"{}\_\-\_\-MAMA\_\-CM\char`\"{}
+\begin{DoxyCompactList}\small\item\em FIDS and Command IDs for client management commands. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_a3be3582fde93e0afe64fe14e9cc4b6b7}{MAMA\_\-CM\_\-PUB\_\-TOPIC}~\char`\"{}\_\-\_\-MAMA\_\-PUB\_\-CM\char`\"{}
+\item 
+\#define \hyperlink{clientmanage_8h_aad7ae3353a7a61e3ad33bf371d1c0bca}{MAMA\_\-SYNC\_\-TOPICS\_\-ID}~101
+\begin{DoxyCompactList}\small\item\em The SyncResponder puts the topics in a string array with this ID. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_a2e6e11a58678409e97a9e9135c464200}{MAMA\_\-CM\_\-COMMAND\_\-ID}~102
+\begin{DoxyCompactList}\small\item\em Future: We may add other (possibly wadmin style) commands U16. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_a0a30e5df75c926d4933c87f176680cf7}{MAMA\_\-SYNC\_\-SOURCE\_\-ID}~103
+\begin{DoxyCompactList}\small\item\em Client only sends topics for this SOURCE. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_abd156eb9d659acc68c07b14a69c68c29}{MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID}~104
+\begin{DoxyCompactList}\small\item\em Client responds with max TOPICS\_\-PER\_\-MSG U16. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_a28a5b6f10f09eea2575f967efff80c9f}{MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID}~105
+\begin{DoxyCompactList}\small\item\em Clients waits random interval $>$ 0 $<$ RESPONSE\_\-DELAY before initiating response. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_a007bb416e02989b95c80df245611dee4}{MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID}~106
+\begin{DoxyCompactList}\small\item\em Clients send response over this duration. \item\end{DoxyCompactList}\item 
+\#define \hyperlink{clientmanage_8h_acf0124b6c0c7bc5af8bc8a573379a9f2}{MAMA\_\-SYNC\_\-TYPES\_\-ID}~107
+\begin{DoxyCompactList}\small\item\em The SyncResponder puts the subscription types in a string array with this ID. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{clientmanage_8h_a9ad663611a3dc03e48072379cbff7a95}{cmCommandDtor} )(void $\ast$handle)
+\begin{DoxyCompactList}\small\item\em The function prototype for command. \item\end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{clientmanage_8h_ab4f4ce7c1c79a661fd369143b1cd1bea}{mamaCommandEndCB} )(\hyperlink{structmamaCommand}{mamaCommand} $\ast$command, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\begin{DoxyCompactList}\small\item\em Commands invoke this callback when they complete so the responder can destroy them. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{clientmanage_8h_a0e94d24bc11fecc86dcd9d07b061e5de}{mamaCmCommand} \{ \hyperlink{clientmanage_8h_a0e94d24bc11fecc86dcd9d07b061e5deab5129743f04f1d562bc942cfb23714ad}{MAMA\_\-COMMAND\_\-SYNC} =  1
+ \}
+\begin{DoxyCompactList}\small\item\em Commands. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{clientmanage_8h_ad327baf41cc215c3d382f08ff9a57073}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-CM\_\-TOPIC@{MAMA\_\-CM\_\-TOPIC}}
+\index{MAMA\_\-CM\_\-TOPIC@{MAMA\_\-CM\_\-TOPIC}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-CM\_\-TOPIC}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-CM\_\-TOPIC~\char`\"{}\_\-\_\-MAMA\_\-CM\char`\"{}}}
+\label{clientmanage_8h_ad327baf41cc215c3d382f08ff9a57073}
+
+
+FIDS and Command IDs for client management commands. FIDS Client Management Request Get Sent HERE \hypertarget{clientmanage_8h_a3be3582fde93e0afe64fe14e9cc4b6b7}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-CM\_\-PUB\_\-TOPIC@{MAMA\_\-CM\_\-PUB\_\-TOPIC}}
+\index{MAMA\_\-CM\_\-PUB\_\-TOPIC@{MAMA\_\-CM\_\-PUB\_\-TOPIC}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-CM\_\-PUB\_\-TOPIC}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-CM\_\-PUB\_\-TOPIC~\char`\"{}\_\-\_\-MAMA\_\-PUB\_\-CM\char`\"{}}}
+\label{clientmanage_8h_a3be3582fde93e0afe64fe14e9cc4b6b7}
+\hypertarget{clientmanage_8h_aad7ae3353a7a61e3ad33bf371d1c0bca}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-SYNC\_\-TOPICS\_\-ID@{MAMA\_\-SYNC\_\-TOPICS\_\-ID}}
+\index{MAMA\_\-SYNC\_\-TOPICS\_\-ID@{MAMA\_\-SYNC\_\-TOPICS\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-SYNC\_\-TOPICS\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SYNC\_\-TOPICS\_\-ID~101}}
+\label{clientmanage_8h_aad7ae3353a7a61e3ad33bf371d1c0bca}
+
+
+The SyncResponder puts the topics in a string array with this ID. \hypertarget{clientmanage_8h_a2e6e11a58678409e97a9e9135c464200}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-CM\_\-COMMAND\_\-ID@{MAMA\_\-CM\_\-COMMAND\_\-ID}}
+\index{MAMA\_\-CM\_\-COMMAND\_\-ID@{MAMA\_\-CM\_\-COMMAND\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-CM\_\-COMMAND\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-CM\_\-COMMAND\_\-ID~102}}
+\label{clientmanage_8h_a2e6e11a58678409e97a9e9135c464200}
+
+
+Future: We may add other (possibly wadmin style) commands U16. \hypertarget{clientmanage_8h_a0a30e5df75c926d4933c87f176680cf7}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-SYNC\_\-SOURCE\_\-ID@{MAMA\_\-SYNC\_\-SOURCE\_\-ID}}
+\index{MAMA\_\-SYNC\_\-SOURCE\_\-ID@{MAMA\_\-SYNC\_\-SOURCE\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-SYNC\_\-SOURCE\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SYNC\_\-SOURCE\_\-ID~103}}
+\label{clientmanage_8h_a0a30e5df75c926d4933c87f176680cf7}
+
+
+Client only sends topics for this SOURCE. \hypertarget{clientmanage_8h_abd156eb9d659acc68c07b14a69c68c29}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID@{MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID}}
+\index{MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID@{MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SYNC\_\-TOPICS\_\-PER\_\-MSG\_\-ID~104}}
+\label{clientmanage_8h_abd156eb9d659acc68c07b14a69c68c29}
+
+
+Client responds with max TOPICS\_\-PER\_\-MSG U16. \hypertarget{clientmanage_8h_a28a5b6f10f09eea2575f967efff80c9f}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID@{MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID}}
+\index{MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID@{MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SYNC\_\-RESPONSE\_\-DELAY\_\-ID~105}}
+\label{clientmanage_8h_a28a5b6f10f09eea2575f967efff80c9f}
+
+
+Clients waits random interval $>$ 0 $<$ RESPONSE\_\-DELAY before initiating response. \hypertarget{clientmanage_8h_a007bb416e02989b95c80df245611dee4}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID@{MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID}}
+\index{MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID@{MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SYNC\_\-RESPONSE\_\-DURATION\_\-ID~106}}
+\label{clientmanage_8h_a007bb416e02989b95c80df245611dee4}
+
+
+Clients send response over this duration. \hypertarget{clientmanage_8h_acf0124b6c0c7bc5af8bc8a573379a9f2}{
+\index{clientmanage.h@{clientmanage.h}!MAMA\_\-SYNC\_\-TYPES\_\-ID@{MAMA\_\-SYNC\_\-TYPES\_\-ID}}
+\index{MAMA\_\-SYNC\_\-TYPES\_\-ID@{MAMA\_\-SYNC\_\-TYPES\_\-ID}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{MAMA\_\-SYNC\_\-TYPES\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-SYNC\_\-TYPES\_\-ID~107}}
+\label{clientmanage_8h_acf0124b6c0c7bc5af8bc8a573379a9f2}
+
+
+The SyncResponder puts the subscription types in a string array with this ID. 
+
+\subsection{Typedef Documentation}
+\hypertarget{clientmanage_8h_a9ad663611a3dc03e48072379cbff7a95}{
+\index{clientmanage.h@{clientmanage.h}!cmCommandDtor@{cmCommandDtor}}
+\index{cmCommandDtor@{cmCommandDtor}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{cmCommandDtor}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf cmCommandDtor})(void $\ast$handle)}}
+\label{clientmanage_8h_a9ad663611a3dc03e48072379cbff7a95}
+
+
+The function prototype for command. \hypertarget{clientmanage_8h_ab4f4ce7c1c79a661fd369143b1cd1bea}{
+\index{clientmanage.h@{clientmanage.h}!mamaCommandEndCB@{mamaCommandEndCB}}
+\index{mamaCommandEndCB@{mamaCommandEndCB}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{mamaCommandEndCB}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ {\bf mamaCommandEndCB})({\bf mamaCommand} $\ast$command, void $\ast${\bf closure})}}
+\label{clientmanage_8h_ab4f4ce7c1c79a661fd369143b1cd1bea}
+
+
+Commands invoke this callback when they complete so the responder can destroy them. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em command}]The sync command \item[\mbox{$\leftarrow$} {\em closure}]User supplied data \end{DoxyParams}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{clientmanage_8h_a0e94d24bc11fecc86dcd9d07b061e5de}{
+\index{clientmanage.h@{clientmanage.h}!mamaCmCommand@{mamaCmCommand}}
+\index{mamaCmCommand@{mamaCmCommand}!clientmanage.h@{clientmanage.h}}
+\subsubsection[{mamaCmCommand}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaCmCommand}}}
+\label{clientmanage_8h_a0e94d24bc11fecc86dcd9d07b061e5de}
+
+
+Commands. The enumeration of supported commands \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-COMMAND\_\-SYNC@{MAMA\_\-COMMAND\_\-SYNC}!clientmanage.h@{clientmanage.h}}\index{clientmanage.h@{clientmanage.h}!MAMA\_\-COMMAND\_\-SYNC@{MAMA\_\-COMMAND\_\-SYNC}}\item[{\em 
+\hypertarget{clientmanage_8h_a0e94d24bc11fecc86dcd9d07b061e5deab5129743f04f1d562bc942cfb23714ad}{
+MAMA\_\-COMMAND\_\-SYNC}
+\label{clientmanage_8h_a0e94d24bc11fecc86dcd9d07b061e5deab5129743f04f1d562bc942cfb23714ad}
+}]\end{description}
+\end{Desc}
+

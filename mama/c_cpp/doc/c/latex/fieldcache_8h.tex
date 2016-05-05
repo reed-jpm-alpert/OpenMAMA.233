@@ -1,0 +1,334 @@
+\hypertarget{fieldcache_8h}{
+\section{fieldcache.h File Reference}
+\label{fieldcache_8h}\index{fieldcache.h@{fieldcache.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/fielddesc.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/fieldcache/fieldcachetypes.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_ac1dc278b3a493888d8592d717dc9b2c7}{mamaFieldCache\_\-create} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} $\ast$fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will create the field cache and allocate all associated memory. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a4549a168c6641d71b7d18269d58d7520}{mamaFieldCache\_\-destroy} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will destroy a field cache previously allocated by a call to mamaFieldCache\_\-create. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a7425d3bd70fc578a65f150f6f9fa06a6}{mamaFieldCache\_\-clear} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will clear the field cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a39506cd5b2b99ff453a70c6d0357457d}{mamaFieldCache\_\-getSize} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em This function will return the number of fields in the cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a3fddeb9fa6284e454293dccb4c7275f6}{mamaFieldCache\_\-find} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, const char $\ast$name, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} $\ast$field)
+\begin{DoxyCompactList}\small\item\em This function will retrieve a field from the cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a007d55006f837ae725506fad765c09e0}{mamaFieldCache\_\-findOrAdd} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} fid, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} type, const char $\ast$name, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} $\ast$field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$existing)
+\begin{DoxyCompactList}\small\item\em This function will retrieve a field from the cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a19b11b10a10c361e4ba894d040cc395f}{mamaFieldCache\_\-setModified} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field)
+\begin{DoxyCompactList}\small\item\em This function will set the modified flag for a field in the cache even if the value has not changed. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a36e9ca7bf774d01051201017d55ff84a}{mamaFieldCache\_\-applyField} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, const \hyperlink{fieldcachetypes_8h_a3657885c4ce7dc7318d6483ca8ec01a8}{mamaFieldCacheField} field)
+\begin{DoxyCompactList}\small\item\em Update the cache content with the field given. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a79e1586c1edce789f0644bb68affa936}{mamaFieldCache\_\-applyMessage} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{mama_8h_af92895d60da36f417398fc072f2cab0b}{message}, \hyperlink{types_8h_a7290421b6a1b84fed13c06f880fcc33c}{mamaDictionary} dictionary)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_aa2a265612e711ccedb0125afcbe143d9}{mamaFieldCache\_\-applyRecord} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, const \hyperlink{fieldcachetypes_8h_acdb1ce5eb1498480a023850f9aefcf6a}{mamaFieldCacheRecord} record)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a2c51cc6af17a1d4e08a13997d691aa99}{mamaFieldCache\_\-getFullMessage} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{mama_8h_af92895d60da36f417398fc072f2cab0b}{message})
+\begin{DoxyCompactList}\small\item\em This function will return all the fields in the cache by updating the provided mamaMsg with the fields. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_abe92c2da4326a6f04597d7e624129ffd}{mamaFieldCache\_\-getDeltaMessage} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{mama_8h_af92895d60da36f417398fc072f2cab0b}{message})
+\begin{DoxyCompactList}\small\item\em This function will return the set of fields that have changed since the last time this function was called. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_abc95acda614377bff3b9a04b2046848e}{mamaFieldCache\_\-clearModifiedFields} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will clear the list of all the modified fields and reset the modified flags for all the modified fields in the cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a38ac07e813bb00246a43a90ddee17fe9}{mamaFieldCache\_\-setTrackModified} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} trackModified)
+\begin{DoxyCompactList}\small\item\em This function will set the value of the track modification state flag; if this flag is set then changes to field values will be monitored. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a5862342cf80e238688e2698535c6ba24}{mamaFieldCache\_\-getTrackModified} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$trackModified)
+\begin{DoxyCompactList}\small\item\em This function will return the value of the track modification state flag. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a2029a7ae2a04851877181da7b1aec7a9}{mamaFieldCache\_\-setUseFieldNames} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} useFieldNames)
+\begin{DoxyCompactList}\small\item\em This function will set the value of the use-\/field-\/names state flag; if this flag is set then. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a98a0e4946f589d9b441d5b82ecfba5f3}{mamaFieldCache\_\-getUseFieldNames} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$useFieldNames)
+\begin{DoxyCompactList}\small\item\em This function will return the value of the use-\/field-\/names state flag. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a36485b72c6e74ca60acaddb13833a00d}{mamaFieldCache\_\-setUseLock} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} enable)
+\begin{DoxyCompactList}\small\item\em This function will enable/disable cache locking. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_a14b312d906d6a4f6c328537339ca75b8}{mamaFieldCache\_\-getUseLock} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$lockEnabled)
+\begin{DoxyCompactList}\small\item\em This function will determine whether the cache is using locking or not. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_ab0be381568eca0e6458e6cd93728e621}{mamaFieldCache\_\-lock} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will lock the cache. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{fieldcache_8h_af4868576227ad6a450d16ecfa8783d96}{mamaFieldCache\_\-unlock} (\hyperlink{fieldcachetypes_8h_a9eaa2a05d870347bdca1e6c7eb117d5a}{mamaFieldCache} fieldCache)
+\begin{DoxyCompactList}\small\item\em This function will unlock the cache. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{fieldcache_8h_ac1dc278b3a493888d8592d717dc9b2c7}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-create@{mamaFieldCache\_\-create}}
+\index{mamaFieldCache\_\-create@{mamaFieldCache\_\-create}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-create ({\bf mamaFieldCache} $\ast$ {\em fieldCache})}}
+\label{fieldcache_8h_ac1dc278b3a493888d8592d717dc9b2c7}
+
+
+This function will create the field cache and allocate all associated memory. If this function succeeds then the cache should be destroyed by calling mamaFieldCache\_\-destroy.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](out) To return the field cache. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a4549a168c6641d71b7d18269d58d7520}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-destroy@{mamaFieldCache\_\-destroy}}
+\index{mamaFieldCache\_\-destroy@{mamaFieldCache\_\-destroy}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-destroy ({\bf mamaFieldCache} {\em fieldCache})}}
+\label{fieldcache_8h_a4549a168c6641d71b7d18269d58d7520}
+
+
+This function will destroy a field cache previously allocated by a call to mamaFieldCache\_\-create. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache to destroy. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a7425d3bd70fc578a65f150f6f9fa06a6}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-clear@{mamaFieldCache\_\-clear}}
+\index{mamaFieldCache\_\-clear@{mamaFieldCache\_\-clear}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-clear ({\bf mamaFieldCache} {\em fieldCache})}}
+\label{fieldcache_8h_a7425d3bd70fc578a65f150f6f9fa06a6}
+
+
+This function will clear the field cache. The result is that the cache will be empty (no fields).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache to clear. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a39506cd5b2b99ff453a70c6d0357457d}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-getSize@{mamaFieldCache\_\-getSize}}
+\index{mamaFieldCache\_\-getSize@{mamaFieldCache\_\-getSize}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-getSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-getSize ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{fieldcache_8h_a39506cd5b2b99ff453a70c6d0357457d}
+
+
+This function will return the number of fields in the cache. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em size}](out) The number of fields in the cache. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a3fddeb9fa6284e454293dccb4c7275f6}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-find@{mamaFieldCache\_\-find}}
+\index{mamaFieldCache\_\-find@{mamaFieldCache\_\-find}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-find}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-find ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  const char $\ast$ {\em name}, \/  {\bf mamaFieldCacheField} $\ast$ {\em field})}}
+\label{fieldcache_8h_a3fddeb9fa6284e454293dccb4c7275f6}
+
+
+This function will retrieve a field from the cache. If the field is not found, the output parameter will be set to NULL and MAMA\_\-STATUS\_\-NOT\_\-FOUND is returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em fid}](in) The field id to look up. \item[{\em name}](in) The field name. \item[{\em field}](out) The field. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-NOT\_\-FOUND MAMA\_\-STATUS\_\-OK Other error codes from the mama functions. 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a007d55006f837ae725506fad765c09e0}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-findOrAdd@{mamaFieldCache\_\-findOrAdd}}
+\index{mamaFieldCache\_\-findOrAdd@{mamaFieldCache\_\-findOrAdd}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-findOrAdd}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-findOrAdd ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-fid\_\-t} {\em fid}, \/  {\bf mamaFieldType} {\em type}, \/  const char $\ast$ {\em name}, \/  {\bf mamaFieldCacheField} $\ast$ {\em field}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em existing})}}
+\label{fieldcache_8h_a007d55006f837ae725506fad765c09e0}
+
+
+This function will retrieve a field from the cache. If it does not exist, a new one is created, added to the cache and returned.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em fid}](in) The field id to look up. \item[{\em type}](in) The field type. \item[{\em name}](in) The field name. \item[{\em field}](out) The existing field, if found or new one, if not found. \item[{\em existing}](out) Flag to indicate whether the field was already present in the cache. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-OK Other error codes from the mama functions. 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a19b11b10a10c361e4ba894d040cc395f}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-setModified@{mamaFieldCache\_\-setModified}}
+\index{mamaFieldCache\_\-setModified@{mamaFieldCache\_\-setModified}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-setModified}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-setModified ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mamaFieldCacheField} {\em field})}}
+\label{fieldcache_8h_a19b11b10a10c361e4ba894d040cc395f}
+
+
+This function will set the modified flag for a field in the cache even if the value has not changed. The field must be present in the cache (No automatic check is performed).
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em field}](in) The field to set to modified. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a36e9ca7bf774d01051201017d55ff84a}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-applyField@{mamaFieldCache\_\-applyField}}
+\index{mamaFieldCache\_\-applyField@{mamaFieldCache\_\-applyField}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-applyField}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-applyField ({\bf mamaFieldCache} {\em fieldCache}, \/  const {\bf mamaFieldCacheField} {\em field})}}
+\label{fieldcache_8h_a36e9ca7bf774d01051201017d55ff84a}
+
+
+Update the cache content with the field given. If the field is already present, it will be updated, otherwise it will be added to the cache.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em field}](in) The field to get the content to update in the cache. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a79e1586c1edce789f0644bb68affa936}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-applyMessage@{mamaFieldCache\_\-applyMessage}}
+\index{mamaFieldCache\_\-applyMessage@{mamaFieldCache\_\-applyMessage}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-applyMessage}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-applyMessage ({\bf mamaFieldCache} {\em fieldCache}, \/  const {\bf mamaMsg} {\em message}, \/  {\bf mamaDictionary} {\em dictionary})}}
+\label{fieldcache_8h_a79e1586c1edce789f0644bb68affa936}
+\hypertarget{fieldcache_8h_aa2a265612e711ccedb0125afcbe143d9}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-applyRecord@{mamaFieldCache\_\-applyRecord}}
+\index{mamaFieldCache\_\-applyRecord@{mamaFieldCache\_\-applyRecord}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-applyRecord}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-applyRecord ({\bf mamaFieldCache} {\em fieldCache}, \/  const {\bf mamaFieldCacheRecord} {\em record})}}
+\label{fieldcache_8h_aa2a265612e711ccedb0125afcbe143d9}
+\hypertarget{fieldcache_8h_a2c51cc6af17a1d4e08a13997d691aa99}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-getFullMessage@{mamaFieldCache\_\-getFullMessage}}
+\index{mamaFieldCache\_\-getFullMessage@{mamaFieldCache\_\-getFullMessage}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-getFullMessage}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-getFullMessage ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mamaMsg} {\em message})}}
+\label{fieldcache_8h_a2c51cc6af17a1d4e08a13997d691aa99}
+
+
+This function will return all the fields in the cache by updating the provided mamaMsg with the fields. With this function the provided message will be fully populated with all the fields in the cache.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache to obtain the fields from. \item[{\em message}](in) This {\ttfamily mamaMsg} will be populated with all the fields. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK Other mama return codes. 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_abe92c2da4326a6f04597d7e624129ffd}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-getDeltaMessage@{mamaFieldCache\_\-getDeltaMessage}}
+\index{mamaFieldCache\_\-getDeltaMessage@{mamaFieldCache\_\-getDeltaMessage}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-getDeltaMessage}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-getDeltaMessage ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mamaMsg} {\em message})}}
+\label{fieldcache_8h_abe92c2da4326a6f04597d7e624129ffd}
+
+
+This function will return the set of fields that have changed since the last time this function was called. With this function the provided message will be fully populated with only the modified fields in the cache.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache to obtain the modified fields from. \item[{\em message}](in) This {\ttfamily mamMsg} will be populated with the modified fields. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK Other mama return codes. 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_abc95acda614377bff3b9a04b2046848e}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-clearModifiedFields@{mamaFieldCache\_\-clearModifiedFields}}
+\index{mamaFieldCache\_\-clearModifiedFields@{mamaFieldCache\_\-clearModifiedFields}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-clearModifiedFields}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-clearModifiedFields ({\bf mamaFieldCache} {\em fieldCache})}}
+\label{fieldcache_8h_abc95acda614377bff3b9a04b2046848e}
+
+
+This function will clear the list of all the modified fields and reset the modified flags for all the modified fields in the cache. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a38ac07e813bb00246a43a90ddee17fe9}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-setTrackModified@{mamaFieldCache\_\-setTrackModified}}
+\index{mamaFieldCache\_\-setTrackModified@{mamaFieldCache\_\-setTrackModified}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-setTrackModified}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-setTrackModified ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-bool\_\-t} {\em trackModified})}}
+\label{fieldcache_8h_a38ac07e813bb00246a43a90ddee17fe9}
+
+
+This function will set the value of the track modification state flag; if this flag is set then changes to field values will be monitored. See the documentation for more information on the operation of the track modification state flag.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em trackModified}](in) The track mod state flag, this should be non-\/zero to turn tracking on. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a5862342cf80e238688e2698535c6ba24}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-getTrackModified@{mamaFieldCache\_\-getTrackModified}}
+\index{mamaFieldCache\_\-getTrackModified@{mamaFieldCache\_\-getTrackModified}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-getTrackModified}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-getTrackModified ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em trackModified})}}
+\label{fieldcache_8h_a5862342cf80e238688e2698535c6ba24}
+
+
+This function will return the value of the track modification state flag. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em trackModified}](out) To return the track mod state flag, this will be non-\/zero if tracking is turned on. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a2029a7ae2a04851877181da7b1aec7a9}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-setUseFieldNames@{mamaFieldCache\_\-setUseFieldNames}}
+\index{mamaFieldCache\_\-setUseFieldNames@{mamaFieldCache\_\-setUseFieldNames}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-setUseFieldNames}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-setUseFieldNames ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-bool\_\-t} {\em useFieldNames})}}
+\label{fieldcache_8h_a2029a7ae2a04851877181da7b1aec7a9}
+
+
+This function will set the value of the use-\/field-\/names state flag; if this flag is set then. .. See the documentation for more information on the operation of the use-\/field-\/names state flag.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em useFieldNames}](in) The use field names state flag, this should be non-\/zero to turn tracking on. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a98a0e4946f589d9b441d5b82ecfba5f3}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-getUseFieldNames@{mamaFieldCache\_\-getUseFieldNames}}
+\index{mamaFieldCache\_\-getUseFieldNames@{mamaFieldCache\_\-getUseFieldNames}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-getUseFieldNames}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-getUseFieldNames ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em useFieldNames})}}
+\label{fieldcache_8h_a98a0e4946f589d9b441d5b82ecfba5f3}
+
+
+This function will return the value of the use-\/field-\/names state flag. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em useFieldNames}](out) To return the use-\/field-\/names state flag, this will be non-\/zero if use-\/field-\/names is turned on. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a36485b72c6e74ca60acaddb13833a00d}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-setUseLock@{mamaFieldCache\_\-setUseLock}}
+\index{mamaFieldCache\_\-setUseLock@{mamaFieldCache\_\-setUseLock}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-setUseLock}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-setUseLock ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-bool\_\-t} {\em enable})}}
+\label{fieldcache_8h_a36485b72c6e74ca60acaddb13833a00d}
+
+
+This function will enable/disable cache locking. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em enable}](in) The flag for enabling/disabling locking. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_a14b312d906d6a4f6c328537339ca75b8}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-getUseLock@{mamaFieldCache\_\-getUseLock}}
+\index{mamaFieldCache\_\-getUseLock@{mamaFieldCache\_\-getUseLock}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-getUseLock}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-getUseLock ({\bf mamaFieldCache} {\em fieldCache}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em lockEnabled})}}
+\label{fieldcache_8h_a14b312d906d6a4f6c328537339ca75b8}
+
+
+This function will determine whether the cache is using locking or not. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache. \item[{\em locked}](out) Indicates whether the cache is using locking or not. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_ab0be381568eca0e6458e6cd93728e621}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-lock@{mamaFieldCache\_\-lock}}
+\index{mamaFieldCache\_\-lock@{mamaFieldCache\_\-lock}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-lock ({\bf mamaFieldCache} {\em fieldCache})}}
+\label{fieldcache_8h_ab0be381568eca0e6458e6cd93728e621}
+
+
+This function will lock the cache. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache to lock. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{fieldcache_8h_af4868576227ad6a450d16ecfa8783d96}{
+\index{fieldcache.h@{fieldcache.h}!mamaFieldCache\_\-unlock@{mamaFieldCache\_\-unlock}}
+\index{mamaFieldCache\_\-unlock@{mamaFieldCache\_\-unlock}!fieldcache.h@{fieldcache.h}}
+\subsubsection[{mamaFieldCache\_\-unlock}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaFieldCache\_\-unlock ({\bf mamaFieldCache} {\em fieldCache})}}
+\label{fieldcache_8h_af4868576227ad6a450d16ecfa8783d96}
+
+
+This function will unlock the cache. 
+\begin{DoxyParams}{Parameters}
+\item[{\em fieldCache}](in) The field cache to unlock. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting status of the call which can be MAMA\_\-STATUS\_\-NULL\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

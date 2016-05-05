@@ -1,0 +1,172 @@
+\hypertarget{statscollector_8h}{
+\section{statscollector.h File Reference}
+\label{statscollector_8h}\index{statscollector.h@{statscollector.h}}
+}
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592}{mamaStatsCollectorType} \{ \hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592a01e1bb8f27bd0d444664c386d4678cf8}{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-QUEUE} =  0, 
+\hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592aa665d2dcf4a71d78af19d930dade255a}{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-TRANSPORT} =  1, 
+\hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592a4e2694834f37d91e24d3e19c715f8fc2}{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-USER} =  2, 
+\hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592ae2d9cb4cff665606f81540ff875f122a}{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-GLOBAL} =  3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_a0470df40727c3190e20c88108bdaedd0}{mamaStatsCollector\_\-create} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} $\ast$statsCollector, \hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592}{mamaStatsCollectorType} type, const char $\ast$name, const char $\ast$middleware)
+\begin{DoxyCompactList}\small\item\em Create a mamaStatsCollector object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_a9474029250df537e17979c3665dba560}{mamaStatsCollector\_\-destroy} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaStatsCollector object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_a657d134dd88f072e7dbed79d60b7b47b}{mamaStatsCollector\_\-addStat} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector, \hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Register a stats object with the collector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_a0e5f80cfa9d859a2281dd17d6a53d453}{mamaStatsCollector\_\-incrementStat} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} identifier)
+\begin{DoxyCompactList}\small\item\em Increment the current interval value of the stat represented by FID identifier. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_ab8a5f539c1143d47b3c7ccbe2eb9c5ee}{mamaStatsCollector\_\-setName} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the name of the stats collector object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_ad19e4f46a3be40ca2fead37fbbc4996c}{mamaStatsCollector\_\-setPublish} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector, int publish)
+\begin{DoxyCompactList}\small\item\em Set whether or not stats for this stats collector object should be published in stats messages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{statscollector_8h_a456f85e6b2fc5752114ccf9683d919ae}{mamaStatsCollector\_\-getPublish} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector)
+\begin{DoxyCompactList}\small\item\em Get whether or not stats are being published for this stats collector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statscollector_8h_a4f24e6eb2b6c0fe6b788fb0391ce6930}{mamaStatsCollector\_\-setLog} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector, int log)
+\begin{DoxyCompactList}\small\item\em Set whether or not stats for this stats collector object should be logged to the MAMA log. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{statscollector_8h_ad2c41b1a0d65b9517246f81da6e5f5d4}{mamaStatsCollector\_\-getLog} (\hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} statsCollector)
+\begin{DoxyCompactList}\small\item\em Get whether or not stats are being logged for this stats collector. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{statscollector_8h_af8db5e0aebfba4948d1985655365b726}{mamaStatsCollectorType\_\-stringForType} (\hyperlink{statscollector_8h_adc8caa2f63d8750c1832c5e194172592}{mamaStatsCollectorType} type)
+\begin{DoxyCompactList}\small\item\em Return a string representation of a mamaStatsCollectorType. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{statscollector_8h_adc8caa2f63d8750c1832c5e194172592}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollectorType@{mamaStatsCollectorType}}
+\index{mamaStatsCollectorType@{mamaStatsCollectorType}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollectorType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaStatsCollectorType}}}
+\label{statscollector_8h_adc8caa2f63d8750c1832c5e194172592}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-QUEUE@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-QUEUE}!statscollector.h@{statscollector.h}}\index{statscollector.h@{statscollector.h}!MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-QUEUE@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-QUEUE}}\item[{\em 
+\hypertarget{statscollector_8h_adc8caa2f63d8750c1832c5e194172592a01e1bb8f27bd0d444664c386d4678cf8}{
+MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-QUEUE}
+\label{statscollector_8h_adc8caa2f63d8750c1832c5e194172592a01e1bb8f27bd0d444664c386d4678cf8}
+}]\index{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-TRANSPORT@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-TRANSPORT}!statscollector.h@{statscollector.h}}\index{statscollector.h@{statscollector.h}!MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-TRANSPORT@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-TRANSPORT}}\item[{\em 
+\hypertarget{statscollector_8h_adc8caa2f63d8750c1832c5e194172592aa665d2dcf4a71d78af19d930dade255a}{
+MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-TRANSPORT}
+\label{statscollector_8h_adc8caa2f63d8750c1832c5e194172592aa665d2dcf4a71d78af19d930dade255a}
+}]\index{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-USER@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-USER}!statscollector.h@{statscollector.h}}\index{statscollector.h@{statscollector.h}!MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-USER@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-USER}}\item[{\em 
+\hypertarget{statscollector_8h_adc8caa2f63d8750c1832c5e194172592a4e2694834f37d91e24d3e19c715f8fc2}{
+MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-USER}
+\label{statscollector_8h_adc8caa2f63d8750c1832c5e194172592a4e2694834f37d91e24d3e19c715f8fc2}
+}]\index{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-GLOBAL@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-GLOBAL}!statscollector.h@{statscollector.h}}\index{statscollector.h@{statscollector.h}!MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-GLOBAL@{MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-GLOBAL}}\item[{\em 
+\hypertarget{statscollector_8h_adc8caa2f63d8750c1832c5e194172592ae2d9cb4cff665606f81540ff875f122a}{
+MAMA\_\-STATS\_\-COLLECTOR\_\-TYPE\_\-GLOBAL}
+\label{statscollector_8h_adc8caa2f63d8750c1832c5e194172592ae2d9cb4cff665606f81540ff875f122a}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{statscollector_8h_a0470df40727c3190e20c88108bdaedd0}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-create@{mamaStatsCollector\_\-create}}
+\index{mamaStatsCollector\_\-create@{mamaStatsCollector\_\-create}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-create ({\bf mamaStatsCollector} $\ast$ {\em statsCollector}, \/  {\bf mamaStatsCollectorType} {\em type}, \/  const char $\ast$ {\em name}, \/  const char $\ast$ {\em middleware})}}
+\label{statscollector_8h_a0470df40727c3190e20c88108bdaedd0}
+
+
+Create a mamaStatsCollector object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statsCollector}]The stats collector object to create \end{DoxyParams}
+\hypertarget{statscollector_8h_a9474029250df537e17979c3665dba560}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-destroy@{mamaStatsCollector\_\-destroy}}
+\index{mamaStatsCollector\_\-destroy@{mamaStatsCollector\_\-destroy}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-destroy ({\bf mamaStatsCollector} {\em statsCollector})}}
+\label{statscollector_8h_a9474029250df537e17979c3665dba560}
+
+
+Destroy a mamaStatsCollector object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statsCollector}]The stats collector object to destroy \end{DoxyParams}
+\hypertarget{statscollector_8h_a657d134dd88f072e7dbed79d60b7b47b}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-addStat@{mamaStatsCollector\_\-addStat}}
+\index{mamaStatsCollector\_\-addStat@{mamaStatsCollector\_\-addStat}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-addStat}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-addStat ({\bf mamaStatsCollector} {\em statsCollector}, \/  {\bf mamaStat} {\em stat})}}
+\label{statscollector_8h_a657d134dd88f072e7dbed79d60b7b47b}
+
+
+Register a stats object with the collector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object to register with \item[{\em stat}]The stat object to register \end{DoxyParams}
+\hypertarget{statscollector_8h_a0e5f80cfa9d859a2281dd17d6a53d453}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-incrementStat@{mamaStatsCollector\_\-incrementStat}}
+\index{mamaStatsCollector\_\-incrementStat@{mamaStatsCollector\_\-incrementStat}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-incrementStat}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-incrementStat ({\bf mamaStatsCollector} {\em statsCollector}, \/  {\bf mama\_\-fid\_\-t} {\em identifier})}}
+\label{statscollector_8h_a0e5f80cfa9d859a2281dd17d6a53d453}
+
+
+Increment the current interval value of the stat represented by FID identifier. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object for which to increment the stat \item[{\em identifier}]FID of the stat to increment \end{DoxyParams}
+\hypertarget{statscollector_8h_ab8a5f539c1143d47b3c7ccbe2eb9c5ee}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-setName@{mamaStatsCollector\_\-setName}}
+\index{mamaStatsCollector\_\-setName@{mamaStatsCollector\_\-setName}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-setName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-setName ({\bf mamaStatsCollector} {\em statsCollector}, \/  const char $\ast$ {\em name})}}
+\label{statscollector_8h_ab8a5f539c1143d47b3c7ccbe2eb9c5ee}
+
+
+Set the name of the stats collector object. By default, this will be the same as the associated queue, transport, or MAMA Application.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object for which to set the name \item[{\em name}]The name to set for the stats collector \end{DoxyParams}
+\hypertarget{statscollector_8h_ad19e4f46a3be40ca2fead37fbbc4996c}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-setPublish@{mamaStatsCollector\_\-setPublish}}
+\index{mamaStatsCollector\_\-setPublish@{mamaStatsCollector\_\-setPublish}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-setPublish}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-setPublish ({\bf mamaStatsCollector} {\em statsCollector}, \/  int {\em publish})}}
+\label{statscollector_8h_ad19e4f46a3be40ca2fead37fbbc4996c}
+
+
+Set whether or not stats for this stats collector object should be published in stats messages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object to set publishing for \item[{\em publish}]Whether or not to publish stats for this stats collector \end{DoxyParams}
+\hypertarget{statscollector_8h_a456f85e6b2fc5752114ccf9683d919ae}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-getPublish@{mamaStatsCollector\_\-getPublish}}
+\index{mamaStatsCollector\_\-getPublish@{mamaStatsCollector\_\-getPublish}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-getPublish}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStatsCollector\_\-getPublish ({\bf mamaStatsCollector} {\em statsCollector})}}
+\label{statscollector_8h_a456f85e6b2fc5752114ccf9683d919ae}
+
+
+Get whether or not stats are being published for this stats collector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object to get publishing for \end{DoxyParams}
+\hypertarget{statscollector_8h_a4f24e6eb2b6c0fe6b788fb0391ce6930}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-setLog@{mamaStatsCollector\_\-setLog}}
+\index{mamaStatsCollector\_\-setLog@{mamaStatsCollector\_\-setLog}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-setLog}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsCollector\_\-setLog ({\bf mamaStatsCollector} {\em statsCollector}, \/  int {\em log})}}
+\label{statscollector_8h_a4f24e6eb2b6c0fe6b788fb0391ce6930}
+
+
+Set whether or not stats for this stats collector object should be logged to the MAMA log. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object to set logging for \item[{\em log}]Whether or not to log stats for this stats collector \end{DoxyParams}
+\hypertarget{statscollector_8h_ad2c41b1a0d65b9517246f81da6e5f5d4}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollector\_\-getLog@{mamaStatsCollector\_\-getLog}}
+\index{mamaStatsCollector\_\-getLog@{mamaStatsCollector\_\-getLog}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollector\_\-getLog}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStatsCollector\_\-getLog ({\bf mamaStatsCollector} {\em statsCollector})}}
+\label{statscollector_8h_ad2c41b1a0d65b9517246f81da6e5f5d4}
+
+
+Get whether or not stats are being logged for this stats collector. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statscollector}]The stats collector object to get logging for. \end{DoxyParams}
+\hypertarget{statscollector_8h_af8db5e0aebfba4948d1985655365b726}{
+\index{statscollector.h@{statscollector.h}!mamaStatsCollectorType\_\-stringForType@{mamaStatsCollectorType\_\-stringForType}}
+\index{mamaStatsCollectorType\_\-stringForType@{mamaStatsCollectorType\_\-stringForType}!statscollector.h@{statscollector.h}}
+\subsubsection[{mamaStatsCollectorType\_\-stringForType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaStatsCollectorType\_\-stringForType ({\bf mamaStatsCollectorType} {\em type})}}
+\label{statscollector_8h_af8db5e0aebfba4948d1985655365b726}
+
+
+Return a string representation of a mamaStatsCollectorType. 
+\begin{DoxyParams}{Parameters}
+\item[{\em type}]The stats collector type to return as a string \end{DoxyParams}

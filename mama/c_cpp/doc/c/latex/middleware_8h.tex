@@ -1,0 +1,178 @@
+\hypertarget{middleware_8h}{
+\section{middleware.h File Reference}
+\label{middleware_8h}\index{middleware.h@{middleware.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67b}{mamaMiddleware\_\-} \hyperlink{middleware_8h_aedea9a16f6f19aa23bf7bb9fdfd343b9}{mamaMiddleware}
+\begin{DoxyCompactList}\small\item\em Enum to reference the available MAMA middlewares. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67b}{mamaMiddleware\_\-} \{ \par
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba5ddaadb7fead1ce0db5c82560be66260}{MAMA\_\-MIDDLEWARE\_\-WMW} =  0, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba790dec1cfb37ece842566b6ee03f8143}{MAMA\_\-MIDDLEWARE\_\-LBM} =  1, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67baa0b9a151759867c9898cfde17a93b370}{MAMA\_\-MIDDLEWARE\_\-TIBRV} =  2, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba79f905fea55c1163651026c1a60d95d4}{MAMA\_\-MIDDLEWARE\_\-AVIS} =  3, 
+\par
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba6d385d6c1aa702a059d962dda45737da}{MAMA\_\-MIDDLEWARE\_\-TICK42BLP} =  4, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba5bda812e017ffb75f9bc0d03f1aa48fa}{MAMA\_\-MIDDLEWARE\_\-SOLACE} =  5, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67baf0e65f3cbfb94c3e96c1a8b0dda42529}{MAMA\_\-MIDDLEWARE\_\-RAI} =  6, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67bac138f42fae72bca9821d71dd63da31d6}{MAMA\_\-MIDDLEWARE\_\-QPID} =  7, 
+\par
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba8655ed14509c7a53f129bdeb1b0773ef}{MAMA\_\-MIDDLEWARE\_\-EXEGY} =  8, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba1ea76aac252bf537ca2a3b6099cd8b79}{MAMA\_\-MIDDLEWARE\_\-IBMWFO} =  9, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba4c04a2e3a00965c9d48c6c90c5664c39}{MAMA\_\-MIDDLEWARE\_\-ACTIV} =  10, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba3dd5455dcb0a6e459d985a1f8f7f7ba6}{MAMA\_\-MIDDLEWARE\_\-TICK42RMDS} =  11, 
+\par
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba0d4760444ff2df87fab8bab70f911ee9}{MAMA\_\-MIDDLEWARE\_\-UMS} =  12, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67bacda1a392c248a94ed6ce4ab2297d8cd5}{MAMA\_\-MIDDLEWARE\_\-VULCAN} =  13, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba55e6058ce007f54dea648eef89515b07}{MAMA\_\-MIDDLEWARE\_\-INRUSH} =  14, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba06edd664f26ed6b1f2fe6d7990dc1e83}{MAMA\_\-MIDDLEWARE\_\-LBMKOMODO} =  15, 
+\par
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba933ebf60c32b57f1aed326e9489316a3}{MAMA\_\-MIDDLEWARE\_\-UMDSKOMODO} =  16, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba0eb48222bac78bb9777c08f6f6406f46}{MAMA\_\-MIDDLEWARE\_\-HMS} =  17, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67bab7e2299fdcb7d809287e1243ea92f397}{MAMA\_\-MIDDLEWARE\_\-MAX} =  18, 
+\hyperlink{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba78f78f11d04354af9816be40cd0a4a4d}{MAMA\_\-MIDDLEWARE\_\-UNKNOWN} =  99
+ \}
+\begin{DoxyCompactList}\small\item\em Enum to reference the available MAMA middlewares. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{middleware_8h_aedea9a16f6f19aa23bf7bb9fdfd343b9}{mamaMiddleware} \hyperlink{middleware_8h_a9bf4a49778ed4e5849b717f981f259c4}{mamaMiddleware\_\-convertFromString} (const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Convert a string to a mamaMiddleware value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{middleware_8h_a7933af70c6beeb300a745b4c75d6b43f}{mamaMiddleware\_\-convertToString} (\hyperlink{middleware_8h_aedea9a16f6f19aa23bf7bb9fdfd343b9}{mamaMiddleware} middleware)
+\begin{DoxyCompactList}\small\item\em Convert a mamaMiddleware value to a string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{middleware_8h_aedea9a16f6f19aa23bf7bb9fdfd343b9}{
+\index{middleware.h@{middleware.h}!mamaMiddleware@{mamaMiddleware}}
+\index{mamaMiddleware@{mamaMiddleware}!middleware.h@{middleware.h}}
+\subsubsection[{mamaMiddleware}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaMiddleware\_\-}  {\bf mamaMiddleware}}}
+\label{middleware_8h_aedea9a16f6f19aa23bf7bb9fdfd343b9}
+
+
+Enum to reference the available MAMA middlewares. MAMA\_\-MIDDLEWARE\_\-MAX will be incremented when new middlewares become available 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67b}{
+\index{middleware.h@{middleware.h}!mamaMiddleware\_\-@{mamaMiddleware\_\-}}
+\index{mamaMiddleware\_\-@{mamaMiddleware\_\-}!middleware.h@{middleware.h}}
+\subsubsection[{mamaMiddleware\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaMiddleware\_\-}}}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67b}
+
+
+Enum to reference the available MAMA middlewares. MAMA\_\-MIDDLEWARE\_\-MAX will be incremented when new middlewares become available \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-MIDDLEWARE\_\-WMW@{MAMA\_\-MIDDLEWARE\_\-WMW}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-WMW@{MAMA\_\-MIDDLEWARE\_\-WMW}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba5ddaadb7fead1ce0db5c82560be66260}{
+MAMA\_\-MIDDLEWARE\_\-WMW}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba5ddaadb7fead1ce0db5c82560be66260}
+}]\index{MAMA\_\-MIDDLEWARE\_\-LBM@{MAMA\_\-MIDDLEWARE\_\-LBM}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-LBM@{MAMA\_\-MIDDLEWARE\_\-LBM}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba790dec1cfb37ece842566b6ee03f8143}{
+MAMA\_\-MIDDLEWARE\_\-LBM}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba790dec1cfb37ece842566b6ee03f8143}
+}]\index{MAMA\_\-MIDDLEWARE\_\-TIBRV@{MAMA\_\-MIDDLEWARE\_\-TIBRV}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-TIBRV@{MAMA\_\-MIDDLEWARE\_\-TIBRV}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67baa0b9a151759867c9898cfde17a93b370}{
+MAMA\_\-MIDDLEWARE\_\-TIBRV}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67baa0b9a151759867c9898cfde17a93b370}
+}]\index{MAMA\_\-MIDDLEWARE\_\-AVIS@{MAMA\_\-MIDDLEWARE\_\-AVIS}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-AVIS@{MAMA\_\-MIDDLEWARE\_\-AVIS}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba79f905fea55c1163651026c1a60d95d4}{
+MAMA\_\-MIDDLEWARE\_\-AVIS}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba79f905fea55c1163651026c1a60d95d4}
+}]\index{MAMA\_\-MIDDLEWARE\_\-TICK42BLP@{MAMA\_\-MIDDLEWARE\_\-TICK42BLP}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-TICK42BLP@{MAMA\_\-MIDDLEWARE\_\-TICK42BLP}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba6d385d6c1aa702a059d962dda45737da}{
+MAMA\_\-MIDDLEWARE\_\-TICK42BLP}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba6d385d6c1aa702a059d962dda45737da}
+}]\index{MAMA\_\-MIDDLEWARE\_\-SOLACE@{MAMA\_\-MIDDLEWARE\_\-SOLACE}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-SOLACE@{MAMA\_\-MIDDLEWARE\_\-SOLACE}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba5bda812e017ffb75f9bc0d03f1aa48fa}{
+MAMA\_\-MIDDLEWARE\_\-SOLACE}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba5bda812e017ffb75f9bc0d03f1aa48fa}
+}]\index{MAMA\_\-MIDDLEWARE\_\-RAI@{MAMA\_\-MIDDLEWARE\_\-RAI}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-RAI@{MAMA\_\-MIDDLEWARE\_\-RAI}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67baf0e65f3cbfb94c3e96c1a8b0dda42529}{
+MAMA\_\-MIDDLEWARE\_\-RAI}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67baf0e65f3cbfb94c3e96c1a8b0dda42529}
+}]\index{MAMA\_\-MIDDLEWARE\_\-QPID@{MAMA\_\-MIDDLEWARE\_\-QPID}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-QPID@{MAMA\_\-MIDDLEWARE\_\-QPID}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67bac138f42fae72bca9821d71dd63da31d6}{
+MAMA\_\-MIDDLEWARE\_\-QPID}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67bac138f42fae72bca9821d71dd63da31d6}
+}]\index{MAMA\_\-MIDDLEWARE\_\-EXEGY@{MAMA\_\-MIDDLEWARE\_\-EXEGY}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-EXEGY@{MAMA\_\-MIDDLEWARE\_\-EXEGY}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba8655ed14509c7a53f129bdeb1b0773ef}{
+MAMA\_\-MIDDLEWARE\_\-EXEGY}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba8655ed14509c7a53f129bdeb1b0773ef}
+}]\index{MAMA\_\-MIDDLEWARE\_\-IBMWFO@{MAMA\_\-MIDDLEWARE\_\-IBMWFO}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-IBMWFO@{MAMA\_\-MIDDLEWARE\_\-IBMWFO}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba1ea76aac252bf537ca2a3b6099cd8b79}{
+MAMA\_\-MIDDLEWARE\_\-IBMWFO}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba1ea76aac252bf537ca2a3b6099cd8b79}
+}]\index{MAMA\_\-MIDDLEWARE\_\-ACTIV@{MAMA\_\-MIDDLEWARE\_\-ACTIV}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-ACTIV@{MAMA\_\-MIDDLEWARE\_\-ACTIV}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba4c04a2e3a00965c9d48c6c90c5664c39}{
+MAMA\_\-MIDDLEWARE\_\-ACTIV}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba4c04a2e3a00965c9d48c6c90c5664c39}
+}]\index{MAMA\_\-MIDDLEWARE\_\-TICK42RMDS@{MAMA\_\-MIDDLEWARE\_\-TICK42RMDS}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-TICK42RMDS@{MAMA\_\-MIDDLEWARE\_\-TICK42RMDS}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba3dd5455dcb0a6e459d985a1f8f7f7ba6}{
+MAMA\_\-MIDDLEWARE\_\-TICK42RMDS}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba3dd5455dcb0a6e459d985a1f8f7f7ba6}
+}]\index{MAMA\_\-MIDDLEWARE\_\-UMS@{MAMA\_\-MIDDLEWARE\_\-UMS}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-UMS@{MAMA\_\-MIDDLEWARE\_\-UMS}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba0d4760444ff2df87fab8bab70f911ee9}{
+MAMA\_\-MIDDLEWARE\_\-UMS}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba0d4760444ff2df87fab8bab70f911ee9}
+}]\index{MAMA\_\-MIDDLEWARE\_\-VULCAN@{MAMA\_\-MIDDLEWARE\_\-VULCAN}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-VULCAN@{MAMA\_\-MIDDLEWARE\_\-VULCAN}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67bacda1a392c248a94ed6ce4ab2297d8cd5}{
+MAMA\_\-MIDDLEWARE\_\-VULCAN}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67bacda1a392c248a94ed6ce4ab2297d8cd5}
+}]\index{MAMA\_\-MIDDLEWARE\_\-INRUSH@{MAMA\_\-MIDDLEWARE\_\-INRUSH}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-INRUSH@{MAMA\_\-MIDDLEWARE\_\-INRUSH}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba55e6058ce007f54dea648eef89515b07}{
+MAMA\_\-MIDDLEWARE\_\-INRUSH}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba55e6058ce007f54dea648eef89515b07}
+}]\index{MAMA\_\-MIDDLEWARE\_\-LBMKOMODO@{MAMA\_\-MIDDLEWARE\_\-LBMKOMODO}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-LBMKOMODO@{MAMA\_\-MIDDLEWARE\_\-LBMKOMODO}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba06edd664f26ed6b1f2fe6d7990dc1e83}{
+MAMA\_\-MIDDLEWARE\_\-LBMKOMODO}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba06edd664f26ed6b1f2fe6d7990dc1e83}
+}]\index{MAMA\_\-MIDDLEWARE\_\-UMDSKOMODO@{MAMA\_\-MIDDLEWARE\_\-UMDSKOMODO}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-UMDSKOMODO@{MAMA\_\-MIDDLEWARE\_\-UMDSKOMODO}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba933ebf60c32b57f1aed326e9489316a3}{
+MAMA\_\-MIDDLEWARE\_\-UMDSKOMODO}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba933ebf60c32b57f1aed326e9489316a3}
+}]\index{MAMA\_\-MIDDLEWARE\_\-HMS@{MAMA\_\-MIDDLEWARE\_\-HMS}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-HMS@{MAMA\_\-MIDDLEWARE\_\-HMS}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba0eb48222bac78bb9777c08f6f6406f46}{
+MAMA\_\-MIDDLEWARE\_\-HMS}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba0eb48222bac78bb9777c08f6f6406f46}
+}]\index{MAMA\_\-MIDDLEWARE\_\-MAX@{MAMA\_\-MIDDLEWARE\_\-MAX}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-MAX@{MAMA\_\-MIDDLEWARE\_\-MAX}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67bab7e2299fdcb7d809287e1243ea92f397}{
+MAMA\_\-MIDDLEWARE\_\-MAX}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67bab7e2299fdcb7d809287e1243ea92f397}
+}]\index{MAMA\_\-MIDDLEWARE\_\-UNKNOWN@{MAMA\_\-MIDDLEWARE\_\-UNKNOWN}!middleware.h@{middleware.h}}\index{middleware.h@{middleware.h}!MAMA\_\-MIDDLEWARE\_\-UNKNOWN@{MAMA\_\-MIDDLEWARE\_\-UNKNOWN}}\item[{\em 
+\hypertarget{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba78f78f11d04354af9816be40cd0a4a4d}{
+MAMA\_\-MIDDLEWARE\_\-UNKNOWN}
+\label{middleware_8h_ad8d485c61a6f9237948340942c1bc67ba78f78f11d04354af9816be40cd0a4a4d}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{middleware_8h_a9bf4a49778ed4e5849b717f981f259c4}{
+\index{middleware.h@{middleware.h}!mamaMiddleware\_\-convertFromString@{mamaMiddleware\_\-convertFromString}}
+\index{mamaMiddleware\_\-convertFromString@{mamaMiddleware\_\-convertFromString}!middleware.h@{middleware.h}}
+\subsubsection[{mamaMiddleware\_\-convertFromString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaMiddleware} mamaMiddleware\_\-convertFromString (const char $\ast$ {\em str})}}
+\label{middleware_8h_a9bf4a49778ed4e5849b717f981f259c4}
+
+
+Convert a string to a mamaMiddleware value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em str}]The str to convert. \end{DoxyParams}
+\hypertarget{middleware_8h_a7933af70c6beeb300a745b4c75d6b43f}{
+\index{middleware.h@{middleware.h}!mamaMiddleware\_\-convertToString@{mamaMiddleware\_\-convertToString}}
+\index{mamaMiddleware\_\-convertToString@{mamaMiddleware\_\-convertToString}!middleware.h@{middleware.h}}
+\subsubsection[{mamaMiddleware\_\-convertToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaMiddleware\_\-convertToString ({\bf mamaMiddleware} {\em middleware})}}
+\label{middleware_8h_a7933af70c6beeb300a745b4c75d6b43f}
+
+
+Convert a mamaMiddleware value to a string. Do no attempt to free the string result.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em middleware}]The mamaMiddleware to convert. \end{DoxyParams}

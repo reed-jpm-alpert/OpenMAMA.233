@@ -1,0 +1,962 @@
+\hypertarget{datetime_8h}{
+\section{datetime.h File Reference}
+\label{datetime_8h}\index{datetime.h@{datetime.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/timezone.h$>$}\par
+{\ttfamily \#include \char`\"{}wombat/port.h\char`\"{}}\par
+{\ttfamily \#include $<$time.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{datetime_8h_ae49fa724b17e5909e320f46806f51bb0}{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE}~((\hyperlink{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}{mamaDateTimeHints}) 0x01)
+\item 
+\#define \hyperlink{datetime_8h_a08968ac488c1c80d64fda32283eb280d}{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME}~((\hyperlink{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}{mamaDateTimeHints}) 0x02)
+\item 
+\#define \hyperlink{datetime_8h_a02c7a9831a4defe445cf58d49b5d7f09}{MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE}~((\hyperlink{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}{mamaDateTimeHints}) 0x04)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03}{mamaDateTimePrecision\_\-} \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision}
+\item 
+typedef enum \hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528ef}{mamaDayOfWeek\_\-} \hyperlink{datetime_8h_a6a1581012ba86d87b5e1f0a3a989d481}{mamaDayOfWeek}
+\item 
+typedef \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} \hyperlink{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}{mamaDateTimeHints}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03}{mamaDateTimePrecision\_\-} \{ \par
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a3e3e6aa4e9f1efdd6215840965ffbc5c}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-SECONDS} =  0, 
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03acafa76988d2dd97a6d7f62b73b8e1e19}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DECISECONDS} =  1, 
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a153ef2ea0640a684d5e6b1ac1b6226e5}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-CENTISECONDS} =  2, 
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a85ec23e0fe6da0ee09bdaf08537eeae1}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MILLISECONDS} =  3, 
+\par
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03ab627f7a7fba4f372c4e48a2fbcb14fb8}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MICROSECONDS} =  6, 
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a4b909845d11efbf6f6f547b2fa991262}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DAYS} =  10, 
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a0ed1f09a133e7c7b97e0f38ab640d15b}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MINUTES} =  12, 
+\hyperlink{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a3c0caa2ee90ffa03c6a188ca230b429d}{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN} =  15
+ \}
+\item 
+enum \hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528ef}{mamaDayOfWeek\_\-} \{ \par
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa50f766951431e13654ab869ef85e162c}{Sunday} =  0, 
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa455141191c205fb8f46e2e9da6b0dd47}{Monday}, 
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa596327c453efea63ea26096bf041f630}{Tuesday}, 
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa0ae230de6136f0671e2f13a0332a620c}{Wednesday}, 
+\par
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa8d9721cec5bcce006e98e794d3ff4912}{Thursday}, 
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efaadb8f1f9f2221414dcd35c6e5f8e7d81}{Friday}, 
+\hyperlink{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa5a996d296d81b9b8bd3b9201afa4c547}{Saturday}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a2d6ce2947b4dc8571e8198c39af40ab2}{mamaDateTime\_\-create} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} $\ast$dateTime)
+\begin{DoxyCompactList}\small\item\em Create a date/time object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_aad3753cbd1c4bdbe20ccc230b22c7b43}{mamaDateTime\_\-destroy} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaDateTime object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a1dcbe417b2dfebdb72dd756404a9c9b2}{mamaDateTime\_\-clear} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime)
+\begin{DoxyCompactList}\small\item\em Clear a mamaDateTime object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ac00adfe67acab289121e0c75e9f330f3}{mamaDateTime\_\-clearDate} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime)
+\begin{DoxyCompactList}\small\item\em Clear the date part of a mamaDateTime object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a1ac7cfa787eafb1956adf61b6ef3c058}{mamaDateTime\_\-clearTime} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime)
+\begin{DoxyCompactList}\small\item\em Clear the time of day part of a mamaDateTime object (preserving the date). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_af2b762d78b9fa90adf0ad4da7376356a}{mamaDateTime\_\-copy} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dest, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} src)
+\item 
+MAMAExpDLL int \hyperlink{datetime_8h_a081be3e10ff28d7d76bf3bd646e62f94}{mamaDateTime\_\-empty} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime)
+\item 
+MAMAExpDLL int \hyperlink{datetime_8h_ac2a5d2cd9120e7dd9112a7ff78827a33}{mamaDateTime\_\-equal} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} lhs, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} rhs)
+\item 
+MAMAExpDLL int \hyperlink{datetime_8h_af805992088c68411838ff50f9c437b36}{mamaDateTime\_\-compare} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} lhs, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} rhs)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a75a9b236760842aa4d49db4ca285c52f}{mamaDateTime\_\-setEpochTime} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} seconds, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} microseconds, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} precision)
+\begin{DoxyCompactList}\small\item\em Set the date and time as seconds and microseconds since the Epoch (UTC time zone) with an option to designate the accuracy of the time. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_afb25bed057a726b4bc37b82ad4a13874}{mamaDateTime\_\-setEpochTimeF64} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} seconds)
+\begin{DoxyCompactList}\small\item\em Set the date and time as seconds (plus, possibly fractional seconds) since the Epoch (UTC time zone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a6954c0a48464445efcd791b0221b468e}{mamaDateTime\_\-setEpochTimeMilliseconds} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} milliseconds)
+\begin{DoxyCompactList}\small\item\em Set the date and time as milliseconds. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a9cfaebf60942622b3a1ff2d10e6f93a8}{mamaDateTime\_\-setEpochTimeMicroseconds} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} milliseconds)
+\begin{DoxyCompactList}\small\item\em Set the date and time as microseconds. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a9dbd32acca5b3d124f022785b9f6aa05}{mamaDateTime\_\-setWithHints} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} seconds, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} microseconds, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} precision, \hyperlink{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}{mamaDateTimeHints} hints)
+\begin{DoxyCompactList}\small\item\em Set the date and/or time with special, optional hints to indicate whether the date/time includes date information, time information and/or whether a user of the date/time should consider it in the context of a time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_acd97e16d66e24bee2c835d6720171481}{mamaDateTime\_\-setPrecision} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} precision)
+\begin{DoxyCompactList}\small\item\em Set the precision hint. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_aa66e962abc8aea29e4e25ee1ac55f6a4}{mamaDateTime\_\-setToNow} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime)
+\begin{DoxyCompactList}\small\item\em Set the date and time to the current UTC time. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_aa347515a2569fd123af33a71c064023c}{mamaDateTime\_\-setToMidnightToday} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Set the dateTime object to 12am of the current date in the timezone provided (or UTC if NULL). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a0d3fb8cb16942a37db3835fec4b1250c}{mamaDateTime\_\-setWithPrecisionAndTz} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} year, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} month, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} day, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} hour, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} minute, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} second, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} microsecond, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} precision, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Set the entire date and time for the MamaDateTime. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a8b9058435ad01b1395e3f613b8877584}{mamaDateTime\_\-setTime} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} hour, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} minute, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} second, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} microsecond)
+\begin{DoxyCompactList}\small\item\em Set the time-\/of-\/day portion of the MamaDateTime. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_affb1356658a92bcea418aa2ac6eaab62}{mamaDateTime\_\-setTimeWithPrecisionAndTz} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} hour, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} minute, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} second, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} microsecond, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} precision, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Set the time-\/of-\/day portion of the MamaDateTime with explicit precision. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ad23f57855db9e4903ae941fc50f7dcb3}{mamaDateTime\_\-setDate} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} year, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} month, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} day)
+\begin{DoxyCompactList}\small\item\em Set the date portion of the MamaDateTime. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_af2b2b9c950c80ecbb6beb5ad93778d63}{mamaDateTime\_\-copyTime} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dest, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} src)
+\begin{DoxyCompactList}\small\item\em Copy the time-\/of-\/day portion of the mamaDateTime. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a1c0d0dd805f40cc243d935d2b8753eb5}{mamaDateTime\_\-copyDate} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dest, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} src)
+\begin{DoxyCompactList}\small\item\em Copy the date portion of the mamaDateTime. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a66f27d506ee4f91c9560a3dad20b7f7c}{mamaDateTime\_\-hasTime} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the time-\/of-\/day portion of the MamaDateTime is set. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a59d8062b46f0a214dcb603b12a2f2c22}{mamaDateTime\_\-hasDate} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the date portion of the MamaDateTime is set. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_abc0b406a6a7d6e3cf3b0c94060ad6938}{mamaDateTime\_\-addSeconds} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} seconds)
+\begin{DoxyCompactList}\small\item\em Add a number of seconds, including fractional seconds (may be negative). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_aad40f81cf06027e413f3e1a6849f64d4}{mamaDateTime\_\-addWholeSeconds} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} seconds)
+\begin{DoxyCompactList}\small\item\em Add a number of whole seconds (may be negative). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a5e7597a04a6a05e492b0dc484bebdcbc}{mamaDateTime\_\-addMicroseconds} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} microseconds)
+\begin{DoxyCompactList}\small\item\em Add a number of microseconds (may be negative) Add a number of microseconds (may be negative and greater than 1000000 or less than -\/1000000). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a5a17d104261f028f258595c61fc15921}{mamaDateTime\_\-setFromString} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Set the date and time from a string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_acc4ee75ae8b95553cce16b3bcdb7b8a6}{mamaDateTime\_\-setFromStringWithTz} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, const char $\ast$str, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Set the date and time from a string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ad84279e4d52913c4b09228554a9e9011}{mamaDateTime\_\-setFromStringBuffer} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, const char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} strLen)
+\begin{DoxyCompactList}\small\item\em Set the date and time from an unterminated string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a3762e5b2bc677a1d25f2f5435ac42d4f}{mamaDateTime\_\-setFromStringBufferWithTz} (\hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, const char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} strLen, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Set the date and time from an unterminated string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ac0c09e8a23cac3a945f271b7753ae181}{mamaDateTime\_\-getEpochTime} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$seconds, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$microseconds, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} $\ast$precision)
+\begin{DoxyCompactList}\small\item\em Get the date and time as seconds and microseconds since the Epoch (UTC time zone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a0eb352cb76368ce2d02b73f78f3eabe8}{mamaDateTime\_\-getEpochTimeWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$seconds, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$microseconds, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} $\ast$precision, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date and time as seconds and microseconds since the Epoch in the timezone supplied. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a02e9f9c330f6bb6cb88ca15175ce00c9}{mamaDateTime\_\-getEpochTimeMicroseconds} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$microseconds)
+\begin{DoxyCompactList}\small\item\em Get the date and time as microseconds since the Epoch, (using the UTC timezone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a26e5100cc3985591760a3cef0f5a44c1}{mamaDateTime\_\-getEpochTimeMicrosecondsWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$microseconds, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date and time as microseconds since the Epoch in the supplied time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a32b8487a3f6ac86063b2a3abba6654d9}{mamaDateTime\_\-getEpochTimeMilliseconds} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$milliseconds)
+\begin{DoxyCompactList}\small\item\em Get the date and time as milliseconds since the Epoch (UTC time zone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a25fe86ad7511f8c8695e40f1a84f39f8}{mamaDateTime\_\-getEpochTimeMillisecondsWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$milliseconds, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date and time as milliseconds since the Epoch in the timezone supplied. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ac8cc8cf880a7c7494778ac0c02b73e9b}{mamaDateTime\_\-getEpochTimeSeconds} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$seconds)
+\begin{DoxyCompactList}\small\item\em Get the date and time as seconds since the Epoch (UTC time zone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a0d4aed85b7febbe9f8a7d4da1c9c838d}{mamaDateTime\_\-getEpochTimeSecondsWithCheck} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$seconds)
+\begin{DoxyCompactList}\small\item\em Get the date and time as seconds since the Epoch, (using the UTC timezone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_abb53d4ed86a801fb17bdfa0ddd0c25b1}{mamaDateTime\_\-getEpochTimeSecondsWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$seconds, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date and time as seconds since the Epoch in the timezone supplied. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a1028fa2ee4577ae6a493f7bc64047812}{mamaDateTime\_\-getWithHints} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$seconds, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$microseconds, \hyperlink{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{mamaDateTimePrecision} $\ast$precision, \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} $\ast$hints)
+\begin{DoxyCompactList}\small\item\em Get the date and/or time with special, optional hints to indicate whether the date/time includes date information, time information and/or whether a user of the date/time should consider it in the context of a time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_adc14180efcdf9aa1a175826b57890531}{mamaDateTime\_\-getStructTimeVal} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, struct timeval $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the date/time as a \char`\"{}struct timeval\char`\"{}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ae9ac28fd5de37e750ee47471b2af73aa}{mamaDateTime\_\-getStructTimeValWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, struct timeval $\ast$result, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date/time as a \char`\"{}struct timeval\char`\"{} in the timezone supplied. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ad2063821a9747a3b50fb91951fab5e31}{mamaDateTime\_\-getStructTm} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, struct tm $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the date/time as a \char`\"{}struct tm\char`\"{}. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a9eb112e2489c46ae46fd070d63de1f6e}{mamaDateTime\_\-getStructTmWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, struct tm $\ast$result, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date/time as a \char`\"{}struct tm\char`\"{} in the timezone supplied. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a9a9f040b425f3de490a2d0ba8b7a83f6}{mamaDateTime\_\-getAsString} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Get the date and/or time as a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a9a5e59f82a4c44c6ab56f07808f78164}{mamaDateTime\_\-getTimeAsString} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Get the time (no date) as a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a1008f1ad595d6430c855d95937fc5bb1}{mamaDateTime\_\-getDateAsString} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Get the date (no time) as a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a80ef6b799671cbc58e0ec7bce960cacb}{mamaDateTime\_\-getAsFormattedString} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format})
+\begin{DoxyCompactList}\small\item\em Get the date and/or time as a string using the format provided. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a40324db5691dc2cc282feac350bd11d6}{mamaDateTime\_\-getAsFormattedStringWithTz} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen, const char $\ast$\hyperlink{log_8h_ac0b42a0d9ee7ee76065ff2fe814fe31a}{format}, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} tz)
+\begin{DoxyCompactList}\small\item\em Get the date and/or time as a string using the format provided. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_afda59530cc73f3c71fc9ad7a0ee6d0c0}{mamaDateTime\_\-getYear} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the year (1970 onwards). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_afa1024aba2889d162b70461b2be09b5e}{mamaDateTime\_\-getMonth} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the month (1-\/12). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a8151ebe7ba7ccdddb2195e5b097e1c1a}{mamaDateTime\_\-getDay} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the day of month (1-\/31). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a846898cf84435a2f5458a42b51dccbd1}{mamaDateTime\_\-getHour} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the hour (0-\/23). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a1da916cc8883ed6025829a3e7b40cacd}{mamaDateTime\_\-getMinute} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the minute (0-\/59). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_aee950aaea1a88c5eca911ebf841d0bae}{mamaDateTime\_\-getSecond} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the second (0-\/59). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_ad3e5ef40bd53c1c424bc5d91e939ae8d}{mamaDateTime\_\-getMicrosecond} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the microsecond (0-\/999999). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a823cbc77255df52e3aeac5ae5591df8a}{mamaDateTime\_\-getDayOfWeek} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} dateTime, \hyperlink{datetime_8h_a6a1581012ba86d87b5e1f0a3a989d481}{mamaDayOfWeek} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the day of week. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a395344475cc23f7d1507e87840d32af2}{mamaDateTime\_\-diffSeconds} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} t1, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} t0, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the difference, in seconds (including fractions of seconds), between the two times. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_aabefa86e717153c530fd988517a670f7}{mamaDateTime\_\-diffSecondsSameDay} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} t1, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} t0, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the difference, in seconds (including fractions of seconds), between the two times, ignoring any date information. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{datetime_8h_a4a319df24e6017a9dbea06e6a5281c34}{mamaDateTime\_\-diffMicroseconds} (const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} t1, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} t0, \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Return the difference, in microseconds, between the two times. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{datetime_8h_ae49fa724b17e5909e320f46806f51bb0}{
+\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE@{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE}}
+\index{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE@{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE}!datetime.h@{datetime.h}}
+\subsubsection[{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DATE\_\-TIME\_\-HAS\_\-DATE~(({\bf mamaDateTimeHints}) 0x01)}}
+\label{datetime_8h_ae49fa724b17e5909e320f46806f51bb0}
+\hypertarget{datetime_8h_a08968ac488c1c80d64fda32283eb280d}{
+\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME@{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME}}
+\index{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME@{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME}!datetime.h@{datetime.h}}
+\subsubsection[{MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DATE\_\-TIME\_\-HAS\_\-TIME~(({\bf mamaDateTimeHints}) 0x02)}}
+\label{datetime_8h_a08968ac488c1c80d64fda32283eb280d}
+\hypertarget{datetime_8h_a02c7a9831a4defe445cf58d49b5d7f09}{
+\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE@{MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE}}
+\index{MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE@{MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE}!datetime.h@{datetime.h}}
+\subsubsection[{MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-DATE\_\-TIME\_\-NO\_\-TIMEZONE~(({\bf mamaDateTimeHints}) 0x04)}}
+\label{datetime_8h_a02c7a9831a4defe445cf58d49b5d7f09}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}{
+\index{datetime.h@{datetime.h}!mamaDateTimePrecision@{mamaDateTimePrecision}}
+\index{mamaDateTimePrecision@{mamaDateTimePrecision}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTimePrecision}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaDateTimePrecision\_\-}  {\bf mamaDateTimePrecision}}}
+\label{datetime_8h_ad50ff71f25d0eae6f3b5b680fc3a7b91}
+\hypertarget{datetime_8h_a6a1581012ba86d87b5e1f0a3a989d481}{
+\index{datetime.h@{datetime.h}!mamaDayOfWeek@{mamaDayOfWeek}}
+\index{mamaDayOfWeek@{mamaDayOfWeek}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDayOfWeek}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaDayOfWeek\_\-}  {\bf mamaDayOfWeek}}}
+\label{datetime_8h_a6a1581012ba86d87b5e1f0a3a989d481}
+\hypertarget{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}{
+\index{datetime.h@{datetime.h}!mamaDateTimeHints@{mamaDateTimeHints}}
+\index{mamaDateTimeHints@{mamaDateTimeHints}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTimeHints}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mama\_\-u8\_\-t} {\bf mamaDateTimeHints}}}
+\label{datetime_8h_ada38deed2ca6e7d619fe8c56047968e1}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03}{
+\index{datetime.h@{datetime.h}!mamaDateTimePrecision\_\-@{mamaDateTimePrecision\_\-}}
+\index{mamaDateTimePrecision\_\-@{mamaDateTimePrecision\_\-}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTimePrecision\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaDateTimePrecision\_\-}}}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-SECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-SECONDS}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-SECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-SECONDS}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a3e3e6aa4e9f1efdd6215840965ffbc5c}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-SECONDS}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a3e3e6aa4e9f1efdd6215840965ffbc5c}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DECISECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DECISECONDS}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DECISECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DECISECONDS}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03acafa76988d2dd97a6d7f62b73b8e1e19}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DECISECONDS}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03acafa76988d2dd97a6d7f62b73b8e1e19}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-CENTISECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-CENTISECONDS}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-CENTISECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-CENTISECONDS}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a153ef2ea0640a684d5e6b1ac1b6226e5}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-CENTISECONDS}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a153ef2ea0640a684d5e6b1ac1b6226e5}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MILLISECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MILLISECONDS}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MILLISECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MILLISECONDS}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a85ec23e0fe6da0ee09bdaf08537eeae1}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MILLISECONDS}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a85ec23e0fe6da0ee09bdaf08537eeae1}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MICROSECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MICROSECONDS}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MICROSECONDS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MICROSECONDS}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03ab627f7a7fba4f372c4e48a2fbcb14fb8}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MICROSECONDS}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03ab627f7a7fba4f372c4e48a2fbcb14fb8}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DAYS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DAYS}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DAYS@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DAYS}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a4b909845d11efbf6f6f547b2fa991262}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-DAYS}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a4b909845d11efbf6f6f547b2fa991262}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MINUTES@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MINUTES}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MINUTES@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MINUTES}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a0ed1f09a133e7c7b97e0f38ab640d15b}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-MINUTES}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a0ed1f09a133e7c7b97e0f38ab640d15b}
+}]\index{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN@{MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN}}\item[{\em 
+\hypertarget{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a3c0caa2ee90ffa03c6a188ca230b429d}{
+MAMA\_\-DATE\_\-TIME\_\-PREC\_\-UNKNOWN}
+\label{datetime_8h_a206b5d879325aa8f962fe9509a6dea03a3c0caa2ee90ffa03c6a188ca230b429d}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528ef}{
+\index{datetime.h@{datetime.h}!mamaDayOfWeek\_\-@{mamaDayOfWeek\_\-}}
+\index{mamaDayOfWeek\_\-@{mamaDayOfWeek\_\-}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDayOfWeek\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaDayOfWeek\_\-}}}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528ef}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{Sunday@{Sunday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Sunday@{Sunday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa50f766951431e13654ab869ef85e162c}{
+Sunday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa50f766951431e13654ab869ef85e162c}
+}]\index{Monday@{Monday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Monday@{Monday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa455141191c205fb8f46e2e9da6b0dd47}{
+Monday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa455141191c205fb8f46e2e9da6b0dd47}
+}]\index{Tuesday@{Tuesday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Tuesday@{Tuesday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa596327c453efea63ea26096bf041f630}{
+Tuesday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa596327c453efea63ea26096bf041f630}
+}]\index{Wednesday@{Wednesday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Wednesday@{Wednesday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa0ae230de6136f0671e2f13a0332a620c}{
+Wednesday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa0ae230de6136f0671e2f13a0332a620c}
+}]\index{Thursday@{Thursday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Thursday@{Thursday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa8d9721cec5bcce006e98e794d3ff4912}{
+Thursday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa8d9721cec5bcce006e98e794d3ff4912}
+}]\index{Friday@{Friday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Friday@{Friday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efaadb8f1f9f2221414dcd35c6e5f8e7d81}{
+Friday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efaadb8f1f9f2221414dcd35c6e5f8e7d81}
+}]\index{Saturday@{Saturday}!datetime.h@{datetime.h}}\index{datetime.h@{datetime.h}!Saturday@{Saturday}}\item[{\em 
+\hypertarget{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa5a996d296d81b9b8bd3b9201afa4c547}{
+Saturday}
+\label{datetime_8h_a92ba2e76eb10c8a4613b2334a84528efa5a996d296d81b9b8bd3b9201afa4c547}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{datetime_8h_a2d6ce2947b4dc8571e8198c39af40ab2}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-create@{mamaDateTime\_\-create}}
+\index{mamaDateTime\_\-create@{mamaDateTime\_\-create}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-create ({\bf mamaDateTime} $\ast$ {\em dateTime})}}
+\label{datetime_8h_a2d6ce2947b4dc8571e8198c39af40ab2}
+
+
+Create a date/time object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The location of a mamaDateTime to store the result \end{DoxyParams}
+\hypertarget{datetime_8h_aad3753cbd1c4bdbe20ccc230b22c7b43}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-destroy@{mamaDateTime\_\-destroy}}
+\index{mamaDateTime\_\-destroy@{mamaDateTime\_\-destroy}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-destroy ({\bf mamaDateTime} {\em dateTime})}}
+\label{datetime_8h_aad3753cbd1c4bdbe20ccc230b22c7b43}
+
+
+Destroy a mamaDateTime object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The date/time object to destroy. \end{DoxyParams}
+\hypertarget{datetime_8h_a1dcbe417b2dfebdb72dd756404a9c9b2}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-clear@{mamaDateTime\_\-clear}}
+\index{mamaDateTime\_\-clear@{mamaDateTime\_\-clear}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-clear ({\bf mamaDateTime} {\em dateTime})}}
+\label{datetime_8h_a1dcbe417b2dfebdb72dd756404a9c9b2}
+
+
+Clear a mamaDateTime object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The date/time object to clear. \end{DoxyParams}
+\hypertarget{datetime_8h_ac00adfe67acab289121e0c75e9f330f3}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-clearDate@{mamaDateTime\_\-clearDate}}
+\index{mamaDateTime\_\-clearDate@{mamaDateTime\_\-clearDate}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-clearDate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-clearDate ({\bf mamaDateTime} {\em dateTime})}}
+\label{datetime_8h_ac00adfe67acab289121e0c75e9f330f3}
+
+
+Clear the date part of a mamaDateTime object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The date/time object to clear (preserving the time of day). \end{DoxyParams}
+\hypertarget{datetime_8h_a1ac7cfa787eafb1956adf61b6ef3c058}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-clearTime@{mamaDateTime\_\-clearTime}}
+\index{mamaDateTime\_\-clearTime@{mamaDateTime\_\-clearTime}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-clearTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-clearTime ({\bf mamaDateTime} {\em dateTime})}}
+\label{datetime_8h_a1ac7cfa787eafb1956adf61b6ef3c058}
+
+
+Clear the time of day part of a mamaDateTime object (preserving the date). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The date/time object to clear. \end{DoxyParams}
+\hypertarget{datetime_8h_af2b762d78b9fa90adf0ad4da7376356a}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-copy@{mamaDateTime\_\-copy}}
+\index{mamaDateTime\_\-copy@{mamaDateTime\_\-copy}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-copy ({\bf mamaDateTime} {\em dest}, \/  const {\bf mamaDateTime} {\em src})}}
+\label{datetime_8h_af2b762d78b9fa90adf0ad4da7376356a}
+\hypertarget{datetime_8h_a081be3e10ff28d7d76bf3bd646e62f94}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-empty@{mamaDateTime\_\-empty}}
+\index{mamaDateTime\_\-empty@{mamaDateTime\_\-empty}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-empty}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaDateTime\_\-empty (const {\bf mamaDateTime} {\em dateTime})}}
+\label{datetime_8h_a081be3e10ff28d7d76bf3bd646e62f94}
+\hypertarget{datetime_8h_ac2a5d2cd9120e7dd9112a7ff78827a33}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-equal@{mamaDateTime\_\-equal}}
+\index{mamaDateTime\_\-equal@{mamaDateTime\_\-equal}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-equal}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaDateTime\_\-equal (const {\bf mamaDateTime} {\em lhs}, \/  const {\bf mamaDateTime} {\em rhs})}}
+\label{datetime_8h_ac2a5d2cd9120e7dd9112a7ff78827a33}
+\hypertarget{datetime_8h_af805992088c68411838ff50f9c437b36}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-compare@{mamaDateTime\_\-compare}}
+\index{mamaDateTime\_\-compare@{mamaDateTime\_\-compare}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-compare}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaDateTime\_\-compare (const {\bf mamaDateTime} {\em lhs}, \/  const {\bf mamaDateTime} {\em rhs})}}
+\label{datetime_8h_af805992088c68411838ff50f9c437b36}
+\hypertarget{datetime_8h_a75a9b236760842aa4d49db4ca285c52f}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setEpochTime@{mamaDateTime\_\-setEpochTime}}
+\index{mamaDateTime\_\-setEpochTime@{mamaDateTime\_\-setEpochTime}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setEpochTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setEpochTime ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} {\em seconds}, \/  {\bf mama\_\-u32\_\-t} {\em microseconds}, \/  {\bf mamaDateTimePrecision} {\em precision})}}
+\label{datetime_8h_a75a9b236760842aa4d49db4ca285c52f}
+
+
+Set the date and time as seconds and microseconds since the Epoch (UTC time zone) with an option to designate the accuracy of the time. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds since the Epoch. \item[{\em microseconds}]The number of microseconds. \item[{\em precision}]The precision of the time stamp. \end{DoxyParams}
+\hypertarget{datetime_8h_afb25bed057a726b4bc37b82ad4a13874}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setEpochTimeF64@{mamaDateTime\_\-setEpochTimeF64}}
+\index{mamaDateTime\_\-setEpochTimeF64@{mamaDateTime\_\-setEpochTimeF64}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setEpochTimeF64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setEpochTimeF64 ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-f64\_\-t} {\em seconds})}}
+\label{datetime_8h_afb25bed057a726b4bc37b82ad4a13874}
+
+
+Set the date and time as seconds (plus, possibly fractional seconds) since the Epoch (UTC time zone). Fractional seconds will be rounded to microseconds.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds since the Epoch. \end{DoxyParams}
+\hypertarget{datetime_8h_a6954c0a48464445efcd791b0221b468e}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setEpochTimeMilliseconds@{mamaDateTime\_\-setEpochTimeMilliseconds}}
+\index{mamaDateTime\_\-setEpochTimeMilliseconds@{mamaDateTime\_\-setEpochTimeMilliseconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setEpochTimeMilliseconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setEpochTimeMilliseconds ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u64\_\-t} {\em milliseconds})}}
+\label{datetime_8h_a6954c0a48464445efcd791b0221b468e}
+
+
+Set the date and time as milliseconds. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em milliseconds}]The number of milliseconds since the Epoch. \end{DoxyParams}
+\hypertarget{datetime_8h_a9cfaebf60942622b3a1ff2d10e6f93a8}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setEpochTimeMicroseconds@{mamaDateTime\_\-setEpochTimeMicroseconds}}
+\index{mamaDateTime\_\-setEpochTimeMicroseconds@{mamaDateTime\_\-setEpochTimeMicroseconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setEpochTimeMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setEpochTimeMicroseconds ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u64\_\-t} {\em milliseconds})}}
+\label{datetime_8h_a9cfaebf60942622b3a1ff2d10e6f93a8}
+
+
+Set the date and time as microseconds. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em milliseconds}]The number of microseconds since the Epoch. \end{DoxyParams}
+\hypertarget{datetime_8h_a9dbd32acca5b3d124f022785b9f6aa05}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setWithHints@{mamaDateTime\_\-setWithHints}}
+\index{mamaDateTime\_\-setWithHints@{mamaDateTime\_\-setWithHints}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setWithHints}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setWithHints ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} {\em seconds}, \/  {\bf mama\_\-u32\_\-t} {\em microseconds}, \/  {\bf mamaDateTimePrecision} {\em precision}, \/  {\bf mamaDateTimeHints} {\em hints})}}
+\label{datetime_8h_a9dbd32acca5b3d124f022785b9f6aa05}
+
+
+Set the date and/or time with special, optional hints to indicate whether the date/time includes date information, time information and/or whether a user of the date/time should consider it in the context of a time zone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds (since the Epoch or start-\/of-\/day if no date). \item[{\em microseconds}]The number of microseconds. \item[{\em precision}]The precision of the date/time stamp. \item[{\em hints}]Additional hints \end{DoxyParams}
+\hypertarget{datetime_8h_acd97e16d66e24bee2c835d6720171481}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setPrecision@{mamaDateTime\_\-setPrecision}}
+\index{mamaDateTime\_\-setPrecision@{mamaDateTime\_\-setPrecision}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setPrecision}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setPrecision ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mamaDateTimePrecision} {\em precision})}}
+\label{datetime_8h_acd97e16d66e24bee2c835d6720171481}
+
+
+Set the precision hint. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em precision}]The precision of the date/time stamp. \end{DoxyParams}
+\hypertarget{datetime_8h_aa66e962abc8aea29e4e25ee1ac55f6a4}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setToNow@{mamaDateTime\_\-setToNow}}
+\index{mamaDateTime\_\-setToNow@{mamaDateTime\_\-setToNow}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setToNow}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setToNow ({\bf mamaDateTime} {\em dateTime})}}
+\label{datetime_8h_aa66e962abc8aea29e4e25ee1ac55f6a4}
+
+
+Set the date and time to the current UTC time. Precision and hints will be set appropriately.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \end{DoxyParams}
+\hypertarget{datetime_8h_aa347515a2569fd123af33a71c064023c}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setToMidnightToday@{mamaDateTime\_\-setToMidnightToday}}
+\index{mamaDateTime\_\-setToMidnightToday@{mamaDateTime\_\-setToMidnightToday}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setToMidnightToday}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setToMidnightToday ({\bf mamaDateTime} {\em dateTime}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_aa347515a2569fd123af33a71c064023c}
+
+
+Set the dateTime object to 12am of the current date in the timezone provided (or UTC if NULL). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em tz}]The timezone in which the date will be set. \end{DoxyParams}
+\hypertarget{datetime_8h_a0d3fb8cb16942a37db3835fec4b1250c}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setWithPrecisionAndTz@{mamaDateTime\_\-setWithPrecisionAndTz}}
+\index{mamaDateTime\_\-setWithPrecisionAndTz@{mamaDateTime\_\-setWithPrecisionAndTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setWithPrecisionAndTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setWithPrecisionAndTz ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} {\em year}, \/  {\bf mama\_\-u32\_\-t} {\em month}, \/  {\bf mama\_\-u32\_\-t} {\em day}, \/  {\bf mama\_\-u32\_\-t} {\em hour}, \/  {\bf mama\_\-u32\_\-t} {\em minute}, \/  {\bf mama\_\-u32\_\-t} {\em second}, \/  {\bf mama\_\-u32\_\-t} {\em microsecond}, \/  {\bf mamaDateTimePrecision} {\em precision}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a0d3fb8cb16942a37db3835fec4b1250c}
+
+
+Set the entire date and time for the MamaDateTime. The year, month and day parameters must all be integers greater than zero.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em year}]The year (must be 1970 or later). \item[{\em month}]The month (1 -\/ 12). \item[{\em day}]The day (1 -\/ 31). \item[{\em hour}]The hour (0 -\/ 23). \item[{\em minute}]The minute (0 -\/ 59). \item[{\em second}]The second (0 -\/ 59). \item[{\em microsecond}]The second (0 -\/ 999999). \item[{\em precision}]An explicit precision, if known. \item[{\em tz}]A timezone to shift from. \end{DoxyParams}
+\hypertarget{datetime_8h_a8b9058435ad01b1395e3f613b8877584}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setTime@{mamaDateTime\_\-setTime}}
+\index{mamaDateTime\_\-setTime@{mamaDateTime\_\-setTime}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setTime ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} {\em hour}, \/  {\bf mama\_\-u32\_\-t} {\em minute}, \/  {\bf mama\_\-u32\_\-t} {\em second}, \/  {\bf mama\_\-u32\_\-t} {\em microsecond})}}
+\label{datetime_8h_a8b9058435ad01b1395e3f613b8877584}
+
+
+Set the time-\/of-\/day portion of the MamaDateTime. The date portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em hour}]The hour (0 -\/ 23). \item[{\em minute}]The minute (0 -\/ 59). \item[{\em second}]The second (0 -\/ 59). \item[{\em microsecond}]The microsecond (0 -\/ 999999). \end{DoxyParams}
+\hypertarget{datetime_8h_affb1356658a92bcea418aa2ac6eaab62}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setTimeWithPrecisionAndTz@{mamaDateTime\_\-setTimeWithPrecisionAndTz}}
+\index{mamaDateTime\_\-setTimeWithPrecisionAndTz@{mamaDateTime\_\-setTimeWithPrecisionAndTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setTimeWithPrecisionAndTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setTimeWithPrecisionAndTz ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} {\em hour}, \/  {\bf mama\_\-u32\_\-t} {\em minute}, \/  {\bf mama\_\-u32\_\-t} {\em second}, \/  {\bf mama\_\-u32\_\-t} {\em microsecond}, \/  {\bf mamaDateTimePrecision} {\em precision}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_affb1356658a92bcea418aa2ac6eaab62}
+
+
+Set the time-\/of-\/day portion of the MamaDateTime with explicit precision. The date portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em hour}]The hour (0 -\/ 23). \item[{\em minute}]The minute (0 -\/ 59). \item[{\em second}]The second (0 -\/ 59). \item[{\em microsecond}]The microsecond (0 -\/ 999999). \item[{\em precision}]An explicit precision, if known. \item[{\em tz}]A timezone to shift from. \end{DoxyParams}
+\hypertarget{datetime_8h_ad23f57855db9e4903ae941fc50f7dcb3}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setDate@{mamaDateTime\_\-setDate}}
+\index{mamaDateTime\_\-setDate@{mamaDateTime\_\-setDate}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setDate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setDate ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} {\em year}, \/  {\bf mama\_\-u32\_\-t} {\em month}, \/  {\bf mama\_\-u32\_\-t} {\em day})}}
+\label{datetime_8h_ad23f57855db9e4903ae941fc50f7dcb3}
+
+
+Set the date portion of the MamaDateTime. The time-\/of-\/day portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em year}]The year (must be 1970 or later). \item[{\em month}]The month (1 -\/ 12). \item[{\em day}]The day (1 -\/ 31). \end{DoxyParams}
+\hypertarget{datetime_8h_af2b2b9c950c80ecbb6beb5ad93778d63}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-copyTime@{mamaDateTime\_\-copyTime}}
+\index{mamaDateTime\_\-copyTime@{mamaDateTime\_\-copyTime}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-copyTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-copyTime ({\bf mamaDateTime} {\em dest}, \/  const {\bf mamaDateTime} {\em src})}}
+\label{datetime_8h_af2b2b9c950c80ecbb6beb5ad93778d63}
+
+
+Copy the time-\/of-\/day portion of the mamaDateTime. The date portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dest}]The dateTime to copy to. \item[{\em src}]The dateTime to copy from. \end{DoxyParams}
+\hypertarget{datetime_8h_a1c0d0dd805f40cc243d935d2b8753eb5}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-copyDate@{mamaDateTime\_\-copyDate}}
+\index{mamaDateTime\_\-copyDate@{mamaDateTime\_\-copyDate}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-copyDate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-copyDate ({\bf mamaDateTime} {\em dest}, \/  const {\bf mamaDateTime} {\em src})}}
+\label{datetime_8h_a1c0d0dd805f40cc243d935d2b8753eb5}
+
+
+Copy the date portion of the mamaDateTime. The time-\/of-\/day portion is not affected.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dest}]The dateTime to copy to. \item[{\em src}]The dateTime to copy from. \end{DoxyParams}
+\hypertarget{datetime_8h_a66f27d506ee4f91c9560a3dad20b7f7c}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-hasTime@{mamaDateTime\_\-hasTime}}
+\index{mamaDateTime\_\-hasTime@{mamaDateTime\_\-hasTime}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-hasTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-hasTime (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a66f27d506ee4f91c9560a3dad20b7f7c}
+
+
+Determine whether the time-\/of-\/day portion of the MamaDateTime is set. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to check. \item[{\em result}]Address of a bool to store the result. 0 false. \end{DoxyParams}
+\hypertarget{datetime_8h_a59d8062b46f0a214dcb603b12a2f2c22}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-hasDate@{mamaDateTime\_\-hasDate}}
+\index{mamaDateTime\_\-hasDate@{mamaDateTime\_\-hasDate}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-hasDate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-hasDate (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a59d8062b46f0a214dcb603b12a2f2c22}
+
+
+Determine whether the date portion of the MamaDateTime is set. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to check. \item[{\em result}]Address of mama\_\-bool\_\-t to store the result. 0 false. \end{DoxyParams}
+\hypertarget{datetime_8h_abc0b406a6a7d6e3cf3b0c94060ad6938}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-addSeconds@{mamaDateTime\_\-addSeconds}}
+\index{mamaDateTime\_\-addSeconds@{mamaDateTime\_\-addSeconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-addSeconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-addSeconds ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-f64\_\-t} {\em seconds})}}
+\label{datetime_8h_abc0b406a6a7d6e3cf3b0c94060ad6938}
+
+
+Add a number of seconds, including fractional seconds (may be negative). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds to add (or subtract). \end{DoxyParams}
+\hypertarget{datetime_8h_aad40f81cf06027e413f3e1a6849f64d4}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-addWholeSeconds@{mamaDateTime\_\-addWholeSeconds}}
+\index{mamaDateTime\_\-addWholeSeconds@{mamaDateTime\_\-addWholeSeconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-addWholeSeconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-addWholeSeconds ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-i32\_\-t} {\em seconds})}}
+\label{datetime_8h_aad40f81cf06027e413f3e1a6849f64d4}
+
+
+Add a number of whole seconds (may be negative). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds to add (or subtract). \end{DoxyParams}
+\hypertarget{datetime_8h_a5e7597a04a6a05e492b0dc484bebdcbc}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-addMicroseconds@{mamaDateTime\_\-addMicroseconds}}
+\index{mamaDateTime\_\-addMicroseconds@{mamaDateTime\_\-addMicroseconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-addMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-addMicroseconds ({\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-i64\_\-t} {\em microseconds})}}
+\label{datetime_8h_a5e7597a04a6a05e492b0dc484bebdcbc}
+
+
+Add a number of microseconds (may be negative) Add a number of microseconds (may be negative and greater than 1000000 or less than -\/1000000). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em microseconds}]The number of microseconds to add. Can be positive or negative. Note that there are no restrictions on the magnitude of this value. \end{DoxyParams}
+\hypertarget{datetime_8h_a5a17d104261f028f258595c61fc15921}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setFromString@{mamaDateTime\_\-setFromString}}
+\index{mamaDateTime\_\-setFromString@{mamaDateTime\_\-setFromString}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setFromString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setFromString ({\bf mamaDateTime} {\em dateTime}, \/  const char $\ast$ {\em str})}}
+\label{datetime_8h_a5a17d104261f028f258595c61fc15921}
+
+
+Set the date and time from a string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. (YYYY/mm/dd also works.) The precision of subseconds is determined by the number of digits after the decimal point.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string representation of some date and/or time. \end{DoxyParams}
+\hypertarget{datetime_8h_acc4ee75ae8b95553cce16b3bcdb7b8a6}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setFromStringWithTz@{mamaDateTime\_\-setFromStringWithTz}}
+\index{mamaDateTime\_\-setFromStringWithTz@{mamaDateTime\_\-setFromStringWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setFromStringWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setFromStringWithTz ({\bf mamaDateTime} {\em dateTime}, \/  const char $\ast$ {\em str}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_acc4ee75ae8b95553cce16b3bcdb7b8a6}
+
+
+Set the date and time from a string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. (YYYY/mm/dd also works.) The precision of subseconds is determined by the number of digits after the decimal point. If tz is not NULL, the time string is assumed to be set in a different time zone and will be adjusted to UTC accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string representation of some date and/or time. \item[{\em tz}]A timezone to shift from. \end{DoxyParams}
+\hypertarget{datetime_8h_ad84279e4d52913c4b09228554a9e9011}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setFromStringBuffer@{mamaDateTime\_\-setFromStringBuffer}}
+\index{mamaDateTime\_\-setFromStringBuffer@{mamaDateTime\_\-setFromStringBuffer}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setFromStringBuffer}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setFromStringBuffer ({\bf mamaDateTime} {\em dateTime}, \/  const char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em strLen})}}
+\label{datetime_8h_ad84279e4d52913c4b09228554a9e9011}
+
+
+Set the date and time from an unterminated string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. (YYYY/mm/dd also works.) The precision of subseconds is determined by the number of digits after the decimal point.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string representation of some date and/or time. \item[{\em strLen}]The length of the unterminated string date/time. \end{DoxyParams}
+\hypertarget{datetime_8h_a3762e5b2bc677a1d25f2f5435ac42d4f}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-setFromStringBufferWithTz@{mamaDateTime\_\-setFromStringBufferWithTz}}
+\index{mamaDateTime\_\-setFromStringBufferWithTz@{mamaDateTime\_\-setFromStringBufferWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-setFromStringBufferWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-setFromStringBufferWithTz ({\bf mamaDateTime} {\em dateTime}, \/  const char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em strLen}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a3762e5b2bc677a1d25f2f5435ac42d4f}
+
+
+Set the date and time from an unterminated string representation of format YYYY-\/mm-\/dd HH:MM:SS.mmmmmm. (YYYY/mm/dd also works.) The precision of subseconds is determined by the number of digits after the decimal point. If tz is not NULL, the time string is assumed to be set in a different time zone and will be adjusted to UTC accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string representation of some date and/or time. \item[{\em strLen}]The length of the unterminated string date/time. \item[{\em tz}]A timezone to shift from. \end{DoxyParams}
+\hypertarget{datetime_8h_ac0c09e8a23cac3a945f271b7753ae181}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTime@{mamaDateTime\_\-getEpochTime}}
+\index{mamaDateTime\_\-getEpochTime@{mamaDateTime\_\-getEpochTime}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTime (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em seconds}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em microseconds}, \/  {\bf mamaDateTimePrecision} $\ast$ {\em precision})}}
+\label{datetime_8h_ac0c09e8a23cac3a945f271b7753ae181}
+
+
+Get the date and time as seconds and microseconds since the Epoch (UTC time zone). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds since the Epoch. \item[{\em microseconds}]The number of additional microseconds. \item[{\em precision}]The precision of the returned time value. \end{DoxyParams}
+\hypertarget{datetime_8h_a0eb352cb76368ce2d02b73f78f3eabe8}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeWithTz@{mamaDateTime\_\-getEpochTimeWithTz}}
+\index{mamaDateTime\_\-getEpochTimeWithTz@{mamaDateTime\_\-getEpochTimeWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em seconds}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em microseconds}, \/  {\bf mamaDateTimePrecision} $\ast$ {\em precision}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a0eb352cb76368ce2d02b73f78f3eabe8}
+
+
+Get the date and time as seconds and microseconds since the Epoch in the timezone supplied. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds since the Epoch. \item[{\em microseconds}]The number of additional microseconds. \item[{\em precision}]The precision of the returned time value. \item[{\em tz}]The timezone for the returned values. \end{DoxyParams}
+\hypertarget{datetime_8h_a02e9f9c330f6bb6cb88ca15175ce00c9}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeMicroseconds@{mamaDateTime\_\-getEpochTimeMicroseconds}}
+\index{mamaDateTime\_\-getEpochTimeMicroseconds@{mamaDateTime\_\-getEpochTimeMicroseconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeMicroseconds (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u64\_\-t} $\ast$ {\em microseconds})}}
+\label{datetime_8h_a02e9f9c330f6bb6cb88ca15175ce00c9}
+
+
+Get the date and time as microseconds since the Epoch, (using the UTC timezone). 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em dateTime}]The dateTime to obtain the number of microseconds from. \item[\mbox{$\rightarrow$} {\em microseconds}]The number of microseconds since the Epoch. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Indicates whether the function succeeded or failed and could be one of:
+\begin{DoxyItemize}
+\item MAMA\_\-STATUS\_\-INVALID\_\-ARG
+\item MAMA\_\-STATUS\_\-OK 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{datetime_8h_a26e5100cc3985591760a3cef0f5a44c1}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeMicrosecondsWithTz@{mamaDateTime\_\-getEpochTimeMicrosecondsWithTz}}
+\index{mamaDateTime\_\-getEpochTimeMicrosecondsWithTz@{mamaDateTime\_\-getEpochTimeMicrosecondsWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeMicrosecondsWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeMicrosecondsWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u64\_\-t} $\ast$ {\em microseconds}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a26e5100cc3985591760a3cef0f5a44c1}
+
+
+Get the date and time as microseconds since the Epoch in the supplied time zone. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em dateTime}]The dateTime to obtain the number of microseconds from. \item[\mbox{$\rightarrow$} {\em microseconds}]The number of microseconds since the Epoch. \item[{\em int\mbox{]}}]tz The timezone. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Indicates whether the function succeeded or failed and could be one of:
+\begin{DoxyItemize}
+\item MAMA\_\-STATUS\_\-INVALID\_\-ARG
+\item MAMA\_\-STATUS\_\-OK 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{datetime_8h_a32b8487a3f6ac86063b2a3abba6654d9}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeMilliseconds@{mamaDateTime\_\-getEpochTimeMilliseconds}}
+\index{mamaDateTime\_\-getEpochTimeMilliseconds@{mamaDateTime\_\-getEpochTimeMilliseconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeMilliseconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeMilliseconds (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u64\_\-t} $\ast$ {\em milliseconds})}}
+\label{datetime_8h_a32b8487a3f6ac86063b2a3abba6654d9}
+
+
+Get the date and time as milliseconds since the Epoch (UTC time zone). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em milliseconds}]The number of milliseconds since the Epoch. \end{DoxyParams}
+\hypertarget{datetime_8h_a25fe86ad7511f8c8695e40f1a84f39f8}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeMillisecondsWithTz@{mamaDateTime\_\-getEpochTimeMillisecondsWithTz}}
+\index{mamaDateTime\_\-getEpochTimeMillisecondsWithTz@{mamaDateTime\_\-getEpochTimeMillisecondsWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeMillisecondsWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeMillisecondsWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u64\_\-t} $\ast$ {\em milliseconds}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a25fe86ad7511f8c8695e40f1a84f39f8}
+
+
+Get the date and time as milliseconds since the Epoch in the timezone supplied. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em milliseconds}]The number of milliseconds since the Epoch. \item[{\em tz}]The timezone for the returned values. \end{DoxyParams}
+\hypertarget{datetime_8h_ac8cc8cf880a7c7494778ac0c02b73e9b}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeSeconds@{mamaDateTime\_\-getEpochTimeSeconds}}
+\index{mamaDateTime\_\-getEpochTimeSeconds@{mamaDateTime\_\-getEpochTimeSeconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeSeconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeSeconds (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em seconds})}}
+\label{datetime_8h_ac8cc8cf880a7c7494778ac0c02b73e9b}
+
+
+Get the date and time as seconds since the Epoch (UTC time zone). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set \item[{\em seconds}]The number of seconds (including partial seconds) since the Epoch. \end{DoxyParams}
+\hypertarget{datetime_8h_a0d4aed85b7febbe9f8a7d4da1c9c838d}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeSecondsWithCheck@{mamaDateTime\_\-getEpochTimeSecondsWithCheck}}
+\index{mamaDateTime\_\-getEpochTimeSecondsWithCheck@{mamaDateTime\_\-getEpochTimeSecondsWithCheck}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeSecondsWithCheck}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeSecondsWithCheck (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em seconds})}}
+\label{datetime_8h_a0d4aed85b7febbe9f8a7d4da1c9c838d}
+
+
+Get the date and time as seconds since the Epoch, (using the UTC timezone). If no date value is contained in the dateTime then it will be set to today's date and the calculation made.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em dateTime}]The dateTime to obtain the number of microseconds from. \item[\mbox{$\rightarrow$} {\em seconds}]The number of seconds, (including partial seconds), since the Epoch. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Indicates whether the function succeeded or failed and could be one of:
+\begin{DoxyItemize}
+\item MAMA\_\-STATUS\_\-INVALID\_\-ARG
+\item MAMA\_\-STATUS\_\-SYSTEM\_\-ERROR
+\item MAMA\_\-STATUS\_\-NULL\_\-ARG
+\item MAMA\_\-STATUS\_\-OK 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{datetime_8h_abb53d4ed86a801fb17bdfa0ddd0c25b1}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getEpochTimeSecondsWithTz@{mamaDateTime\_\-getEpochTimeSecondsWithTz}}
+\index{mamaDateTime\_\-getEpochTimeSecondsWithTz@{mamaDateTime\_\-getEpochTimeSecondsWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getEpochTimeSecondsWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getEpochTimeSecondsWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em seconds}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_abb53d4ed86a801fb17bdfa0ddd0c25b1}
+
+
+Get the date and time as seconds since the Epoch in the timezone supplied. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set \item[{\em seconds}]The number of seconds (including partial seconds) since the Epoch. \item[{\em tz}]The timezone for the returned values. \end{DoxyParams}
+\hypertarget{datetime_8h_a1028fa2ee4577ae6a493f7bc64047812}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getWithHints@{mamaDateTime\_\-getWithHints}}
+\index{mamaDateTime\_\-getWithHints@{mamaDateTime\_\-getWithHints}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getWithHints}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getWithHints (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em seconds}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em microseconds}, \/  {\bf mamaDateTimePrecision} $\ast$ {\em precision}, \/  {\bf mama\_\-u8\_\-t} $\ast$ {\em hints})}}
+\label{datetime_8h_a1028fa2ee4577ae6a493f7bc64047812}
+
+
+Get the date and/or time with special, optional hints to indicate whether the date/time includes date information, time information and/or whether a user of the date/time should consider it in the context of a time zone. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em seconds}]The number of seconds (since the Epoch or start-\/of-\/day if no date). \item[{\em microseconds}]The number of microseconds. \item[{\em precision}]The precision of the date/time stamp. \item[{\em hints}]Additional hints \end{DoxyParams}
+\hypertarget{datetime_8h_adc14180efcdf9aa1a175826b57890531}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getStructTimeVal@{mamaDateTime\_\-getStructTimeVal}}
+\index{mamaDateTime\_\-getStructTimeVal@{mamaDateTime\_\-getStructTimeVal}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getStructTimeVal}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getStructTimeVal (const {\bf mamaDateTime} {\em dateTime}, \/  struct timeval $\ast$ {\em result})}}
+\label{datetime_8h_adc14180efcdf9aa1a175826b57890531}
+
+
+Get the date/time as a \char`\"{}struct timeval\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em result}]The struct timeval to fill in. \end{DoxyParams}
+\hypertarget{datetime_8h_ae9ac28fd5de37e750ee47471b2af73aa}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getStructTimeValWithTz@{mamaDateTime\_\-getStructTimeValWithTz}}
+\index{mamaDateTime\_\-getStructTimeValWithTz@{mamaDateTime\_\-getStructTimeValWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getStructTimeValWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getStructTimeValWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  struct timeval $\ast$ {\em result}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_ae9ac28fd5de37e750ee47471b2af73aa}
+
+
+Get the date/time as a \char`\"{}struct timeval\char`\"{} in the timezone supplied. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em result}]The struct timeval to fill in. \item[{\em tz}]The timezone for the returned values. \end{DoxyParams}
+\hypertarget{datetime_8h_ad2063821a9747a3b50fb91951fab5e31}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getStructTm@{mamaDateTime\_\-getStructTm}}
+\index{mamaDateTime\_\-getStructTm@{mamaDateTime\_\-getStructTm}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getStructTm}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getStructTm (const {\bf mamaDateTime} {\em dateTime}, \/  struct tm $\ast$ {\em result})}}
+\label{datetime_8h_ad2063821a9747a3b50fb91951fab5e31}
+
+
+Get the date/time as a \char`\"{}struct tm\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em result}]The struct timeval to fill in. \end{DoxyParams}
+\hypertarget{datetime_8h_a9eb112e2489c46ae46fd070d63de1f6e}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getStructTmWithTz@{mamaDateTime\_\-getStructTmWithTz}}
+\index{mamaDateTime\_\-getStructTmWithTz@{mamaDateTime\_\-getStructTmWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getStructTmWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getStructTmWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  struct tm $\ast$ {\em result}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a9eb112e2489c46ae46fd070d63de1f6e}
+
+
+Get the date/time as a \char`\"{}struct tm\char`\"{} in the timezone supplied. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em result}]The struct timeval to fill in. \item[{\em tz}]The timezone for the returned values. \end{DoxyParams}
+\hypertarget{datetime_8h_a9a9f040b425f3de490a2d0ba8b7a83f6}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getAsString@{mamaDateTime\_\-getAsString}}
+\index{mamaDateTime\_\-getAsString@{mamaDateTime\_\-getAsString}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getAsString (const {\bf mamaDateTime} {\em dateTime}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})}}
+\label{datetime_8h_a9a9f040b425f3de490a2d0ba8b7a83f6}
+
+
+Get the date and/or time as a string. If no date information is available, no date is printed in the resulting string. The format for dates is YYYY-\/mm-\/dd (the ISO 8601 date format) and the format for times is HH:MM:SS.mmmmmmm (where the precision of the subseconds may vary depending upon any precision hints available).
+
+The timezone must to set to UTC if calling this from multiple threads concurrently to avoid contention in strftime.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \end{DoxyParams}
+\hypertarget{datetime_8h_a9a5e59f82a4c44c6ab56f07808f78164}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getTimeAsString@{mamaDateTime\_\-getTimeAsString}}
+\index{mamaDateTime\_\-getTimeAsString@{mamaDateTime\_\-getTimeAsString}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getTimeAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getTimeAsString (const {\bf mamaDateTime} {\em dateTime}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})}}
+\label{datetime_8h_a9a5e59f82a4c44c6ab56f07808f78164}
+
+
+Get the time (no date) as a string. The format for times is HH:MM:SS.mmmmmmm (where the precision of the subseconds may vary depending upon any precision hints available).
+
+The timezone must to set to UTC if calling this from multiple threads concurrently to avoid contention in strftime.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \end{DoxyParams}
+\hypertarget{datetime_8h_a1008f1ad595d6430c855d95937fc5bb1}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getDateAsString@{mamaDateTime\_\-getDateAsString}}
+\index{mamaDateTime\_\-getDateAsString@{mamaDateTime\_\-getDateAsString}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getDateAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getDateAsString (const {\bf mamaDateTime} {\em dateTime}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})}}
+\label{datetime_8h_a1008f1ad595d6430c855d95937fc5bb1}
+
+
+Get the date (no time) as a string. The format for dates is YYYY-\/mm-\/dd (the ISO 8601 date format).
+
+The timezone must to set to UTC if calling this from multiple threads concurrently to avoid contention in strftime.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \end{DoxyParams}
+\hypertarget{datetime_8h_a80ef6b799671cbc58e0ec7bce960cacb}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getAsFormattedString@{mamaDateTime\_\-getAsFormattedString}}
+\index{mamaDateTime\_\-getAsFormattedString@{mamaDateTime\_\-getAsFormattedString}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getAsFormattedString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getAsFormattedString (const {\bf mamaDateTime} {\em dateTime}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}, \/  const char $\ast$ {\em format})}}
+\label{datetime_8h_a80ef6b799671cbc58e0ec7bce960cacb}
+
+
+Get the date and/or time as a string using the format provided. The format string can be the common ones supported by strftime() (Y, m, d, F, T, Y, H, M, S, B, b, h, ), with the additional format strings, \char`\"{}\%:\char`\"{} and \char`\"{}\%;\char`\"{}, which represents the number of subseconds in millis. \char`\"{}\%;\char`\"{} includes the dot and only prints the subseconds if they are non-\/zero. \char`\"{}\%:\char`\"{} does not include the dot, and prints \char`\"{}000\char`\"{} for 0 milliseconds. \char`\"{}\%.\char`\"{} and \char`\"{}\%,\char`\"{} are identical to \char`\"{}\%:\char`\"{} and \char`\"{}\%;\char`\"{} except they use the internal precision field to determine how many decimal places to print.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \item[{\em format}]The output format. \end{DoxyParams}
+\hypertarget{datetime_8h_a40324db5691dc2cc282feac350bd11d6}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getAsFormattedStringWithTz@{mamaDateTime\_\-getAsFormattedStringWithTz}}
+\index{mamaDateTime\_\-getAsFormattedStringWithTz@{mamaDateTime\_\-getAsFormattedStringWithTz}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getAsFormattedStringWithTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getAsFormattedStringWithTz (const {\bf mamaDateTime} {\em dateTime}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen}, \/  const char $\ast$ {\em format}, \/  const {\bf mamaTimeZone} {\em tz})}}
+\label{datetime_8h_a40324db5691dc2cc282feac350bd11d6}
+
+
+Get the date and/or time as a string using the format provided. The format string can be the common ones supported by strftime() (Y, m, d, F, T, Y, H, M, S, B, b, h, ), with the additional format strings, \char`\"{}\%:\char`\"{} and \char`\"{}\%;\char`\"{}, which represents the number of subseconds in millis. \char`\"{}\%;\char`\"{} includes the dot and only prints the subseconds if they are non-\/zero. \char`\"{}\%:\char`\"{} does not include the dot, and prints \char`\"{}000\char`\"{} for 0 milliseconds. \char`\"{}\%.\char`\"{} and \char`\"{}\%,\char`\"{} are identical to \char`\"{}\%:\char`\"{} and \char`\"{}\%;\char`\"{} except they use the internal precision field to determine how many decimal places to print.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime to set. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \item[{\em format}]The output format. \item[{\em tz}]The timezone for the returned date/time. \end{DoxyParams}
+\hypertarget{datetime_8h_afda59530cc73f3c71fc9ad7a0ee6d0c0}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getYear@{mamaDateTime\_\-getYear}}
+\index{mamaDateTime\_\-getYear@{mamaDateTime\_\-getYear}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getYear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getYear (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_afda59530cc73f3c71fc9ad7a0ee6d0c0}
+
+
+Get the year (1970 onwards). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_afa1024aba2889d162b70461b2be09b5e}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getMonth@{mamaDateTime\_\-getMonth}}
+\index{mamaDateTime\_\-getMonth@{mamaDateTime\_\-getMonth}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getMonth}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getMonth (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_afa1024aba2889d162b70461b2be09b5e}
+
+
+Get the month (1-\/12). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_a8151ebe7ba7ccdddb2195e5b097e1c1a}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getDay@{mamaDateTime\_\-getDay}}
+\index{mamaDateTime\_\-getDay@{mamaDateTime\_\-getDay}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getDay}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getDay (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a8151ebe7ba7ccdddb2195e5b097e1c1a}
+
+
+Get the day of month (1-\/31). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_a846898cf84435a2f5458a42b51dccbd1}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getHour@{mamaDateTime\_\-getHour}}
+\index{mamaDateTime\_\-getHour@{mamaDateTime\_\-getHour}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getHour}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getHour (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a846898cf84435a2f5458a42b51dccbd1}
+
+
+Get the hour (0-\/23). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_a1da916cc8883ed6025829a3e7b40cacd}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getMinute@{mamaDateTime\_\-getMinute}}
+\index{mamaDateTime\_\-getMinute@{mamaDateTime\_\-getMinute}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getMinute}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getMinute (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a1da916cc8883ed6025829a3e7b40cacd}
+
+
+Get the minute (0-\/59). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_aee950aaea1a88c5eca911ebf841d0bae}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getSecond@{mamaDateTime\_\-getSecond}}
+\index{mamaDateTime\_\-getSecond@{mamaDateTime\_\-getSecond}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getSecond}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getSecond (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_aee950aaea1a88c5eca911ebf841d0bae}
+
+
+Get the second (0-\/59). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_ad3e5ef40bd53c1c424bc5d91e939ae8d}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getMicrosecond@{mamaDateTime\_\-getMicrosecond}}
+\index{mamaDateTime\_\-getMicrosecond@{mamaDateTime\_\-getMicrosecond}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getMicrosecond}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getMicrosecond (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_ad3e5ef40bd53c1c424bc5d91e939ae8d}
+
+
+Get the microsecond (0-\/999999). 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_a823cbc77255df52e3aeac5ae5591df8a}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-getDayOfWeek@{mamaDateTime\_\-getDayOfWeek}}
+\index{mamaDateTime\_\-getDayOfWeek@{mamaDateTime\_\-getDayOfWeek}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-getDayOfWeek}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-getDayOfWeek (const {\bf mamaDateTime} {\em dateTime}, \/  {\bf mamaDayOfWeek} $\ast$ {\em result})}}
+\label{datetime_8h_a823cbc77255df52e3aeac5ae5591df8a}
+
+
+Get the day of week. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dateTime}]The dateTime from which to get the result. \item[{\em result}]The result of the get method. \end{DoxyParams}
+\hypertarget{datetime_8h_a395344475cc23f7d1507e87840d32af2}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-diffSeconds@{mamaDateTime\_\-diffSeconds}}
+\index{mamaDateTime\_\-diffSeconds@{mamaDateTime\_\-diffSeconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-diffSeconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-diffSeconds (const {\bf mamaDateTime} {\em t1}, \/  const {\bf mamaDateTime} {\em t0}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a395344475cc23f7d1507e87840d32af2}
+
+
+Return the difference, in seconds (including fractions of seconds), between the two times. \hypertarget{datetime_8h_aabefa86e717153c530fd988517a670f7}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-diffSecondsSameDay@{mamaDateTime\_\-diffSecondsSameDay}}
+\index{mamaDateTime\_\-diffSecondsSameDay@{mamaDateTime\_\-diffSecondsSameDay}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-diffSecondsSameDay}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-diffSecondsSameDay (const {\bf mamaDateTime} {\em t1}, \/  const {\bf mamaDateTime} {\em t0}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_aabefa86e717153c530fd988517a670f7}
+
+
+Return the difference, in seconds (including fractions of seconds), between the two times, ignoring any date information. \hypertarget{datetime_8h_a4a319df24e6017a9dbea06e6a5281c34}{
+\index{datetime.h@{datetime.h}!mamaDateTime\_\-diffMicroseconds@{mamaDateTime\_\-diffMicroseconds}}
+\index{mamaDateTime\_\-diffMicroseconds@{mamaDateTime\_\-diffMicroseconds}!datetime.h@{datetime.h}}
+\subsubsection[{mamaDateTime\_\-diffMicroseconds}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDateTime\_\-diffMicroseconds (const {\bf mamaDateTime} {\em t1}, \/  const {\bf mamaDateTime} {\em t0}, \/  {\bf mama\_\-i64\_\-t} $\ast$ {\em result})}}
+\label{datetime_8h_a4a319df24e6017a9dbea06e6a5281c34}
+
+
+Return the difference, in microseconds, between the two times. 

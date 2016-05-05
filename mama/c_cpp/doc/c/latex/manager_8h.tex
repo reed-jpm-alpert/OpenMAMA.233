@@ -1,0 +1,251 @@
+\hypertarget{manager_8h}{
+\section{manager.h File Reference}
+\label{manager_8h}\index{manager.h@{manager.h}}
+}
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include \char`\"{}wombat/port.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}mama/mama.h\char`\"{}}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(MAMACALLTYPE $\ast$ \hyperlink{manager_8h_a21ce752043b177ec0eddcae5da27fcf3}{mamaConflationEnqueueCallback} )(\hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$topic, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a9caa7a61a836f1771571f56df7cc8648}{mamaConflationManager\_\-allocate} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} $\ast$mgr)
+\begin{DoxyCompactList}\small\item\em Allocation of memory for the mama conflation manager. \item\end{DoxyCompactList}\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a96a170bfa6f235960bc6617c168dd3dd}{mamaConflationManager\_\-create} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\begin{DoxyCompactList}\small\item\em Creation of the mama conflation manager. \item\end{DoxyCompactList}\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_ab954f1cf93d174f9ea5df926e74aeb4f}{mamaConflationManager\_\-destroy} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\begin{DoxyCompactList}\small\item\em Destroy the mama conflation manager. \item\end{DoxyCompactList}\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a1ca26733c71788b392c6f7ddfc2ea07f}{mamaConflationManager\_\-start} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_adbb1859ab892ce35e8d3962a875f2550}{mamaConflationManager\_\-end} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a9d56e342fcc84970029c3946c5900c81}{mamaConflationManager\_\-setEnqueueCallback} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{manager_8h_a21ce752043b177ec0eddcae5da27fcf3}{mamaConflationEnqueueCallback} callback, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_afa428c3318c30bc5a7c8bb485c70b8c6}{mamaConflationManager\_\-enqueue} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a57de1869cb6a131f5a52b8c48dcf6245}{mamaConflationManager\_\-dequeue} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$$\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_af10e203c246f19f5cb5268ed51ffa4a0}{mamaConflationManager\_\-poll} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$$\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_ac66f96118ea6c1a015b78c054e6eb038}{mamaConflationManager\_\-publish} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_aeb5f06edf68c20b3d73924b5a33a73a8}{mamaConflationManager\_\-flush} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_ae0101be8767177ef59c9842a5b2c826b}{mamaConflationManager\_\-currentMsg} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$$\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a2c677e0cd91119e24b1ff46148705ab6}{mamaConflationManager\_\-nextMsg} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$$\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a2f334a16df1e5b268bf36b4d35596d51}{mamaConflationManager\_\-prevMsg} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$$\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_abc454ebb294f1ee9219cd7ee1245ca17}{mamaConflationManager\_\-removeMsg} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$\hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$$\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_ab2932024704592b2de5647791863c97c}{mamaConflationManager\_\-insertBefore} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_ac84763f3a0f733ef589e0bb96515ee41}{mamaConflationManager\_\-insertAfter} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg}, const char $\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a85df1b0461aee17c193522c13909b89a}{mamaConflationManager\_\-replaceMsg} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} newMsg, const char $\ast$topic)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_aa14855962ddd77e358c7785f71b77e8a}{mamaConflationManager\_\-gotoTail} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a0a587ced313b8b9c49a6b670b6e6f28f}{mamaConflationManager\_\-gotoHead} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\begin{DoxyCompactList}\small\item\em Put the iterator at the head of the queue. \item\end{DoxyCompactList}\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_ac12a8fa4f4a56756d1f3889c47418142}{mamaConflationManager\_\-installTransportConflationManager} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport)
+\begin{DoxyCompactList}\small\item\em Associate this conflation manager with a transport. \item\end{DoxyCompactList}\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a568ccb14c16273ccff83acfccf80aa06}{mamaConflationManager\_\-installConnectionConflationManager} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, \hyperlink{types_8h_a511cd1294335a8d0b004d62213dbfb42}{mamaConnection} connection)
+\begin{DoxyCompactList}\small\item\em Associate this conflation manager with a connection. \item\end{DoxyCompactList}\item 
+\hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{manager_8h_a9ee59cccb15491b32a54259bfecbdeb7}{mamaConflationManager\_\-uninstallConflationManager} (\hyperlink{types_8h_a8f504e1a5f6148e6282c5ffbf86cd69f}{mamaConflationManager} mgr)
+\begin{DoxyCompactList}\small\item\em Uninstall the conflation manager if it is associated with a transport or connection. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{manager_8h_a21ce752043b177ec0eddcae5da27fcf3}{
+\index{manager.h@{manager.h}!mamaConflationEnqueueCallback@{mamaConflationEnqueueCallback}}
+\index{mamaConflationEnqueueCallback@{mamaConflationEnqueueCallback}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationEnqueueCallback}]{\setlength{\rightskip}{0pt plus 5cm}typedef void(MAMACALLTYPE $\ast$ {\bf mamaConflationEnqueueCallback})({\bf mamaMsg} {\bf msg}, const char $\ast$topic, void $\ast${\bf closure})}}
+\label{manager_8h_a21ce752043b177ec0eddcae5da27fcf3}
+
+
+\subsection{Function Documentation}
+\hypertarget{manager_8h_a9caa7a61a836f1771571f56df7cc8648}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-allocate@{mamaConflationManager\_\-allocate}}
+\index{mamaConflationManager\_\-allocate@{mamaConflationManager\_\-allocate}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-allocate ({\bf mamaConflationManager} $\ast$ {\em mgr})}}
+\label{manager_8h_a9caa7a61a836f1771571f56df7cc8648}
+
+
+Allocation of memory for the mama conflation manager. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\rightarrow$} {\em mgr}]The mama conflation manager\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{manager_8h_a96a170bfa6f235960bc6617c168dd3dd}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-create@{mamaConflationManager\_\-create}}
+\index{mamaConflationManager\_\-create@{mamaConflationManager\_\-create}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-create ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_a96a170bfa6f235960bc6617c168dd3dd}
+
+
+Creation of the mama conflation manager. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mgr}]The mama conflation manager\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-NOMEM MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR 
+\end{DoxyReturn}
+\hypertarget{manager_8h_ab954f1cf93d174f9ea5df926e74aeb4f}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-destroy@{mamaConflationManager\_\-destroy}}
+\index{mamaConflationManager\_\-destroy@{mamaConflationManager\_\-destroy}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-destroy ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_ab954f1cf93d174f9ea5df926e74aeb4f}
+
+
+Destroy the mama conflation manager. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mgr}]The mama conflation manager\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{manager_8h_a1ca26733c71788b392c6f7ddfc2ea07f}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-start@{mamaConflationManager\_\-start}}
+\index{mamaConflationManager\_\-start@{mamaConflationManager\_\-start}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-start ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_a1ca26733c71788b392c6f7ddfc2ea07f}
+\hypertarget{manager_8h_adbb1859ab892ce35e8d3962a875f2550}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-end@{mamaConflationManager\_\-end}}
+\index{mamaConflationManager\_\-end@{mamaConflationManager\_\-end}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-end ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_adbb1859ab892ce35e8d3962a875f2550}
+\hypertarget{manager_8h_a9d56e342fcc84970029c3946c5900c81}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-setEnqueueCallback@{mamaConflationManager\_\-setEnqueueCallback}}
+\index{mamaConflationManager\_\-setEnqueueCallback@{mamaConflationManager\_\-setEnqueueCallback}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-setEnqueueCallback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-setEnqueueCallback ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaConflationEnqueueCallback} {\em callback}, \/  void $\ast$ {\em closure})}}
+\label{manager_8h_a9d56e342fcc84970029c3946c5900c81}
+\hypertarget{manager_8h_afa428c3318c30bc5a7c8bb485c70b8c6}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-enqueue@{mamaConflationManager\_\-enqueue}}
+\index{mamaConflationManager\_\-enqueue@{mamaConflationManager\_\-enqueue}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-enqueue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-enqueue ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} {\em msg}, \/  const char $\ast$ {\em topic})}}
+\label{manager_8h_afa428c3318c30bc5a7c8bb485c70b8c6}
+\hypertarget{manager_8h_a57de1869cb6a131f5a52b8c48dcf6245}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-dequeue@{mamaConflationManager\_\-dequeue}}
+\index{mamaConflationManager\_\-dequeue@{mamaConflationManager\_\-dequeue}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-dequeue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-dequeue ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} $\ast$ {\em msg}, \/  const char $\ast$$\ast$ {\em topic})}}
+\label{manager_8h_a57de1869cb6a131f5a52b8c48dcf6245}
+\hypertarget{manager_8h_af10e203c246f19f5cb5268ed51ffa4a0}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-poll@{mamaConflationManager\_\-poll}}
+\index{mamaConflationManager\_\-poll@{mamaConflationManager\_\-poll}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-poll}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-poll ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} $\ast$ {\em msg}, \/  const char $\ast$$\ast$ {\em topic})}}
+\label{manager_8h_af10e203c246f19f5cb5268ed51ffa4a0}
+\hypertarget{manager_8h_ac66f96118ea6c1a015b78c054e6eb038}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-publish@{mamaConflationManager\_\-publish}}
+\index{mamaConflationManager\_\-publish@{mamaConflationManager\_\-publish}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-publish}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-publish ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} {\em msg}, \/  const char $\ast$ {\em topic})}}
+\label{manager_8h_ac66f96118ea6c1a015b78c054e6eb038}
+\hypertarget{manager_8h_aeb5f06edf68c20b3d73924b5a33a73a8}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-flush@{mamaConflationManager\_\-flush}}
+\index{mamaConflationManager\_\-flush@{mamaConflationManager\_\-flush}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-flush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-flush ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_aeb5f06edf68c20b3d73924b5a33a73a8}
+\hypertarget{manager_8h_ae0101be8767177ef59c9842a5b2c826b}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-currentMsg@{mamaConflationManager\_\-currentMsg}}
+\index{mamaConflationManager\_\-currentMsg@{mamaConflationManager\_\-currentMsg}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-currentMsg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-currentMsg ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} $\ast$ {\em msg}, \/  const char $\ast$$\ast$ {\em topic})}}
+\label{manager_8h_ae0101be8767177ef59c9842a5b2c826b}
+\hypertarget{manager_8h_a2c677e0cd91119e24b1ff46148705ab6}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-nextMsg@{mamaConflationManager\_\-nextMsg}}
+\index{mamaConflationManager\_\-nextMsg@{mamaConflationManager\_\-nextMsg}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-nextMsg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-nextMsg ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} $\ast$ {\em msg}, \/  const char $\ast$$\ast$ {\em topic})}}
+\label{manager_8h_a2c677e0cd91119e24b1ff46148705ab6}
+\hypertarget{manager_8h_a2f334a16df1e5b268bf36b4d35596d51}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-prevMsg@{mamaConflationManager\_\-prevMsg}}
+\index{mamaConflationManager\_\-prevMsg@{mamaConflationManager\_\-prevMsg}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-prevMsg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-prevMsg ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} $\ast$ {\em msg}, \/  const char $\ast$$\ast$ {\em topic})}}
+\label{manager_8h_a2f334a16df1e5b268bf36b4d35596d51}
+\hypertarget{manager_8h_abc454ebb294f1ee9219cd7ee1245ca17}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-removeMsg@{mamaConflationManager\_\-removeMsg}}
+\index{mamaConflationManager\_\-removeMsg@{mamaConflationManager\_\-removeMsg}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-removeMsg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-removeMsg ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} $\ast$ {\em msg}, \/  const char $\ast$$\ast$ {\em topic})}}
+\label{manager_8h_abc454ebb294f1ee9219cd7ee1245ca17}
+\hypertarget{manager_8h_ab2932024704592b2de5647791863c97c}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-insertBefore@{mamaConflationManager\_\-insertBefore}}
+\index{mamaConflationManager\_\-insertBefore@{mamaConflationManager\_\-insertBefore}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-insertBefore}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-insertBefore ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} {\em msg}, \/  const char $\ast$ {\em topic})}}
+\label{manager_8h_ab2932024704592b2de5647791863c97c}
+\hypertarget{manager_8h_ac84763f3a0f733ef589e0bb96515ee41}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-insertAfter@{mamaConflationManager\_\-insertAfter}}
+\index{mamaConflationManager\_\-insertAfter@{mamaConflationManager\_\-insertAfter}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-insertAfter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-insertAfter ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} {\em msg}, \/  const char $\ast$ {\em topic})}}
+\label{manager_8h_ac84763f3a0f733ef589e0bb96515ee41}
+\hypertarget{manager_8h_a85df1b0461aee17c193522c13909b89a}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-replaceMsg@{mamaConflationManager\_\-replaceMsg}}
+\index{mamaConflationManager\_\-replaceMsg@{mamaConflationManager\_\-replaceMsg}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-replaceMsg}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-replaceMsg ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaMsg} {\em newMsg}, \/  const char $\ast$ {\em topic})}}
+\label{manager_8h_a85df1b0461aee17c193522c13909b89a}
+\hypertarget{manager_8h_aa14855962ddd77e358c7785f71b77e8a}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-gotoTail@{mamaConflationManager\_\-gotoTail}}
+\index{mamaConflationManager\_\-gotoTail@{mamaConflationManager\_\-gotoTail}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-gotoTail}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-gotoTail ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_aa14855962ddd77e358c7785f71b77e8a}
+\hypertarget{manager_8h_a0a587ced313b8b9c49a6b670b6e6f28f}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-gotoHead@{mamaConflationManager\_\-gotoHead}}
+\index{mamaConflationManager\_\-gotoHead@{mamaConflationManager\_\-gotoHead}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-gotoHead}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-gotoHead ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_a0a587ced313b8b9c49a6b670b6e6f28f}
+
+
+Put the iterator at the head of the queue. Algorithms that process the most recent message first may use this.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mgr}]The mama conflation manager\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{manager_8h_ac12a8fa4f4a56756d1f3889c47418142}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-installTransportConflationManager@{mamaConflationManager\_\-installTransportConflationManager}}
+\index{mamaConflationManager\_\-installTransportConflationManager@{mamaConflationManager\_\-installTransportConflationManager}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-installTransportConflationManager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-installTransportConflationManager ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaTransport} {\em transport})}}
+\label{manager_8h_ac12a8fa4f4a56756d1f3889c47418142}
+
+
+Associate this conflation manager with a transport. The manager must not be already installed for a transport or connection.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mgr}]The mama conflation manager \item[\mbox{$\leftarrow$} {\em transport}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code MAMA\_\-STATUS\_\-NOT\_\-IMPLEMENTED 
+\end{DoxyReturn}
+\hypertarget{manager_8h_a568ccb14c16273ccff83acfccf80aa06}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-installConnectionConflationManager@{mamaConflationManager\_\-installConnectionConflationManager}}
+\index{mamaConflationManager\_\-installConnectionConflationManager@{mamaConflationManager\_\-installConnectionConflationManager}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-installConnectionConflationManager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-installConnectionConflationManager ({\bf mamaConflationManager} {\em mgr}, \/  {\bf mamaTransport} {\em transport}, \/  {\bf mamaConnection} {\em connection})}}
+\label{manager_8h_a568ccb14c16273ccff83acfccf80aa06}
+
+
+Associate this conflation manager with a connection. The manager must not be already installed for a transport or connection.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mgr}]The mama conflation manager \item[\mbox{$\leftarrow$} {\em transport}]\item[\mbox{$\leftarrow$} {\em connection}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}
+\hypertarget{manager_8h_a9ee59cccb15491b32a54259bfecbdeb7}{
+\index{manager.h@{manager.h}!mamaConflationManager\_\-uninstallConflationManager@{mamaConflationManager\_\-uninstallConflationManager}}
+\index{mamaConflationManager\_\-uninstallConflationManager@{mamaConflationManager\_\-uninstallConflationManager}!manager.h@{manager.h}}
+\subsubsection[{mamaConflationManager\_\-uninstallConflationManager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mama\_\-status} mamaConflationManager\_\-uninstallConflationManager ({\bf mamaConflationManager} {\em mgr})}}
+\label{manager_8h_a9ee59cccb15491b32a54259bfecbdeb7}
+
+
+Uninstall the conflation manager if it is associated with a transport or connection. After invoking this method it may be installed for another connection or transport.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em mgr}]The mama conflation manager\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mama\_\-status return code can be one of: MAMA\_\-STATUS\_\-INVALID\_\-ARG MAMA\_\-STATUS\_\-CONFLATE\_\-ERROR MAMA\_\-STATUS\_\-OK 
+\end{DoxyReturn}

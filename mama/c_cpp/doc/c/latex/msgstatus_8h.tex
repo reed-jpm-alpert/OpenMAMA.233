@@ -1,0 +1,178 @@
+\hypertarget{msgstatus_8h}{
+\section{msgstatus.h File Reference}
+\label{msgstatus_8h}\index{msgstatus.h@{msgstatus.h}}
+}
+{\ttfamily \#include $<$mama/msg.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83e}{mamaMsgStatus\_\-} \hyperlink{msgstatus_8h_ab48b05be77a0ecfcec0cc397b4704df3}{mamaMsgStatus}
+\begin{DoxyCompactList}\small\item\em Utility class (enum) for interpreting message status. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83e}{mamaMsgStatus\_\-} \{ \par
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea727868b3412a86192d61dc24359fbfe9}{MAMA\_\-MSG\_\-STATUS\_\-OK} =  0, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea048e6d9c44d3e86d9f0ad36f0627853a}{MAMA\_\-MSG\_\-STATUS\_\-LINE\_\-DOWN} =  1, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea7e12f84fc4f285180eb5554e39461ad0}{MAMA\_\-MSG\_\-STATUS\_\-NO\_\-SUBSCRIBERS} =  2, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea623e91383723e28ce40dcb8fc8eb03cf}{MAMA\_\-MSG\_\-STATUS\_\-BAD\_\-SYMBOL} =  3, 
+\par
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea86ba1d3831bcab7bbf2b56cd08211bdc}{MAMA\_\-MSG\_\-STATUS\_\-EXPIRED} =  4, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea560891895bf922d28f76bf654a04a805}{MAMA\_\-MSG\_\-STATUS\_\-TIMEOUT} =  5, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eabadb62c75be55a1b779e11a4ad8e1251}{MAMA\_\-MSG\_\-STATUS\_\-MISC} =  6, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea190306cd28704a987b46df5657665787}{MAMA\_\-MSG\_\-STATUS\_\-STALE} =  7, 
+\par
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea23a11d3ce67c50395812df049272ba88}{MAMA\_\-MSG\_\-STATUS\_\-TIBRV\_\-STATUS} =  8, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea567d33a9d83c93a4fec0d7842b503840}{MAMA\_\-MSG\_\-STATUS\_\-PLATFORM\_\-STATUS} =  8, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea47f317611eb7d3a6a621b4706813f412}{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITLED} =  9, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea118f4752119fdc42ab7d814e84231e83}{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-FOUND} =  10, 
+\par
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eacdc219eb094dd48fb359c8abe552d239}{MAMA\_\-MSG\_\-STATUS\_\-POSSIBLY\_\-STALE} =  11, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea143529dce5ed9602c2679a7dcd660fd8}{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-PERMISSIONED} =  12, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea692fae05af388812ac19a78c5bb41a46}{MAMA\_\-MSG\_\-STATUS\_\-TOPIC\_\-CHANGE} =  13, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eade127bb1b8b253ed4ea45682ad665dbe}{MAMA\_\-MSG\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED} =  14, 
+\par
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea2a6b227e6c3d1b5b2b67caf21b58a66c}{MAMA\_\-MSG\_\-STATUS\_\-DUPLICATE} =  15, 
+\hyperlink{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eabe95e529a523ec349e80dde29bcbb74e}{MAMA\_\-MSG\_\-STATUS\_\-UNKNOWN} =  99
+ \}
+\begin{DoxyCompactList}\small\item\em Utility class (enum) for interpreting message status. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{msgstatus_8h_ab48b05be77a0ecfcec0cc397b4704df3}{mamaMsgStatus} \hyperlink{msgstatus_8h_ad3bf19ff7f44afad6a34ef34974e6925}{mamaMsgStatus\_\-statusForMsg} (const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Extract the status from the supplied message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{msgstatus_8h_aab0b1d7ff917ca9f3a5b0c40c5999f29}{mamaMsgStatus\_\-stringForMsg} (const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Return the status as a string given a message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{msgstatus_8h_ae7914372068bca81801c9251ee987b34}{mamaMsgStatus\_\-stringForStatus} (\hyperlink{msgstatus_8h_ab48b05be77a0ecfcec0cc397b4704df3}{mamaMsgStatus} type)
+\begin{DoxyCompactList}\small\item\em Return a text description of the message's status. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{msgstatus_8h_ab48b05be77a0ecfcec0cc397b4704df3}{
+\index{msgstatus.h@{msgstatus.h}!mamaMsgStatus@{mamaMsgStatus}}
+\index{mamaMsgStatus@{mamaMsgStatus}!msgstatus.h@{msgstatus.h}}
+\subsubsection[{mamaMsgStatus}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaMsgStatus\_\-}  {\bf mamaMsgStatus}}}
+\label{msgstatus_8h_ab48b05be77a0ecfcec0cc397b4704df3}
+
+
+Utility class (enum) for interpreting message status. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83e}{
+\index{msgstatus.h@{msgstatus.h}!mamaMsgStatus\_\-@{mamaMsgStatus\_\-}}
+\index{mamaMsgStatus\_\-@{mamaMsgStatus\_\-}!msgstatus.h@{msgstatus.h}}
+\subsubsection[{mamaMsgStatus\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaMsgStatus\_\-}}}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83e}
+
+
+Utility class (enum) for interpreting message status. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-MSG\_\-STATUS\_\-OK@{MAMA\_\-MSG\_\-STATUS\_\-OK}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-OK@{MAMA\_\-MSG\_\-STATUS\_\-OK}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea727868b3412a86192d61dc24359fbfe9}{
+MAMA\_\-MSG\_\-STATUS\_\-OK}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea727868b3412a86192d61dc24359fbfe9}
+}]OK. \index{MAMA\_\-MSG\_\-STATUS\_\-LINE\_\-DOWN@{MAMA\_\-MSG\_\-STATUS\_\-LINE\_\-DOWN}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-LINE\_\-DOWN@{MAMA\_\-MSG\_\-STATUS\_\-LINE\_\-DOWN}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea048e6d9c44d3e86d9f0ad36f0627853a}{
+MAMA\_\-MSG\_\-STATUS\_\-LINE\_\-DOWN}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea048e6d9c44d3e86d9f0ad36f0627853a}
+}]The feed handler has detected a Line Down. \index{MAMA\_\-MSG\_\-STATUS\_\-NO\_\-SUBSCRIBERS@{MAMA\_\-MSG\_\-STATUS\_\-NO\_\-SUBSCRIBERS}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-NO\_\-SUBSCRIBERS@{MAMA\_\-MSG\_\-STATUS\_\-NO\_\-SUBSCRIBERS}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea7e12f84fc4f285180eb5554e39461ad0}{
+MAMA\_\-MSG\_\-STATUS\_\-NO\_\-SUBSCRIBERS}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea7e12f84fc4f285180eb5554e39461ad0}
+}]The feed handler does not have any subscribers to the subject. \index{MAMA\_\-MSG\_\-STATUS\_\-BAD\_\-SYMBOL@{MAMA\_\-MSG\_\-STATUS\_\-BAD\_\-SYMBOL}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-BAD\_\-SYMBOL@{MAMA\_\-MSG\_\-STATUS\_\-BAD\_\-SYMBOL}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea623e91383723e28ce40dcb8fc8eb03cf}{
+MAMA\_\-MSG\_\-STATUS\_\-BAD\_\-SYMBOL}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea623e91383723e28ce40dcb8fc8eb03cf}
+}]The symbol does not exist. \index{MAMA\_\-MSG\_\-STATUS\_\-EXPIRED@{MAMA\_\-MSG\_\-STATUS\_\-EXPIRED}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-EXPIRED@{MAMA\_\-MSG\_\-STATUS\_\-EXPIRED}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea86ba1d3831bcab7bbf2b56cd08211bdc}{
+MAMA\_\-MSG\_\-STATUS\_\-EXPIRED}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea86ba1d3831bcab7bbf2b56cd08211bdc}
+}]Expired. \index{MAMA\_\-MSG\_\-STATUS\_\-TIMEOUT@{MAMA\_\-MSG\_\-STATUS\_\-TIMEOUT}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-TIMEOUT@{MAMA\_\-MSG\_\-STATUS\_\-TIMEOUT}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea560891895bf922d28f76bf654a04a805}{
+MAMA\_\-MSG\_\-STATUS\_\-TIMEOUT}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea560891895bf922d28f76bf654a04a805}
+}]A time out occurred. \index{MAMA\_\-MSG\_\-STATUS\_\-MISC@{MAMA\_\-MSG\_\-STATUS\_\-MISC}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-MISC@{MAMA\_\-MSG\_\-STATUS\_\-MISC}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eabadb62c75be55a1b779e11a4ad8e1251}{
+MAMA\_\-MSG\_\-STATUS\_\-MISC}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eabadb62c75be55a1b779e11a4ad8e1251}
+}]Miscellaneous status. Not an error \index{MAMA\_\-MSG\_\-STATUS\_\-STALE@{MAMA\_\-MSG\_\-STATUS\_\-STALE}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-STALE@{MAMA\_\-MSG\_\-STATUS\_\-STALE}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea190306cd28704a987b46df5657665787}{
+MAMA\_\-MSG\_\-STATUS\_\-STALE}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea190306cd28704a987b46df5657665787}
+}]The subject is stale. Messages may have been dropped \index{MAMA\_\-MSG\_\-STATUS\_\-TIBRV\_\-STATUS@{MAMA\_\-MSG\_\-STATUS\_\-TIBRV\_\-STATUS}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-TIBRV\_\-STATUS@{MAMA\_\-MSG\_\-STATUS\_\-TIBRV\_\-STATUS}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea23a11d3ce67c50395812df049272ba88}{
+MAMA\_\-MSG\_\-STATUS\_\-TIBRV\_\-STATUS}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea23a11d3ce67c50395812df049272ba88}
+}]\index{MAMA\_\-MSG\_\-STATUS\_\-PLATFORM\_\-STATUS@{MAMA\_\-MSG\_\-STATUS\_\-PLATFORM\_\-STATUS}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-PLATFORM\_\-STATUS@{MAMA\_\-MSG\_\-STATUS\_\-PLATFORM\_\-STATUS}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea567d33a9d83c93a4fec0d7842b503840}{
+MAMA\_\-MSG\_\-STATUS\_\-PLATFORM\_\-STATUS}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea567d33a9d83c93a4fec0d7842b503840}
+}]Error in the underlying messaging API. \index{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITLED@{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITLED}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITLED@{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITLED}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea47f317611eb7d3a6a621b4706813f412}{
+MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-ENTITLED}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea47f317611eb7d3a6a621b4706813f412}
+}]Not entitled to a subject. \index{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-FOUND@{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-FOUND}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-FOUND@{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-FOUND}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea118f4752119fdc42ab7d814e84231e83}{
+MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-FOUND}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea118f4752119fdc42ab7d814e84231e83}
+}]Not found. \index{MAMA\_\-MSG\_\-STATUS\_\-POSSIBLY\_\-STALE@{MAMA\_\-MSG\_\-STATUS\_\-POSSIBLY\_\-STALE}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-POSSIBLY\_\-STALE@{MAMA\_\-MSG\_\-STATUS\_\-POSSIBLY\_\-STALE}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eacdc219eb094dd48fb359c8abe552d239}{
+MAMA\_\-MSG\_\-STATUS\_\-POSSIBLY\_\-STALE}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eacdc219eb094dd48fb359c8abe552d239}
+}]Messages may have been dropped. \index{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-PERMISSIONED@{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-PERMISSIONED}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-PERMISSIONED@{MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-PERMISSIONED}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea143529dce5ed9602c2679a7dcd660fd8}{
+MAMA\_\-MSG\_\-STATUS\_\-NOT\_\-PERMISSIONED}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea143529dce5ed9602c2679a7dcd660fd8}
+}]Not permissioned for the subject. \index{MAMA\_\-MSG\_\-STATUS\_\-TOPIC\_\-CHANGE@{MAMA\_\-MSG\_\-STATUS\_\-TOPIC\_\-CHANGE}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-TOPIC\_\-CHANGE@{MAMA\_\-MSG\_\-STATUS\_\-TOPIC\_\-CHANGE}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea692fae05af388812ac19a78c5bb41a46}{
+MAMA\_\-MSG\_\-STATUS\_\-TOPIC\_\-CHANGE}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea692fae05af388812ac19a78c5bb41a46}
+}]Topic renamed. \index{MAMA\_\-MSG\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED@{MAMA\_\-MSG\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED@{MAMA\_\-MSG\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eade127bb1b8b253ed4ea45682ad665dbe}{
+MAMA\_\-MSG\_\-STATUS\_\-BANDWIDTH\_\-EXCEEDED}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eade127bb1b8b253ed4ea45682ad665dbe}
+}]Bandwidth exceeded. \index{MAMA\_\-MSG\_\-STATUS\_\-DUPLICATE@{MAMA\_\-MSG\_\-STATUS\_\-DUPLICATE}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-DUPLICATE@{MAMA\_\-MSG\_\-STATUS\_\-DUPLICATE}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea2a6b227e6c3d1b5b2b67caf21b58a66c}{
+MAMA\_\-MSG\_\-STATUS\_\-DUPLICATE}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83ea2a6b227e6c3d1b5b2b67caf21b58a66c}
+}]Message with duplicate sequence number. \index{MAMA\_\-MSG\_\-STATUS\_\-UNKNOWN@{MAMA\_\-MSG\_\-STATUS\_\-UNKNOWN}!msgstatus.h@{msgstatus.h}}\index{msgstatus.h@{msgstatus.h}!MAMA\_\-MSG\_\-STATUS\_\-UNKNOWN@{MAMA\_\-MSG\_\-STATUS\_\-UNKNOWN}}\item[{\em 
+\hypertarget{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eabe95e529a523ec349e80dde29bcbb74e}{
+MAMA\_\-MSG\_\-STATUS\_\-UNKNOWN}
+\label{msgstatus_8h_aea36c3b12f9ec5de4b2ff0dcae17b83eabe95e529a523ec349e80dde29bcbb74e}
+}]Unknown status. \end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{msgstatus_8h_ad3bf19ff7f44afad6a34ef34974e6925}{
+\index{msgstatus.h@{msgstatus.h}!mamaMsgStatus\_\-statusForMsg@{mamaMsgStatus\_\-statusForMsg}}
+\index{mamaMsgStatus\_\-statusForMsg@{mamaMsgStatus\_\-statusForMsg}!msgstatus.h@{msgstatus.h}}
+\subsubsection[{mamaMsgStatus\_\-statusForMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaMsgStatus} mamaMsgStatus\_\-statusForMsg (const {\bf mamaMsg} {\em msg})}}
+\label{msgstatus_8h_ad3bf19ff7f44afad6a34ef34974e6925}
+
+
+Extract the status from the supplied message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msg}]The message. \end{DoxyParams}
+\hypertarget{msgstatus_8h_aab0b1d7ff917ca9f3a5b0c40c5999f29}{
+\index{msgstatus.h@{msgstatus.h}!mamaMsgStatus\_\-stringForMsg@{mamaMsgStatus\_\-stringForMsg}}
+\index{mamaMsgStatus\_\-stringForMsg@{mamaMsgStatus\_\-stringForMsg}!msgstatus.h@{msgstatus.h}}
+\subsubsection[{mamaMsgStatus\_\-stringForMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaMsgStatus\_\-stringForMsg (const {\bf mamaMsg} {\em msg})}}
+\label{msgstatus_8h_aab0b1d7ff917ca9f3a5b0c40c5999f29}
+
+
+Return the status as a string given a message. \begin{DoxyReturn}{Returns}
+The string. 
+\end{DoxyReturn}
+\hypertarget{msgstatus_8h_ae7914372068bca81801c9251ee987b34}{
+\index{msgstatus.h@{msgstatus.h}!mamaMsgStatus\_\-stringForStatus@{mamaMsgStatus\_\-stringForStatus}}
+\index{mamaMsgStatus\_\-stringForStatus@{mamaMsgStatus\_\-stringForStatus}!msgstatus.h@{msgstatus.h}}
+\subsubsection[{mamaMsgStatus\_\-stringForStatus}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaMsgStatus\_\-stringForStatus ({\bf mamaMsgStatus} {\em type})}}
+\label{msgstatus_8h_ae7914372068bca81801c9251ee987b34}
+
+
+Return a text description of the message's status. \begin{DoxyReturn}{Returns}
+The description. 
+\end{DoxyReturn}

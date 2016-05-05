@@ -1,0 +1,127 @@
+\hypertarget{dqpublisher_8h}{
+\section{dqpublisher.h File Reference}
+\label{dqpublisher_8h}\index{dqpublisher.h@{dqpublisher.h}}
+}
+{\ttfamily \#include \char`\"{}mama/types.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}wombat/wConfig.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dqpublisher_8h_a432674aa35f4da9b15f2580f549770a1}{mamaDQPublisher\_\-allocate} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Responsible for publishing mama marketdata messages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dqpublisher_8h_a278112c4fc82057bf7e51070b1f1dc76}{mamaDQPublisher\_\-create} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} transport, const char $\ast$topic)
+\begin{DoxyCompactList}\small\item\em Create a mamaDQPublisher for the corresponding transport. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dqpublisher_8h_aa35489949509c16a6e6035bb0e24ac58}{mamaDQPublisher\_\-send} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\begin{DoxyCompactList}\small\item\em Send a message. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dqpublisher_8h_a4ceadbe7dc984c94911c53313a195b43}{mamaDQPublisher\_\-sendReply} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} request, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} reply)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{dqpublisher_8h_a36953a9f77c48c7da68eb06da1c368e6}{mamaDQPublisher\_\-sendReplyWithHandle} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{types_8h_a8305bfdb18d1eaa5fff3e7c785613d91}{mamaMsgReply} replyAddress, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} reply)
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_a7f1de3e045116ba99d1fcfc567fd397a}{mamaDQPublisher\_\-destroy} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub)
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_a3db3ce036b83a66baabdf5b4c5190d6d}{mamaDQPublisher\_\-setStatus} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{msgstatus_8h_ab48b05be77a0ecfcec0cc397b4704df3}{mamaMsgStatus} \hyperlink{publisher_8h_aa055312d32c95a6e88d7a8d22f1e4606}{status})
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_af430a8cb4203b6cec8de70cc377e78e9}{mamaDQPublisher\_\-setSenderId} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, uint64\_\-t senderid)
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_aa4237bf84b49942cb7404144c92060b9}{mamaDQPublisher\_\-setSeqNum} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{types_8h_ac7ed6449628b864d1a9575c5de98fd33}{mama\_\-seqnum\_\-t} num)
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_a66f88271aa12105f348e6a2aa8406d63}{mamaDQPublisher\_\-setClosure} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure})
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_a681b5f4168b6eef2474d7120c763a8bd}{mamaDQPublisher\_\-enableSendTime} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} enable)
+\item 
+MAMAExpDLL void $\ast$ \hyperlink{dqpublisher_8h_ac76c05102d0468258ea7fdb84751e91b}{mamaDQPublisher\_\-getClosure} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub)
+\item 
+MAMAExpDLL void \hyperlink{dqpublisher_8h_af94c062508f2915c404508ae2ca5ada1}{mamaDQPublisher\_\-setCache} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub, void $\ast$cache)
+\item 
+MAMAExpDLL void $\ast$ \hyperlink{dqpublisher_8h_a86a77050b2db1d3bf10467ae82ad9f3a}{mamaDQPublisher\_\-getCache} (\hyperlink{types_8h_a4f55f117db650ba4b823e1176b6cfc59}{mamaDQPublisher} pub)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{dqpublisher_8h_a432674aa35f4da9b15f2580f549770a1}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-allocate@{mamaDQPublisher\_\-allocate}}
+\index{mamaDQPublisher\_\-allocate@{mamaDQPublisher\_\-allocate}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDQPublisher\_\-allocate ({\bf mamaDQPublisher} $\ast$ {\em result})}}
+\label{dqpublisher_8h_a432674aa35f4da9b15f2580f549770a1}
+
+
+Responsible for publishing mama marketdata messages. Allocate a mamaDQPublisher.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em result}]A pointer to hold the mamaDQPublisher. \end{DoxyParams}
+\hypertarget{dqpublisher_8h_a278112c4fc82057bf7e51070b1f1dc76}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-create@{mamaDQPublisher\_\-create}}
+\index{mamaDQPublisher\_\-create@{mamaDQPublisher\_\-create}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDQPublisher\_\-create ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mamaTransport} {\em transport}, \/  const char $\ast$ {\em topic})}}
+\label{dqpublisher_8h_a278112c4fc82057bf7e51070b1f1dc76}
+
+
+Create a mamaDQPublisher for the corresponding transport. 
+\begin{DoxyParams}{Parameters}
+\item[{\em pub}]A pointer to the mamaDQPublisher. \item[{\em transport}]The transport. \item[{\em topic}]Symbol on which to publish. \end{DoxyParams}
+\hypertarget{dqpublisher_8h_aa35489949509c16a6e6035bb0e24ac58}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-send@{mamaDQPublisher\_\-send}}
+\index{mamaDQPublisher\_\-send@{mamaDQPublisher\_\-send}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-send}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDQPublisher\_\-send ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mamaMsg} {\em msg})}}
+\label{dqpublisher_8h_aa35489949509c16a6e6035bb0e24ac58}
+
+
+Send a message. 
+\begin{DoxyParams}{Parameters}
+\item[{\em publisher}]The publish from which to send the message. \item[{\em msg}]The mamaMsg to send. \end{DoxyParams}
+\hypertarget{dqpublisher_8h_a4ceadbe7dc984c94911c53313a195b43}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-sendReply@{mamaDQPublisher\_\-sendReply}}
+\index{mamaDQPublisher\_\-sendReply@{mamaDQPublisher\_\-sendReply}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-sendReply}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDQPublisher\_\-sendReply ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mamaMsg} {\em request}, \/  {\bf mamaMsg} {\em reply})}}
+\label{dqpublisher_8h_a4ceadbe7dc984c94911c53313a195b43}
+\hypertarget{dqpublisher_8h_a36953a9f77c48c7da68eb06da1c368e6}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-sendReplyWithHandle@{mamaDQPublisher\_\-sendReplyWithHandle}}
+\index{mamaDQPublisher\_\-sendReplyWithHandle@{mamaDQPublisher\_\-sendReplyWithHandle}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-sendReplyWithHandle}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaDQPublisher\_\-sendReplyWithHandle ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mamaMsgReply} {\em replyAddress}, \/  {\bf mamaMsg} {\em reply})}}
+\label{dqpublisher_8h_a36953a9f77c48c7da68eb06da1c368e6}
+\hypertarget{dqpublisher_8h_a7f1de3e045116ba99d1fcfc567fd397a}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-destroy@{mamaDQPublisher\_\-destroy}}
+\index{mamaDQPublisher\_\-destroy@{mamaDQPublisher\_\-destroy}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-destroy ({\bf mamaDQPublisher} {\em pub})}}
+\label{dqpublisher_8h_a7f1de3e045116ba99d1fcfc567fd397a}
+\hypertarget{dqpublisher_8h_a3db3ce036b83a66baabdf5b4c5190d6d}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-setStatus@{mamaDQPublisher\_\-setStatus}}
+\index{mamaDQPublisher\_\-setStatus@{mamaDQPublisher\_\-setStatus}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-setStatus}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-setStatus ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mamaMsgStatus} {\em status})}}
+\label{dqpublisher_8h_a3db3ce036b83a66baabdf5b4c5190d6d}
+\hypertarget{dqpublisher_8h_af430a8cb4203b6cec8de70cc377e78e9}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-setSenderId@{mamaDQPublisher\_\-setSenderId}}
+\index{mamaDQPublisher\_\-setSenderId@{mamaDQPublisher\_\-setSenderId}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-setSenderId}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-setSenderId ({\bf mamaDQPublisher} {\em pub}, \/  uint64\_\-t {\em senderid})}}
+\label{dqpublisher_8h_af430a8cb4203b6cec8de70cc377e78e9}
+\hypertarget{dqpublisher_8h_aa4237bf84b49942cb7404144c92060b9}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-setSeqNum@{mamaDQPublisher\_\-setSeqNum}}
+\index{mamaDQPublisher\_\-setSeqNum@{mamaDQPublisher\_\-setSeqNum}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-setSeqNum}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-setSeqNum ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mama\_\-seqnum\_\-t} {\em num})}}
+\label{dqpublisher_8h_aa4237bf84b49942cb7404144c92060b9}
+\hypertarget{dqpublisher_8h_a66f88271aa12105f348e6a2aa8406d63}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-setClosure@{mamaDQPublisher\_\-setClosure}}
+\index{mamaDQPublisher\_\-setClosure@{mamaDQPublisher\_\-setClosure}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-setClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-setClosure ({\bf mamaDQPublisher} {\em pub}, \/  void $\ast$ {\em closure})}}
+\label{dqpublisher_8h_a66f88271aa12105f348e6a2aa8406d63}
+\hypertarget{dqpublisher_8h_a681b5f4168b6eef2474d7120c763a8bd}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-enableSendTime@{mamaDQPublisher\_\-enableSendTime}}
+\index{mamaDQPublisher\_\-enableSendTime@{mamaDQPublisher\_\-enableSendTime}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-enableSendTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-enableSendTime ({\bf mamaDQPublisher} {\em pub}, \/  {\bf mama\_\-bool\_\-t} {\em enable})}}
+\label{dqpublisher_8h_a681b5f4168b6eef2474d7120c763a8bd}
+\hypertarget{dqpublisher_8h_ac76c05102d0468258ea7fdb84751e91b}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-getClosure@{mamaDQPublisher\_\-getClosure}}
+\index{mamaDQPublisher\_\-getClosure@{mamaDQPublisher\_\-getClosure}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-getClosure}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void$\ast$ mamaDQPublisher\_\-getClosure ({\bf mamaDQPublisher} {\em pub})}}
+\label{dqpublisher_8h_ac76c05102d0468258ea7fdb84751e91b}
+\hypertarget{dqpublisher_8h_af94c062508f2915c404508ae2ca5ada1}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-setCache@{mamaDQPublisher\_\-setCache}}
+\index{mamaDQPublisher\_\-setCache@{mamaDQPublisher\_\-setCache}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-setCache}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaDQPublisher\_\-setCache ({\bf mamaDQPublisher} {\em pub}, \/  void $\ast$ {\em cache})}}
+\label{dqpublisher_8h_af94c062508f2915c404508ae2ca5ada1}
+\hypertarget{dqpublisher_8h_a86a77050b2db1d3bf10467ae82ad9f3a}{
+\index{dqpublisher.h@{dqpublisher.h}!mamaDQPublisher\_\-getCache@{mamaDQPublisher\_\-getCache}}
+\index{mamaDQPublisher\_\-getCache@{mamaDQPublisher\_\-getCache}!dqpublisher.h@{dqpublisher.h}}
+\subsubsection[{mamaDQPublisher\_\-getCache}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void$\ast$ mamaDQPublisher\_\-getCache ({\bf mamaDQPublisher} {\em pub})}}
+\label{dqpublisher_8h_a86a77050b2db1d3bf10467ae82ad9f3a}

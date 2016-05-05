@@ -1,0 +1,809 @@
+\hypertarget{msgfield_8h}{
+\section{msgfield.h File Reference}
+\label{msgfield_8h}\index{msgfield.h@{msgfield.h}}
+}
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/fielddesc.h$>$}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include \char`\"{}wombat/port.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ac6bda4f358c99896500644651a91c7cc}{mamaMsgField\_\-create} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} $\ast$msgField)
+\begin{DoxyCompactList}\small\item\em Create a field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a20480039592132681c96bad774b6fc04}{mamaMsgField\_\-destroy} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField)
+\begin{DoxyCompactList}\small\item\em Destroy a message and free any resources associated with it. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_aa4557b9bf118f01dc9117195dcaa0101}{mamaMsgField\_\-getDescriptor} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a6876ec416a44aee78b1fe6254b947526}{mamaFieldDescriptor} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the field descriptor for this field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a99c517e621bca8da3b4f22a911fedd80}{mamaMsgField\_\-getFid} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the field ID for this field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a3a0d58b7aa2a1cbedbecd1ef87d762f7}{mamaMsgField\_\-getName} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the field name for this field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a1b2d646dca252c9b5911d7ead2ab6afd}{mamaMsgField\_\-getType} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{fielddesc_8h_ade30817ae6f2357439af204a7c979f59}{mamaFieldType} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the field type for this field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a6c7bcb559d842d99e97e67d37cb2fbdf}{mamaMsgField\_\-getTypeName} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the type name for this field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a4bd208dd7236125fdf5e8da68a3d781c}{mamaMsgField\_\-getBool} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a boolean field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a3f7d24e923855a5164b031db889a62ae}{mamaMsgField\_\-getChar} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, char $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a character field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ab08bf9e95d086465ed3f071a1caaeced}{mamaMsgField\_\-getI8} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a I8, signed 8 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a402a44af496b37212f0bab085a4dcf16}{mamaMsgField\_\-getU8} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a U8, unsigned 8 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a03372f89ecb204b5632c00fa5b1a3cbd}{mamaMsgField\_\-getI16} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a I16, signed 16 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ae321e1f2833c3576e65a09a780cb8e1b}{mamaMsgField\_\-getU16} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a U16, unsigned 16 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_aee10cb0ab43cce9e1768b4601162eced}{mamaMsgField\_\-getI32} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a I32, signed 32 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ab6d47425310f62f8c748ee4d0e37dcc7}{mamaMsgField\_\-getU32} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a U32, unsigned 32 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a2723bf3a78d33484235802bded85ae47}{mamaMsgField\_\-getI64} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a I64, signed 64 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a1f55a9318286343cbfdf724f7d46d84c}{mamaMsgField\_\-getU64} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a U64, unsigned 64 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a333a04af31c8f1a46933017151986495}{mamaMsgField\_\-getF32} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a F32, floating point 32 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a0a357a8093c7424a82976cc713a9e28d}{mamaMsgField\_\-getF64} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a F64, floating point 64 bit integer, field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a15ec25ff8439ad262fa182bea2e29979}{mamaMsgField\_\-getString} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a const char $\ast$ field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a6e526e65caa533a06b817d2f3c105664}{mamaMsgField\_\-getOpaque} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const void $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get an opaque field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a384f8c65b8e55a906aa26f48b9dfdde9}{mamaMsgField\_\-getDateTime} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} result)
+\begin{DoxyCompactList}\small\item\em Get a MAMA date/time field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ad6b3ee160d1fa03bd924e8bddce59111}{mamaMsgField\_\-getPrice} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} result)
+\begin{DoxyCompactList}\small\item\em Get a MAMA price field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a03b1a93b43c6482e0287cdc565e374f4}{mamaMsgField\_\-getMsg} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get a MAMA submessage field. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a109212e4a1599f20182a1dac856ed1e2}{mamaMsgField\_\-getVectorBool} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of booleans. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_afbcce8529b9ba6d3c10b8e04d4707103}{mamaMsgField\_\-getVectorChar} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const char $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of characters. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ab64078cafec8a8fe59d9acec5aaa28c7}{mamaMsgField\_\-getVectorI8} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 8 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a3eff5cc457fd2fb7ce1fb5b7294f0f5d}{mamaMsgField\_\-getVectorU8} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 8 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_aad9845c372f725354e598246551ad953}{mamaMsgField\_\-getVectorI16} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 16 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ab4958a8a152d4b04e64f65008ab49f10}{mamaMsgField\_\-getVectorU16} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 16 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_af7c57649b12b130657b8fdc5612eeb22}{mamaMsgField\_\-getVectorI32} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 32 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a59c4e66e929ed2058d466b3ca186ae08}{mamaMsgField\_\-getVectorU32} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 32 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_afc78d62aecce3f2766623ff216b6babf}{mamaMsgField\_\-getVectorI64} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of signed 64 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_af52a2a801fcd327b7f6bd39a76f5cd0a}{mamaMsgField\_\-getVectorU64} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of unsigned 64 bit integers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_af5a35e6354a1d85728346270ff3f0be2}{mamaMsgField\_\-getVectorF32} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of 32 bit floating point numbers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a9ef0dbeb32ca3cba583f2a746de42f91}{mamaMsgField\_\-getVectorF64} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of 64 bit floating point numbers. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ac3bd60e708df1bd056efacb176bbc319}{mamaMsgField\_\-getVectorString} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const char $\ast$$\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of strings (char$\ast$). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a27754dd78297a4ef276e234a9579078e}{mamaMsgField\_\-getVectorMsg} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} msgField, const \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} $\ast$$\ast$result, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} $\ast$\hyperlink{queue_8h_ace203185bbe624f77c40b4d12f8257c0}{size})
+\begin{DoxyCompactList}\small\item\em Get a vector of submessages. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a31f438dad2c3c12ca11598deca24aefd}{mamaMsgField\_\-getAsString} (const \hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, char $\ast$buf, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} length)
+\begin{DoxyCompactList}\small\item\em Convert the value of the specified field to a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_aa51251983438da2ddc1d6a3c99f10ba6}{mamaMsgField\_\-updateBool} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new bool value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ad0f8fd44a9e44c7a23593d70e4635417}{mamaMsgField\_\-updateChar} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, char value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new char value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_abd62e96fa88bdc4c9e376cec6680ac13}{mamaMsgField\_\-updateI8} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_af46387ce033c2973d6377dd445a912be}{mama\_\-i8\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new I8 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a2976fc2f49f368b727bbfcf81acc7242}{mamaMsgField\_\-updateU8} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new U8 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a14915d56418294c4bf7cc40bcc2447ef}{mamaMsgField\_\-updateI16} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_aae0e15d6a4f0db06a583bf7f945f1b8c}{mama\_\-i16\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new I16 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a1857d56c3fd2ab9e9e851e680e45e195}{mamaMsgField\_\-updateU16} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new U16 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_afdee842cb3a3d037aa1afa6686a60e8e}{mamaMsgField\_\-updateI32} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new I32 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a15400a820a097bb76ed268b9cdbef6b2}{mamaMsgField\_\-updateU32} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new U32 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ab8c26d076c56bce38824162cb542a557}{mamaMsgField\_\-updateI64} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_a3ccc64aac4c40c686d5f726927e58ae1}{mama\_\-i64\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new I64 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a0d7c187282f19f946f6d3f9dcef5f022}{mamaMsgField\_\-updateU64} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_a40cc9045e954491913e5b430ff6f43fb}{mama\_\-u64\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new U64 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ad529cfdace6f17130ddd71b16c30992f}{mamaMsgField\_\-updateF32} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_a1aa1755147b3d4645f5e0bc8c997d4e2}{mama\_\-f32\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new F32 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a92001653da8646fe146b31015e84e417}{mamaMsgField\_\-updateF64} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new F64 value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_a5c01962e0233957b56ca83899ddb808d}{mamaMsgField\_\-updateDateTime} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, const \hyperlink{types_8h_aabfe2643b7368f28adb648fbdf46b110}{mamaDateTime} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new MamaDateTime value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgfield_8h_ac46798967f19f119fc114fa97b0fc63f}{mamaMsgField\_\-updatePrice} (\hyperlink{types_8h_a839ae9f87dea9e5d1cbf2201bb3f2507}{mamaMsgField} field, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} value)
+\begin{DoxyCompactList}\small\item\em Update the specified field with a new MamaDateTime value. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{msgfield_8h_ac6bda4f358c99896500644651a91c7cc}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-create@{mamaMsgField\_\-create}}
+\index{mamaMsgField\_\-create@{mamaMsgField\_\-create}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-create ({\bf mamaMsgField} $\ast$ {\em msgField})}}
+\label{msgfield_8h_ac6bda4f358c99896500644651a91c7cc}
+
+
+Create a field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]A pointer to the result. \end{DoxyParams}
+\hypertarget{msgfield_8h_a20480039592132681c96bad774b6fc04}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-destroy@{mamaMsgField\_\-destroy}}
+\index{mamaMsgField\_\-destroy@{mamaMsgField\_\-destroy}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-destroy ({\bf mamaMsgField} {\em msgField})}}
+\label{msgfield_8h_a20480039592132681c96bad774b6fc04}
+
+
+Destroy a message and free any resources associated with it. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \end{DoxyParams}
+\hypertarget{msgfield_8h_aa4557b9bf118f01dc9117195dcaa0101}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getDescriptor@{mamaMsgField\_\-getDescriptor}}
+\index{mamaMsgField\_\-getDescriptor@{mamaMsgField\_\-getDescriptor}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getDescriptor (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mamaFieldDescriptor} $\ast$ {\em result})}}
+\label{msgfield_8h_aa4557b9bf118f01dc9117195dcaa0101}
+
+
+Get the field descriptor for this field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a99c517e621bca8da3b4f22a911fedd80}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getFid@{mamaMsgField\_\-getFid}}
+\index{mamaMsgField\_\-getFid@{mamaMsgField\_\-getFid}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getFid (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-fid\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a99c517e621bca8da3b4f22a911fedd80}
+
+
+Get the field ID for this field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a3a0d58b7aa2a1cbedbecd1ef87d762f7}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getName@{mamaMsgField\_\-getName}}
+\index{mamaMsgField\_\-getName@{mamaMsgField\_\-getName}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getName (const {\bf mamaMsgField} {\em msgField}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{msgfield_8h_a3a0d58b7aa2a1cbedbecd1ef87d762f7}
+
+
+Get the field name for this field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result. \end{DoxyParams}
+\hypertarget{msgfield_8h_a1b2d646dca252c9b5911d7ead2ab6afd}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getType@{mamaMsgField\_\-getType}}
+\index{mamaMsgField\_\-getType@{mamaMsgField\_\-getType}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getType}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getType (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mamaFieldType} $\ast$ {\em result})}}
+\label{msgfield_8h_a1b2d646dca252c9b5911d7ead2ab6afd}
+
+
+Get the field type for this field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a6c7bcb559d842d99e97e67d37cb2fbdf}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getTypeName@{mamaMsgField\_\-getTypeName}}
+\index{mamaMsgField\_\-getTypeName@{mamaMsgField\_\-getTypeName}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getTypeName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getTypeName (const {\bf mamaMsgField} {\em msgField}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{msgfield_8h_a6c7bcb559d842d99e97e67d37cb2fbdf}
+
+
+Get the type name for this field. This is a human readable representation of the type.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result. \end{DoxyParams}
+\hypertarget{msgfield_8h_a4bd208dd7236125fdf5e8da68a3d781c}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getBool@{mamaMsgField\_\-getBool}}
+\index{mamaMsgField\_\-getBool@{mamaMsgField\_\-getBool}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getBool}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getBool (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a4bd208dd7236125fdf5e8da68a3d781c}
+
+
+Get a boolean field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a3f7d24e923855a5164b031db889a62ae}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getChar@{mamaMsgField\_\-getChar}}
+\index{mamaMsgField\_\-getChar@{mamaMsgField\_\-getChar}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getChar}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getChar (const {\bf mamaMsgField} {\em msgField}, \/  char $\ast$ {\em result})}}
+\label{msgfield_8h_a3f7d24e923855a5164b031db889a62ae}
+
+
+Get a character field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_ab08bf9e95d086465ed3f071a1caaeced}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getI8@{mamaMsgField\_\-getI8}}
+\index{mamaMsgField\_\-getI8@{mamaMsgField\_\-getI8}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getI8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getI8 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-i8\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_ab08bf9e95d086465ed3f071a1caaeced}
+
+
+Get a I8, signed 8 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a402a44af496b37212f0bab085a4dcf16}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getU8@{mamaMsgField\_\-getU8}}
+\index{mamaMsgField\_\-getU8@{mamaMsgField\_\-getU8}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getU8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getU8 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-u8\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a402a44af496b37212f0bab085a4dcf16}
+
+
+Get a U8, unsigned 8 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a03372f89ecb204b5632c00fa5b1a3cbd}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getI16@{mamaMsgField\_\-getI16}}
+\index{mamaMsgField\_\-getI16@{mamaMsgField\_\-getI16}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getI16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getI16 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-i16\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a03372f89ecb204b5632c00fa5b1a3cbd}
+
+
+Get a I16, signed 16 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_ae321e1f2833c3576e65a09a780cb8e1b}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getU16@{mamaMsgField\_\-getU16}}
+\index{mamaMsgField\_\-getU16@{mamaMsgField\_\-getU16}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getU16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getU16 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-u16\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_ae321e1f2833c3576e65a09a780cb8e1b}
+
+
+Get a U16, unsigned 16 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_aee10cb0ab43cce9e1768b4601162eced}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getI32@{mamaMsgField\_\-getI32}}
+\index{mamaMsgField\_\-getI32@{mamaMsgField\_\-getI32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getI32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getI32 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-i32\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_aee10cb0ab43cce9e1768b4601162eced}
+
+
+Get a I32, signed 32 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_ab6d47425310f62f8c748ee4d0e37dcc7}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getU32@{mamaMsgField\_\-getU32}}
+\index{mamaMsgField\_\-getU32@{mamaMsgField\_\-getU32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getU32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getU32 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_ab6d47425310f62f8c748ee4d0e37dcc7}
+
+
+Get a U32, unsigned 32 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a2723bf3a78d33484235802bded85ae47}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getI64@{mamaMsgField\_\-getI64}}
+\index{mamaMsgField\_\-getI64@{mamaMsgField\_\-getI64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getI64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getI64 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-i64\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a2723bf3a78d33484235802bded85ae47}
+
+
+Get a I64, signed 64 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a1f55a9318286343cbfdf724f7d46d84c}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getU64@{mamaMsgField\_\-getU64}}
+\index{mamaMsgField\_\-getU64@{mamaMsgField\_\-getU64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getU64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getU64 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-u64\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a1f55a9318286343cbfdf724f7d46d84c}
+
+
+Get a U64, unsigned 64 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a333a04af31c8f1a46933017151986495}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getF32@{mamaMsgField\_\-getF32}}
+\index{mamaMsgField\_\-getF32@{mamaMsgField\_\-getF32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getF32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getF32 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-f32\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a333a04af31c8f1a46933017151986495}
+
+
+Get a F32, floating point 32 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a0a357a8093c7424a82976cc713a9e28d}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getF64@{mamaMsgField\_\-getF64}}
+\index{mamaMsgField\_\-getF64@{mamaMsgField\_\-getF64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getF64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getF64 (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mama\_\-f64\_\-t} $\ast$ {\em result})}}
+\label{msgfield_8h_a0a357a8093c7424a82976cc713a9e28d}
+
+
+Get a F64, floating point 64 bit integer, field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) Pointer to the result \end{DoxyParams}
+\hypertarget{msgfield_8h_a15ec25ff8439ad262fa182bea2e29979}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getString@{mamaMsgField\_\-getString}}
+\index{mamaMsgField\_\-getString@{mamaMsgField\_\-getString}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getString (const {\bf mamaMsgField} {\em msgField}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{msgfield_8h_a15ec25ff8439ad262fa182bea2e29979}
+
+
+Get a const char $\ast$ field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) the string value. \end{DoxyParams}
+\hypertarget{msgfield_8h_a6e526e65caa533a06b817d2f3c105664}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getOpaque@{mamaMsgField\_\-getOpaque}}
+\index{mamaMsgField\_\-getOpaque@{mamaMsgField\_\-getOpaque}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getOpaque}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getOpaque (const {\bf mamaMsgField} {\em msgField}, \/  const void $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_a6e526e65caa533a06b817d2f3c105664}
+
+
+Get an opaque field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) The opaque value. \item[{\em size}]The size of the resulting opaque value. \end{DoxyParams}
+\hypertarget{msgfield_8h_a384f8c65b8e55a906aa26f48b9dfdde9}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getDateTime@{mamaMsgField\_\-getDateTime}}
+\index{mamaMsgField\_\-getDateTime@{mamaMsgField\_\-getDateTime}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getDateTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getDateTime (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mamaDateTime} {\em result})}}
+\label{msgfield_8h_a384f8c65b8e55a906aa26f48b9dfdde9}
+
+
+Get a MAMA date/time field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) the output value. \end{DoxyParams}
+\hypertarget{msgfield_8h_ad6b3ee160d1fa03bd924e8bddce59111}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getPrice@{mamaMsgField\_\-getPrice}}
+\index{mamaMsgField\_\-getPrice@{mamaMsgField\_\-getPrice}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getPrice}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getPrice (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mamaPrice} {\em result})}}
+\label{msgfield_8h_ad6b3ee160d1fa03bd924e8bddce59111}
+
+
+Get a MAMA price field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) the output value. \end{DoxyParams}
+\hypertarget{msgfield_8h_a03b1a93b43c6482e0287cdc565e374f4}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getMsg@{mamaMsgField\_\-getMsg}}
+\index{mamaMsgField\_\-getMsg@{mamaMsgField\_\-getMsg}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getMsg (const {\bf mamaMsgField} {\em msgField}, \/  {\bf mamaMsg} $\ast$ {\em result})}}
+\label{msgfield_8h_a03b1a93b43c6482e0287cdc565e374f4}
+
+
+Get a MAMA submessage field. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}](out) the mamaMsg output value. \end{DoxyParams}
+\hypertarget{msgfield_8h_a109212e4a1599f20182a1dac856ed1e2}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorBool@{mamaMsgField\_\-getVectorBool}}
+\index{mamaMsgField\_\-getVectorBool@{mamaMsgField\_\-getVectorBool}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorBool}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorBool (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-bool\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_a109212e4a1599f20182a1dac856ed1e2}
+
+
+Get a vector of booleans. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_afbcce8529b9ba6d3c10b8e04d4707103}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorChar@{mamaMsgField\_\-getVectorChar}}
+\index{mamaMsgField\_\-getVectorChar@{mamaMsgField\_\-getVectorChar}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorChar}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorChar (const {\bf mamaMsgField} {\em msgField}, \/  const char $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_afbcce8529b9ba6d3c10b8e04d4707103}
+
+
+Get a vector of characters. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_ab64078cafec8a8fe59d9acec5aaa28c7}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorI8@{mamaMsgField\_\-getVectorI8}}
+\index{mamaMsgField\_\-getVectorI8@{mamaMsgField\_\-getVectorI8}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorI8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorI8 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-i8\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_ab64078cafec8a8fe59d9acec5aaa28c7}
+
+
+Get a vector of signed 8 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_a3eff5cc457fd2fb7ce1fb5b7294f0f5d}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorU8@{mamaMsgField\_\-getVectorU8}}
+\index{mamaMsgField\_\-getVectorU8@{mamaMsgField\_\-getVectorU8}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorU8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorU8 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-u8\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_a3eff5cc457fd2fb7ce1fb5b7294f0f5d}
+
+
+Get a vector of unsigned 8 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_aad9845c372f725354e598246551ad953}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorI16@{mamaMsgField\_\-getVectorI16}}
+\index{mamaMsgField\_\-getVectorI16@{mamaMsgField\_\-getVectorI16}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorI16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorI16 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-i16\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_aad9845c372f725354e598246551ad953}
+
+
+Get a vector of signed 16 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_ab4958a8a152d4b04e64f65008ab49f10}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorU16@{mamaMsgField\_\-getVectorU16}}
+\index{mamaMsgField\_\-getVectorU16@{mamaMsgField\_\-getVectorU16}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorU16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorU16 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-u16\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_ab4958a8a152d4b04e64f65008ab49f10}
+
+
+Get a vector of unsigned 16 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_af7c57649b12b130657b8fdc5612eeb22}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorI32@{mamaMsgField\_\-getVectorI32}}
+\index{mamaMsgField\_\-getVectorI32@{mamaMsgField\_\-getVectorI32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorI32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorI32 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-i32\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_af7c57649b12b130657b8fdc5612eeb22}
+
+
+Get a vector of signed 32 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_a59c4e66e929ed2058d466b3ca186ae08}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorU32@{mamaMsgField\_\-getVectorU32}}
+\index{mamaMsgField\_\-getVectorU32@{mamaMsgField\_\-getVectorU32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorU32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorU32 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-u32\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_a59c4e66e929ed2058d466b3ca186ae08}
+
+
+Get a vector of unsigned 32 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_afc78d62aecce3f2766623ff216b6babf}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorI64@{mamaMsgField\_\-getVectorI64}}
+\index{mamaMsgField\_\-getVectorI64@{mamaMsgField\_\-getVectorI64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorI64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorI64 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-i64\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_afc78d62aecce3f2766623ff216b6babf}
+
+
+Get a vector of signed 64 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_af52a2a801fcd327b7f6bd39a76f5cd0a}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorU64@{mamaMsgField\_\-getVectorU64}}
+\index{mamaMsgField\_\-getVectorU64@{mamaMsgField\_\-getVectorU64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorU64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorU64 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-u64\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_af52a2a801fcd327b7f6bd39a76f5cd0a}
+
+
+Get a vector of unsigned 64 bit integers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_af5a35e6354a1d85728346270ff3f0be2}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorF32@{mamaMsgField\_\-getVectorF32}}
+\index{mamaMsgField\_\-getVectorF32@{mamaMsgField\_\-getVectorF32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorF32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorF32 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-f32\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_af5a35e6354a1d85728346270ff3f0be2}
+
+
+Get a vector of 32 bit floating point numbers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_a9ef0dbeb32ca3cba583f2a746de42f91}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorF64@{mamaMsgField\_\-getVectorF64}}
+\index{mamaMsgField\_\-getVectorF64@{mamaMsgField\_\-getVectorF64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorF64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorF64 (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mama\_\-f64\_\-t} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_a9ef0dbeb32ca3cba583f2a746de42f91}
+
+
+Get a vector of 64 bit floating point numbers. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_ac3bd60e708df1bd056efacb176bbc319}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorString@{mamaMsgField\_\-getVectorString}}
+\index{mamaMsgField\_\-getVectorString@{mamaMsgField\_\-getVectorString}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorString (const {\bf mamaMsgField} {\em msgField}, \/  const char $\ast$$\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_ac3bd60e708df1bd056efacb176bbc319}
+
+
+Get a vector of strings (char$\ast$). 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The message field. \item[{\em result}]A pointer to the result. \item[{\em size}]An integer pointer that will contain the length of the result when the method returns.. \end{DoxyParams}
+\hypertarget{msgfield_8h_a27754dd78297a4ef276e234a9579078e}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getVectorMsg@{mamaMsgField\_\-getVectorMsg}}
+\index{mamaMsgField\_\-getVectorMsg@{mamaMsgField\_\-getVectorMsg}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getVectorMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getVectorMsg (const {\bf mamaMsgField} {\em msgField}, \/  const {\bf mamaMsg} $\ast$$\ast$ {\em result}, \/  {\bf mama\_\-size\_\-t} $\ast$ {\em size})}}
+\label{msgfield_8h_a27754dd78297a4ef276e234a9579078e}
+
+
+Get a vector of submessages. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgField}]The field. \item[{\em result}]A pointer to the result. \item[{\em size}]A pointer for the length of the result. \end{DoxyParams}
+\hypertarget{msgfield_8h_a31f438dad2c3c12ca11598deca24aefd}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-getAsString@{mamaMsgField\_\-getAsString}}
+\index{mamaMsgField\_\-getAsString@{mamaMsgField\_\-getAsString}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-getAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-getAsString (const {\bf mamaMsgField} {\em field}, \/  char $\ast$ {\em buf}, \/  {\bf mama\_\-size\_\-t} {\em length})}}
+\label{msgfield_8h_a31f438dad2c3c12ca11598deca24aefd}
+
+
+Convert the value of the specified field to a string. Caller must provide a buffer for the value.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The field. \item[{\em buf}]Buffer where the result will be copied. \item[{\em length}]The length of the caller supplied buffer. \end{DoxyParams}
+\hypertarget{msgfield_8h_aa51251983438da2ddc1d6a3c99f10ba6}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateBool@{mamaMsgField\_\-updateBool}}
+\index{mamaMsgField\_\-updateBool@{mamaMsgField\_\-updateBool}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateBool}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateBool ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-bool\_\-t} {\em value})}}
+\label{msgfield_8h_aa51251983438da2ddc1d6a3c99f10ba6}
+
+
+Update the specified field with a new bool value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type bool.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_ad0f8fd44a9e44c7a23593d70e4635417}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateChar@{mamaMsgField\_\-updateChar}}
+\index{mamaMsgField\_\-updateChar@{mamaMsgField\_\-updateChar}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateChar}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateChar ({\bf mamaMsgField} {\em field}, \/  char {\em value})}}
+\label{msgfield_8h_ad0f8fd44a9e44c7a23593d70e4635417}
+
+
+Update the specified field with a new char value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type char.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_abd62e96fa88bdc4c9e376cec6680ac13}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateI8@{mamaMsgField\_\-updateI8}}
+\index{mamaMsgField\_\-updateI8@{mamaMsgField\_\-updateI8}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateI8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateI8 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-i8\_\-t} {\em value})}}
+\label{msgfield_8h_abd62e96fa88bdc4c9e376cec6680ac13}
+
+
+Update the specified field with a new I8 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type I8.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a2976fc2f49f368b727bbfcf81acc7242}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateU8@{mamaMsgField\_\-updateU8}}
+\index{mamaMsgField\_\-updateU8@{mamaMsgField\_\-updateU8}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateU8}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateU8 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-u8\_\-t} {\em value})}}
+\label{msgfield_8h_a2976fc2f49f368b727bbfcf81acc7242}
+
+
+Update the specified field with a new U8 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type U8.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a14915d56418294c4bf7cc40bcc2447ef}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateI16@{mamaMsgField\_\-updateI16}}
+\index{mamaMsgField\_\-updateI16@{mamaMsgField\_\-updateI16}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateI16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateI16 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-i16\_\-t} {\em value})}}
+\label{msgfield_8h_a14915d56418294c4bf7cc40bcc2447ef}
+
+
+Update the specified field with a new I16 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type I16.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a1857d56c3fd2ab9e9e851e680e45e195}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateU16@{mamaMsgField\_\-updateU16}}
+\index{mamaMsgField\_\-updateU16@{mamaMsgField\_\-updateU16}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateU16}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateU16 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-u16\_\-t} {\em value})}}
+\label{msgfield_8h_a1857d56c3fd2ab9e9e851e680e45e195}
+
+
+Update the specified field with a new U16 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type U16.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_afdee842cb3a3d037aa1afa6686a60e8e}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateI32@{mamaMsgField\_\-updateI32}}
+\index{mamaMsgField\_\-updateI32@{mamaMsgField\_\-updateI32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateI32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateI32 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-i32\_\-t} {\em value})}}
+\label{msgfield_8h_afdee842cb3a3d037aa1afa6686a60e8e}
+
+
+Update the specified field with a new I32 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type I32.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a15400a820a097bb76ed268b9cdbef6b2}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateU32@{mamaMsgField\_\-updateU32}}
+\index{mamaMsgField\_\-updateU32@{mamaMsgField\_\-updateU32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateU32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateU32 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-u32\_\-t} {\em value})}}
+\label{msgfield_8h_a15400a820a097bb76ed268b9cdbef6b2}
+
+
+Update the specified field with a new U32 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type U32.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_ab8c26d076c56bce38824162cb542a557}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateI64@{mamaMsgField\_\-updateI64}}
+\index{mamaMsgField\_\-updateI64@{mamaMsgField\_\-updateI64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateI64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateI64 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-i64\_\-t} {\em value})}}
+\label{msgfield_8h_ab8c26d076c56bce38824162cb542a557}
+
+
+Update the specified field with a new I64 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type I64.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a0d7c187282f19f946f6d3f9dcef5f022}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateU64@{mamaMsgField\_\-updateU64}}
+\index{mamaMsgField\_\-updateU64@{mamaMsgField\_\-updateU64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateU64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateU64 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-u64\_\-t} {\em value})}}
+\label{msgfield_8h_a0d7c187282f19f946f6d3f9dcef5f022}
+
+
+Update the specified field with a new U64 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type U64.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_ad529cfdace6f17130ddd71b16c30992f}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateF32@{mamaMsgField\_\-updateF32}}
+\index{mamaMsgField\_\-updateF32@{mamaMsgField\_\-updateF32}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateF32}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateF32 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-f32\_\-t} {\em value})}}
+\label{msgfield_8h_ad529cfdace6f17130ddd71b16c30992f}
+
+
+Update the specified field with a new F32 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type F32.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a92001653da8646fe146b31015e84e417}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateF64@{mamaMsgField\_\-updateF64}}
+\index{mamaMsgField\_\-updateF64@{mamaMsgField\_\-updateF64}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateF64}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateF64 ({\bf mamaMsgField} {\em field}, \/  {\bf mama\_\-f64\_\-t} {\em value})}}
+\label{msgfield_8h_a92001653da8646fe146b31015e84e417}
+
+
+Update the specified field with a new F64 value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type F32.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_a5c01962e0233957b56ca83899ddb808d}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updateDateTime@{mamaMsgField\_\-updateDateTime}}
+\index{mamaMsgField\_\-updateDateTime@{mamaMsgField\_\-updateDateTime}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updateDateTime}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updateDateTime ({\bf mamaMsgField} {\em field}, \/  const {\bf mamaDateTime} {\em value})}}
+\label{msgfield_8h_a5c01962e0233957b56ca83899ddb808d}
+
+
+Update the specified field with a new MamaDateTime value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type F32.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}
+\hypertarget{msgfield_8h_ac46798967f19f119fc114fa97b0fc63f}{
+\index{msgfield.h@{msgfield.h}!mamaMsgField\_\-updatePrice@{mamaMsgField\_\-updatePrice}}
+\index{mamaMsgField\_\-updatePrice@{mamaMsgField\_\-updatePrice}!msgfield.h@{msgfield.h}}
+\subsubsection[{mamaMsgField\_\-updatePrice}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgField\_\-updatePrice ({\bf mamaMsgField} {\em field}, \/  const {\bf mamaPrice} {\em value})}}
+\label{msgfield_8h_ac46798967f19f119fc114fa97b0fc63f}
+
+
+Update the specified field with a new MamaDateTime value. Returns MAMA\_\-WRONG\_\-FIELD\_\-TYPE if the existing field is not of type F32.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em field}]The mamaMsgField to be updated. \item[{\em value}]The new value for the field.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+MAMA\_\-STATUS\_\-OK The function returned successfully. 
+
+MAMA\_\-STATUS\_\-WRONG\_\-FIELD\_\-TYPE The existing field type does not match the type of the update function called. 
+
+MAMA\_\-STATUS\_\-NULL\_\-ARG The field passed to the function is NULL. 
+
+MAMA\_\-STATUS\_\-INVALID\_\-ARG The underlying bridge field is NULL. 
+\end{DoxyReturn}

@@ -1,0 +1,434 @@
+\hypertarget{stat_8h}{
+\section{stat.h File Reference}
+\label{stat_8h}\index{stat.h@{stat.h}}
+}
+{\ttfamily \#include \char`\"{}mama/status.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stat_8h_aab4dc83d6439775af944331bf60b4f8f}{MAMA\_\-STAT\_\-NOT\_\-LOCKABLE}~0
+\item 
+\#define \hyperlink{stat_8h_a1dd18f88816664ae43a2580cf4f4c128}{MAMA\_\-STAT\_\-LOCKABLE}~1
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920}{mamaStatType} \{ \par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a56bd2e347434bc9879d0217a86969cfa}{MAMA\_\-STAT\_\-TYPE\_\-INITIALS} =  105, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ae419b18af375ba39c532e19dc2f8223f}{MAMA\_\-STAT\_\-TYPE\_\-RECAPS} =  106, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a00ddcb3d3b484a75021af0ed872e1d3c}{MAMA\_\-STAT\_\-TYPE\_\-NUM\_\-MESSAGES} =  107, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a04e3ef08dc728e099d0db2327c5da08b}{MAMA\_\-STAT\_\-TYPE\_\-FT\_\-TAKEOVERS} =  108, 
+\par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a1c3e033a4bd269e53d72b5f80fecc2df}{MAMA\_\-STAT\_\-TYPE\_\-QUEUE\_\-SIZE} =  109, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a15f4bb10f92ae0769a23de93b016d4a6}{MAMA\_\-STAT\_\-TYPE\_\-SUBSCRIPTIONS} =  110, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a6f371db4c242dc7d02d77e98ec14cc1b}{MAMA\_\-STAT\_\-TYPE\_\-TIMEOUTS} =  111, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ad65893306f194270573ba6e74c1753b1}{MAMA\_\-STAT\_\-TYPE\_\-MSG\_\-INDEX} =  112, 
+\par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a7d5c83d931a83ef779076f575f0af21e}{MAMA\_\-STAT\_\-TYPE\_\-NAK\_\-PACKETS\_\-SENT} =  113, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920afbacad2a164b08a68be898989ceae54b}{MAMA\_\-STAT\_\-TYPE\_\-NAKS\_\-SENT} =  114, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a9b6ef6f8d977ebc877b247c8371f83d7}{MAMA\_\-STAT\_\-TYPE\_\-MSGS\_\-LOST} =  115, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8c6b12fec28e3e24c97b456cf6c7190a}{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-IGNORE} =  116, 
+\par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8954424f7ae6e632d28e4101078ad355}{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-SHED} =  117, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8d57cc3f3b007340e9ed7895c452ec2f}{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-RX\_\-DELAY} =  118, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920af3f9161723b81416dbcf24c49d797e5a}{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-UNKNOWN} =  119, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920af1ee57bf1403572d89788eca4aa1c82b}{MAMA\_\-STAT\_\-TYPE\_\-DUPLICATE\_\-MSGS} =  120, 
+\par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920aa3ce08a9d1e0bf1b9d038819e9b852f1}{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-WINDOW\_\-ADVANCE} =  121, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a1065a0ab5c534ff5ab19b80f2493e715}{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-TIMEOUT} =  122, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8625d556c231bba9af9568b8c7c0f147}{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-MSGS\_\-RECEIVED\_\-NO\_\-TOPIC} =  123, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8df5ede465fb2e14e7d495adc2e40062}{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-REQUESTS\_\-RECEIVED} =  124, 
+\par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a539af80d051e77acd4eff6222d650995}{MAMA\_\-STAT\_\-TYPE\_\-WOMBAT\_\-MSGS} =  125, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a5214daec471c7e188ca143fbaeeed98b}{MAMA\_\-STAT\_\-TYPE\_\-RV\_\-MSGS} =  126, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a3afe9cda9b33c3b82192e198dbf9d96c}{MAMA\_\-STAT\_\-TYPE\_\-FAST\_\-MSGS} =  127, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a2593faa1bc5765bb0d54bea8d81a9869}{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN\_\-MSGS} =  128, 
+\par
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920aabcb21eb2855f1c0c7f2cfd64b66b64e}{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-SEND} =  129, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8a73ed414578670af99d9a8c0bbacea1}{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-INBOX\_\-SEND} =  130, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ac8af2d6a6e412048d30cbac1726d2ccb}{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-REPLY\_\-SEND} =  131, 
+\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ae5e9241b5bb2d9354e0eb76d64661ded}{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN} =  999
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_ab14f498678a775a556e4284a826026be}{mamaStat\_\-create} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} $\ast$stat, \hyperlink{types_8h_a9962a3daa032c7fa43640317337dfc2d}{mamaStatsCollector} collector, int lockable, const char $\ast$name, \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} type)
+\begin{DoxyCompactList}\small\item\em Create a mamaStats object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_aeec75655eefaa1ad04641998b4d302d5}{mamaStat\_\-destroy} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaStats object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_a384e37ea8e559b50e70bdcba4a55f298}{mamaStat\_\-increment} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Increment the stats object counter. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_ac3887c13912fea78f9de9b66137168f0}{mamaStat\_\-decrement} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Decrement the stats object counter. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_a1180651415825c41b903c9a7e7517b6e}{mamaStat\_\-reset} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Reset the stats object counter. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_aa0a37919390b2002fa985f4ae1f75c55}{mamaStat\_\-add} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat, int value)
+\begin{DoxyCompactList}\small\item\em Adds the stats object counter with the value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_a81aff361e513446598c14c8490931503}{mamaStat\_\-subtract} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat, int value)
+\begin{DoxyCompactList}\small\item\em Subtract the stats object counter with the value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_a0454eb1e065f42577e2995641b7de9f8}{mamaStat\_\-setIntervalValue} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat, int value)
+\begin{DoxyCompactList}\small\item\em set the Interval value \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_a1f8703a93ff122af6b22b4628ce1cee3}{mama\_\-fid\_\-t} \hyperlink{stat_8h_a6c7e05ad53616634783d6db4754bc328}{mamaStat\_\-getFid} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Get the FID used when publishing the stat via the stats logger. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{stat_8h_ab3b5d3638f5aee6a6033bcc11dda2b7e}{mamaStat\_\-getIntervalValue} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Get the value of the stat for the current interval. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{stat_8h_aa9566cf46c6ed428f0ac874053a5933d}{mamaStat\_\-getMaxValue} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Get the maximum value of the stat. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{stat_8h_a1bca4001a2bd6d3d26376943fe21caf5}{mamaStat\_\-getTotalValue} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Get the total value of the stat. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{stat_8h_a67c182e2d67b1cea1055dfbea1deaadd}{mamaStat\_\-getStats} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$intervalValue, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$maxValue, \hyperlink{types_8h_ac06bef80c95eee1a45d826f1cd00ce57}{mama\_\-u32\_\-t} $\ast$totalValue)
+\begin{DoxyCompactList}\small\item\em Get the interval, maximum, and total values for the stat. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{stat_8h_a5722299df7e1712f319e38a47efea3de}{mamaStat\_\-getName} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Get the name of the stat. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_a99a28dfde243f4ea6d9b87e37c6cd943}{mamaStat\_\-setLog} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat, int log)
+\begin{DoxyCompactList}\small\item\em Set whether or not this stat should be logged in the MAMA log. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{stat_8h_af5d7a3b87d3151532759b8924bef1623}{mamaStat\_\-getLog} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Returns whether or not the stat is currently being logged to the MAMA log. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{stat_8h_a373bac5059a81fc674ce027c77ce3165}{mamaStat\_\-setPublish} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat, int publish)
+\begin{DoxyCompactList}\small\item\em Set whether or not to publish this stat. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{stat_8h_a7346812f7804f5f98e450764d6e22f42}{mamaStat\_\-getPublish} (\hyperlink{types_8h_a9234ed307dbc305145a755a4a3aa9580}{mamaStat} stat)
+\begin{DoxyCompactList}\small\item\em Returns whether or not the stat is currently being published. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920}{mamaStatType} \hyperlink{stat_8h_abd2a008b31f7a6fe6af783c8568b2a6c}{mamaStatType\_\-fromString} (const char $\ast$statTypeString)
+\begin{DoxyCompactList}\small\item\em Returns a mamaStatType from a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{stat_8h_ac3d26647d491797293f249cfc4274adf}{mamaStatType\_\-toString} (\hyperlink{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920}{mamaStatType} statType)
+\begin{DoxyCompactList}\small\item\em Returns a string representation of a mamaStatType. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{stat_8h_aab4dc83d6439775af944331bf60b4f8f}{
+\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-NOT\_\-LOCKABLE@{MAMA\_\-STAT\_\-NOT\_\-LOCKABLE}}
+\index{MAMA\_\-STAT\_\-NOT\_\-LOCKABLE@{MAMA\_\-STAT\_\-NOT\_\-LOCKABLE}!stat.h@{stat.h}}
+\subsubsection[{MAMA\_\-STAT\_\-NOT\_\-LOCKABLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-STAT\_\-NOT\_\-LOCKABLE~0}}
+\label{stat_8h_aab4dc83d6439775af944331bf60b4f8f}
+\hypertarget{stat_8h_a1dd18f88816664ae43a2580cf4f4c128}{
+\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-LOCKABLE@{MAMA\_\-STAT\_\-LOCKABLE}}
+\index{MAMA\_\-STAT\_\-LOCKABLE@{MAMA\_\-STAT\_\-LOCKABLE}!stat.h@{stat.h}}
+\subsubsection[{MAMA\_\-STAT\_\-LOCKABLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-STAT\_\-LOCKABLE~1}}
+\label{stat_8h_a1dd18f88816664ae43a2580cf4f4c128}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920}{
+\index{stat.h@{stat.h}!mamaStatType@{mamaStatType}}
+\index{mamaStatType@{mamaStatType}!stat.h@{stat.h}}
+\subsubsection[{mamaStatType}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaStatType}}}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-STAT\_\-TYPE\_\-INITIALS@{MAMA\_\-STAT\_\-TYPE\_\-INITIALS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-INITIALS@{MAMA\_\-STAT\_\-TYPE\_\-INITIALS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a56bd2e347434bc9879d0217a86969cfa}{
+MAMA\_\-STAT\_\-TYPE\_\-INITIALS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a56bd2e347434bc9879d0217a86969cfa}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-RECAPS@{MAMA\_\-STAT\_\-TYPE\_\-RECAPS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-RECAPS@{MAMA\_\-STAT\_\-TYPE\_\-RECAPS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ae419b18af375ba39c532e19dc2f8223f}{
+MAMA\_\-STAT\_\-TYPE\_\-RECAPS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ae419b18af375ba39c532e19dc2f8223f}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NUM\_\-MESSAGES@{MAMA\_\-STAT\_\-TYPE\_\-NUM\_\-MESSAGES}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NUM\_\-MESSAGES@{MAMA\_\-STAT\_\-TYPE\_\-NUM\_\-MESSAGES}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a00ddcb3d3b484a75021af0ed872e1d3c}{
+MAMA\_\-STAT\_\-TYPE\_\-NUM\_\-MESSAGES}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a00ddcb3d3b484a75021af0ed872e1d3c}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-FT\_\-TAKEOVERS@{MAMA\_\-STAT\_\-TYPE\_\-FT\_\-TAKEOVERS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-FT\_\-TAKEOVERS@{MAMA\_\-STAT\_\-TYPE\_\-FT\_\-TAKEOVERS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a04e3ef08dc728e099d0db2327c5da08b}{
+MAMA\_\-STAT\_\-TYPE\_\-FT\_\-TAKEOVERS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a04e3ef08dc728e099d0db2327c5da08b}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-QUEUE\_\-SIZE@{MAMA\_\-STAT\_\-TYPE\_\-QUEUE\_\-SIZE}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-QUEUE\_\-SIZE@{MAMA\_\-STAT\_\-TYPE\_\-QUEUE\_\-SIZE}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a1c3e033a4bd269e53d72b5f80fecc2df}{
+MAMA\_\-STAT\_\-TYPE\_\-QUEUE\_\-SIZE}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a1c3e033a4bd269e53d72b5f80fecc2df}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-SUBSCRIPTIONS@{MAMA\_\-STAT\_\-TYPE\_\-SUBSCRIPTIONS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-SUBSCRIPTIONS@{MAMA\_\-STAT\_\-TYPE\_\-SUBSCRIPTIONS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a15f4bb10f92ae0769a23de93b016d4a6}{
+MAMA\_\-STAT\_\-TYPE\_\-SUBSCRIPTIONS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a15f4bb10f92ae0769a23de93b016d4a6}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-TIMEOUTS@{MAMA\_\-STAT\_\-TYPE\_\-TIMEOUTS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-TIMEOUTS@{MAMA\_\-STAT\_\-TYPE\_\-TIMEOUTS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a6f371db4c242dc7d02d77e98ec14cc1b}{
+MAMA\_\-STAT\_\-TYPE\_\-TIMEOUTS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a6f371db4c242dc7d02d77e98ec14cc1b}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-MSG\_\-INDEX@{MAMA\_\-STAT\_\-TYPE\_\-MSG\_\-INDEX}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-MSG\_\-INDEX@{MAMA\_\-STAT\_\-TYPE\_\-MSG\_\-INDEX}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ad65893306f194270573ba6e74c1753b1}{
+MAMA\_\-STAT\_\-TYPE\_\-MSG\_\-INDEX}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ad65893306f194270573ba6e74c1753b1}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NAK\_\-PACKETS\_\-SENT@{MAMA\_\-STAT\_\-TYPE\_\-NAK\_\-PACKETS\_\-SENT}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NAK\_\-PACKETS\_\-SENT@{MAMA\_\-STAT\_\-TYPE\_\-NAK\_\-PACKETS\_\-SENT}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a7d5c83d931a83ef779076f575f0af21e}{
+MAMA\_\-STAT\_\-TYPE\_\-NAK\_\-PACKETS\_\-SENT}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a7d5c83d931a83ef779076f575f0af21e}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NAKS\_\-SENT@{MAMA\_\-STAT\_\-TYPE\_\-NAKS\_\-SENT}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NAKS\_\-SENT@{MAMA\_\-STAT\_\-TYPE\_\-NAKS\_\-SENT}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920afbacad2a164b08a68be898989ceae54b}{
+MAMA\_\-STAT\_\-TYPE\_\-NAKS\_\-SENT}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920afbacad2a164b08a68be898989ceae54b}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-MSGS\_\-LOST@{MAMA\_\-STAT\_\-TYPE\_\-MSGS\_\-LOST}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-MSGS\_\-LOST@{MAMA\_\-STAT\_\-TYPE\_\-MSGS\_\-LOST}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a9b6ef6f8d977ebc877b247c8371f83d7}{
+MAMA\_\-STAT\_\-TYPE\_\-MSGS\_\-LOST}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a9b6ef6f8d977ebc877b247c8371f83d7}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-IGNORE@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-IGNORE}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-IGNORE@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-IGNORE}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8c6b12fec28e3e24c97b456cf6c7190a}{
+MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-IGNORE}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8c6b12fec28e3e24c97b456cf6c7190a}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-SHED@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-SHED}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-SHED@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-SHED}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8954424f7ae6e632d28e4101078ad355}{
+MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-SHED}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8954424f7ae6e632d28e4101078ad355}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-RX\_\-DELAY@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-RX\_\-DELAY}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-RX\_\-DELAY@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-RX\_\-DELAY}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8d57cc3f3b007340e9ed7895c452ec2f}{
+MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-RX\_\-DELAY}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8d57cc3f3b007340e9ed7895c452ec2f}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-UNKNOWN@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-UNKNOWN}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-UNKNOWN@{MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-UNKNOWN}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920af3f9161723b81416dbcf24c49d797e5a}{
+MAMA\_\-STAT\_\-TYPE\_\-NCFS\_\-UNKNOWN}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920af3f9161723b81416dbcf24c49d797e5a}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-DUPLICATE\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-DUPLICATE\_\-MSGS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-DUPLICATE\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-DUPLICATE\_\-MSGS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920af1ee57bf1403572d89788eca4aa1c82b}{
+MAMA\_\-STAT\_\-TYPE\_\-DUPLICATE\_\-MSGS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920af1ee57bf1403572d89788eca4aa1c82b}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-WINDOW\_\-ADVANCE@{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-WINDOW\_\-ADVANCE}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-WINDOW\_\-ADVANCE@{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-WINDOW\_\-ADVANCE}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920aa3ce08a9d1e0bf1b9d038819e9b852f1}{
+MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-WINDOW\_\-ADVANCE}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920aa3ce08a9d1e0bf1b9d038819e9b852f1}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-TIMEOUT@{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-TIMEOUT}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-TIMEOUT@{MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-TIMEOUT}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a1065a0ab5c534ff5ab19b80f2493e715}{
+MAMA\_\-STAT\_\-TYPE\_\-UNRECOVERABLE\_\-TIMEOUT}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a1065a0ab5c534ff5ab19b80f2493e715}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-MSGS\_\-RECEIVED\_\-NO\_\-TOPIC@{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-MSGS\_\-RECEIVED\_\-NO\_\-TOPIC}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-MSGS\_\-RECEIVED\_\-NO\_\-TOPIC@{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-MSGS\_\-RECEIVED\_\-NO\_\-TOPIC}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8625d556c231bba9af9568b8c7c0f147}{
+MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-MSGS\_\-RECEIVED\_\-NO\_\-TOPIC}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8625d556c231bba9af9568b8c7c0f147}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-REQUESTS\_\-RECEIVED@{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-REQUESTS\_\-RECEIVED}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-REQUESTS\_\-RECEIVED@{MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-REQUESTS\_\-RECEIVED}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8df5ede465fb2e14e7d495adc2e40062}{
+MAMA\_\-STAT\_\-TYPE\_\-LBM\_\-REQUESTS\_\-RECEIVED}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8df5ede465fb2e14e7d495adc2e40062}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-WOMBAT\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-WOMBAT\_\-MSGS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-WOMBAT\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-WOMBAT\_\-MSGS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a539af80d051e77acd4eff6222d650995}{
+MAMA\_\-STAT\_\-TYPE\_\-WOMBAT\_\-MSGS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a539af80d051e77acd4eff6222d650995}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-RV\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-RV\_\-MSGS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-RV\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-RV\_\-MSGS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a5214daec471c7e188ca143fbaeeed98b}{
+MAMA\_\-STAT\_\-TYPE\_\-RV\_\-MSGS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a5214daec471c7e188ca143fbaeeed98b}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-FAST\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-FAST\_\-MSGS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-FAST\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-FAST\_\-MSGS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a3afe9cda9b33c3b82192e198dbf9d96c}{
+MAMA\_\-STAT\_\-TYPE\_\-FAST\_\-MSGS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a3afe9cda9b33c3b82192e198dbf9d96c}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN\_\-MSGS}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN\_\-MSGS@{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN\_\-MSGS}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a2593faa1bc5765bb0d54bea8d81a9869}{
+MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN\_\-MSGS}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a2593faa1bc5765bb0d54bea8d81a9869}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-SEND@{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-SEND}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-SEND@{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-SEND}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920aabcb21eb2855f1c0c7f2cfd64b66b64e}{
+MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-SEND}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920aabcb21eb2855f1c0c7f2cfd64b66b64e}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-INBOX\_\-SEND@{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-INBOX\_\-SEND}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-INBOX\_\-SEND@{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-INBOX\_\-SEND}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8a73ed414578670af99d9a8c0bbacea1}{
+MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-INBOX\_\-SEND}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920a8a73ed414578670af99d9a8c0bbacea1}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-REPLY\_\-SEND@{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-REPLY\_\-SEND}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-REPLY\_\-SEND@{MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-REPLY\_\-SEND}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ac8af2d6a6e412048d30cbac1726d2ccb}{
+MAMA\_\-STAT\_\-TYPE\_\-PUBLISHER\_\-REPLY\_\-SEND}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ac8af2d6a6e412048d30cbac1726d2ccb}
+}]\index{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN@{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN}!stat.h@{stat.h}}\index{stat.h@{stat.h}!MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN@{MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN}}\item[{\em 
+\hypertarget{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ae5e9241b5bb2d9354e0eb76d64661ded}{
+MAMA\_\-STAT\_\-TYPE\_\-UNKNOWN}
+\label{stat_8h_a954ec77cbdf2b19992c44d30bbdb1920ae5e9241b5bb2d9354e0eb76d64661ded}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{stat_8h_ab14f498678a775a556e4284a826026be}{
+\index{stat.h@{stat.h}!mamaStat\_\-create@{mamaStat\_\-create}}
+\index{mamaStat\_\-create@{mamaStat\_\-create}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-create ({\bf mamaStat} $\ast$ {\em stat}, \/  {\bf mamaStatsCollector} {\em collector}, \/  int {\em lockable}, \/  const char $\ast$ {\em name}, \/  {\bf mama\_\-fid\_\-t} {\em type})}}
+\label{stat_8h_ab14f498678a775a556e4284a826026be}
+
+
+Create a mamaStats object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The location of a mamaStats to store the result \end{DoxyParams}
+\hypertarget{stat_8h_aeec75655eefaa1ad04641998b4d302d5}{
+\index{stat.h@{stat.h}!mamaStat\_\-destroy@{mamaStat\_\-destroy}}
+\index{mamaStat\_\-destroy@{mamaStat\_\-destroy}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-destroy ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_aeec75655eefaa1ad04641998b4d302d5}
+
+
+Destroy a mamaStats object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stats object to destroy \end{DoxyParams}
+\hypertarget{stat_8h_a384e37ea8e559b50e70bdcba4a55f298}{
+\index{stat.h@{stat.h}!mamaStat\_\-increment@{mamaStat\_\-increment}}
+\index{mamaStat\_\-increment@{mamaStat\_\-increment}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-increment}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-increment ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_a384e37ea8e559b50e70bdcba4a55f298}
+
+
+Increment the stats object counter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stats object to increment \end{DoxyParams}
+\hypertarget{stat_8h_ac3887c13912fea78f9de9b66137168f0}{
+\index{stat.h@{stat.h}!mamaStat\_\-decrement@{mamaStat\_\-decrement}}
+\index{mamaStat\_\-decrement@{mamaStat\_\-decrement}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-decrement}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-decrement ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_ac3887c13912fea78f9de9b66137168f0}
+
+
+Decrement the stats object counter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stats object to decrement \end{DoxyParams}
+\hypertarget{stat_8h_a1180651415825c41b903c9a7e7517b6e}{
+\index{stat.h@{stat.h}!mamaStat\_\-reset@{mamaStat\_\-reset}}
+\index{mamaStat\_\-reset@{mamaStat\_\-reset}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-reset ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_a1180651415825c41b903c9a7e7517b6e}
+
+
+Reset the stats object counter. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object to reset \end{DoxyParams}
+\hypertarget{stat_8h_aa0a37919390b2002fa985f4ae1f75c55}{
+\index{stat.h@{stat.h}!mamaStat\_\-add@{mamaStat\_\-add}}
+\index{mamaStat\_\-add@{mamaStat\_\-add}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-add ({\bf mamaStat} {\em stat}, \/  int {\em value})}}
+\label{stat_8h_aa0a37919390b2002fa985f4ae1f75c55}
+
+
+Adds the stats object counter with the value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stats object to added \item[{\em value}]The value to be added to be stat \end{DoxyParams}
+\hypertarget{stat_8h_a81aff361e513446598c14c8490931503}{
+\index{stat.h@{stat.h}!mamaStat\_\-subtract@{mamaStat\_\-subtract}}
+\index{mamaStat\_\-subtract@{mamaStat\_\-subtract}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-subtract}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-subtract ({\bf mamaStat} {\em stat}, \/  int {\em value})}}
+\label{stat_8h_a81aff361e513446598c14c8490931503}
+
+
+Subtract the stats object counter with the value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stats object to subtracted \item[{\em value}]the value to be subtracted from stat \end{DoxyParams}
+\hypertarget{stat_8h_a0454eb1e065f42577e2995641b7de9f8}{
+\index{stat.h@{stat.h}!mamaStat\_\-setIntervalValue@{mamaStat\_\-setIntervalValue}}
+\index{mamaStat\_\-setIntervalValue@{mamaStat\_\-setIntervalValue}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-setIntervalValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-setIntervalValue ({\bf mamaStat} {\em stat}, \/  int {\em value})}}
+\label{stat_8h_a0454eb1e065f42577e2995641b7de9f8}
+
+
+set the Interval value 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stats object to be changed \item[{\em value}]the value to be used \end{DoxyParams}
+\hypertarget{stat_8h_a6c7e05ad53616634783d6db4754bc328}{
+\index{stat.h@{stat.h}!mamaStat\_\-getFid@{mamaStat\_\-getFid}}
+\index{mamaStat\_\-getFid@{mamaStat\_\-getFid}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getFid}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-fid\_\-t} mamaStat\_\-getFid ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_a6c7e05ad53616634783d6db4754bc328}
+
+
+Get the FID used when publishing the stat via the stats logger. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object from which to get the FID \end{DoxyParams}
+\hypertarget{stat_8h_ab3b5d3638f5aee6a6033bcc11dda2b7e}{
+\index{stat.h@{stat.h}!mamaStat\_\-getIntervalValue@{mamaStat\_\-getIntervalValue}}
+\index{mamaStat\_\-getIntervalValue@{mamaStat\_\-getIntervalValue}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getIntervalValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStat\_\-getIntervalValue ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_ab3b5d3638f5aee6a6033bcc11dda2b7e}
+
+
+Get the value of the stat for the current interval. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object from which to get the invterval value \end{DoxyParams}
+\hypertarget{stat_8h_aa9566cf46c6ed428f0ac874053a5933d}{
+\index{stat.h@{stat.h}!mamaStat\_\-getMaxValue@{mamaStat\_\-getMaxValue}}
+\index{mamaStat\_\-getMaxValue@{mamaStat\_\-getMaxValue}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getMaxValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStat\_\-getMaxValue ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_aa9566cf46c6ed428f0ac874053a5933d}
+
+
+Get the maximum value of the stat. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object from which to get the maximum value \end{DoxyParams}
+\hypertarget{stat_8h_a1bca4001a2bd6d3d26376943fe21caf5}{
+\index{stat.h@{stat.h}!mamaStat\_\-getTotalValue@{mamaStat\_\-getTotalValue}}
+\index{mamaStat\_\-getTotalValue@{mamaStat\_\-getTotalValue}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getTotalValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStat\_\-getTotalValue ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_a1bca4001a2bd6d3d26376943fe21caf5}
+
+
+Get the total value of the stat. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object from which to get the total value \end{DoxyParams}
+\hypertarget{stat_8h_a67c182e2d67b1cea1055dfbea1deaadd}{
+\index{stat.h@{stat.h}!mamaStat\_\-getStats@{mamaStat\_\-getStats}}
+\index{mamaStat\_\-getStats@{mamaStat\_\-getStats}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getStats}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaStat\_\-getStats ({\bf mamaStat} {\em stat}, \/  {\bf mama\_\-i32\_\-t} $\ast$ {\em intervalValue}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em maxValue}, \/  {\bf mama\_\-u32\_\-t} $\ast$ {\em totalValue})}}
+\label{stat_8h_a67c182e2d67b1cea1055dfbea1deaadd}
+
+
+Get the interval, maximum, and total values for the stat. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object from which to get the values \item[{\em intervalValue}]Address to which the interval value will be written \item[{\em maxValue}]Address to which the maximum value will be written \item[{\em totalValue}]Address to which the total value will be written \end{DoxyParams}
+\hypertarget{stat_8h_a5722299df7e1712f319e38a47efea3de}{
+\index{stat.h@{stat.h}!mamaStat\_\-getName@{mamaStat\_\-getName}}
+\index{mamaStat\_\-getName@{mamaStat\_\-getName}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaStat\_\-getName ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_a5722299df7e1712f319e38a47efea3de}
+
+
+Get the name of the stat. 
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]stat object from which to get the name \end{DoxyParams}
+\hypertarget{stat_8h_a99a28dfde243f4ea6d9b87e37c6cd943}{
+\index{stat.h@{stat.h}!mamaStat\_\-setLog@{mamaStat\_\-setLog}}
+\index{mamaStat\_\-setLog@{mamaStat\_\-setLog}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-setLog}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-setLog ({\bf mamaStat} {\em stat}, \/  int {\em log})}}
+\label{stat_8h_a99a28dfde243f4ea6d9b87e37c6cd943}
+
+
+Set whether or not this stat should be logged in the MAMA log. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object to set logging for \item[{\em log}]Whether or not to log the stat \end{DoxyParams}
+\hypertarget{stat_8h_af5d7a3b87d3151532759b8924bef1623}{
+\index{stat.h@{stat.h}!mamaStat\_\-getLog@{mamaStat\_\-getLog}}
+\index{mamaStat\_\-getLog@{mamaStat\_\-getLog}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getLog}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStat\_\-getLog ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_af5d7a3b87d3151532759b8924bef1623}
+
+
+Returns whether or not the stat is currently being logged to the MAMA log. 
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]stat object to get logging for \end{DoxyParams}
+\hypertarget{stat_8h_a373bac5059a81fc674ce027c77ce3165}{
+\index{stat.h@{stat.h}!mamaStat\_\-setPublish@{mamaStat\_\-setPublish}}
+\index{mamaStat\_\-setPublish@{mamaStat\_\-setPublish}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-setPublish}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStat\_\-setPublish ({\bf mamaStat} {\em stat}, \/  int {\em publish})}}
+\label{stat_8h_a373bac5059a81fc674ce027c77ce3165}
+
+
+Set whether or not to publish this stat. stat The stat object to set publishing for  publish Whether or not to publish the stat \hypertarget{stat_8h_a7346812f7804f5f98e450764d6e22f42}{
+\index{stat.h@{stat.h}!mamaStat\_\-getPublish@{mamaStat\_\-getPublish}}
+\index{mamaStat\_\-getPublish@{mamaStat\_\-getPublish}!stat.h@{stat.h}}
+\subsubsection[{mamaStat\_\-getPublish}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaStat\_\-getPublish ({\bf mamaStat} {\em stat})}}
+\label{stat_8h_a7346812f7804f5f98e450764d6e22f42}
+
+
+Returns whether or not the stat is currently being published. 
+\begin{DoxyParams}{Parameters}
+\item[{\em stat}]The stat object to check whether or not it is being published \end{DoxyParams}
+\hypertarget{stat_8h_abd2a008b31f7a6fe6af783c8568b2a6c}{
+\index{stat.h@{stat.h}!mamaStatType\_\-fromString@{mamaStatType\_\-fromString}}
+\index{mamaStatType\_\-fromString@{mamaStatType\_\-fromString}!stat.h@{stat.h}}
+\subsubsection[{mamaStatType\_\-fromString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaStatType} mamaStatType\_\-fromString (const char $\ast$ {\em statTypeString})}}
+\label{stat_8h_abd2a008b31f7a6fe6af783c8568b2a6c}
+
+
+Returns a mamaStatType from a string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statTypeString}]The stat type as a string \end{DoxyParams}
+\hypertarget{stat_8h_ac3d26647d491797293f249cfc4274adf}{
+\index{stat.h@{stat.h}!mamaStatType\_\-toString@{mamaStatType\_\-toString}}
+\index{mamaStatType\_\-toString@{mamaStatType\_\-toString}!stat.h@{stat.h}}
+\subsubsection[{mamaStatType\_\-toString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaStatType\_\-toString ({\bf mamaStatType} {\em statType})}}
+\label{stat_8h_ac3d26647d491797293f249cfc4274adf}
+
+
+Returns a string representation of a mamaStatType. 
+\begin{DoxyParams}{Parameters}
+\item[{\em statType}]The statType to return as a string \end{DoxyParams}

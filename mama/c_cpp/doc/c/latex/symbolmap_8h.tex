@@ -1,0 +1,26 @@
+\hypertarget{symbolmap_8h}{
+\section{symbolmap.h File Reference}
+\label{symbolmap_8h}\index{symbolmap.h@{symbolmap.h}}
+}
+{\ttfamily \#include $<$mama/types.h$>$}\par
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int(MAMACALLTYPE $\ast$ \hyperlink{symbolmap_8h_a3d357d3ec24c8bf6ed1dff2d45a1c769}{mamaSymbolMapFunc} )(void $\ast$\hyperlink{symbollist_8h_a70fd461795e10b081f5828521a66c949}{closure}, char $\ast$result, const char $\ast$symbol, size\_\-t maxLen)
+\begin{DoxyCompactList}\small\item\em Prototype for symbol-\/mapping function. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{symbolmap_8h_a3d357d3ec24c8bf6ed1dff2d45a1c769}{
+\index{symbolmap.h@{symbolmap.h}!mamaSymbolMapFunc@{mamaSymbolMapFunc}}
+\index{mamaSymbolMapFunc@{mamaSymbolMapFunc}!symbolmap.h@{symbolmap.h}}
+\subsubsection[{mamaSymbolMapFunc}]{\setlength{\rightskip}{0pt plus 5cm}typedef int(MAMACALLTYPE $\ast$ {\bf mamaSymbolMapFunc})(void $\ast${\bf closure}, char $\ast$result, const char $\ast$symbol, size\_\-t maxLen)}}
+\label{symbolmap_8h_a3d357d3ec24c8bf6ed1dff2d45a1c769}
+
+
+Prototype for symbol-\/mapping function. 
+\begin{DoxyParams}{Parameters}
+\item[{\em closure}]Caller supplied closure. \item[{\em result}]The resulting symbol after mapping. \item[{\em symbol}]The symbol to be mapped. \item[{\em maxLen}]The maximum length of the mapped symbol (i.e., \char`\"{}result\char`\"{}), including trailing NULL.\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether a mapping for the symbol was found. 
+\end{DoxyReturn}

@@ -1,0 +1,562 @@
+\hypertarget{price_8h}{
+\section{price.h File Reference}
+\label{price_8h}\index{price.h@{price.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{price_8h_aa828122a125a33c371c4d6889d0fc7d4}{MAMA\_\-PRICE\_\-HINTS\_\-NONE}~((\hyperlink{price_8h_ab816fd3b036552bbd4ac2006302529e5}{mamaPriceHints})0x00)
+\item 
+\#define \hyperlink{price_8h_a54d686ae679c0e2aa325ae9828559061}{MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN}~(32)
+\item 
+\#define \hyperlink{price_8h_a0a079eeddeff93c43947f3c28396675e}{MAMA\_\-PRICE\_\-EPSILON}~((\hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t})0.00000000001)
+\begin{DoxyCompactList}\small\item\em MAMA\_\-PRICE\_\-EPSILON a value that is considered equivalent to zero. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1}{mamaPricePrecision\_\-} \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision}
+\item 
+typedef \hyperlink{types_8h_a1972ba1a9b196ce449e5142efaaf66c7}{mama\_\-u8\_\-t} \hyperlink{price_8h_ab816fd3b036552bbd4ac2006302529e5}{mamaPriceHints}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1}{mamaPricePrecision\_\-} \{ \par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a7db702ed5272b717343be81e96da81ca}{MAMA\_\-PRICE\_\-PREC\_\-UNKNOWN} =  0, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ab7e5c862e1a93f16090901c7f5406ea0}{MAMA\_\-PRICE\_\-PREC\_\-10} =  1, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a7fb0fb4ac1e0130b3546fff24c68b26f}{MAMA\_\-PRICE\_\-PREC\_\-100} =  2, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5543b5e5e32450db08ef3a6d4933c47a}{MAMA\_\-PRICE\_\-PREC\_\-1000} =  3, 
+\par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a0bbe51d5b34bc97e685342127096eb26}{MAMA\_\-PRICE\_\-PREC\_\-10000} =  4, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1acf0c837d3e88bed78c40947d448136fb}{MAMA\_\-PRICE\_\-PREC\_\-100000} =  5, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aaad5c922b0b25f3618bdff3ec0288b2a}{MAMA\_\-PRICE\_\-PREC\_\-1000000} =  6, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a00def8021b2f76503aa10a56334ab00e}{MAMA\_\-PRICE\_\-PREC\_\-10000000} =  7, 
+\par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1acad9b61cc3ca4928347b6e96c2e2a71e}{MAMA\_\-PRICE\_\-PREC\_\-100000000} =  8, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ad8ead4f1912195ea7bd25ad54f1ee0af}{MAMA\_\-PRICE\_\-PREC\_\-1000000000} =  9, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ab6f75fd366ffd0fb8bddee77904b9490}{MAMA\_\-PRICE\_\-PREC\_\-10000000000} =  10, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a97a2722b598d3daf05ea85ac61094ae9}{MAMA\_\-PRICE\_\-PREC\_\-INT} =  16, 
+\par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a8da376c1bffc9981b9c5e10b3d4d6145}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-2} =  17, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ae3e3a79b4edcefe6f773530e55f21f98}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-4} =  18, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a91c735030ff5c232dc454f6b5d75115e}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-8} =  19, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a802f81539b66f91002e12da48ebdd309}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-16} =  20, 
+\par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1af25b4e812cbb8ac268227cbecc731250}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-32} =  21, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aa92a3f2230ad1becbbe2e4eb95da6333}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-64} =  22, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a505678950261d439951c87ee05519c58}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-128} =  23, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9b3f5a81f98207fc25024c666c5d2626}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-256} =  24, 
+\par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9fb11721c012f0d433e2f0a66dccf7fd}{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-512} =  25, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a00fdf276e944bbb99d0742405690903a}{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-32} =  26, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5e12c08798d673fb0d573c057cc2eaf0}{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-32} =  27, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a3a8ddaa5ab03aaf76e7eaf374e797ed0}{MAMA\_\-PRICE\_\-PREC\_\-QUARTER\_\-32} =  28, 
+\par
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5f87273b2c905b36e612118d1b0702ec}{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-64} =  29, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aa063e36ff4cd035c4420fb35b0361c1c}{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-64} =  30, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a6394dcffe1249243226593f24ab4bd2f}{MAMA\_\-PRICE\_\-PREC\_\-CENTS} =  MAMA\_\-PRICE\_\-PREC\_\-100, 
+\hyperlink{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9d1a219b46d85b623b1330a049daaa60}{MAMA\_\-PRICE\_\-PREC\_\-PENNIES} =  MAMA\_\-PRICE\_\-PREC\_\-100
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_aae28d7896ec67be0a1caf51ee820ab37}{mamaPrice\_\-create} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} $\ast$price)
+\begin{DoxyCompactList}\small\item\em Create a mamaPrice object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_ad92c46fda6a2a762a8ed1316151a1cc0}{mamaPrice\_\-destroy} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaPrice object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_ad9def55a03a5ee9a0a2bfee7e5331a89}{mamaPrice\_\-clear} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price)
+\begin{DoxyCompactList}\small\item\em Clear a mamaPrice object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_aa996ea78927c3abcd2c689a066d1bd2b}{mamaPrice\_\-copy} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} dest, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} src)
+\begin{DoxyCompactList}\small\item\em Copy a price object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a1df14fb82fb1ffd2af7b5c670436158c}{mamaPrice\_\-add} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} dest, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} rhs)
+\begin{DoxyCompactList}\small\item\em Add to a price object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a77bc8f1a7ba43879b52216d0e0e7ea30}{mamaPrice\_\-subtract} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} dest, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} rhs)
+\begin{DoxyCompactList}\small\item\em Subtract from a price object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{price_8h_ad529ed795b8fe8169fee788f67bb7af0}{mamaPrice\_\-equal} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} lhs, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} rhs)
+\begin{DoxyCompactList}\small\item\em Check for equality between two price objects. \item\end{DoxyCompactList}\item 
+MAMAExpDLL double \hyperlink{price_8h_a2a530f9fbf9bda43939c101eea74813a}{mamaPrice\_\-compare} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} lhs, const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} rhs)
+\begin{DoxyCompactList}\small\item\em Compare two price objects. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_ad84e06e77bf8bd8af21c09f48e5fd917}{mamaPrice\_\-setValue} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, double value)
+\begin{DoxyCompactList}\small\item\em Set the price value only (no hint information). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a411a852e470e3c95b667c74e1d2d6bc9}{mamaPrice\_\-setPrecision} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} precision)
+\begin{DoxyCompactList}\small\item\em Set the price precision. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a067d895b61834c90838baa3be953b1af}{mamaPrice\_\-setIsValidPrice} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} valid)
+\begin{DoxyCompactList}\small\item\em Set if price contains a valid value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a52c45586b5fb03aa03b95a2fdf55ce57}{mamaPrice\_\-setHints} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{price_8h_ab816fd3b036552bbd4ac2006302529e5}{mamaPriceHints} hints)
+\begin{DoxyCompactList}\small\item\em Set all of the price hints. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a7ffa8153248858621b46499cf509c6ab}{mamaPrice\_\-setWithHints} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, double value, \hyperlink{price_8h_ab816fd3b036552bbd4ac2006302529e5}{mamaPriceHints} hints)
+\begin{DoxyCompactList}\small\item\em Set the price with hint information. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a4977056bf1a3324f116033f8717a1e8f}{mamaPrice\_\-setFromString} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, const char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Set the price from a string representation, preserving any detectable hints. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_ac58ce71ffc55b240cc4a91aa3a036fc1}{mamaPrice\_\-getValue} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, double $\ast$value)
+\begin{DoxyCompactList}\small\item\em Get the price value only. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a3f1d69658b84ed17c80b3058a3cf2e86}{mamaPrice\_\-getRoundedValue} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, const \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} precision, double $\ast$value)
+\begin{DoxyCompactList}\small\item\em This function obtains the double value of a price rounded to the supplied precision. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a28cc41e3fc4ed9edae6911bb604d2bee}{mamaPrice\_\-getPrecision} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} $\ast$precision)
+\begin{DoxyCompactList}\small\item\em Get the price precision. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a8aea7312e5b176ce2daf3366a0c2711a}{mamaPrice\_\-getIsValidPrice} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$valid)
+\begin{DoxyCompactList}\small\item\em Check if price contains a valid value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a84605947cfd6c353bf02433485e6cab2}{mamaPrice\_\-getHints} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{price_8h_ab816fd3b036552bbd4ac2006302529e5}{mamaPriceHints} $\ast$hints)
+\begin{DoxyCompactList}\small\item\em Get the price hints. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a2dd6b46e6d3f1b7068a9f33bdb30f03e}{mamaPrice\_\-getWithHints} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, double $\ast$value, \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} $\ast$precision)
+\begin{DoxyCompactList}\small\item\em Get the price with special, optional hints. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_ac0afc5b5a742879597e92ec58eeec1a7}{mamaPrice\_\-getAsString} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Get the price as a string, formatted according to the hints provided. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_a1f030d71cadd187cd7b5c9fe10ac3636}{mamaPrice\_\-negate} (\hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price)
+\begin{DoxyCompactList}\small\item\em Negate the price value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{price_8h_af74574ddb9983adf950ec71d709f7e39}{mamaPrice\_\-isZero} (const \hyperlink{types_8h_a894e5abfca837f6a764f286f36255e50}{mamaPrice} price, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Return whether the price has a value equivalent to zero. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} \hyperlink{price_8h_a92e5f64d646b2b0fd07d51b70a601c0a}{mamaPrice\_\-decimals2Precision} (\hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} places)
+\begin{DoxyCompactList}\small\item\em Return the appropriate precision code for a given number of decimal places. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} \hyperlink{price_8h_af4c0cad0a93987bab55ac4bee1f456ce}{mamaPrice\_\-denom2Precision} (\hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} denominator)
+\begin{DoxyCompactList}\small\item\em Return the appropriate precision code for a given fractional denominator. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} \hyperlink{price_8h_a823d20dde9a1c8f52a523cf1b6b277e6}{mamaPrice\_\-precision2Decimals} (\hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} precision)
+\begin{DoxyCompactList}\small\item\em Return the number of decimal places for a given precision code. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} \hyperlink{price_8h_aa67db8bc693678fa7aa0aa85b3e2bc25}{mamaPrice\_\-precision2Denom} (\hyperlink{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{mamaPricePrecision} precision)
+\begin{DoxyCompactList}\small\item\em Return the fractional denominator for a given precision code. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{price_8h_aa828122a125a33c371c4d6889d0fc7d4}{
+\index{price.h@{price.h}!MAMA\_\-PRICE\_\-HINTS\_\-NONE@{MAMA\_\-PRICE\_\-HINTS\_\-NONE}}
+\index{MAMA\_\-PRICE\_\-HINTS\_\-NONE@{MAMA\_\-PRICE\_\-HINTS\_\-NONE}!price.h@{price.h}}
+\subsubsection[{MAMA\_\-PRICE\_\-HINTS\_\-NONE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-PRICE\_\-HINTS\_\-NONE~(({\bf mamaPriceHints})0x00)}}
+\label{price_8h_aa828122a125a33c371c4d6889d0fc7d4}
+\hypertarget{price_8h_a54d686ae679c0e2aa325ae9828559061}{
+\index{price.h@{price.h}!MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN@{MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN}}
+\index{MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN@{MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN}!price.h@{price.h}}
+\subsubsection[{MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-PRICE\_\-MAX\_\-STR\_\-LEN~(32)}}
+\label{price_8h_a54d686ae679c0e2aa325ae9828559061}
+\hypertarget{price_8h_a0a079eeddeff93c43947f3c28396675e}{
+\index{price.h@{price.h}!MAMA\_\-PRICE\_\-EPSILON@{MAMA\_\-PRICE\_\-EPSILON}}
+\index{MAMA\_\-PRICE\_\-EPSILON@{MAMA\_\-PRICE\_\-EPSILON}!price.h@{price.h}}
+\subsubsection[{MAMA\_\-PRICE\_\-EPSILON}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-PRICE\_\-EPSILON~(({\bf mama\_\-f64\_\-t})0.00000000001)}}
+\label{price_8h_a0a079eeddeff93c43947f3c28396675e}
+
+
+MAMA\_\-PRICE\_\-EPSILON a value that is considered equivalent to zero. 
+
+\subsection{Typedef Documentation}
+\hypertarget{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}{
+\index{price.h@{price.h}!mamaPricePrecision@{mamaPricePrecision}}
+\index{mamaPricePrecision@{mamaPricePrecision}!price.h@{price.h}}
+\subsubsection[{mamaPricePrecision}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaPricePrecision\_\-}  {\bf mamaPricePrecision}}}
+\label{price_8h_a33fc5dc6e60ffd9d89881dfe49b1b357}
+\hypertarget{price_8h_ab816fd3b036552bbd4ac2006302529e5}{
+\index{price.h@{price.h}!mamaPriceHints@{mamaPriceHints}}
+\index{mamaPriceHints@{mamaPriceHints}!price.h@{price.h}}
+\subsubsection[{mamaPriceHints}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf mama\_\-u8\_\-t} {\bf mamaPriceHints}}}
+\label{price_8h_ab816fd3b036552bbd4ac2006302529e5}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1}{
+\index{price.h@{price.h}!mamaPricePrecision\_\-@{mamaPricePrecision\_\-}}
+\index{mamaPricePrecision\_\-@{mamaPricePrecision\_\-}!price.h@{price.h}}
+\subsubsection[{mamaPricePrecision\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaPricePrecision\_\-}}}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-PRICE\_\-PREC\_\-UNKNOWN@{MAMA\_\-PRICE\_\-PREC\_\-UNKNOWN}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-UNKNOWN@{MAMA\_\-PRICE\_\-PREC\_\-UNKNOWN}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a7db702ed5272b717343be81e96da81ca}{
+MAMA\_\-PRICE\_\-PREC\_\-UNKNOWN}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a7db702ed5272b717343be81e96da81ca}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-10@{MAMA\_\-PRICE\_\-PREC\_\-10}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-10@{MAMA\_\-PRICE\_\-PREC\_\-10}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ab7e5c862e1a93f16090901c7f5406ea0}{
+MAMA\_\-PRICE\_\-PREC\_\-10}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ab7e5c862e1a93f16090901c7f5406ea0}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-100@{MAMA\_\-PRICE\_\-PREC\_\-100}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-100@{MAMA\_\-PRICE\_\-PREC\_\-100}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a7fb0fb4ac1e0130b3546fff24c68b26f}{
+MAMA\_\-PRICE\_\-PREC\_\-100}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a7fb0fb4ac1e0130b3546fff24c68b26f}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-1000@{MAMA\_\-PRICE\_\-PREC\_\-1000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-1000@{MAMA\_\-PRICE\_\-PREC\_\-1000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5543b5e5e32450db08ef3a6d4933c47a}{
+MAMA\_\-PRICE\_\-PREC\_\-1000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5543b5e5e32450db08ef3a6d4933c47a}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-10000@{MAMA\_\-PRICE\_\-PREC\_\-10000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-10000@{MAMA\_\-PRICE\_\-PREC\_\-10000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a0bbe51d5b34bc97e685342127096eb26}{
+MAMA\_\-PRICE\_\-PREC\_\-10000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a0bbe51d5b34bc97e685342127096eb26}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-100000@{MAMA\_\-PRICE\_\-PREC\_\-100000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-100000@{MAMA\_\-PRICE\_\-PREC\_\-100000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1acf0c837d3e88bed78c40947d448136fb}{
+MAMA\_\-PRICE\_\-PREC\_\-100000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1acf0c837d3e88bed78c40947d448136fb}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-1000000@{MAMA\_\-PRICE\_\-PREC\_\-1000000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-1000000@{MAMA\_\-PRICE\_\-PREC\_\-1000000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aaad5c922b0b25f3618bdff3ec0288b2a}{
+MAMA\_\-PRICE\_\-PREC\_\-1000000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aaad5c922b0b25f3618bdff3ec0288b2a}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-10000000@{MAMA\_\-PRICE\_\-PREC\_\-10000000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-10000000@{MAMA\_\-PRICE\_\-PREC\_\-10000000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a00def8021b2f76503aa10a56334ab00e}{
+MAMA\_\-PRICE\_\-PREC\_\-10000000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a00def8021b2f76503aa10a56334ab00e}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-100000000@{MAMA\_\-PRICE\_\-PREC\_\-100000000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-100000000@{MAMA\_\-PRICE\_\-PREC\_\-100000000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1acad9b61cc3ca4928347b6e96c2e2a71e}{
+MAMA\_\-PRICE\_\-PREC\_\-100000000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1acad9b61cc3ca4928347b6e96c2e2a71e}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-1000000000@{MAMA\_\-PRICE\_\-PREC\_\-1000000000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-1000000000@{MAMA\_\-PRICE\_\-PREC\_\-1000000000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ad8ead4f1912195ea7bd25ad54f1ee0af}{
+MAMA\_\-PRICE\_\-PREC\_\-1000000000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ad8ead4f1912195ea7bd25ad54f1ee0af}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-10000000000@{MAMA\_\-PRICE\_\-PREC\_\-10000000000}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-10000000000@{MAMA\_\-PRICE\_\-PREC\_\-10000000000}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ab6f75fd366ffd0fb8bddee77904b9490}{
+MAMA\_\-PRICE\_\-PREC\_\-10000000000}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ab6f75fd366ffd0fb8bddee77904b9490}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-INT@{MAMA\_\-PRICE\_\-PREC\_\-INT}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-INT@{MAMA\_\-PRICE\_\-PREC\_\-INT}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a97a2722b598d3daf05ea85ac61094ae9}{
+MAMA\_\-PRICE\_\-PREC\_\-INT}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a97a2722b598d3daf05ea85ac61094ae9}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-2@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-2}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-2@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-2}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a8da376c1bffc9981b9c5e10b3d4d6145}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-2}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a8da376c1bffc9981b9c5e10b3d4d6145}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-4@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-4}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-4@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-4}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ae3e3a79b4edcefe6f773530e55f21f98}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-4}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1ae3e3a79b4edcefe6f773530e55f21f98}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-8@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-8}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-8@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-8}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a91c735030ff5c232dc454f6b5d75115e}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-8}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a91c735030ff5c232dc454f6b5d75115e}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-16@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-16}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-16@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-16}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a802f81539b66f91002e12da48ebdd309}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-16}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a802f81539b66f91002e12da48ebdd309}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-32}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-32}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1af25b4e812cbb8ac268227cbecc731250}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-32}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1af25b4e812cbb8ac268227cbecc731250}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-64@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-64}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-64@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-64}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aa92a3f2230ad1becbbe2e4eb95da6333}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-64}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aa92a3f2230ad1becbbe2e4eb95da6333}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-128@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-128}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-128@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-128}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a505678950261d439951c87ee05519c58}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-128}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a505678950261d439951c87ee05519c58}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-256@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-256}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-256@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-256}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9b3f5a81f98207fc25024c666c5d2626}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-256}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9b3f5a81f98207fc25024c666c5d2626}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-512@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-512}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-512@{MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-512}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9fb11721c012f0d433e2f0a66dccf7fd}{
+MAMA\_\-PRICE\_\-PREC\_\-DIV\_\-512}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9fb11721c012f0d433e2f0a66dccf7fd}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-32}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-32}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a00fdf276e944bbb99d0742405690903a}{
+MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-32}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a00fdf276e944bbb99d0742405690903a}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-32}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-32}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5e12c08798d673fb0d573c057cc2eaf0}{
+MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-32}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5e12c08798d673fb0d573c057cc2eaf0}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-QUARTER\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-QUARTER\_\-32}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-QUARTER\_\-32@{MAMA\_\-PRICE\_\-PREC\_\-QUARTER\_\-32}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a3a8ddaa5ab03aaf76e7eaf374e797ed0}{
+MAMA\_\-PRICE\_\-PREC\_\-QUARTER\_\-32}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a3a8ddaa5ab03aaf76e7eaf374e797ed0}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-64@{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-64}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-64@{MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-64}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5f87273b2c905b36e612118d1b0702ec}{
+MAMA\_\-PRICE\_\-PREC\_\-TICK\_\-64}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a5f87273b2c905b36e612118d1b0702ec}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-64@{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-64}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-64@{MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-64}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aa063e36ff4cd035c4420fb35b0361c1c}{
+MAMA\_\-PRICE\_\-PREC\_\-HALF\_\-64}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1aa063e36ff4cd035c4420fb35b0361c1c}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-CENTS@{MAMA\_\-PRICE\_\-PREC\_\-CENTS}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-CENTS@{MAMA\_\-PRICE\_\-PREC\_\-CENTS}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a6394dcffe1249243226593f24ab4bd2f}{
+MAMA\_\-PRICE\_\-PREC\_\-CENTS}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a6394dcffe1249243226593f24ab4bd2f}
+}]\index{MAMA\_\-PRICE\_\-PREC\_\-PENNIES@{MAMA\_\-PRICE\_\-PREC\_\-PENNIES}!price.h@{price.h}}\index{price.h@{price.h}!MAMA\_\-PRICE\_\-PREC\_\-PENNIES@{MAMA\_\-PRICE\_\-PREC\_\-PENNIES}}\item[{\em 
+\hypertarget{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9d1a219b46d85b623b1330a049daaa60}{
+MAMA\_\-PRICE\_\-PREC\_\-PENNIES}
+\label{price_8h_a7f1862f7a1e778957eb1acd0ff52e7d1a9d1a219b46d85b623b1330a049daaa60}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{price_8h_aae28d7896ec67be0a1caf51ee820ab37}{
+\index{price.h@{price.h}!mamaPrice\_\-create@{mamaPrice\_\-create}}
+\index{mamaPrice\_\-create@{mamaPrice\_\-create}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-create ({\bf mamaPrice} $\ast$ {\em price})}}
+\label{price_8h_aae28d7896ec67be0a1caf51ee820ab37}
+
+
+Create a mamaPrice object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The location of a mamaPrice where to store the result. \end{DoxyParams}
+\hypertarget{price_8h_ad92c46fda6a2a762a8ed1316151a1cc0}{
+\index{price.h@{price.h}!mamaPrice\_\-destroy@{mamaPrice\_\-destroy}}
+\index{mamaPrice\_\-destroy@{mamaPrice\_\-destroy}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-destroy ({\bf mamaPrice} {\em price})}}
+\label{price_8h_ad92c46fda6a2a762a8ed1316151a1cc0}
+
+
+Destroy a mamaPrice object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price object to destroy. \end{DoxyParams}
+\hypertarget{price_8h_ad9def55a03a5ee9a0a2bfee7e5331a89}{
+\index{price.h@{price.h}!mamaPrice\_\-clear@{mamaPrice\_\-clear}}
+\index{mamaPrice\_\-clear@{mamaPrice\_\-clear}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-clear ({\bf mamaPrice} {\em price})}}
+\label{price_8h_ad9def55a03a5ee9a0a2bfee7e5331a89}
+
+
+Clear a mamaPrice object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price object to clear. \end{DoxyParams}
+\hypertarget{price_8h_aa996ea78927c3abcd2c689a066d1bd2b}{
+\index{price.h@{price.h}!mamaPrice\_\-copy@{mamaPrice\_\-copy}}
+\index{mamaPrice\_\-copy@{mamaPrice\_\-copy}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-copy ({\bf mamaPrice} {\em dest}, \/  const {\bf mamaPrice} {\em src})}}
+\label{price_8h_aa996ea78927c3abcd2c689a066d1bd2b}
+
+
+Copy a price object. The destination object must have already been allocated using \hyperlink{price_8h_aae28d7896ec67be0a1caf51ee820ab37}{mamaPrice\_\-create()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em copy}]The destination price. \item[{\em src}]The price to copy. \end{DoxyParams}
+\hypertarget{price_8h_a1df14fb82fb1ffd2af7b5c670436158c}{
+\index{price.h@{price.h}!mamaPrice\_\-add@{mamaPrice\_\-add}}
+\index{mamaPrice\_\-add@{mamaPrice\_\-add}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-add ({\bf mamaPrice} {\em dest}, \/  const {\bf mamaPrice} {\em rhs})}}
+\label{price_8h_a1df14fb82fb1ffd2af7b5c670436158c}
+
+
+Add to a price object. The destination object must have already been allocated using \hyperlink{price_8h_aae28d7896ec67be0a1caf51ee820ab37}{mamaPrice\_\-create()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dest}]The price to add to. \item[{\em rhs}]The price to add. \end{DoxyParams}
+\hypertarget{price_8h_a77bc8f1a7ba43879b52216d0e0e7ea30}{
+\index{price.h@{price.h}!mamaPrice\_\-subtract@{mamaPrice\_\-subtract}}
+\index{mamaPrice\_\-subtract@{mamaPrice\_\-subtract}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-subtract}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-subtract ({\bf mamaPrice} {\em dest}, \/  const {\bf mamaPrice} {\em rhs})}}
+\label{price_8h_a77bc8f1a7ba43879b52216d0e0e7ea30}
+
+
+Subtract from a price object. The destination object must have already been allocated using \hyperlink{price_8h_aae28d7896ec67be0a1caf51ee820ab37}{mamaPrice\_\-create()}.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em dest}]The price to subtract from. \item[{\em src}]The price to subtract. \end{DoxyParams}
+\hypertarget{price_8h_ad529ed795b8fe8169fee788f67bb7af0}{
+\index{price.h@{price.h}!mamaPrice\_\-equal@{mamaPrice\_\-equal}}
+\index{mamaPrice\_\-equal@{mamaPrice\_\-equal}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-equal}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaPrice\_\-equal (const {\bf mamaPrice} {\em lhs}, \/  const {\bf mamaPrice} {\em rhs})}}
+\label{price_8h_ad529ed795b8fe8169fee788f67bb7af0}
+
+
+Check for equality between two price objects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em lhs}]The first price to compare. \item[{\em rhs}]The second price to compare. \end{DoxyParams}
+\hypertarget{price_8h_a2a530f9fbf9bda43939c101eea74813a}{
+\index{price.h@{price.h}!mamaPrice\_\-compare@{mamaPrice\_\-compare}}
+\index{mamaPrice\_\-compare@{mamaPrice\_\-compare}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-compare}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL double mamaPrice\_\-compare (const {\bf mamaPrice} {\em lhs}, \/  const {\bf mamaPrice} {\em rhs})}}
+\label{price_8h_a2a530f9fbf9bda43939c101eea74813a}
+
+
+Compare two price objects. The return value is negative if lhs is earlier than rhs, positive if lhs is greater than rhs and zero if the two are equal.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em lhs}]The first price to compare. \item[{\em rhs}]The second price to compare. \end{DoxyParams}
+\hypertarget{price_8h_ad84e06e77bf8bd8af21c09f48e5fd917}{
+\index{price.h@{price.h}!mamaPrice\_\-setValue@{mamaPrice\_\-setValue}}
+\index{mamaPrice\_\-setValue@{mamaPrice\_\-setValue}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-setValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-setValue ({\bf mamaPrice} {\em price}, \/  double {\em value})}}
+\label{price_8h_ad84e06e77bf8bd8af21c09f48e5fd917}
+
+
+Set the price value only (no hint information). 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em value}]The value to set. \end{DoxyParams}
+\hypertarget{price_8h_a411a852e470e3c95b667c74e1d2d6bc9}{
+\index{price.h@{price.h}!mamaPrice\_\-setPrecision@{mamaPrice\_\-setPrecision}}
+\index{mamaPrice\_\-setPrecision@{mamaPrice\_\-setPrecision}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-setPrecision}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-setPrecision ({\bf mamaPrice} {\em price}, \/  {\bf mamaPricePrecision} {\em precision})}}
+\label{price_8h_a411a852e470e3c95b667c74e1d2d6bc9}
+
+
+Set the price precision. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em precision}]The precision for the price. \end{DoxyParams}
+\hypertarget{price_8h_a067d895b61834c90838baa3be953b1af}{
+\index{price.h@{price.h}!mamaPrice\_\-setIsValidPrice@{mamaPrice\_\-setIsValidPrice}}
+\index{mamaPrice\_\-setIsValidPrice@{mamaPrice\_\-setIsValidPrice}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-setIsValidPrice}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-setIsValidPrice ({\bf mamaPrice} {\em price}, \/  {\bf mama\_\-bool\_\-t} {\em valid})}}
+\label{price_8h_a067d895b61834c90838baa3be953b1af}
+
+
+Set if price contains a valid value. (0 may be a valid value)
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em valid}]If price contains a valid value. \end{DoxyParams}
+\hypertarget{price_8h_a52c45586b5fb03aa03b95a2fdf55ce57}{
+\index{price.h@{price.h}!mamaPrice\_\-setHints@{mamaPrice\_\-setHints}}
+\index{mamaPrice\_\-setHints@{mamaPrice\_\-setHints}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-setHints}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-setHints ({\bf mamaPrice} {\em price}, \/  {\bf mamaPriceHints} {\em hints})}}
+\label{price_8h_a52c45586b5fb03aa03b95a2fdf55ce57}
+
+
+Set all of the price hints. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em hints}]The hints for the price. \end{DoxyParams}
+\hypertarget{price_8h_a7ffa8153248858621b46499cf509c6ab}{
+\index{price.h@{price.h}!mamaPrice\_\-setWithHints@{mamaPrice\_\-setWithHints}}
+\index{mamaPrice\_\-setWithHints@{mamaPrice\_\-setWithHints}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-setWithHints}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-setWithHints ({\bf mamaPrice} {\em price}, \/  double {\em value}, \/  {\bf mamaPriceHints} {\em hints})}}
+\label{price_8h_a7ffa8153248858621b46499cf509c6ab}
+
+
+Set the price with hint information. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em value}]The value to set. \item[{\em hints}]The price hints. \end{DoxyParams}
+\hypertarget{price_8h_a4977056bf1a3324f116033f8717a1e8f}{
+\index{price.h@{price.h}!mamaPrice\_\-setFromString@{mamaPrice\_\-setFromString}}
+\index{mamaPrice\_\-setFromString@{mamaPrice\_\-setFromString}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-setFromString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-setFromString ({\bf mamaPrice} {\em price}, \/  const char $\ast$ {\em str})}}
+\label{price_8h_a4977056bf1a3324f116033f8717a1e8f}
+
+
+Set the price from a string representation, preserving any detectable hints. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em str}]The string representation of some price. \end{DoxyParams}
+\hypertarget{price_8h_ac58ce71ffc55b240cc4a91aa3a036fc1}{
+\index{price.h@{price.h}!mamaPrice\_\-getValue@{mamaPrice\_\-getValue}}
+\index{mamaPrice\_\-getValue@{mamaPrice\_\-getValue}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getValue (const {\bf mamaPrice} {\em price}, \/  double $\ast$ {\em value})}}
+\label{price_8h_ac58ce71ffc55b240cc4a91aa3a036fc1}
+
+
+Get the price value only. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to get. \item[{\em value}]The the decimal value of the price. \end{DoxyParams}
+\hypertarget{price_8h_a3f1d69658b84ed17c80b3058a3cf2e86}{
+\index{price.h@{price.h}!mamaPrice\_\-getRoundedValue@{mamaPrice\_\-getRoundedValue}}
+\index{mamaPrice\_\-getRoundedValue@{mamaPrice\_\-getRoundedValue}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getRoundedValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getRoundedValue (const {\bf mamaPrice} {\em price}, \/  const {\bf mamaPricePrecision} {\em precision}, \/  double $\ast$ {\em value})}}
+\label{price_8h_a3f1d69658b84ed17c80b3058a3cf2e86}
+
+
+This function obtains the double value of a price rounded to the supplied precision. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em price}]The price to round. \item[\mbox{$\leftarrow$} {\em precision}]The precision to use for rounding. \item[\mbox{$\rightarrow$} {\em value}]The rounded value. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Indicates whether the function succeeded or failed and could be one of:
+\begin{DoxyItemize}
+\item MAMA\_\-STATUS\_\-INVALID\_\-ARG
+\item MAMA\_\-STATUS\_\-OK 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{price_8h_a28cc41e3fc4ed9edae6911bb604d2bee}{
+\index{price.h@{price.h}!mamaPrice\_\-getPrecision@{mamaPrice\_\-getPrecision}}
+\index{mamaPrice\_\-getPrecision@{mamaPrice\_\-getPrecision}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getPrecision}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getPrecision (const {\bf mamaPrice} {\em price}, \/  {\bf mamaPricePrecision} $\ast$ {\em precision})}}
+\label{price_8h_a28cc41e3fc4ed9edae6911bb604d2bee}
+
+
+Get the price precision. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to get. \item[{\em precision}]The price precision hint. \end{DoxyParams}
+\hypertarget{price_8h_a8aea7312e5b176ce2daf3366a0c2711a}{
+\index{price.h@{price.h}!mamaPrice\_\-getIsValidPrice@{mamaPrice\_\-getIsValidPrice}}
+\index{mamaPrice\_\-getIsValidPrice@{mamaPrice\_\-getIsValidPrice}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getIsValidPrice}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getIsValidPrice (const {\bf mamaPrice} {\em price}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em valid})}}
+\label{price_8h_a8aea7312e5b176ce2daf3366a0c2711a}
+
+
+Check if price contains a valid value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to get. \item[{\em valid}]If the value is valid. \end{DoxyParams}
+\hypertarget{price_8h_a84605947cfd6c353bf02433485e6cab2}{
+\index{price.h@{price.h}!mamaPrice\_\-getHints@{mamaPrice\_\-getHints}}
+\index{mamaPrice\_\-getHints@{mamaPrice\_\-getHints}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getHints}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getHints (const {\bf mamaPrice} {\em price}, \/  {\bf mamaPriceHints} $\ast$ {\em hints})}}
+\label{price_8h_a84605947cfd6c353bf02433485e6cab2}
+
+
+Get the price hints. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to get. \item[{\em hints}]The price hints. \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Indicates whether the function succeeded or failed and could be one of:
+\begin{DoxyItemize}
+\item MAMA\_\-STATUS\_\-INVALID\_\-ARG
+\item MAMA\_\-STATUS\_\-OK 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is intended for internal use only. 
+\end{DoxyNote}
+\hypertarget{price_8h_a2dd6b46e6d3f1b7068a9f33bdb30f03e}{
+\index{price.h@{price.h}!mamaPrice\_\-getWithHints@{mamaPrice\_\-getWithHints}}
+\index{mamaPrice\_\-getWithHints@{mamaPrice\_\-getWithHints}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getWithHints}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getWithHints (const {\bf mamaPrice} {\em price}, \/  double $\ast$ {\em value}, \/  {\bf mamaPricePrecision} $\ast$ {\em precision})}}
+\label{price_8h_a2dd6b46e6d3f1b7068a9f33bdb30f03e}
+
+
+Get the price with special, optional hints. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to get. \item[{\em value}]The decimal value of the price. \item[{\em precision}]The precision of the price. \end{DoxyParams}
+\hypertarget{price_8h_ac0afc5b5a742879597e92ec58eeec1a7}{
+\index{price.h@{price.h}!mamaPrice\_\-getAsString@{mamaPrice\_\-getAsString}}
+\index{mamaPrice\_\-getAsString@{mamaPrice\_\-getAsString}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-getAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-getAsString (const {\bf mamaPrice} {\em price}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})}}
+\label{price_8h_ac0afc5b5a742879597e92ec58eeec1a7}
+
+
+Get the price as a string, formatted according to the hints provided. 
+\begin{DoxyParams}{Parameters}
+\item[{\em price}]The price to set. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \end{DoxyParams}
+\hypertarget{price_8h_a1f030d71cadd187cd7b5c9fe10ac3636}{
+\index{price.h@{price.h}!mamaPrice\_\-negate@{mamaPrice\_\-negate}}
+\index{mamaPrice\_\-negate@{mamaPrice\_\-negate}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-negate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-negate ({\bf mamaPrice} {\em price})}}
+\label{price_8h_a1f030d71cadd187cd7b5c9fe10ac3636}
+
+
+Negate the price value. Hints and precisions are not affected. \hypertarget{price_8h_af74574ddb9983adf950ec71d709f7e39}{
+\index{price.h@{price.h}!mamaPrice\_\-isZero@{mamaPrice\_\-isZero}}
+\index{mamaPrice\_\-isZero@{mamaPrice\_\-isZero}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-isZero}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaPrice\_\-isZero (const {\bf mamaPrice} {\em price}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em result})}}
+\label{price_8h_af74574ddb9983adf950ec71d709f7e39}
+
+
+Return whether the price has a value equivalent to zero. It may not be exactly 0.0, but we check against +/-\/ epsilon. \hypertarget{price_8h_a92e5f64d646b2b0fd07d51b70a601c0a}{
+\index{price.h@{price.h}!mamaPrice\_\-decimals2Precision@{mamaPrice\_\-decimals2Precision}}
+\index{mamaPrice\_\-decimals2Precision@{mamaPrice\_\-decimals2Precision}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-decimals2Precision}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaPricePrecision} mamaPrice\_\-decimals2Precision ({\bf mama\_\-i32\_\-t} {\em places})}}
+\label{price_8h_a92e5f64d646b2b0fd07d51b70a601c0a}
+
+
+Return the appropriate precision code for a given number of decimal places. \hypertarget{price_8h_af4c0cad0a93987bab55ac4bee1f456ce}{
+\index{price.h@{price.h}!mamaPrice\_\-denom2Precision@{mamaPrice\_\-denom2Precision}}
+\index{mamaPrice\_\-denom2Precision@{mamaPrice\_\-denom2Precision}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-denom2Precision}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaPricePrecision} mamaPrice\_\-denom2Precision ({\bf mama\_\-i32\_\-t} {\em denominator})}}
+\label{price_8h_af4c0cad0a93987bab55ac4bee1f456ce}
+
+
+Return the appropriate precision code for a given fractional denominator. \hypertarget{price_8h_a823d20dde9a1c8f52a523cf1b6b277e6}{
+\index{price.h@{price.h}!mamaPrice\_\-precision2Decimals@{mamaPrice\_\-precision2Decimals}}
+\index{mamaPrice\_\-precision2Decimals@{mamaPrice\_\-precision2Decimals}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-precision2Decimals}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-i32\_\-t} mamaPrice\_\-precision2Decimals ({\bf mamaPricePrecision} {\em precision})}}
+\label{price_8h_a823d20dde9a1c8f52a523cf1b6b277e6}
+
+
+Return the number of decimal places for a given precision code. \hypertarget{price_8h_aa67db8bc693678fa7aa0aa85b3e2bc25}{
+\index{price.h@{price.h}!mamaPrice\_\-precision2Denom@{mamaPrice\_\-precision2Denom}}
+\index{mamaPrice\_\-precision2Denom@{mamaPrice\_\-precision2Denom}!price.h@{price.h}}
+\subsubsection[{mamaPrice\_\-precision2Denom}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-i32\_\-t} mamaPrice\_\-precision2Denom ({\bf mamaPricePrecision} {\em precision})}}
+\label{price_8h_aa67db8bc693678fa7aa0aa85b3e2bc25}
+
+
+Return the fractional denominator for a given precision code. 

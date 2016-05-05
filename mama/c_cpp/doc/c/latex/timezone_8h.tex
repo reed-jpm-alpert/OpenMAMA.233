@@ -1,0 +1,142 @@
+\hypertarget{timezone_8h}{
+\section{timezone.h File Reference}
+\label{timezone_8h}\index{timezone.h@{timezone.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include \char`\"{}wombat/port.h\char`\"{}}\par
+{\ttfamily \#include $<$time.h$>$}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} \hyperlink{timezone_8h_a854f34253420ee9eb18245ae9e13aa69}{mamaTimeZone\_\-local} (void)
+\begin{DoxyCompactList}\small\item\em Return a pointer to a mamaTimeZone corresponding to the local time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} \hyperlink{timezone_8h_ac8f9cb66253e256069c5b6234a4d925c}{mamaTimeZone\_\-utc} (void)
+\begin{DoxyCompactList}\small\item\em Return a pointer to a mamaTimeZone corresponding to the UTC time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} \hyperlink{timezone_8h_ad81c8eaa0fb70bd607684e1e4e79a32e}{mamaTimeZone\_\-usEastern} (void)
+\begin{DoxyCompactList}\small\item\em Return a pointer to a mamaTimeZone corresponding to the US Eastern time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_ae3eae60d1a032c99fd4897da52f310e7}{mamaTimeZone\_\-create} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} $\ast$timeZone)
+\begin{DoxyCompactList}\small\item\em Create an instance of a mamaTimeZone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a2e907ab9c3005ef597dfa3c1abfdb666}{mamaTimeZone\_\-createFromTz} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} $\ast$timeZone, const char $\ast$tzId)
+\begin{DoxyCompactList}\small\item\em Create an instance of a mamaTimeZone with a standard TZ identifier (NULL identifier is equivalent to the local time zone). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_aa8cd3f305d208fa513dfc0784e98cce1}{mamaTimeZone\_\-createCopy} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} $\ast$timeZone, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZoneCopy)
+\begin{DoxyCompactList}\small\item\em Create an instance of a mamaTimeZone by copying from another instance. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a6a5503cd93e7c7216ed447c445f6ff46}{mamaTimeZone\_\-destroy} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone)
+\begin{DoxyCompactList}\small\item\em Destroy an instance of a mamaTimeZone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a53ea3ddef94878701f581fdd8ca26260}{mamaTimeZone\_\-copy} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone, const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZoneCopy)
+\begin{DoxyCompactList}\small\item\em Copy an instance of a mamaTimeZone (to a previously-\/created instance). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a2c86a9d3e242615a2ec6b1366a94c645}{mamaTimeZone\_\-set} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone, const char $\ast$tzId)
+\begin{DoxyCompactList}\small\item\em Set an existing instance of a mamaTimeZone to a new time zone. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a0ed35dba195f990a94b1245c34315d62}{mamaTimeZone\_\-clear} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone)
+\begin{DoxyCompactList}\small\item\em Clear the time zone (but not destroyed). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a0f49745af76d5279a310b19143ac5d60}{mamaTimeZone\_\-getTz} (const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone, const char $\ast$$\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the time zone ID string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_a79171c354703a8a57ee76644ee44756a}{mamaTimeZone\_\-getOffset} (const \hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone, \hyperlink{types_8h_a709dbeb3324210730aef6318042e5182}{mama\_\-i32\_\-t} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Get the offset from UTC (in seconds). \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{timezone_8h_ae894f45a23b02f9d5f7750f62f21b23d}{mamaTimeZone\_\-check} (\hyperlink{types_8h_af32716437329f2fde79985e160f2156e}{mamaTimeZone} timeZone)
+\begin{DoxyCompactList}\small\item\em Check (recalculate) the UTC offset in case it has changed due to daylight savings adjustments. \item\end{DoxyCompactList}\item 
+MAMAExpDLL void \hyperlink{timezone_8h_ae194195d7e1aebb2463065897e1b0b56}{mamaTimeZone\_\-setScanningInterval} (\hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} seconds)
+\begin{DoxyCompactList}\small\item\em Set the interval of the thread updating each MamaTimeZone instance offset. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{timezone_8h_a854f34253420ee9eb18245ae9e13aa69}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-local@{mamaTimeZone\_\-local}}
+\index{mamaTimeZone\_\-local@{mamaTimeZone\_\-local}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-local}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaTimeZone} mamaTimeZone\_\-local (void)}}
+\label{timezone_8h_a854f34253420ee9eb18245ae9e13aa69}
+
+
+Return a pointer to a mamaTimeZone corresponding to the local time zone. \hypertarget{timezone_8h_ac8f9cb66253e256069c5b6234a4d925c}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-utc@{mamaTimeZone\_\-utc}}
+\index{mamaTimeZone\_\-utc@{mamaTimeZone\_\-utc}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-utc}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaTimeZone} mamaTimeZone\_\-utc (void)}}
+\label{timezone_8h_ac8f9cb66253e256069c5b6234a4d925c}
+
+
+Return a pointer to a mamaTimeZone corresponding to the UTC time zone. \hypertarget{timezone_8h_ad81c8eaa0fb70bd607684e1e4e79a32e}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-usEastern@{mamaTimeZone\_\-usEastern}}
+\index{mamaTimeZone\_\-usEastern@{mamaTimeZone\_\-usEastern}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-usEastern}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mamaTimeZone} mamaTimeZone\_\-usEastern (void)}}
+\label{timezone_8h_ad81c8eaa0fb70bd607684e1e4e79a32e}
+
+
+Return a pointer to a mamaTimeZone corresponding to the US Eastern time zone. \hypertarget{timezone_8h_ae3eae60d1a032c99fd4897da52f310e7}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-create@{mamaTimeZone\_\-create}}
+\index{mamaTimeZone\_\-create@{mamaTimeZone\_\-create}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-create ({\bf mamaTimeZone} $\ast$ {\em timeZone})}}
+\label{timezone_8h_ae3eae60d1a032c99fd4897da52f310e7}
+
+
+Create an instance of a mamaTimeZone. \hypertarget{timezone_8h_a2e907ab9c3005ef597dfa3c1abfdb666}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-createFromTz@{mamaTimeZone\_\-createFromTz}}
+\index{mamaTimeZone\_\-createFromTz@{mamaTimeZone\_\-createFromTz}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-createFromTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-createFromTz ({\bf mamaTimeZone} $\ast$ {\em timeZone}, \/  const char $\ast$ {\em tzId})}}
+\label{timezone_8h_a2e907ab9c3005ef597dfa3c1abfdb666}
+
+
+Create an instance of a mamaTimeZone with a standard TZ identifier (NULL identifier is equivalent to the local time zone). \hypertarget{timezone_8h_aa8cd3f305d208fa513dfc0784e98cce1}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-createCopy@{mamaTimeZone\_\-createCopy}}
+\index{mamaTimeZone\_\-createCopy@{mamaTimeZone\_\-createCopy}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-createCopy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-createCopy ({\bf mamaTimeZone} $\ast$ {\em timeZone}, \/  const {\bf mamaTimeZone} {\em timeZoneCopy})}}
+\label{timezone_8h_aa8cd3f305d208fa513dfc0784e98cce1}
+
+
+Create an instance of a mamaTimeZone by copying from another instance. \hypertarget{timezone_8h_a6a5503cd93e7c7216ed447c445f6ff46}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-destroy@{mamaTimeZone\_\-destroy}}
+\index{mamaTimeZone\_\-destroy@{mamaTimeZone\_\-destroy}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-destroy ({\bf mamaTimeZone} {\em timeZone})}}
+\label{timezone_8h_a6a5503cd93e7c7216ed447c445f6ff46}
+
+
+Destroy an instance of a mamaTimeZone. \hypertarget{timezone_8h_a53ea3ddef94878701f581fdd8ca26260}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-copy@{mamaTimeZone\_\-copy}}
+\index{mamaTimeZone\_\-copy@{mamaTimeZone\_\-copy}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-copy ({\bf mamaTimeZone} {\em timeZone}, \/  const {\bf mamaTimeZone} {\em timeZoneCopy})}}
+\label{timezone_8h_a53ea3ddef94878701f581fdd8ca26260}
+
+
+Copy an instance of a mamaTimeZone (to a previously-\/created instance). \hypertarget{timezone_8h_a2c86a9d3e242615a2ec6b1366a94c645}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-set@{mamaTimeZone\_\-set}}
+\index{mamaTimeZone\_\-set@{mamaTimeZone\_\-set}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-set ({\bf mamaTimeZone} {\em timeZone}, \/  const char $\ast$ {\em tzId})}}
+\label{timezone_8h_a2c86a9d3e242615a2ec6b1366a94c645}
+
+
+Set an existing instance of a mamaTimeZone to a new time zone. \hypertarget{timezone_8h_a0ed35dba195f990a94b1245c34315d62}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-clear@{mamaTimeZone\_\-clear}}
+\index{mamaTimeZone\_\-clear@{mamaTimeZone\_\-clear}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-clear ({\bf mamaTimeZone} {\em timeZone})}}
+\label{timezone_8h_a0ed35dba195f990a94b1245c34315d62}
+
+
+Clear the time zone (but not destroyed). \hypertarget{timezone_8h_a0f49745af76d5279a310b19143ac5d60}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-getTz@{mamaTimeZone\_\-getTz}}
+\index{mamaTimeZone\_\-getTz@{mamaTimeZone\_\-getTz}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-getTz}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-getTz (const {\bf mamaTimeZone} {\em timeZone}, \/  const char $\ast$$\ast$ {\em result})}}
+\label{timezone_8h_a0f49745af76d5279a310b19143ac5d60}
+
+
+Get the time zone ID string. \hypertarget{timezone_8h_a79171c354703a8a57ee76644ee44756a}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-getOffset@{mamaTimeZone\_\-getOffset}}
+\index{mamaTimeZone\_\-getOffset@{mamaTimeZone\_\-getOffset}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-getOffset}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-getOffset (const {\bf mamaTimeZone} {\em timeZone}, \/  {\bf mama\_\-i32\_\-t} $\ast$ {\em result})}}
+\label{timezone_8h_a79171c354703a8a57ee76644ee44756a}
+
+
+Get the offset from UTC (in seconds). Can be positive or negative, depending upon the direction. \hypertarget{timezone_8h_ae894f45a23b02f9d5f7750f62f21b23d}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-check@{mamaTimeZone\_\-check}}
+\index{mamaTimeZone\_\-check@{mamaTimeZone\_\-check}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-check}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaTimeZone\_\-check ({\bf mamaTimeZone} {\em timeZone})}}
+\label{timezone_8h_ae894f45a23b02f9d5f7750f62f21b23d}
+
+
+Check (recalculate) the UTC offset in case it has changed due to daylight savings adjustments. \hypertarget{timezone_8h_ae194195d7e1aebb2463065897e1b0b56}{
+\index{timezone.h@{timezone.h}!mamaTimeZone\_\-setScanningInterval@{mamaTimeZone\_\-setScanningInterval}}
+\index{mamaTimeZone\_\-setScanningInterval@{mamaTimeZone\_\-setScanningInterval}!timezone.h@{timezone.h}}
+\subsubsection[{mamaTimeZone\_\-setScanningInterval}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL void mamaTimeZone\_\-setScanningInterval ({\bf mama\_\-f64\_\-t} {\em seconds})}}
+\label{timezone_8h_ae194195d7e1aebb2463065897e1b0b56}
+
+
+Set the interval of the thread updating each MamaTimeZone instance offset. 

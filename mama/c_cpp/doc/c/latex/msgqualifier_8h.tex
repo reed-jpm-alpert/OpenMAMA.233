@@ -1,0 +1,296 @@
+\hypertarget{msgqualifier_8h}{
+\section{msgqualifier.h File Reference}
+\label{msgqualifier_8h}\index{msgqualifier.h@{msgqualifier.h}}
+}
+{\ttfamily \#include $<$mama/config.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+{\ttfamily \#include $<$mama/status.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{msgqualifier_8h_a82c0b0422cad08e94c96ef71d9c12766}{MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN}~(100)
+\item 
+\#define \hyperlink{msgqualifier_8h_ab4dfdf158ea35afb575dc272a3c70aa5}{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE}~0x0001
+\item 
+\#define \hyperlink{msgqualifier_8h_ab10b2cd036f5aec49580bf6aa1338435}{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE}~0x0002
+\item 
+\#define \hyperlink{msgqualifier_8h_a439d6a458d243b9ee8c9a8af90080591}{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED}~0x0004
+\item 
+\#define \hyperlink{msgqualifier_8h_ad000862679dd462b8d878ac4b22eeed1}{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED}~0x0008
+\item 
+\#define \hyperlink{msgqualifier_8h_a382798c3751b373d348de6982d387098}{MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE}~0x0010
+\item 
+\#define \hyperlink{msgqualifier_8h_a41507d6b96dce9cd993c324dc183b8e1}{MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED}~0x1000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a5886b266172d48357efdc6f9fe4518d8}{mamaMsgQual\_\-create} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} $\ast$msgQual)
+\begin{DoxyCompactList}\small\item\em Create a mamaMsgQual object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a469d26f1cbef08a3b2e4ea274d8ea965}{mamaMsgQual\_\-destroy} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaMsgQual object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a7ebda6dac90312cd90bf72aacaa00fb1}{mamaMsgQual\_\-clear} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual)
+\begin{DoxyCompactList}\small\item\em Clear a mamaMsgQual object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_ad6422678890e7230a7a679f920edb8fb}{mamaMsgQual\_\-copy} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} dest, const \hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} src)
+\begin{DoxyCompactList}\small\item\em Copy a mamaMsgQual object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL int \hyperlink{msgqualifier_8h_aaa8444813ac1e74c7c3cc81d5c91bac7}{mamaMsgQual\_\-equal} (const \hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} lhs, const \hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} rhs)
+\begin{DoxyCompactList}\small\item\em Check for equality between two objects. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a66ba78ed84a0e83f9b6e79dbcfb1e5f0}{mamaMsgQual\_\-setValue} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} value)
+\begin{DoxyCompactList}\small\item\em Set the value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a28655c580f503e7bce032561be5d0583}{mamaMsgQual\_\-setIsDefinitelyDuplicate} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Set the bit associated with the Definitely Duplicate condition. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_adcf3957d6f5603495474185961464dca}{mamaMsgQual\_\-setIsPossiblyDuplicate} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Set the bit associated with the Possibly Duplicate condition. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a76cc75def00d775ac95dcfd536e4909a}{mamaMsgQual\_\-setIsDefinitelyDelayed} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Set the bit associated with the Definitely Delayed condition. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_accbccf93f97c74811e441da5f2c2903e}{mamaMsgQual\_\-setIsPossiblyDelayed} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Set the bit associated with the Possibly Delayed condition. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a08e1080d694b3644a319f03dcc895cee}{mamaMsgQual\_\-setIsOutOfSequence} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int \hyperlink{ft_8h_ae69e21d1408323b5a047726ec02fb4a4}{state})
+\begin{DoxyCompactList}\small\item\em Set the bit associated with the Out Of Sequence condition. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a2258f2d2e5878272b3cf6e4d0dc89164}{mamaMsgQual\_\-getIsDefinitelyDuplicate} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Definitely Duplicate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a07af2ee68b828ce4c54606c3d9ae5070}{mamaMsgQual\_\-getIsPossiblyDuplicate} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Possibly Duplicate. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a18a49132dbb96d232a24ce6129cffeb0}{mamaMsgQual\_\-getIsDefinitelyDelayed} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Definitely Delayed. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_ac7c4f70a036f92bc6aee66887ef9cc19}{mamaMsgQual\_\-getIsPossiblyDelayed} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Possibly Delayed. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_aeac550a9c108a84ce65d8c9c6faf8131}{mamaMsgQual\_\-getIsOutOfSequence} (\hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, int $\ast$result)
+\begin{DoxyCompactList}\small\item\em Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Out Of Sequence Delayed. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a0f3d3a3a5aeec2d0b08733ccd6533c33}{mamaMsgQual\_\-getValue} (const \hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, \hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} $\ast$value)
+\begin{DoxyCompactList}\small\item\em Get the message qualifier value. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_ac28bc522bb2266eb3ffafd5f36205515}{mamaMsgQual\_\-getAsString} (const \hyperlink{types_8h_a7f8aa3fb90bd80c05b6252462e6a94e4}{mamaMsgQual} msgQual, const char $\ast$delimiter, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Get the message qualifier value as a delimited string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{msgqualifier_8h_a951d9b2fc619742fd3ccd243e07178b1}{mamaMsgQual\_\-valueToString} (\hyperlink{types_8h_aa263d83f06ea12923efd7c17b1c81c1a}{mama\_\-u16\_\-t} value, const char $\ast$delimiter, char $\ast$str, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} maxLen)
+\begin{DoxyCompactList}\small\item\em Get the message qualifier value as a delimited string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{msgqualifier_8h_a82c0b0422cad08e94c96ef71d9c12766}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN@{MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN@{MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-MAX\_\-STR\_\-LEN~(100)}}
+\label{msgqualifier_8h_a82c0b0422cad08e94c96ef71d9c12766}
+\hypertarget{msgqualifier_8h_ab4dfdf158ea35afb575dc272a3c70aa5}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE@{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE@{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DUPLICATE~0x0001}}
+\label{msgqualifier_8h_ab4dfdf158ea35afb575dc272a3c70aa5}
+\hypertarget{msgqualifier_8h_ab10b2cd036f5aec49580bf6aa1338435}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE@{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE@{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DUPLICATE~0x0002}}
+\label{msgqualifier_8h_ab10b2cd036f5aec49580bf6aa1338435}
+\hypertarget{msgqualifier_8h_a439d6a458d243b9ee8c9a8af90080591}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED@{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED@{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-POSSIBLY\_\-DELAYED~0x0004}}
+\label{msgqualifier_8h_a439d6a458d243b9ee8c9a8af90080591}
+\hypertarget{msgqualifier_8h_ad000862679dd462b8d878ac4b22eeed1}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED@{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED@{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-DEFINITELY\_\-DELAYED~0x0008}}
+\label{msgqualifier_8h_ad000862679dd462b8d878ac4b22eeed1}
+\hypertarget{msgqualifier_8h_a382798c3751b373d348de6982d387098}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE@{MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE@{MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-OUT\_\-OF\_\-SEQUENCE~0x0010}}
+\label{msgqualifier_8h_a382798c3751b373d348de6982d387098}
+\hypertarget{msgqualifier_8h_a41507d6b96dce9cd993c324dc183b8e1}{
+\index{msgqualifier.h@{msgqualifier.h}!MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED@{MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED}}
+\index{MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED@{MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAMA\_\-MSG\_\-QUAL\_\-NOT\_\-USED~0x1000}}
+\label{msgqualifier_8h_a41507d6b96dce9cd993c324dc183b8e1}
+
+
+\subsection{Function Documentation}
+\hypertarget{msgqualifier_8h_a5886b266172d48357efdc6f9fe4518d8}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-create@{mamaMsgQual\_\-create}}
+\index{mamaMsgQual\_\-create@{mamaMsgQual\_\-create}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-create ({\bf mamaMsgQual} $\ast$ {\em msgQual})}}
+\label{msgqualifier_8h_a5886b266172d48357efdc6f9fe4518d8}
+
+
+Create a mamaMsgQual object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The location of a mamaMsgQual where to store the result. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a469d26f1cbef08a3b2e4ea274d8ea965}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-destroy@{mamaMsgQual\_\-destroy}}
+\index{mamaMsgQual\_\-destroy@{mamaMsgQual\_\-destroy}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-destroy ({\bf mamaMsgQual} {\em msgQual})}}
+\label{msgqualifier_8h_a469d26f1cbef08a3b2e4ea274d8ea965}
+
+
+Destroy a mamaMsgQual object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to destroy. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a7ebda6dac90312cd90bf72aacaa00fb1}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-clear@{mamaMsgQual\_\-clear}}
+\index{mamaMsgQual\_\-clear@{mamaMsgQual\_\-clear}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-clear ({\bf mamaMsgQual} {\em msgQual})}}
+\label{msgqualifier_8h_a7ebda6dac90312cd90bf72aacaa00fb1}
+
+
+Clear a mamaMsgQual object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to clear. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_ad6422678890e7230a7a679f920edb8fb}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-copy@{mamaMsgQual\_\-copy}}
+\index{mamaMsgQual\_\-copy@{mamaMsgQual\_\-copy}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-copy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-copy ({\bf mamaMsgQual} {\em dest}, \/  const {\bf mamaMsgQual} {\em src})}}
+\label{msgqualifier_8h_ad6422678890e7230a7a679f920edb8fb}
+
+
+Copy a mamaMsgQual object. The destination object must have already been allocated using \hyperlink{msgqualifier_8h_a5886b266172d48357efdc6f9fe4518d8}{mamaMsgQual\_\-create()}. 
+\begin{DoxyParams}{Parameters}
+\item[{\em dest}]The destination mamaMsgQual. \item[{\em src}]The mamaMsgQual to copy. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_aaa8444813ac1e74c7c3cc81d5c91bac7}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-equal@{mamaMsgQual\_\-equal}}
+\index{mamaMsgQual\_\-equal@{mamaMsgQual\_\-equal}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-equal}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL int mamaMsgQual\_\-equal (const {\bf mamaMsgQual} {\em lhs}, \/  const {\bf mamaMsgQual} {\em rhs})}}
+\label{msgqualifier_8h_aaa8444813ac1e74c7c3cc81d5c91bac7}
+
+
+Check for equality between two objects. 
+\begin{DoxyParams}{Parameters}
+\item[{\em lhs}]The first object to compare. \item[{\em rhs}]The second object to compare. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a66ba78ed84a0e83f9b6e79dbcfb1e5f0}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-setValue@{mamaMsgQual\_\-setValue}}
+\index{mamaMsgQual\_\-setValue@{mamaMsgQual\_\-setValue}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-setValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-setValue ({\bf mamaMsgQual} {\em msgQual}, \/  {\bf mama\_\-u16\_\-t} {\em value})}}
+\label{msgqualifier_8h_a66ba78ed84a0e83f9b6e79dbcfb1e5f0}
+
+
+Set the value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to set. \item[{\em value}]The value to set to. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a28655c580f503e7bce032561be5d0583}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-setIsDefinitelyDuplicate@{mamaMsgQual\_\-setIsDefinitelyDuplicate}}
+\index{mamaMsgQual\_\-setIsDefinitelyDuplicate@{mamaMsgQual\_\-setIsDefinitelyDuplicate}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-setIsDefinitelyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-setIsDefinitelyDuplicate ({\bf mamaMsgQual} {\em msgQual}, \/  int {\em state})}}
+\label{msgqualifier_8h_a28655c580f503e7bce032561be5d0583}
+
+
+Set the bit associated with the Definitely Duplicate condition. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to set. \item[{\em state}]Zero value clears Definitely Duplicate bit. Non-\/zero value sets Definitely Duplicate bit. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_adcf3957d6f5603495474185961464dca}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-setIsPossiblyDuplicate@{mamaMsgQual\_\-setIsPossiblyDuplicate}}
+\index{mamaMsgQual\_\-setIsPossiblyDuplicate@{mamaMsgQual\_\-setIsPossiblyDuplicate}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-setIsPossiblyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-setIsPossiblyDuplicate ({\bf mamaMsgQual} {\em msgQual}, \/  int {\em state})}}
+\label{msgqualifier_8h_adcf3957d6f5603495474185961464dca}
+
+
+Set the bit associated with the Possibly Duplicate condition. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to set. \item[{\em state}]Zero value clears Possibly Duplicate bit. Non-\/zero value sets Possibly Duplicate bit. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a76cc75def00d775ac95dcfd536e4909a}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-setIsDefinitelyDelayed@{mamaMsgQual\_\-setIsDefinitelyDelayed}}
+\index{mamaMsgQual\_\-setIsDefinitelyDelayed@{mamaMsgQual\_\-setIsDefinitelyDelayed}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-setIsDefinitelyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-setIsDefinitelyDelayed ({\bf mamaMsgQual} {\em msgQual}, \/  int {\em state})}}
+\label{msgqualifier_8h_a76cc75def00d775ac95dcfd536e4909a}
+
+
+Set the bit associated with the Definitely Delayed condition. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to set. \item[{\em state}]Zero value clears Definitely Delayed bit. Non-\/zero value sets Definitely Delayed bit. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_accbccf93f97c74811e441da5f2c2903e}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-setIsPossiblyDelayed@{mamaMsgQual\_\-setIsPossiblyDelayed}}
+\index{mamaMsgQual\_\-setIsPossiblyDelayed@{mamaMsgQual\_\-setIsPossiblyDelayed}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-setIsPossiblyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-setIsPossiblyDelayed ({\bf mamaMsgQual} {\em msgQual}, \/  int {\em state})}}
+\label{msgqualifier_8h_accbccf93f97c74811e441da5f2c2903e}
+
+
+Set the bit associated with the Possibly Delayed condition. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to set. \item[{\em state}]Zero value clears Possibly Delayed bit. Non-\/zero value sets Possibly Delayed bit. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a08e1080d694b3644a319f03dcc895cee}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-setIsOutOfSequence@{mamaMsgQual\_\-setIsOutOfSequence}}
+\index{mamaMsgQual\_\-setIsOutOfSequence@{mamaMsgQual\_\-setIsOutOfSequence}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-setIsOutOfSequence}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-setIsOutOfSequence ({\bf mamaMsgQual} {\em msgQual}, \/  int {\em state})}}
+\label{msgqualifier_8h_a08e1080d694b3644a319f03dcc895cee}
+
+
+Set the bit associated with the Out Of Sequence condition. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The object to set. \item[{\em state}]Zero value clears Out Of Sequence bit. Non-\/zero value sets Out Of Sequence bit. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a2258f2d2e5878272b3cf6e4d0dc89164}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getIsDefinitelyDuplicate@{mamaMsgQual\_\-getIsDefinitelyDuplicate}}
+\index{mamaMsgQual\_\-getIsDefinitelyDuplicate@{mamaMsgQual\_\-getIsDefinitelyDuplicate}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getIsDefinitelyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getIsDefinitelyDuplicate ({\bf mamaMsgQual} {\em msgQual}, \/  int $\ast$ {\em result})}}
+\label{msgqualifier_8h_a2258f2d2e5878272b3cf6e4d0dc89164}
+
+
+Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Definitely Duplicate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em result}](out) Pointer to the result. \char`\"{}1\char`\"{} indicates a positive result. \char`\"{}0\char`\"{} indicates a negative result. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a07af2ee68b828ce4c54606c3d9ae5070}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getIsPossiblyDuplicate@{mamaMsgQual\_\-getIsPossiblyDuplicate}}
+\index{mamaMsgQual\_\-getIsPossiblyDuplicate@{mamaMsgQual\_\-getIsPossiblyDuplicate}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getIsPossiblyDuplicate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getIsPossiblyDuplicate ({\bf mamaMsgQual} {\em msgQual}, \/  int $\ast$ {\em result})}}
+\label{msgqualifier_8h_a07af2ee68b828ce4c54606c3d9ae5070}
+
+
+Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Possibly Duplicate. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em result}](out) Pointer to the result. \char`\"{}1\char`\"{} indicates a positive result. \char`\"{}0\char`\"{} indicates a negative result. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a18a49132dbb96d232a24ce6129cffeb0}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getIsDefinitelyDelayed@{mamaMsgQual\_\-getIsDefinitelyDelayed}}
+\index{mamaMsgQual\_\-getIsDefinitelyDelayed@{mamaMsgQual\_\-getIsDefinitelyDelayed}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getIsDefinitelyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getIsDefinitelyDelayed ({\bf mamaMsgQual} {\em msgQual}, \/  int $\ast$ {\em result})}}
+\label{msgqualifier_8h_a18a49132dbb96d232a24ce6129cffeb0}
+
+
+Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Definitely Delayed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em result}](out) Pointer to the result. \char`\"{}1\char`\"{} indicates a positive result. \char`\"{}0\char`\"{} indicates a negative result. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_ac7c4f70a036f92bc6aee66887ef9cc19}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getIsPossiblyDelayed@{mamaMsgQual\_\-getIsPossiblyDelayed}}
+\index{mamaMsgQual\_\-getIsPossiblyDelayed@{mamaMsgQual\_\-getIsPossiblyDelayed}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getIsPossiblyDelayed}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getIsPossiblyDelayed ({\bf mamaMsgQual} {\em msgQual}, \/  int $\ast$ {\em result})}}
+\label{msgqualifier_8h_ac7c4f70a036f92bc6aee66887ef9cc19}
+
+
+Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Possibly Delayed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em result}](out) Pointer to the result. \char`\"{}1\char`\"{} indicates a positive result. \char`\"{}0\char`\"{} indicates a negative result. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_aeac550a9c108a84ce65d8c9c6faf8131}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getIsOutOfSequence@{mamaMsgQual\_\-getIsOutOfSequence}}
+\index{mamaMsgQual\_\-getIsOutOfSequence@{mamaMsgQual\_\-getIsOutOfSequence}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getIsOutOfSequence}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getIsOutOfSequence ({\bf mamaMsgQual} {\em msgQual}, \/  int $\ast$ {\em result})}}
+\label{msgqualifier_8h_aeac550a9c108a84ce65d8c9c6faf8131}
+
+
+Determine whether the message qualifier indicates that the \char`\"{}msg\char`\"{} is Out Of Sequence Delayed. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em result}](out) Pointer to the result. \char`\"{}1\char`\"{} indicates a positive result. \char`\"{}0\char`\"{} indicates a negative result. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a0f3d3a3a5aeec2d0b08733ccd6533c33}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getValue@{mamaMsgQual\_\-getValue}}
+\index{mamaMsgQual\_\-getValue@{mamaMsgQual\_\-getValue}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getValue}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getValue (const {\bf mamaMsgQual} {\em msgQual}, \/  {\bf mama\_\-u16\_\-t} $\ast$ {\em value})}}
+\label{msgqualifier_8h_a0f3d3a3a5aeec2d0b08733ccd6533c33}
+
+
+Get the message qualifier value. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em value}]The integer value of the message qualifier. \end{DoxyParams}
+\hypertarget{msgqualifier_8h_ac28bc522bb2266eb3ffafd5f36205515}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-getAsString@{mamaMsgQual\_\-getAsString}}
+\index{mamaMsgQual\_\-getAsString@{mamaMsgQual\_\-getAsString}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-getAsString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-getAsString (const {\bf mamaMsgQual} {\em msgQual}, \/  const char $\ast$ {\em delimiter}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})}}
+\label{msgqualifier_8h_ac28bc522bb2266eb3ffafd5f36205515}
+
+
+Get the message qualifier value as a delimited string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em msgQual}]The mamaMsgQual object. \item[{\em delimiter}]The delimiter to separate individual condition strings. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \end{DoxyParams}
+\hypertarget{msgqualifier_8h_a951d9b2fc619742fd3ccd243e07178b1}{
+\index{msgqualifier.h@{msgqualifier.h}!mamaMsgQual\_\-valueToString@{mamaMsgQual\_\-valueToString}}
+\index{mamaMsgQual\_\-valueToString@{mamaMsgQual\_\-valueToString}!msgqualifier.h@{msgqualifier.h}}
+\subsubsection[{mamaMsgQual\_\-valueToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaMsgQual\_\-valueToString ({\bf mama\_\-u16\_\-t} {\em value}, \/  const char $\ast$ {\em delimiter}, \/  char $\ast$ {\em str}, \/  {\bf mama\_\-size\_\-t} {\em maxLen})}}
+\label{msgqualifier_8h_a951d9b2fc619742fd3ccd243e07178b1}
+
+
+Get the message qualifier value as a delimited string. 
+\begin{DoxyParams}{Parameters}
+\item[{\em value}]The value of the message qualifier. \item[{\em delimiter}]The delimiter to separate individual conditions strings. \item[{\em str}]The string buffer to update. \item[{\em maxLen}]The maximum size of the string buffer (including trailing '$\backslash$0'). \end{DoxyParams}

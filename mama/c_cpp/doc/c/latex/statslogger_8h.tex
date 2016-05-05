@@ -1,0 +1,456 @@
+\hypertarget{statslogger_8h}{
+\section{statslogger.h File Reference}
+\label{statslogger_8h}\index{statslogger.h@{statslogger.h}}
+}
+{\ttfamily \#include $<$mama/status.h$>$}\par
+{\ttfamily \#include $<$mama/types.h$>$}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{statslogger_8h_a5aea57c01a62c74789246c0f919f017a}{SL\_\-TOPIC\_\-USAGE\_\-LOG}~\char`\"{}SL\_\-TOPIC\_\-USAGE\_\-LOG\char`\"{}
+\item 
+\#define \hyperlink{statslogger_8h_a969f0ca384c60679237576e69ab94dfc}{STATS\_\-TOPIC}~\char`\"{}STATS\_\-TOPIC\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52}{mamaSlEvent\_\-} \hyperlink{statslogger_8h_adce0a9625c4ba7c6f09f4bbafd70bd57}{mamaSlEvent}
+\begin{DoxyCompactList}\small\item\em The event types handled by the stats logger. \item\end{DoxyCompactList}\item 
+typedef enum \hyperlink{statslogger_8h_ab1ac6786cff82632971d385fe702003a}{mamaSlSubFailReason\_\-} \hyperlink{statslogger_8h_a178178c38b12c54411608aa21966a162}{mamaSlSubFailReason}
+\begin{DoxyCompactList}\small\item\em The reasons for a subscription to fail. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52}{mamaSlEvent\_\-} \{ \par
+\hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52a34ebfb70e7d4d7dafa5fa93f14ade58b}{MAMA\_\-SL\_\-EVENT\_\-LOGIN} =  0, 
+\hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52a6809460aeb60f8b6ad8a24b4b3fb3fd9}{MAMA\_\-SL\_\-EVENT\_\-LOGOUT} =  1, 
+\hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52adb35b6e773470ca737aba74e3a074567}{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-CREATE} =  2, 
+\hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52a522b3fddb34173603d52aeb6eab3a8b4}{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-FAIL} =  3, 
+\par
+\hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52a0e227d7a070ea7cfbd34e6bc4bec03f4}{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-DESTROY} =  4, 
+\hyperlink{statslogger_8h_a2947492db8faf425848a924507c26d52a2fddf2a0c3f39e6758b03fc8604666cf}{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-ENT\_\-PASS} =  5
+ \}
+\begin{DoxyCompactList}\small\item\em The event types handled by the stats logger. \item\end{DoxyCompactList}\item 
+enum \hyperlink{statslogger_8h_ab1ac6786cff82632971d385fe702003a}{mamaSlSubFailReason\_\-} \{ \hyperlink{statslogger_8h_ab1ac6786cff82632971d385fe702003aa03d6cd109136f6069ca73d8fdd64b118}{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-REGEX} =  0, 
+\hyperlink{statslogger_8h_ab1ac6786cff82632971d385fe702003aad9a4fccb3dee2d996d8131b6933fcdb3}{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-CODE} =  1, 
+\hyperlink{statslogger_8h_ab1ac6786cff82632971d385fe702003aaee2617ef352dbae8cc62434b24676d1e}{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-TIMEOUT} =  2, 
+\hyperlink{statslogger_8h_ab1ac6786cff82632971d385fe702003aa434b5d2a52ecbcdf0e3ea3d2e417ebb4}{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-NOT\_\-FOUND} =  3
+ \}
+\begin{DoxyCompactList}\small\item\em The reasons for a subscription to fail. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+MAMAExpDLL const char $\ast$ \hyperlink{statslogger_8h_a75be35f83b76596a8a75afebfcb5c207}{mamaStatsLogger\_\-eventToString} (\hyperlink{statslogger_8h_adce0a9625c4ba7c6f09f4bbafd70bd57}{mamaSlEvent} event)
+\begin{DoxyCompactList}\small\item\em Convert a mamaSlEvent value to a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL const char $\ast$ \hyperlink{statslogger_8h_a3b04cf6865d6b422764bbc1aa965fb67}{mamaStatsLogger\_\-subFailReasonToString} (\hyperlink{statslogger_8h_a178178c38b12c54411608aa21966a162}{mamaSlSubFailReason} subFailReason)
+\begin{DoxyCompactList}\small\item\em Convert a mamaSlSubFailReason value to a string. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a13adcc17656fd74702014519c4ec2d46}{mamaStatsLogger\_\-allocate} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} $\ast$logger)
+\begin{DoxyCompactList}\small\item\em Allocate memory for a new stats logger. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_abfd60514554d6e83c7c7ea0aedaaccd2}{mamaStatsLogger\_\-create} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} tport)
+\begin{DoxyCompactList}\small\item\em Create and activate mamaStatsLogger object. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a52747b0b2cda5d39868e1aeeaa1fba7e}{mamaStatsLogger\_\-createForStats} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_a7d18ebad536af5e4c1c0da7df99429c8}{mamaQueue} queue, \hyperlink{types_8h_a9db3afd972e50af768f475480d2dd5ec}{mamaTransport} tport, const char $\ast$topic)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a325a8cf6915a2fbe30deb8d8b8d2745f}{mamaStatsLogger\_\-destroy} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger)
+\begin{DoxyCompactList}\small\item\em Destroy a mamaStatsLogger object, freeing any memory. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a15c1c93ee57b66d7362993058b61fbee}{mamaStatsLogger\_\-setReportInterval} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_aeff1c6d572e4e3eb7e4ef9d8457daddf}{mama\_\-f64\_\-t} interval)
+\begin{DoxyCompactList}\small\item\em Set the reporting interval. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_af1f3dced398ce1a4b857196da52754f2}{mamaStatsLogger\_\-setReportSize} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_ad474773b7c6adab4a26a9b358c96665e}{mama\_\-size\_\-t} numEvents)
+\begin{DoxyCompactList}\small\item\em Set the maximum number of events to cache before reporting. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_abf1dbca70ba6ff90ea11a938527a5bae}{mamaStatsLogger\_\-setUserName} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$userName)
+\begin{DoxyCompactList}\small\item\em Set the userName. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a963c9da81da141393790b3b26b71574f}{mamaStatsLogger\_\-getUserName} (const \hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$$\ast$userName)
+\begin{DoxyCompactList}\small\item\em Get the userName. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a09f5532005dd4165aa16aa5b0eea3461}{mamaStatsLogger\_\-setHostName} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$hostName)
+\begin{DoxyCompactList}\small\item\em Set the hostName. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a06476ee231268cf07c823469443ae423}{mamaStatsLogger\_\-getHostName} (const \hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$$\ast$hostName)
+\begin{DoxyCompactList}\small\item\em Get the hostName. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a2a4d8de32df81c793454da4a7d4f01a0}{mamaStatsLogger\_\-setApplicationName} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$appName)
+\begin{DoxyCompactList}\small\item\em Set the applicationName. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_ac907d91a3935bd0ebed7ff2aee99ed4f}{mamaStatsLogger\_\-getApplicationName} (const \hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$$\ast$appName)
+\begin{DoxyCompactList}\small\item\em Get the applicationName. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a70a63f59b98c8132ad8356e944600cb3}{mamaStatsLogger\_\-setApplicationClass} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$applClass)
+\begin{DoxyCompactList}\small\item\em Set the applicationClass. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a92cc9dec1935f3bfd0661072c211b984}{mamaStatsLogger\_\-getApplicationClass} (const \hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$$\ast$appClass)
+\begin{DoxyCompactList}\small\item\em Get the applicationClass. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_aa1a253503919bf459e9bb82591cd8d04}{mamaStatsLogger\_\-setIpAddress} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$ipAddress)
+\begin{DoxyCompactList}\small\item\em Set the ipAddress. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a042ab98afaff793108e838741f571ea7}{mamaStatsLogger\_\-getIpAddress} (const \hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, const char $\ast$$\ast$ipAddress)
+\begin{DoxyCompactList}\small\item\em Get the ipAddress. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a9deaa2a3719f1f37ff54476b12e55981}{mamaStatsLogger\_\-logLogin} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger)
+\begin{DoxyCompactList}\small\item\em Log a login event. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a59df8acc77644a7dbdd92af201316658}{mamaStatsLogger\_\-logLogout} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger)
+\begin{DoxyCompactList}\small\item\em Log a logout event. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a81da815b7f62c7404edc6eac0c1b90c9}{mamaStatsLogger\_\-logSubscriptionEntitlePass} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, int32\_\-t entitleCode)
+\begin{DoxyCompactList}\small\item\em Log a subscription entitlement check pass event. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a03617bea39e62f2583e0a349ad2ef88b}{mamaStatsLogger\_\-logSubscriptionFail} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription, \hyperlink{statslogger_8h_a178178c38b12c54411608aa21966a162}{mamaSlSubFailReason} reason)
+\begin{DoxyCompactList}\small\item\em Log a subscription fail event. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a44a2285f5f96a4cfcbd6804ee54efa8d}{mamaStatsLogger\_\-logSubscriptionDestroy} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_a873fb03719e8d38ef01b1e583fc212f3}{mamaSubscription} subscription)
+\begin{DoxyCompactList}\small\item\em Log a subscription destroy event. \item\end{DoxyCompactList}\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_ae10ac70774932146d0d739e9ea28894c}{mamaStatsLogger\_\-addStatMsg} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} $\ast$logger, \hyperlink{types_8h_a18a7a376f0a46a8e0d0d1884a0f29845}{mamaMsg} \hyperlink{publisher_8h_a0deace1d49203a4c9f14ce96643a30a8}{msg})
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_ad95ad39b3e34cdb01cee08299faaffd4}{mamaStatsLogger\_\-sendReport} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} $\ast$logger)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a80984fe7faac2a3e33a0d0a71ed0d7ef}{mamaStatsLogger\_\-getLogMsgStats} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} $\ast$logMsgStats)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_ac9c0f5174a8a4319928bc8ca13833d02}{mamaStatsLogger\_\-setLogMsgStats} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} logger, \hyperlink{types_8h_aa470dd4d6c5c53c2f5eb9d265c6dd8a7}{mama\_\-bool\_\-t} logMsgStats)
+\item 
+MAMAExpDLL \hyperlink{status_8h_a5d6ed00e44491618b9c9f39771f7601e}{mama\_\-status} \hyperlink{statslogger_8h_a33773e2b10b351b38644191a82a101a1}{mamaStatsLogger\_\-incMsgCount} (\hyperlink{types_8h_a455292ae01dab637af87c55ceedfb422}{mamaStatsLogger} statsLogger)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{statslogger_8h_a5aea57c01a62c74789246c0f919f017a}{
+\index{statslogger.h@{statslogger.h}!SL\_\-TOPIC\_\-USAGE\_\-LOG@{SL\_\-TOPIC\_\-USAGE\_\-LOG}}
+\index{SL\_\-TOPIC\_\-USAGE\_\-LOG@{SL\_\-TOPIC\_\-USAGE\_\-LOG}!statslogger.h@{statslogger.h}}
+\subsubsection[{SL\_\-TOPIC\_\-USAGE\_\-LOG}]{\setlength{\rightskip}{0pt plus 5cm}\#define SL\_\-TOPIC\_\-USAGE\_\-LOG~\char`\"{}SL\_\-TOPIC\_\-USAGE\_\-LOG\char`\"{}}}
+\label{statslogger_8h_a5aea57c01a62c74789246c0f919f017a}
+\hypertarget{statslogger_8h_a969f0ca384c60679237576e69ab94dfc}{
+\index{statslogger.h@{statslogger.h}!STATS\_\-TOPIC@{STATS\_\-TOPIC}}
+\index{STATS\_\-TOPIC@{STATS\_\-TOPIC}!statslogger.h@{statslogger.h}}
+\subsubsection[{STATS\_\-TOPIC}]{\setlength{\rightskip}{0pt plus 5cm}\#define STATS\_\-TOPIC~\char`\"{}STATS\_\-TOPIC\char`\"{}}}
+\label{statslogger_8h_a969f0ca384c60679237576e69ab94dfc}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{statslogger_8h_adce0a9625c4ba7c6f09f4bbafd70bd57}{
+\index{statslogger.h@{statslogger.h}!mamaSlEvent@{mamaSlEvent}}
+\index{mamaSlEvent@{mamaSlEvent}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaSlEvent}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaSlEvent\_\-}  {\bf mamaSlEvent}}}
+\label{statslogger_8h_adce0a9625c4ba7c6f09f4bbafd70bd57}
+
+
+The event types handled by the stats logger. \hypertarget{statslogger_8h_a178178c38b12c54411608aa21966a162}{
+\index{statslogger.h@{statslogger.h}!mamaSlSubFailReason@{mamaSlSubFailReason}}
+\index{mamaSlSubFailReason@{mamaSlSubFailReason}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaSlSubFailReason}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf mamaSlSubFailReason\_\-}  {\bf mamaSlSubFailReason}}}
+\label{statslogger_8h_a178178c38b12c54411608aa21966a162}
+
+
+The reasons for a subscription to fail. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52}{
+\index{statslogger.h@{statslogger.h}!mamaSlEvent\_\-@{mamaSlEvent\_\-}}
+\index{mamaSlEvent\_\-@{mamaSlEvent\_\-}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaSlEvent\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaSlEvent\_\-}}}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52}
+
+
+The event types handled by the stats logger. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-SL\_\-EVENT\_\-LOGIN@{MAMA\_\-SL\_\-EVENT\_\-LOGIN}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-EVENT\_\-LOGIN@{MAMA\_\-SL\_\-EVENT\_\-LOGIN}}\item[{\em 
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52a34ebfb70e7d4d7dafa5fa93f14ade58b}{
+MAMA\_\-SL\_\-EVENT\_\-LOGIN}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52a34ebfb70e7d4d7dafa5fa93f14ade58b}
+}]\index{MAMA\_\-SL\_\-EVENT\_\-LOGOUT@{MAMA\_\-SL\_\-EVENT\_\-LOGOUT}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-EVENT\_\-LOGOUT@{MAMA\_\-SL\_\-EVENT\_\-LOGOUT}}\item[{\em 
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52a6809460aeb60f8b6ad8a24b4b3fb3fd9}{
+MAMA\_\-SL\_\-EVENT\_\-LOGOUT}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52a6809460aeb60f8b6ad8a24b4b3fb3fd9}
+}]\index{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-CREATE@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-CREATE}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-EVENT\_\-SUB\_\-CREATE@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-CREATE}}\item[{\em 
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52adb35b6e773470ca737aba74e3a074567}{
+MAMA\_\-SL\_\-EVENT\_\-SUB\_\-CREATE}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52adb35b6e773470ca737aba74e3a074567}
+}]\index{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-FAIL@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-FAIL}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-EVENT\_\-SUB\_\-FAIL@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-FAIL}}\item[{\em 
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52a522b3fddb34173603d52aeb6eab3a8b4}{
+MAMA\_\-SL\_\-EVENT\_\-SUB\_\-FAIL}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52a522b3fddb34173603d52aeb6eab3a8b4}
+}]\index{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-DESTROY@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-DESTROY}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-EVENT\_\-SUB\_\-DESTROY@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-DESTROY}}\item[{\em 
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52a0e227d7a070ea7cfbd34e6bc4bec03f4}{
+MAMA\_\-SL\_\-EVENT\_\-SUB\_\-DESTROY}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52a0e227d7a070ea7cfbd34e6bc4bec03f4}
+}]\index{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-ENT\_\-PASS@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-ENT\_\-PASS}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-EVENT\_\-SUB\_\-ENT\_\-PASS@{MAMA\_\-SL\_\-EVENT\_\-SUB\_\-ENT\_\-PASS}}\item[{\em 
+\hypertarget{statslogger_8h_a2947492db8faf425848a924507c26d52a2fddf2a0c3f39e6758b03fc8604666cf}{
+MAMA\_\-SL\_\-EVENT\_\-SUB\_\-ENT\_\-PASS}
+\label{statslogger_8h_a2947492db8faf425848a924507c26d52a2fddf2a0c3f39e6758b03fc8604666cf}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{statslogger_8h_ab1ac6786cff82632971d385fe702003a}{
+\index{statslogger.h@{statslogger.h}!mamaSlSubFailReason\_\-@{mamaSlSubFailReason\_\-}}
+\index{mamaSlSubFailReason\_\-@{mamaSlSubFailReason\_\-}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaSlSubFailReason\_\-}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf mamaSlSubFailReason\_\-}}}
+\label{statslogger_8h_ab1ac6786cff82632971d385fe702003a}
+
+
+The reasons for a subscription to fail. \begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-REGEX@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-REGEX}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-SUB\_\-FAIL\_\-REGEX@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-REGEX}}\item[{\em 
+\hypertarget{statslogger_8h_ab1ac6786cff82632971d385fe702003aa03d6cd109136f6069ca73d8fdd64b118}{
+MAMA\_\-SL\_\-SUB\_\-FAIL\_\-REGEX}
+\label{statslogger_8h_ab1ac6786cff82632971d385fe702003aa03d6cd109136f6069ca73d8fdd64b118}
+}]\index{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-CODE@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-CODE}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-SUB\_\-FAIL\_\-CODE@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-CODE}}\item[{\em 
+\hypertarget{statslogger_8h_ab1ac6786cff82632971d385fe702003aad9a4fccb3dee2d996d8131b6933fcdb3}{
+MAMA\_\-SL\_\-SUB\_\-FAIL\_\-CODE}
+\label{statslogger_8h_ab1ac6786cff82632971d385fe702003aad9a4fccb3dee2d996d8131b6933fcdb3}
+}]\index{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-TIMEOUT@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-TIMEOUT}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-SUB\_\-FAIL\_\-TIMEOUT@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-TIMEOUT}}\item[{\em 
+\hypertarget{statslogger_8h_ab1ac6786cff82632971d385fe702003aaee2617ef352dbae8cc62434b24676d1e}{
+MAMA\_\-SL\_\-SUB\_\-FAIL\_\-TIMEOUT}
+\label{statslogger_8h_ab1ac6786cff82632971d385fe702003aaee2617ef352dbae8cc62434b24676d1e}
+}]\index{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-NOT\_\-FOUND@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-NOT\_\-FOUND}!statslogger.h@{statslogger.h}}\index{statslogger.h@{statslogger.h}!MAMA\_\-SL\_\-SUB\_\-FAIL\_\-NOT\_\-FOUND@{MAMA\_\-SL\_\-SUB\_\-FAIL\_\-NOT\_\-FOUND}}\item[{\em 
+\hypertarget{statslogger_8h_ab1ac6786cff82632971d385fe702003aa434b5d2a52ecbcdf0e3ea3d2e417ebb4}{
+MAMA\_\-SL\_\-SUB\_\-FAIL\_\-NOT\_\-FOUND}
+\label{statslogger_8h_ab1ac6786cff82632971d385fe702003aa434b5d2a52ecbcdf0e3ea3d2e417ebb4}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Function Documentation}
+\hypertarget{statslogger_8h_a75be35f83b76596a8a75afebfcb5c207}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-eventToString@{mamaStatsLogger\_\-eventToString}}
+\index{mamaStatsLogger\_\-eventToString@{mamaStatsLogger\_\-eventToString}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-eventToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaStatsLogger\_\-eventToString ({\bf mamaSlEvent} {\em event})}}
+\label{statslogger_8h_a75be35f83b76596a8a75afebfcb5c207}
+
+
+Convert a mamaSlEvent value to a string. Do no attempt to free the string result.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em event}]The mamaSlEvent to convert. \end{DoxyParams}
+\hypertarget{statslogger_8h_a3b04cf6865d6b422764bbc1aa965fb67}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-subFailReasonToString@{mamaStatsLogger\_\-subFailReasonToString}}
+\index{mamaStatsLogger\_\-subFailReasonToString@{mamaStatsLogger\_\-subFailReasonToString}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-subFailReasonToString}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL const char$\ast$ mamaStatsLogger\_\-subFailReasonToString ({\bf mamaSlSubFailReason} {\em subFailReason})}}
+\label{statslogger_8h_a3b04cf6865d6b422764bbc1aa965fb67}
+
+
+Convert a mamaSlSubFailReason value to a string. Do no attempt to free the string result.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em subFailReason}]The mamaSlSubFailReason to convert. \end{DoxyParams}
+\hypertarget{statslogger_8h_a13adcc17656fd74702014519c4ec2d46}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-allocate@{mamaStatsLogger\_\-allocate}}
+\index{mamaStatsLogger\_\-allocate@{mamaStatsLogger\_\-allocate}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-allocate}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-allocate ({\bf mamaStatsLogger} $\ast$ {\em logger})}}
+\label{statslogger_8h_a13adcc17656fd74702014519c4ec2d46}
+
+
+Allocate memory for a new stats logger. The logger is not actually created until a call the create() functions is made. Memory must be freed using the {\ttfamily mamaStatsLogger\_\-Deallocate()} function.
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]Where the address of the new logger will be written \end{DoxyParams}
+\hypertarget{statslogger_8h_abfd60514554d6e83c7c7ea0aedaaccd2}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-create@{mamaStatsLogger\_\-create}}
+\index{mamaStatsLogger\_\-create@{mamaStatsLogger\_\-create}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-create ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mamaQueue} {\em queue}, \/  {\bf mamaTransport} {\em tport})}}
+\label{statslogger_8h_abfd60514554d6e83c7c7ea0aedaaccd2}
+
+
+Create and activate mamaStatsLogger object. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The location of a mamaStatsLogger \item[{\em queue}]The queue for the Stats Logger to use for publishing \item[{\em tport}]the transport \end{DoxyParams}
+\hypertarget{statslogger_8h_a52747b0b2cda5d39868e1aeeaa1fba7e}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-createForStats@{mamaStatsLogger\_\-createForStats}}
+\index{mamaStatsLogger\_\-createForStats@{mamaStatsLogger\_\-createForStats}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-createForStats}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-createForStats ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mamaQueue} {\em queue}, \/  {\bf mamaTransport} {\em tport}, \/  const char $\ast$ {\em topic})}}
+\label{statslogger_8h_a52747b0b2cda5d39868e1aeeaa1fba7e}
+\hypertarget{statslogger_8h_a325a8cf6915a2fbe30deb8d8b8d2745f}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-destroy@{mamaStatsLogger\_\-destroy}}
+\index{mamaStatsLogger\_\-destroy@{mamaStatsLogger\_\-destroy}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-destroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-destroy ({\bf mamaStatsLogger} {\em logger})}}
+\label{statslogger_8h_a325a8cf6915a2fbe30deb8d8b8d2745f}
+
+
+Destroy a mamaStatsLogger object, freeing any memory. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The location of a mamaStatsLogger \end{DoxyParams}
+\hypertarget{statslogger_8h_a15c1c93ee57b66d7362993058b61fbee}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setReportInterval@{mamaStatsLogger\_\-setReportInterval}}
+\index{mamaStatsLogger\_\-setReportInterval@{mamaStatsLogger\_\-setReportInterval}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setReportInterval}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setReportInterval ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mama\_\-f64\_\-t} {\em interval})}}
+\label{statslogger_8h_a15c1c93ee57b66d7362993058b61fbee}
+
+
+Set the reporting interval. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The location of a mamaStatsLogger \item[{\em interval}]The report interval in seconds \end{DoxyParams}
+\hypertarget{statslogger_8h_af1f3dced398ce1a4b857196da52754f2}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setReportSize@{mamaStatsLogger\_\-setReportSize}}
+\index{mamaStatsLogger\_\-setReportSize@{mamaStatsLogger\_\-setReportSize}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setReportSize}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setReportSize ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mama\_\-size\_\-t} {\em numEvents})}}
+\label{statslogger_8h_af1f3dced398ce1a4b857196da52754f2}
+
+
+Set the maximum number of events to cache before reporting. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The location of a mamaStatsLogger \item[{\em numEvents}]The number of events to report after \end{DoxyParams}
+\hypertarget{statslogger_8h_abf1dbca70ba6ff90ea11a938527a5bae}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setUserName@{mamaStatsLogger\_\-setUserName}}
+\index{mamaStatsLogger\_\-setUserName@{mamaStatsLogger\_\-setUserName}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setUserName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setUserName ({\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$ {\em userName})}}
+\label{statslogger_8h_abf1dbca70ba6ff90ea11a938527a5bae}
+
+
+Set the userName. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to update. \item[{\em userName}]The user name for the logger \end{DoxyParams}
+\hypertarget{statslogger_8h_a963c9da81da141393790b3b26b71574f}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-getUserName@{mamaStatsLogger\_\-getUserName}}
+\index{mamaStatsLogger\_\-getUserName@{mamaStatsLogger\_\-getUserName}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-getUserName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-getUserName (const {\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$$\ast$ {\em userName})}}
+\label{statslogger_8h_a963c9da81da141393790b3b26b71574f}
+
+
+Get the userName. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to check. \item[{\em userName}]Location of the result for the description of the logger. \end{DoxyParams}
+\hypertarget{statslogger_8h_a09f5532005dd4165aa16aa5b0eea3461}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setHostName@{mamaStatsLogger\_\-setHostName}}
+\index{mamaStatsLogger\_\-setHostName@{mamaStatsLogger\_\-setHostName}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setHostName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setHostName ({\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$ {\em hostName})}}
+\label{statslogger_8h_a09f5532005dd4165aa16aa5b0eea3461}
+
+
+Set the hostName. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to update. \item[{\em hostName}]The host name for the logger \end{DoxyParams}
+\hypertarget{statslogger_8h_a06476ee231268cf07c823469443ae423}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-getHostName@{mamaStatsLogger\_\-getHostName}}
+\index{mamaStatsLogger\_\-getHostName@{mamaStatsLogger\_\-getHostName}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-getHostName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-getHostName (const {\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$$\ast$ {\em hostName})}}
+\label{statslogger_8h_a06476ee231268cf07c823469443ae423}
+
+
+Get the hostName. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to check. \item[{\em hostName}]Location of the result for the description of the logger. \end{DoxyParams}
+\hypertarget{statslogger_8h_a2a4d8de32df81c793454da4a7d4f01a0}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setApplicationName@{mamaStatsLogger\_\-setApplicationName}}
+\index{mamaStatsLogger\_\-setApplicationName@{mamaStatsLogger\_\-setApplicationName}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setApplicationName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setApplicationName ({\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$ {\em appName})}}
+\label{statslogger_8h_a2a4d8de32df81c793454da4a7d4f01a0}
+
+
+Set the applicationName. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to update. \item[{\em appName}]The applicationName for the logger \end{DoxyParams}
+\hypertarget{statslogger_8h_ac907d91a3935bd0ebed7ff2aee99ed4f}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-getApplicationName@{mamaStatsLogger\_\-getApplicationName}}
+\index{mamaStatsLogger\_\-getApplicationName@{mamaStatsLogger\_\-getApplicationName}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-getApplicationName}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-getApplicationName (const {\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$$\ast$ {\em appName})}}
+\label{statslogger_8h_ac907d91a3935bd0ebed7ff2aee99ed4f}
+
+
+Get the applicationName. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to check. \item[{\em appName}]Location of the result for the applicationName \end{DoxyParams}
+\hypertarget{statslogger_8h_a70a63f59b98c8132ad8356e944600cb3}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setApplicationClass@{mamaStatsLogger\_\-setApplicationClass}}
+\index{mamaStatsLogger\_\-setApplicationClass@{mamaStatsLogger\_\-setApplicationClass}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setApplicationClass}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setApplicationClass ({\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$ {\em applClass})}}
+\label{statslogger_8h_a70a63f59b98c8132ad8356e944600cb3}
+
+
+Set the applicationClass. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to update. \item[{\em applClass}]The applicationName for the logger \end{DoxyParams}
+\hypertarget{statslogger_8h_a92cc9dec1935f3bfd0661072c211b984}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-getApplicationClass@{mamaStatsLogger\_\-getApplicationClass}}
+\index{mamaStatsLogger\_\-getApplicationClass@{mamaStatsLogger\_\-getApplicationClass}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-getApplicationClass}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-getApplicationClass (const {\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$$\ast$ {\em appClass})}}
+\label{statslogger_8h_a92cc9dec1935f3bfd0661072c211b984}
+
+
+Get the applicationClass. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to check. \item[{\em appClass}]Location of the result for the applicationClass \end{DoxyParams}
+\hypertarget{statslogger_8h_aa1a253503919bf459e9bb82591cd8d04}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setIpAddress@{mamaStatsLogger\_\-setIpAddress}}
+\index{mamaStatsLogger\_\-setIpAddress@{mamaStatsLogger\_\-setIpAddress}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setIpAddress}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setIpAddress ({\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$ {\em ipAddress})}}
+\label{statslogger_8h_aa1a253503919bf459e9bb82591cd8d04}
+
+
+Set the ipAddress. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to update. \item[{\em ipAddress}]The ipAddress for the logger \end{DoxyParams}
+\hypertarget{statslogger_8h_a042ab98afaff793108e838741f571ea7}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-getIpAddress@{mamaStatsLogger\_\-getIpAddress}}
+\index{mamaStatsLogger\_\-getIpAddress@{mamaStatsLogger\_\-getIpAddress}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-getIpAddress}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-getIpAddress (const {\bf mamaStatsLogger} {\em logger}, \/  const char $\ast$$\ast$ {\em ipAddress})}}
+\label{statslogger_8h_a042ab98afaff793108e838741f571ea7}
+
+
+Get the ipAddress. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to check. \item[{\em ipAddress}]Location of the result for the ipAddress of the logger. \end{DoxyParams}
+\hypertarget{statslogger_8h_a9deaa2a3719f1f37ff54476b12e55981}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-logLogin@{mamaStatsLogger\_\-logLogin}}
+\index{mamaStatsLogger\_\-logLogin@{mamaStatsLogger\_\-logLogin}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-logLogin}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-logLogin ({\bf mamaStatsLogger} {\em logger})}}
+\label{statslogger_8h_a9deaa2a3719f1f37ff54476b12e55981}
+
+
+Log a login event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to use. \end{DoxyParams}
+\hypertarget{statslogger_8h_a59df8acc77644a7dbdd92af201316658}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-logLogout@{mamaStatsLogger\_\-logLogout}}
+\index{mamaStatsLogger\_\-logLogout@{mamaStatsLogger\_\-logLogout}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-logLogout}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-logLogout ({\bf mamaStatsLogger} {\em logger})}}
+\label{statslogger_8h_a59df8acc77644a7dbdd92af201316658}
+
+
+Log a logout event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to use. \end{DoxyParams}
+\hypertarget{statslogger_8h_a81da815b7f62c7404edc6eac0c1b90c9}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-logSubscriptionEntitlePass@{mamaStatsLogger\_\-logSubscriptionEntitlePass}}
+\index{mamaStatsLogger\_\-logSubscriptionEntitlePass@{mamaStatsLogger\_\-logSubscriptionEntitlePass}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-logSubscriptionEntitlePass}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-logSubscriptionEntitlePass ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mamaSubscription} {\em subscription}, \/  int32\_\-t {\em entitleCode})}}
+\label{statslogger_8h_a81da815b7f62c7404edc6eac0c1b90c9}
+
+
+Log a subscription entitlement check pass event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to use. \item[{\em subscription}]the subscription \item[{\em entitleCode}]the entitlement code \end{DoxyParams}
+\hypertarget{statslogger_8h_a03617bea39e62f2583e0a349ad2ef88b}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-logSubscriptionFail@{mamaStatsLogger\_\-logSubscriptionFail}}
+\index{mamaStatsLogger\_\-logSubscriptionFail@{mamaStatsLogger\_\-logSubscriptionFail}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-logSubscriptionFail}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-logSubscriptionFail ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mamaSubscription} {\em subscription}, \/  {\bf mamaSlSubFailReason} {\em reason})}}
+\label{statslogger_8h_a03617bea39e62f2583e0a349ad2ef88b}
+
+
+Log a subscription fail event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to use. \item[{\em subscription}]the subscription \item[{\em reason}]the reason \end{DoxyParams}
+\hypertarget{statslogger_8h_a44a2285f5f96a4cfcbd6804ee54efa8d}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-logSubscriptionDestroy@{mamaStatsLogger\_\-logSubscriptionDestroy}}
+\index{mamaStatsLogger\_\-logSubscriptionDestroy@{mamaStatsLogger\_\-logSubscriptionDestroy}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-logSubscriptionDestroy}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-logSubscriptionDestroy ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mamaSubscription} {\em subscription})}}
+\label{statslogger_8h_a44a2285f5f96a4cfcbd6804ee54efa8d}
+
+
+Log a subscription destroy event. 
+\begin{DoxyParams}{Parameters}
+\item[{\em logger}]The logger object to use. \item[{\em subscription}]the subscription \end{DoxyParams}
+\hypertarget{statslogger_8h_ae10ac70774932146d0d739e9ea28894c}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-addStatMsg@{mamaStatsLogger\_\-addStatMsg}}
+\index{mamaStatsLogger\_\-addStatMsg@{mamaStatsLogger\_\-addStatMsg}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-addStatMsg}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-addStatMsg ({\bf mamaStatsLogger} $\ast$ {\em logger}, \/  {\bf mamaMsg} {\em msg})}}
+\label{statslogger_8h_ae10ac70774932146d0d739e9ea28894c}
+\hypertarget{statslogger_8h_ad95ad39b3e34cdb01cee08299faaffd4}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-sendReport@{mamaStatsLogger\_\-sendReport}}
+\index{mamaStatsLogger\_\-sendReport@{mamaStatsLogger\_\-sendReport}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-sendReport}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-sendReport ({\bf mamaStatsLogger} $\ast$ {\em logger})}}
+\label{statslogger_8h_ad95ad39b3e34cdb01cee08299faaffd4}
+\hypertarget{statslogger_8h_a80984fe7faac2a3e33a0d0a71ed0d7ef}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-getLogMsgStats@{mamaStatsLogger\_\-getLogMsgStats}}
+\index{mamaStatsLogger\_\-getLogMsgStats@{mamaStatsLogger\_\-getLogMsgStats}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-getLogMsgStats}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-getLogMsgStats ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mama\_\-bool\_\-t} $\ast$ {\em logMsgStats})}}
+\label{statslogger_8h_a80984fe7faac2a3e33a0d0a71ed0d7ef}
+\hypertarget{statslogger_8h_ac9c0f5174a8a4319928bc8ca13833d02}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-setLogMsgStats@{mamaStatsLogger\_\-setLogMsgStats}}
+\index{mamaStatsLogger\_\-setLogMsgStats@{mamaStatsLogger\_\-setLogMsgStats}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-setLogMsgStats}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-setLogMsgStats ({\bf mamaStatsLogger} {\em logger}, \/  {\bf mama\_\-bool\_\-t} {\em logMsgStats})}}
+\label{statslogger_8h_ac9c0f5174a8a4319928bc8ca13833d02}
+\hypertarget{statslogger_8h_a33773e2b10b351b38644191a82a101a1}{
+\index{statslogger.h@{statslogger.h}!mamaStatsLogger\_\-incMsgCount@{mamaStatsLogger\_\-incMsgCount}}
+\index{mamaStatsLogger\_\-incMsgCount@{mamaStatsLogger\_\-incMsgCount}!statslogger.h@{statslogger.h}}
+\subsubsection[{mamaStatsLogger\_\-incMsgCount}]{\setlength{\rightskip}{0pt plus 5cm}MAMAExpDLL {\bf mama\_\-status} mamaStatsLogger\_\-incMsgCount ({\bf mamaStatsLogger} {\em statsLogger})}}
+\label{statslogger_8h_a33773e2b10b351b38644191a82a101a1}
