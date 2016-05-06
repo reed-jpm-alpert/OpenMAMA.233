@@ -116,4 +116,5 @@ common/c_cpp/src/c/wombat/wConfig.h
 common/c_cpp/src/c/wombat/wInterlocked.h
 common/c_cpp/src/c/wombat/wMath.h
 common/c_cpp/src/c/wombat/wUuid.h
-
+doom
+objdir*
