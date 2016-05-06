@@ -30,3 +30,18 @@
 # Logs
 *.log
 
+# Create by OM at build time
+mamda/c_cpp/src/cpp/version.c
+
+# These are links set by OM at build time
+common/c_cpp/src/c/environment.c
+common/c_cpp/src/c/machine_port.c
+common/c_cpp/src/c/network.c
+common/c_cpp/src/c/platform.c
+common/c_cpp/src/c/wSemaphore.c
+common/c_cpp/src/c/wombat/port.h
+common/c_cpp/src/c/wombat/wConfig.h
+common/c_cpp/src/c/wombat/wInterlocked.h
+common/c_cpp/src/c/wombat/wMath.h
+common/c_cpp/src/c/wombat/wUuid.h
+
