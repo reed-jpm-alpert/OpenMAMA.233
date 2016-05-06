@@ -1,47 +1,106 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# Compiled source #
+###################
+*.com
+*.class
 *.dll
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
 *.exe
-*.out
-*.app
-
-# Python
+*.o
+*.so
+*.lo
+*.la
 *.pyc
 
-# Logs
+# Temporary Directories #
+#########################
+.dep*
+.lib*
+
+# GNU Automake #
+################
+Makefile
+Makefile.in
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
 *.log
+*.sql
+*.sqlite
 
-# Create by OM at build time
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*~
+*.swp
+
+# OpenMAMA Specific #
+# ###################
+common/c_cpp/aclocal.m4
+common/c_cpp/autom4te.cache/
+common/c_cpp/config.h
+common/c_cpp/config.h.in
+common/c_cpp/config.status
+common/c_cpp/configure
+common/c_cpp/etc/
+common/c_cpp/libtool
+common/c_cpp/src/c/properties.c
+common/c_cpp/src/c/version.h
+common/c_cpp/src/c/lex.yy.c
+common/c_cpp/stamp-h1
+mama/c_cpp/aclocal.m4
+mama/c_cpp/autom4te.cache/
+mama/c_cpp/config.h
+mama/c_cpp/config.h.in
+mama/c_cpp/config.status
+mama/c_cpp/configure
+mama/c_cpp/doc/c/
+mama/c_cpp/doxyconfig-c
+mama/c_cpp/etc/
+mama/c_cpp/libtool
+mama/c_cpp/src/c/bridge/solace/Makefile.am
+mama/c_cpp/src/c/mama/version.h
+mama/c_cpp/src/c/version.c
+mama/c_cpp/stamp-h1
+mama/dotnet/src/cs/mama.xml
+mama/jni/src/c/mamajni/com_wombat_mama_*
+mama/c_cpp/src/c/entitlementlibraries.c
 mamda/c_cpp/src/cpp/version.c
+mamda/c_cpp/src/cpp/version.h
+mamda/dotnet/src/cs/mamda.xml
 
-# These are links set by OM at build time
-common/c_cpp/src/c/environment.c
-common/c_cpp/src/c/machine_port.c
-common/c_cpp/src/c/network.c
-common/c_cpp/src/c/platform.c
-common/c_cpp/src/c/wSemaphore.c
-common/c_cpp/src/c/wombat/port.h
-common/c_cpp/src/c/wombat/wConfig.h
-common/c_cpp/src/c/wombat/wInterlocked.h
-common/c_cpp/src/c/wombat/wMath.h
-common/c_cpp/src/c/wombat/wUuid.h
+# Scons files
+# #######################################
+objdir/*
+.sconf_temp/*
+.sconsign.dblite/*
+omama.conf
+.sconsign.dblite
+openmama_install*
 
+# Visual Studio Directories
+# #######################################
+obj/
+bin/
+*.user
+x64/
+Debug/
+Release/
+.vs/
+*.opensdf
+*.sdf
+*.suo
