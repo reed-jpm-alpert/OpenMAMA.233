@@ -463,7 +463,7 @@ public class MamaMsg
     {
         if (null!=fieldDesc)
         {
-            return getI8 (fieldDesc.getName(),fieldDesc.getFid());
+            return getU8 (fieldDesc.getName(),fieldDesc.getFid());
         }
         else
         {
