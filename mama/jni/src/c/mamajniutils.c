@@ -46,7 +46,11 @@ JNIEnv *mamaJniUtils_attachNativeThread(JavaVM *jvm)
     /* Log a message if this function failed. */
     if(0 != act)
     {
-        mama_log(MAMA_LOG_LEVEL_NORMAL, "Could not attach current thread.\n");
+        mama_log(MAMA_LOG_LEVEL_NORMAL, "JNI: could not attach current thread %lx", (unsigned long)wGetCurrentThreadId());
+    }
+    else
+    {
+        mama_log(MAMA_LOG_LEVEL_NORMAL, "JNI: attach current thread %lx", (unsigned long)wGetCurrentThreadId());
     }
 
     return ret;
@@ -60,7 +64,11 @@ void mamaJniUtils_detachNativeThread(JavaVM *jvm)
     /* Log a message if this function failed. */
     if(0 != dct)
     {
-        mama_log(MAMA_LOG_LEVEL_NORMAL, "Could not dettach current thread.\n");
+        mama_log(MAMA_LOG_LEVEL_NORMAL, "JNI: could not detach current thread %lx", (unsigned long)wGetCurrentThreadId());
+    }
+    else
+    {
+        mama_log(MAMA_LOG_LEVEL_NORMAL, "JNI: detach current thread %lx", (unsigned long)wGetCurrentThreadId());
     }
 }
 
@@ -75,14 +83,15 @@ JNIEnv* utils_getENV(JavaVM* jvm)
     /*env will still be NULL if the current thread was not attached to the JVM*/
     if(!env)
     {
-        if (0!= (*jvm)->AttachCurrentThread(jvm,(void**)&env,NULL))
+        if (0!= (*jvm)->AttachCurrentThreadAsDaemon(jvm,(void**)&env,NULL))
         {
             /*We can't throw an exception as we need a JNIEnv**/
-            mama_log (MAMA_LOG_LEVEL_NORMAL, "Could not attach current thread.\n");
+            mama_log (MAMA_LOG_LEVEL_NORMAL, "JNI: could not attach current thread while getting JNIEnv %lx", (unsigned long) wGetCurrentThreadId());
             return NULL;
         }
+        mama_log(MAMA_LOG_LEVEL_NORMAL, "JNI: attach current thread while getting JNIEnv %lx", (unsigned long)wGetCurrentThreadId());
     }
-    
+ 
     return env;
 }
 
